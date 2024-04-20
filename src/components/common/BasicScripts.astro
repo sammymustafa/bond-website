@@ -69,7 +69,7 @@ import { UI } from 'astrowind:config';
         return;
       }
       document.documentElement.classList.toggle('dark');
-      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.theme = document.documentElement.classList.contains('light') ? 'dark' : 'light';
     });
 
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
