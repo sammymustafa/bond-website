@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: 'Bond — Improving Clinical Trial Patient Recruitment',
@@ -100,6 +101,7 @@ const metadata = {
   <Content
     isReversed
     tagline="Benefits to Stakeholders"
+    id="stakeholders"
     title="AstroWind's Blueprint: Fun Meets Functionality!"
     items={[
       {
@@ -218,6 +220,7 @@ const metadata = {
 
   <Steps
     title="Step-by-step walkthrough of Bond's service"
+    id="walkthrough"
     tagline="How Bond Works"
     items={[
       {
@@ -253,6 +256,7 @@ const metadata = {
 
   <Features2
     title="Next Steps for Bond"
+    id="future"
     subtitle="Future directions and methods we are currently working on to improve our offerrings."
     tagline="Future Directions"
     items={[
@@ -299,7 +303,7 @@ const metadata = {
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
+        title: 'Allow patients to view the data we are using',
         description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
         icon: 'flat-color-icons:database',
       },
@@ -324,6 +328,7 @@ const metadata = {
 
   <FAQs
     title="Frequently Asked Questions"
+    id="faqs"
     subtitle="Here are some of the common questions surrounding our company objectives and logistics."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
