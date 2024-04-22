@@ -16,7 +16,7 @@ metadata:
   openGraph:
     site_name: Bond
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/preview.png'
         width: 1200
         height: 628
     type: website
