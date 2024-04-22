@@ -13,19 +13,26 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Bond — Improving Clinical Trial Patient Recruitment',
   ignoreTitleTemplate: true,
 };
 ---
+
+<style>
+.new-line {
+  display: block;
+}
+</style>
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/front-page.png', alt: 'Bonding Clinical Trials' }}
   >
     <Fragment slot="title">
-      Improving clinical trial patient recruitment
+      Improving clinical trial patient
+      <span class="new-line">recruitment</span>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -46,7 +53,7 @@ const metadata = {
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
+    title="What Bond offers"
     subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
     items={[
       {
@@ -92,7 +99,7 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
+    tagline="Benefits to Stakeholders"
     title="AstroWind's Blueprint: Fun Meets Functionality!"
     items={[
       {
@@ -205,6 +212,7 @@ const metadata = {
 
   <Steps
     title="Get your dream website up and running in no time with AstroWind."
+    tagline="Steps of Process"
     items={[
       {
         title: 'Step 1: <span class="font-medium">Download</span>',
@@ -240,7 +248,7 @@ const metadata = {
   <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    tagline="Future for Bond"
     items={[
       {
         title: 'Headers',
@@ -300,7 +308,7 @@ const metadata = {
   </Features2>
 
   <!-- HighlightedPosts Widget ******* -->
-
+  <!-- 
   <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
@@ -308,7 +316,7 @@ const metadata = {
                         Astro is a very interesting technology. Thanks.
                 `}
   />
-
+  -->
   <!-- FAQs Widget ******************* -->
 
   <FAQs
@@ -351,7 +359,7 @@ const metadata = {
   />
 
   <!-- Stats Widget ****************** -->
-
+  <!-- 
   <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
@@ -360,9 +368,11 @@ const metadata = {
       { title: 'Users', amount: '48.4K' },
     ]}
   />
+  -->
 
   <!-- CallToAction Widget *********** -->
 
+  <!-- 
   <CallToAction
     actions={[
       {
@@ -383,4 +393,5 @@ const metadata = {
       waste more time! :P
     </Fragment>
   </CallToAction>
+  -->
 </Layout>
