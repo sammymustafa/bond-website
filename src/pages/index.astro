@@ -37,10 +37,10 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Bond</span> is a startup revolutionizing the current clinical trial patient recruitment process.</span
+        <span class="font-semibold">Bond</span> is a startup revolutionizing the current clinical trial patint recruitment process.</span
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-       After receiving consent to acesss your electronic health records (EHRs), we proactively connect you with clinical trials personalized to your patient profile.
+       After receiving consent to acesss your electronic health records (EHRs), Bond proactively connects you with clinical trials personalized to your patient profile.
     </Fragment>
   </Hero>
 
@@ -124,7 +124,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patients</h3>
        Gain a competitive advantage by incorporating industry leading practices
     </Fragment>
 
@@ -163,7 +163,10 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Researchers</h3>
+       Gain a competitive advantage by incorporating industry leading practices
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -201,7 +204,10 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sponsors/CROs</h3>
+       Gain a competitive advantage by incorporating industry leading practices
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -211,29 +217,29 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    tagline="Steps of Process"
+    title="Step-by-step walkthrough of Bond's service"
+    tagline="How Bond Works"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Patient provides consent</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Using our patient-interface, patients first have to provide us with consent to access your electronic health record associated with your hospital system.",
+        icon: 'tabler:license',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Step 2: <span class="font-medium">Data Informatics Team Works with EHR</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Our data informatics team gains access to your encrypted, de-identified EHR data to properly match you with relevant clinical trials.",
+        icon: 'tabler:device-analytics',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Patient receives recurring email communications</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Our team will send you emails once every two weeks to always keep you up-to-date on the clincial trials mathcing your patient profile.',
+        icon: 'tabler:mail',
       },
       {
-        title: 'Ready!',
+        title: "Sit back, you're now in the loop!",
         icon: 'tabler:check',
       },
     ]}
@@ -246,53 +252,50 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Future for Bond"
+    title="Next Steps for Bond"
+    subtitle="Future directions and methods we are currently working on to improve our offerrings."
+    tagline="Future Directions"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Make our own database',
+        description: "Blah",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        title: 'Unstructured dataIncluding imaging and more unstructured data into query.',
+        description: "Blah",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'More standardized and inclusive way to get more populations onboard.',
+        description: "Like children, individuals without access to a computer or phone, etc.",
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
+        title: 'Include clincial trial summary, contact info, etc. in email description, better understanding of relevancy',
         description:
           "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Use data with ML to predict clinical trends for future clincial trials for sponsor',
         description:
           'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
+        title: 'Personalized pricing for sponsors',
         description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
+        title: 'Receive user feedback to personalize most important factors in deciding what clinical trials to get involved',
         description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: 'Different forms of communication based on user preference',
+        description: "Blah",
         icon: 'flat-color-icons:business-contact',
       },
       {
@@ -321,39 +324,28 @@ const metadata = {
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Here are some of the common questions surrounding our company objectives and logistics."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: "Who is your intended user?",
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Everyone! From individuals struggling with rare diseases who want to immediately know of clinical studies related to their conditions to individuals who want to participate as control's in more observational studies: Bond wants to reach all individuals who are willing to get onboard and contribute!",
       },
       {
-        title: 'What do I need to start?',
+        title: 'How will you make money???',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "It will be B2B as we will work with directly with sponsors and clincial research organizations (CROs). We will charge a fixed rate for these organizations to include their clinical trial in our database and then use tiered/usage-based pricing depending on the number of patients they want communicated and the types of conditions their trial encompasses.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Do I need to see a physician to get onboard?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "No! You can access our patient-platform from anywhere and do not need a physician referral to get involved.",
       },
       {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+        title: 'Can I opt out of the services?',
+        description: 'Yes, you can contact us to unsubscribe from our services and we will remove your EHR data from our database. If you change your mind, you can sign up again at any time.',
       },
     ]}
   />
