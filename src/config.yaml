@@ -1,5 +1,5 @@
 site:
-  name: Bond
+  name: Bond Health
   site: 'https://bond-ehr.com/'
   base: '/'
   trailingSlash: false
@@ -8,13 +8,13 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Bond
-    template: '%s — Bond'
+    default: Bond Health
+    template: '%s — Bond Health'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Bond
+    site_name: Bond Health
     images:
       - url: '~/assets/images/preview.png'
         width: 1200
