@@ -32,7 +32,7 @@ export const footerData = {
     { text: 'Contact: hello@bond-ehr.com'}
   ],
   socialLinks: [
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/bondhealth-ai' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/bondtrials' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/sammymustafa/bond-prototype' },
   ]
 };
