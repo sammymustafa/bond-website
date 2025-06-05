@@ -29,7 +29,7 @@ export const footerData = {
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
-    { text: 'Contact: hello@bond-ehr.com'}
+    { text: 'Contact: hello@bondtrials.com'}
   ],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/bondtrials' },
