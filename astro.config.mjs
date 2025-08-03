@@ -59,6 +59,7 @@ export default defineConfig({
         ],
       },
     }),
+    image({ serviceEntryPoint: '@astrojs/image/sharp' }),
 
     ...whenExternalScripts(() =>
       partytown({
@@ -83,10 +84,6 @@ export default defineConfig({
       config: "./src/config.yaml"
     }),
   ],
-
-  image: {
-    serviceEntryPoint: '@astrojs/image/sharp',
-  },
 
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
