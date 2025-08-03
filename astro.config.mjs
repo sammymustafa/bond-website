@@ -1,7 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
+import image from '@astrojs/image';
 
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -46,6 +47,15 @@ export default defineConfig({
           'voice-presentation',
           'business-contact',
           'database',
+          'smartphone-tablet',
+          'positive-dynamic',
+          'parallel-tasks',
+          'conference-call',
+          'collaboration',
+          'rules',
+          'data-configuration',
+          'department',
+          'globe',
         ],
       },
     }),
@@ -75,8 +85,7 @@ export default defineConfig({
   ],
 
   image: {
-    service: squooshImageService(),
-    domains: ["cdn.pixabay.com"],
+    serviceEntryPoint: '@astrojs/image/sharp',
   },
 
   markdown: {

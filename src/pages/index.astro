@@ -12,7 +12,6 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { YouTube } from 'astro-embed';
-import { Fragment } from 'astro/jsx-runtime';
 
 const metadata = {
   title: 'Bond Health — Improving Clinical Trial Patient Recruitment',
@@ -38,15 +37,10 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <div>
-        <span class="hidden sm:inline">
-          <span class="font-semibold">Bond Health</span>
-          <span>&nbsp;is a startup revolutionizing the current clinical trial patient recruitment process.</span>
-        </span>
-        <span>
-          Bond Health streamlines end-to-end clinical trial recruitment by automating personalized patient screening through proprietary LLMs that extract insights from both structured and unstructured electronic health record data.
-        </span>
-      </div>
+      <span class="hidden sm:inline">
+        <span class="font-semibold">Bond Health</span> is revolutionizing clinical trial recruitment by automating personalized patient screening.
+      </span>
+      By leveraging proprietary LLMs to analyze both structured and unstructured EHR data, we automate personalized patient screening and streamline recruitment from end to end.
     </Fragment>
   </Hero>
 
@@ -65,37 +59,31 @@ const metadata = {
       {
         title: 'Automated Pre-Screening from EHRs',
         description:
-          'Combines structured fields and unstructured data insights (clinical notes, imaging, genomics, biopsies, etc.) from our proprietary LLMs to surface nuanced insights and reduce manual chart review.',
+          "Combines structured fields and unstructured data insights (clinical notes, imaging, genomics, biopsies, etc.) from our proprietary LLMs to surface nuanced insights and reduce manual chart review.",
         icon: 'tabler:database-search',
       },
       {
         title: 'Patient Match Scoring Engine',
         description:
-          'Each candidate receives a real-time match score based on alignment with inclusion/exclusion criteria, with traceable rationale for site coordinators.',
+          "Each candidate receives a real-time match score out of 100 based on alignment with inclusion/exclusion criteria, with traceable rationale for site coordinators.",
         icon: 'tabler:stars',
       },
       {
         title: 'Real-Time Patient Tracker',
         description:
-          'Manage patient status across the recruitment pipeline, from screening to enrollment, with integrated timelines and update logs.',
+          "Manage patient status across the recruitment pipeline, from screening to enrollment, with integrated timelines and update logs.",
         icon: 'tabler:activity',
       },
       {
         title: 'Built-In Metrics Monitoring',
         description:
-          'Track recruitment KPIs, enrollment rates, trial timeline dates, and cost-efficiency with real-time dashboards.',
+          "Track recruitment KPIs, enrollment rates, trial timeline dates, and cost-efficiency with real-time dashboards.",
         icon: 'tabler:timeline-event-text',
-      },
-      {
-        title: 'Customizable UI for Research Teams',
-        description:
-          'Adapt views, filters, and notifications for personalized and intuitive CRC workflows.',
-        icon: 'tabler:layout-dashboard',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- Content Widget ******************* -->
 
   <Content
     isReversed
@@ -106,17 +94,17 @@ const metadata = {
       {
         title: 'Automated Trial Matching',
         description:
-          'Uses structured fields and free-text clinical notes to flag likely candidates based on trial-specific parameters.',
+          "Uses structured fields and free-text clinical notes to flag likely candidates based on trial-specific parameters.",
       },
       {
         title: 'Centralized Recruitment Tracker',
         description:
-          'Provides a real-time dashboard of each patient's status, communication history, and site-level progress across all studies.',
+          "Provides a real-time dashboard of each patient's status, communication history, and site-level progress across all studies.",
       },
       {
         title: 'Enhanced Insight Extraction',
         description:
-          'Our LLMs parse unstructured data to resolve vague or complex eligibility factors, reducing screen failure rates and manual chart review.',
+          "Our LLMs parse unstructured data to resolve vague or complex eligibility factors, reducing screen failure rates and manual chart review.",
       },
     ]}
     image={{
@@ -151,7 +139,7 @@ const metadata = {
       {
         title: 'Empowered Access',
         description:
-          'Personalized matching is based on a patient’s real health history and not limited by narrow filters or outdated inclusion logic.',
+          "Personalized matching is based on a patient's real health history and not limited by narrow filters or outdated inclusion logic.",
       },
     ]}
     image={{
@@ -228,13 +216,13 @@ const metadata = {
       {
         title: 'Step 3: <span class="font-medium">Research Coordinator Dashboard Interface</span>',
         description:
-          'CRCs can view patient match scores to specific trials, unstructured insights (family history, biopsies, etc.), and patient enrollment status.',
+          'Research coordinators can view patient match scores to specific trials, unstructured insights (family history, biopsies, etc.), and patient enrollment status.',
         icon: 'tabler:layout-board',
       },
       {
         title: 'Step 4: <span class="font-medium">Trial Matching Recommendations</span>',
         description:
-          'LLM-generated rationales clarify why a patient is or isn’t a fit for a trial, with guidance for ambiguous cases or additional pre-screening.',
+          "LLM-generated rationales clarify why a patient is or isn't a fit for a trial, with guidance for ambiguous cases or additional screening.",
         icon: 'tabler:checkup-list',
       },
       {
@@ -277,7 +265,7 @@ const metadata = {
       {
         title: 'Multimodal Data Integration',
         description: "Incorporating data beyond standard medical records (wearable device metrics, patient-reported outcomes, social determinants of health, and lifestyle data) to enable more holistic and personalized trial matching.",
-        icon: 'flat-color-icons:multiple-smartphones',
+        icon: 'flat-color-icons:smartphone-tablet',
       },
       {
         title: 'Patient Retention Scoring',
@@ -350,7 +338,7 @@ const metadata = {
       {
         title: "Who is your platform for?",
         description:
-          "Bond Health is built for clinical trial research coordinators, as well as CROs and sponsors, to streamline patient screening and recruitment. While patients will benefit indirectly, they are not the users of the platform.",
+          "Bond Health is built for clinical research coordinators and is funded by CROs and sponsors to streamline patient screening and recruitment. While patients benefit indirectly, they are not the end users of the platform.",
       },
       {
         title: 'Do patients need to sign up or give consent?',
@@ -360,7 +348,7 @@ const metadata = {
       {
         title: 'How do you make money?',
         description:
-          "We operate on a B2B model with subscription and usage-based pricing paid by sponsors and CROs. Pricing is based on trial volume, data access, and site activity.",
+          "We charge a flat fee to list each clinical trial on our platform, then apply tiered pricing based on the number of patients engaged and the clinical complexity of the trial. Higher tiers account for rare conditions, multi-site coordination, and expanded inclusion criteria.",
       },
       {
         title: 'Can the platform support rare disease or complex trials?',
