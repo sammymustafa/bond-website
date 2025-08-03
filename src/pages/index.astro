@@ -40,7 +40,7 @@ const metadata = {
       <span class="hidden sm:inline">
         <span class="font-semibold">Bond Health</span> is a startup revolutionizing the current clinical trial patient recruitment process.</span
       >
-       After providing consent to access your electronic health records (EHRs), Bond Health proactively connects you with clinical trials personalized to your patient profile.
+       Bond Health streamlines end-to-end clinical trial recruitment by automating personalized patient screening through proprietary LLMs that extract insights from both structured and unstructured electronic health record data.
     </Fragment>
   </Hero>
 
@@ -57,28 +57,34 @@ const metadata = {
     subtitle=""
     items={[
       {
-        title: 'Proactive Engagement',
+        title: 'Automated Pre-Screening from EHRs',
         description:
-          'Keeping patients informed and involved with current trials fosters a proactive health management approach.',
-        icon: 'tabler:mail-fast',
+          'Instantly scan structured and unstructured patient data (clinical notes, radiology reports, genomics, biopsies) for inclusion/exclusion criteria relevancy.',
+        icon: 'tabler:database-search',
       },
       {
-        title: 'Personalized Matching',
+        title: 'Proprietary LLMs for Deeper Insight',
         description:
-          'Tailored trial matching ensures each patient receives opportunities that are relevant to their specific health conditions.',
-        icon: 'tabler:user',
+          'Extract and interpret ambiguous or nuanced findings from clinical documentation to improve trial matching.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Data Security',
+        title: 'Real-Time Patient Tracker',
         description:
-          'Robust protection of patient data is critical to maintaining privacy and trust for the patients providing us with access to their EHR data.',
-        icon: 'tabler:cloud-lock',
+          'Manage patient status across the recruitment pipeline, from screening to enrollment, with integrated timelines and update logs.',
+        icon: 'tabler:activity',
       },
       {
-        title: 'User-Friendly Interface',
+        title: 'Built-In Metrics Monitoring',
         description:
-          'Our straightforward interface enables patients of all demographics to get clinical trial communications easily.',
-        icon: 'tabler:heart-handshake',
+          'Track recruitment KPIs, enrollment rates, trial timeline dates, and cost-efficiency with real-time dashboards.',
+        icon: 'tabler:timeline-event-text',
+      },
+      {
+        title: 'Customizable UI for Research Teams',
+        description:
+          'Adapt views, filters, and notifications for personalized and intuitive CRC workflows.',
+        icon: 'tabler:layout-dashboard',
       },
     ]}
   />
@@ -92,29 +98,29 @@ const metadata = {
     title="How we enhance the experience across the board"
     items={[
       {
-        title: 'More Representation for Underrepresented Demographics',
+        title: 'Automated Trial Matching',
         description:
-          'Our service is designed to connect individuals from diverse backgrounds with relevant clinical trials that respect their preferences, providing avenues for individuals to contribute to and benefit from medical research.',
+          'Uses structured fields and free-text clinical notes to flag likely candidates based on trial-specific parameters.',
       },
       {
-        title: 'Facilitated Access for Complex Conditions',
+        title: 'Centralized Recruitment Tracker',
         description:
-          'Simplifying the search process empowers patients with rare or complex conditions to find suitable trials without complications.',
+          'Provides a real-time dashboard of each patient's status, communication history, and site-level progress across all studies.',
       },
       {
-        title: 'Enhanced Understanding of Research',
+        title: 'Enhanced Insight Extraction',
         description:
-          'We provide educational resources to help patients fully understand the research they may participate in, fostering informed decision-making.',
+          'Our LLMs parse unstructured data to resolve vague or complex eligibility factors, reducing screen failure rates and manual chart review.',
       },
     ]}
     image={{
-      src: '~/assets/images/patients.png',
-      alt: 'Patients Image',
+      src: '~/assets/images/data.png',
+      alt: 'Researchers Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patients</h3>
-       Instant access to pertinent clinical trials offers patients potential health benefits and the liberty to decide how they contribute to medical research.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Clinical Research Coordinators</h3>
+       We streamline recruitment by automating early screening, surfacing relevant insights, and simplifying patient tracking across the trial pipeline.
     </Fragment>
 
     <Fragment slot="bg">
@@ -128,28 +134,28 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Acquire Data Faster',
-        description: `Quicker patient recruitment means studies can start up to 7x faster, accelerating the entire research timeline.`,
+        title: 'Better Representation',
+        description: `The platform promotes equitable access by including overlooked demographics and patients with rare or nuanced conditions.`,
       },
       {
-        title: 'Access to More Diverse Data Sets',
+        title: 'Privacy First',
         description:
-          'Diverse patient demographics contribute to richer data sets, essential for comprehensive and conclusive research outcomes.',
+          'Patient data is handled with strict HIPAA compliance, and individuals may opt out of future analysis or trial matching at any time.',
       },
       {
-        title: 'Produce More Generalizable Findings',
+        title: 'Empowered Access',
         description:
-          "A broad participant base ensures that research findings are more reflective of the population at large, enhancing the applicability of the results.",
+          "Personalized matching is based on a patient’s real health history and not limited by narrow filters or outdated inclusion logic.",
       },
     ]}
     image={{
-      src: '~/assets/images/data.png',
-      alt: 'Researchers Image',
+      src: '~/assets/images/patients.png',
+      alt: 'Patients Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Researchers</h3>
-       Researchers gain invaluable resources and support, enabling them to focus on groundbreaking discoveries and advancements in medicine.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Patients</h3>
+       Although not direct users, patients benefit from more accurate, inclusive, and ethical recruitment that aligns with their clinical needs and rights.
     </Fragment>
 
     <Fragment slot="bg">
@@ -164,19 +170,19 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Streamline Patient Recruitment',
+        title: 'Deeper Cohort Insights',
         description:
-          'Efficient matching processes and patient outreach cut down on the time and cost of recruitment.',
+          'LLMs identify complex or subtle clinical features, such as disease subtypes or comorbidities, from unstructured data to refine inclusion criteria and study populations.',
       },
       {
-        title: 'Cost-Effective Recruitment',
+        title: 'Recruitment Intelligence',
         description:
-          'An optimized recruitment funnel can reduce financial waste by 15 fold, increasing ROI on each trial.',
+          'Dashboards track key metrics including enrollment velocity, screen failures, and cost-efficiency, allowing sites and sponsors to adjust strategies in real time.',
       },
       {
-        title: 'Accelerate R&D Cycles',
+        title: 'More Actionable, Generalizable Research',
         description:
-          'Quicker recruitment phases mean sponsors can move faster through the R&D pipeline, staying ahead in a competitive industry.',
+          'More representative and well-characterized cohorts enable researchers to generate findings that are both generalizable and more likely to translate into meaningful real-world clinical outcomes.',
       },
     ]}
     image={{
@@ -185,8 +191,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sponsors/CROs</h3>
-       We streamline the clinical trial process for sponsors and CROs, maximizing their investments and expediting research developments.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sponsors, CROs, and Researchers</h3>
+       We support more targeted trial design and efficient execution by enabling earlier identification of real-world patient characteristics, improving data quality and downstream impact.
     </Fragment>
 
     <Fragment slot="bg">
@@ -202,26 +208,34 @@ const metadata = {
     tagline="How we work"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Patient provides consent</span>',
+        title: 'Step 1: <span class="font-medium">Sponsor Provides Trial Criteria</span>',
         description:
-          "Using our patient-interface, patients first have to provide us with consent to access your electronic health record associated with your hospital system.",
-        icon: 'tabler:license',
+          "Inclusion/exclusion criteria, preferred demographic profiles, and endpoints are received.",
+        icon: 'tabler:clipboard-list',
       },
       {
-        title: 'Step 2: <span class="font-medium">Data Informatics Team Works with EHR</span>',
+        title: 'Step 2: <span class="font-medium">EHR Integration & Pre-Screening</span>',
         description:
-          "Our data informatics team gains access to your encrypted, de-identified EHR data to properly match you with relevant clinical trials.",
-        icon: 'tabler:device-analytics',
+          "The platform scans de-identified EHRs (including free text notes) to identify likely eligible patients.",
+        icon: 'tabler:database-search',
       },
       {
-        title: 'Step 3: <span class="font-medium">Patient receives recurring email communications</span>',
+        title: 'Step 3: <span class="font-medium">Research Coordinator Dashboard Interface</span>',
         description:
-          'Our team will send you emails once every two weeks to always keep you up-to-date on the clinical trials matching your patient profile.',
-        icon: 'tabler:mail',
+          'CRCs can view patient match scores to specific trials, unstructured insights (family history, biopsies, etc.), and patient enrollment status.',
+        icon: 'tabler:layout-board',
       },
       {
-        title: "Relax while we keep you in the loop!",
-        icon: 'tabler:check',
+        title: 'Step 4: <span class="font-medium">Trial Matching Recommendations</span>',
+        description:
+          'LLM-generated rationales clarify why a patient is or isn’t a fit for a trial, with guidance for ambiguous cases or additional pre-screening.',
+        icon: 'tabler:checkup-list',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Ongoing Monitoring & Tracking</span>',
+        description:
+          'Research coordinators can manage communication, update patient status, and track recruitment progress.',
+        icon: 'tabler:progress',
       },
     ]}
     image={{
@@ -255,51 +269,51 @@ const metadata = {
     tagline="Future Directions"
     items={[
       {
-        title: 'Develop Proprietary Database',
-        description: "Creating our own database will allow for better queries and more nuanced matching for more relevant and faster trial connections.",
-        icon: 'flat-color-icons:template',
+        title: 'Multimodal Data Integration',
+        description: "Incorporating data beyond standard medical records (wearable device metrics, patient-reported outcomes, social determinants of health, and lifestyle data) to enable more holistic and personalized trial matching.",
+        icon: 'lat-color-icons:combo-chart',
       },
       {
-        title: 'Integrate Diverse Data Types',
-        description: "Incorporating a broader spectrum of data like imaging, medication, and notes will create a more holistic patient profile for trial matching.",
-        icon: 'flat-color-icons:gallery',
+        title: 'Patient Retention Scoring',
+        description: "Predictive models to identify patients at risk of dropout and enable early intervention.",
+        icon: 'fflat-color-icons:approval',
       },
       {
-        title: 'Machine Learning for Trial Predictions',
+        title: 'Eligibility Criteria Optimization',
         description:
-          'Applying machine learning will provide insights into clinical trends, aiding sponsors in trial design and patient recruitment.',
-        icon: 'flat-color-icons:database',
+          'Using real-time cohort insights to help refine inclusion/exclusion criteria and optimize trial protocols for more successful recruitment.',
+        icon: 'flat-color-icons:workflow',
       },
       {
-        title: 'User Feedback Integration',
-        description: 'Incorporating patient feedback will help tailor clinical trial opportunities to patient preferences and needs (ex: trials with incentives or within close proximity are most relevant to individual).',
-        icon: 'flat-color-icons:voice-presentation',
+        title: 'Community-Based Site Enablement',
+        description: 'Supporting non-academic and community sites with recruitment tools to broaden geographic and demographic reach.',
+        icon: 'flat-color-icons:organization-chart',
       },
       {
-        title: 'Outreach for Diverse Participation',
-        description: "Expanding our reach to ensure that individuals without computer access or those in remote locations can participate in clinical trials.",
-        icon: 'flat-color-icons:advertising',
+        title: 'Targeted Onboarding Intelligence',
+        description: "Collects communication preferences and referral patterns to recommend optimal outreach strategies for engaging physicians and patients more effectively.",
+        icon: 'flat-color-icons:conference-call',
       },
       {
-        title: 'Detailed Trial Summaries',
+        title: 'Advanced Inclusion Criteria Builder',
         description:
-          "Providing patients with comprehensive trial summaries, including contact information and clear explanations of relevance, to enhance understanding and engagement.",
-        icon: 'flat-color-icons:document',
+          "Enabling researchers to model and test hypothetical cohorts by toggling criteria and thresholds dynamically.",
+        icon: 'flat-color-icons:slider',
       },
       {
-        title: 'Preference-Based Communication',
-        description: "Adapting our communication methods to align with user preferences, whether through text, email, or mail, for clinical trial updates and matches.",
-        icon: 'flat-color-icons:business-contact',
+        title: 'Data Provenance Transparency',
+        description: "Allowing users to trace back extracted insights to their original source documents for audit and validation.",
+        icon: 'flat-color-icons:search',
       },
       {
-        title: 'Transparent Data Utilization',
-        description: "Allowing patients to view how their data is used will foster transparency and trust in our services.",
-        icon: 'flat-color-icons:approval',
+        title: 'Cross-Site Trial Matching',
+        description: "Enabling sponsors and CROs to identify eligible patients across multiple sites by harmonizing data formats, eligibility logic, and compliance requirements.",
+        icon: 'flat-color-icons:multiple-devices',
       },
       {
-        title: 'Flexible Sponsor Pricing',
-        description: 'Offering customized pricing plans for sponsors, reflecting the frequency and scale of their clinical trial engagements.',
-        icon: 'flat-color-icons:currency-exchange',
+        title: 'International Site Integration',
+        description: 'Expanding platform compatibility with international EHR systems and regulatory frameworks to support global research sites and multi-country trials.',
+        icon: 'flat-color-icons:globe',
       },
     ]}
   >
@@ -328,23 +342,23 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: "Who is your intended user?",
+        title: "Who is your platform for?",
         description:
-          "Everyone! From individuals struggling with rare diseases who want to immediately know of clinical studies related to their conditions to individuals who want to participate as control's in more observational studies: Bond Health wants to reach all individuals who are willing to get onboard and contribute!",
+          "Bond Health is built for clinical trial research coordinators, as well as CROs and sponsors, to streamline patient screening and recruitment. While patients will benefit indirectly, they are not the users of the platform.",
       },
       {
-        title: 'How will you make money???',
+        title: 'Do patients need to sign up or give consent?',
         description:
-          "It will be B2B as we will work with directly with sponsors and clincial research organizations (CROs). We will charge a fixed rate for these organizations to include their clinical trial in our database and then use tiered/usage-based pricing depending on the number of patients they want communicated and the types of conditions their trial encompasses.",
+          "No, the platform uses de-identified EHR data provided by partnered research institutions, so patients do not need to enroll or take any action. All data use is HIPAA-compliant and handled securely.",
       },
       {
-        title: 'Do I need to see a physician to get onboard?',
+        title: 'How do you make money?',
         description:
-          "No! You can access our patient-platform from anywhere and do not need a physician referral to get involved.",
+          "We operate on a B2B model with subscription and usage-based pricing paid by sponsors and CROs. Pricing is based on trial volume, data access, and site activity.",
       },
       {
-        title: 'Can I opt out of the services?',
-        description: 'Yes, you can contact us to unsubscribe from our services and we will remove your EHR data from our database. If you change your mind, you can sign up again at any time.',
+        title: 'Can the platform support rare disease or complex trials?',
+        description: 'Yes, our proprietary language models extract insights from unstructured data, making them effective for identifying patients with rare or complex conditions. This improves pre-screening precision for even the most targeted studies.',
       },
     ]}
   />
