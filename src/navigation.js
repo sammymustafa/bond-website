@@ -11,8 +11,12 @@ export const headerData = {
       href: getPermalink('/#stakeholders'),
     },
     {
-      text: 'Walkthrough/Demo',
-      href: getPermalink('/#walkthrough'),
+      text: 'Workflow',
+      href: getPermalink('/#workflow'),
+    },
+    {
+      text: 'Demo',
+      href: getPermalink('/#demo'),
     },
     {
       text: 'Future',

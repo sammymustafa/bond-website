@@ -12,6 +12,12 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { YouTube } from 'astro-embed';
+import { Image } from 'astro:assets';
+import frontPageImage from '~/assets/images/front-page.png';
+import dataImage from '../assets/images/data.png';
+import patientsImage from '../assets/images/patients.png';
+import sponsorsImage from '../assets/images/sponsor.png';
+import stepsImage from '../assets/images/steps.png';
 
 const metadata = {
   title: 'Bond Health — Improving Clinical Trial Patient Recruitment',
@@ -29,7 +35,10 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    image={{ src: '~/assets/images/front-page.png', alt: 'Bonding Clinical Trials' }}
+    image={{
+      src: frontPageImage,
+      alt: 'Bonding Clinical Trials'
+    }}
   >
     <Fragment slot="title">
       Improving clinical trial patient
@@ -108,8 +117,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/data.png',
-      alt: 'Researchers Image',
+      src: dataImage,
+      alt: 'Researchers Image'
     }}
   >
     <Fragment slot="content">
@@ -143,8 +152,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/patients.png',
-      alt: 'Patients Image',
+      src: patientsImage,
+      alt: 'Patients Image'
     }}
   >
     <Fragment slot="content">
@@ -180,8 +189,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/sponsor.png',
-      alt: 'Sponsors image',
+      src: sponsorsImage,
+      alt: 'Sponsors image'
     }}
   >
     <Fragment slot="content">
@@ -197,8 +206,8 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Step-by-step walkthrough"
-    id="walkthrough"
+    title="Our step-by-step process"
+    id="workflow"
     tagline="How we work"
     items={[
       {
@@ -233,26 +242,27 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/steps.png',
-      alt: 'Steps image',
+      src: stepsImage,
+      alt: 'Steps image'
     }}
   />
 
-  <Hero
-    >
-      <Fragment slot="title">
-        Demo of Bond Health's Platform
-      </Fragment>
+  <!-- Demo Widget ****************** -->
 
-      <Fragment slot="subtitle">
-        Here, we show how a clinical research coordinator may leverage our platform for automated/improved screening and end-to-end patient tracking throughout the recruitment and enrollment process.
-      </Fragment>
+  <Hero id="demo">
+    <Fragment slot="title">
+      Demo of Bond Health's Platform
+    </Fragment>
 
-      <Fragment slot="image">
-        <YouTube id="uY7K3cN08_s" posterQuality="max" title="Bond Health Platform Demo" />
-        <style is:inline>lite-youtube { margin: 0 auto; max-width: 100%; }</style>
-      </Fragment>
-    </Hero>
+    <Fragment slot="subtitle">
+      Here, we show how a clinical research coordinator may leverage our platform for automated/improved screening and end-to-end patient tracking throughout the recruitment and enrollment process.
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="uY7K3cN08_s" posterQuality="max" title="Bond Health Platform Demo" />
+      <style is:inline>lite-youtube { margin: 0 auto; max-width: 100%; }</style>
+    </Fragment>
+  </Hero>
 
   <!-- Features2 Widget ************** -->
 
