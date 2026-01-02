@@ -11,7 +11,7 @@ export default function Moat() {
           <p className="text-bond-accent font-semibold text-sm uppercase tracking-wide mb-4">
             How it works
           </p>
-          <h2 className="heading-lg text-white mb-6">
+          <h2 className="heading-lg mb-6" style={{ color: 'white' }}>
             A clinical knowledge graph that compounds.
           </h2>
           <p className="text-gray-400 text-lg">
