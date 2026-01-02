@@ -1,0 +1,88 @@
+# Bond Health - LLM Context File
+# https://bondtrials.com
+
+## Company Overview
+Bond Health enables hyper-accurate clinical trial patient recruitment using AI. We help research sites and health systems enroll the right patients faster.
+
+## What We Do
+Bond provides an end-to-end AI-powered platform for clinical trial patient recruitment:
+
+1. **Identify** - LLM-based EHR screening
+   - Automatically screen electronic health records to find eligible patients
+   - Ranked patient matches with evidence and traceability
+   - Works with Epic, Cerner, and other EHR systems via FHIR
+
+2. **Engage** - Voice agents for pre-screening & scheduling
+   - Automated patient outreach via voice AI
+   - Pre-screening conversations to confirm interest and basic eligibility
+   - Scheduling coordination with research site calendars
+
+3. **Consent** - AI-powered informed consent
+   - Plain-language consent support for patients
+   - AI chatbot to answer patient questions
+   - Escalation to staff when needed
+
+## Key Metrics
+- Up to 3x faster enrollment compared to traditional methods
+- 90%+ matching accuracy for patient eligibility
+- 4-6 weeks typical implementation timeline
+
+## Technology
+- Clinical knowledge graph with 1.6M nodes
+- LLM trained on controlled clinical ontology
+- FHIR/HL7 integration with major EHR systems
+- HIPAA-aligned operations with BAA available
+
+## Target Customers
+- Research sites and health systems running clinical trials
+- Contract Research Organizations (CROs)
+- Pharmaceutical and biotech sponsors
+
+## Pricing Model
+Two-part pricing aligned with enrollment:
+1. Enrollment Success Fee - Performance-based, paid per randomized patient
+2. Platform + Integration Fee - Fixed fee covering EHR integration and operations
+
+## Frequently Asked Questions
+
+Q: How does Bond Health connect to EHR data?
+A: Bond Health integrates with major EHRs (including Epic and Cerner) using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 4-6 weeks depending on site IT review and interface method.
+
+Q: How does Bond Health validate trial eligibility logic?
+A: Bond Health configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. Bond Health provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.
+
+Q: How does Bond Health's voice agent handle PHI?
+A: Bond Health's voice agents follow HIPAA-aligned practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.
+
+Q: What is Bond Health's implementation timeline?
+A: Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.
+
+Q: What is Bond Health's security posture?
+A: Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-compliant workflows for PHI.
+
+Q: What outcomes does Bond Health measure for research sites?
+A: Bond Health reports site-relevant outcomes including patients matched, patients contacted and pre-screened, patients consented, patients randomized (when available), time-to-enrollment, matching accuracy, screen failure rate signals, and coordinator hours saved. Bond Health provides real-time dashboards plus regular reporting for sponsors, CROs, and sites as needed.
+
+## Location
+Boston, MA, United States
+
+## Contact
+- Website: https://bondtrials.com
+- Demo booking: https://cal.com/rishabhgoel/bond-health-demo
+- LinkedIn: https://www.linkedin.com/company/bondtrials/
+
+## Open Positions
+- ML/AI Engineer (Boston, MA)
+- Full-Stack Engineer (Boston, MA)
+- Data Engineer (Boston, MA)
+- Voice AI Engineer (Boston, MA)
+
+## Partners
+- Canvass Clinical Research Services
+- Commonwealth Pain and Spine Clinic
+- MRCT - Brigham and Women's Hospital
+
+## Investors
+- Plug and Play Tech Centre
+- CEAS Investments
+
