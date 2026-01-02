@@ -236,7 +236,7 @@ const jsonLd = {
           name: "What is Bond Health's security posture?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-compliant workflows for PHI.",
+            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-aligned workflows for PHI.",
           },
         },
         {

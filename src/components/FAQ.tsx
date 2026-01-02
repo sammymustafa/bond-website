@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: `What is ${BRAND}'s security posture?`,
-    answer: `${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} can sign BAAs and is designed to support HIPAA-compliant workflows for PHI.`,
+    answer: `${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} can sign BAAs and is designed to support HIPAA-aligned workflows for PHI.`,
   },
   {
     question: `What outcomes does ${BRAND} measure for research sites?`,
