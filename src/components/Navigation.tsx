@@ -37,7 +37,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <Image
-              src="/images/logo/Bond health - transparent logo.png"
+              src="/images/logo/bond-health-transparent-logo.png"
               alt="Bond Health"
               width={72}
               height={72}

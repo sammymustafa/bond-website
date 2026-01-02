@@ -9,11 +9,11 @@ const partners = [
   },
   { 
     name: "Commonwealth Pain and Spine Clinic", 
-    logo: "/images/partners/commonwealth pain and spine clinic logo.png",
+    logo: "/images/partners/commonwealth-pain-spine-clinic-logo.png",
   },
   { 
     name: "MRCT - Brigham and Women's Hospital", 
-    logo: "/images/partners/MRCT Logo.png",
+    logo: "/images/partners/MRCT-Logo.png",
   },
 ];
 
