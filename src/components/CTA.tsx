@@ -11,7 +11,7 @@ export default function CTA() {
       <div className="container-md px-6 text-center">
         {/* Content */}
         <p className="text-bond-accent font-semibold mb-4">Ready to get started?</p>
-        <h2 className="heading-lg text-white mb-6">
+        <h2 className="heading-lg mb-6" style={{ color: 'white' }}>
           Enroll patients faster.
         </h2>
         <p className="text-gray-400 text-lg max-w-xl mx-auto mb-10">
