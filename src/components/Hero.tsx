@@ -7,10 +7,10 @@ const supporters = [
   { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png" },
   { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp" },
   { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png" },
-  { name: "MIT Sandbox", logo: "/images/supporters/MIT Sandbox-Logo-Square-300dpi-nowhitespace.webp" },
+  { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp" },
   { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png" },
   { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp" },
-  { name: "UC Launch", logo: "/images/supporters/UC Launch logo.avif" },
+  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif" },
 ];
 
 export default function Hero() {
