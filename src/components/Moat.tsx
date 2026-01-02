@@ -1,6 +1,6 @@
 "use client";
 
-import { Database, FileText, Brain, Search, Phone, FileCheck, ArrowRight } from "lucide-react";
+import { Database, FileText, Brain, Search, Phone, FileCheck, ArrowRight, Calendar } from "lucide-react";
 
 export default function Moat() {
   return (
@@ -187,6 +187,19 @@ export default function Moat() {
                 <p className="text-[10px] text-gray-400">Scalable automation & reduced manual burden</p>
               </div>
             </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-12 text-center">
+            <a
+              href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-900 font-semibold rounded-full transition-all duration-200 hover:bg-gray-100 hover:shadow-lg"
+            >
+              <Calendar className="w-4 h-4" />
+              Schedule a technical deep-dive
+            </a>
           </div>
 
         </div>

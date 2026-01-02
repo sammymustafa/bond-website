@@ -1,6 +1,6 @@
 "use client";
 
-import { TrendingUp, Target, Clock, Users } from "lucide-react";
+import { TrendingUp, Target, Clock, Users, ArrowRight } from "lucide-react";
 
 const results = [
   {
@@ -80,6 +80,19 @@ export default function Results() {
               - Research coordinator, academic medical center, oncology trial
             </p>
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-12 text-center">
+          <a
+            href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Get similar results
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 
 const funnelSteps = [
   "Patient identification",
@@ -28,7 +28,7 @@ export default function FullFunnel() {
             </p>
 
             {/* Funnel Checklist */}
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {funnelSteps.map((step) => (
                 <div
                   key={step}
@@ -41,6 +41,17 @@ export default function FullFunnel() {
                 </div>
               ))}
             </div>
+
+            {/* CTA */}
+            <a
+              href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Book a demo
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
 
           {/* Visual - Funnel Diagram */}
