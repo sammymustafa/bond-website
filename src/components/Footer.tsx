@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <Image
-                src="/images/logo/Bond health - transparent logo.png"
+                src="/images/logo/bond-health-transparent-logo.png"
                 alt="Bond Health"
                 width={72}
                 height={72}
