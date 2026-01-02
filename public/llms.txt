@@ -58,7 +58,7 @@ Q: What is Bond Health's implementation timeline?
 A: Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.
 
 Q: What is Bond Health's security posture?
-A: Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-compliant workflows for PHI.
+A: Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-aligned workflows for PHI.
 
 Q: What outcomes does Bond Health measure for research sites?
 A: Bond Health reports site-relevant outcomes including patients matched, patients contacted and pre-screened, patients consented, patients randomized (when available), time-to-enrollment, matching accuracy, screen failure rate signals, and coordinator hours saved. Bond Health provides real-time dashboards plus regular reporting for sponsors, CROs, and sites as needed.
