@@ -76,7 +76,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
       );
       const cc = encodeURIComponent(email);
       
-      window.location.href = `mailto:rishabh@bondtrials.com?cc=${cc}&subject=${subject}&body=${body}`;
+      window.location.href = `mailto:hello@bondtrials.com?cc=${cc}&subject=${subject}&body=${body}`;
       
       setIsSubmitted(true);
       setIsSubmitting(false);
