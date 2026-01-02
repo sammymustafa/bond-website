@@ -108,6 +108,19 @@ export default function Pillars() {
             <span className="text-sm font-medium">Consent</span>
           </div>
         </div>
+
+        {/* CTA */}
+        <div className="mt-12 text-center">
+          <a
+            href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            See it in action
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
       </div>
     </section>
   );
