@@ -1,0 +1,8 @@
+# Security Policy for Bond Health
+# https://bondtrials.com
+
+Contact: https://bondtrials.com/#contact
+Preferred-Languages: en
+Canonical: https://bondtrials.com/.well-known/security.txt
+Policy: https://bondtrials.com/security
+

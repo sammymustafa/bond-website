@@ -1,2 +1,40 @@
+# robots.txt for Bond Health
+# https://bondtrials.com
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://bondtrials.com/sitemap.xml
+
+# LLM Context File (for AI/LLM crawlers)
+# See: https://bondtrials.com/llms.txt
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow all AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+

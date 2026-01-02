@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Bond Health",
+  "name_for_model": "bond_health",
+  "description_for_human": "AI-powered clinical trial patient recruitment platform",
+  "description_for_model": "Bond Health is a healthcare technology company that provides AI-powered clinical trial patient recruitment. They offer LLM-based EHR screening to identify eligible patients, voice agents for pre-screening and scheduling, and AI-powered informed consent tools. Key metrics: up to 3x faster enrollment, 90%+ matching accuracy. They work with research sites, CROs, and pharmaceutical sponsors. Location: Boston, MA. Contact: https://bondtrials.com",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://bondtrials.com/openapi.yaml"
+  },
+  "logo_url": "https://bondtrials.com/images/logo/Bond%20health.png",
+  "contact_email": "contact@bondtrials.com",
+  "legal_info_url": "https://bondtrials.com/#privacy"
+}
+
