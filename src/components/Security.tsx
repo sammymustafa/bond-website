@@ -94,7 +94,7 @@ export default function Security() {
             <div className="mt-8 pt-6 border-t border-gray-100 text-center">
               <p className="text-sm text-gray-500">
                 Need security documentation?{" "}
-                <a href="mailto:rishabh@bondtrials.com" className="text-bond-primary font-medium hover:underline">
+                <a href="mailto:hello@bondtrials.com" className="text-bond-primary font-medium hover:underline">
                   Request our security package
                 </a>
               </p>
