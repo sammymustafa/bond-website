@@ -33,12 +33,12 @@ export default function Hero() {
             </h1>
 
             {/* Workflow description */}
-            <p className="text-lg md:text-xl text-gray-700 mb-4 animate-fade-up stagger-1">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-4 animate-fade-up stagger-1 pr-4">
               Automate EHR eligibility screening, outreach and scheduling, and consent tracking in one workflow.
             </p>
 
             {/* Subhead - Clean and decisive */}
-            <p className="text-lg md:text-xl text-gray-600 mb-8 animate-fade-up stagger-2">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 animate-fade-up stagger-2 pr-4">
               <strong className="text-gray-900">Less chart review. Fewer screen failures. Faster enrollment.</strong>
             </p>
 
@@ -63,31 +63,31 @@ export default function Hero() {
             </div>
 
             {/* Social Proof - Independent Testing */}
-            <div className="mb-4 animate-fade-up stagger-4">
-              <p className="text-gray-700">
+            <div className="mb-4 animate-fade-up stagger-4 pr-4">
+              <p className="text-sm sm:text-base text-gray-700">
                 Independent testing shows <strong className="text-gray-900">2-3x faster enrollment</strong> and <strong className="text-gray-900">&gt;90% matching accuracy</strong>.
               </p>
             </div>
 
             {/* Trust Row - Stronger visibility */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 animate-fade-up stagger-4">
-              <div className="flex items-center gap-1.5 text-sm text-gray-700 font-medium">
-                <Shield className="w-4 h-4 text-green-600" />
+            <div className="flex flex-wrap items-center gap-x-3 sm:gap-x-4 gap-y-2 animate-fade-up stagger-4">
+              <div className="flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-700 font-medium">
+                <Shield className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-600" />
                 <span>HIPAA-aligned</span>
               </div>
-              <div className="w-px h-4 bg-gray-300" />
-              <div className="flex items-center gap-1.5 text-sm text-gray-700 font-medium">
-                <Lock className="w-4 h-4 text-green-600" />
+              <div className="w-px h-3 sm:h-4 bg-gray-300 hidden sm:block" />
+              <div className="flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-700 font-medium">
+                <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-600" />
                 <span>BAA available</span>
               </div>
-              <div className="w-px h-4 bg-gray-300" />
-              <div className="flex items-center gap-1.5 text-sm text-gray-700 font-medium">
-                <FileCheck className="w-4 h-4 text-green-600" />
+              <div className="w-px h-3 sm:h-4 bg-gray-300 hidden sm:block" />
+              <div className="flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-700 font-medium">
+                <FileCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-600" />
                 <span>Audit logs</span>
               </div>
-              <div className="w-px h-4 bg-gray-300" />
-              <div className="flex items-center gap-1.5 text-sm text-gray-700 font-medium">
-                <span>FHIR integration</span>
+              <div className="w-px h-3 sm:h-4 bg-gray-300 hidden sm:block" />
+              <div className="flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm text-gray-700 font-medium">
+                <span>FHIR</span>
               </div>
             </div>
           </div>
