@@ -15,7 +15,7 @@ const supporters = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center pt-28 sm:pt-32 pb-12 sm:pb-16 overflow-hidden bg-gradient-hero">
       <div className="container-lg px-4 sm:px-6 relative z-10 overflow-x-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
