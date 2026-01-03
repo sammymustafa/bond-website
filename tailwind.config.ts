@@ -49,6 +49,9 @@ export default {
       borderRadius: {
         "4xl": "2rem",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],
