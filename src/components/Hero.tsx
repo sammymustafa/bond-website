@@ -58,25 +58,24 @@ export default function Hero() {
             </div>
 
             {/* Security Micro-Row - Credibility anchor */}
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 py-4 animate-fade-up stagger-4">
-              <div className="flex items-center gap-1.5 text-sm text-gray-500">
-                <Shield className="w-3.5 h-3.5 text-green-600" />
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 py-4 animate-fade-up stagger-4">
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500">
+                <Shield className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
                 <span>HIPAA-aligned</span>
               </div>
-              <div className="w-px h-3.5 bg-gray-200" />
-              <div className="flex items-center gap-1.5 text-sm text-gray-500">
-                <Lock className="w-3.5 h-3.5 text-green-600" />
+              <div className="hidden sm:block w-px h-3.5 bg-gray-200" />
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500">
+                <Lock className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
                 <span>BAA available</span>
               </div>
-              <div className="w-px h-3.5 bg-gray-200" />
-              <div className="flex items-center gap-1.5 text-sm text-gray-500">
-                <FileCheck className="w-3.5 h-3.5 text-green-600" />
+              <div className="hidden sm:block w-px h-3.5 bg-gray-200" />
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500">
+                <FileCheck className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
                 <span>Audit logs</span>
               </div>
-              <div className="w-px h-3.5 bg-gray-200" />
-              <div className="flex items-center gap-1.5 text-sm text-gray-500">
-                <span className="font-medium text-gray-600">EHR integration via FHIR</span>
-              </div>
+            </div>
+            <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500 animate-fade-up stagger-4">
+              <span className="font-medium text-gray-600">EHR integration via FHIR</span>
             </div>
 
             {/* Social Proof - Independent Testing */}
@@ -88,105 +87,109 @@ export default function Hero() {
           </div>
 
           {/* Right - Product Visual: Real Workflow Artifact */}
-          <div className="relative animate-fade-up stagger-2">
+          <div className="relative animate-fade-up stagger-2 mt-8 lg:mt-0">
             {/* Main Card - Realistic Dashboard */}
             <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200/60 overflow-hidden">
               {/* App Header */}
-              <div className="flex items-center justify-between px-5 py-3 bg-gray-50 border-b border-gray-100">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-bond-primary to-bond-accent flex items-center justify-center">
-                    <span className="font-display font-bold text-white text-xs">B</span>
+              <div className="flex items-center justify-between px-3 sm:px-5 py-2.5 sm:py-3 bg-gray-50 border-b border-gray-100">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-gradient-to-br from-bond-primary to-bond-accent flex items-center justify-center">
+                    <span className="font-display font-bold text-white text-[10px] sm:text-xs">B</span>
                   </div>
-                  <span className="font-semibold text-gray-800 text-sm">Bond</span>
+                  <span className="font-semibold text-gray-800 text-xs sm:text-sm">Bond</span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="hidden sm:flex items-center gap-3">
                   <span className="text-xs text-gray-500">Connected via FHIR</span>
                   <span className="text-xs text-gray-400">·</span>
                   <span className="text-xs text-gray-400">Synced 2h ago</span>
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                 </div>
+                <div className="flex sm:hidden items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-[10px] text-gray-400">Connected</span>
+                </div>
               </div>
 
               {/* Dashboard Content */}
-              <div className="p-5">
+              <div className="p-3 sm:p-5">
                 {/* Section: Patient Eligibility Review */}
-                <div className="mb-5">
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Eligibility Screening</h3>
-                    <span className="px-2.5 py-1 text-sm font-semibold text-bond-primary bg-bond-primary/10 rounded-full">47 matched</span>
+                <div className="mb-4 sm:mb-5">
+                  <div className="flex items-center justify-between mb-2.5 sm:mb-3">
+                    <h3 className="text-[10px] sm:text-xs font-semibold text-gray-500 uppercase tracking-wide">Eligibility Screening</h3>
+                    <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 text-xs sm:text-sm font-semibold text-bond-primary bg-bond-primary/10 rounded-full">47 matched</span>
                   </div>
 
                   {/* Patient Cards with Real Data */}
-                  <div className="space-y-2.5">
+                  <div className="space-y-2">
                     {/* Eligible Patient */}
-                    <div className="p-3.5 rounded-xl bg-green-50/80 border border-green-100">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-green-600" />
-                          <span className="font-semibold text-gray-900 text-sm">Patient #1847</span>
-                          <span className="px-1.5 py-0.5 text-[11px] font-semibold bg-green-100 text-green-700 rounded">ELIGIBLE</span>
+                    <div className="p-2.5 sm:p-3.5 rounded-lg sm:rounded-xl bg-green-50/80 border border-green-100">
+                      <div className="flex items-start sm:items-center justify-between mb-1.5 sm:mb-2">
+                        <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                          <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-600 flex-shrink-0" />
+                          <span className="font-semibold text-gray-900 text-xs sm:text-sm">Patient #1847</span>
+                          <span className="px-1 py-0.5 sm:px-1.5 text-[9px] sm:text-[11px] font-semibold bg-green-100 text-green-700 rounded">ELIGIBLE</span>
                         </div>
-                        <span className="text-sm text-gray-600 font-medium">A1c: 6.8%</span>
+                        <span className="text-xs sm:text-sm text-gray-600 font-medium ml-2">A1c: 6.8%</span>
                       </div>
-                      <p className="text-sm text-gray-600 mb-2">BMI 29.2 · Age 54 · Last visit: 3 weeks ago</p>
+                      <p className="text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">BMI 29.2 · Age 54 · Last visit: 3 weeks ago</p>
                       <div className="flex items-center gap-2">
-                        <span className="flex items-center gap-1.5 text-sm font-medium text-green-700">
-                          <Calendar className="w-3.5 h-3.5" />
+                        <span className="flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium text-green-700">
+                          <Calendar className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                           Scheduled: Jan 8
                         </span>
                       </div>
                     </div>
 
                     {/* In Outreach Patient */}
-                    <div className="p-3.5 rounded-xl bg-blue-50/80 border border-blue-100">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <Phone className="w-4 h-4 text-bond-primary" />
-                          <span className="font-semibold text-gray-900 text-sm">Patient #2103</span>
-                          <span className="px-1.5 py-0.5 text-[11px] font-semibold bg-blue-100 text-blue-700 rounded">OUTREACH</span>
+                    <div className="p-2.5 sm:p-3.5 rounded-lg sm:rounded-xl bg-blue-50/80 border border-blue-100">
+                      <div className="flex items-start sm:items-center justify-between mb-1.5 sm:mb-2">
+                        <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                          <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-bond-primary flex-shrink-0" />
+                          <span className="font-semibold text-gray-900 text-xs sm:text-sm">Patient #2103</span>
+                          <span className="px-1 py-0.5 sm:px-1.5 text-[9px] sm:text-[11px] font-semibold bg-blue-100 text-blue-700 rounded">OUTREACH</span>
                         </div>
-                        <span className="text-sm text-gray-600 font-medium">A1c: 7.1%</span>
+                        <span className="text-xs sm:text-sm text-gray-600 font-medium ml-2">A1c: 7.1%</span>
                       </div>
-                      <p className="text-sm text-gray-600 mb-2">BMI 31.4 · Age 47 · Last visit: 2 weeks ago</p>
-                      <div className="flex items-center gap-3">
-                        <span className="flex items-center gap-1.5 text-sm font-medium text-blue-700">
-                          <Clock className="w-3.5 h-3.5" />
+                      <p className="text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">BMI 31.4 · Age 47 · Last visit: 2 weeks ago</p>
+                      <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                        <span className="flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium text-blue-700">
+                          <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                           Voice call: Today 2pm
                         </span>
-                        <span className="text-sm text-gray-500">Attempt 2 of 3</span>
+                        <span className="text-xs sm:text-sm text-gray-500">Attempt 2 of 3</span>
                       </div>
                     </div>
 
-                    {/* Excluded Patient */}
-                    <div className="p-3.5 rounded-xl bg-gray-50 border border-gray-200">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <XCircle className="w-4 h-4 text-gray-500" />
-                          <span className="font-semibold text-gray-700 text-sm">Patient #1562</span>
-                          <span className="px-1.5 py-0.5 text-[11px] font-semibold bg-gray-200 text-gray-600 rounded">EXCLUDED</span>
+                    {/* Excluded Patient - Hide on very small screens to reduce clutter */}
+                    <div className="hidden xs:block p-2.5 sm:p-3.5 rounded-lg sm:rounded-xl bg-gray-50 border border-gray-200">
+                      <div className="flex items-start sm:items-center justify-between mb-1.5 sm:mb-2">
+                        <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                          <XCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-500 flex-shrink-0" />
+                          <span className="font-semibold text-gray-700 text-xs sm:text-sm">Patient #1562</span>
+                          <span className="px-1 py-0.5 sm:px-1.5 text-[9px] sm:text-[11px] font-semibold bg-gray-200 text-gray-600 rounded">EXCLUDED</span>
                         </div>
-                        <span className="text-sm text-gray-500 font-medium">A1c: 5.2%</span>
+                        <span className="text-xs sm:text-sm text-gray-500 font-medium ml-2">A1c: 5.2%</span>
                       </div>
-                      <p className="text-sm text-gray-600">
-                        <span className="text-red-600 font-medium">Reason:</span> A1c below threshold (5.7%), last visit 14 months ago
+                      <p className="text-xs sm:text-sm text-gray-600">
+                        <span className="text-red-600 font-medium">Reason:</span> A1c below threshold (5.7%)
                       </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Stats Summary */}
-                <div className="grid grid-cols-3 gap-3 pt-4 border-t border-gray-100">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-gray-100">
                   <div className="text-center">
-                    <p className="text-lg font-bold text-gray-900">32</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
+                    <p className="text-base sm:text-lg font-bold text-gray-900">32</p>
+                    <p className="text-[8px] sm:text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
                   </div>
                   <div className="text-center border-x border-gray-100">
-                    <p className="text-lg font-bold text-bond-primary">18</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Scheduled</p>
+                    <p className="text-base sm:text-lg font-bold text-bond-primary">18</p>
+                    <p className="text-[8px] sm:text-[10px] text-gray-500 uppercase tracking-wide">Scheduled</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-lg font-bold text-green-600">12</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Consented</p>
+                    <p className="text-base sm:text-lg font-bold text-green-600">12</p>
+                    <p className="text-[8px] sm:text-[10px] text-gray-500 uppercase tracking-wide">Consented</p>
                   </div>
                 </div>
               </div>

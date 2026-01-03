@@ -65,12 +65,12 @@ export default function FAQ() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="container-md px-6">
+      <div className="container-md px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="eyebrow mb-4">FAQ</p>
-          <h2 className="heading-lg mb-4">Common questions.</h2>
-          <p className="body-lg">Quick answers for research teams evaluating {BRAND}.</p>
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+          <p className="eyebrow mb-3 sm:mb-4">FAQ</p>
+          <h2 className="heading-lg mb-3 sm:mb-4">Common questions.</h2>
+          <p className="body-lg px-2">Quick answers for research teams evaluating {BRAND}.</p>
         </div>
 
         {/* FAQ List */}
