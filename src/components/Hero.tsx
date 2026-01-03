@@ -15,8 +15,8 @@ const supporters = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-hero">
-      <div className="container-lg px-6 relative z-10">
+    <section className="relative min-h-screen flex items-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden bg-gradient-hero">
+      <div className="container-lg px-4 sm:px-6 relative z-10 overflow-x-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="max-w-xl">
@@ -26,14 +26,14 @@ export default function Hero() {
             </p>
 
             {/* Headline - More distinctive and ownable */}
-            <h1 className="font-display font-bold text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.08] tracking-[-0.03em] text-gray-900 mb-6 animate-fade-up stagger-1">
+            <h1 className="font-display font-bold text-[clamp(1.75rem,5vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-gray-900 mb-4 sm:mb-6 animate-fade-up stagger-1 pr-2">
               Enroll the right patients
               <br />
               <span className="gradient-text">in weeks, not months.</span>
             </h1>
 
             {/* Subhead - Clean and decisive */}
-            <p className="text-lg md:text-xl text-gray-600 mb-8 animate-fade-up stagger-2">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 animate-fade-up stagger-2 pr-2">
               <strong className="text-gray-900">Less chart review. Fewer screen failures. Faster enrollment.</strong>
             </p>
 
@@ -79,17 +79,17 @@ export default function Hero() {
             </div>
 
             {/* Social Proof - Independent Testing */}
-            <div className="mt-6 pt-6 border-t border-gray-100 animate-fade-up stagger-4">
-              <p className="text-gray-700">
+            <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-100 animate-fade-up stagger-4">
+              <p className="text-sm sm:text-base text-gray-700 pr-2">
                 Independent testing shows <strong className="text-gray-900">2-3x faster enrollment</strong> and <strong className="text-gray-900">&gt;90% matching accuracy</strong>.
               </p>
             </div>
           </div>
 
           {/* Right - Product Visual: Real Workflow Artifact */}
-          <div className="relative animate-fade-up stagger-2 mt-8 lg:mt-0">
+          <div className="relative animate-fade-up stagger-2 mt-8 lg:mt-0 w-full max-w-full">
             {/* Main Card - Realistic Dashboard */}
-            <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200/60 overflow-hidden">
+            <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl border border-gray-200/60 overflow-hidden mx-auto max-w-sm sm:max-w-none">
               {/* App Header */}
               <div className="flex items-center justify-between px-3 sm:px-5 py-2.5 sm:py-3 bg-gray-50 border-b border-gray-100">
                 <div className="flex items-center gap-2">
@@ -195,18 +195,36 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Subtle floating accents - toned down */}
-            <div className="absolute -top-6 -right-6 w-20 h-20 bg-bond-accent/8 rounded-full blur-2xl" />
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-bond-primary/8 rounded-full blur-2xl" />
+            {/* Subtle floating accents - toned down, hidden on mobile */}
+            <div className="hidden sm:block absolute -top-6 -right-6 w-20 h-20 bg-bond-accent/8 rounded-full blur-2xl" />
+            <div className="hidden sm:block absolute -bottom-4 -left-4 w-24 h-24 bg-bond-primary/8 rounded-full blur-2xl" />
           </div>
         </div>
 
         {/* Supporters Section - Renamed and normalized */}
-        <div className="mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
-          <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-8">Supported by</p>
+        <div className="mt-12 sm:mt-20 pt-6 sm:pt-8 border-t border-gray-100 animate-fade-up stagger-4">
+          <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-6 sm:mb-8">Supported by</p>
           
-          {/* Scrolling Logo Strip - Grayscale, normalized sizing */}
-          <div className="relative overflow-hidden">
+          {/* Mobile: Grid layout, Desktop: Scrolling */}
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:hidden gap-4 sm:gap-6 items-center justify-items-center px-2">
+            {supporters.slice(0, 6).map((supporter) => (
+              <div 
+                key={supporter.name}
+                className="h-8 w-full flex items-center justify-center opacity-60 grayscale"
+              >
+                <Image
+                  src={supporter.logo}
+                  alt={supporter.name}
+                  width={100}
+                  height={32}
+                  className="h-6 sm:h-8 w-auto object-contain max-w-[80px] sm:max-w-[100px]"
+                />
+              </div>
+            ))}
+          </div>
+          
+          {/* Desktop: Scrolling Logo Strip */}
+          <div className="hidden md:block relative overflow-hidden">
             <div className="flex animate-scroll gap-20 items-center">
               {[...supporters, ...supporters].map((supporter, index) => (
                 <div 
@@ -229,8 +247,8 @@ export default function Hero() {
       </div>
 
       {/* Background Decorations - More subtle */}
-      <div className="absolute top-1/4 right-0 w-80 h-80 bg-bond-primary/3 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-56 h-56 bg-bond-accent/3 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-40 sm:w-80 h-40 sm:h-80 bg-bond-primary/3 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-32 sm:w-56 h-32 sm:h-56 bg-bond-accent/3 rounded-full blur-3xl pointer-events-none" />
     </section>
   );
 }
