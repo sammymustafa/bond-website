@@ -35,16 +35,16 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
             <Image
               src="/images/logo/bond-health-transparent-logo.png"
               alt="Bond Health"
-              width={72}
-              height={72}
-              className="h-14 w-14 md:h-16 md:w-16 object-contain"
+              width={80}
+              height={80}
+              className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain"
               priority
             />
-            <span className="font-display font-bold text-2xl md:text-3xl text-gray-900">Bond Health</span>
+            <span className="font-display font-bold text-xl sm:text-2xl md:text-3xl text-gray-900">Bond Health</span>
           </Link>
 
           {/* Desktop Navigation */}

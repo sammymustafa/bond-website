@@ -42,9 +42,9 @@ export default function Footer() {
               <Image
                 src="/images/logo/bond-health-transparent-logo.png"
                 alt="Bond Health"
-                width={72}
-                height={72}
-                className="h-12 w-12 sm:h-16 sm:w-16 object-contain"
+                width={80}
+                height={80}
+                className="h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18 object-contain"
               />
               <span className="font-display font-bold text-2xl sm:text-3xl text-gray-900">Bond Health</span>
             </Link>
