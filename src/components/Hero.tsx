@@ -26,11 +26,16 @@ export default function Hero() {
             </p>
 
             {/* Headline - More distinctive and ownable */}
-            <h1 className="font-display font-bold text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.08] tracking-[-0.03em] text-gray-900 mb-6 animate-fade-up stagger-1">
+            <h1 className="font-display font-bold text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.08] tracking-[-0.03em] text-gray-900 mb-4 animate-fade-up stagger-1">
               Enroll the right patients
               <br />
               <span className="gradient-text">in weeks, not months.</span>
             </h1>
+
+            {/* Workflow description */}
+            <p className="text-lg md:text-xl text-gray-700 mb-4 animate-fade-up stagger-1">
+              Automate EHR eligibility screening, outreach and scheduling, and consent tracking in one workflow.
+            </p>
 
             {/* Subhead - Clean and decisive */}
             <p className="text-lg md:text-xl text-gray-600 mb-8 animate-fade-up stagger-2">
@@ -98,7 +103,7 @@ export default function Hero() {
                     <span className="font-display font-bold text-white text-xs">B</span>
                   </div>
                   <span className="font-semibold text-gray-800 text-sm">Bond</span>
-                </div>
+                  </div>
                 <div className="flex items-center gap-3">
                   <span className="text-xs text-gray-500">Connected via FHIR</span>
                   <span className="text-xs text-gray-400">·</span>
@@ -176,15 +181,15 @@ export default function Hero() {
 
                 {/* Stats Summary */}
                 <div className="grid grid-cols-3 gap-3 pt-4 border-t border-gray-100">
-                  <div className="text-center">
+                <div className="text-center">
                     <p className="text-lg font-bold text-gray-900">32</p>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
                   </div>
                   <div className="text-center border-x border-gray-100">
                     <p className="text-lg font-bold text-bond-primary">18</p>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wide">Scheduled</p>
-                  </div>
-                  <div className="text-center">
+                </div>
+                <div className="text-center">
                     <p className="text-lg font-bold text-green-600">12</p>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wide">Consented</p>
                   </div>
