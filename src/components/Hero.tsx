@@ -43,14 +43,14 @@ export default function Hero() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 animate-fade-up stagger-3">
+            <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 mb-5 sm:mb-6 animate-fade-up stagger-3">
               <a
                 href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Book a demo
+                Request a pilot
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -63,31 +63,31 @@ export default function Hero() {
             </div>
 
             {/* Social Proof - Independent Testing */}
-            <div className="mb-4 sm:mb-5 animate-fade-up stagger-4">
+            <div className="mb-3 animate-fade-up stagger-4">
               <p className="text-sm sm:text-base text-gray-700 pr-2">
                 Independent testing shows <strong className="text-gray-900">2-3x faster enrollment</strong> and <strong className="text-gray-900">&gt;90% matching accuracy</strong>.
               </p>
             </div>
 
-            {/* Security Micro-Row - Credibility anchor */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 py-3 sm:py-4 animate-fade-up stagger-4">
-              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500">
-                <Shield className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
+            {/* Security Micro-Row - Lighter, smaller */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 animate-fade-up stagger-4">
+              <div className="flex items-center gap-1 text-[11px] sm:text-xs text-gray-400">
+                <Shield className="w-3 h-3 text-gray-400 flex-shrink-0" />
                 <span>HIPAA-aligned</span>
               </div>
-              <div className="hidden sm:block w-px h-3.5 bg-gray-300" />
-              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500">
-                <Lock className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
+              <div className="hidden sm:block w-px h-3 bg-gray-200" />
+              <div className="flex items-center gap-1 text-[11px] sm:text-xs text-gray-400">
+                <Lock className="w-3 h-3 text-gray-400 flex-shrink-0" />
                 <span>BAA available</span>
               </div>
-              <div className="hidden sm:block w-px h-3.5 bg-gray-300" />
-              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-500">
-                <FileCheck className="w-3.5 h-3.5 text-green-600 flex-shrink-0" />
+              <div className="hidden sm:block w-px h-3 bg-gray-200" />
+              <div className="flex items-center gap-1 text-[11px] sm:text-xs text-gray-400">
+                <FileCheck className="w-3 h-3 text-gray-400 flex-shrink-0" />
                 <span>Audit logs</span>
               </div>
-              <div className="hidden sm:block w-px h-3.5 bg-gray-300" />
-              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-600">
-                <span className="font-medium">EHR integration via FHIR</span>
+              <div className="hidden sm:block w-px h-3 bg-gray-200" />
+              <div className="flex items-center gap-1 text-[11px] sm:text-xs text-gray-400">
+                <span>FHIR integration</span>
               </div>
             </div>
           </div>
