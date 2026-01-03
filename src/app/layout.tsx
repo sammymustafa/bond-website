@@ -260,8 +260,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/images/logo/Bond health.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
