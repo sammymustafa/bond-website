@@ -32,7 +32,12 @@ export default function Hero() {
               <span className="gradient-text">in weeks, not months.</span>
             </h1>
 
-            {/* Subhead - Clean and decisive */}
+            {/* Subhead - What we do */}
+            <p className="text-sm sm:text-base text-gray-500 mb-3 animate-fade-up stagger-2 pr-2">
+              EHR screening → outreach & scheduling → consent, in one workflow.
+            </p>
+            
+            {/* Value prop */}
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 animate-fade-up stagger-2 pr-2">
               <strong className="text-gray-900">Less chart review. Fewer screen failures. Faster enrollment.</strong>
             </p>
