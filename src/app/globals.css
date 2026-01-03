@@ -67,7 +67,7 @@ body {
 .heading-lg {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 4vw, 3rem);
   line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--bond-gray-900);
@@ -90,7 +90,7 @@ body {
 }
 
 .body-lg {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.7;
   color: var(--bond-gray-600);
 }
@@ -117,11 +117,11 @@ body {
 
 /* Section Spacing */
 .section {
-  @apply py-20 md:py-28 lg:py-32 px-6;
+  @apply py-12 sm:py-20 md:py-28 lg:py-32 px-4 sm:px-6;
 }
 
 .section-sm {
-  @apply py-12 md:py-16 px-6;
+  @apply py-10 sm:py-12 md:py-16 px-4 sm:px-6;
 }
 
 /* Container */
@@ -151,7 +151,8 @@ body {
 /* Buttons */
 .btn-primary {
   @apply inline-flex items-center justify-center gap-2
-         px-6 py-3 bg-bond-primary text-white font-semibold rounded-full
+         px-4 py-2.5 sm:px-6 sm:py-3 bg-bond-primary text-white font-semibold rounded-full
+         text-sm sm:text-base
          transition-all duration-200
          hover:bg-bond-primary-dark hover:shadow-lg hover:shadow-bond-primary/25
          active:scale-[0.98];
@@ -159,7 +160,8 @@ body {
 
 .btn-secondary {
   @apply inline-flex items-center justify-center gap-2
-         px-6 py-3 bg-white text-bond-gray-700 font-medium rounded-full
+         px-4 py-2.5 sm:px-6 sm:py-3 bg-white text-bond-gray-700 font-medium rounded-full
+         text-sm sm:text-base
          border border-gray-200
          transition-all duration-200
          hover:bg-gray-50 hover:border-gray-300
@@ -298,13 +300,13 @@ body {
 }
 
 .faq-question {
-  @apply text-lg font-semibold text-gray-900 cursor-pointer
-         flex items-center justify-between gap-4
+  @apply text-base sm:text-lg font-semibold text-gray-900 cursor-pointer
+         flex items-center justify-between gap-3 sm:gap-4
          hover:text-bond-primary transition-colors;
 }
 
 .faq-answer {
-  @apply text-gray-600 leading-relaxed;
+  @apply text-sm sm:text-base text-gray-600 leading-relaxed;
 }
 
 /* Animations */

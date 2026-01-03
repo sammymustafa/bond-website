@@ -8,13 +8,13 @@ export default function CTA() {
   
   return (
     <section id="contact" className="section bg-gray-900">
-      <div className="container-md px-6 text-center">
+      <div className="container-md px-4 sm:px-6 text-center">
         {/* Content */}
-        <p className="text-bond-accent font-semibold mb-4">Ready to get started?</p>
-        <h2 className="heading-lg mb-6" style={{ color: 'white' }}>
+        <p className="text-bond-accent font-semibold text-sm sm:text-base mb-3 sm:mb-4">Ready to get started?</p>
+        <h2 className="heading-lg mb-4 sm:mb-6" style={{ color: 'white' }}>
           Enroll patients faster.
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto mb-10">
+        <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-8 sm:mb-10 px-2">
           See how Bond can accelerate enrollment for your clinical trials 
           with a personalized demo.
         </p>
@@ -40,18 +40,18 @@ export default function CTA() {
         </div>
 
         {/* Quick Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mt-12 pt-8 border-t border-gray-800">
+        <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800">
           <div className="text-center">
-            <p className="text-2xl font-bold text-white">Up to 3×</p>
-            <p className="text-sm text-gray-500">faster enrollment</p>
+            <p className="text-lg sm:text-2xl font-bold text-white">Up to 3×</p>
+            <p className="text-xs sm:text-sm text-gray-500">faster enrollment</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-white">90%+</p>
-            <p className="text-sm text-gray-500">matching accuracy</p>
+            <p className="text-lg sm:text-2xl font-bold text-white">90%+</p>
+            <p className="text-xs sm:text-sm text-gray-500">matching accuracy</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-white">4-6 wks</p>
-            <p className="text-sm text-gray-500">implementation</p>
+            <p className="text-lg sm:text-2xl font-bold text-white">4-6 wks</p>
+            <p className="text-xs sm:text-sm text-gray-500">implementation</p>
           </div>
         </div>
       </div>

@@ -10,9 +10,9 @@ export default function Pricing() {
     <section id="pricing" className="section bg-gradient-section">
       <div className="container-md px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="eyebrow mb-4">Pricing</p>
-          <h2 className="heading-lg mb-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16 px-2">
+          <p className="eyebrow mb-3 sm:mb-4">Pricing</p>
+          <h2 className="heading-lg mb-3 sm:mb-4">
             Two-part pricing, aligned with enrollment.
           </h2>
           <p className="body-lg">

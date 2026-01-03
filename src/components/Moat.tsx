@@ -7,14 +7,14 @@ export default function Moat() {
     <section id="about" className="section bg-gray-900 text-white overflow-hidden">
       <div className="container-lg px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-bond-accent font-semibold text-sm uppercase tracking-wide mb-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+          <p className="text-bond-accent font-semibold text-xs sm:text-sm uppercase tracking-wide mb-3 sm:mb-4">
             How it works
           </p>
-          <h2 className="heading-lg mb-6" style={{ color: 'white' }}>
+          <h2 className="heading-lg mb-4 sm:mb-6" style={{ color: 'white' }}>
             A clinical knowledge graph that compounds.
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-base sm:text-lg px-2">
             Our AI is powered by a text-enriched biomedical knowledge graph built from 
             real clinical data, enabling traceable, retrieval-augmented inference.
           </p>
@@ -23,30 +23,30 @@ export default function Moat() {
         {/* Architecture Diagram */}
         <div className="relative max-w-5xl mx-auto">
           {/* Main Flow Container */}
-          <div className="grid md:grid-cols-[1fr_auto_1.5fr_auto_1fr] gap-4 md:gap-6 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1.5fr_auto_1fr] gap-6 md:gap-6 items-center">
             
             {/* Left: Inputs */}
-            <div className="space-y-4">
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-3 sm:gap-4">
               {/* Unstructured EHR Data */}
-              <div className="bg-gray-800/50 backdrop-blur rounded-2xl border border-gray-700/50 p-5">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center">
-                    <FileText className="w-5 h-5 text-purple-400" />
+              <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-3 sm:p-5">
+                <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
                   </div>
-                  <span className="text-sm font-semibold text-white">Unstructured EHR Data</span>
+                  <span className="text-xs sm:text-sm font-semibold text-white">EHR Data</span>
                 </div>
-                <p className="text-xs text-gray-500">Clinical notes, prescriptions, lab results</p>
+                <p className="text-[10px] sm:text-xs text-gray-500 hidden sm:block">Clinical notes, prescriptions, lab results</p>
               </div>
 
               {/* Structured Ontologies */}
-              <div className="bg-gray-800/50 backdrop-blur rounded-2xl border border-gray-700/50 p-5">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
-                    <Database className="w-5 h-5 text-blue-400" />
+              <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-3 sm:p-5">
+                <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                    <Database className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                   </div>
-                  <span className="text-sm font-semibold text-white">Biomedical Ontologies</span>
+                  <span className="text-xs sm:text-sm font-semibold text-white">Ontologies</span>
                 </div>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="hidden sm:flex flex-wrap gap-1.5">
                   {["Diseases", "Drugs", "Procedures", "Tissues"].map((item) => (
                     <span key={item} className="text-[10px] px-2 py-0.5 bg-gray-700/50 text-gray-400 rounded-full">
                       {item}
@@ -62,14 +62,14 @@ export default function Moat() {
             </div>
 
             {/* Center: Knowledge Graph */}
-            <div className="relative">
-              <div className="aspect-square max-w-xs mx-auto relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50 p-8">
+            <div className="relative order-first md:order-none">
+              <div className="aspect-square max-w-[180px] sm:max-w-xs mx-auto relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50 p-4 sm:p-8">
                 {/* Central Node */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
                     <div className="text-center">
-                      <p className="text-lg font-bold text-white">1.6M</p>
-                      <p className="text-[10px] text-white/80">nodes</p>
+                      <p className="text-sm sm:text-lg font-bold text-white">1.6M</p>
+                      <p className="text-[8px] sm:text-[10px] text-white/80">nodes</p>
                     </div>
                   </div>
                 </div>
@@ -158,33 +158,36 @@ export default function Moat() {
             </div>
 
             {/* Right: Outputs */}
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
               {/* Inference Engine Label */}
-              <div className="bg-gradient-to-r from-bond-primary/20 to-bond-accent/20 rounded-xl border border-bond-accent/30 p-4 mb-4">
+              <div className="bg-gradient-to-r from-bond-primary/20 to-bond-accent/20 rounded-lg sm:rounded-xl border border-bond-accent/30 p-3 sm:p-4 mb-2 sm:mb-4">
                 <div className="flex items-center gap-2 mb-1">
                   <Brain className="w-4 h-4 text-bond-accent" />
                   <span className="text-xs font-semibold text-white">Inference Engine</span>
                 </div>
-                <p className="text-[10px] text-gray-400">Traceable Retrieval-Augmented Inference</p>
+                <p className="text-[10px] text-gray-400 hidden sm:block">Traceable Retrieval-Augmented Inference</p>
               </div>
 
               {/* Apps */}
-              {[
-                { icon: Search, label: "Patient-to-Trial Matching", color: "text-blue-400" },
-                { icon: Phone, label: "Conversational Pre-screening", color: "text-emerald-400" },
-                { icon: FileCheck, label: "Informed Consent Support", color: "text-purple-400" },
-              ].map((app) => (
-                <div key={app.label} className="flex items-center gap-3 p-3 bg-gray-800/30 rounded-xl border border-gray-700/30">
-                  <app.icon className={`w-4 h-4 ${app.color}`} />
-                  <span className="text-xs text-gray-300">{app.label}</span>
-                </div>
-              ))}
+              <div className="grid grid-cols-3 md:grid-cols-1 gap-2 sm:gap-3">
+                {[
+                  { icon: Search, label: "Patient Matching", fullLabel: "Patient-to-Trial Matching", color: "text-blue-400" },
+                  { icon: Phone, label: "Pre-screening", fullLabel: "Conversational Pre-screening", color: "text-emerald-400" },
+                  { icon: FileCheck, label: "Consent", fullLabel: "Informed Consent Support", color: "text-purple-400" },
+                ].map((app) => (
+                  <div key={app.fullLabel} className="flex flex-col md:flex-row items-center md:items-center gap-1.5 sm:gap-3 p-2 sm:p-3 bg-gray-800/30 rounded-lg sm:rounded-xl border border-gray-700/30 text-center md:text-left">
+                    <app.icon className={`w-4 h-4 ${app.color} flex-shrink-0`} />
+                    <span className="text-[10px] sm:text-xs text-gray-300 hidden md:block">{app.fullLabel}</span>
+                    <span className="text-[10px] text-gray-300 md:hidden">{app.label}</span>
+                  </div>
+                ))}
+              </div>
 
               {/* Outcome */}
-              <div className="mt-4 p-3 bg-bond-accent/10 rounded-xl border border-bond-accent/20">
+              <div className="mt-2 sm:mt-4 p-2.5 sm:p-3 bg-bond-accent/10 rounded-lg sm:rounded-xl border border-bond-accent/20">
                 <p className="text-[10px] text-bond-accent font-semibold uppercase tracking-wide mb-1">Outcome</p>
                 <p className="text-xs text-white">90%+ Accuracy</p>
-                <p className="text-[10px] text-gray-400">Scalable automation & reduced manual burden</p>
+                <p className="text-[10px] text-gray-400 hidden sm:block">Scalable automation & reduced manual burden</p>
               </div>
             </div>
           </div>
