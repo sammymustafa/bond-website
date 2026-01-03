@@ -16,10 +16,10 @@ const supporters = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-hero">
-      <div className="container-lg px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="max-w-xl">
+          <div className="w-full lg:max-w-xl">
             {/* Eyebrow */}
             <p className="text-bond-primary font-semibold text-sm uppercase tracking-wide mb-4 animate-fade-up">
               For research sites and health systems
@@ -93,7 +93,7 @@ export default function Hero() {
           </div>
 
           {/* Right - Product Visual: Real Workflow Artifact */}
-          <div className="relative animate-fade-up stagger-2">
+          <div className="relative animate-fade-up stagger-2 w-full max-w-md mx-auto lg:max-w-none">
             {/* Main Card - Realistic Dashboard */}
             <div className="relative bg-white rounded-2xl shadow-xl border border-gray-200/60 overflow-hidden">
               {/* App Header */}
@@ -197,18 +197,37 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Subtle floating accents - toned down */}
-            <div className="absolute -top-6 -right-6 w-20 h-20 bg-bond-accent/8 rounded-full blur-2xl" />
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-bond-primary/8 rounded-full blur-2xl" />
+            {/* Subtle floating accents - toned down, hidden on mobile */}
+            <div className="absolute -top-6 -right-6 w-20 h-20 bg-bond-accent/8 rounded-full blur-2xl hidden sm:block" />
+            <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-bond-primary/8 rounded-full blur-2xl hidden sm:block" />
           </div>
         </div>
 
         {/* Supporters Section - Renamed and normalized */}
-        <div className="mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
-          <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-8">Supported by</p>
+        <div className="mt-12 lg:mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
+          <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-6 lg:mb-8">Supported by</p>
           
-          {/* Scrolling Logo Strip - Grayscale, normalized sizing */}
-          <div className="relative overflow-hidden">
+          {/* Mobile: Static grid */}
+          <div className="grid grid-cols-3 gap-4 sm:hidden">
+            {supporters.slice(0, 6).map((supporter) => (
+              <div 
+                key={supporter.name}
+                className="flex items-center justify-center h-8 opacity-50 grayscale"
+              >
+                <Image
+                  src={supporter.logo}
+                  alt={supporter.name}
+                  width={80}
+                  height={24}
+                  className="h-6 w-auto object-contain"
+                  style={{ maxWidth: '80px' }}
+                />
+              </div>
+            ))}
+          </div>
+          
+          {/* Desktop: Scrolling Logo Strip */}
+          <div className="relative overflow-hidden hidden sm:block">
             <div className="flex animate-scroll gap-20 items-center">
               {[...supporters, ...supporters].map((supporter, index) => (
                 <div 
@@ -231,8 +250,8 @@ export default function Hero() {
       </div>
 
       {/* Background Decorations - More subtle */}
-      <div className="absolute top-1/4 right-0 w-80 h-80 bg-bond-primary/3 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-56 h-56 bg-bond-accent/3 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-40 sm:w-80 h-40 sm:h-80 bg-bond-primary/3 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-32 sm:w-56 h-32 sm:h-56 bg-bond-accent/3 rounded-full blur-3xl pointer-events-none" />
     </section>
   );
 }
