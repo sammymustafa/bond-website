@@ -84,20 +84,41 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 md:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[60] md:hidden transition-opacity duration-300 ${
           isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         <div
-          className="absolute inset-0 bg-black/20 backdrop-blur-sm"
+          className="absolute inset-0 bg-black/30 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />
         <div
-          className={`absolute right-0 top-0 bottom-0 w-[85%] max-w-sm bg-white shadow-2xl p-6 pt-20 transition-transform duration-300 ease-out ${
+          className={`absolute right-0 top-0 bottom-0 w-[80%] max-w-sm bg-white shadow-2xl transition-transform duration-300 ease-out ${
             isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex flex-col gap-1">
+          {/* Mobile Menu Header */}
+          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+            <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+              <Image
+                src="/images/logo/bond-health-transparent-logo.png"
+                alt="Bond Health"
+                width={48}
+                height={48}
+                className="h-10 w-10 object-contain"
+              />
+              <span className="font-display font-bold text-lg text-gray-900">Bond Health</span>
+            </Link>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <X size={24} />
+            </button>
+          </div>
+          
+          {/* Mobile Menu Links */}
+          <div className="flex flex-col gap-1 p-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
