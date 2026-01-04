@@ -179,10 +179,10 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Stats Summary */}
+                {/* Stats Summary - Numbers add up to 47 matched */}
                 <div className="grid grid-cols-3 gap-3 pt-4 border-t border-gray-100">
                 <div className="text-center">
-                    <p className="text-lg font-bold text-gray-900">32</p>
+                    <p className="text-lg font-bold text-gray-900">17</p>
                     <p className="text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
                   </div>
                   <div className="text-center border-x border-gray-100">
