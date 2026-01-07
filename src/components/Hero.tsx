@@ -70,14 +70,14 @@ const patientData = [
 ];
 
 const supporters = [
-  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp" },
+  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp", scale: 1.4 },
   { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png" },
   { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp" },
   { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png" },
   { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp" },
   { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png" },
   { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp" },
-  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif" },
+  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif", scale: 1.5 },
 ];
 
 export default function Hero() {
@@ -299,41 +299,53 @@ export default function Hero() {
           
           {/* Mobile: Static grid */}
           <div className="grid grid-cols-3 gap-4 sm:hidden">
-            {supporters.slice(0, 6).map((supporter) => (
-              <div 
-                key={supporter.name}
-                className="flex items-center justify-center h-8 opacity-50 grayscale"
-              >
-                <Image
-                  src={supporter.logo}
-                  alt={supporter.name}
-                  width={80}
-                  height={24}
-                  className="h-6 w-auto object-contain"
-                  style={{ maxWidth: '80px' }}
-                />
-              </div>
-            ))}
+            {supporters.slice(0, 6).map((supporter) => {
+              const scale = supporter.scale || 1;
+              return (
+                <div 
+                  key={supporter.name}
+                  className="flex items-center justify-center h-8 opacity-50 grayscale"
+                >
+                  <Image
+                    src={supporter.logo}
+                    alt={supporter.name}
+                    width={Math.round(80 * scale)}
+                    height={Math.round(24 * scale)}
+                    className="w-auto object-contain"
+                    style={{ 
+                      maxWidth: `${Math.round(80 * scale)}px`,
+                      height: `${Math.round(24 * scale)}px`
+                    }}
+                  />
+                </div>
+              );
+            })}
           </div>
           
           {/* Desktop: Scrolling Logo Strip */}
           <div className="relative overflow-hidden hidden sm:block">
             <div className="flex animate-scroll gap-20 items-center">
-              {[...supporters, ...supporters].map((supporter, index) => (
-                <div 
-                  key={`${supporter.name}-${index}`}
-                  className="flex-shrink-0 h-10 w-auto transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
-                >
-                  <Image
-                    src={supporter.logo}
-                    alt={supporter.name}
-                    width={140}
-                    height={40}
-                    className="h-10 w-auto object-contain"
-                    style={{ maxWidth: '140px' }}
-                  />
-                </div>
-              ))}
+              {[...supporters, ...supporters].map((supporter, index) => {
+                const scale = supporter.scale || 1;
+                return (
+                  <div 
+                    key={`${supporter.name}-${index}`}
+                    className="flex-shrink-0 w-auto transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
+                  >
+                    <Image
+                      src={supporter.logo}
+                      alt={supporter.name}
+                      width={Math.round(140 * scale)}
+                      height={Math.round(40 * scale)}
+                      className="w-auto object-contain"
+                      style={{ 
+                        maxWidth: `${Math.round(140 * scale)}px`,
+                        height: `${Math.round(40 * scale)}px`
+                      }}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
