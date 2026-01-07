@@ -70,6 +70,7 @@ const patientData = [
 ];
 
 const supporters = [
+  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp" },
   { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png" },
   { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp" },
   { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png" },
