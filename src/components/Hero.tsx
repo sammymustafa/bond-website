@@ -111,7 +111,7 @@ export default function Hero() {
 
             {/* Headline - Cleaner, more impactful */}
             <h1 className="font-display font-bold text-[clamp(2.25rem,4.5vw,3.75rem)] leading-[1.05] tracking-[-0.03em] text-gray-900 mb-6 animate-fade-up stagger-1">
-              Enroll the right patients{" "}
+              Enroll the right patients for trials{" "}
               <span className="gradient-text inline-block">in weeks, not months.</span>
             </h1>
 
