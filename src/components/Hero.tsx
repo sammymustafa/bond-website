@@ -149,7 +149,7 @@ export default function Hero() {
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
                 <div className="flex items-center gap-1.5 text-xs text-gray-600">
                   <Shield className="w-3.5 h-3.5 text-green-600" />
-                  <span>HIPAA-aligned</span>
+                  <span>HIPAA-ready</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-gray-600">
                   <Lock className="w-3.5 h-3.5 text-green-600" />
