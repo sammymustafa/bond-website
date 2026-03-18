@@ -220,7 +220,7 @@ const jsonLd = {
           name: "How does Bond Health's voice agent handle PHI?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health's voice agents follow HIPAA-aligned practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
+            text: "Bond Health's voice agents follow HIPAA-ready practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
           },
         },
         {
@@ -236,7 +236,7 @@ const jsonLd = {
           name: "What is Bond Health's security posture?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-aligned workflows for PHI.",
+            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-ready workflows for PHI.",
           },
         },
         {
