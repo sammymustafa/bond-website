@@ -215,7 +215,11 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             </form>
 
             <p className="text-xs text-gray-500 text-center mt-4">
-              By submitting, you agree to our privacy policy.
+              By submitting, you agree to our{" "}
+              <a href="/privacy-policy" className="text-bond-primary hover:underline">
+                privacy policy
+              </a>
+              .
             </p>
           </>
         )}
