@@ -4,6 +4,7 @@ import { Mail, MapPin, Linkedin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useDemoModal } from "@/context/DemoModalContext";
+import { useCookieConsent } from "@/context/CookieConsentContext";
 
 const footerLinks = {
   product: [
@@ -31,6 +32,7 @@ const footerLinks = {
 
 export default function Footer() {
   const { openDemoModal } = useDemoModal();
+  const { reopenBanner } = useCookieConsent();
 
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
@@ -156,6 +158,12 @@ export default function Footer() {
             <a href="#" className="hover:text-gray-900 transition-colors">
               Terms of Service
             </a>
+            <button
+              onClick={reopenBanner}
+              className="hover:text-gray-900 transition-colors"
+            >
+              Cookie Settings
+            </button>
           </div>
         </div>
       </div>
