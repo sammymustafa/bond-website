@@ -150,9 +150,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Bond Health, Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-500">
-            <a href="#" className="hover:text-gray-900 transition-colors">
+            <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="hover:text-gray-900 transition-colors">
               Terms of Service
             </a>
