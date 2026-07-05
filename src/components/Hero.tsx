@@ -69,21 +69,20 @@ const patientData = [
   },
 ];
 
-// Scales normalize each logo to ~40px visible height. Wide wordmarks need a
-// higher scale to reach that height; the very wide ones (Switch, ElevenLabs)
-// are intentionally capped so they don't become excessively long.
+// Real intrinsic dimensions per logo so each renders at a uniform height with
+// its natural width (no distortion), on both the desktop strip and mobile grid.
 const supporters = [
-  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp" },
-  { name: "AWS Startups", logo: "/images/supporters/aws-startups.png" },
-  { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png", scale: 1.5 },
-  { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp" },
-  { name: "Leo Capital", logo: "/images/supporters/leo-capital.png", scale: 1.12 },
-  { name: "Switch VC", logo: "/images/supporters/switch-vc.avif", scale: 1.6 },
-  { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png", scale: 1.14 },
-  { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp" },
-  { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png" },
-  { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp", scale: 1.6 },
-  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif" },
+  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp", w: 620, h: 330 },
+  { name: "AWS Startups", logo: "/images/supporters/aws-startups.png", w: 851, h: 246 },
+  { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png", w: 3602, h: 680 },
+  { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp", w: 1000, h: 400 },
+  { name: "Leo Capital", logo: "/images/supporters/leo-capital.png", w: 747, h: 192 },
+  { name: "Switch VC", logo: "/images/supporters/switch-vc.avif", w: 2048, h: 312 },
+  { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png", w: 673, h: 169 },
+  { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp", w: 264, h: 159 },
+  { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png", w: 636, h: 280 },
+  { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp", w: 2324, h: 312 },
+  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif", w: 400, h: 400 },
 ];
 
 export default function Hero() {
@@ -303,30 +302,40 @@ export default function Hero() {
         <div className="mt-12 lg:mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
           <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-6 lg:mb-8">Supported by</p>
           
-          {/* Scrolling logo strip (shown on all breakpoints so every supporter is visible) */}
-          <div className="relative overflow-hidden">
-            <div className="flex animate-scroll gap-12 sm:gap-20 items-center">
-              {[...supporters, ...supporters].map((supporter, index) => {
-                const scale = supporter.scale || 1;
-                return (
-                  <div 
-                    key={`${supporter.name}-${index}`}
-                    className="flex-shrink-0 w-auto transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
-                  >
-                    <Image
-                      src={supporter.logo}
-                      alt={supporter.name}
-                      width={Math.round(140 * scale)}
-                      height={Math.round(40 * scale)}
-                      className="w-auto object-contain"
-                      style={{ 
-                        maxWidth: `${Math.round(140 * scale)}px`,
-                        height: `${Math.round(40 * scale)}px`
-                      }}
-                    />
-                  </div>
-                );
-              })}
+          {/* Mobile: static grid so every supporter is visible at once (no scroll wait) */}
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:hidden">
+            {supporters.map((supporter) => (
+              <div key={supporter.name} className="opacity-50 grayscale">
+                <Image
+                  src={supporter.logo}
+                  alt={supporter.name}
+                  width={supporter.w}
+                  height={supporter.h}
+                  className="w-auto object-contain"
+                  style={{ height: "28px" }}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: scrolling logo strip */}
+          <div className="relative overflow-hidden hidden sm:block">
+            <div className="flex animate-scroll gap-16 items-center">
+              {[...supporters, ...supporters].map((supporter, index) => (
+                <div
+                  key={`${supporter.name}-${index}`}
+                  className="flex-shrink-0 transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
+                >
+                  <Image
+                    src={supporter.logo}
+                    alt={supporter.name}
+                    width={supporter.w}
+                    height={supporter.h}
+                    className="w-auto object-contain"
+                    style={{ height: "40px" }}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
