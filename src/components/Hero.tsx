@@ -303,34 +303,9 @@ export default function Hero() {
         <div className="mt-12 lg:mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
           <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-6 lg:mb-8">Supported by</p>
           
-          {/* Mobile: Static grid */}
-          <div className="grid grid-cols-3 gap-4 sm:hidden">
-            {supporters.slice(0, 6).map((supporter) => {
-              const scale = supporter.scale || 1;
-              return (
-                <div 
-                  key={supporter.name}
-                  className="flex items-center justify-center h-8 opacity-50 grayscale"
-                >
-                  <Image
-                    src={supporter.logo}
-                    alt={supporter.name}
-                    width={Math.round(80 * scale)}
-                    height={Math.round(24 * scale)}
-                    className="w-auto object-contain"
-                    style={{ 
-                      maxWidth: `${Math.round(80 * scale)}px`,
-                      height: `${Math.round(24 * scale)}px`
-                    }}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          
-          {/* Desktop: Scrolling Logo Strip */}
-          <div className="relative overflow-hidden hidden sm:block">
-            <div className="flex animate-scroll gap-20 items-center">
+          {/* Scrolling logo strip (shown on all breakpoints so every supporter is visible) */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll gap-12 sm:gap-20 items-center">
               {[...supporters, ...supporters].map((supporter, index) => {
                 const scale = supporter.scale || 1;
                 return (
