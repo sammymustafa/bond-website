@@ -69,17 +69,21 @@ const patientData = [
   },
 ];
 
+// Scales normalize each logo to ~40px visible height. Wide wordmarks need a
+// higher scale to reach that height; the very wide ones (Switch, ElevenLabs)
+// are intentionally capped so they don't become excessively long.
 const supporters = [
-  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp", scale: 1.4 },
-  { name: "AWS Startups", logo: "/images/supporters/aws-startups.png", scale: 1.2 },
-  { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png" },
+  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp" },
+  { name: "AWS Startups", logo: "/images/supporters/aws-startups.png" },
+  { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png", scale: 1.5 },
   { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp" },
-  { name: "Leo Capital", logo: "/images/supporters/leo-capital.png", scale: 1.3 },
-  { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png" },
+  { name: "Leo Capital", logo: "/images/supporters/leo-capital.png", scale: 1.12 },
+  { name: "Switch VC", logo: "/images/supporters/switch-vc.avif", scale: 1.6 },
+  { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png", scale: 1.14 },
   { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp" },
   { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png" },
-  { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp" },
-  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif", scale: 1.5 },
+  { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp", scale: 1.6 },
+  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif" },
 ];
 
 export default function Hero() {
