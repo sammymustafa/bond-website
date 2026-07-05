@@ -46,7 +46,7 @@ const jobPostingsJsonLd = {
         "@type": "Organization",
         name: "Bond Health",
         sameAs: "https://bondtrials.com",
-        logo: "https://bondtrials.com/images/logo/Bond health.png",
+        logo: "https://bondtrials.com/images/logo/bond-health-logo.png",
       },
       jobLocation: {
         "@type": "Place",
@@ -70,7 +70,7 @@ const jobPostingsJsonLd = {
         "@type": "Organization",
         name: "Bond Health",
         sameAs: "https://bondtrials.com",
-        logo: "https://bondtrials.com/images/logo/Bond health.png",
+        logo: "https://bondtrials.com/images/logo/bond-health-logo.png",
       },
       jobLocation: {
         "@type": "Place",
@@ -94,7 +94,7 @@ const jobPostingsJsonLd = {
         "@type": "Organization",
         name: "Bond Health",
         sameAs: "https://bondtrials.com",
-        logo: "https://bondtrials.com/images/logo/Bond health.png",
+        logo: "https://bondtrials.com/images/logo/bond-health-logo.png",
       },
       jobLocation: {
         "@type": "Place",
@@ -118,7 +118,7 @@ const jobPostingsJsonLd = {
         "@type": "Organization",
         name: "Bond Health",
         sameAs: "https://bondtrials.com",
-        logo: "https://bondtrials.com/images/logo/Bond health.png",
+        logo: "https://bondtrials.com/images/logo/bond-health-logo.png",
       },
       jobLocation: {
         "@type": "Place",

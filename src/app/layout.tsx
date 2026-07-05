@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo/Bond health.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Bond Health - AI-Powered Clinical Trial Patient Recruitment",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
     description: "Enroll the right patients faster. Up to 3x faster enrollment with 90%+ matching accuracy using AI.",
-    images: ["/images/logo/Bond health.png"],
+    images: ["/images/og-image.png"],
   },
   robots: {
     index: true,
@@ -95,9 +95,9 @@ const jsonLd = {
       url: "https://bondtrials.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://bondtrials.com/images/logo/Bond health.png",
-        width: 512,
-        height: 512,
+        url: "https://bondtrials.com/images/logo/bond-health-logo.png",
+        width: 1563,
+        height: 1563,
       },
       description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, voice agents, and AI-powered informed consent.",
       address: {

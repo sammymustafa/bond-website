@@ -71,8 +71,10 @@ const patientData = [
 
 const supporters = [
   { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp", scale: 1.4 },
+  { name: "AWS Startups", logo: "/images/supporters/aws-startups.png", scale: 1.2 },
   { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png" },
   { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp" },
+  { name: "Leo Capital", logo: "/images/supporters/leo-capital.png", scale: 1.3 },
   { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png" },
   { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp" },
   { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png" },
