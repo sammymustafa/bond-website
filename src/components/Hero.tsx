@@ -72,17 +72,17 @@ const patientData = [
 // Real intrinsic dimensions per logo so each renders at a uniform height with
 // its natural width (no distortion), on both the desktop strip and mobile grid.
 const supporters = [
-  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp", w: 620, h: 330 },
+  { name: "Google Cloud for Startups", logo: "/images/supporters/GoogleCloudforStartups-3.webp", w: 607, h: 132, boost: 1.35 },
   { name: "AWS Startups", logo: "/images/supporters/aws-startups.png", w: 851, h: 246 },
   { name: "Plug and Play", logo: "/images/supporters/Logo_Plug_and_Play_New.png", w: 3602, h: 680 },
   { name: "CEAS Investments", logo: "/images/supporters/CEAS_investments_logo.webp", w: 1000, h: 400 },
   { name: "Leo Capital", logo: "/images/supporters/leo-capital.png", w: 747, h: 192 },
   { name: "Switch VC", logo: "/images/supporters/switch-vc.avif", w: 2048, h: 312 },
   { name: "Harvard Innovation Lab", logo: "/images/supporters/Harvard_Innovation_Lab_logo.png", w: 673, h: 169 },
-  { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp", w: 264, h: 159 },
-  { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png", w: 636, h: 280 },
+  { name: "MIT Sandbox", logo: "/images/supporters/MIT-Sandbox-Logo.webp", w: 249, h: 142, boost: 1.2 },
+  { name: "NVIDIA Inception", logo: "/images/supporters/nvidia-inception-program-badge-rgb-for-screen.png", w: 573, h: 217, boost: 1.35 },
   { name: "ElevenLabs Grants", logo: "/images/supporters/8xden71nndm-ElevenLabs_Grants_Dark.webp", w: 2324, h: 312 },
-  { name: "UC Launch", logo: "/images/supporters/UC-Launch-logo.avif", w: 400, h: 400 },
+  { name: "UC Launch", logo: "/images/supporters/uc-launch-logo.png", w: 338, h: 130, boost: 1.3 },
 ];
 
 export default function Hero() {
@@ -302,20 +302,28 @@ export default function Hero() {
         <div className="mt-12 lg:mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
           <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-6 lg:mb-8">Supported by</p>
           
-          {/* Mobile: static grid so every supporter is visible at once (no scroll wait) */}
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 sm:hidden">
-            {supporters.map((supporter) => (
-              <div key={supporter.name} className="opacity-50 grayscale">
-                <Image
-                  src={supporter.logo}
-                  alt={supporter.name}
-                  width={supporter.w}
-                  height={supporter.h}
-                  className="w-auto object-contain"
-                  style={{ height: "28px" }}
-                />
-              </div>
-            ))}
+          {/* Mobile: even grid; each logo is optically sized (wider marks are scaled
+              down) so they carry similar visual weight, and all are visible at once */}
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-6 sm:hidden">
+            {supporters.map((supporter) => {
+              const aspect = supporter.w / supporter.h;
+              const opticalHeight = Math.round((34 / Math.pow(aspect, 0.42)) * (supporter.boost ?? 1));
+              return (
+                <div
+                  key={supporter.name}
+                  className="flex h-12 w-[40%] items-center justify-center opacity-50 grayscale"
+                >
+                  <Image
+                    src={supporter.logo}
+                    alt={supporter.name}
+                    width={supporter.w}
+                    height={supporter.h}
+                    className="w-auto max-w-full object-contain"
+                    style={{ height: `${opticalHeight}px` }}
+                  />
+                </div>
+              );
+            })}
           </div>
 
           {/* Desktop: scrolling logo strip */}
