@@ -99,15 +99,25 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, voice agents, and AI-powered informed consent.",
+      description: "Bond Health is a clinical trial patient recruitment company. Its AI platform provides LLM-based EHR screening, voice agents for patient outreach, and AI-powered informed consent for research sites, CROs, and sponsors.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Boston",
         addressRegion: "MA",
         addressCountry: "US",
       },
+      knowsAbout: [
+        "clinical trial patient recruitment",
+        "clinical trial enrollment",
+        "EHR screening",
+        "patient eligibility matching",
+        "informed consent",
+        "clinical research",
+        "voice AI for healthcare",
+      ],
       sameAs: [
         "https://www.linkedin.com/company/bondtrials/",
+        "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj",
       ],
       contactPoint: {
         "@type": "ContactPoint",
@@ -159,7 +169,21 @@ const jsonLd = {
         "@id": "https://bondtrials.com/#organization",
       },
       description: "End-to-end clinical trial patient recruitment service using AI for patient identification, engagement, and consent.",
-      serviceType: "Healthcare Technology Service",
+      serviceType: "Clinical Trial Patient Recruitment",
+      audience: [
+        {
+          "@type": "BusinessAudience",
+          name: "Clinical research sites and health systems",
+        },
+        {
+          "@type": "BusinessAudience",
+          name: "Contract Research Organizations (CROs)",
+        },
+        {
+          "@type": "BusinessAudience",
+          name: "Pharmaceutical and biotech sponsors",
+        },
+      ],
       areaServed: {
         "@type": "Country",
         name: "United States",
@@ -220,7 +244,7 @@ const jsonLd = {
           name: "How does Bond Health's voice agent handle PHI?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health's voice agents follow HIPAA-ready practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
+            text: "Bond Health's voice agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
           },
         },
         {
@@ -236,7 +260,7 @@ const jsonLd = {
           name: "What is Bond Health's security posture?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health can sign BAAs and is designed to support HIPAA-ready workflows for PHI.",
+            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.",
           },
         },
         {

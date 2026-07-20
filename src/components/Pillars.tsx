@@ -76,7 +76,7 @@ export default function Pillars() {
                 <p className="text-sm text-gray-600 mb-6">{pillar.description}</p>
 
                 {/* Outcomes */}
-                <div className="space-y-3 mb-6">
+                <div className="space-y-3">
                   {pillar.outcomes.map((outcome) => (
                     <div key={outcome} className="flex items-start gap-3">
                       <div className={`w-5 h-5 rounded-full ${pillar.color} flex items-center justify-center flex-shrink-0 mt-0.5`}>
@@ -88,11 +88,6 @@ export default function Pillars() {
                     </div>
                   ))}
                 </div>
-
-                {/* Learn More */}
-                <a href="#" className="inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline">
-                  Learn more <ArrowRight className="w-3 h-3" />
-                </a>
               </div>
             </div>
           ))}

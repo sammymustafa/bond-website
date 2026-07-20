@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: `How does ${BRAND}'s voice agent handle PHI?`,
-    answer: `${BRAND}'s voice agents follow HIPAA-aligned practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. ${BRAND} designs workflows to minimize PHI exposure and support compliant operations.`,
+    answer: `${BRAND}'s voice agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. ${BRAND} designs workflows to minimize PHI exposure and support compliant operations.`,
   },
   {
     question: `What is ${BRAND}'s implementation timeline?`,
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: `What is ${BRAND}'s security posture?`,
-    answer: `${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} can sign BAAs and is designed to support HIPAA-aligned workflows for PHI.`,
+    answer: `${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} signs BAAs and maintains HIPAA compliant workflows for PHI.`,
   },
   {
     question: `What outcomes does ${BRAND} measure for research sites?`,

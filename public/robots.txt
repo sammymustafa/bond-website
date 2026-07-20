@@ -10,31 +10,98 @@ Sitemap: https://bondtrials.com/sitemap.xml
 # LLM Context File (for AI/LLM crawlers)
 # See: https://bondtrials.com/llms.txt
 
-# Crawl-delay for polite crawling
-Crawl-delay: 1
+# ---------------------------------------------------------------
+# AI search-index crawlers (power citations in AI answers)
+# ---------------------------------------------------------------
 
-# Allow all AI/LLM crawlers
-User-agent: GPTBot
+# OpenAI - ChatGPT Search index
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: ChatGPT-User
+# Anthropic - Claude search index
+User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
+# Perplexity - answer index
 User-agent: PerplexityBot
 Allow: /
 
+# You.com - search index
+User-agent: YouBot
+Allow: /
+
+# DuckDuckGo - DuckAssist answers
+User-agent: DuckAssistBot
+Allow: /
+
+# ---------------------------------------------------------------
+# User-triggered fetchers (live retrieval when a user asks about us)
+# ---------------------------------------------------------------
+
+# OpenAI - ChatGPT live browsing
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic - Claude live browsing
+User-agent: Claude-User
+Allow: /
+
+# Perplexity - live retrieval
+User-agent: Perplexity-User
+Allow: /
+
+# Mistral - live retrieval
+User-agent: MistralAI-User
+Allow: /
+
+# ---------------------------------------------------------------
+# AI training crawlers (inclusion in future model knowledge)
+# ---------------------------------------------------------------
+
+# OpenAI - training
+User-agent: GPTBot
+Allow: /
+
+# Anthropic - training
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic - legacy token
+User-agent: anthropic-ai
+Allow: /
+
+# Google - Gemini / Vertex AI training opt-in
+User-agent: Google-Extended
+Allow: /
+
+# Apple - Siri / Spotlight indexing
+User-agent: Applebot
+Allow: /
+
+# Apple - Apple Intelligence training opt-in
 User-agent: Applebot-Extended
 Allow: /
 
+# Meta - Llama / Meta AI training
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Meta - link fetcher
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Amazon - Alexa and Amazon AI
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl - open dataset used by many AI labs
+User-agent: CCBot
+Allow: /
+
+# Cohere - training
+User-agent: cohere-ai
+Allow: /
+
+# ByteDance - training and search
+User-agent: Bytespider
+Allow: /
