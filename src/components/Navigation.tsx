@@ -35,16 +35,16 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
             <Image
-              src="/images/logo/bond-health-transparent-logo.png"
+              src="/images/logo/bond-health-icon.png"
               alt="Bond Health"
-              width={96}
-              height={96}
-              className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20 object-contain"
+              width={637}
+              height={626}
+              className="h-9 w-9 sm:h-10 sm:w-10 object-contain"
               priority
             />
-            <span className="font-display font-bold text-xl sm:text-2xl md:text-3xl text-gray-900">Bond Health</span>
+            <span className="font-display font-bold text-xl sm:text-2xl text-gray-900">Bond Health</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -101,11 +101,11 @@ export default function Navigation() {
           <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
             <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
               <Image
-                src="/images/logo/bond-health-transparent-logo.png"
+                src="/images/logo/bond-health-icon.png"
                 alt="Bond Health"
-                width={48}
-                height={48}
-                className="h-10 w-10 object-contain"
+                width={637}
+                height={626}
+                className="h-8 w-8 object-contain"
               />
               <span className="font-display font-bold text-lg text-gray-900">Bond Health</span>
             </Link>

@@ -27,6 +27,7 @@ const footerLinks = {
     { name: "Security", href: "/#security" },
     { name: "Pricing", href: "/#pricing" },
     { name: "FAQ", href: "/#faq" },
+    { name: "Trust Center", href: "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj" },
   ],
 };
 
@@ -40,15 +41,15 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-12">
           {/* Brand Column */}
           <div className="col-span-2 lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <Link href="/" className="flex items-center gap-2.5 mb-4 sm:mb-6">
               <Image
-                src="/images/logo/bond-health-transparent-logo.png"
+                src="/images/logo/bond-health-icon.png"
                 alt="Bond Health"
-                width={96}
-                height={96}
-                className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 object-contain"
+                width={637}
+                height={626}
+                className="h-10 w-10 sm:h-11 sm:w-11 object-contain"
               />
-              <span className="font-display font-bold text-2xl sm:text-3xl text-gray-900">Bond Health</span>
+              <span className="font-display font-bold text-2xl text-gray-900">Bond Health</span>
             </Link>
             <p className="text-gray-600 mb-6 max-w-sm text-sm">
               Bond Health enables hyper-accurate clinical trial patient recruitment using AI.
@@ -78,6 +79,26 @@ export default function Footer() {
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
+
+            {/* HIPAA Compliance Badge */}
+            <a
+              href="https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 mt-6 px-4 py-3 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all"
+            >
+              <Image
+                src="/images/hipaa-compliant-badge.svg"
+                alt="HIPAA Compliant"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+              />
+              <span className="text-left">
+                <span className="block text-sm font-semibold text-gray-900">HIPAA Compliant</span>
+                <span className="block text-xs text-gray-500">View Vanta Trust Center</span>
+              </span>
+            </a>
           </div>
 
           {/* Links Columns */}
@@ -136,6 +157,9 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
+                    {...(link.href.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                     className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
                   >
                     {link.name}
@@ -155,9 +179,6 @@ export default function Footer() {
             <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
               Privacy Policy
             </Link>
-            <a href="#" className="hover:text-gray-900 transition-colors">
-              Terms of Service
-            </a>
             <button
               onClick={reopenBanner}
               className="hover:text-gray-900 transition-colors"

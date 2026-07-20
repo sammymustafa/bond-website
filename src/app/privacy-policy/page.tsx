@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
             </h1>
 
             <p className="text-lg text-gray-600 mb-6">
-              Bond Health, Inc. &mdash;{" "}
+              Bond Health, Inc. &middot;{" "}
               <Link
                 href="https://bondtrials.com"
                 className="text-bond-primary hover:text-bond-primary-dark transition-colors"

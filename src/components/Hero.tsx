@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowRight, Play, Shield, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, User } from "lucide-react";
+import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, User } from "lucide-react";
 import Image from "next/image";
 
 // Animated counter hook
@@ -149,13 +149,23 @@ export default function Hero() {
             <div className="p-4 bg-gray-50/80 rounded-xl border border-gray-100 animate-fade-up stagger-4">
               <p className="text-sm text-gray-700 mb-3">
                 <span className="font-semibold text-gray-900">2-3x faster enrollment</span> · <span className="font-semibold text-gray-900">&gt;90% matching accuracy</span>
-                <span className="text-gray-400 ml-1">(independent testing)</span>
               </p>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
-                <div className="flex items-center gap-1.5 text-xs text-gray-600">
-                  <Shield className="w-3.5 h-3.5 text-green-600" />
-                  <span>HIPAA-ready</span>
-                </div>
+                <a
+                  href="https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <Image
+                    src="/images/hipaa-compliant-badge.svg"
+                    alt="HIPAA Compliant"
+                    width={16}
+                    height={16}
+                    className="w-4 h-4"
+                  />
+                  <span>HIPAA Compliant</span>
+                </a>
                 <div className="flex items-center gap-1.5 text-xs text-gray-600">
                   <Lock className="w-3.5 h-3.5 text-green-600" />
                   <span>BAA available</span>
