@@ -179,6 +179,9 @@ export default function Footer() {
             <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
               Privacy Policy
             </Link>
+            <Link href="/terms-of-service" className="hover:text-gray-900 transition-colors">
+              Terms of Service
+            </Link>
             <button
               onClick={reopenBanner}
               className="hover:text-gray-900 transition-colors"
