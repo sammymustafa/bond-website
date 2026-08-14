@@ -35,3 +35,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
+# Ad-hoc review screenshots dropped at the repo root. Real image assets belong in
+# public/ (or src/app/ for Next.js icon conventions), never here. If you genuinely
+# need a PNG at the repo root, override with: git add -f <file>
+/*.png

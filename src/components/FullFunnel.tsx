@@ -17,8 +17,8 @@ const funnelStages = [
   {
     id: "engage",
     title: "Engage",
-    subtitle: "Voice Outreach",
-    description: "Automated calls for pre-screening and appointment scheduling",
+    subtitle: "Voice & SMS/Text Outreach",
+    description: "Automated calls and SMS/text for pre-screening and appointment scheduling",
     icon: Phone,
     color: "emerald",
     metric: "3x",

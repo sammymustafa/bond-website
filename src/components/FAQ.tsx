@@ -16,12 +16,12 @@ const faqs = [
     answer: `${BRAND} configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. ${BRAND} provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.`,
   },
   {
-    question: `How does ${BRAND}'s voice agent handle PHI?`,
-    answer: `${BRAND}'s voice agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. ${BRAND} designs workflows to minimize PHI exposure and support compliant operations.`,
+    question: `How do ${BRAND}'s voice and SMS/text agents handle PHI?`,
+    answer: `${BRAND}'s voice and SMS/text agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. ${BRAND} designs workflows to minimize PHI exposure and support compliant operations.`,
   },
   {
     question: `What is ${BRAND}'s implementation timeline?`,
-    answer: `${BRAND} typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice agent setup, analytics dashboards, and staff onboarding. ${BRAND} provides dedicated support throughout integration and launch.`,
+    answer: `${BRAND} typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. ${BRAND} provides dedicated support throughout integration and launch.`,
   },
   {
     question: `What is ${BRAND}'s security posture?`,
