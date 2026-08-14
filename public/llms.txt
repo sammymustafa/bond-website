@@ -12,8 +12,8 @@ Bond provides an end-to-end AI-powered platform for clinical trial patient recru
    - Ranked patient matches with evidence and traceability
    - Works with Epic, Cerner, and other EHR systems via FHIR
 
-2. **Engage** - Voice agents for pre-screening & scheduling
-   - Automated patient outreach via voice AI
+2. **Engage** - Voice and SMS/text agents for pre-screening & scheduling
+   - Automated patient outreach via voice AI and SMS/text messaging
    - Pre-screening conversations to confirm interest and basic eligibility
    - Scheduling coordination with research site calendars
 
@@ -58,11 +58,11 @@ A: Bond Health integrates with major EHRs (including Epic and Cerner) using secu
 Q: How does Bond Health validate trial eligibility logic?
 A: Bond Health configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. Bond Health provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.
 
-Q: How does Bond Health's voice agent handle PHI?
-A: Bond Health's voice agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.
+Q: How do Bond Health's voice and SMS/text agents handle PHI?
+A: Bond Health's voice and SMS/text agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.
 
 Q: What is Bond Health's implementation timeline?
-A: Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.
+A: Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.
 
 Q: What is Bond Health's security posture?
 A: Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.

@@ -102,7 +102,7 @@ export default function Pricing() {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 "LLM-based EHR screening",
-                "Voice agent outreach and scheduling",
+                "Voice and SMS/text agent outreach and scheduling",
                 "AI consent support",
                 "Real-time dashboard and audit trail",
                 "EHR vendor integration via FHIR",

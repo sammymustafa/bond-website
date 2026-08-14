@@ -19,7 +19,7 @@ const pillars = [
   {
     icon: Phone,
     title: "Engage",
-    subtitle: "Voice agents for pre-screening & scheduling",
+    subtitle: "Voice and SMS/text agents for pre-screening & scheduling",
     description: "Automated outreach, pre-screen scripts, and scheduling handoff",
     outcomes: [
       "Higher contact and show rates",

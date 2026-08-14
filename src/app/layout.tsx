@@ -8,13 +8,14 @@ export const metadata: Metadata = {
     default: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
     template: "%s | Bond Health",
   },
-  description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, voice agents, and AI-powered informed consent help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
+  description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, voice and SMS/text agents, and AI-powered informed consent help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
   keywords: [
     "clinical trial patient recruitment",
     "AI patient matching",
     "EHR screening",
     "clinical research recruitment",
     "voice agents healthcare",
+    "text message patient outreach",
     "informed consent AI",
     "clinical trial enrollment",
     "patient identification",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
-    description: "Enroll the right patients faster. Bond uses LLM EHR screening, voice agents, and AI-powered consent to help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
+    description: "Enroll the right patients faster. Bond uses LLM EHR screening, voice and SMS/text agents, and AI-powered consent to help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
     url: "https://bondtrials.com",
     siteName: "Bond Health",
     locale: "en_US",
@@ -99,7 +100,7 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is a clinical trial patient recruitment company. Its AI platform provides LLM-based EHR screening, voice agents for patient outreach, and AI-powered informed consent for research sites, CROs, and sponsors.",
+      description: "Bond Health is a clinical trial patient recruitment company. Its AI platform provides LLM-based EHR screening, voice and SMS/text agents for patient outreach, and AI-powered informed consent for research sites, CROs, and sponsors.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Boston",
@@ -114,6 +115,7 @@ const jsonLd = {
         "informed consent",
         "clinical research",
         "voice AI for healthcare",
+        "SMS patient outreach",
       ],
       sameAs: [
         "https://www.linkedin.com/company/bondtrials/",
@@ -141,7 +143,7 @@ const jsonLd = {
       name: "Bond Health Platform",
       applicationCategory: "HealthApplication",
       operatingSystem: "Web-based",
-      description: "AI-powered platform for clinical trial patient recruitment featuring LLM-based EHR screening, voice agents for pre-screening and scheduling, and AI-powered informed consent.",
+      description: "AI-powered platform for clinical trial patient recruitment featuring LLM-based EHR screening, voice and SMS/text agents for pre-screening and scheduling, and AI-powered informed consent.",
       offers: {
         "@type": "Offer",
         price: "0",
@@ -150,7 +152,7 @@ const jsonLd = {
       },
       featureList: [
         "LLM-based EHR screening",
-        "Voice agents for pre-screening and scheduling",
+        "Voice and SMS/text agents for pre-screening and scheduling",
         "AI-powered informed consent",
         "Real-time dashboard and audit trail",
         "EHR integration via FHIR",
@@ -205,7 +207,7 @@ const jsonLd = {
             itemOffered: {
               "@type": "Service",
               name: "Patient Engagement",
-              description: "Voice agents for automated outreach, pre-screening, and scheduling",
+              description: "Voice and SMS/text agents for automated outreach, pre-screening, and scheduling",
             },
           },
           {
@@ -241,10 +243,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "How does Bond Health's voice agent handle PHI?",
+          name: "How do Bond Health's voice and SMS/text agents handle PHI?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health's voice agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
+            text: "Bond Health's voice and SMS/text agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
           },
         },
         {
@@ -252,7 +254,7 @@ const jsonLd = {
           name: "What is Bond Health's implementation timeline?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.",
+            text: "Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.",
           },
         },
         {

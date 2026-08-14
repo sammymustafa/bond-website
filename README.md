@@ -1,6 +1,6 @@
 # Bond Health Website
 
-Marketing site for Bond Health — live at **[bondtrials.com](https://bondtrials.com)**.
+Marketing site for Bond Health. Live at **[bondtrials.com](https://bondtrials.com)**.
 
 ## Stack
 
@@ -25,7 +25,7 @@ npm run dev   # http://localhost:3000
 | `npm run dev` | Dev server with hot reload |
 | `npm run build` | Production build (also typechecks) |
 | `npm start` | Serve an existing production build |
-| `npm run lint` | ⚠️ Not usable yet — see below |
+| `npm run lint` | ⚠️ Not usable yet, see below |
 
 `npm run lint` runs `next lint`, which is **deprecated and removed in Next.js 16**.
 There is also no ESLint config file in the repo, so it prompts interactively to
@@ -43,7 +43,7 @@ is absent from the pipeline.
 Hosted on **Vercel**.
 
 - **`main` is production.** Anything merged to `main` deploys to bondtrials.com.
-- **Pull requests get their own preview URL** — use it to review before merging.
+- **Pull requests get their own preview URL.** Use it to review before merging.
 
 Nothing deploys from a local machine; pushing to `main` is what ships.
 
