@@ -7,12 +7,7 @@
   "auth": {
     "type": "none"
   },
-  "api": {
-    "type": "openapi",
-    "url": "https://bondtrials.com/openapi.yaml"
-  },
-  "logo_url": "https://bondtrials.com/images/logo/Bond%20health.png",
-  "contact_email": "contact@bondtrials.com",
-  "legal_info_url": "https://bondtrials.com/#privacy"
+  "logo_url": "https://bondtrials.com/images/logo/bond-health-logo.png",
+  "contact_email": "hello@bondtrials.com",
+  "legal_info_url": "https://bondtrials.com/terms-of-service"
 }
-
