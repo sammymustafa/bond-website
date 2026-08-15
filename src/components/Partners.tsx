@@ -15,6 +15,10 @@ const partners = [
     name: "MRCT - Brigham and Women's Hospital", 
     logo: "/images/partners/MRCT-Logo.png",
   },
+  { 
+    name: "CRIO Certified Partner", 
+    logo: "/images/partners/crio-certified-partner.png",
+  },
 ];
 
 export default function Partners() {
