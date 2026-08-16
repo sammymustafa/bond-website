@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const partners = [
   { 
-    name: "Canvass Clinical Research Services", 
-    logo: "/images/partners/canvass_clinical_research_services_cover.jpeg",
+    name: "Southwest Family Medicine Associates", 
+    logo: "/images/partners/southwest-family-medicine.png",
   },
   { 
     name: "Commonwealth Pain and Spine Clinic", 
