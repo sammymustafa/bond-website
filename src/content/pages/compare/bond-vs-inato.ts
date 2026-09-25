@@ -243,7 +243,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Bond work with the EHR and CTMS we already use?",
-      a: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It is a CRIO Certified Partner, listed by CRIO under Patient Acquisition & Retention, and integrates directly with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-acrp-talk}} Bond's team handles the integration end to end: a list-based pilot can be set up in under 2 weeks, and full EHR integration takes 4 to 6 weeks. Bond signs BAAs and supports SSO and audit logging; see [security](/security).{{cite:bond-site}}",
+      a: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It is a CRIO Certified Partner, listed by CRIO under Patient Acquisition & Retention, and integrates directly with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-acrp-talk}} Bond's team handles the integration end to end, and full EHR integration takes 48 hours. Bond signs BAAs and supports SSO and audit logging; see [security](/security).{{cite:bond-site}}",
     },
   ],
   sources: [

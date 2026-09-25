@@ -47,7 +47,7 @@ const page: SeoPage = {
             "**Agents that speak your patients' language.** Voice and text conversations run in English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to your coordinators or book a callback, whichever your site prefers.{{cite:bond-product}}",
             "**Support after enrollment.** The same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
             "**No integration fee.** A volume-based platform fee plus a success fee paid only for patients who are randomized. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
-            "**Every major EHR, live in 4 to 6 weeks.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs, its team handles the integration end to end, and Bond is a CRIO Certified Partner. See [implementation](/implementation).{{cite:bond-site,bond-product}}",
+            "**Every major EHR, live in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs, its team handles the integration end to end, and Bond is a CRIO Certified Partner. See [implementation](/implementation).{{cite:bond-site,bond-product}}",
             "**Security you can check.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway. Its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously. See [security](/security).{{cite:bond-product,bond-trust-center}}",
             "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
@@ -113,7 +113,7 @@ const page: SeoPage = {
     { label: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software", description: "Every vendor's coverage of identify, engage and consent." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a per-randomized-patient success fee." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
-    { label: "Implementation", href: "/implementation", description: "The 4 to 6 weeks, week by week." },
+    { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },
   ],
 };
 

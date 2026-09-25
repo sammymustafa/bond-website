@@ -152,7 +152,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The site's IT and compliance teams handle the BAA, the security review and EHR access over FHIR or HL7. The CRIO steps sit in the outreach and scheduling step of the [implementation plan](/implementation) and run alongside the EHR connection. A full deployment with the EHR connected takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method. A pilot without EHR integration can be set up in under 2 weeks.{{cite:bond-site}}",
+          text: "The site's IT and compliance teams handle the BAA, the security review and EHR access over FHIR or HL7. The CRIO steps sit in the outreach and scheduling step of the [implementation plan](/implementation) and run alongside the EHR connection. A full deployment with the EHR connected takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}}",
         },
       ],
     },
@@ -347,7 +347,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "All integrations", href: "/integrations", description: "EHR connections and the research systems Bond works alongside." },
-    { label: "Implementation", href: "/implementation", description: "Where the CRIO steps sit in the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "Where the CRIO steps sit in the 48-hour plan." },
     { label: "For research sites", href: "/for/research-sites", description: "What Bond changes for coordinators and site directors." },
     { label: "For site networks", href: "/for/site-networks", description: "Running Bond across several locations and systems." },
     { label: "Security", href: "/security", description: "BAA, encryption, access control and the data flow." },

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Manual chart review is slow, and its quality depends on habits that rarely get written down. This checklist writes them down: how to map each criterion before the first chart, where to look for each kind of evidence, how to record a decision someone else can check, and what goes in the pre-screening log. Copy it, edit it, and hand it to the next coordinator you train.",
   summary: "A manual pre-screening checklist with criteria mapping, EHR data sources, rationale notes, log fields, time tracking and escalation.",
-  lastUpdated: "2026-09-22",
+  lastUpdated: "2026-09-24",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -371,7 +371,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "As of September 2026, Bond's website reports that it cuts coordinator chart review by 50 percent or more, and that full EHR integration takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}} The checklist still matters with software: the criteria mapping, escalation rules and log fields are what a site should check any screening tool against. The [manual chart review comparison](/compare/bond-vs-manual-chart-review) sets the two approaches side by side, and the rest of our [templates](/templates) cover the steps before and after chart review.",
+          text: "As of September 2026, Bond's website reports that it cuts coordinator chart review by 50 percent or more, and that full EHR integration takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} The checklist still matters with software: the criteria mapping, escalation rules and log fields are what a site should check any screening tool against. The [manual chart review comparison](/compare/bond-vs-manual-chart-review) sets the two approaches side by side, and the rest of our [templates](/templates) cover the steps before and after chart review.",
         },
         {
           type: "cta",

@@ -36,7 +36,7 @@ const page: SeoPage = {
         {
           type: "stats",
           items: [
-            { value: "4 to 6 weeks", label: "typical time to go live with full EHR integration, handled by Bond's team with no integration fee", cite: "bond-site" },
+            { value: "48 hours", label: "typical time to go live with full EHR integration, handled by Bond's team with no integration fee", cite: "bond-site" },
             { value: "10,000+", label: "charts screened per hour", cite: "bond-site" },
             { value: "Up to 3x", label: "faster enrollment than manual recruitment", cite: "bond-site" },
           ],
@@ -130,7 +130,7 @@ const page: SeoPage = {
             ],
             [
               "Implementation",
-              "4 to 6 weeks for full EHR integration, depending on the EHR, IT review and interface method. Bond's implementation team handles the integration end to end, with no integration fee, and keeps improving outreach messaging until study close-out ([implementation](/implementation)).{{cite:bond-site,bond-product}}",
+              "48 hours for full EHR integration, depending on the EHR, IT review and interface method. Bond's implementation team handles the integration end to end, with no integration fee, and keeps improving outreach messaging until study close-out ([implementation](/implementation)).{{cite:bond-site,bond-product}}",
               "In certain circumstances, Tempus covers the direct cost of the technical integration (2026). One Edge SDX connection can power both TIME and Next Trials (2026). Timeline to connect a site's EHR: not publicly documented in the materials we reviewed (September 2026).{{cite:tempus-10k-2025,tempus-next-trials-2026}}",
             ],
             [

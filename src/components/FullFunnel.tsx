@@ -182,7 +182,7 @@ export default function FullFunnel() {
             </a>
             <span className="text-sm text-gray-500 flex items-center gap-2">
               <Zap className="w-4 h-4 text-amber-500" />
-              Setup in under 2 weeks
+              Setup in 48 hours
             </span>
           </div>
         </div>

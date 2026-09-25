@@ -121,7 +121,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "What Bond has published, and what it has not",
-          text: "Bond reports 90%+ matching accuracy and 50%+ less chart review across its platform, and full EHR integration typically takes 4 to 6 weeks.{{cite:bond-site}} Bond has not published cardiology-specific screen failure or enrollment results.",
+          text: "Bond reports 90%+ matching accuracy and 50%+ less chart review across its platform, and full EHR integration typically takes 48 hours.{{cite:bond-site}} Bond has not published cardiology-specific screen failure or enrollment results.",
         },
       ],
     },

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs give studies to sites they expect to open quickly and enroll what they promise. Much of what they check is the site's own history: enrollment against commitment, start-up time, investigator availability, and how fast and how credibly the site answered feasibility.",
   summary: "The levers a site controls to get selected for more studies, with benchmarks, a lever table and a plan for this week.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-09-24",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -276,7 +276,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Bond help a site win studies?",
-      a: "Bond helps with the evidence. [Identify](/identify) screens records against a study's criteria and shows the chart evidence behind each match, which supports a criteria-based patient count. Full EHR integration typically takes 4 to 6 weeks, depending on the EHR and IT review; see [implementation](/implementation).{{cite:bond-site}} Selection is still the sponsor's decision.",
+      a: "Bond helps with the evidence. [Identify](/identify) screens records against a study's criteria and shows the chart evidence behind each match, which supports a criteria-based patient count. Full EHR integration typically takes 48 hours, depending on the EHR and IT review; see [implementation](/implementation).{{cite:bond-site}} Selection is still the sponsor's decision.",
     },
   ],
   sources: [

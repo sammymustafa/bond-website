@@ -70,7 +70,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Screening starts from the study's own inclusion and exclusion criteria. Setting them up is part of the workflow configuration covered by Bond's platform fee, and it happens inside the [implementation](/implementation) plan, which takes 4 to 6 weeks for full EHR integration depending on the EHR, IT review and interface method.{{cite:bond-site}}",
+          text: "Screening starts from the study's own inclusion and exclusion criteria. Setting them up is part of the workflow configuration covered by Bond's platform fee, and it happens inside the [implementation](/implementation) plan, which takes 48 hours for full EHR integration depending on the EHR, IT review and interface method.{{cite:bond-site}}",
         },
         {
           type: "steps",
@@ -221,7 +221,7 @@ const page: SeoPage = {
             "**It does not see what is not in the chart.** Care received elsewhere and anything never documented still need a conversation.",
             "**It does not contact patients.** Outreach is a separate step in [Engage](/engage), with scripts the site configures.",
             "**It does not obtain consent.** [Consent](/consent) supports the process; the site and PI still obtain consent.",
-            "**It does not screen charts without data access.** Sites that want to start before the EHR connection is live can begin with list-based outreach, which Bond's site says can be set up in under 2 weeks.{{cite:bond-site}}",
+            "**It does not screen charts without data access.** Sites that want to start before the EHR connection is live can begin with list-based outreach.{{cite:bond-site}}",
             "**It does not remove the need to watch for bias.** A 2026 JAMIA study of nine LLMs, using physician-validated patient vignettes, found eligibility judgments largely stable across patient identities. Homelessness produced the largest negative shift, and disparities appeared where a model had to infer behavior or resources.{{cite:jamia-2026-bias}} Criteria that turn on adherence or resources are good candidates for human review.",
           ],
         },
@@ -239,7 +239,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Does Identify work with Epic and Oracle Health (Cerner)?",
-      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} Full EHR integration typically takes 4 to 6 weeks depending on the EHR, IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
+      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} Full EHR integration typically takes 48 hours depending on the EHR, IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
     },
     {
       q: "Is Identify priced separately?",

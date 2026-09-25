@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs send a feasibility questionnaire before they shortlist a site, and many cover the same ground in a different order. This template puts those questions in one place so your site can answer once, keep the answers current, and copy them into each sponsor's form. It includes a worksheet for patient counts drawn from your EHR, because a count with its method attached is easier to believe than an estimate.",
   summary: "An editable site feasibility questionnaire with an EHR patient-count worksheet and guidance on answering with data.",
-  lastUpdated: "2026-09-22",
+  lastUpdated: "2026-09-24",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -404,7 +404,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health does not fill in feasibility questionnaires. It helps with the part that depends on chart review: the patient count. [Identify](/identify) reads structured and unstructured EHR records against a study's inclusion and exclusion criteria, ranks candidates, and shows the chart evidence behind each criterion decision. A coordinator can check a sample of those decisions before the site reports a number, which is the chart-reviewed step in the worksheet above. Full EHR integration usually takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
+          text: "Bond Health does not fill in feasibility questionnaires. It helps with the part that depends on chart review: the patient count. [Identify](/identify) reads structured and unstructured EHR records against a study's inclusion and exclusion criteria, ranks candidates, and shows the chart evidence behind each criterion decision. A coordinator can check a sample of those decisions before the site reports a number, which is the chart-reviewed step in the worksheet above. Full EHR integration usually takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
         },
         {
           type: "p",

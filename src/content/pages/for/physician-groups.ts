@@ -170,7 +170,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "A full deployment with the EHR connected takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} The IT review and EHR access approval sit with your practice, so name an owner for each in week one. The [implementation plan](/implementation) lists each week.",
+          text: "A full deployment with the EHR connected takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} The IT review and EHR access approval sit with your practice, so name an owner for each at kickoff. The [implementation plan](/implementation) lists each step.",
         },
         {
           type: "checklist",
@@ -214,7 +214,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Can we start before the EHR connection is approved?",
-      a: "Yes. A list-based outreach pilot, working from a patient list your practice exports, can be set up in under 2 weeks while the full EHR connection, which takes 4 to 6 weeks, is reviewed.{{cite:bond-site}}",
+      a: "Yes. A list-based outreach pilot can work from a patient list your practice exports while the EHR connection is reviewed.{{cite:bond-site}}",
     },
     {
       q: "Is Bond an athenahealth or eClinicalWorks partner?",
@@ -318,7 +318,7 @@ const page: SeoPage = {
     { label: "athenahealth integration", href: "/integrations/athenahealth", description: "The FHIR path and approvals for groups on athenaOne." },
     { label: "eClinicalWorks integration", href: "/integrations/eclinicalworks", description: "How a practice turns on FHIR access and what Bond reads." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts and explains each match." },
-    { label: "Implementation", href: "/implementation", description: "What your team and Bond do in each week of the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "What your team and Bond do at each step of the 48-hour plan." },
     { label: "Pricing", href: "/pricing", description: "The platform fee and the success fee per randomized patient." },
     { label: "How to use your EHR for recruitment", href: "/guides/ehr-for-recruitment", description: "Cohort queries, HIPAA paths and coordinator review, step by step." },
   ],

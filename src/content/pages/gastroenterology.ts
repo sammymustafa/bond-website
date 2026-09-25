@@ -229,7 +229,7 @@ const page: SeoPage = {
     },
     {
       q: "How long does it take to start screening at a GI practice?",
-      a: "Full EHR integration typically takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}} The [implementation](/implementation) page sets out the steps.",
+      a: "Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} The [implementation](/implementation) page sets out the steps.",
     },
   ],
   sources: [

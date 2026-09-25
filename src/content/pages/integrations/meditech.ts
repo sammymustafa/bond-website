@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "integration",
   title: "MEDITECH Expanse FHIR integration for trial recruitment",
   description:
-    "How Bond connects to MEDITECH Expanse over FHIR R4 and HL7 v2: the data it reads, what hospital IT approves, clinical notes and the 4 to 6 week timeline.",
+    "How Bond connects to MEDITECH Expanse over FHIR R4 and HL7 v2: the data it reads, what hospital IT approves, clinical notes and the 48-hour timeline.",
   keywords: [
     "MEDITECH Expanse clinical trial recruitment",
     "MEDITECH FHIR integration",
@@ -156,33 +156,33 @@ const page: SeoPage = {
     },
     {
       id: "timeline",
-      heading: "Where does MEDITECH fit in the 4 to 6 week implementation?",
+      heading: "Where does MEDITECH fit in the 48-hour implementation?",
       blocks: [
         {
           type: "p",
-          text: "Bond's published estimate for a full EHR integration is 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} In the [implementation plan](/implementation), criteria and scripts are configured in parallel with these steps.",
+          text: "Bond's published estimate for a full EHR integration is 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} In the [implementation plan](/implementation), criteria and scripts are configured in parallel with these steps.",
         },
         {
           type: "steps",
           items: [
             {
-              title: "Week 1: kickoff and BAA",
+              title: "Step 1: kickoff and BAA",
               text: "Bond signs the BAA and lists the data it requests.",
             },
             {
-              title: "Weeks 1 to 3: security review and access path",
+              title: "Step 2: security review and access path",
               text: "IT reviews Bond and picks FHIR, HL7 v2 or an integration partner.",
             },
             {
-              title: "Weeks 2 to 3: connection",
+              title: "Step 3: connection",
               text: "IT registers Bond or turns on the feed. Bond checks which data and note types arrive.",
             },
             {
-              title: "Weeks 2 to 4: criteria and validation",
+              title: "Step 4: criteria and validation",
               text: "Bond turns each criterion into checks. The PI or coordinator adjudicates matches on a sample of Expanse records.",
             },
             {
-              title: "Weeks 5 to 6: go-live",
+              title: "Step 5: go-live",
               text: "Ranked matches appear in the dashboard.{{cite:bond-site}}",
             },
           ],
@@ -191,7 +191,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "If IT approval runs long",
-          text: "A pilot without EHR integration can start from an exported patient list after a setup of under 2 weeks. EHR screening is added once the MEDITECH connection is approved.{{cite:bond-site}}",
+          text: "A pilot without EHR integration can start from an exported patient list. EHR screening is added once the MEDITECH connection is approved.{{cite:bond-site}}",
         },
       ],
     },
@@ -401,7 +401,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Implementation", href: "/implementation", description: "Where the MEDITECH connection sits in the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "Where the MEDITECH connection sits in the 48-hour plan." },
     { label: "Integrations", href: "/integrations", description: "Every EHR and research system Bond connects to, and what each needs." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts against each criterion and explains matches." },

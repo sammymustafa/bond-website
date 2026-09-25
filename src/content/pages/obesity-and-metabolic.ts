@@ -202,7 +202,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Full EHR integration usually takes 4 to 6 weeks, depending on the EHR, IT review and interface method. A pilot without EHR integration, such as outreach to an existing patient list, can start in under 2 weeks. Pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site}}",
+          text: "Full EHR integration usually takes 48 hours, depending on the EHR, IT review and interface method. Pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site}}",
         },
         {
           type: "cta",

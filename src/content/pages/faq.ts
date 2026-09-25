@@ -42,7 +42,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Before screening starts, three things need sign-off: the business associate agreement and your security review, your IRB's review of the outreach scripts, and your IT team's approval of the EHR connection. Full EHR integration takes 4 to 6 weeks, and a list-based pilot without it can start after a setup of under 2 weeks.{{cite:bond-site}}",
+          text: "Before screening starts, three things need sign-off: the business associate agreement and your security review, your IRB's review of the outreach scripts, and your IT team's approval of the EHR connection. Full EHR integration takes 48 hours.{{cite:bond-site}}",
         },
         {
           type: "p",
@@ -82,7 +82,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How does Bond Health connect to EHR data?",
-      a: "Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable).{{cite:bond-product}} Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 4 to 6 weeks depending on site IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
+      a: "Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable).{{cite:bond-product}} Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
     },
     {
       q: "How does Bond Health validate trial eligibility logic?",
@@ -94,7 +94,7 @@ const page: SeoPage = {
     },
     {
       q: "What is Bond Health's implementation timeline?",
-      a: "Bond Health typically implements in 4 to 6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch,{{cite:bond-site}} and keeps improving outreach messaging until study close-out.{{cite:bond-product}} See [implementation](/implementation).",
+      a: "Bond Health typically implements in 48 hours for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch,{{cite:bond-site}} and keeps improving outreach messaging until study close-out.{{cite:bond-product}} See [implementation](/implementation).",
     },
     {
       q: "What is Bond Health's security posture?",
@@ -190,7 +190,7 @@ const page: SeoPage = {
     },
     {
       q: "Can a site start without EHR integration?",
-      a: "Yes. A pilot can run outreach from a candidate list the site provides, with setup in under 2 weeks, and EHR screening is added once IT approves the connection.{{cite:bond-site}} Without the EHR connection there is no ranked match list or chart evidence, so who is contacted depends on the site's list. See [implementation](/implementation).",
+      a: "Yes. A pilot can run outreach from a candidate list the site provides, and EHR screening is added once IT approves the connection.{{cite:bond-site}} Without the EHR connection there is no ranked match list or chart evidence, so who is contacted depends on the site's list. See [implementation](/implementation).",
     },
     {
       q: "What does our site need to provide during implementation?",
@@ -336,7 +336,7 @@ const page: SeoPage = {
   related: [
     { label: "Pricing", href: "/pricing", description: "The volume-based platform fee and the success fee per randomized patient." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control, audit logging and the Trust Center." },
-    { label: "Implementation", href: "/implementation", description: "What happens between signing and live screening, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What happens between signing and live screening, step by step." },
     { label: "Integrations", href: "/integrations", description: "How Bond connects to EHRs, CTMS systems and calendars." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Authorizations, waivers and what the IRB reviews." },
   ],

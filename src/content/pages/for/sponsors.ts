@@ -166,7 +166,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond deploys at the sites you select. Each site signs a business associate agreement, completes a security review, connects its EHR, configures criteria and scripts with Bond, and submits outreach scripts to its IRB where required. Full EHR integration typically takes 4 to 6 weeks per site, depending on the EHR, IT review and interface method. A pilot using a patient list the site already holds, without EHR integration, can start in under 2 weeks.{{cite:bond-site}} See [implementation](/implementation) and [security](/security).",
+          text: "Bond deploys at the sites you select. Each site signs a business associate agreement, completes a security review, connects its EHR, configures criteria and scripts with Bond, and submits outreach scripts to its IRB where required. Full EHR integration typically takes 48 hours per site, depending on the EHR, IT review and interface method.{{cite:bond-site}} See [implementation](/implementation) and [security](/security).",
         },
         {
           type: "checklist",
@@ -326,7 +326,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Bond for CROs", href: "/for/cros", description: "Screening, outreach and one enrollment funnel across a CRO's site portfolio." },
-    { label: "Implementation", href: "/implementation", description: "What full EHR integration involves over 4 to 6 weeks, and what a site provides." },
+    { label: "Implementation", href: "/implementation", description: "What full EHR integration involves in 48 hours, and what a site provides." },
     { label: "Pricing", href: "/pricing", description: "A platform fee plus a success fee per randomized patient." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },

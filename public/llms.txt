@@ -31,7 +31,7 @@ Bond provides an end-to-end AI-powered platform for clinical trial patient recru
 ## Key Metrics
 - Up to 3x faster enrollment compared to traditional methods
 - 90%+ matching accuracy for patient eligibility
-- 4 to 6 weeks typical timeline for full EHR integration
+- 48 hours typical timeline for full EHR integration
 
 ## Technology
 - Clinical knowledge graph with 1.6M nodes
@@ -60,7 +60,7 @@ There is no integration fee.
 ## Frequently Asked Questions
 
 Q: How does Bond Health connect to EHR data?
-A: Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 4 to 6 weeks depending on site IT review and interface method.
+A: Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.
 
 Q: How does Bond Health validate trial eligibility logic?
 A: Bond Health configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. Bond Health provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.
@@ -69,7 +69,7 @@ Q: How do Bond Health's voice and SMS/text agents handle PHI?
 A: Bond Health's voice and SMS/text agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers. Bond Health designs workflows to minimize PHI exposure and support compliant operations.
 
 Q: What is Bond Health's implementation timeline?
-A: Bond Health typically implements in 4 to 6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch, and keeps improving outreach messaging until study close-out.
+A: Bond Health typically implements in 48 hours for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch, and keeps improving outreach messaging until study close-out.
 
 Q: What is Bond Health's security posture?
 A: Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway. Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.
@@ -84,7 +84,7 @@ A: Yes. Bond Health sets up Meta and Google ad campaigns for your studies, and l
 - Identify (LLM-based EHR screening): https://bondtrials.com/identify
 - Engage (Meta and Google ad campaigns, voice and SMS/text pre-screening and scheduling): https://bondtrials.com/engage
 - Consent (AI-powered informed consent support): https://bondtrials.com/consent
-- Implementation (the 4 to 6 weeks, week by week): https://bondtrials.com/implementation
+- Implementation (live in 48 hours, step by step): https://bondtrials.com/implementation
 - Pricing: https://bondtrials.com/pricing
 - Security and compliance: https://bondtrials.com/security
 - Integrations (Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, CRIO, RealTime, Advarra Clinical Conductor, Veeva SiteVault): https://bondtrials.com/integrations

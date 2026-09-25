@@ -150,7 +150,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "What Bond has published, and what it has not",
-          text: "Bond reports above 90% matching accuracy and more than 50% less chart review, and full EHR integration typically takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}} These are platform-wide figures. Bond has not published oncology-specific screen failure or enrollment results.",
+          text: "Bond reports above 90% matching accuracy and more than 50% less chart review, and full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} These are platform-wide figures. Bond has not published oncology-specific screen failure or enrollment results.",
         },
         {
           type: "quote",

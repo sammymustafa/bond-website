@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "product",
   title: "Trial recruitment software implementation: EHR timeline",
   description:
-    "What Bond and your site each do in a 4 to 6 week EHR-integrated rollout of trial recruitment software, from BAA and security review to go-live.",
+    "What Bond and your site each do in a 48-hour EHR-integrated rollout of trial recruitment software, from BAA and security review to go-live.",
   keywords: [
     "clinical trial recruitment software implementation",
     "EHR integration timeline clinical trials",
@@ -13,78 +13,77 @@ const page: SeoPage = {
     "clinical trial recruitment pilot",
   ],
   eyebrow: "Implementation",
-  h1: "Implementation: the 4 to 6 weeks, week by week",
+  h1: "Implementation: live in 48 hours, step by step",
   intro:
-    "A full Bond Health deployment with the EHR connected typically takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method. A pilot without EHR integration can be set up in under 2 weeks.{{cite:bond-site}} Most of that time goes to approvals Bond does not control: the BAA, the security review, the EHR connection and, where needed, IRB review of outreach scripts. Below is what Bond does, what your team does, and what exists after each step.",
-  summary: "Week-by-week plan for an EHR-integrated deployment, with site tasks, Bond tasks and a faster pilot path.",
+    "A full Bond Health deployment with the EHR connected typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} What can add time is approvals Bond does not control: the BAA, the security review, the EHR connection and, where needed, IRB review of outreach scripts. Below is what Bond does, what your team does, and what exists after each step.",
+  summary: "Step-by-step plan for a 48-hour EHR-integrated deployment, with site tasks, Bond tasks and a list-based pilot path.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
-      id: "week-by-week",
-      heading: "What happens each week?",
+      id: "step-by-step",
+      heading: "What happens in the 48 hours?",
       blocks: [
         {
           type: "p",
-          text: "The table shows the usual order for a full deployment with the EHR connected. Tracks overlap: while IT reviews security and sets up the connection, the study team works through criteria and scripts with Bond.",
+          text: "The table shows the usual order for a full deployment with the EHR connected. Steps overlap: while IT reviews security and sets up the connection, the study team works through criteria and scripts with Bond.",
         },
         {
           type: "stats",
           items: [
-            { value: "4 to 6 weeks", label: "Full deployment with the EHR connected", cite: "bond-site" },
-            { value: "Under 2 weeks", label: "Setup for a pilot without EHR integration", cite: "bond-site" },
+            { value: "48 hours", label: "Full deployment with the EHR connected", cite: "bond-site" },
             { value: "20 days", label: "Median from site activation to first patient screened (CRIO benchmarks, 2026)", cite: "crio-startup" },
           ],
         },
         {
           type: "table",
           caption: "Full EHR-integrated deployment",
-          columns: ["Week", "Bond does", "Site does", "Output"],
+          columns: ["Step", "Bond does", "Site does", "Output"],
           rows: [
             [
-              "Week 1: kickoff and BAA",
+              "1. Kickoff and BAA",
               "Runs kickoff, signs the BAA, shares security documents, reviews the protocol.",
               "Names the PI, coordinator, IT and security contacts. Signs the BAA.",
               "Signed BAA, owners, dated plan",
             ],
             [
-              "Weeks 1 to 3: security review",
+              "2. Security review",
               "Answers the security questionnaire. Lists the data and API scopes it requests.",
               "Runs its vendor review. Picks FHIR R4, HL7 v2 or an integration partner.",
               "Security approval, chosen interface",
             ],
             [
-              "Weeks 2 to 3: EHR connection",
+              "3. EHR connection",
               "Connects in test, then production. Checks which data and note types come through.",
               "Provisions credentials and approves scopes, following the EHR vendor's steps.",
               "Working connection",
             ],
             [
-              "Weeks 2 to 4: criteria",
+              "4. Criteria",
               "Turns each criterion into checks and runs them on a sample of real records.",
               "PI or coordinator settles ambiguous criteria and adjudicates the sample.",
               "Validated, versioned criteria",
             ],
             [
-              "Weeks 2 to 4: scripts and IRB",
+              "5. Scripts and IRB",
               "Drafts voice and text scripts with AI disclosure and how to reach a person: a live transfer or a callback.{{cite:bond-product}}",
               "Edits the scripts. Submits them to the IRB where required.",
               "Approved scripts",
             ],
             [
-              "Weeks 3 to 5: outreach and scheduling",
+              "6. Outreach and scheduling",
               "Loads scripts, sets escalation rules, connects the calendar and CTMS or sheet, sends test calls.",
               "Supplies visit slots, escalation contacts and CTMS access. Tests as a patient.",
               "Tested outreach flow",
             ],
             [
-              "Week 5: training",
+              "7. Training",
               "Trains coordinators on the dashboard. Sets up role-based access and SSO.",
               "Decides who reviews matches and who covers escalations.",
               "Trained users",
             ],
             [
-              "Weeks 5 to 6: go-live",
+              "8. Go-live",
               "Turns on screening and outreach at the agreed pace. Monitors quality.",
               "Reviews matches, takes escalations, runs screening visits.",
               "First matches and booked visits",
@@ -96,7 +95,7 @@ const page: SeoPage = {
               "Accuracy report, funnel numbers",
             ],
           ],
-          note: "Typical sequence for a 4 to 6 week deployment.{{cite:bond-site}} Your dates move with the three approvals below.",
+          note: "Typical sequence for a 48-hour deployment.{{cite:bond-site}} Your dates move with the three approvals below.",
         },
         {
           type: "callout",
@@ -146,7 +145,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Firms that build new integrations quote longer. Topflight Apps puts a new app's first production Epic integration at 6 to 12 months, with each added site needing, for most apps, its own approval plus roughly 2 to 4 weeks to go live.{{cite:topflight-epic}} Bond's 4 to 6 weeks covers connecting your site and setting up a study, and depends on your EHR, IT review and interface method.{{cite:bond-site}}",
+          text: "Firms that build new integrations quote longer. Topflight Apps puts a new app's first production Epic integration at 6 to 12 months, with each added site needing, for most apps, its own approval plus roughly 2 to 4 weeks to go live.{{cite:topflight-epic}} Bond's 48 hours cover connecting your site and setting up a study, and depend on your EHR, IT review and interface method.{{cite:bond-site}}",
         },
       ],
     },
@@ -191,7 +190,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Training happens the week before go-live. Coordinators learn the dashboard: the ranked match list, the criterion-to-evidence rationale behind each match, outreach status, pre-screening answers, booked visits and escalations.",
+          text: "Training happens just before go-live. Coordinators learn the dashboard: the ranked match list, the criterion-to-evidence rationale behind each match, outreach status, pre-screening answers, booked visits and escalations.",
         },
         {
           type: "p",
@@ -205,7 +204,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Yes. A pilot without EHR integration can be set up in under 2 weeks.{{cite:bond-site}} It fits when a study is about to activate and the EHR connection will take longer. It still needs the BAA and your vendor review, because a candidate list is PHI. Early speed matters: CRIO's July 2026 benchmarks put the median time from site activation to first patient screened at 20 days, and 8 days for top-quartile sites.{{cite:crio-startup}}",
+          text: "Yes. A pilot can run outreach, pre-screening and scheduling on a list the site already has before the EHR is connected.{{cite:bond-site}} It fits when a study is about to activate and the site's IT approval will take longer. It still needs the BAA and your vendor review, because a candidate list is PHI. Early speed matters: CRIO's July 2026 benchmarks put the median time from site activation to first patient screened at 20 days, and 8 days for top-quartile sites.{{cite:crio-startup}}",
         },
         {
           type: "ol",

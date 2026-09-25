@@ -24,7 +24,7 @@ export const productLinks: NavItem[] = [
   { name: "Identify", href: "/identify", description: "LLM-based EHR screening" },
   { name: "Engage", href: "/engage", description: "Meta and Google ads, voice and SMS outreach" },
   { name: "Consent", href: "/consent", description: "AI-powered informed consent support" },
-  { name: "Implementation", href: "/implementation", description: "The 4 to 6 weeks, week by week" },
+  { name: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step" },
   { name: "Integrations", href: "/integrations", description: "EHRs, CTMS and eRegulatory" },
   { name: "Pricing", href: "/pricing", description: "No integration fee, plus a per-randomized-patient fee" },
   { name: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliant" },

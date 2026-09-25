@@ -291,7 +291,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Security review runs inside implementation, and full EHR integration typically takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}} See [implementation](/implementation) for the plan, and the [AI recruitment vendor evaluation checklist](/templates/ai-recruitment-vendor-evaluation-checklist) to compare vendors.",
+          text: "Security review runs inside implementation, and full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} See [implementation](/implementation) for the plan, and the [AI recruitment vendor evaluation checklist](/templates/ai-recruitment-vendor-evaluation-checklist) to compare vendors.",
         },
         {
           type: "cta",

@@ -94,7 +94,7 @@ export default function Pricing() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">Typical implementation</p>
-              <p className="text-sm text-gray-600">4 to 6 weeks for full EHR integration (timing depends on EHR, IT review, and interface method)</p>
+              <p className="text-sm text-gray-600">48 hours for full EHR integration (timing depends on EHR, IT review, and interface method)</p>
             </div>
           </div>
 
