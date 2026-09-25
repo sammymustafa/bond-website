@@ -1,6 +1,7 @@
 "use client";
 
 import { Check, ArrowRight, Users, Settings, Clock } from "lucide-react";
+import Link from "next/link";
 import { useDemoModal } from "@/context/DemoModalContext";
 
 export default function Pricing() {
@@ -16,8 +17,9 @@ export default function Pricing() {
             Two-part pricing, aligned with enrollment.
           </h2>
           <p className="body-lg">
-            Bond combines a fixed platform and integration fee with a performance-based 
-            success fee, so we only win when you enroll patients.
+            Bond combines a volume-based platform fee with a performance-based success fee
+            for each randomized patient, so we win when you enroll patients. There is no
+            integration fee.
           </p>
         </div>
 
@@ -40,19 +42,19 @@ export default function Pricing() {
               </div>
             </div>
 
-            {/* Platform + Integration Fee - New detailed style */}
+            {/* Platform Fee - New detailed style */}
             <div className="card-elevated">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center">
                   <Settings className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 rounded-full">
-                  <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Fixed</span>
+                  <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Volume-based</span>
                 </div>
               </div>
-              <h3 className="heading-sm mb-3">Platform + Integration Fee</h3>
+              <h3 className="heading-sm mb-3">Platform Fee</h3>
               <p className="text-gray-600 mb-4">
-                Covers EHR integration, implementation, and the ongoing operating costs required to run screening, outreach, consent support, analytics, and audit logs.
+                Covers EHR integration, implementation, and the ongoing costs of screening, outreach, consent support, analytics, and audit logs. The fee is volume-based, and there is no separate integration fee.
               </p>
               <div className="space-y-2 pt-4 border-t border-gray-100">
                 {[
@@ -92,7 +94,7 @@ export default function Pricing() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">Typical implementation</p>
-              <p className="text-sm text-gray-600">4-6 weeks for full EHR integration (timing depends on EHR, IT review, and interface method)</p>
+              <p className="text-sm text-gray-600">4 to 6 weeks for full EHR integration (timing depends on EHR, IT review, and interface method)</p>
             </div>
           </div>
 
@@ -125,6 +127,11 @@ export default function Pricing() {
               Get custom pricing
               <ArrowRight className="w-4 h-4" />
             </button>
+            <p className="mt-4 text-sm text-gray-500">
+              <Link href="/pricing" className="text-bond-primary font-medium hover:underline">How the pricing model works</Link>
+              {" "}and{" "}
+              <Link href="/implementation" className="text-bond-primary font-medium hover:underline">what implementation involves</Link>.
+            </p>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
     template: "%s | Bond Health",
   },
-  description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, voice and SMS/text agents, and AI-powered informed consent help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
+  description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, Meta and Google ad campaigns, voice and SMS/text agents, and AI-powered informed consent help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
   keywords: [
     "clinical trial patient recruitment",
     "AI patient matching",
@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "clinical research recruitment",
     "voice agents healthcare",
     "text message patient outreach",
+    "clinical trial recruitment ads",
+    "Meta ads for clinical trials",
+    "Google ads for clinical trial recruitment",
     "informed consent AI",
     "clinical trial enrollment",
     "patient identification",
@@ -100,7 +103,7 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is a clinical trial patient recruitment company. Its AI platform provides LLM-based EHR screening, voice and SMS/text agents for patient outreach, and AI-powered informed consent for research sites, CROs, and sponsors.",
+      description: "Bond Health is a clinical trial patient recruitment company. Its AI platform provides LLM-based EHR screening, Meta and Google ad campaigns for studies, voice and SMS/text agents for patient outreach, and AI-powered informed consent for research sites, CROs, and sponsors.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Boston",
@@ -148,11 +151,13 @@ const jsonLd = {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
-        description: "Performance-based pricing with enrollment success fee",
+        description: "Volume-based platform fee plus a success fee per randomized patient, with no integration fee",
       },
       featureList: [
         "LLM-based EHR screening",
         "Voice and SMS/text agents for pre-screening and scheduling",
+        "Meta and Google ad campaigns set up for each study",
+        "Ad leads routed to pre-screening and scheduling",
         "AI-powered informed consent",
         "Real-time dashboard and audit trail",
         "EHR integration via FHIR",
@@ -207,7 +212,7 @@ const jsonLd = {
             itemOffered: {
               "@type": "Service",
               name: "Patient Engagement",
-              description: "Voice and SMS/text agents for automated outreach, pre-screening, and scheduling",
+              description: "Meta and Google ad campaigns set up for each study, plus voice and SMS/text agents for automated outreach, pre-screening, and scheduling of EHR matches and ad leads",
             },
           },
           {
@@ -220,60 +225,6 @@ const jsonLd = {
           },
         ],
       },
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://bondtrials.com/#faq",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How does Bond Health connect to EHR data?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bond Health integrates with major EHRs (including Epic and Cerner) using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 4-6 weeks depending on site IT review and interface method.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How does Bond Health validate trial eligibility logic?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bond Health configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. Bond Health provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do Bond Health's voice and SMS/text agents handle PHI?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bond Health's voice and SMS/text agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. Bond Health designs workflows to minimize PHI exposure and support compliant operations.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is Bond Health's implementation timeline?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bond Health typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is Bond Health's security posture?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What outcomes does Bond Health measure for research sites?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bond Health reports site-relevant outcomes including patients matched, patients contacted and pre-screened, patients consented, patients randomized (when available), time-to-enrollment, matching accuracy, screen failure rate signals, and coordinator hours saved. Bond Health provides real-time dashboards plus regular reporting for sponsors, CROs, and sites as needed.",
-          },
-        },
-      ],
     },
   ],
 };

@@ -1,37 +1,9 @@
 "use client";
 
-import Script from "next/script";
+import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { useDemoModal } from "@/context/DemoModalContext";
-
-const BRAND = "Bond Health";
-
-const faqs = [
-  {
-    question: `How does ${BRAND} connect to EHR data?`,
-    answer: `${BRAND} integrates with major EHRs (including Epic and Cerner) using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). ${BRAND}'s implementation team handles the integration end-to-end, and full EHR integration typically completes in 4-6 weeks depending on site IT review and interface method.`,
-  },
-  {
-    question: `How does ${BRAND} validate trial eligibility logic?`,
-    answer: `${BRAND} configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. ${BRAND} provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.`,
-  },
-  {
-    question: `How do ${BRAND}'s voice and SMS/text agents handle PHI?`,
-    answer: `${BRAND}'s voice and SMS/text agents follow HIPAA compliant practices: encryption in transit, access controls, and audit logging. Patients are informed when AI assistance is used and can request a human callback at any time. ${BRAND} designs workflows to minimize PHI exposure and support compliant operations.`,
-  },
-  {
-    question: `What is ${BRAND}'s implementation timeline?`,
-    answer: `${BRAND} typically implements in 4-6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. ${BRAND} provides dedicated support throughout integration and launch.`,
-  },
-  {
-    question: `What is ${BRAND}'s security posture?`,
-    answer: `${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} signs BAAs and maintains HIPAA compliant workflows for PHI.`,
-  },
-  {
-    question: `What outcomes does ${BRAND} measure for research sites?`,
-    answer: `${BRAND} reports site-relevant outcomes including patients matched, patients contacted and pre-screened, patients consented, patients randomized (when available), time-to-enrollment, matching accuracy, screen failure rate signals, and coordinator hours saved. ${BRAND} provides real-time dashboards plus regular reporting for sponsors, CROs, and sites as needed.`,
-  },
-];
+import { BRAND, homeFaqs as faqs } from "@/content/homeFaq";
 
 function slugify(s: string) {
   return s
@@ -43,27 +15,8 @@ function slugify(s: string) {
 export default function FAQ() {
   const { openDemoModal } = useDemoModal();
 
-  // Schema.org FAQPage JSON-LD for reliable extraction by search and LLM tooling
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: f.answer,
-      },
-    })),
-  };
-
   return (
     <section id="faq" className="section bg-gradient-section">
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
 
       <div className="container-md px-4 sm:px-6">
         {/* Header */}
@@ -98,7 +51,10 @@ export default function FAQ() {
 
         {/* More Questions CTA */}
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">Still have questions about {BRAND}?</p>
+          <p className="text-gray-600 mb-4">
+            Still have questions about {BRAND}? Read the{" "}
+            <Link href="/faq" className="text-bond-primary font-medium hover:underline">full FAQ</Link> or ask us.
+          </p>
           <button onClick={openDemoModal} className="btn-secondary">
             Contact us
           </button>

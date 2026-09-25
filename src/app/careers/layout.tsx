@@ -20,11 +20,13 @@ export const metadata: Metadata = {
     description: "Join Bond Health and help patients access life-changing clinical trials. We're building AI that helps research sites enroll the right patients faster.",
     url: "https://bondtrials.com/careers",
     type: "website",
+    images: [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "Careers at Bond Health" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Careers at Bond Health",
     description: "Join our team building AI for clinical trial patient recruitment.",
+    images: ["/images/og-image.png"],
   },
   alternates: {
     canonical: "https://bondtrials.com/careers",

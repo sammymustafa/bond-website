@@ -1,0 +1,513 @@
+import type { SeoPage } from "../types";
+
+const page: SeoPage = {
+  path: "/report",
+  category: "report",
+  title: "State of Clinical Trial Enrollment Report 2026",
+  description:
+    "State of clinical trial enrollment in 2026: recruiting-study counts by state and area, plus sourced data on sites, screen failure, workload and consent.",
+  keywords: [
+    "state of clinical trial enrollment report 2026",
+    "clinical trial enrollment statistics",
+    "recruiting clinical trials by state",
+    "screen failure rate benchmarks",
+    "clinical trial diversity data",
+  ],
+  eyebrow: "Report",
+  h1: "State of Trial Enrollment 2026",
+  intro:
+    "This Bond Health report brings together what ClinicalTrials.gov and published research say about clinical trial enrollment in 2026. Every figure is tied to a named, dated source, and older benchmarks carry their year.",
+  summary: "Registry counts by state and area, plus sourced data on enrollment, sites, screen failure, workload, consent and representation.",
+  lastUpdated: "2026-09-21",
+  showLastUpdated: true,
+  heroCta: {
+    label: "Download the PDF",
+    href: "/downloads/state-of-trial-enrollment-2026.pdf",
+    secondaryLabel: "Book a demo",
+    secondaryHref: "/book-a-demo",
+  },
+  sections: [
+    {
+      id: "summary",
+      heading: "What are the main findings?",
+      blocks: [
+        {
+          type: "p",
+          text: "Registry counts are weighted to oncology, and published research puts most of the friction at the site: finding eligible patients, the staff time that takes, and consent forms patients struggle to read.",
+        },
+        {
+          type: "stats",
+          items: [
+            { value: "22,041", label: "Studies recruiting at US locations, September 21, 2026", cite: "ctgov-api" },
+            { value: "11%", label: "Sites in a given trial that enroll no patients (Tufts CSDD, 2013)", cite: "tufts-2013" },
+            { value: "70.7%", label: "Mean share of screened patients randomized in Phase III protocols (Tufts CSDD, 2022)", cite: "tufts-2022" },
+            { value: "Grade 12.0", label: "Mean reading level of consent forms in 798 federally funded US trials", cite: "mirza-2024" },
+            { value: "9%", label: "US adults who had ever been invited to join a clinical trial (2020 survey)", cite: "hints-2021" },
+          ],
+        },
+        {
+          type: "ul",
+          items: [
+            "**Oncology leads the pool.** Cancer keywords match 7,074 of the 22,041 US recruiting studies, or 32.1%.{{cite:ctgov-api}}",
+            "**Most trials reach their goal, but late.** In Tufts CSDD's 2013 analysis, 89% of trials met enrollment goals, typically after nearly doubling the original timeline.{{cite:tufts-2013}}",
+            "**Cancer drug trials enroll mostly outside the US.** In the pivotal trials behind FDA's 2025 novel cancer drug approvals, 80% of participants were enrolled outside the US.{{cite:fda-snapshots-2025}}",
+          ],
+        },
+        {
+          type: "download",
+          label: "State of Trial Enrollment 2026 (PDF)",
+          href: "/downloads/state-of-trial-enrollment-2026.pdf",
+          format: "PDF, 12 to 16 pages",
+          note: "Same data, sources and methods as this page.",
+        },
+        { type: "h3", text: "What the report covers" },
+        {
+          type: "ol",
+          items: [
+            "[Recruiting trials by therapeutic area and geography](#where)",
+            "[Trial enrollment performance](#enrollment)",
+            "[Site performance](#sites)",
+            "[Screen failure](#screen-failure)",
+            "[Coordinator workload](#workload)",
+            "[Consent](#consent)",
+            "[Representation](#representation)",
+            "[Methods](#methods)",
+          ],
+        },
+      ],
+    },
+    {
+      id: "where",
+      heading: "How many trials are recruiting, and where?",
+      blocks: [
+        {
+          type: "p",
+          text: "On September 21, 2026, 22,041 studies on ClinicalTrials.gov had a status of Recruiting and at least one US location. Cancer keywords matched 7,074 of them, more than twice any other area.{{cite:ctgov-api}}",
+        },
+        {
+          type: "chart",
+          title: "US recruiting studies by therapeutic area keyword, September 21, 2026",
+          unit: "studies",
+          data: [
+            { label: "Oncology", value: 7074 },
+            { label: "Cardiology", value: 2845 },
+            { label: "Psychiatry", value: 1273 },
+            { label: "Neurology", value: 987 },
+            { label: "Obesity and metabolic", value: 852 },
+            { label: "Pain", value: 629 },
+            { label: "Gastroenterology", value: 285 },
+            { label: "Dermatology", value: 214 },
+          ],
+          cite: "ctgov-api",
+        },
+        {
+          type: "p",
+          text: "Keyword lists overlap and many studies match none, so the bars are counts, not shares of the total.{{cite:ctgov-api}}",
+        },
+        {
+          type: "table",
+          caption: "Recruiting studies by geography, September 21, 2026",
+          columns: ["Geography", "Recruiting studies", "What the count covers"],
+          rows: [
+            ["[Midwest](/clinical-trial-recruitment/midwest)", "16,812 {{cite:ctgov-api}}", "Sum of 12 states: OH, MI, IL, IN, WI, MN, IA, MO, KS, NE, ND, SD"],
+            ["[Southeast](/clinical-trial-recruitment/southeast)", "11,519 {{cite:ctgov-api}}", "Sum of 10 states: GA, NC, SC, TN, AL, MS, KY, VA, LA, AR"],
+            ["[Texas](/clinical-trial-recruitment/texas)", "4,854 {{cite:ctgov-api}}", "One state"],
+            ["[Florida](/clinical-trial-recruitment/florida)", "3,876 {{cite:ctgov-api}}", "One state"],
+            ["[Arizona](/clinical-trial-recruitment/arizona)", "1,689 {{cite:ctgov-api}}", "One state"],
+            ["[Utah](/clinical-trial-recruitment/utah)", "1,210 {{cite:ctgov-api}}", "One state"],
+            ["[Nevada](/clinical-trial-recruitment/nevada)", "565 {{cite:ctgov-api}}", "One state"],
+          ],
+          note: "Regional figures sum state-level counts, so a study recruiting in two member states counts twice. See Methods for how locations are matched.{{cite:ctgov-api}}",
+        },
+        {
+          type: "p",
+          text: "A count shows where sponsors have placed studies, not which are enrolling on schedule. The [state and region pages](/clinical-trial-recruitment) break each count down by area.",
+        },
+      ],
+    },
+    {
+      id: "enrollment",
+      heading: "How often do trials hit enrollment targets?",
+      blocks: [
+        {
+          type: "p",
+          text: "Most trials get there, but late. In Tufts CSDD's 2013 analysis of more than 150 studies, 89% of trials met their enrollment goals, but reaching them typically meant nearly doubling the original timeline.{{cite:tufts-2013}} A registry study shows how often trials fall short: of 2,579 Phase 2 and 3 trials that closed in 2011, 19% were terminated for failed accrual or finished below 85% of planned enrollment, affecting 48,027 enrolled patients.{{cite:carlisle-2015}}",
+        },
+        {
+          type: "p",
+          text: "Timelines are getting longer. In Tufts CSDD data presented at SCOPE 2024, enrollment duration, from first patient first visit to last patient last visit, rose 36.9% from 2010 to 2020.{{cite:vanguard-2024}} IQVIA reports that global trial durations increased in 2025 and the intervals between trials in a development program grew by 3 months.{{cite:iqvia-rd-2026}}",
+        },
+      ],
+    },
+    {
+      id: "sites",
+      heading: "How do sites perform against enrollment targets?",
+      blocks: [
+        {
+          type: "table",
+          caption: "How sites in a multi-site trial perform against enrollment targets",
+          columns: ["Site outcome", "Share of sites"],
+          rows: [
+            ["Enrolled no patients", "11% {{cite:tufts-2013}}"],
+            ["Under-enrolled", "37% {{cite:tufts-2013}}"],
+            ["Met target", "39% {{cite:tufts-2013}}"],
+            ["Exceeded target", "13% {{cite:tufts-2013}}"],
+          ],
+          note: "Tufts CSDD analysis of more than 150 studies and nearly 16,000 sites, released in January 2013. The data are global and predate 2013.{{cite:tufts-2013}}",
+        },
+        {
+          type: "p",
+          text: "Newer data point the same way. In a 2023 Phesi analysis of 173 cancer trials with 11,826 sites, reported by Labiotech, 19% of sites enrolled just one patient.{{cite:phesi-2023}} At SCOPE 2024, Tufts CSDD reported that about 40% of the North American sites a sponsor looks to engage never activate.{{cite:vanguard-2024}} Start-up speed depends on site type: in WCG's 2025 survey, 54% of independent sites and physician practices said they can start a study in under 60 days, compared with 9% of academic centers, hospitals, health systems and site networks.{{cite:wcg-2025}}",
+        },
+        {
+          type: "p",
+          text: "The [guide to how sponsors choose sites](/guides/how-sponsors-choose-sites) shows how these numbers feed site selection.",
+        },
+      ],
+    },
+    {
+      id: "screen-failure",
+      heading: "How many screened patients fail screening?",
+      blocks: [
+        {
+          type: "p",
+          text: "There is no single industry rate, and published figures use different denominators. One cross-sponsor benchmark is the Tufts CSDD randomization rate: patients enrolled divided by patients screened. In its 2022 benchmark of 187 industry protocols approved from 2013 to 2018, Phase III protocols randomized 70.7% of screened patients on average and had a mean of 30.4 eligibility criteria.{{cite:tufts-2022}}",
+        },
+        {
+          type: "p",
+          text: "Rates vary by disease and by site. At one large inflammatory bowel disease trial center in Belgium, 17.1% of 642 screenings for sponsored trials from 2008 to 2021 failed, compared with 39.2% across the global populations of the same trials. The authors judged that about one-fourth of the center's screen failures could have been avoided by more thorough pre-screening.{{cite:outtier-2023}} The fair comparison for a site is its own rate against the sponsor's study-wide rate for the same protocol.",
+        },
+        {
+          type: "p",
+          text: "The [screen failure guide](/guides/reduce-screen-failure) covers rates by therapeutic area, the causes a chart can predict, and how to track avoidable failures.",
+        },
+      ],
+    },
+    {
+      id: "workload",
+      heading: "How much of the work falls on coordinators?",
+      blocks: [
+        {
+          type: "p",
+          text: "Finding patients takes staff time. In a 2012 study at one academic cancer center that tracked screening in real time, the largest share of eligibility evaluations (35.8%) took 10 to 30 minutes, and more than 10% took 2 to 4 hours. Finding, screening and enrolling one patient took 3.4 to 8.8 hours of staff time, depending on study phase.{{cite:penberthy-2012}}",
+        },
+        {
+          type: "p",
+          text: "The people doing that work have been hard to keep. In SCRS's 2022 site survey, sites reported turnover of patient-facing staff of 35% to 61%, against 10% to 37% in a typical year.{{cite:scrs-2023}} WCG's 2025 survey of 611 sites suggests some stabilization: 45% reported no change in staffing levels over the prior year.{{cite:wcg-2025}}",
+        },
+        {
+          type: "table",
+          caption: "What sites reported in WCG's 2025 survey",
+          columns: ["Finding", "Share of sites"],
+          rows: [
+            ["Named trial complexity a top challenge", "35% {{cite:wcg-2025}}"],
+            ["Named site staffing a top challenge", "30% {{cite:wcg-2025}}"],
+            ["Named recruitment and retention a top challenge", "28%, down from 36% in 2024 {{cite:wcg-2025}}"],
+            ["Responded to challenges by hiring additional staff", "34% {{cite:wcg-2025}}"],
+            ["Responded with staff or PI training", "33% {{cite:wcg-2025}}"],
+            ["Responded by implementing technology", "26% {{cite:wcg-2025}}"],
+          ],
+          note: "Survey of 611 sites, July to September 2025, 80% in the US. Sites picked their top three challenges and could select more than one response.{{cite:wcg-2025}}",
+        },
+        {
+          type: "p",
+          text: "Evidence on software is thin. Tufts CSDD reported in early 2025 that AI support for trial activity yields time savings of 18%, but only that headline is public, not the tasks or sample behind it.{{cite:tufts-impact}}",
+        },
+        {
+          type: "callout",
+          tone: "bond",
+          title: "Where Bond fits",
+          text: "[Identify](/identify) reads structured and unstructured records against each inclusion and exclusion criterion and shows the evidence for each one. Bond's website cites 50%+ less chart review for coordinators; that is Bond's own figure, not a finding of this report.{{cite:bond-site}}",
+        },
+      ],
+    },
+    {
+      id: "consent",
+      heading: "What does consent do to enrollment and retention?",
+      blocks: [
+        {
+          type: "p",
+          text: "Consent forms are written above the average US adult's reading level. Across 798 federally funded US trials, consent forms averaged a Flesch-Kincaid grade level of 12.0, against an 8th-grade average for US adults. In risk-adjusted analysis, each added grade level was associated with a 16% higher dropout rate.{{cite:mirza-2024}}",
+        },
+        {
+          type: "p",
+          text: "Understanding of core trial concepts is low. In a 2015 meta-analysis of 103 studies, only 52.1% of trial participants understood randomization.{{cite:tam-2015}} Advarra, without naming its primary source, reports that 35% of patients who dropped out early found the consent form hard to understand, against 16% of those who completed.{{cite:advarra-2025}}",
+        },
+        {
+          type: "p",
+          text: "A quick check for a site: run the consent form through a Flesch-Kincaid readability test. The [consent form guide](/guides/consent-form-cost) covers what length and reading level do to retention.",
+        },
+        {
+          type: "callout",
+          tone: "bond",
+          title: "Where Bond fits",
+          text: "Bond's [Consent](/consent) stage gives patients plain-language explanations, answers their questions and escalates to staff when a question needs a person. The site and PI still obtain consent.{{cite:bond-site}}",
+        },
+      ],
+    },
+    {
+      id: "representation",
+      heading: "Who is enrolled, and who is left out?",
+      blocks: [
+        {
+          type: "p",
+          text: "FDA's Drug Trials Snapshots describe participants in the pivotal trials behind each year's novel drug approvals. FDA reports ranges by program and averages by therapeutic area, not a pooled national share.{{cite:fda-snapshots-2024,fda-snapshots-2025}}",
+        },
+        {
+          type: "table",
+          caption: "Participation in pivotal trials behind FDA novel drug approvals",
+          columns: ["Measure", "2024 approvals", "2025 approvals"],
+          rows: [
+            ["Black or African American participants, range across programs", "0% to 68% {{cite:fda-snapshots-2024}}", "0% to 55% {{cite:fda-snapshots-2025}}"],
+            ["Hispanic or Latino participants, range across programs", "0% to 46% {{cite:fda-snapshots-2024}}", "0% to 36% {{cite:fda-snapshots-2025}}"],
+            ["Cancer-program participants aged 65 or older", "36% {{cite:fda-snapshots-2024}}", "26% {{cite:fda-snapshots-2025}}"],
+            ["Cancer-program participants enrolled outside the US", "86% {{cite:fda-snapshots-2024}}", "80% {{cite:fda-snapshots-2025}}"],
+          ],
+        },
+        {
+          type: "p",
+          text: "Access starts with an invitation. In a nationally representative 2020 survey, only 9% of US adults had ever been invited to join a clinical trial, but 47% of those invited took part. Rural residents had about one-third the odds of an invitation that urban residents had.{{cite:hints-2021}} In an April 2026 Harris Poll for the PAN Foundation, 64% of US adults with chronic conditions said a provider had never discussed trials with them, while 71% said they would be likely to take part if given the opportunity.{{cite:pan-2026}}",
+        },
+        {
+          type: "p",
+          text: "The federal diversity requirement has not taken effect yet. The Food and Drug Omnibus Reform Act of 2022 requires Diversity Action Plans for Phase 3 and other pivotal drug studies and certain device studies, but only for studies that begin enrolling 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of September 2026, FDA's guidance page still lists the June 2024 document as a draft.{{cite:fda-dap-guidance}}",
+        },
+      ],
+    },
+    {
+      id: "methods",
+      heading: "How was this report built?",
+      blocks: [
+        {
+          type: "ul",
+          items: [
+            "**Registry data.** ClinicalTrials.gov API v2, queried September 21, 2026: status Recruiting, a location search per state or for the United States, and the API's condition search per area. Counts are studies, not sites or patients.{{cite:ctgov-api}}",
+            "**Area keywords.** Each area is a list of main conditions. Oncology is cancer, neoplasm, carcinoma, lymphoma or leukemia. Obesity and metabolic includes type 2 diabetes. Neurology and pain both include migraine.",
+            "**Location matching.** The location search matches text, so a state name can also match another place, such as the country of Georgia or West Virginia. This can inflate some Southeast counts, and the figures are not corrected for it.",
+            "**Published research.** Each figure was checked against its source text. Older benchmarks carry their year; figures we could not trace to a source are left out.",
+            "**Bond's figures.** Bond's product claims appear only in marked callouts, cited to Bond's website. No finding comes from Bond customer data.",
+          ],
+        },
+        {
+          type: "p",
+          text: "To get the next edition when it is published, subscribe to the [newsletter](/newsletter).",
+        },
+        {
+          type: "cta",
+          label: "Book a demo",
+          href: "/book-a-demo",
+          text: "See how Bond finds eligible patients in your own records, one protocol at a time.",
+          secondaryLabel: "Get the next edition",
+          secondaryHref: "/newsletter",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Where does the claim that 80% of trials miss enrollment timelines come from?",
+      a: "We could not trace the exact figure to a measured dataset. One 2020 review that repeats it cites a 2012 trade-press article.{{cite:desai-2020}} The measured Tufts CSDD data point the same way: most trials reach their goals only after nearly doubling the planned timeline.{{cite:tufts-2013}}",
+    },
+    {
+      q: "Can I cite figures from this report?",
+      a: "Yes, but cite the original source listed with each figure. This report compiles published data and does not run its own survey.",
+    },
+    {
+      q: "How often is the report updated?",
+      a: "We plan a new edition each year. The registry counts on this page were pulled on September 21, 2026.{{cite:ctgov-api}} Subscribe to the [newsletter](/newsletter) to get the next edition.",
+    },
+  ],
+  sources: [
+    {
+      id: "ctgov-api",
+      title: "ClinicalTrials.gov API v2",
+      publisher: "U.S. National Library of Medicine",
+      url: "https://clinicaltrials.gov/data-api/api",
+      year: "2026",
+      note: "Queried September 21, 2026.",
+    },
+    {
+      id: "tufts-2013",
+      title: "New Research From Tufts Center for the Study of Drug Development Characterizes Effectiveness and Variability of Patient Recruitment and Retention Practices",
+      publisher: "Tufts CSDD press release via BioSpace",
+      url: "https://www.biospace.com/new-research-from-tufts-center-for-the-study-of-drug-development-characterizes-effectiveness-and-variability-of-patient-recruitment-and-retention-prac",
+      year: "2013",
+      note: "Released January 15, 2013; more than 150 studies and nearly 16,000 sites. Quotes: \"11% of sites in a given trial typically fail to enroll a single patient, 37% under-enroll, 39% meet their enrollment targets, and 13% exceed their targets.\" \"89% of all clinical trials meet enrollment goals\" and \"reaching those targets typically means that drug developers need to nearly double their original timelines\".",
+    },
+    {
+      id: "carlisle-2015",
+      title: "Unsuccessful trial accrual and human subjects protections: an empirical analysis of recently closed trials",
+      publisher: "Clinical Trials (Carlisle B, Kimmelman J, Ramsay T, MacKinnon N), via PubMed",
+      url: "https://pubmed.ncbi.nlm.nih.gov/25475878/",
+      year: "2015",
+      note: "Quote: \"Of 2579 eligible trials, 481 (19%) either terminated for failed accrual or completed with less than 85% expected enrolment, seriously compromising their statistical power.\"",
+    },
+    {
+      id: "vanguard-2024",
+      title: "Tufts CSDD: New Insights on The Clinical Trial Industry",
+      publisher: "Clinical Trial Vanguard (coverage of Tufts CSDD at SCOPE Summit 2024)",
+      url: "https://www.clinicaltrialvanguard.com/conference-coverage/tufts-csdd-new-insights-on-the-clinical-trial-industry/",
+      year: "2024",
+      note: "Trade-press coverage of a conference presentation, March 19, 2024. Quotes: \"From 2010 to 2020, the duration from protocol approval to the first patient's first visit increased by 27.2%, and the enrollment duration from first patient first visit to last patient last visit rose by 36.9%.\" and \"40% of sites in North America that we actually will look to engage will not activate.\"",
+    },
+    {
+      id: "iqvia-rd-2026",
+      title: "Global R&D Trends 2026",
+      publisher: "IQVIA Institute for Human Data Science",
+      url: "https://www.iqvia.com/insights/the-iqvia-institute/reports-and-publications/reports/global-r-and-d-trends-2026",
+      year: "2026",
+      note: "Report page dated March 25, 2026. Quote: \"Improved clinical program productivity was not sustained: Trial durations increased overall, with faster enrolment in oncology countered by its higher representation among trials completing enrolment. Inter-trial intervals increased by 3 months\".",
+    },
+    {
+      id: "desai-2020",
+      title: "Recruitment and retention of participants in clinical studies: Critical issues and challenges",
+      publisher: "Perspectives in Clinical Research (Desai M), via PubMed Central",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7342339/",
+      year: "2020",
+      note: "The sentence cites a 2012 Clinical Trials Arena article. Quote: \"Globally, more than 80% of trials fail to enroll on time resulting into an extension of study and or addition of new study sites.\"",
+    },
+    {
+      id: "phesi-2023",
+      title: "Almost 20% of cancer trials have recruited only one patient",
+      publisher: "Labiotech (reporting a Phesi analysis)",
+      url: "https://www.labiotech.eu/trends-news/cancer-trials-recruitment/",
+      year: "2023",
+      note: "173 cancer trials, 11,826 investigator sites. Quote: \"2,298 (19%) enrolled just one patient\".",
+    },
+    {
+      id: "wcg-2025",
+      title: "2025 Clinical Research Site Challenges Report",
+      publisher: "WCG",
+      url: "https://www.wcgclinical.com/wp-content/uploads/sites/2/2025/10/WCG-Site-Challenges-Report-2025.pdf",
+      year: "2025",
+      note: "611 sites, July to September 2025. Challenges question: \"Please select your top three\". Quotes: \"Complexity of Clinical Trials 35% ... Site Staffing 30% Recruitment & Retention 28%\"; \"Overall, 45% of sites reported no change in their site staffing levels over the last year\"; \"Hiring Additional Staff 34% Staff/PI Training 33% Implementing Technology Solutions 26%\"; \"independent sites and physician practices tend to have faster start-up timelines, with 54% reporting that they can initiate studies in under 60 days\".",
+    },
+    {
+      id: "tufts-2022",
+      title: "Protocol Design and Performance Benchmarks by Phase and by Oncology and Rare Disease Subgroups",
+      publisher: "Therapeutic Innovation & Regulatory Science (Getz K, Smith Z, Kravet M), via PubMed Central",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9373886/",
+      year: "2022",
+      note: "Full text checked via Europe PMC, September 2026. Quotes: \"In all, 187 protocols were analyzed.\" \"The convenience sampling frame included only those protocols that had received final protocol approval between January 2013 and December 2018\". Randomization rate: \"the ratio of the number of patients enrolled to the total number screened\". Table 6, Phase III means: \"Randomization Rate (Enrolled/Screened)\" 70.7%; \"Total Eligibility Criteria\" 30.4.",
+    },
+    {
+      id: "outtier-2023",
+      title: "Screening Failure in a Large Clinical Trial Centre for Inflammatory Bowel Diseases: Rates, Causes, and Outcomes",
+      publisher: "Inflammatory Bowel Diseases (Outtier A, Gijbels L, Noman M, et al.), via PubMed",
+      url: "https://pubmed.ncbi.nlm.nih.gov/36350998/",
+      year: "2023",
+      note: "Abstract checked via Europe PMC, September 22, 2026. University Hospitals Leuven, Belgium; sponsored multicenter phase 1-3 induction studies, screenings from January 2008 to March 2021. Quotes: \"During the study period, 642 local screenings were performed as part of 53 studies. We identified an overall SF rate of 17.1%, compared with 39.2% in the global study population (P < .00001).\" \"Approximately one-fourth of SFs could have been avoided by prescreening that was more thorough.\"",
+    },
+    {
+      id: "tufts-impact",
+      title: "Tufts CSDD Impact Reports (2025 and 2026 issue headlines)",
+      publisher: "Tufts Center for the Study of Drug Development",
+      url: "https://csdd.tufts.edu/publications/impact-reports",
+      year: "2026",
+      note: "Only headlines are public. Quote: \"Use of artificial intelligence to support clinical trial activity yields time savings of 18%.\" (Vol. 27 No. 1, January/February 2025).",
+    },
+    {
+      id: "penberthy-2012",
+      title: "Effort Required in Eligibility Screening for Clinical Trials",
+      publisher: "Journal of Oncology Practice (Penberthy LT, Dahman BA, Petkov VI, DeShazo JP), via PubMed Central",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3500483/",
+      year: "2012",
+      note: "One academic cancer center, 3,467 evaluations over 18 months. Quotes: \"The largest proportion of evaluations (35.8%) required 10 to 30 minutes, but more than 10% required between 2 to 4 hours for completion.\" and \"The average time spent to find, screen, and enroll a patient varied from 3.4 to 8.8 hours\".",
+    },
+    {
+      id: "scrs-2023",
+      title: "Workforce Challenges at Clinical Research Sites (2022 Site Landscape Survey white paper)",
+      publisher: "Society for Clinical Research Sites (SCRS)",
+      url: "https://myscrs.org/wp-content/uploads/2024/07/SCRS-2023-whitepaper_v5.pdf",
+      year: "2023",
+      note: "Quote: \"Sites are averaging double the usual turnover rate of patient-facing staff from a range of 10%–37% in a typical year to current rates of 35%–61%.\"",
+    },
+    {
+      id: "mirza-2024",
+      title: "The literacy barrier in clinical trial consents: a retrospective analysis",
+      publisher: "eClinicalMedicine (Mirza FN et al.)",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701435/",
+      year: "2024",
+      note: "Quotes: \"Across 798 included federally funded trials, the mean (±SD) Flesch-Kincaid Grade Level of their consent forms was 12.0 ± 1.3\" and \"In risk-adjusted analyses, each additional Flesch-Kincaid Grade Level increase in a clinical trial's consent form was associated with a 16% higher dropout rate\".",
+    },
+    {
+      id: "tam-2015",
+      title: "Participants' understanding of informed consent in clinical trials over three decades: systematic review and meta-analysis",
+      publisher: "Bulletin of the World Health Organization (Tam NT et al.)",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4371493/",
+      year: "2015",
+      note: "Abstract checked via Europe PMC, September 2026. Quotes: \"The analysis included 103 studies evaluating 135 cohorts of participants.\" and \"53.3% for placebo and 52.1% for randomization\".",
+    },
+    {
+      id: "advarra-2025",
+      title: "Retention in Clinical Trials: Keeping Patients on Protocols",
+      publisher: "Advarra",
+      url: "https://www.advarra.com/resources/retention-in-clinical-trials-keeping-patients-on-protocols/",
+      year: "2025",
+      note: "Secondary source that does not name its primary study. Quote: \"35% of patients who dropped out of a study early thought it was difficult to understand the Informed Consent Form compared to just 16% who completed the trial.\"",
+    },
+    {
+      id: "fda-snapshots-2024",
+      title: "Drug Trials Snapshots Summary Report 2024",
+      publisher: "US Food and Drug Administration, CDER",
+      url: "https://www.fda.gov/media/187276/download?attachment",
+      year: "2025",
+      note: "Quotes: \"Black or African American ... participants accounted for the lowest enrollment, ranging from 0% to 68% across all therapeutic areas\"; \"the percentage of Hispanic or Latino participants ranged from 0% to 46%\"; \"Drugs evaluating Cancers (86%) ... enrolled the highest number of\" participants outside the United States.",
+    },
+    {
+      id: "fda-snapshots-2025",
+      title: "Drug Trials Snapshots Summary Report 2025",
+      publisher: "US Food and Drug Administration, CDER",
+      url: "https://www.fda.gov/media/193285/download?attachment",
+      year: "2026",
+      note: "Quotes: \"Black or African American ... participants accounted for the lowest enrollment, ranging from 0% to 55% across all therapeutic areas\"; \"drugs evaluating Heart, Blood, Kidney, and Endocrine Diseases (80%) and Cancers (80%) enrolled the highest number of participants outside the United States.\"",
+    },
+    {
+      id: "hints-2021",
+      title: "Demographic and Health Behavior Factors Associated With Clinical Trial Invitation and Participation in the United States",
+      publisher: "JAMA Network Open (Williams CP et al.), via PubMed",
+      url: "https://pubmed.ncbi.nlm.nih.gov/34586365/",
+      year: "2021",
+      note: "HINTS 2020, 3,689 US adults, weighted. Quotes: \"Overall, 439 respondents (9%) had been invited to participate in any clinical trial. ... Of invited respondents, 199 (47%) participated.\" and \"Respondents residing in rural vs urban areas had 77% decreased odds of invitation to a clinical trial (aOR 0.33; 95% CI 0.17-0.65).\" The page describes the odds as about one-third, which matches the aOR.",
+    },
+    {
+      id: "pan-2026",
+      title: "Clinical Trials: Patient Interest and Access, 2026 National Polling",
+      publisher: "PAN Foundation and The Harris Poll",
+      url: "https://clinicaltrials.panfoundation.org/wp-content/uploads/2026/05/Clinical-Trials-Patient-Interest-and-Access-2026-National-Polling.pdf",
+      year: "2026",
+      note: "Online poll, April 9 to 13, 2026, 2,041 US adults. Quote: \"Nearly 2 in 3 adults with chronic conditions (64%) say that their provider has never discussed clinical trials with them, yet 7 in 10 (71%) say they would be likely to participate if given the opportunity.\"",
+    },
+    {
+      id: "fda-dap-report",
+      title: "Report to Congress: Diversity Action Plans Summary FY 2023 and FY 2024",
+      publisher: "US Food and Drug Administration",
+      url: "https://www.fda.gov/media/184768/download",
+      year: "2025",
+      note: "Quote: \"The requirement to submit Diversity Action Plans will apply to certain studies for which enrollment commences after 180 days from the publication of the final guidance.\"",
+    },
+    {
+      id: "fda-dap-guidance",
+      title: "Diversity Action Plans to Improve Enrollment of Participants from Underrepresented Populations in Clinical Studies (draft guidance)",
+      publisher: "US Food and Drug Administration",
+      url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
+      year: "2024",
+      note: "Page checked September 22, 2026; issue date June 2024. Quotes: \"Draft - Not for implementation. Contains non-binding recommendations.\" and \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\"",
+    },
+    {
+      id: "bond-site",
+      title: "Bond Health: platform overview, FAQ and pricing",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+    },
+  ],
+  related: [
+    { label: "Newsletter", href: "/newsletter", description: "Get the next edition of this report by email." },
+    { label: "Clinical trial recruitment by state and region", href: "/clinical-trial-recruitment", description: "Registry counts, research hubs and outreach rules for seven locations." },
+    { label: "How to reduce screen failure at your site", href: "/guides/reduce-screen-failure", description: "Rates by therapeutic area and the causes a chart can predict." },
+    { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart against each criterion and shows its evidence." },
+  ],
+};
+
+export default page;

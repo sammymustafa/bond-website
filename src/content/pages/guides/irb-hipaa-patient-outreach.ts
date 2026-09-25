@@ -1,0 +1,541 @@
+import type { SeoPage } from "../../types";
+
+const page: SeoPage = {
+  path: "/guides/irb-hipaa-patient-outreach",
+  category: "guide",
+  title: "HIPAA and IRB rules for clinical trial recruitment outreach",
+  description:
+    "Who may contact patients about a trial, which HIPAA path applies, what the IRB must approve, and how the TCPA and state AI laws shape calls and texts.",
+  keywords: [
+    "HIPAA IRB rules clinical trial recruitment outreach",
+    "preparatory to research recruitment",
+    "partial waiver of authorization recruitment",
+    "TCPA clinical trial recruitment calls",
+    "AI disclosure patient outreach",
+  ],
+  eyebrow: "Guide",
+  h1: "IRB and HIPAA rules for patient outreach",
+  intro:
+    "Before contacting a patient about a study, answer three questions: who may make contact, under which HIPAA provision, and with what IRB-approved words. Automated calls and texts add the TCPA and state AI laws. Not legal advice: confirm your plan with your privacy officer, IRB and counsel.",
+  summary: "Who may contact patients, under which HIPAA path, with what IRB approval, and how TCPA and state AI laws apply.",
+  lastUpdated: "2026-09-24",
+  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  sections: [
+    {
+      id: "who-may-contact",
+      heading: "Who is allowed to contact a patient about a study?",
+      blocks: [
+        {
+          type: "p",
+          text: "The shortest path runs through the patient's own clinician. HIPAA lets a covered entity use protected health information (PHI) for treatment without authorization under [45 CFR 164.506](https://www.ecfr.gov/current/title-45/section-164.506).{{cite:ecfr-164-506}} Treatment communications, including recommending alternative treatments, are not marketing unless a third party pays the covered entity to make them.{{cite:ecfr-164-501}} A treating physician who raises a trial with their own patients works inside that relationship.",
+        },
+        {
+          type: "p",
+          text: "A non-treating research team is in a different position. HIPAA defines research as a systematic investigation designed to develop or contribute to generalizable knowledge,{{cite:ecfr-164-501}} and recruiting for a specific study is generally treated as research, not care. That needs a valid authorization or another Privacy Rule permission, usually a research path in [45 CFR 164.512(i)](https://www.ecfr.gov/current/title-45/section-164.512).{{cite:ecfr-164-508,ecfr-164-512}}",
+        },
+        {
+          type: "stats",
+          items: [
+            { value: "51%", label: "of respondents to a global survey prefer to learn about studies through their doctor (CISCRP, 2025)", cite: "ciscrp-2025" },
+            { value: "8%", label: "of those who heard of a study in the past six months heard through their doctor (same survey)", cite: "ciscrp-2025" },
+            { value: "64%", label: "of US adults with a chronic condition say their provider never discussed trials with them (PAN Foundation, 2026)", cite: "pan-2026" },
+          ],
+        },
+        {
+          type: "p",
+          text: "Where you can, route first contact through the treating clinician, even when the research team handles follow-up.",
+        },
+      ],
+    },
+    {
+      id: "hipaa-paths",
+      heading: "Which HIPAA provisions let a research team find and contact patients?",
+      blocks: [
+        {
+          type: "p",
+          text: "Most outreach plans combine two or more of these four provisions.",
+        },
+        {
+          type: "ul",
+          items: [
+            "**Reviews preparatory to research**, [45 CFR 164.512(i)(1)(ii)](https://www.ecfr.gov/current/title-45/section-164.512). The researcher represents that the review is solely to prepare a protocol or for similar purposes, that no PHI will leave the covered entity, and that the PHI is necessary.{{cite:ecfr-164-512}} It supports chart review for feasibility and pre-screening, not an outside party taking a patient list off-site to start calling. See [preparatory to research](/glossary/preparatory-to-research).",
+            "**Waiver of authorization, in whole or in part**, [45 CFR 164.512(i)(1)(i)](https://www.ecfr.gov/current/title-45/section-164.512). An IRB or privacy board can waive authorization for a defined step, such as identifying and contacting candidates. It must document no more than minimal privacy risk, plans to protect and destroy identifiers, and that the research would be impracticable both without the waiver and without the PHI.{{cite:ecfr-164-512}} Request this [partial waiver](/glossary/waiver-of-authorization) when the research team, not the treating clinician, makes first contact.",
+            "**Authorization**, [45 CFR 164.508](https://www.ecfr.gov/current/title-45/section-164.508). The patient's signed permission. For research it can be combined with the study's consent form.{{cite:ecfr-164-508}}",
+            "**Business associate agreement**, [45 CFR 160.103](https://www.ecfr.gov/current/title-45/section-160.103) and [164.502(e)](https://www.ecfr.gov/current/title-45/section-164.502). A vendor that screens records or contacts patients for the site is a business associate and needs a written agreement before it receives PHI.{{cite:ecfr-160-103,ecfr-164-502}} Minimum necessary limits still apply.{{cite:ecfr-164-502}}",
+          ],
+        },
+        {
+          type: "callout",
+          tone: "info",
+          title: "The Common Rule and FDA rules sit alongside HIPAA",
+          text: "For Common Rule studies, [45 CFR 46.116(g)](https://www.ecfr.gov/current/title-45/section-46.116) lets an IRB approve screening and recruiting without consent when the investigator talks with prospective subjects or reviews records.{{cite:ecfr-46-116}} For FDA-regulated studies, FDA's 2023 guidance says a record review noting only eligibility and contact information needs no informed consent, though HIPAA and institutional policy still apply.{{cite:fda-ic-2023}} Neither replaces the HIPAA path.",
+        },
+      ],
+    },
+    {
+      id: "irb-review",
+      heading: "What does the IRB need to review before outreach starts?",
+      blocks: [
+        {
+          type: "p",
+          text: "FDA treats advertising for study subjects as the start of the informed consent and subject selection process, and expects the IRB to review both recruitment content and its mode of communication.{{cite:fda-recruiting}} ICH E6(R3) says the investigator should hold documented IRB approval of recruitment procedures before the trial starts.{{cite:ich-e6r3}} If Bond sets up Meta or Google ads for a study, the ad copy and landing page need IRB review like any other recruitment material.{{cite:fda-recruiting,bond-product}}",
+        },
+        {
+          type: "p",
+          text: "The IRB must also find that subject selection is equitable and, where appropriate, that privacy is protected ([21 CFR 56.111](https://www.ecfr.gov/current/title-21/section-56.111)). Which patients an algorithm flags for contact is an equitable-selection question.{{cite:ecfr-56-111}} NIH's Office of Human Subjects Research Protections says pre-screening must be described in the protocol and screening tools reviewed by the IRB.{{cite:nih-irbo}}",
+        },
+        { type: "h3", text: "What to put in the submission" },
+        {
+          type: "checklist",
+          items: [
+            "Every script and message, by channel and version: call, voice agent, voicemail, SMS, email, portal and letter.",
+            "Which records and criteria identify candidates, and who sees the list.",
+            "The HIPAA basis for each step, with a waiver request wherever the research team makes first contact.",
+            "Pre-screening questions limited to eligibility, and how sensitive answers are handled. FDA says a bare promise of confidentiality is not enough.{{cite:fda-recruiting}}",
+            "What happens to screen-out data. NIH's human subjects office says identifiable data collected before consent cannot be kept; other IRBs allow a screen-failure log only with authorization or a waiver.{{cite:nih-irbo,miami-hsro}}",
+            "AI disclosure wording, how a patient reaches a human, and how opt-outs are honored.",
+            "No safety or effectiveness claims, no \"new treatment\" without saying it is investigational, and no emphasis on payment.{{cite:fda-recruiting}}",
+          ],
+        },
+        {
+          type: "p",
+          text: "The [IRB submission language for AI outreach](/templates/irb-submission-language-ai-outreach) template drafts the partial waiver request, AI disclosure and opt-out paragraphs.",
+        },
+      ],
+    },
+    {
+      id: "calls-and-texts",
+      heading: "Can a study team cold-call or text patients?",
+      blocks: [
+        {
+          type: "p",
+          text: "HIPAA and the IRB decide whether contact is allowed; the [TCPA](/glossary/tcpa) and carrier rules govern automated calls and texts.",
+        },
+        {
+          type: "ul",
+          items: [
+            "**AI voices count as artificial voices.** The FCC ruled so in February 2024.{{cite:fcc-24-17}} The rule turns on method, not topic: an autodialed or artificial-voice call to a mobile number needs prior express consent even when it is not marketing.{{cite:cfr-47-64-1200}}",
+            "**The healthcare exemption does not list recruitment.** Without prior consent, providers may call or text a patient's mobile number only for listed purposes such as appointment reminders and lab results, at most one message a day and three a week, each with an opt-out.{{cite:cfr-47-64-1200}}",
+            "**Opt-outs are broad and fast.** Patients can revoke consent by any reasonable means, and callers must honor revocation within 10 business days.{{cite:fcc-24-24,cfr-47-64-1200}} As of September 2026, the FCC has delayed to January 31, 2027 the rule that treats one opt-out as revoking consent for all unrelated automated messages.{{cite:fcc-da-26-12}}",
+            "**Calling hours.** Telephone solicitations are barred before 8 a.m. and after 9 p.m. at the patient's location.{{cite:cfr-47-64-1200}} Recruitment calls are generally not solicitations, but the window is a sensible default. In one three-health-system trial, opt-outs appeared higher for calls placed from 7 to 9 p.m.{{cite:jgim-2023}}",
+            "**Texting has carrier rules too.** Carriers expect opt-in and a STOP opt-out, with plain-language opt-outs honored.{{cite:ctia-2023}} Texts from a 10-digit number need 10DLC brand and campaign registration.{{cite:tcr}}",
+            "**Federal AI disclosure is still a proposal.** The FCC proposed it in August 2024.{{cite:fcc-24-84}} As of September 2026, no such requirement appears in 47 CFR 64.1200.{{cite:cfr-47-64-1200}}",
+          ],
+        },
+        {
+          type: "callout",
+          tone: "bond",
+          title: "A lower-risk sequence",
+          text: "Start with a clinician or site letter or portal message inviting patients to opt in, then automate only for those who said yes. In [Engage](/engage), Bond's voice and text agents tell patients that AI assistance is used, let them reach a person at any time through a live transfer to a coordinator or a human callback, whichever the site prefers, and run scripts configured per site and study.{{cite:bond-site,bond-product}}",
+        },
+      ],
+    },
+    {
+      id: "state-ai-laws",
+      heading: "Which state AI disclosure laws apply to voice and text agents?",
+      blocks: [
+        {
+          type: "p",
+          text: "Each law defines whom it covers, such as health facilities, licensed professionals or AI operators. Whether a recruitment call is in scope is a question for counsel.",
+        },
+        {
+          type: "table",
+          caption: "State AI disclosure laws that may reach recruitment calls and texts (as of September 2026)",
+          columns: ["State", "Law", "What it requires", "In effect"],
+          rows: [
+            [
+              "California",
+              "[AB 3030](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB3030), Health and Safety Code 1339.75",
+              "Generative AI messages about clinical information must say so and explain how to reach a human; audio disclaimers at start and end. Exempt if a licensed provider reviews; scheduling excluded.{{cite:ca-ab3030}}",
+              "January 1, 2025",
+            ],
+            [
+              "California",
+              "[AB 489](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB489)",
+              "AI may not use terms implying care or advice comes from a licensed person.{{cite:ca-ab489}}",
+              "January 1, 2026",
+            ],
+            [
+              "Colorado",
+              "[SB 26-189](https://leg.colorado.gov/bills/sb26-189), automated decision-making technology",
+              "Clear notice at the point of interaction when covered technology is used in consequential decisions, including health care.{{cite:co-sb26-189}}",
+              "January 1, 2027",
+            ],
+            [
+              "Colorado",
+              "[HB 26-1263](https://leg.colorado.gov/bills/hb26-1263), Chatbot Safety Act",
+              "Publicly available conversational AI services must tell users they are AI.{{cite:co-hb26-1263}}",
+              "January 1, 2027",
+            ],
+            [
+              "Texas",
+              "[HB 149](https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm), Responsible AI Governance Act",
+              "Providers using AI in health care services disclose it in plain language by the time the service is first provided.{{cite:tx-hb149}}",
+              "January 1, 2026",
+            ],
+            [
+              "Utah",
+              "[SB 226](https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf), Utah Code 13-75-103",
+              "Licensed professionals must prominently disclose generative AI in high-risk interactions, including health data collection: spoken at the start of a call, written before a text exchange.{{cite:utah-sb226}}",
+              "May 7, 2025",
+            ],
+          ],
+          note: "Summaries of enacted text. Later amendments or rules can change scope.",
+        },
+        {
+          type: "p",
+          text: "Write one disclosure to the strictest rule: open every call and message by saying an automated assistant is working for the site, offer a person, and repeat it at the end of calls. Avoid agent names or titles that suggest a nurse or physician. The [patient outreach SMS templates](/templates/patient-outreach-sms-templates) include a first text that discloses AI use.",
+        },
+      ],
+    },
+    {
+      id: "scenarios",
+      heading: "Which rule applies in each outreach scenario?",
+      blocks: [
+        {
+          type: "table",
+          caption: "Common outreach scenarios and the rules that govern them",
+          columns: ["Scenario", "HIPAA basis", "IRB", "Calls and texts"],
+          rows: [
+            ["Treating physician raises a trial at a visit", "Treatment", "Any handouts approved", "Not a call or text"],
+            ["Clinician writes to own patients about a study", "Treatment communication; confirm policy", "Letter approved as recruitment material", "Opt-in before any automated texts"],
+            ["Coordinator reviews the EHR for a pre-screening list", "Preparatory to research; PHI stays inside", "Described in the protocol", "None"],
+            ["Research staff hand-dial candidates", "Partial waiver of authorization", "Call script approved", "Outside the autodialer and artificial-voice rules"],
+            ["AI voice agent calls candidates", "Partial waiver; vendor under a BAA", "Script and AI disclosure approved", "Prior express consent for mobile numbers"],
+            ["Automated texts invite candidates", "Partial waiver; vendor under a BAA", "Every message approved", "Consent, STOP handling, 10DLC"],
+            ["Sponsor or CRO call center wants the list", "Authorization or waiver; preparatory review cannot remove PHI", "Sponsor materials approved", "Same rules apply"],
+            ["Patient answers an ad and calls in", "Identifiable pre-screening answers become PHI", "Ad and phone script approved", "Follow up only as they asked"],
+          ],
+          note: "Sources:{{cite:ecfr-164-506,ecfr-164-512,ecfr-160-103,cfr-47-64-1200,fda-recruiting,ctia-2023,tcr,miami-hsro}}",
+        },
+        {
+          type: "p",
+          text: "For where pre-screening ends and consent begins, see [pre-screening vs screening](/guides/pre-screening-vs-screening).",
+        },
+      ],
+    },
+    {
+      id: "documentation",
+      heading: "What should the study file show, and how do you measure it?",
+      blocks: [
+        {
+          type: "p",
+          text: "If a monitor or IRB asks how a patient was contacted, the file should answer in one place.",
+        },
+        {
+          type: "ul",
+          items: [
+            "IRB approvals for every recruitment document and script version.",
+            "Waiver documentation with the findings required by [45 CFR 164.512(i)(2)](https://www.ecfr.gov/current/title-45/section-164.512), or the preparatory-to-research representations.{{cite:ecfr-164-512}}",
+            "A BAA with every vendor that touches PHI.",
+            "A contact log: who, when, which channel, which script version, and the outcome.",
+            "An opt-out log with the date each request arrived and was honored.",
+            "Pre-screening and screening logs, which ICH E6(R3) counts among essential records.{{cite:ich-e6r3}}",
+            "Evidence that screen-out data was destroyed or kept under an approved basis.{{cite:nih-irbo,miami-hsro}}",
+          ],
+        },
+        { type: "h3", text: "What to measure each month" },
+        {
+          type: "ul",
+          items: [
+            "Share of contacts with a documented HIPAA basis and approved script (target: every one).",
+            "Business days from each opt-out request to suppression, against the 10 business day limit.{{cite:fcc-24-24}}",
+            "Opt-out rate by channel and hour of contact.",
+            "Complaints, and any contact outside approved hours, scripts or channels.",
+          ],
+        },
+        {
+          type: "p",
+          text: "Bond includes an audit trail and a dashboard that reports patients contacted and pre-screened; [security](/security) describes how that data is protected.{{cite:bond-site}}",
+        },
+      ],
+    },
+    {
+      id: "this-week",
+      heading: "What should I do this week?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            {
+              title: "List every outreach channel",
+              text: "For each active study, note who contacts patients, how, and on which HIPAA basis.",
+            },
+            {
+              title: "Compare scripts with approvals",
+              text: "Compare live texts, calls and voicemail word for word with the IRB-approved versions.",
+            },
+            {
+              title: "Check consent for calls and texts",
+              text: "Confirm whether intake-form consent covers research calls and texts; ask counsel if unclear.",
+            },
+            {
+              title: "Add AI disclosure and a human option",
+              text: "Every automated script should say it is automated, name the site, and offer a person.",
+            },
+            {
+              title: "Start the opt-out clock",
+              text: "Log each opt-out with its date and suppress the number well inside the 10 business day limit.{{cite:fcc-24-24}}",
+            },
+          ],
+        },
+        {
+          type: "cta",
+          label: "Book a demo",
+          href: "/book-a-demo",
+          text: "See how Engage handles AI disclosure, live transfers or human callbacks, and coordinator escalation with your own scripts.",
+          secondaryLabel: "Read about Engage",
+          secondaryHref: "/engage",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Does the TCPA apply to research calls that are not marketing?",
+      a: "Yes, in part. Autodialed or artificial-voice calls to mobile numbers, including AI voices, need prior express consent whatever their purpose, and recruitment is not a listed healthcare exemption.{{cite:fcc-24-17,cfr-47-64-1200}}",
+    },
+    {
+      q: "Do we have to tell patients they are talking to AI?",
+      a: "In some states. California, Texas and Utah already have rules that can reach health care communications, and two Colorado laws take effect January 1, 2027. Bond tells patients AI assistance is used and lets them reach a person at any time, through a live transfer to a coordinator or a human callback, whichever the site prefers.{{cite:ca-ab3030,tx-hb149,utah-sb226,co-sb26-189,co-hb26-1263,bond-site,bond-product}}",
+    },
+  ],
+  sources: [
+    {
+      id: "ecfr-164-512",
+      title: "45 CFR 164.512: Uses and disclosures for which an authorization or opportunity to agree or object is not required",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-164.512",
+      year: "2026",
+      note: "Paragraph (i) covers research: waiver of authorization in whole or in part, reviews preparatory to research, and the waiver criteria. Text current as of September 1, 2026.",
+    },
+    {
+      id: "ecfr-164-508",
+      title: "45 CFR 164.508: Uses and disclosures for which an authorization is required",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-164.508",
+      year: "2026",
+    },
+    {
+      id: "ecfr-164-506",
+      title: "45 CFR 164.506: Uses and disclosures to carry out treatment, payment, or health care operations",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-164.506",
+      year: "2026",
+    },
+    {
+      id: "ecfr-164-501",
+      title: "45 CFR 164.501: Definitions (health care operations, marketing, research)",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-164.501",
+      year: "2026",
+    },
+    {
+      id: "ecfr-164-502",
+      title: "45 CFR 164.502: Uses and disclosures of protected health information, general rules (minimum necessary)",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-164.502",
+      year: "2026",
+    },
+    {
+      id: "ecfr-160-103",
+      title: "45 CFR 160.103: Definitions (business associate)",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-160.103",
+      year: "2026",
+    },
+    {
+      id: "ecfr-46-116",
+      title: "45 CFR 46.116: General requirements for informed consent",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-45/section-46.116",
+      year: "2026",
+      note: "Paragraph (g), added by the 2018 revised Common Rule, covers screening, recruiting or determining eligibility.",
+    },
+    {
+      id: "fda-ic-2023",
+      title: "Informed Consent: Guidance for IRBs, Clinical Investigators, and Sponsors",
+      publisher: "U.S. Food and Drug Administration",
+      url: "https://www.fda.gov/media/88915/download",
+      year: "2023",
+    },
+    {
+      id: "fda-recruiting",
+      title: "Recruiting Study Subjects: Information Sheet for IRBs and Clinical Investigators",
+      publisher: "U.S. Food and Drug Administration",
+      url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recruiting-study-subjects",
+      year: "1998",
+      note: "Final information sheet, January 1998; page content current as of 2018.",
+    },
+    {
+      id: "ecfr-56-111",
+      title: "21 CFR 56.111: Criteria for IRB approval of research",
+      publisher: "eCFR (Office of the Federal Register and GPO)",
+      url: "https://www.ecfr.gov/current/title-21/section-56.111",
+      year: "2026",
+    },
+    {
+      id: "ich-e6r3",
+      title: "ICH E6(R3) Guideline for Good Clinical Practice, final version adopted 6 January 2025",
+      publisher: "International Council for Harmonisation (ICH)",
+      url: "https://database.ich.org/sites/default/files/ICH_E6%28R3%29_Step4_FinalGuideline_2025_0106.pdf",
+      year: "2025",
+      note: "Section 2.4.2 (approval of recruitment procedures) and Appendix C (essential records). FDA issued E6(R3) as final guidance in September 2025.",
+    },
+    {
+      id: "nih-irbo",
+      title: "Screening for Research Studies",
+      publisher: "NIH Office of Human Subjects Research Protections",
+      url: "https://irbo.nih.gov/conducting-your-study/screening-for-research-studies/",
+      year: "2026",
+    },
+    {
+      id: "miami-hsro",
+      title: "Guidance on Screening Research Subjects for Recruitment: Screening Process and Documentation",
+      publisher: "University of Miami Human Subject Research Office",
+      url: "https://www.hsro.uresearch.miami.edu/_assets/pdf/guidance-screening-process-and-documentation-10.14.2011.pdf",
+      year: "2011",
+    },
+    {
+      id: "fcc-24-17",
+      title: "Declaratory Ruling: Implications of Artificial Intelligence Technologies on Protecting Consumers from Unwanted Robocalls and Robotexts (FCC 24-17)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf",
+      year: "2024",
+    },
+    {
+      id: "cfr-47-64-1200",
+      title: "47 CFR 64.1200: Delivery restrictions",
+      publisher: "Legal Information Institute, Cornell Law School",
+      url: "https://www.law.cornell.edu/cfr/text/47/64.1200",
+      year: "2025",
+      note: "Quote (paragraph (a)(9)(iv)(C)): \"Voice calls and text messages are strictly limited to those for the following purposes: appointment and exam confirmations and reminders, wellness checkups, hospital pre-registration instructions, pre-operative instructions, lab results, post-discharge follow-up intended to prevent readmission, prescription notifications, and home healthcare instructions\". Checked against the eCFR text current as of September 18, 2026, which contains no AI-call disclosure requirement.",
+    },
+    {
+      id: "fcc-24-24",
+      title: "Report and Order and Further Notice of Proposed Rulemaking on TCPA consent revocation (FCC 24-24)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-24-24A1.pdf",
+      year: "2024",
+    },
+    {
+      id: "fcc-da-26-12",
+      title: "Order extending limited waiver of 47 CFR 64.1200(a)(10) (DA 26-12)",
+      publisher: "Federal Communications Commission, Consumer and Governmental Affairs Bureau",
+      url: "https://docs.fcc.gov/public/attachments/DA-26-12A1.pdf",
+      year: "2026",
+    },
+    {
+      id: "fcc-24-84",
+      title: "Notice of Proposed Rulemaking and Notice of Inquiry on AI-generated calls and texts (FCC 24-84)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-24-84A1.pdf",
+      year: "2024",
+    },
+    {
+      id: "ctia-2023",
+      title: "Messaging Principles and Best Practices",
+      publisher: "CTIA",
+      url: "https://api.ctia.org/wp-content/uploads/2023/05/230523-CTIA-Messaging-Principles-and-Best-Practices-FINAL.pdf",
+      year: "2023",
+    },
+    {
+      id: "tcr",
+      title: "The Campaign Registry: 10DLC brand and campaign registration",
+      publisher: "The Campaign Registry",
+      url: "https://www.campaignregistry.com/",
+      year: "2026",
+    },
+    {
+      id: "jgim-2023",
+      title: "Telephone Outreach Enhances Recruitment of Underrepresented Seriously Ill Patients for an Advance Care Planning Pragmatic Trial",
+      publisher: "Journal of General Internal Medicine, via PubMed Central",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10271940/",
+      year: "2023",
+    },
+    {
+      id: "ca-ab3030",
+      title: "AB-3030 Health care services: artificial intelligence (Chapter 848, Statutes of 2024)",
+      publisher: "California Legislative Information",
+      url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB3030",
+      year: "2024",
+    },
+    {
+      id: "ca-ab489",
+      title: "AB-489 Health care professions: deceptive terms or letters or phrases: artificial intelligence (Chapter 615, Statutes of 2025)",
+      publisher: "California Legislative Information",
+      url: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB489",
+      year: "2025",
+    },
+    {
+      id: "co-sb26-189",
+      title: "SB26-189 Automated Decision-Making Technology",
+      publisher: "Colorado General Assembly",
+      url: "https://leg.colorado.gov/bills/sb26-189",
+      year: "2026",
+    },
+    {
+      id: "co-hb26-1263",
+      title: "HB26-1263 Conversational AI Service Operator Requirements (Chatbot Safety Act)",
+      publisher: "Colorado General Assembly",
+      url: "https://leg.colorado.gov/bills/hb26-1263",
+      year: "2026",
+    },
+    {
+      id: "tx-hb149",
+      title: "H.B. No. 149, Texas Responsible Artificial Intelligence Governance Act (enrolled)",
+      publisher: "Texas Legislature Online",
+      url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm",
+      year: "2025",
+    },
+    {
+      id: "utah-sb226",
+      title: "S.B. 226 Artificial Intelligence Consumer Protection Amendments (2025 General Session), enrolled copy",
+      publisher: "Utah State Legislature",
+      url: "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+      year: "2025",
+      note: "Quote (Utah Code 13-75-103(2) and (3)): \"An individual providing services in a regulated occupation shall: (a) prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if the use of generative artificial intelligence constitutes a high-risk artificial intelligence interaction ... A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction.\" Section 13-75-101(5) defines a high-risk interaction to include the collection of health data. The bill takes effect May 7, 2025.",
+    },
+    {
+      id: "ciscrp-2025",
+      title: "2025 Perceptions and Insights Study: General Awareness and Perceptions",
+      publisher: "CISCRP (Center for Information and Study on Clinical Research Participation)",
+      url: "https://www.ciscrp.org/wp-content/uploads/2025/11/2025-Perceptions-Insights-General-Perceptions_FINAL.pdf",
+      year: "2025",
+      note: "Global online survey of 12,887 respondents. The 8 percent figure is among the 7,385 who saw or heard about a study in the past six months.",
+    },
+    {
+      id: "pan-2026",
+      title: "Clinical Trials: Patient Interest and Access, 2026 National Polling",
+      publisher: "PAN Foundation (fielded by The Harris Poll)",
+      url: "https://clinicaltrials.panfoundation.org/wp-content/uploads/2026/05/Clinical-Trials-Patient-Interest-and-Access-2026-National-Polling.pdf",
+      year: "2026",
+      note: "Online survey of 2,041 US adults, including 1,322 with a chronic condition, April 9 to 13, 2026.",
+    },
+    {
+      id: "bond-site",
+      title: "Bond Health: platform overview, FAQ and pricing",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+    },
+    {
+      id: "bond-product",
+      title: "Bond Health product information",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+    },
+  ],
+  related: [
+    { label: "Engage: voice and text outreach", href: "/engage", description: "Voice and SMS agents with AI disclosure, live transfer or human callback, and coordinator escalation." },
+    { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach", description: "Draft paragraphs that describe AI outreach in an IRB application." },
+    { label: "Patient outreach SMS templates", href: "/templates/patient-outreach-sms-templates", description: "Message wording for first contact, reminders and opt-outs." },
+    { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
+    { label: "Pre-screening vs screening", href: "/guides/pre-screening-vs-screening", description: "Where pre-screening ends, where consent begins, and what each requires." },
+    { label: "Preparatory to research", href: "/glossary/preparatory-to-research", description: "What the HIPAA provision allows, and what it does not." },
+  ],
+};
+
+export default page;

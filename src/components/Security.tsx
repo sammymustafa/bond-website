@@ -2,6 +2,7 @@
 
 import { Shield, Lock, FileCheck, Server, CheckCircle, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -85,6 +86,7 @@ export default function Security() {
               {/* Security Highlights */}
               <div className="space-y-3 text-left max-w-xs mx-auto">
                 {[
+                  "SOC 2 Type I compliant",
                   "End-to-end encryption",
                   "BAA available",
                   "Penetration testing",
@@ -109,6 +111,9 @@ export default function Security() {
                 View our Trust Center
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
+              <p className="text-sm text-gray-500 mb-2">
+                <Link href="/security" className="text-bond-primary font-medium hover:underline">Read how Bond handles PHI</Link>
+              </p>
               <p className="text-sm text-gray-500">
                 Need security documentation?{" "}
                 <a href="mailto:hello@bondtrials.com" className="text-bond-primary font-medium hover:underline">

@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, Phone, FileCheck, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const pillars = [
   {
@@ -15,19 +16,22 @@ const pillars = [
     color: "bg-blue-500",
     lightColor: "bg-blue-50",
     textColor: "text-blue-600",
+    href: "/identify",
   },
   {
     icon: Phone,
     title: "Engage",
-    subtitle: "Voice and SMS/text agents for pre-screening & scheduling",
-    description: "Automated outreach, pre-screen scripts, and scheduling handoff",
+    subtitle: "Voice and SMS/text agents, plus Meta and Google ads",
+    description: "Automated outreach to EHR matches and to leads from the Meta and Google ad campaigns we set up for your studies, with pre-screen scripts and scheduling handoff",
     outcomes: [
       "Higher contact and show rates",
+      "New patients from Meta and Google ads",
       "Coordinator time saved",
     ],
     color: "bg-emerald-500",
     lightColor: "bg-emerald-50",
     textColor: "text-emerald-600",
+    href: "/engage",
   },
   {
     icon: FileCheck,
@@ -41,6 +45,7 @@ const pillars = [
     color: "bg-purple-500",
     lightColor: "bg-purple-50",
     textColor: "text-purple-600",
+    href: "/consent",
   },
 ];
 
@@ -76,7 +81,7 @@ export default function Pillars() {
                 <p className="text-sm text-gray-600 mb-6">{pillar.description}</p>
 
                 {/* Outcomes */}
-                <div className="space-y-3">
+                <div className="space-y-3 mb-6">
                   {pillar.outcomes.map((outcome) => (
                     <div key={outcome} className="flex items-start gap-3">
                       <div className={`w-5 h-5 rounded-full ${pillar.color} flex items-center justify-center flex-shrink-0 mt-0.5`}>
@@ -88,6 +93,13 @@ export default function Pillars() {
                     </div>
                   ))}
                 </div>
+
+                <Link
+                  href={pillar.href}
+                  className="inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
+                >
+                  How {pillar.title.toLowerCase()} works <ArrowRight className="w-3 h-3" />
+                </Link>
               </div>
             </div>
           ))}

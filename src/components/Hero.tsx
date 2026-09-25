@@ -122,7 +122,7 @@ export default function Hero() {
 
             {/* Single clear value prop - consolidated */}
             <p className="text-lg sm:text-xl text-gray-600 mb-8 animate-fade-up stagger-2 pr-4 leading-relaxed">
-              Automate <span className="text-gray-900 font-medium">EHR screening</span>, <span className="text-gray-900 font-medium">patient outreach</span>, and <span className="text-gray-900 font-medium">consent tracking</span> in one workflow.
+              Automate <span className="text-gray-900 font-medium">EHR screening</span>, <span className="text-gray-900 font-medium">Meta and Google ad campaigns</span>, <span className="text-gray-900 font-medium">patient outreach</span>, and <span className="text-gray-900 font-medium">consent tracking</span> in one workflow.
             </p>
 
             {/* CTAs - More prominent */}

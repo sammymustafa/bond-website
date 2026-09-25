@@ -1,0 +1,510 @@
+import type { SeoPage } from "../../types";
+
+const page: SeoPage = {
+  path: "/clinical-trial-recruitment/florida",
+  category: "geography",
+  title: "Clinical trial recruitment in Florida for research sites",
+  description:
+    "For Florida research sites: recruiting-trial counts, research hubs, health system EHRs, site networks, demographics and the state laws that affect outreach.",
+  keywords: [
+    "clinical trial recruitment Florida",
+    "Florida research sites",
+    "Florida clinical research site networks",
+    "clinical trials Miami Tampa Orlando Jacksonville",
+    "Florida Telephone Solicitation Act clinical trials",
+  ],
+  eyebrow: "Florida",
+  h1: "Recruiting for clinical trials in Florida",
+  intro:
+    "On September 21, 2026, a ClinicalTrials.gov search for recruiting studies with a Florida location returned 3,876.{{cite:ctgov-api}} The state has four NCI-designated cancer centers with Florida facilities, health systems on Epic, MEDITECH and other EHRs, and a population older and more Hispanic than the US as a whole.{{cite:nci-find,floridatrend-epic,meditech-hca,census-asrh-2025}}",
+  summary: "Florida recruiting-trial counts, research hubs, health system EHRs, site networks, demographics and outreach laws.",
+  lastUpdated: "2026-09-24",
+  showLastUpdated: true,
+  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
+  sections: [
+    {
+      id: "trial-counts",
+      heading: "How many trials are recruiting in Florida?",
+      blocks: [
+        {
+          type: "p",
+          text: "Florida's 3,876 studies are about 18% of the 22,041 recruiting with a US location. Of the areas in the table, oncology is the largest, with 1,555 Florida studies, about 22% of the US oncology count. Cardiology follows with 521.{{cite:ctgov-api}} Compare [Texas](/clinical-trial-recruitment/texas) and [other locations](/clinical-trial-recruitment).",
+        },
+        { type: "trialCounts", geo: "florida", cite: "ctgov-api" },
+      ],
+    },
+    {
+      id: "research-hubs",
+      heading: "Where are Florida's research hubs?",
+      blocks: [
+        {
+          type: "table",
+          caption: "Florida research hubs: recruiting studies with a site in the city, and anchor institutions (September 22, 2026)",
+          columns: ["Hub", "Studies with a site there", "Anchor institutions", "What to know"],
+          rows: [
+            [
+              "Miami",
+              "1,309{{cite:ctgov-api-cities}}",
+              "UHealth (University of Miami) and Sylvester Comprehensive Cancer Center; Jackson Health System",
+              "Sylvester, NCI-designated since 2019, is South Florida's only NCI-designated cancer center, with 13 locations.{{cite:nci-sylvester}} Jackson is a nonprofit academic system governed by the Public Health Trust on behalf of Miami-Dade County.{{cite:jackson-about}}",
+            ],
+            [
+              "Tampa",
+              "1,039{{cite:ctgov-api-cities}}",
+              "Moffitt Cancer Center; Tampa General Hospital",
+              "Moffitt is the only NCI-designated Comprehensive Cancer Center based in Florida. Its catchment covers 15 counties.{{cite:nci-moffitt}}",
+            ],
+            [
+              "Jacksonville",
+              "902{{cite:ctgov-api-cities}}",
+              "Mayo Clinic in Florida; UF Health Jacksonville",
+              "Mayo Clinic's NCI-designated Comprehensive Cancer Center includes the Jacksonville campus.{{cite:nci-find}}",
+            ],
+            [
+              "Orlando",
+              "698{{cite:ctgov-api-cities}}",
+              "AdventHealth Research Institute; Orlando Health",
+              "The research institute reports more than 800 active studies on its website (September 2026).{{cite:adventhealth-ari}}",
+            ],
+            [
+              "Gainesville",
+              "537{{cite:ctgov-api-cities}}",
+              "UF Health and the UF Health Cancer Institute",
+              "The cancer institute was NCI-designated in 2023. UF leads OneFlorida+, a PCORnet network with data on about 4.5 million people seen each year at 14 partner organizations in six states (PCORI, 2024).{{cite:nci-uf,pcori-oneflorida}}",
+            ],
+          ],
+          note: "A study with sites in several cities counts in each.{{cite:ctgov-api-cities}}",
+        },
+        {
+          type: "p",
+          text: "Florida's Casey DeSantis Cancer Research Program pays cancer centers by a formula that weights patients in institutional or investigator-initiated interventional trials at 1.2, against 1.0 for other cases.{{cite:fl-381-915}} Industry-sponsored trials are not named in that weighting. See [oncology recruitment](/oncology).",
+        },
+      ],
+    },
+    {
+      id: "health-systems-and-ehrs",
+      heading: "Which EHRs do Florida health systems run?",
+      blocks: [
+        {
+          type: "p",
+          text: "Many large Florida systems run Epic, but not all.{{cite:floridatrend-epic,meditech-hca}} Confirm the EHR early, because it sets the integration path.",
+        },
+        {
+          type: "ul",
+          items: [
+            "**AdventHealth** said in February 2020 it would replace Cerner with Epic across more than 1,200 care sites and extend the record to affiliated practices through Epic's Community Connect.{{cite:adventhealth-epic}}",
+            "**Orlando Health** was moving to Epic from Allscripts in April 2020, when Florida Trend counted at least nine other Florida systems on Epic, including Tampa General and UF Health.{{cite:floridatrend-epic}}",
+            "**UF Health** shared one Epic record across its Gainesville and Jacksonville campuses in 2021.{{cite:ufhealth-epic}}",
+            "**UHealth** in Miami ran Epic, branded internally as UChart, in 2023.{{cite:uhealth-epic}}",
+            "**HCA Healthcare's North Florida Division**, 16 hospitals, is fully live on MEDITECH Expanse, per a September 2026 MEDITECH release. The release does not say the same of HCA's other Florida divisions.{{cite:meditech-hca}}",
+            "**Moffitt Cancer Center** issues patient portal logins through Cerner Health (September 2026), which suggests but does not confirm an Oracle Health (Cerner) EHR.{{cite:moffitt-portal}}",
+          ],
+        },
+        {
+          type: "callout",
+          tone: "bond",
+          title: "What this means for integration",
+          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an integration partner.{{cite:bond-site,bond-product}} For MEDITECH and other EHRs, the path is the EHR's FHIR API, with access the site or health system provides.{{cite:bond-site}} See [Epic](/integrations/epic), [Oracle Health](/integrations/oracle-cerner) and [MEDITECH](/integrations/meditech). Practices on a Community Connect instance should ask the host system who approves outside access.",
+        },
+      ],
+    },
+    {
+      id: "site-networks",
+      heading: "Which site networks and independent sites work in Florida?",
+      blocks: [
+        {
+          type: "ul",
+          items: [
+            "**Florida Cancer Specialists & Research Institute**, a community oncology practice, reports more than 250 physicians, nearly 100 locations and a research partnership with Sarah Cannon (September 2026).{{cite:fcs-about}}",
+            "**Flourish Research** lists 13 Florida locations on its website, more than in any other state (September 2026).{{cite:flourish-florida}}",
+            "**Alcanza Clinical Research**, an Orlando-based investigator site network, bought Innovation Medical Research Center in Palmetto Bay in April 2024, its ninth acquisition since 2021.{{cite:alcanza-innovation}}",
+            "**Community health centers**: 47 HRSA-funded health center organizations served 1,673,307 Florida patients in 2025.{{cite:hrsa-uds-fl}} See [FQHCs and community sites](/for/fqhcs-and-community-sites).",
+          ],
+        },
+        {
+          type: "p",
+          text: "A network built by acquisition may run several EHRs, so screening has to work site by site and still report as one network. See [Bond for site networks](/for/site-networks) or [Bond for research sites](/for/research-sites).",
+        },
+      ],
+    },
+    {
+      id: "patient-population",
+      heading: "Who are Florida's patients?",
+      blocks: [
+        {
+          type: "stats",
+          items: [
+            { value: "23.5 million", label: "Florida residents on July 1, 2025, third most of any state", cite: "census-pop-2025" },
+            { value: "22.8%", label: "Age 65 or older in 2025 (US: 18.9%)", cite: "census-asrh-2025" },
+            { value: "29.2%", label: "Hispanic or Latino in 2025 (US: 20.5%)", cite: "census-asrh-2025" },
+            { value: "10.9%", label: "Uninsured in 2024 (US: 8.2%)", cite: "census-acs-insurance" },
+          ],
+        },
+        {
+          type: "p",
+          text: "About 5.35 million Floridians were 65 or older in 2025, second only to California.{{cite:census-asrh-2025}} That widens the pool for [neurology](/neurology-and-alzheimers), [cardiology](/cardiology) and oncology trials, and adds comorbidities and medications to check against exclusion criteria.",
+        },
+        {
+          type: "p",
+          text: "In 2024, 32% of Floridians age 5 and older spoke a language other than English at home, against 23% nationally.{{cite:census-language}} Bond's voice and text conversations and consent Q&A run in the patient's preferred language, including English, Spanish, Mandarin and many others, and can switch languages mid-call.{{cite:bond-product}} Have your IRB review each language version of the scripts.",
+        },
+        {
+          type: "p",
+          text: "Florida had not expanded Medicaid as of January 1, 2024.{{cite:census-acs-insurance}} Uninsured patients may have thin EHR records, so health centers matter for reach.",
+        },
+        { type: "trials", geo: "florida", condition: "neurology", cite: "ctgov-api" },
+      ],
+    },
+    {
+      id: "florida-laws",
+      heading: "Which Florida laws affect outreach to patients?",
+      blocks: [
+        {
+          type: "p",
+          text: "Florida adds these statutes to HIPAA and the federal TCPA. This is not legal advice; confirm it with counsel and your IRB. See [IRB and HIPAA rules for outreach](/guides/irb-hipaa-patient-outreach).",
+        },
+        {
+          type: "table",
+          caption: "Florida statutes that touch recruitment outreach (2026 Florida Statutes)",
+          columns: ["Law", "What it says", "What it means for outreach"],
+          rows: [
+            [
+              "Interception of communications, s. 934.03",
+              "Intercepting a wire, oral or electronic communication is lawful when all parties have given prior consent.{{cite:fl-934-03}}",
+              "Ask for consent at the start of any recorded call.",
+            ],
+            [
+              "Telephone Solicitation Act, s. 501.059",
+              "Covers calls, texts and voicemails that solicit a sale of consumer goods or services. Bars such calls using an automated dialing system or recorded message without prior express written consent. Damages: actual or $500, whichever is greater, up to triple if willful. A consumer must reply STOP and wait 15 days before suing over texts.{{cite:fl-501-059}}",
+              "Whether study outreach is covered depends on the facts. Cautious path: written consent before automated calls or texts, and honor STOP at once.",
+            ],
+            [
+              "Hospital records, s. 395.3025",
+              "Records may not be disclosed without patient consent, apart from listed exceptions such as staff involved in the patient's care. None of the exceptions is for research.{{cite:fl-395-3025}}",
+              "Plan hospital-based screening with the privacy office first.",
+            ],
+            [
+              "Practitioner records, s. 456.057",
+              "Records may not be released without written authorization, except in listed cases such as research using de-identified information.{{cite:fl-456-057}}",
+              "Screening your own patients differs from sending identifiable records to an outside party.",
+            ],
+            [
+              "Information Protection Act, s. 501.171",
+              "Medical information is personal information. Breach notice is due within 30 days to affected Floridians, and to the Department of Legal Affairs if 500 or more are affected. A vendor holding the data must notify the site within 10 days of determining a breach.{{cite:fl-501-171}}",
+              "Ask vendors to put the 10-day notice in the contract, and plan your own 30-day timeline.",
+            ],
+          ],
+        },
+        {
+          type: "callout",
+          tone: "info",
+          title: "AI disclosure: proposed, not enacted",
+          text: "Florida's proposed Artificial Intelligence Bill of Rights (CS/SB 482) would have required bot operators to notify users periodically. It passed the Senate on March 4, 2026 and died in the House on March 13.{{cite:fl-sb-482}} Bond's agents tell patients that AI assistance is used, and patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}} Federal rules: [the TCPA and AI outreach](/blog/tcpa-ai-outreach-2026).",
+        },
+      ],
+    },
+    {
+      id: "how-bond-deploys",
+      heading: "How does Bond deploy with a Florida site?",
+      blocks: [
+        {
+          type: "p",
+          text: "A full deployment with the EHR connected takes 4 to 6 weeks, depending on the EHR, IT review and interface method. A pilot without EHR integration, such as outreach to a list the site holds, can start in under 2 weeks.{{cite:bond-site}} See the [implementation plan](/implementation).",
+        },
+        {
+          type: "steps",
+          items: [
+            {
+              title: "Sign the BAA and finish security review",
+              text: "Your IT team reviews encryption, access control and audit logging.{{cite:bond-site}}",
+            },
+            {
+              title: "Connect the EHR",
+              text: "Through FHIR or HL7 interfaces or an integration partner. Bond is also a [CRIO Certified Partner](/integrations/crio).{{cite:bond-site}}",
+            },
+            {
+              title: "Validate eligibility logic",
+              text: "Coordinators compare a sample of match decisions, with Bond's criterion-level rationale, against their own chart review.{{cite:bond-site}} See [validating eligibility logic](/blog/validating-eligibility-logic-before-go-live).",
+            },
+            {
+              title: "Configure Florida outreach",
+              text: "Scripts are set per site and study.{{cite:bond-site}} Florida scripts should carry the AI disclosure, a consent request before recording, and STOP handling, all reviewed by your IRB.",
+            },
+            {
+              title: "Go live and report",
+              text: "The dashboard tracks patients matched, contacted, pre-screened, consented and randomized.{{cite:bond-site}}",
+            },
+          ],
+        },
+        {
+          type: "cta",
+          label: "Book a demo",
+          href: "/book-a-demo",
+          text: "Bring a protocol and your EHR details to see how screening, outreach and consent support would run for you.",
+          secondaryLabel: "See the implementation plan",
+          secondaryHref: "/implementation",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Does the Florida Telephone Solicitation Act apply to trial recruitment texts?",
+      a: "It covers texts that solicit a sale of consumer goods or services, so it depends on the study and the message.{{cite:fl-501-059}} The cautious path is written consent and honoring STOP at once.",
+    },
+    {
+      q: "Does Florida require a caller to disclose that it is an AI?",
+      a: "We found no such statute as of September 2026. CS/SB 482, which would have required periodic bot notices, died in the House in March 2026.{{cite:fl-sb-482}}",
+    },
+    {
+      q: "Which languages should outreach to Florida patients support?",
+      a: "Spanish at a minimum. In 2024, 23.4% of Floridians age 5 and older spoke Spanish at home, and 10.5% spoke Spanish at home and English less than \"very well\". About 636,000 spoke French, Haitian or Cajun.{{cite:census-language}}",
+    },
+  ],
+  sources: [
+    {
+      id: "ctgov-api",
+      title: "ClinicalTrials.gov API v2",
+      publisher: "U.S. National Library of Medicine",
+      url: "https://clinicaltrials.gov/data-api/api",
+      year: "2026",
+      note: "Queried September 21, 2026.",
+    },
+    {
+      id: "ctgov-api-cities",
+      title: "ClinicalTrials.gov API v2: Florida recruiting studies by site city",
+      publisher: "U.S. National Library of Medicine",
+      url: "https://clinicaltrials.gov/data-api/api",
+      year: "2026",
+      note: "Queried by Bond on September 22, 2026: studies with overall status Recruiting and a location matching Florida (query.locn=Florida; 3,876 studies), counting those that list at least one Florida location in each city. Result: Miami 1,309; Tampa 1,039; Jacksonville 902; Orlando 698; Gainesville 537. A study with sites in several cities counts in each. Re-run on September 22, 2026 with the same result; 11 of the 3,876 studies matched the search but list no Florida, United States location.",
+    },
+    {
+      id: "census-pop-2025",
+      title: "Population Growth Slows Due to Decline in Net International Migration (Release CB26-20)",
+      publisher: "U.S. Census Bureau",
+      url: "https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html",
+      year: "2026",
+    },
+    {
+      id: "census-asrh-2025",
+      title: "Vintage 2025 State Population Estimates by Age, Sex, Race, and Hispanic Origin (SC-EST2025-ALLDATA6)",
+      publisher: "U.S. Census Bureau",
+      url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
+      year: "2026",
+      note: "Checked September 22, 2026. The file is data only, so this is a computed summary, not a quotation: summing the state rows with SEX=0 for POPESTIMATE2025 gives Florida 23,462,518 total; 6,849,243 Hispanic (ORIGIN=2), or 29.2%; 5,346,788 age 65 and over, or 22.8%. Same method for the 50 states and DC: 18.9% age 65 and over, 20.5% Hispanic. Hispanic count ranks third after California and Texas; age 65 and over count ranks second after California.",
+    },
+    {
+      id: "census-acs-insurance",
+      title: "Health Insurance Coverage by State: 2023 and 2024 (ACSBR-024)",
+      publisher: "U.S. Census Bureau",
+      url: "https://www2.census.gov/library/publications/2025/demo/acsbr-024.pdf",
+      year: "2025",
+      note: "Appendix Table 2, Percentage of Uninsured People by State: 2023 and 2024. Quote: \"United States ... 7.9 0.1 8.2 0.1 *0.3\" and \"Florida² ... 10.7 0.2 10.9 0.2 0.2\"; footnote: \"² These states had not expanded Medicaid as of January 1, 2024.\"",
+    },
+    {
+      id: "census-language",
+      title: "Table C16001: Language Spoken at Home for the Population 5 Years and Over (ACS 2024 1-year), Florida and United States",
+      publisher: "Census Reporter (U.S. Census Bureau American Community Survey data)",
+      url: "https://censusreporter.org/tables/C16001/?geo_ids=04000US12,01000US",
+      year: "2025",
+      note: "Checked September 22, 2026 through the Census Reporter API (release acs2024_1yr). Values: Florida population 5 and over 22,225,588; speak only English 15,115,259 (so 32.0% speak another language); Spanish 5,191,207 (23.4%), of whom 2,332,104 (10.5% of the Florida total) speak English less than \"very well\"; French, Haitian, or Cajun 635,597. United States: 321,745,950 total and 247,695,100 English only (23.0% speak another language).",
+    },
+    {
+      id: "hrsa-uds-fl",
+      title: "Florida Health Center Program Uniform Data System (UDS) Data",
+      publisher: "Health Resources and Services Administration (HRSA)",
+      url: "https://data.hrsa.gov/tools/data-reporting/program-data/state/FL",
+      year: "2026",
+    },
+    {
+      id: "nci-find",
+      title: "Find an NCI-Designated Cancer Center",
+      publisher: "National Cancer Institute",
+      url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find",
+      year: "2026",
+    },
+    {
+      id: "nci-moffitt",
+      title: "Moffitt Cancer Center (NCI-Designated Cancer Center profile)",
+      publisher: "National Cancer Institute",
+      url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find/moffitt",
+      year: "2026",
+    },
+    {
+      id: "nci-sylvester",
+      title: "Sylvester Comprehensive Cancer Center (NCI-Designated Cancer Center profile)",
+      publisher: "National Cancer Institute",
+      url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find/sylvester-miami",
+      year: "2026",
+    },
+    {
+      id: "nci-uf",
+      title: "University of Florida Health Cancer Institute (NCI-Designated Cancer Center profile)",
+      publisher: "National Cancer Institute",
+      url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find/ufhealth",
+      year: "2026",
+    },
+    {
+      id: "pcori-oneflorida",
+      title: "OneFlorida+ Clinical Research Network Phase 4",
+      publisher: "Patient-Centered Outcomes Research Institute (PCORI)",
+      url: "https://www.pcori.org/research-results/2024/oneflorida-clinical-research-network-phase-4",
+      year: "2024",
+    },
+    {
+      id: "fl-381-915",
+      title: "Florida Statutes s. 381.915, Casey DeSantis Cancer Research Program",
+      publisher: "The Florida Legislature (Online Sunshine)",
+      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0381/Sections/0381.915.html",
+      year: "2026",
+      note: "Checked September 22, 2026. Subsection (3)(f), definition of reportable cases. Quote: \"Cases relating to patients enrolled in institutional or investigator-initiated interventional clinical trials shall be weighted at 1.2 relative to other cases weighted at 1.0.\" The section does not use the word industry.",
+    },
+    {
+      id: "jackson-about",
+      title: "About Jackson Health System",
+      publisher: "Jackson Health System",
+      url: "https://jacksonhealth.org/about/",
+      year: "2026",
+    },
+    {
+      id: "adventhealth-ari",
+      title: "Medical and Clinical Research Organization | AdventHealth Research Institute",
+      publisher: "AdventHealth",
+      url: "https://www.adventhealth.com/institute/adventhealth-research-institute",
+      year: "2026",
+    },
+    {
+      id: "adventhealth-epic",
+      title: "AdventHealth to implement single, integrated health record platform",
+      publisher: "AdventHealth",
+      url: "https://www.adventhealth.com/news/adventhealth-implement-single-integrated-health-record-platform",
+      year: "2020",
+    },
+    {
+      id: "floridatrend-epic",
+      title: "Orlando Health's Epic EHR Overhaul",
+      publisher: "Florida Trend",
+      url: "https://www.floridatrend.com/article/29050/orlando-healths-epic-ehr-overhaul/",
+      year: "2020",
+    },
+    {
+      id: "ufhealth-epic",
+      title: "UF Health Gainesville and Jacksonville share the same Epic system",
+      publisher: "UF Health (Doctor Gator)",
+      url: "https://news.drgator.ufl.edu/2021/02/03/uf-health-gainesville-and-jacksonville-share-the-same-epic-system/",
+      year: "2021",
+    },
+    {
+      id: "uhealth-epic",
+      title: "UHealth IT Integrates New Customer Relationship Management Platform with UChart",
+      publisher: "University of Miami Miller School of Medicine (InventUM)",
+      url: "https://news.med.miami.edu/uhealth-it-integrates-new-crm-platform/",
+      year: "2023",
+    },
+    {
+      id: "meditech-hca",
+      title: "MEDITECH Expanse EHR live across first full U.S. divisions of HCA Healthcare",
+      publisher: "MEDITECH",
+      url: "https://ehr.meditech.com/news/meditech-expanse-ehr-live-across-first-full-us-divisions-of-hca-healthcare",
+      year: "2026",
+    },
+    {
+      id: "moffitt-portal",
+      title: "Sign In - MyMoffitt Patient Portal Tutorials",
+      publisher: "Moffitt Cancer Center",
+      url: "https://my.moffitt.org/Tutorials/Sign_In.htm",
+      year: "2026",
+    },
+    {
+      id: "fcs-about",
+      title: "About FCS",
+      publisher: "Florida Cancer Specialists & Research Institute",
+      url: "https://www.flcancer.com/about-fcs/",
+      year: "2026",
+    },
+    {
+      id: "flourish-florida",
+      title: "Clinical Research in Florida",
+      publisher: "Flourish Research",
+      url: "https://flourishresearch.com/states/florida/",
+      year: "2026",
+    },
+    {
+      id: "alcanza-innovation",
+      title: "Alcanza Clinical Research Acquires Innovation Medical Research Center",
+      publisher: "Alcanza Clinical Research via PR Newswire",
+      url: "https://www.prnewswire.com/news-releases/alcanza-clinical-research-acquires-innovation-medical-research-center-302110859.html",
+      year: "2024",
+    },
+    {
+      id: "fl-934-03",
+      title: "Florida Statutes s. 934.03, Interception and disclosure of wire, oral, or electronic communications prohibited",
+      publisher: "The Florida Legislature (Online Sunshine)",
+      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0900-0999/0934/Sections/0934.03.html",
+      year: "2026",
+    },
+    {
+      id: "fl-501-059",
+      title: "Florida Statutes s. 501.059, Telephone solicitation (Florida Telephone Solicitation Act)",
+      publisher: "The Florida Legislature (Online Sunshine)",
+      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html",
+      year: "2026",
+      note: "Checked September 22, 2026. Subsection (10). Quote: \"Recover actual damages or $500, whichever is greater. (b) If the court finds that the defendant willfully or knowingly violated this section ... the court may, in its discretion, increase the amount of the award to an amount equal to not more than three times the amount available under paragraph (a). (c) Before the commencement of any action for damages under this section for text message solicitations, the called party must notify the telephone solicitor ... by replying 'STOP' ... Within 15 days after receipt of such notice, the telephone solicitor shall cease sending text message solicitations.\"",
+    },
+    {
+      id: "fl-395-3025",
+      title: "Florida Statutes s. 395.3025, Patient and personnel records; copies; examination",
+      publisher: "The Florida Legislature (Online Sunshine)",
+      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0395/Sections/0395.3025.html",
+      year: "2026",
+      note: "Checked September 22, 2026. Subsection (4) lists exceptions (a) through (l): care and treatment, administrative and quality functions, state agencies, subpoenas, trauma registries, abuse investigations, organ procurement, Medicaid fraud, unclaimed property audits and poison control. None is for research.",
+    },
+    {
+      id: "fl-456-057",
+      title: "Florida Statutes s. 456.057, Ownership and control of patient records",
+      publisher: "The Florida Legislature (Online Sunshine)",
+      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0456/Sections/0456.057.html",
+      year: "2026",
+    },
+    {
+      id: "fl-501-171",
+      title: "Florida Statutes s. 501.171, Security of confidential personal information",
+      publisher: "The Florida Legislature (Online Sunshine)",
+      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.171.html",
+      year: "2026",
+      note: "Checked September 22, 2026. Subsection (3)(a): notice to the department of a breach affecting 500 or more individuals in the state is due \"no later than 30 days after the determination of the breach or reason to believe a breach occurred.\" Subsection (4)(a): notice to individuals is due \"no later than 30 days after the determination of a breach or reason to believe a breach occurred.\" Subsection (6)(a). Quote: \"In the event of a breach of security of a system maintained by a third-party agent, such third-party agent shall notify the covered entity of the breach of security as expeditiously as practicable, but no later than 10 days following the determination of the breach of security or reason to believe the breach occurred.\"",
+    },
+    {
+      id: "fl-sb-482",
+      title: "CS/SB 482 (2026): Artificial Intelligence Bill of Rights",
+      publisher: "The Florida Senate",
+      url: "https://www.flsenate.gov/Session/Bill/2026/482",
+      year: "2026",
+      note: "Checked September 22, 2026. Quote: \"requiring bot operators to periodically provide a certain notification to a user, etc.\" Bill history: \"3/4/2026 Senate: CS passed as amended; YEAS 35 NAYS 2\" and \"3/13/2026 House: Died in Messages\".",
+    },
+    {
+      id: "bond-site",
+      title: "Bond Health: platform overview, FAQ and pricing",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+    },
+    {
+      id: "bond-product",
+      title: "Bond Health product information",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+    },
+  ],
+  related: [
+    { label: "Recruitment by state and region", href: "/clinical-trial-recruitment", description: "Registry counts, research hubs and outreach rules for seven locations." },
+    { label: "Bond for research sites", href: "/for/research-sites", description: "How an independent or health system site runs screening, outreach and consent." },
+    { label: "Bond for site networks", href: "/for/site-networks", description: "One recruitment standard across every site in a network." },
+    { label: "Oncology recruitment", href: "/oncology", description: "Screening against stage, biomarker and prior-therapy criteria." },
+    { label: "Implementation", href: "/implementation", description: "The 4 to 6 week plan, week by week." },
+  ],
+};
+
+export default page;
