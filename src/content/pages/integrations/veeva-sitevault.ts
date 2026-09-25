@@ -112,7 +112,7 @@ const page: SeoPage = {
               "Dashboard training",
               "The site's training sign-in sheet",
               "Training Evidence (study-specific), in Study Training",
-              "Bond trains coordinators in week 5 of the typical implementation plan.{{cite:bond-site}}",
+              "Bond trains coordinators just before go-live, as part of the typical implementation plan.{{cite:bond-site}}",
             ],
           ],
           note: "Document types and eBinder locations are from Veeva's SiteVault document type list, updated August 7, 2026.{{cite:veeva-doctypes}}",
@@ -183,17 +183,17 @@ const page: SeoPage = {
     },
     {
       id: "timeline",
-      heading: "Where does this fit in the 4 to 6 week implementation?",
+      heading: "Where does this fit in the 48-hour implementation?",
       blocks: [
         {
           type: "p",
-          text: "A full Bond deployment with the EHR connected typically takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} SiteVault work does not gate go-live, because Bond never reads from it. In the typical [implementation plan](/implementation), scripts go to the IRB in weeks 2 to 4, and the pre-screening log starts when outreach begins in weeks 3 to 5. Training and access setup in week 5 produce the training and user access records.{{cite:bond-site}}",
+          text: "A full Bond deployment with the EHR connected typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} SiteVault work does not gate go-live, because Bond never reads from it. In the typical [implementation plan](/implementation), scripts go to the IRB before outreach starts, and the pre-screening log starts when outreach begins. Training and access setup just before go-live produce the training and user access records.{{cite:bond-site}}",
         },
         {
           type: "callout",
           tone: "bond",
           title: "Starting before the EHR is connected",
-          text: "A pilot without EHR integration can be set up in under 2 weeks.{{cite:bond-site}} SiteVault filing works the same way in a pilot.",
+          text: "A pilot can run on a list the site already has before the EHR is connected.{{cite:bond-site}} SiteVault filing works the same way in a pilot.",
         },
       ],
     },
@@ -204,7 +204,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Agreements first.** The business associate agreement with Bond is signed in week 1, before any PHI moves.{{cite:bond-site}}",
+            "**Agreements first.** The business associate agreement with Bond is signed at kickoff, before any PHI moves.{{cite:bond-site}}",
             "**Coded logs.** Veeva's screening log type lists participants by code, and monitors on the study can view it once final.{{cite:veeva-doctypes}}",
             "**The site decides what is shared.** In SiteVault the site owns its data and chooses which documents to share and with whom.{{cite:veeva-faq}}",
             "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging and penetration testing. See [security](/security).{{cite:bond-site}}",
@@ -365,7 +365,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Consent", href: "/consent", description: "How Bond supports the consent conversation and what the site still owns." },
-    { label: "Implementation", href: "/implementation", description: "The 4 to 6 week plan, week by week, with site and Bond tasks." },
+    { label: "Implementation", href: "/implementation", description: "The 48-hour plan, step by step, with site and Bond tasks." },
     { label: "Integrations", href: "/integrations", description: "EHR and research-system connections, and what each requires." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond screens the EHR and explains each match." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },

@@ -229,7 +229,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond's dashboard reports patients matched, contacted, pre-screened, consented and randomized, the stage counts a pre-screening log needs, and keeps an audit trail.{{cite:bond-site}} Full EHR integration typically takes 4 to 6 weeks, depending on the EHR and IT review.{{cite:bond-site}} [Implementation](/implementation) and [security](/security) explain how a deployment is set up.",
+          text: "Bond's dashboard reports patients matched, contacted, pre-screened, consented and randomized, the stage counts a pre-screening log needs, and keeps an audit trail.{{cite:bond-site}} Full EHR integration typically takes 48 hours, depending on the EHR and IT review.{{cite:bond-site}} [Implementation](/implementation) and [security](/security) explain how a deployment is set up.",
         },
         {
           type: "cta",

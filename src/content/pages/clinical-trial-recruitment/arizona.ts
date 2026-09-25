@@ -198,7 +198,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Full EHR integration usually takes 4 to 6 weeks. A pilot from a patient list, without EHR integration, can begin in under 2 weeks.{{cite:bond-site}} See [implementation](/implementation) for the week-by-week plan.",
+          text: "Full EHR integration usually takes 48 hours.{{cite:bond-site}} See [implementation](/implementation) for the step-by-step plan.",
         },
         {
           type: "steps",
@@ -540,7 +540,7 @@ const page: SeoPage = {
   related: [
     { label: "All locations", href: "/clinical-trial-recruitment", description: "Registry counts and outreach rules for other states and regions." },
     { label: "Bond for research sites", href: "/for/research-sites", description: "How screening, outreach and consent support fit a site's coordinators." },
-    { label: "Implementation", href: "/implementation", description: "What a deployment involves, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
     { label: "Oncology", href: "/oncology", description: "How Bond screens for cancer trials, Arizona's largest area by count." },
     { label: "Neurology and Alzheimer's", href: "/neurology-and-alzheimers", description: "Screening for memory and movement disorder studies." },
     { label: "Cardiology", href: "/cardiology", description: "Screening for heart failure, hypertension and rhythm studies." },

@@ -113,7 +113,7 @@ const page: SeoPage = {
             ],
             [
               "Setup and ongoing support",
-              "Bond's implementation team handles the integration end to end, with no integration fee and dedicated support through launch, and Bond keeps improving outreach messaging until study close-out. A list-based pilot can be set up in under 2 weeks; full EHR integration takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site,bond-product}}",
+              "Bond's implementation team handles the integration end to end, with no integration fee and dedicated support through launch, and Bond keeps improving outreach messaging until study close-out. Full EHR integration takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site,bond-product}}",
               "Its team advises on the workflow and sets up each study end to end, with messaging for the site's lead sources and indication (2026). Setup timeline: not publicly documented (September 2026).{{cite:alleviate-home-2026}}",
             ],
             [
@@ -210,7 +210,7 @@ const page: SeoPage = {
     },
     {
       q: "Can Bond work the leads we already have?",
-      a: "Yes. Bond's voice and SMS/text agents can run outreach, pre-screening and scheduling on a list the site already has, such as ad leads, referrals or registry contacts, and a pilot on that list can be set up in under 2 weeks. Full EHR integration typically takes 4 to 6 weeks.{{cite:bond-site}} Once it is live, the voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation.{{cite:bond-product}} See [Engage](/engage). Bond can also generate new leads: it sets up Meta and Google ad campaigns for your studies, and those leads flow into the same pre-screening and scheduling.{{cite:bond-product}}",
+      a: "Yes. Bond's voice and SMS/text agents can run outreach, pre-screening and scheduling on a list the site already has, such as ad leads, referrals or registry contacts. Full EHR integration typically takes 48 hours.{{cite:bond-site}} Once it is live, the voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation.{{cite:bond-product}} See [Engage](/engage). Bond can also generate new leads: it sets up Meta and Google ad campaigns for your studies, and those leads flow into the same pre-screening and scheduling.{{cite:bond-product}}",
     },
     {
       q: "How does pricing compare?",

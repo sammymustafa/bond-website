@@ -41,7 +41,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**EHR connection.** FHIR or HL7 interfaces, or a connection through an aggregator, set up by Bond with no separate integration fee. Full EHR integration typically takes 4 to 6 weeks, depending on the EHR, IT review and interface method; the [implementation](/implementation) page shows the plan week by week.{{cite:bond-site}}",
+            "**EHR connection.** FHIR or HL7 interfaces, or a connection through an aggregator, set up by Bond with no separate integration fee. Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method; the [implementation](/implementation) page shows the plan step by step.{{cite:bond-site}}",
             "**Security review and audit logging setup.** Bond goes through your security review, signs a business associate agreement (BAA) and sets up audit logging. Details are on the [security](/security) page.{{cite:bond-site}}",
             "**Workflow configuration.** The study's inclusion and exclusion criteria and the outreach scripts, configured for each site and study.{{cite:bond-site}}",
             "**Ongoing operation.** Compute, monitoring and support for as long as the engagement runs.",
@@ -200,7 +200,7 @@ const page: SeoPage = {
             ["Finding candidates", "Coordinator hours on EHR reports and chart review", "Bond reads the records against the criteria and ranks matches with their evidence; Bond reports 50%+ less chart review{{cite:bond-site}}"],
             ["First contact and pre-screening", "Coordinator calls, voicemails and callbacks", "Voice and text agents call, pre-screen, schedule visits and escalate to coordinators{{cite:bond-site}}"],
             ["Consent conversation", "PI and coordinator time", "AI support explains the study in plain language and answers patient questions; the PI and delegated staff obtain consent{{cite:bond-site}}"],
-            ["Setup", "Staff training on the study", "Covered by the platform fee, with no integration fee; typically 4 to 6 weeks for full EHR integration{{cite:bond-site}}"],
+            ["Setup", "Staff training on the study", "Covered by the platform fee, with no integration fee; typically 48 hours for full EHR integration{{cite:bond-site}}"],
             ["If no one is randomized", "Staff time already spent", "Platform fee already owed; no success fee"],
           ],
         },
@@ -227,7 +227,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "[Book a demo](/book-a-demo) and bring one protocol. To scope the platform fee, Bond needs to know which EHR each site uses, how many sites and studies are in scope, whether a study will use Meta and Google ad campaigns, and whether you want to start with a pilot that does not need the EHR connection, which can be set up in under 2 weeks.{{cite:bond-site,bond-product}}",
+          text: "[Book a demo](/book-a-demo) and bring one protocol. To scope the platform fee, Bond needs to know which EHR each site uses, how many sites and studies are in scope, whether a study will use Meta and Google ad campaigns, and whether you want to start with a pilot that does not need the EHR connection.{{cite:bond-site,bond-product}}",
         },
         {
           type: "cta",
@@ -247,7 +247,7 @@ const page: SeoPage = {
     },
     {
       q: "Is there a pilot option?",
-      a: "Yes. A pilot without EHR integration, using outreach to a list the site already has, can be set up in under 2 weeks.{{cite:bond-site}} Its scope and price are part of the custom quote.",
+      a: "Yes. A pilot without EHR integration can run outreach on a list the site already has.{{cite:bond-site}} Its scope and price are part of the custom quote.",
     },
     {
       q: "How are contracts structured?",
@@ -361,7 +361,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Implementation", href: "/implementation", description: "What the platform fee pays for, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What the platform fee pays for, step by step." },
     { label: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment", description: "Bond's EHR screening and ad campaigns compared with media vendors." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "How recruitment tools differ in scope and approach." },
     { label: "Security", href: "/security", description: "The BAA, encryption, access control and audit logging in every engagement." },

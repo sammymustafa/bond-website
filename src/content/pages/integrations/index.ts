@@ -58,7 +58,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Implementation", href: "/implementation", description: "The 4 to 6 weeks, week by week." },
+    { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },
     { label: "Security", href: "/security", description: "Data flows, BAAs and audit logging." },
   ],
 };

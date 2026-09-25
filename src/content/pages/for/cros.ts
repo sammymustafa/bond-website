@@ -172,7 +172,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond works on the third lever. With the EHR connected, it screens charts at active sites and contacts the candidates it finds. Full EHR integration takes 4 to 6 weeks per site. A pilot without EHR integration can start in under 2 weeks, but it does not read charts: it contacts and pre-screens patients from a list the site already holds.{{cite:bond-site}}",
+          text: "Bond works on the third lever. With the EHR connected, it screens charts at active sites and contacts the candidates it finds. Full EHR integration takes 48 hours per site. A pilot without EHR integration does not read charts: it contacts and pre-screens patients from a list the site already holds.{{cite:bond-site}}",
         },
       ],
     },
@@ -186,7 +186,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Each site signs a BAA, completes a security review, connects its EHR, validates the criteria with its coordinators and, where required, sends outreach scripts to the IRB. The 4 to 6 weeks per site depend on the EHR, the IT review and the interface method.{{cite:bond-site}} The [implementation plan](/implementation) lists each week.",
+          text: "Each site signs a BAA, completes a security review, connects its EHR, validates the criteria with its coordinators and, where required, sends outreach scripts to the IRB. The 48 hours per site depend on the EHR, the IT review and the interface method.{{cite:bond-site}} The [implementation plan](/implementation) lists each step.",
         },
         {
           type: "checklist",
@@ -356,7 +356,7 @@ const page: SeoPage = {
     { label: "Bond for sponsors", href: "/for/sponsors", description: "Delay costs, site variance and one funnel from the sponsor's side." },
     { label: "Bond for site networks", href: "/for/site-networks", description: "One workflow and one set of metrics across a network's sites." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
-    { label: "Implementation", href: "/implementation", description: "The 4 to 6 week plan, with site and Bond tasks each week." },
+    { label: "Implementation", href: "/implementation", description: "The 48-hour plan, with site and Bond tasks at each step." },
     { label: "Pricing", href: "/pricing", description: "A platform fee plus a success fee per randomized patient." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },
   ],

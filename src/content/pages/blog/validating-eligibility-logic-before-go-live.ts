@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "An AI screening tool is only as good as the criteria it was given and the evidence it can find. This post describes what happens between signing and go-live: how a protocol's inclusion and exclusion criteria become checks the system can run, how those checks are tested against real records, and what a coordinator sees when a match is wrong.",
   summary: "The configure, test, adjudicate loop that runs before any live screening starts.",
-  lastUpdated: "2026-09-23",
+  lastUpdated: "2026-09-24",
   blog: { date: "2026-09-21", author: "Bond Health", readingMinutes: 6 },
   heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
@@ -143,7 +143,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how matches are explained." },
-    { label: "Implementation", href: "/implementation", description: "Where validation sits in the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "Where validation sits in the 48-hour plan." },
     { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist", description: "The manual version of the same discipline." },
   ],
 };

@@ -175,7 +175,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Full EHR integration typically takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} The [implementation](/implementation) page has the week-by-week plan. A practical start is one protocol at a few sites that share an EHR, then expand once the reports look right.",
+          text: "Full EHR integration typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} The [implementation](/implementation) page has the step-by-step plan. A practical start is one protocol at a few sites that share an EHR, then expand once the reports look right.",
         },
         {
           type: "checklist",
@@ -215,11 +215,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "Do all of our sites need the same EHR?",
-      a: "No. Each EHR connects separately, with its own approval, and full integration usually takes 4 to 6 weeks.{{cite:bond-site}}",
+      a: "No. Each EHR connects separately, with its own approval, and full integration usually takes 48 hours.{{cite:bond-site}}",
     },
     {
       q: "Can the network start before EHR connections are approved?",
-      a: "Yes. A pilot without EHR integration, such as outreach to an existing patient list, can be set up in under 2 weeks.{{cite:bond-site}} Ranked matches from EHR chart screening start once that site's connection is live.",
+      a: "Yes. A pilot without EHR integration can run outreach to an existing patient list.{{cite:bond-site}} Ranked matches from EHR chart screening start once that site's connection is live.",
     },
     {
       q: "Does Bond replace coordinators at our sites?",
@@ -342,7 +342,7 @@ const page: SeoPage = {
   related: [
     { label: "Bond for research sites", href: "/for/research-sites", description: "How a single site uses Bond for screening, outreach and consent support." },
     { label: "CRIO integration", href: "/integrations/crio", description: "How pre-screened patients and statuses move between Bond and CRIO." },
-    { label: "Implementation", href: "/implementation", description: "The week-by-week plan for connecting an EHR and going live." },
+    { label: "Implementation", href: "/implementation", description: "The step-by-step plan for connecting an EHR and going live." },
     { label: "Pricing", href: "/pricing", description: "A volume-based platform fee plus a success fee per randomized patient." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors check in feasibility, and how to present patient counts." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Criterion-by-criterion screening with the chart evidence behind each match." },

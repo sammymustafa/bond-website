@@ -180,7 +180,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Once live, the coordinator sees each patient's consent status and any escalations to staff in the same real-time dashboard used for screening and outreach, with the activity behind them in Bond's audit trail.{{cite:bond-site}} Consent support is configured during [implementation](/implementation), which takes 4 to 6 weeks for full EHR integration, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
+          text: "Once live, the coordinator sees each patient's consent status and any escalations to staff in the same real-time dashboard used for screening and outreach, with the activity behind them in Bond's audit trail.{{cite:bond-site}} Consent support is configured during [implementation](/implementation), which takes 48 hours for full EHR integration, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
         },
       ],
     },

@@ -232,7 +232,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond signs a [business associate agreement](/glossary/baa), and its implementation team handles the EHR integration end to end, with no integration fee; full integration takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site,bond-product}} Bond is HIPAA compliant and SOC 2 Type I compliant, and its public [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj) lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-product,bond-trust-center}} See [security](/security), and the [outreach guide](/guides/irb-hipaa-patient-outreach) for IRB and privacy review of outreach.",
+          text: "Bond signs a [business associate agreement](/glossary/baa), and its implementation team handles the EHR integration end to end, with no integration fee; full integration takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site,bond-product}} Bond is HIPAA compliant and SOC 2 Type I compliant, and its public [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj) lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-product,bond-trust-center}} See [security](/security), and the [outreach guide](/guides/irb-hipaa-patient-outreach) for IRB and privacy review of outreach.",
         },
       ],
     },

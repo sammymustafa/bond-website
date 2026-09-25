@@ -159,17 +159,17 @@ const page: SeoPage = {
     },
     {
       id: "timeline",
-      heading: "Where does this fit in the 4 to 6 week implementation?",
+      heading: "Where does this fit in the 48-hour implementation?",
       blocks: [
         {
           type: "p",
-          text: "Bond's estimate for a full deployment with the EHR connected is 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} In the [implementation plan](/implementation), the CTMS or sheet connection is set up in weeks 3 to 5, alongside outreach scripts and calendar scheduling. Most of the elapsed time goes to approvals: the BAA, the security review and EHR access.",
+          text: "Bond's estimate for a full deployment with the EHR connected is 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} In the [implementation plan](/implementation), the CTMS or sheet connection is set up alongside outreach scripts and calendar scheduling. Most of the elapsed time goes to approvals: the BAA, the security review and EHR access.",
         },
         {
           type: "callout",
           tone: "bond",
           title: "Starting before the EHR is connected",
-          text: "A pilot without EHR integration can be set up in under 2 weeks.{{cite:bond-site}} A site can seed it with a list, such as volunteers in its RealTime patient database who agreed to be contacted about studies, and track referrals on the sheet. The list is PHI, so the BAA and security review still come first.",
+          text: "A pilot can run before the EHR is connected.{{cite:bond-site}} A site can seed it with a list, such as volunteers in its RealTime patient database who agreed to be contacted about studies, and track referrals on the sheet. The list is PHI, so the BAA and security review still come first.",
         },
       ],
     },
@@ -359,7 +359,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Site networks", href: "/for/site-networks", description: "How Bond fits organizations that run many sites." },
-    { label: "Implementation", href: "/implementation", description: "Where the RealTime handoff sits in the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "Where the RealTime handoff sits in the 48-hour plan." },
     { label: "Integrations", href: "/integrations", description: "EHR and research-system connections, and what each requires." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "CRIO", href: "/integrations/crio", description: "Bond's only certified vendor integration." },

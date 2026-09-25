@@ -166,7 +166,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Full EHR integration takes 4 to 6 weeks, depending on the EHR, IT review and interface method, and Bond's implementation team handles it end to end, with no integration fee. Bond signs a BAA before any patient data is shared; see [security](/security).{{cite:bond-site,bond-product}} Bond can also share its technical report, a preprint with benchmark results on public datasets, on request.{{cite:bond-whitepaper}} Our [vendor checklist for AI recruitment tools](/templates/ai-recruitment-vendor-evaluation-checklist) turns these steps into written questions.",
+          text: "Full EHR integration takes 48 hours, depending on the EHR, IT review and interface method, and Bond's implementation team handles it end to end, with no integration fee. Bond signs a BAA before any patient data is shared; see [security](/security).{{cite:bond-site,bond-product}} Bond can also share its technical report, a preprint with benchmark results on public datasets, on request.{{cite:bond-whitepaper}} Our [vendor checklist for AI recruitment tools](/templates/ai-recruitment-vendor-evaluation-checklist) turns these steps into written questions.",
         },
         {
           type: "cta",

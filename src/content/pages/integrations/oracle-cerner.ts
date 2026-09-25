@@ -116,15 +116,15 @@ const page: SeoPage = {
         {
           type: "table",
           caption: "Oracle Health steps inside a full EHR-integrated deployment",
-          columns: ["When", "Step", "Owner"],
+          columns: ["Order", "Step", "Owner"],
           rows: [
-            ["Week 1", "Kickoff, BAA, owners named, hosting type confirmed", "Site and Bond"],
-            ["Weeks 1 to 3", "Security review and scope approval", "Site security"],
-            ["Weeks 2 to 3", "Tenant ID, service request, usage levels confirmed", "Site Oracle team with Oracle Health"],
-            ["Weeks 2 to 4", "Criteria checked against live records", "Coordinator, PI and Bond"],
-            ["Weeks 5 to 6", "Go-live within the agreed usage level", "Site and Bond"],
+            ["1", "Kickoff, BAA, owners named, hosting type confirmed", "Site and Bond"],
+            ["2", "Security review and scope approval", "Site security"],
+            ["3", "Tenant ID, service request, usage levels confirmed", "Site Oracle team with Oracle Health"],
+            ["4", "Criteria checked against live records", "Coordinator, PI and Bond"],
+            ["5", "Go-live within the agreed usage level", "Site and Bond"],
           ],
-          note: "A full EHR-integrated deployment takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} Oracle, not the site or Bond, completes the service request, so the site logs it as soon as the security review allows.",
+          note: "A full EHR-integrated deployment takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} Oracle, not the site or Bond, completes the service request, so the site logs it as soon as the security review allows.",
         },
       ],
     },
@@ -206,7 +206,7 @@ const page: SeoPage = {
     },
     {
       q: "How long does the Oracle Health connection take?",
-      a: "A full EHR-integrated deployment takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method. A pilot without EHR integration, such as outreach to a list the site provides, can be set up in under 2 weeks.{{cite:bond-site}}",
+      a: "A full EHR-integrated deployment takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}}",
     },
     {
       q: "What happens if our health system moves off Oracle Health?",
@@ -351,7 +351,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Implementation", href: "/implementation", description: "The full deployment plan, week by week." },
+    { label: "Implementation", href: "/implementation", description: "The full deployment plan, step by step." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond does with the records it reads." },
     { label: "Security", href: "/security", description: "The BAA, encryption, access control and audit logging." },
     { label: "All integrations", href: "/integrations", description: "Other EHRs and the research systems Bond works alongside." },

@@ -176,7 +176,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Full EHR integration usually takes 4 to 6 weeks, depending on the EHR, IT review and interface method. A pilot from a patient list, without EHR integration, can start in under 2 weeks.{{cite:bond-site}} The [implementation](/implementation) page has the week-by-week plan.",
+          text: "Full EHR integration usually takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} The [implementation](/implementation) page has the step-by-step plan.",
         },
         {
           type: "steps",
@@ -480,7 +480,7 @@ const page: SeoPage = {
     { label: "For research sites", href: "/for/research-sites", description: "How Bond fits an independent or hospital-based site." },
     { label: "Oncology", href: "/oncology", description: "Screening for oncology, the largest area of recruiting studies in Texas." },
     { label: "Obesity and metabolic", href: "/obesity-and-metabolic", description: "Recruiting for GLP-1, MASH and type 2 diabetes studies." },
-    { label: "Implementation", href: "/implementation", description: "What a deployment involves, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
   ],
 };
 

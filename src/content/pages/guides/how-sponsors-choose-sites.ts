@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs build site lists from performance databases, CRO networks, feasibility questionnaires and qualification visits. What moves a site onto the final list is evidence: enrollment against past commitments, start-up speed, data quality, and a patient count the sponsor can believe.",
   summary: "What sponsors check during site selection, and how a site can show enrollment, start-up and patient-count evidence.",
-  lastUpdated: "2026-09-22",
+  lastUpdated: "2026-09-24",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -163,7 +163,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "[Identify](/identify), Bond Health's EHR screening step, reads structured and unstructured records against a study's inclusion and exclusion criteria, ranks candidates and shows the chart evidence behind each criterion decision. A coordinator can use that evidence to check a sample before reporting a count. Full EHR integration typically takes 4 to 6 weeks, depending on the EHR and IT review.{{cite:bond-site}}",
+          text: "[Identify](/identify), Bond Health's EHR screening step, reads structured and unstructured records against a study's inclusion and exclusion criteria, ranks candidates and shows the chart evidence behind each criterion decision. A coordinator can use that evidence to check a sample before reporting a count. Full EHR integration typically takes 48 hours, depending on the EHR and IT review.{{cite:bond-site}}",
         },
       ],
     },

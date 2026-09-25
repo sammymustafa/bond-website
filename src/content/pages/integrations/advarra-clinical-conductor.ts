@@ -138,26 +138,26 @@ const page: SeoPage = {
     },
     {
       id: "timeline",
-      heading: "Where does the CTMS link fit in the 4 to 6 week implementation?",
+      heading: "Where does the CTMS link fit in the 48-hour implementation?",
       blocks: [
         {
           type: "p",
-          text: "Bond's published estimate for full EHR integration is 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}} The CTMS link is smaller work that runs in parallel within the [implementation plan](/implementation).",
+          text: "Bond's published estimate for full EHR integration is 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} The CTMS link is smaller work that runs in parallel within the [implementation plan](/implementation).",
         },
         {
           type: "steps",
           items: [
-            { title: "Week 1: kickoff and BAA", text: "Bond signs the BAA and lists the CTMS data it sends and reads." },
-            { title: "Weeks 1 to 3: path and access", text: "The site picks API or export and requests access if needed." },
-            { title: "Weeks 2 to 4: test", text: "Test referrals go to a test study or export, and coordinators check them." },
-            { title: "Weeks 5 to 6: go-live", text: "Referrals flow on schedule and status returns to the dashboard.{{cite:bond-site}}" },
+            { title: "Step 1: kickoff and BAA", text: "Bond signs the BAA and lists the CTMS data it sends and reads." },
+            { title: "Step 2: path and access", text: "The site picks API or export and requests access if needed." },
+            { title: "Step 3: test", text: "Test referrals go to a test study or export, and coordinators check them." },
+            { title: "Step 4: go-live", text: "Referrals flow on schedule and status returns to the dashboard.{{cite:bond-site}}" },
           ],
         },
         {
           type: "callout",
           tone: "info",
           title: "If API access takes longer",
-          text: "Start with the file export. A pilot without EHR integration can start from a patient list after a setup of under 2 weeks.{{cite:bond-site}}",
+          text: "Start with the file export. A pilot without EHR integration can start from a patient list.{{cite:bond-site}}",
         },
       ],
     },
@@ -224,7 +224,7 @@ const page: SeoPage = {
     },
     {
       q: "How long does the CTMS connection take?",
-      a: "It runs inside the 4 to 6 week full EHR integration.{{cite:bond-site}} A list-based pilot can start sooner, with referrals sent by file export.",
+      a: "It runs inside the 48-hour full EHR integration.{{cite:bond-site}} A list-based pilot can also run before the EHR is connected, with referrals sent by file export.",
     },
   ],
   sources: [
@@ -311,7 +311,7 @@ const page: SeoPage = {
   related: [
     { label: "For site networks", href: "/for/site-networks", description: "How Bond runs across locations that share one CTMS." },
     { label: "For research sites", href: "/for/research-sites", description: "What Bond changes for a single site's coordinators." },
-    { label: "Implementation", href: "/implementation", description: "Where the CTMS link sits in the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "Where the CTMS link sits in the 48-hour plan." },
     { label: "Integrations", href: "/integrations", description: "The EHR and research systems Bond works with, and what each needs." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts against each criterion and explains matches." },

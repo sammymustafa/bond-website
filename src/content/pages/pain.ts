@@ -213,7 +213,7 @@ const page: SeoPage = {
     },
     {
       q: "How long does it take to start screening at a pain practice?",
-      a: "Full EHR integration takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}}",
+      a: "Full EHR integration takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}}",
     },
   ],
   sources: [

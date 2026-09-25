@@ -12,7 +12,7 @@ export interface HomeFaq {
 export const homeFaqs: HomeFaq[] = [
   {
     question: `How does ${BRAND} connect to EHR data?`,
-    answer: `${BRAND} connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). ${BRAND}'s implementation team handles the integration end-to-end, and full EHR integration typically completes in 4 to 6 weeks depending on site IT review and interface method.`,
+    answer: `${BRAND} connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). ${BRAND}'s implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.`,
   },
   {
     question: `How does ${BRAND} validate trial eligibility logic?`,
@@ -24,7 +24,7 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     question: `What is ${BRAND}'s implementation timeline?`,
-    answer: `${BRAND} typically implements in 4 to 6 weeks for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. ${BRAND} provides dedicated support throughout integration and launch, and keeps improving outreach messaging until study close-out.`,
+    answer: `${BRAND} typically implements in 48 hours for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. ${BRAND} provides dedicated support throughout integration and launch, and keeps improving outreach messaging until study close-out.`,
   },
   {
     question: `What is ${BRAND}'s security posture?`,

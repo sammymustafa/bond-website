@@ -138,7 +138,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's published estimate for a full EHR integration is 4 to 6 weeks, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} In the typical [implementation plan](/implementation), the security review runs in weeks 1 to 3 and the EHR connection in weeks 2 to 3, while criteria and outreach scripts are set up in weeks 2 to 4.{{cite:bond-site}}",
+          text: "Bond's published estimate for a full EHR integration is 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} In the typical [implementation plan](/implementation), the security review and the EHR connection come first, while criteria and outreach scripts are set up in parallel.{{cite:bond-site}}",
         },
         {
           type: "p",
@@ -238,7 +238,7 @@ const page: SeoPage = {
     },
     {
       q: "Can we start before the Epic connection is approved?",
-      a: "Yes. A pilot without EHR integration can be set up in under 2 weeks from a patient list the site exports, and EHR screening is added once IT approves the connection.{{cite:bond-site}}",
+      a: "Yes. A pilot without EHR integration can start from a patient list the site exports, and EHR screening is added once IT approves the connection.{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -395,7 +395,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Implementation", href: "/implementation", description: "Where the Epic connection sits in the 4 to 6 week plan." },
+    { label: "Implementation", href: "/implementation", description: "Where the Epic connection sits in the 48-hour plan." },
     { label: "Integrations", href: "/integrations", description: "Every EHR and research system Bond connects to, and what each needs." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads Epic charts against each criterion and explains matches." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },

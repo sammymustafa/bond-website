@@ -193,7 +193,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Full EHR integration takes 4 to 6 weeks, depending on the EHR, your IT review and the interface method.{{cite:bond-site}} A pilot using an exported list can start in under 2 weeks.{{cite:bond-site}} See the [implementation plan](/implementation).",
+          text: "Full EHR integration takes 48 hours, depending on the EHR, your IT review and the interface method.{{cite:bond-site}} See the [implementation plan](/implementation).",
         },
         {
           type: "checklist",
@@ -412,7 +412,7 @@ const page: SeoPage = {
     { label: "Engage: outreach and pre-screening", href: "/engage", description: "Voice and text outreach, scripts and IRB review." },
     { label: "Consent support", href: "/consent", description: "How Bond explains the approved form while the site obtains consent." },
     { label: "eClinicalWorks integration", href: "/integrations/eclinicalworks", description: "The FHIR path for health centers on eClinicalWorks." },
-    { label: "Implementation", href: "/implementation", description: "What a deployment involves, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
     { label: "Pricing", href: "/pricing", description: "The volume-based platform fee and per-enrollment success fee." },
     { label: "For physician groups", href: "/for/physician-groups", description: "How Bond fits a practice that is adding research." },
   ],

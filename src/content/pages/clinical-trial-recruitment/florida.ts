@@ -209,7 +209,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "A full deployment with the EHR connected takes 4 to 6 weeks, depending on the EHR, IT review and interface method. A pilot without EHR integration, such as outreach to a list the site holds, can start in under 2 weeks.{{cite:bond-site}} See the [implementation plan](/implementation).",
+          text: "A full deployment with the EHR connected takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} See the [implementation plan](/implementation).",
         },
         {
           type: "steps",
@@ -503,7 +503,7 @@ const page: SeoPage = {
     { label: "Bond for research sites", href: "/for/research-sites", description: "How an independent or health system site runs screening, outreach and consent." },
     { label: "Bond for site networks", href: "/for/site-networks", description: "One recruitment standard across every site in a network." },
     { label: "Oncology recruitment", href: "/oncology", description: "Screening against stage, biomarker and prior-therapy criteria." },
-    { label: "Implementation", href: "/implementation", description: "The 4 to 6 week plan, week by week." },
+    { label: "Implementation", href: "/implementation", description: "The 48-hour plan, step by step." },
   ],
 };
 

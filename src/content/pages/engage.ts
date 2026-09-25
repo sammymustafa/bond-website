@@ -294,7 +294,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Engage need EHR integration?",
-      a: "No. A pilot can run from a list the site provides, with setup in under 2 weeks. Full EHR integration through Identify takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
+      a: "No. A pilot can run from a list the site provides. Full EHR integration through Identify takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
     },
     {
       q: "What should happen when a patient opts out?",

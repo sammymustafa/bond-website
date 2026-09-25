@@ -222,7 +222,7 @@ const page: SeoPage = {
     },
     {
       q: "How long does it take to start screening at a dermatology practice?",
-      a: "Full EHR integration typically takes 4 to 6 weeks, depending on the EHR, IT review and interface method. A pilot without EHR integration, such as outreach to an existing patient list, can start in under 2 weeks.{{cite:bond-site}}",
+      a: "Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
     },
   ],
   sources: [

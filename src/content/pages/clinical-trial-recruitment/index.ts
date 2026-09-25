@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "As of September 21, 2026, 22,041 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Where those studies sit, which health systems hold the patients, and which state laws govern a text message to a patient all vary. Each page below pulls the registry counts for its area and describes the research landscape around them.",
   summary: "Seven location pages with registry counts, research hubs and local outreach rules.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-09-24",
   showLastUpdated: true,
   sections: [
     {
@@ -43,7 +43,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Who Bond is for", href: "/for", description: "Sites, networks, physician groups, FQHCs, CROs and sponsors." },
-    { label: "Implementation", href: "/implementation", description: "What a deployment involves, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
   ],
 };
 

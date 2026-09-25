@@ -157,7 +157,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "What Bond has published, and what it has not",
-          text: "Bond reports above 90% matching accuracy and more than 50% less chart review; full EHR integration typically takes 4 to 6 weeks.{{cite:bond-site}} None is neurology-specific, and Bond has not published neurology screen failure or enrollment results. Site reporting tracks matches, pre-screens, randomizations and screen-failure signals for each study.",
+          text: "Bond reports above 90% matching accuracy and more than 50% less chart review; full EHR integration typically takes 48 hours.{{cite:bond-site}} None is neurology-specific, and Bond has not published neurology screen failure or enrollment results. Site reporting tracks matches, pre-screens, randomizations and screen-failure signals for each study.",
         },
       ],
     },

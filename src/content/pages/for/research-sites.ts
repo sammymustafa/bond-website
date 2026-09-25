@@ -187,7 +187,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "A full deployment with the EHR connected takes 4 to 6 weeks, depending on the EHR, the IT review and the interface method. A pilot without EHR integration can be set up in under 2 weeks.{{cite:bond-site}} See the week-by-week [implementation](/implementation) plan.",
+          text: "A full deployment with the EHR connected takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} See the step-by-step [implementation](/implementation) plan.",
         },
         {
           type: "p",
@@ -240,7 +240,7 @@ const page: SeoPage = {
     },
     {
       q: "Can we start without connecting our EHR?",
-      a: "Yes. A pilot that runs outreach on a patient list you supply can be set up in under 2 weeks.{{cite:bond-site}} It still needs the BAA and your vendor review, and without the EHR connection Bond does not read charts or rank matches.",
+      a: "Yes. A pilot can run outreach on a patient list you supply.{{cite:bond-site}} It still needs the BAA and your vendor review, and without the EHR connection Bond does not read charts or rank matches.",
     },
     {
       q: "Do patients know they are talking to AI?",
@@ -327,7 +327,7 @@ const page: SeoPage = {
   related: [
     { label: "Identify: AI EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Engage: voice and SMS pre-screening", href: "/engage", description: "How the agents contact patients, pre-screen and book visits." },
-    { label: "Implementation", href: "/implementation", description: "The 4 to 6 week plan, with site tasks and Bond tasks." },
+    { label: "Implementation", href: "/implementation", description: "The 48-hour plan, with site tasks and Bond tasks." },
     { label: "Pricing", href: "/pricing", description: "Platform fee plus a success fee per randomized patient." },
     { label: "How to win more studies", href: "/guides/win-more-studies", description: "What sponsors look for in site feasibility and selection." },
     { label: "Feasibility questionnaire template", href: "/templates/feasibility-questionnaire", description: "A fill-in template for answering sponsor feasibility requests." },

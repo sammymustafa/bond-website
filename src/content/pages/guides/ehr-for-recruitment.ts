@@ -307,7 +307,7 @@ const page: SeoPage = {
     },
     {
       q: "How long does it take to connect Bond to our EHR?",
-      a: "Full EHR integration typically takes 4 to 6 weeks, depending on the EHR, IT review and interface method.{{cite:bond-site}} A pilot without EHR integration, such as outreach to an existing patient list, can start in under 2 weeks.{{cite:bond-site}}",
+      a: "Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -517,7 +517,7 @@ const page: SeoPage = {
     { label: "Oracle Health (Cerner) integration", href: "/integrations/oracle-cerner", description: "The FHIR and HL7 path for Oracle Health sites." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What the rules allow once you have a list." },
     { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist", description: "A form for reviewing EHR matches criterion by criterion." },
-    { label: "Implementation", href: "/implementation", description: "What an EHR-connected deployment involves, week by week." },
+    { label: "Implementation", href: "/implementation", description: "What an EHR-connected deployment involves, step by step." },
   ],
 };
 
