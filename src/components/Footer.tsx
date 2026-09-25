@@ -5,31 +5,42 @@ import Link from "next/link";
 import Image from "next/image";
 import { useDemoModal } from "@/context/DemoModalContext";
 import { useCookieConsent } from "@/context/CookieConsentContext";
+import {
+  audienceLinks,
+  compareLinks,
+  productLinks,
+  resourceLinks,
+  trustCenterHref,
+} from "@/content/nav";
 
-const footerLinks = {
-  product: [
-    { name: "How It Works", href: "/#product" },
-    { name: "Identify", href: "/#product" },
-    { name: "Engage", href: "/#product" },
-    { name: "Convert", href: "/#product" },
-  ],
-  solutions: [
-    { name: "For Sites", href: "/#solutions" },
-    { name: "For CROs", href: "/#solutions" },
-    { name: "For Sponsors", href: "/#solutions" },
-  ],
-  company: [
-    { name: "About", href: "/#about" },
-    { name: "Careers", href: "/careers" },
-    { name: "Contact", href: "/#contact" },
-  ],
-  resources: [
-    { name: "Security", href: "/#security" },
-    { name: "Pricing", href: "/#pricing" },
-    { name: "FAQ", href: "/#faq" },
-    { name: "Trust Center", href: "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj" },
-  ],
-};
+const columns = [
+  { title: "Product", links: productLinks },
+  {
+    title: "Solutions",
+    links: [
+      ...audienceLinks,
+      { name: "Therapeutic areas", href: "/therapeutic-areas" },
+      { name: "By location", href: "/clinical-trial-recruitment" },
+    ],
+  },
+  { title: "Compare", links: [...compareLinks, { name: "All comparisons", href: "/compare" }] },
+  {
+    title: "Resources",
+    links: [
+      ...resourceLinks,
+      { name: "Trust Center", href: trustCenterHref },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { name: "About", href: "/#about" },
+      { name: "Careers", href: "/careers" },
+      { name: "Book a demo", href: "/book-a-demo" },
+      { name: "Contact", href: "/#contact" },
+    ],
+  },
+];
 
 export default function Footer() {
   const { openDemoModal } = useDemoModal();
@@ -38,9 +49,9 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-8 sm:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 sm:gap-10">
           {/* Brand Column */}
-          <div className="col-span-2 lg:col-span-2">
+          <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-4 sm:mb-6">
               <Image
                 src="/images/logo/bond-health-icon.png"
@@ -68,21 +79,20 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Social Links */}
             <div className="flex items-center gap-3 mt-6">
               <a
                 href="https://www.linkedin.com/company/bondtrials/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Bond Health on LinkedIn"
                 className="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-all"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
             </div>
 
-            {/* HIPAA Compliance Badge */}
             <a
-              href="https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj"
+              href={trustCenterHref}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 mt-6 px-4 py-3 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all"
@@ -102,72 +112,31 @@ export default function Footer() {
           </div>
 
           {/* Links Columns */}
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4 text-sm">Product</h4>
-            <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4 text-sm">Solutions</h4>
-            <ul className="space-y-3">
-              {footerLinks.solutions.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4 text-sm">Company</h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4 text-sm">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    {...(link.href.startsWith("http")
-                      ? { target: "_blank", rel: "noopener noreferrer" }
-                      : {})}
-                    className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {columns.map((col) => (
+            <div key={col.title}>
+              <h4 className="font-semibold text-gray-900 mb-4 text-sm">{col.title}</h4>
+              <ul className="space-y-2.5">
+                {col.links.map((link) => (
+                  <li key={link.href + link.name}>
+                    {link.href.startsWith("http") ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
+                        {link.name}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Bottom Bar */}
@@ -182,10 +151,7 @@ export default function Footer() {
             <Link href="/terms-of-service" className="hover:text-gray-900 transition-colors">
               Terms of Service
             </Link>
-            <button
-              onClick={reopenBanner}
-              className="hover:text-gray-900 transition-colors"
-            >
+            <button onClick={reopenBanner} className="hover:text-gray-900 transition-colors">
               Cookie Settings
             </button>
           </div>

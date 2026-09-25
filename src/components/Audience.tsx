@@ -1,6 +1,7 @@
 "use client";
 
 import { Building2, Users, Pill, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const audiences = [
   {
@@ -12,7 +13,7 @@ const audiences = [
       "Less manual chart review",
       "Higher show rates",
     ],
-    cta: { label: "See site workflow", href: "#product" },
+    cta: { label: "For research sites", href: "/for/research-sites" },
   },
   {
     icon: Users,
@@ -23,7 +24,7 @@ const audiences = [
       "Faster feasibility assessments",
       "Consistent metrics across sites",
     ],
-    cta: null,
+    cta: { label: "For CROs", href: "/for/cros" },
   },
   {
     icon: Pill,
@@ -34,7 +35,7 @@ const audiences = [
       "Better diversity reach",
       "Fewer protocol amendments",
     ],
-    cta: null,
+    cta: { label: "For sponsors", href: "/for/sponsors" },
   },
 ];
 
@@ -79,16 +80,25 @@ export default function Audience() {
 
               {/* CTA */}
               {audience.cta && (
-                <a 
+                <Link
                   href={audience.cta.href}
                   className="inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
                 >
                   {audience.cta.label} <ArrowRight className="w-3 h-3" />
-                </a>
+                </Link>
               )}
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-sm text-gray-500">
+          Also for{" "}
+          <Link href="/for/site-networks" className="text-bond-primary font-medium hover:underline">site networks</Link>,{" "}
+          <Link href="/for/physician-groups" className="text-bond-primary font-medium hover:underline">physician groups</Link> and{" "}
+          <Link href="/for/fqhcs-and-community-sites" className="text-bond-primary font-medium hover:underline">FQHCs</Link>.
+          See how eligibility differs by{" "}
+          <Link href="/therapeutic-areas" className="text-bond-primary font-medium hover:underline">therapeutic area</Link>.
+        </p>
       </div>
     </section>
   );

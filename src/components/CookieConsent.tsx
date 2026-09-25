@@ -11,7 +11,7 @@ export default function CookieConsent() {
   if (!bannerVisible) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-[9999] pointer-events-none">
+    <div className="no-print fixed bottom-0 inset-x-0 z-[9999] pointer-events-none">
       <div className="pointer-events-auto bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

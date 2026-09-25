@@ -1,0 +1,396 @@
+import type { SeoPage } from "../types";
+
+const page: SeoPage = {
+  path: "/psychiatry",
+  category: "therapeutic",
+  title: "Psychiatry trial recruitment: depression and schizophrenia",
+  description:
+    "How psychiatry trial eligibility works, from MADRS, HAM-D and PANSS thresholds to suicidality and substance use exclusions, and how Bond screens charts for it.",
+  keywords: [
+    "psychiatry clinical trial recruitment",
+    "depression clinical trial recruitment",
+    "schizophrenia trial screening",
+    "treatment-resistant depression trial eligibility",
+    "psychiatry trial screen failure",
+  ],
+  eyebrow: "Psychiatry",
+  h1: "In psychiatry trials, the chart points to eligibility and the rater decides it",
+  intro:
+    "Psychiatry protocols screen on a confirmed diagnosis, a rating-scale threshold, treatment history, and exclusions for suicide risk, substance use and other psychiatric illness. When researchers applied the psychiatric entry criteria of 158 antidepressant trials to 1,271 outpatients with major depressive disorder at one Rhode Island practice, a mean of 86.1% would have been excluded.{{cite:zimmerman-2019}} Here is where each criterion sits in the chart and what Bond Health can check before a screening visit.",
+  summary: "How psychiatry criteria map to the chart, why so many patients are excluded, and how Bond screens for them.",
+  lastUpdated: "2026-09-24",
+  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  sections: [
+    {
+      id: "how-psychiatry-eligibility-works",
+      heading: "How does eligibility work in psychiatry trials?",
+      blocks: [
+        {
+          type: "p",
+          text: "FDA's 2018 draft guidance on major depressive disorder asks for a diagnosis confirmed by a semi-structured interview such as the SCID or MINI, and says patients with a history of suicidal ideation and behavior need not be systematically excluded.{{cite:fda-mdd-2018}} All three protocols below still exclude current suicide risk.{{cite:transform-2,sage-217-mdd,emergent-3}}",
+        },
+        {
+          type: "table",
+          caption: "Common psychiatry criteria and where the evidence lives",
+          columns: ["Criterion type", "Typical protocol language", "Where it lives in the chart", "Structured or unstructured"],
+          rows: [
+            ["Diagnosis", "DSM-5 major depressive disorder or schizophrenia, confirmed by the MINI or SCID{{cite:transform-2,sage-217-mdd,emergent-3}}", "Problem list, encounter codes, psychiatric evaluations; the interview itself happens at screening", "Structured codes; unstructured notes"],
+            ["Severity threshold", "MADRS of 28 or more; HAM-D of 24 or more; PANSS total of 80 to 120{{cite:transform-2,sage-217-mdd,emergent-3}}", "Rated at the screening visit; the chart may hold PHQ-9 scores", "Not in the chart (PHQ-9 may be structured)"],
+            ["Episode timing", "Symptoms for at least 4 weeks; an exacerbation that began less than 2 months before screening{{cite:sage-217-mdd,emergent-3}}", "History of present illness; admission dates", "Mostly unstructured"],
+            ["Treatment history", "Non-response to 1 to 5 oral antidepressants in the current episode, documented by medical history and pharmacy records{{cite:transform-2}}", "Orders and fills; notes on why each drug stopped", "Both"],
+            ["Current drugs and washout", "Stable antidepressant dose for 60 days; off oral antipsychotics for 5 half-lives or 1 week, whichever is longer{{cite:sage-217-mdd,emergent-3}}", "Medication list, fills, injection records", "Structured"],
+            ["Suicide risk", "No suicidal ideation with some intent to act in the prior 6 months, per investigator judgment or the C-SSRS{{cite:transform-2}}", "Psychiatric notes, emergency and inpatient records, C-SSRS screens", "Mostly unstructured"],
+            ["Substance use", "No substance use disorder in the 12 months before screening{{cite:sage-217-mdd}}", "Problem list, notes, toxicology results", "Both"],
+            ["Other psychiatric illness", "No psychotic disorder, bipolar disorder or borderline personality disorder{{cite:transform-2}}", "Problem list, psychiatric evaluations", "Both"],
+            ["Prior trial participation", "No investigational drug within 3 months before screening{{cite:emergent-3}}", "Rarely in the chart; self-report or a cross-site registry", "Usually absent"],
+          ],
+          note: "From TRANSFORM-2 (NCT02418585, esketamine), a zuranolone study (NCT04442490) and EMERGENT-3 (NCT04738123, KarXT) on ClinicalTrials.gov.",
+        },
+        {
+          type: "p",
+          text: "Protocols in the same indication can point in opposite directions. TRANSFORM-2 required treatment-resistant depression; the zuranolone study excluded it, defined as persistent symptoms despite adequate doses of antidepressants from two classes for at least 4 weeks.{{cite:transform-2,sage-217-mdd}} Resistance studies have a large pool because first treatments often fail: in STAR*D, 36.8% of outpatients remitted on their first antidepressant step.{{cite:star-d-2006}}",
+        },
+      ],
+    },
+    {
+      id: "screen-failure",
+      heading: "What drives screen failure in psychiatry trials?",
+      blocks: [
+        {
+          type: "p",
+          text: "We found no reliable published screen failure rate for psychiatry trials as a class. The closer evidence is how many real patients a protocol's criteria would exclude, and that share is high.{{cite:zimmerman-2019,taipale-2022}}",
+        },
+        {
+          type: "stats",
+          items: [
+            { value: "86.1%", label: "of 1,271 depressed outpatients at one practice excluded, on average, by the psychiatric criteria of 158 antidepressant trials", cite: "zimmerman-2019" },
+            { value: "91.4%", label: "excluded by trials published 2010 to 2014, up from 83.8% for 1995 to 2009", cite: "zimmerman-2019" },
+            { value: "79%", label: "of Finnish and Swedish outpatients on maintenance antipsychotics for schizophrenia spectrum disorders ineligible for relapse-prevention trials", cite: "taipale-2022" },
+          ],
+        },
+        {
+          type: "ul",
+          items: [
+            "**Severity below threshold.** In a 2005 study of depressed psychiatric outpatients, 289 were too mild to qualify for an efficacy trial, 187 were excluded for suicidality or a comorbid anxiety or substance use disorder, and only 123 qualified.{{cite:zimmerman-2005}}",
+            "**Comorbidity, medication, substance use and suicide risk.** In the Finnish and Swedish registries, the most frequent reasons were serious somatic comorbidity and concurrent antidepressant or mood stabilizer use, followed by substance use history and suicide risk.{{cite:taipale-2022}} Depressed outpatients excluded for comorbidity or suicidality were more chronically ill than those who qualified.{{cite:zimmerman-2005}}",
+            "**Rater confirmation.** Scores come from a trained rater at the visit, and some sponsors check them independently: TRANSFORM-2 required a site-independent qualification assessment.{{cite:transform-2}}",
+          ],
+        },
+        {
+          type: "p",
+          text: "The chart can flag the middle driver before a visit. Severity and rater confirmation it can only hint at, through PHQ-9 scores, medication changes and notes. For site-level fixes, see [how to reduce screen failure](/guides/reduce-screen-failure).",
+        },
+      ],
+    },
+    {
+      id: "what-bond-reads",
+      heading: "What does Bond read in a psychiatry chart?",
+      blocks: [
+        {
+          type: "p",
+          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each criterion, ranks candidates, and shows the evidence behind each decision, over a FHIR, HL7 or aggregator connection to the EHR.{{cite:bond-site}} It also uses imaging data and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} Its terminology graph maps synonyms across 18 vocabularies, including RxNorm and SNOMED CT, so brand and generic drug names resolve to one concept.{{cite:bond-whitepaper}} For psychiatry, the evidence sits here:",
+        },
+        {
+          type: "ul",
+          items: [
+            "**Diagnoses:** problem list and encounter codes, plus psychiatric evaluations that record bipolar, psychotic or personality disorder history.",
+            "**Treatment history and washout:** orders and fills for drug, dose and dates, plus notes on why each drug stopped, read against the protocol's definition of an adequate trial.",
+            "**Suicide risk and substance use:** progress notes, emergency and inpatient records, C-SSRS screens and toxicology. Registry researchers note both are often underreported in diagnosis data, so notes matter most here.{{cite:taipale-2022}}",
+            "**Severity signals:** PHQ-9 scores and recent notes, which suggest but do not decide who meets a MADRS, HAM-D or PANSS threshold.",
+          ],
+        },
+        {
+          type: "p",
+          text: "Rating-scale severity, current suicide risk and participation in other studies are left to people at the pre-screening call and screening visit. [Consent](/consent) support explains the study in plain language; the investigator obtains consent. Bond's published figures, such as above 90% matching accuracy, are platform-wide, not psychiatry-specific.{{cite:bond-site}}",
+        },
+        {
+          type: "callout",
+          tone: "warning",
+          title: "Two kinds of records need separate handling",
+          text: "Under HIPAA, psychotherapy notes kept apart from the medical record need the patient's written authorization for almost any use, so they should stay out of recruitment screening.{{cite:hipaa-psychotherapy-notes}} Substance use disorder records under 42 CFR Part 2 carry their own consent rules, revised by a February 2024 final rule.{{cite:part2-2024}} Decide with your privacy officer which record types are in scope before screening starts.",
+        },
+      ],
+    },
+    {
+      id: "placebo-response-and-professional-subjects",
+      heading: "How do placebo response and professional subjects affect recruitment?",
+      blocks: [
+        {
+          type: "p",
+          text: "Since 1991, the average placebo response rate in antidepressant trials has held between 35% and 40%.{{cite:furukawa-2016}} In 105 antipsychotic trials published from 1960 to 2013, improvement in placebo arms grew with publication year, and the authors point to inflated baseline scores and enrollment of less severely ill participants.{{cite:rutherford-2014}} Referring patients who clearly meet the severity bar, rather than those who barely clear it, protects the comparison the study depends on.",
+        },
+        { type: "h3", text: "How common are professional and duplicate subjects?" },
+        {
+          type: "p",
+          text: "In a survey of 59 research subjects who admitted deception, concealment was most common for mental health information, used in 58% of the studies they joined.{{cite:devine-2021}} In one CNS subject registry, 117 of 1,087 potential Alzheimer's subjects (10.8%) visited more than one site within two years, often for depression or schizophrenia studies; the lead author is president of the registry company.{{cite:shiovitz-2020}}",
+        },
+        {
+          type: "callout",
+          tone: "info",
+          title: "What chart-based identification changes, and what it does not",
+          text: "A patient found in the site's own records arrives with a treatment history the site can read, which is harder to invent than an answer on an ad screener. The chart does not show enrollment at another site; that check needs a cross-site subject registry, which Bond does not replace.",
+        },
+      ],
+    },
+    {
+      id: "sensitive-outreach",
+      heading: "How should sites contact patients about a psychiatry study?",
+      blocks: [
+        {
+          type: "p",
+          text: "A review of qualitative studies on depression trials found recruitment barriers including the symptoms themselves, stigma, the difficulty of raising research in a consultation about depression, and clinicians protecting vulnerable patients.{{cite:hughes-morley-2013}}",
+        },
+        {
+          type: "checklist",
+          items: [
+            "Keep the diagnosis out of the first message; others may see a text preview or hear a voicemail.",
+            "Send outreach under the treating practice's name, with the clinician's knowledge.",
+            "Disclose AI and offer a person. Bond's [Engage](/engage) agents tell patients AI assistance is used, and patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
+            "Write the suicide-risk escalation path before the first call. In 2024, 5.5% of US adults had serious thoughts of suicide.{{cite:nimh-suicide}} A patient who discloses thoughts of self-harm goes to a clinician and crisis resources right away, not to the next screening question. Bond's scripts are configured per study, including when a call goes to site staff.{{cite:bond-site}}",
+            "Check consent before AI voice calls. In a February 2024 ruling, the FCC said AI-generated voices count as artificial under the TCPA, which generally requires prior express consent.{{cite:fcc-ai-voice-2024}} See [our TCPA overview](/blog/tcpa-ai-outreach-2026).",
+          ],
+        },
+      ],
+    },
+    {
+      id: "recruiting-psychiatry-trials",
+      heading: "How many psychiatry trials are recruiting in the US?",
+      blocks: [
+        {
+          type: "p",
+          text: "As of September 21, 2026, 1,273 studies with at least one US site were recruiting under a ClinicalTrials.gov condition search for depression, schizophrenia, bipolar, anxiety, PTSD or ADHD, about 6% of the 22,041 recruiting studies with a US site.{{cite:ctgov-api}} Matching is broad: the count can include behavioral studies and studies of anxiety or depressive symptoms in other illnesses, and a study can count in more than one area of the chart. See the other [therapeutic areas](/therapeutic-areas).",
+        },
+        {
+          type: "chart",
+          title: "Recruiting studies with at least one US site, by keyword area (September 21, 2026)",
+          unit: "studies",
+          data: [
+            { label: "Oncology", value: 7074 },
+            { label: "Cardiology", value: 2845 },
+            { label: "Psychiatry", value: 1273 },
+            { label: "Neurology", value: 987 },
+            { label: "Obesity and type 2 diabetes", value: 852 },
+            { label: "Pain", value: 629 },
+            { label: "Gastroenterology", value: 285 },
+            { label: "Dermatology", value: 214 },
+          ],
+          cite: "ctgov-api",
+        },
+        {
+          type: "p",
+          text: "Chart searches find people who sought care. An estimated 21.4 million US adults had a major depressive episode in 2024, and 64.4% of them received any mental health treatment that year.{{cite:nsduh-2024}} Schizophrenia and related psychotic disorders affect an estimated 0.25% to 0.64% of US adults.{{cite:nimh-schizophrenia}}",
+        },
+        {
+          type: "cta",
+          label: "Book a demo",
+          href: "/book-a-demo",
+          text: "Bring one psychiatry protocol and we will walk through how its hardest criteria, such as treatment resistance and suicide-risk exclusions, map to your chart.",
+          secondaryLabel: "Reduce screen failure",
+          secondaryHref: "/guides/reduce-screen-failure",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Can Bond tell whether a patient will meet a MADRS or PANSS threshold?",
+      a: "No. A trained rater scores those at the screening visit. Bond can surface related evidence, such as PHQ-9 scores and recent notes.",
+    },
+    {
+      q: "How does Bond check failed antidepressant trials?",
+      a: "It reads medication orders, fills and notes against the protocol's definition and shows the records behind each decision.{{cite:bond-site}} Definitions vary: FDA's 2018 draft guidance says resistance studies should enroll patients who have not responded to more than one antidepressant, while TRANSFORM-2 required non-response to 1 to 5 in the current episode.{{cite:fda-mdd-2018,transform-2}}",
+    },
+    {
+      q: "What screen failure rate should a psychiatry site expect?",
+      a: "No reliable benchmark is published. The closest proxy is exclusion by criteria: a mean of 86.1% of depressed outpatients at one practice for antidepressant trials, and 79% of Finnish and Swedish outpatients with schizophrenia spectrum disorders for relapse-prevention trials.{{cite:zimmerman-2019,taipale-2022}}",
+    },
+    {
+      q: "Does Bond read psychotherapy notes?",
+      a: "They should be out of scope: under HIPAA, psychotherapy notes kept apart from the medical record need the patient's written authorization for most uses.{{cite:hipaa-psychotherapy-notes}} The site decides with its privacy officer which record types are shared.",
+    },
+  ],
+  sources: [
+    {
+      id: "zimmerman-2019",
+      title: "Have Treatment Studies of Depression Become Even Less Generalizable? Applying the Inclusion and Exclusion Criteria in Placebo-Controlled Antidepressant Efficacy Trials Published over 20 Years to a Clinical Sample",
+      publisher: "Psychotherapy and Psychosomatics 88(3):165-170 (Zimmerman M, Balling C, Chelminski I, Dalrymple K)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/31096246/",
+      year: "2019",
+      note: "Abstract checked via Europe PMC on September 22, 2026. Rhode Island MIDAS project; psychiatric criteria only. Quote: \"We applied the inclusion and exclusion criteria used in 158 AETs to 1,271 patients presenting to an outpatient practice who received a principal diagnosis of major depressive disorder.\" \"Across all 158 studies, the percentage of patients that would have been excluded ranged from 44.4 to 99.8% (mean = 86.1%). The percentage of patients that would have been excluded was significantly higher in the studies published in 2010 through 2014 compared to the studies published from 1995 to 2009 (91.4 vs. 83.8%, t(156) = 3.74, p < 0.001).\"",
+    },
+    {
+      id: "taipale-2022",
+      title: "Representation and Outcomes of Individuals With Schizophrenia Seen in Everyday Practice Who Are Ineligible for Randomized Clinical Trials",
+      publisher: "JAMA Psychiatry 79(3) (Taipale H, et al.)",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8792792/",
+      year: "2022",
+      note: "Full text checked via Europe PMC on September 22, 2026. Criteria typical of relapse-prevention RCTs applied to national registries in Finland and Sweden; cohort limited to people who had used antipsychotics continuously for 12 weeks in outpatient care. Quote: \"A total of 20 060 individuals (79%) with schizophrenia spectrum disorders would be ineligible for RCTs\"; \"The most frequent reasons for ineligibility observed in the 2 cohorts were serious somatic comorbidities and concomitant use of mood stabilizers or antidepressants, followed by history of substance use and risk of suicide.\" Also: \"some symptoms are often underreported in diagnostic data (eg, suicidality and substance use)\".",
+    },
+    {
+      id: "zimmerman-2005",
+      title: "Generalizability of antidepressant efficacy trials: differences between depressed psychiatric outpatients who would or would not qualify for an efficacy trial",
+      publisher: "American Journal of Psychiatry 162(7):1370-1372 (Zimmerman M, Chelminski I, Posternak MA)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/15994721/",
+      year: "2005",
+      note: "Abstract checked via Europe PMC on September 22, 2026. Quote: \"The authors compared three groups: 123 depressed patients who would qualify for an antidepressant efficacy trial, 289 whose symptom severity was too mild to qualify for an antidepressant efficacy trial, and 187 who would be excluded because they were suicidal or had a comorbid anxiety or substance use disorder.\" \"patients who would be excluded because of comorbidity or suicidality were a more chronically ill group with more previous episodes, greater psychosocial impairment, and more personality pathology.\"",
+    },
+    {
+      id: "fda-mdd-2018",
+      title: "Major Depressive Disorder: Developing Drugs for Treatment. Guidance for Industry (Draft)",
+      publisher: "U.S. Food and Drug Administration, CDER",
+      url: "https://www.fda.gov/media/113988/download",
+      year: "2018",
+      note: "Draft guidance, June 2018, Revision 1; PDF text checked September 22, 2026. Quote: \"The diagnosis should be confirmed via a semi-structured interview such as the current Structured Clinical Interview for DSM or MINI International Neuropsychiatric Interview.\" \"trials to date in patients with less-than-moderate depression have not been successful.\" \"Patients with a history of suicidal ideation and behavior need not be systematically excluded from trials.\" \"Patients who have not responded to more than one prior antidepressant, administered at an adequate dose and duration, should be enrolled in TRD studies.\"",
+    },
+    {
+      id: "transform-2",
+      title: "A Study to Evaluate the Efficacy, Safety, and Tolerability of Flexible Doses of Intranasal Esketamine Plus an Oral Antidepressant in Adult Participants With Treatment-resistant Depression (TRANSFORM-2), NCT02418585",
+      publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Janssen Research & Development",
+      url: "https://clinicaltrials.gov/study/NCT02418585",
+      year: "2019",
+      note: "Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026. Quote: \"DSM-5 diagnostic criteria for single-episode major depressive disorder (MDD) ... or recurrent MDD, without psychotic features, based upon clinical assessment and confirmed by the Mini-International Neuropsychiatric Interview (MINI)\"; \"non-response ... to >=1 but less than or equal to (<=) 5 ... oral antidepressant treatments in the current episode of depression ... documented by medical history and pharmacy/prescription records\"; \"depression symptom severity (Week 1 MADRS total score >=28 required) ... must be confirmed using a Site Independent Qualification Assessment\"; excludes \"a current or prior DSM-5 diagnosis of a psychotic disorder or MDD with psychosis, bipolar or related disorders ... borderline personality disorder\" and \"suicidal ideation with some intent to act within 6 months prior to the start of the screening/prospective observational phase, per the investigator's clinical judgment or based on the Columbia Suicide Severity Rating Scale (C-SSRS)\".",
+    },
+    {
+      id: "sage-217-mdd",
+      title: "A Study to Evaluate the Efficacy of Sage-217 in the Treatment of Adult Participants With Major Depressive Disorder (MDD), NCT04442490",
+      publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Sage Therapeutics",
+      url: "https://clinicaltrials.gov/study/NCT04442490",
+      year: "2022",
+      note: "Sage-217 is zuranolone. Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026. Quote: \"diagnosis of MDD as diagnosed by Structured Clinical Interview for ... DSM-5 Clinical Trial Version [SCID-5-CT], with symptoms that have been present for at least a 4-week period\"; \"Hamilton Rating Scale for Depression (HAM-D) total score >=24 at screening and Day 1\"; \"Participants taking antidepressants must have been taking these medications at the same dose for at least 60 days prior to Day 1\"; excludes \"currently at significant risk of suicide, as judged by the Investigator\", \"treatment-resistant depression, defined as persistent depressive symptoms despite treatment with adequate doses of antidepressants within the current major depressive episode (excluding antipsychotics) from two different classes for at least 4 weeks of treatment\" and \"a history of mild, moderate, or severe substance use disorder ... in the 12 months prior to screening\".",
+    },
+    {
+      id: "emergent-3",
+      title: "A Study to Assess Efficacy and Safety of KarXT in Acutely Psychotic Hospitalized Adult Patients With Schizophrenia (EMERGENT-3), NCT04738123",
+      publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Karuna Therapeutics",
+      url: "https://clinicaltrials.gov/study/NCT04738123",
+      year: "2023",
+      note: "Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026. Quote: \"primary diagnosis of schizophrenia established by a comprehensive psychiatric evaluation based on the DSM-5 criteria and confirmed by Mini International Neuropsychiatric Interview\"; \"Positive and Negative Syndrome Scale total score between 80 and 120, inclusive\"; \"acute exacerbation or relapse of psychotic symptoms, with onset less than 2 months before screening\"; \"free of all oral antipsychotic medications for at least 5 half-lives or 1 week, whichever is longer, before baseline\"; excludes \"Risk for suicidal behavior during the study as determined by the investigator's clinical assessment and Columbia-Suicide Severity Rating Scale (C-SSRS)\" and \"Participation in another clinical study in which the subject received an experimental or investigational drug agent within 3 months before screening\".",
+    },
+    {
+      id: "star-d-2006",
+      title: "Acute and longer-term outcomes in depressed outpatients requiring one or several treatment steps: a STAR*D report",
+      publisher: "American Journal of Psychiatry 163(11):1905-1917 (Rush AJ, Trivedi MH, Wisniewski SR, et al.)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/17074942/",
+      year: "2006",
+    },
+    {
+      id: "furukawa-2016",
+      title: "Placebo response rates in antidepressant trials: a systematic review of published and unpublished double-blind randomised controlled studies",
+      publisher: "The Lancet Psychiatry 3(11):1059-1066 (Furukawa TA, Cipriani A, et al.)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/27726982/",
+      year: "2016",
+    },
+    {
+      id: "rutherford-2014",
+      title: "Placebo response in antipsychotic clinical trials: a meta-analysis",
+      publisher: "JAMA Psychiatry 71(12):1409-1421 (Rutherford BR, Pott E, Tandler JM, Wall MM, Roose SP, Lieberman JA)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/25321611/",
+      year: "2014",
+    },
+    {
+      id: "devine-2021",
+      title: "Frequency of concealment, fabrication and falsification of study data by deceptive subjects",
+      publisher: "Contemporary Clinical Trials Communications 21:100713 (Devine EG, et al.)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/33604482/",
+      year: "2021",
+    },
+    {
+      id: "shiovitz-2020",
+      title: "The Patient in Your Alzheimer's Disease Study May be in Another: Duplication and Deception in Clinical Trials of Alzheimer's Disease",
+      publisher: "Journal of Prevention of Alzheimer's Disease 7(1):43-46 (Shiovitz T, et al.)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/32010925/",
+      year: "2020",
+      note: "CTSdatabase registry data, January 2017 to May 2019. The lead author is president of CTSdatabase. Quote: \"CTSdatabase reviewed memory loss subjects (n=1087) from January 2017 through May 2019 ... 117 subjects (10.8%) visited more than one site within two years. When these potential AD subjects went to additional sites, it was predominantly for non-memory indications (often MDD or schizophrenia).\"",
+    },
+    {
+      id: "hipaa-psychotherapy-notes",
+      title: "45 CFR 164.508(a)(2): Uses and disclosures for which an authorization is required, psychotherapy notes",
+      publisher: "U.S. Government Publishing Office (Code of Federal Regulations)",
+      url: "https://www.govinfo.gov/content/pkg/CFR-2023-title45-vol2/xml/CFR-2023-title45-vol2-sec164-508.xml",
+      year: "2023",
+    },
+    {
+      id: "part2-2024",
+      title: "Confidentiality of Substance Use Disorder (SUD) Patient Records (Final Rule, 89 FR 12472)",
+      publisher: "U.S. Department of Health and Human Services, Federal Register",
+      url: "https://www.federalregister.gov/documents/2024/02/16/2024-02544/confidentiality-of-substance-use-disorder-sud-patient-records",
+      year: "2024",
+    },
+    {
+      id: "hughes-morley-2013",
+      title: "Factors affecting recruitment into depression trials: systematic review and meta-synthesis of qualitative evidence",
+      publisher: "Trials 14(Suppl 1):P82 (Hughes-Morley A, Young B, Waheed W, Small N, Bower P)",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3981531/",
+      year: "2013",
+    },
+    {
+      id: "fcc-ai-voice-2024",
+      title: "Declaratory Ruling on AI-generated voices under the TCPA (FCC 24-17)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf",
+      year: "2024",
+    },
+    {
+      id: "nimh-suicide",
+      title: "Suicide: Statistics",
+      publisher: "National Institute of Mental Health",
+      url: "https://www.nimh.nih.gov/health/statistics/suicide",
+      year: "2025",
+    },
+    {
+      id: "nsduh-2024",
+      title: "Key Substance Use and Mental Health Indicators in the United States: Results from the 2024 National Survey on Drug Use and Health (HHS Publication No. PEP25-07-007)",
+      publisher: "SAMHSA, Center for Behavioral Health Statistics and Quality",
+      url: "https://www.samhsa.gov/data/sites/default/files/reports/rpt56287/2024-nsduh-annual-national/2024-nsduh-annual-national-html-071425-edited/2024-nsduh-annual-national.htm",
+      year: "2025",
+      note: "HTML report text checked September 22, 2026. Quote: \"In 2024, 8.2 percent of adults aged 18 or older (or 21.4 million people) had a past year MDE.\" \"Of these adults with a past year MDE, 64.4 percent (or 13.8 million people) received any of the following types of mental health treatment in the past year: inpatient or outpatient mental health treatment; prescription medication to help with mental health; treatment via telehealth; or treatment in a prison, jail, or juvenile detention center\".",
+    },
+    {
+      id: "nimh-schizophrenia",
+      title: "Schizophrenia: Statistics",
+      publisher: "National Institute of Mental Health",
+      url: "https://www.nimh.nih.gov/health/statistics/schizophrenia",
+      year: "2024",
+    },
+    {
+      id: "ctgov-api",
+      title: "ClinicalTrials.gov API v2",
+      publisher: "U.S. National Library of Medicine",
+      url: "https://clinicaltrials.gov/data-api/api",
+      year: "2026",
+      note: "Queried September 21, 2026.",
+    },
+    {
+      id: "bond-site",
+      title: "Bond Health: platform overview, FAQ and pricing",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+    },
+    {
+      id: "bond-product",
+      title: "Bond Health product information",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+    },
+    {
+      id: "bond-whitepaper",
+      title: "Terminology Infrastructure and Graph-Grounded RAG for Clinical Trial Patient Matching",
+      publisher: "Bond Health, preprint",
+      year: "2026",
+      note: "Internal technical report by R. Goel, August 2026. Available on request.",
+    },
+  ],
+  related: [
+    { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads structured data and notes against each criterion." },
+    { label: "Engage: voice and text outreach", href: "/engage", description: "Pre-screening calls with AI disclosure and a live transfer or human callback on request." },
+    { label: "Consent support", href: "/consent", description: "Plain-language explanations and patient questions, with the investigator obtaining consent." },
+    { label: "How to reduce screen failure", href: "/guides/reduce-screen-failure", description: "Causes, benchmarks and fixes a site can apply." },
+    { label: "Therapeutic areas", href: "/therapeutic-areas", description: "Eligibility and chart evidence in the other areas Bond covers." },
+    { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "A phone script with AI disclosure and coordinator handoff, ready to adapt for your IRB." },
+  ],
+};
+
+export default page;

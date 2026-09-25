@@ -1,25 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
-const partners = [
-  { 
-    name: "Southwest Family Medicine Associates", 
-    logo: "/images/partners/southwest-family-medicine.png",
-  },
-  { 
-    name: "Commonwealth Pain and Spine Clinic", 
-    logo: "/images/partners/commonwealth-pain-spine-clinic-logo.png",
-  },
-  { 
-    name: "MRCT - Brigham and Women's Hospital", 
-    logo: "/images/partners/MRCT-Logo.png",
-  },
-  { 
-    name: "CRIO Certified Partner", 
-    logo: "/images/partners/crio-certified-partner.png",
-  },
-];
+import { partners } from "@/content/partners";
 
 export default function Partners() {
   return (

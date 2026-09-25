@@ -396,3 +396,47 @@ body {
 .bg-gradient-radial {
   background: radial-gradient(var(--tw-gradient-stops));
 }
+
+/* Print: used to export content pages (for example /report) to PDF */
+@media print {
+  @page {
+    margin: 16mm 14mm;
+  }
+  nav,
+  main > footer,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  * {
+    box-shadow: none !important;
+  }
+  header {
+    padding-top: 1.5rem !important;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  h2,
+  h3 {
+    break-after: avoid-page;
+  }
+  figure,
+  aside,
+  blockquote,
+  tr,
+  li {
+    break-inside: avoid;
+  }
+  /* Print every FAQ answer, not only the open one. */
+  details::details-content {
+    content-visibility: visible;
+    display: block;
+  }
+  .faq-question svg {
+    display: none;
+  }
+}

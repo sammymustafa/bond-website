@@ -17,8 +17,8 @@ const funnelStages = [
   {
     id: "engage",
     title: "Engage",
-    subtitle: "Voice & SMS/Text Outreach",
-    description: "Automated calls and SMS/text for pre-screening and appointment scheduling",
+    subtitle: "Ads, Voice & SMS/Text Outreach",
+    description: "Meta and Google ad campaigns set up for your studies, plus automated calls and SMS/text for pre-screening and scheduling",
     icon: Phone,
     color: "emerald",
     metric: "3x",
@@ -200,7 +200,7 @@ export default function FullFunnel() {
               </h3>
               <p className="text-gray-400">
                 One integrated platform means no data silos, no manual handoffs, 
-                and complete visibility from first match to signed consent.
+                and complete visibility from first ad click or chart match to signed consent.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
