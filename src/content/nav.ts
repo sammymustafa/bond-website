@@ -78,6 +78,7 @@ export const compareLinks: NavItem[] = [
   { name: "Bond vs Alleviate Health", href: "/compare/bond-vs-alleviate-health" },
   { name: "Bond vs Hippocratic AI and Grove", href: "/compare/bond-vs-hippocratic-ai-and-grove" },
   { name: "Bond vs Inato", href: "/compare/bond-vs-inato" },
+  { name: "Bond vs Power", href: "/compare/bond-vs-power" },
   { name: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment" },
   { name: "Bond vs manual chart review", href: "/compare/bond-vs-manual-chart-review" },
   { name: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software" },

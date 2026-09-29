@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart to consent, chart evidence behind every match, no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} Bond also sets up Meta and Google ad campaigns for studies that need patients beyond the site's records, so one platform covers EHR matches and ad leads through consent.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-09-29",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -93,6 +93,7 @@ const page: SeoPage = {
             ["SubjectWell (now Clariness)", "Recruitment services", "Not publicly documented; draws on patient marketing and a large patient database", "Not publicly documented", "Patient marketing, the ClinLife patient portal and creative services", "Not publicly documented", "Not publicly documented{{cite:clariness-merger-2026}}"],
             ["Antidote", "Recruitment services", "Patients self-report via Match; EHR matching announced 2016; SEQSTER medical-history matching partnership (2024)", "Not publicly documented", "Digital marketing, a partner network and a patient-support contact center; prescreens before referral", "Not publicly documented", "Not publicly documented{{cite:antidote-sponsors,antidote-enterprise-match,antidote-rebrand-2016,antidote-seqster-2024,antidote-partners}}"],
             ["1nHealth", "Recruitment services", "Direct-to-patient digital recruitment rather than patient databases", "Not publicly documented", "Online ads, several levels of pre-screening and automated SMS follow-ups", "Not publicly documented", "Not publicly documented{{cite:1nhealth-pharma}}"],
+            ["Power", "Recruitment services and patient community", "Checks community patients against the medical records they share, queried against the protocol's criteria; its provider tool uses AI to screen EMRs against full study protocols", "LLM review of medical records", "Calls, texts, emails, AI voice agents and an AI call center for after-hours coverage", "Appointment booking and travel coordination", "Patient-facing consent support: not publicly documented{{cite:power-sponsors-2026,power-providers-2026,power-grow-2026}}"],
             ["IQVIA", "CRO recruitment services", "AI-powered EMR data mining and protocol-specific patient models", "Chart review by IQVIA site enrollment staff", "Call centers and a marketing network of outreach partners", "Yes, through its Study Hub and Referral Hub", "eConsent and plain-language consent content{{cite:iqvia-recruitment}}"],
             ["Veeva SiteVault", "Site operations", "Not publicly documented", "Not publicly documented", "Not publicly documented", "Not publicly documented", "eConsent{{cite:veeva-sites-home}}"],
             ["CRIO", "Site operations", "Through API partners", "Through API partners", "Calling campaigns and text blasts", "Yes, with reminders", "eConsent{{cite:crio-independent-sites,crio-home,crio-trially-2024}}"],
@@ -142,6 +143,7 @@ const page: SeoPage = {
             ["SubjectWell (now Clariness)", "Many indications, combined with Clariness", "Sponsors, CROs, sites", "Not publicly documented", "SubjectWell in 2023: paid only for patients who randomize. Current Clariness terms: not publicly documented{{cite:clariness-merger-2026,subjectwell-recruit-2023}}"],
             ["Antidote", "Case highlights in COPD, Alzheimer's disease, asthma and psoriasis", "Sponsors; patient organizations host its trial search at no cost", "Not publicly documented", "Risk-sharing model{{cite:antidote-sponsors,antidote-partners}}"],
             ["1nHealth", "Eight listed areas, including cardiovascular, neurology and oncology", "Sponsors, biotechs, CROs; research sites use its 1nData software", "Not publicly documented", "Per signed consent or randomization; other models offered{{cite:1nhealth-overview,1nhealth-home,1nhealth-pharma}}"],
+            ["Power", "Sponsor page focuses on Phase 2/3 CNS and I&I trials", "Sponsors, CROs, research sites and providers", "A web portal for sites with no technical setup; named EHR or CTMS integrations not publicly documented", "Sponsors: outcomes-aligned partnerships based on enrollment milestones; sites and providers: free to start{{cite:power-sponsors-2026,power-sites-2026,power-providers-2026}}"],
             ["IQVIA", "Not publicly documented", "Sponsors and sites", "Its own Study Hub, Referral Hub and eConsent tools; outside integrations not publicly documented", "No public price list found{{cite:iqvia-recruitment}}"],
             ["Veeva SiteVault", "Not applicable", "Research sites", "Enterprise package has an open API; the free version currently integrates only with other Veeva apps", "Free up to 20 concurrent active studies; paid above that{{cite:veeva-faq}}"],
             ["CRIO", "Not applicable", "Sites, sponsors, CROs", "Certified API partners, including EHR matching tools", "No public price list found{{cite:crio-home,crio-trially-2024}}"],
@@ -175,7 +177,7 @@ const page: SeoPage = {
         { type: "h3", text: "Media and recruitment services leave the work after the referral" },
         {
           type: "p",
-          text: "Media recruiters, patient networks and call centers send referrals, often people who found a study online and answered eligibility questions themselves. 1nHealth, Antidote and IQVIA describe pre-screening before referral.{{cite:1nhealth-pharma,antidote-enterprise-match,antidote-sponsors,iqvia-recruitment}} What these services leave to your team is the work after the referral: calling each self-referral, screening them against the full protocol, often without having seen their chart, and booking the ones who qualify. IQVIA also describes call center support, plus scheduling through its Study Hub and Referral Hub; for 1nHealth, Antidote and SubjectWell (now Clariness), scheduling is not publicly documented.{{cite:iqvia-recruitment,clariness-merger-2026}} Bond covers both paths to patients: it finds them in your EHR, and it sets up Meta and Google ad campaigns for your studies. Its voice and SMS agents pre-screen and schedule those ad leads alongside EHR matches, so both go through the same workflow to consent.{{cite:bond-site,bond-product}} The same agents can also pre-screen and schedule the referrals, ad leads and registry contacts the site already has.{{cite:bond-site}} See [Bond vs media recruitment](/compare/bond-vs-media-recruitment).",
+          text: "Media recruiters, patient networks and call centers send referrals, often people who found a study online and answered eligibility questions themselves. 1nHealth, Antidote, IQVIA and Power describe pre-screening before referral, and Power also describes appointment booking and travel coordination.{{cite:1nhealth-pharma,antidote-enterprise-match,antidote-sponsors,iqvia-recruitment,power-sponsors-2026}} What these services leave to your team is the work after the referral: calling each self-referral, screening them against the full protocol, often without having seen their chart, and booking the ones who qualify. IQVIA also describes call center support, plus scheduling through its Study Hub and Referral Hub; for 1nHealth, Antidote and SubjectWell (now Clariness), scheduling is not publicly documented.{{cite:iqvia-recruitment,clariness-merger-2026}} Bond covers both paths to patients: it finds them in your EHR, and it sets up Meta and Google ad campaigns for your studies. Its voice and SMS agents pre-screen and schedule those ad leads alongside EHR matches, so both go through the same workflow to consent.{{cite:bond-site,bond-product}} The same agents can also pre-screen and schedule the referrals, ad leads and registry contacts the site already has.{{cite:bond-site}} See [Bond vs media recruitment](/compare/bond-vs-media-recruitment) and [Bond vs Power](/compare/bond-vs-power).",
         },
         { type: "h3", text: "Site operations platforms leave finding and contacting patients" },
         {
@@ -696,6 +698,38 @@ const page: SeoPage = {
       url: "https://1nhealth.com/patient-recruitment-for-pharma/",
       year: "2026",
       note: "Accessed September 2026. Quotes: \"Our team conducts multiple levels of pre-screening before passing referrals on to your clinical sites.\"; \"We didn't choose direct-to-patient recruitment over databases because we wanted to be different\"; 1nData offers \"real-time patient insights, automated SMS follow-ups, and more\". Therapeutic areas listed: \"Cardiovascular, Gastrointestinal, Neurological, Infectious Diseases, Dermatology, Immunology, Pulmonary, Oncology\". The page also describes \"designing scroll-stopping ads\".",
+    },
+    {
+      id: "power-sponsors-2026",
+      title: "Find the right patients, not just more of them (Power for sponsors)",
+      publisher: "Power",
+      url: "https://www.withpower.com/for-sponsors",
+      year: "2026",
+      note: "Accessed September 29, 2026. Quotes: \"Phase 2/3 CNS and I&I trials\"; \"The fastest-growing community of patients who've actively opted in to learn about clinical trials.\"; \"Patients share diagnoses, prescriptions, labs, and visit history\" and \"we query against your protocol's I/E criteria to build confidence in clinical eligibility before a single referral is made.\"; \"Calls, texts, emails, and an AI call center for after-hours coverage\"; \"Pre-screening, appointment booking, travel coordination, and follow-up\"; and \"Most programs are structured as outcomes-aligned partnerships based on enrollment milestones.\"",
+    },
+    {
+      id: "power-sites-2026",
+      title: "How Power helps sites find more patients (Power for research sites)",
+      publisher: "Power",
+      url: "https://www.withpower.com/for-research-coordinators",
+      year: "2026",
+      note: "Accessed September 29, 2026. Quotes: \"Work with high-intent, EMR-verified patients who are actively looking for trials (and actually answer the phone).\" and \"Try it for free. No technical set up.\"",
+    },
+    {
+      id: "power-providers-2026",
+      title: "Power for providers",
+      publisher: "Power",
+      url: "https://www.withpower.com/for-providers",
+      year: "2026",
+      note: "Accessed September 29, 2026. Quotes: \"Power uses AI to screen EMRs and match patients against the full study protocols.\" and \"Get started at no cost.\"",
+    },
+    {
+      id: "power-grow-2026",
+      title: "Power: AI platform for clinical trial patient recruitment",
+      publisher: "Power",
+      url: "https://growwithpower.com/",
+      year: "2026",
+      note: "Accessed September 29, 2026 (page rendered in a browser). Quotes: \"Advanced LLM technology analyzes patient medical records\"; \"EMR + Rx + Voice for full protocol pre-screening\"; and \"Our AI voice agents conduct natural conversations with potential participants\".",
     },
     {
       id: "iqvia-recruitment",

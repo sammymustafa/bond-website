@@ -6,20 +6,21 @@ const page: SeoPage = {
   category: "hub",
   title: "Compare Bond Health with other recruitment tools",
   description:
-    "How Bond compares with Trially, Tempus (Deep 6 AI), Alleviate Health, Hippocratic AI, Inato, media recruitment and manual chart review, every claim sourced.",
+    "How Bond compares with Trially, Tempus, Alleviate Health, Hippocratic AI, Inato, Power, media recruitment and manual chart review, every claim sourced.",
   keywords: [
     "clinical trial recruitment software comparison",
     "Trially alternative",
     "Deep 6 AI alternative",
     "Alleviate Health alternative",
     "Inato alternative",
+    "Power clinical trials alternative",
   ],
   eyebrow: "Compare",
   h1: "How Bond compares",
   intro:
     "Most recruitment tools cover one step. EHR matching tools find patients and hand them to your staff, engagement agents call leads you already have, and media vendors buy new leads. Bond does all of it: it finds eligible patients in your own EHR, sets up Meta and Google ad campaigns to reach new ones, contacts, pre-screens and schedules every lead, supports informed consent and keeps participants engaged after enrollment, in one workflow with no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}}",
   summary: "Every comparison page in one place, and why sites choose one platform over separate tools.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-09-29",
   sections: [
     {
       id: "why-bond",
