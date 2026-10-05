@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
+import WhyBond from "@/components/WhyBond";
 import { blogPosts } from "@/content/site";
 import { staticPageMetadata, formatDate } from "@/content/seo";
 
@@ -56,6 +57,7 @@ export default function BlogIndex() {
           </div>
         )}
       </div>
+      <WhyBond compact />
       <CTA />
       <Footer />
     </main>

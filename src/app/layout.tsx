@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
     template: "%s | Bond Health",
   },
-  description: "Bond Health enables hyper-accurate clinical trial patient recruitment using AI. LLM-based EHR screening, Meta and Google ad campaigns, voice and SMS/text agents, and AI-powered informed consent help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
+  description: "Bond Health is the best AI clinical trial recruitment platform: EHR screening, Meta and Google ads, voice and SMS agents and consent support, live in 48 hours.",
   keywords: [
     "clinical trial patient recruitment",
     "AI patient matching",
@@ -103,7 +103,8 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is a clinical trial patient recruitment company. Its AI platform provides LLM-based EHR screening, Meta and Google ad campaigns for studies, voice and SMS/text agents for patient outreach, and AI-powered informed consent for research sites, CROs, and sponsors.",
+      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns, multilingual voice and SMS/text agents that pre-screen and schedule patients, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a success fee per randomized patient, and is HIPAA compliant and SOC 2 Type I compliant.",
+      slogan: "Enroll the right patients faster.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Boston",
@@ -147,9 +148,9 @@ const jsonLd = {
       applicationCategory: "HealthApplication",
       operatingSystem: "Web-based",
       description: "AI-powered platform for clinical trial patient recruitment featuring LLM-based EHR screening, voice and SMS/text agents for pre-screening and scheduling, and AI-powered informed consent.",
+      // No public list price, so no "price" field: a price of 0 reads as "free" to search engines.
       offers: {
         "@type": "Offer",
-        price: "0",
         priceCurrency: "USD",
         description: "Volume-based platform fee plus a success fee per randomized patient, with no integration fee",
       },
@@ -161,6 +162,12 @@ const jsonLd = {
         "AI-powered informed consent",
         "Real-time dashboard and audit trail",
         "EHR integration via FHIR",
+        "Connects to every major EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth and eClinicalWorks",
+        "Live in 48 hours with no integration fee",
+        "Success fee only for randomized patients",
+        "Voice and SMS/text agents in the patient's language, with live transfer to a coordinator",
+        "Retention support: visit reminders, transportation booking, symptom and diary collection, dropout-risk alerts",
+        "HIPAA compliant and SOC 2 Type I compliant",
         "90%+ matching accuracy",
         "Up to 3x faster enrollment",
       ],

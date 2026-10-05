@@ -25,13 +25,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over Tempus and Deep 6 AI?",
+      heading: "Why is Bond better than Tempus and Deep 6 AI?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "For sites running their own studies in any therapeutic area, Bond is one product that finds eligible patients in the EHR, contacts and schedules them by voice and text, and supports consent, with a success fee paid per randomized patient.{{cite:bond-site,bond-product}}",
+          text: "For sites running their own studies in any therapeutic area, Bond is better than Tempus and Deep 6 AI because it is one product that finds eligible patients in the EHR, contacts and schedules them by voice and text, and supports consent, with a success fee paid per randomized patient.{{cite:bond-site,bond-product}}",
         },
         {
           type: "stats",

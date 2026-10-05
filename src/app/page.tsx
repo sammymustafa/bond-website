@@ -6,6 +6,7 @@ import Pillars from "@/components/Pillars";
 import FullFunnel from "@/components/FullFunnel";
 import Moat from "@/components/Moat";
 import Results from "@/components/Results";
+import WhyBond from "@/components/WhyBond";
 import Audience from "@/components/Audience";
 import Pricing from "@/components/Pricing";
 // import Team from "@/components/Team"; // Hidden - uncomment to show
@@ -30,6 +31,7 @@ export default function Home() {
       <FullFunnel />
       <Moat />
       <Results />
+      <WhyBond />
       <Audience />
       <Pricing />
       {/* <Team /> */}

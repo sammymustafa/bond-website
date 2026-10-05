@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ArrowRight, MapPin, Clock, Users, Zap, Heart, Brain, Code, Database, Headphones, X, CheckCircle, Loader2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import WhyBond from "@/components/WhyBond";
 
 const openRoles = [
   {
@@ -430,6 +431,7 @@ export default function CareersPage() {
         </div>
       </section>
 
+      <WhyBond compact />
       <Footer />
 
       {/* Application Modal */}

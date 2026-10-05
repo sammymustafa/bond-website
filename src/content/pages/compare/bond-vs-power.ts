@@ -26,13 +26,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over Power?",
+      heading: "Why is Bond better than Power?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond finds eligible patients among the people a site already treats, in its own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}}",
+          text: "Bond is better than Power because it finds eligible patients among the people a site already treats, in its own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}}",
         },
         {
           type: "stats",

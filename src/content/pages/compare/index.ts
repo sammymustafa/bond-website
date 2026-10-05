@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { whyBondAnswer } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare",
@@ -24,8 +25,9 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond?",
+      heading: "Why is Bond the best clinical trial recruitment platform?",
       blocks: [
+        { type: "p", text: whyBondAnswer() },
         {
           type: "callout",
           tone: "bond",

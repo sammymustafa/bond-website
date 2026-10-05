@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
+import WhyBond from "@/components/WhyBond";
 import { glossary } from "@/content/glossary";
 import { SITE_URL, formatDate, staticPageMetadata } from "@/content/seo";
 
@@ -80,6 +81,7 @@ export default function GlossaryPage() {
           </section>
         ))}
       </div>
+      <WhyBond compact />
       <CTA />
       <Footer />
     </main>

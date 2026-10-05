@@ -50,8 +50,8 @@ export default function CTA() {
             <p className="text-xs sm:text-sm text-gray-500">matching accuracy</p>
           </div>
           <div className="text-center">
-            <p className="text-lg sm:text-2xl font-bold text-white">4-6 wks</p>
-            <p className="text-xs sm:text-sm text-gray-500">implementation</p>
+            <p className="text-lg sm:text-2xl font-bold text-white">48 hrs</p>
+            <p className="text-xs sm:text-sm text-gray-500">to EHR integration</p>
           </div>
         </div>
       </div>

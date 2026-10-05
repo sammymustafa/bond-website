@@ -21,6 +21,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { glossaryTermToPage } from "../src/content/seo";
+import { withWhyBond } from "../src/content/whyBond";
 import type { Block, GlossaryTerm, SeoPage } from "../src/content/types";
 
 const WARN = process.argv.includes("--warn");
@@ -275,13 +276,14 @@ async function main() {
     const where = `[${page.path}]`;
     if (seen.has(page.path)) errors.push(`${where}: duplicate path`);
     seen.add(page.path);
-    validatePage(page, where);
+    // Validate the page as rendered, including the shared "why Bond" section.
+    validatePage(withWhyBond(page), where);
   }
   const seenSlugs = new Set<string>();
   for (const term of termList) {
     if (seenSlugs.has(term.slug)) errors.push(`[/glossary/${term.slug}]: duplicate slug`);
     seenSlugs.add(term.slug);
-    validatePage(glossaryTermToPage(term), `[/glossary/${term.slug}]`, { isGlossary: true });
+    validatePage(withWhyBond(glossaryTermToPage(term)), `[/glossary/${term.slug}]`, { isGlossary: true });
   }
 
   if (WARN && warnings.length) {
