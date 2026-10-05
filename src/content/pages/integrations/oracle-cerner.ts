@@ -247,9 +247,9 @@ const page: SeoPage = {
     },
     {
       id: "klas-naming",
-      title: "KLAS Research search results: acute care EHR market share",
+      title: "Oracle Health Foundation EHR (formerly Millennium PowerChart)/CommunityWorks Clinicals (All): reviews, rating and trending data",
       publisher: "KLAS Research",
-      url: "https://klasresearch.com/search?q=acute+care+ehr+market+share+2026",
+      url: "https://klasresearch.com/review/oracle-health-foundation-ehr-formerly-millennium-powerchart-communityworks-clinicals-all/75692",
       year: "2026",
       note: "Quote: \"Oracle Health Foundation EHR (formerly Millennium PowerChart)/CommunityWorks Clinicals\"",
     },

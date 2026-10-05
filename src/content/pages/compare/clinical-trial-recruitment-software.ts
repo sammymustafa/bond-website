@@ -631,9 +631,9 @@ const page: SeoPage = {
       id: "subjectwell-recruit-2023",
       title: "Only Pay for Patients Who Randomize into Your Study",
       publisher: "SubjectWell",
-      url: "https://www.subjectwell.com/recruit/",
+      url: "https://web.archive.org/web/20230803194806/https://www.subjectwell.com/recruit/",
       year: "2023",
-      note: "Read from the Internet Archive copy of August 3, 2023 (https://web.archive.org/web/20230803194806/https://www.subjectwell.com/recruit/) because the live page did not load when checked on September 23, 2026. Quote: \"You pay only for patients who randomize\" ... \"with no setup, referral, or consent fees.\"",
+      note: "Internet Archive copy of August 3, 2023. The original page (www.subjectwell.com/recruit/) no longer loads: SubjectWell now redirects to Clariness (checked October 5, 2026). Quote: \"You pay only for patients who randomize\" ... \"with no setup, referral, or consent fees.\"",
     },
     {
       id: "antidote-sponsors",
