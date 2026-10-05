@@ -48,6 +48,13 @@ default-exports a `SeoPage` (see `src/content/types.ts`) and is rendered by
 Glossary terms live in `src/content/glossary.ts`. Menus and footer links come
 from `src/content/nav.ts`.
 
+Every page also gets a "Why is Bond the best clinical trial recruitment
+platform?" section built from `src/content/whyBond.ts` (content pages through
+`withWhyBond`, the homepage and hand-built pages through
+`src/components/WhyBond.tsx`). Edit the reasons there, not on individual pages.
+A page that defines its own section with id `why-bond`, as the comparison pages
+do, keeps its own.
+
 | Command | What it does |
 | --- | --- |
 | `npm run gen:registry` | Rebuild `src/content/registry.ts` after adding or removing a page file |

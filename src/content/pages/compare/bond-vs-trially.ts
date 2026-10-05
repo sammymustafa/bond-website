@@ -27,13 +27,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over Trially?",
+      heading: "Why is Bond better than Trially?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond covers the whole path from chart review to consent support in one platform, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}}",
+          text: "Bond is better than Trially because it covers the whole path from chart review to consent support in one platform, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}}",
         },
         {
           type: "stats",

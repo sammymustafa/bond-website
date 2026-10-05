@@ -28,13 +28,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over Alleviate Health?",
+      heading: "Why is Bond better than Alleviate Health?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond pre-screens and schedules the leads a site already has, finds eligible patients in the site's own EHR before anyone is contacted, and carries each patient from outreach to consent support in one workflow.{{cite:bond-site}}",
+          text: "Bond is better than Alleviate Health because it pre-screens and schedules the leads a site already has, finds eligible patients in the site's own EHR before anyone is contacted, and carries each patient from outreach to consent support in one workflow.{{cite:bond-site}}",
         },
         {
           type: "stats",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CheckCircle2, Clock, ShieldCheck } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import WhyBond from "@/components/WhyBond";
 import CalEmbed from "@/components/seo/CalEmbed";
 import ContactButton from "@/components/seo/ContactButton";
 import { staticPageMetadata } from "@/content/seo";
@@ -85,6 +86,7 @@ export default function BookADemoPage() {
           </aside>
         </div>
       </div>
+      <WhyBond compact />
       <Footer />
     </main>
   );

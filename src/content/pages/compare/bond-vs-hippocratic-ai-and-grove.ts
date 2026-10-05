@@ -24,13 +24,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over Hippocratic AI and Grove AI?",
+      heading: "Why is Bond better than Hippocratic AI and Grove AI?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
         },
         {
           type: "stats",

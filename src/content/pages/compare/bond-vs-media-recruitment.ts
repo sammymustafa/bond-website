@@ -27,13 +27,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over media recruitment?",
+      heading: "Why is Bond better than media recruitment?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "One platform from ad click or chart match to consent: Bond screens your EHR, sets up Meta and Google ad campaigns for your studies, and sends every lead to the same voice and text agents for pre-screening and scheduling, with chart evidence behind every EHR match and pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
+          text: "Bond is better than media recruitment because it is one platform from ad click or chart match to consent: it screens your EHR, sets up Meta and Google ad campaigns for your studies, and sends every lead to the same voice and text agents for pre-screening and scheduling, with chart evidence behind every EHR match and pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
         },
         {
           type: "stats",

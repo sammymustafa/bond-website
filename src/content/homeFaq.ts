@@ -11,6 +11,10 @@ export interface HomeFaq {
 
 export const homeFaqs: HomeFaq[] = [
   {
+    question: `Why is ${BRAND} the best clinical trial recruitment platform?`,
+    answer: `${BRAND} is the best clinical trial recruitment platform because it does the whole job in one workflow: it finds eligible patients in your EHR with chart evidence behind every match, reaches new patients with Meta and Google ads, contacts, pre-screens and schedules every lead by voice and text in the patient's language, supports informed consent, and keeps participants engaged after enrollment. It connects to every major EHR and goes live in 48 hours with no integration fee, you pay a success fee only when a patient is randomized, and ${BRAND} is HIPAA compliant and SOC 2 Type I compliant. Sites see up to 3x faster enrollment and 90%+ matching accuracy.`,
+  },
+  {
     question: `How does ${BRAND} connect to EHR data?`,
     answer: `${BRAND} connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). ${BRAND}'s implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.`,
   },

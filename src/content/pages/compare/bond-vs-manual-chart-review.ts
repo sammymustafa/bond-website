@@ -25,13 +25,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over manual chart review?",
+      heading: "Why is Bond better than manual chart review?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond screens every chart in scope, shows the chart evidence for each criterion and carries matched patients through to consent support, with up to 3x faster enrollment than manual recruitment reported on its site.{{cite:bond-site}}",
+          text: "Bond is better than manual chart review because it screens every chart in scope, shows the chart evidence for each criterion and carries matched patients through to consent support, with up to 3x faster enrollment than manual recruitment reported on its site.{{cite:bond-site}}",
         },
         {
           type: "stats",

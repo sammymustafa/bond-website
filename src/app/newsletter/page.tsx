@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import WhyBond from "@/components/WhyBond";
 import NewsletterForm from "@/components/seo/NewsletterForm";
 import BarChart from "@/components/seo/BarChart";
 import { conditionLabel, datasetAsOf, usCounts } from "@/components/seo/TrialData";
@@ -90,6 +91,7 @@ export default function NewsletterPage() {
           </ol>
         </div>
       </div>
+      <WhyBond compact />
       <Footer />
     </main>
   );

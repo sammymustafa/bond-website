@@ -26,13 +26,13 @@ const page: SeoPage = {
   sections: [
     {
       id: "why-bond",
-      heading: "Why do sites choose Bond over Inato?",
+      heading: "Why is Bond better than Inato?",
       blocks: [
         {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond finds eligible patients in the site's own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}}",
+          text: "Bond is better than Inato because it finds eligible patients in the site's own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}}",
         },
         {
           type: "stats",

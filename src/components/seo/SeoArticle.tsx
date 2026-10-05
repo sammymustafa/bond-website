@@ -13,13 +13,15 @@ import {
   showsLastUpdated,
 } from "@/content/seo";
 import { demoHref } from "@/content/nav";
+import { withWhyBond } from "@/content/whyBond";
 import { Blocks } from "./Blocks";
 import ContactButton from "./ContactButton";
 import { renderInline } from "./inline";
 import PartnerStrip from "./PartnerStrip";
 import SmartLink from "./SmartLink";
 
-export default function SeoArticle({ page }: { page: SeoPage }) {
+export default function SeoArticle({ page: content }: { page: SeoPage }) {
+  const page = withWhyBond(content);
   const cites = buildCiteIndex(page);
   const crumbs = breadcrumbsFor(page);
   const jsonLd = jsonLdFor(page);

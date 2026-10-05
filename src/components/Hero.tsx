@@ -148,7 +148,7 @@ export default function Hero() {
             {/* Combined proof + trust in a cleaner card */}
             <div className="p-4 bg-gray-50/80 rounded-xl border border-gray-100 animate-fade-up stagger-4">
               <p className="text-sm text-gray-700 mb-3">
-                <span className="font-semibold text-gray-900">2-3x faster enrollment</span> · <span className="font-semibold text-gray-900">&gt;90% matching accuracy</span>
+                <span className="font-semibold text-gray-900">Up to 3x faster enrollment</span> · <span className="font-semibold text-gray-900">90%+ matching accuracy</span>
               </p>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
                 <a
