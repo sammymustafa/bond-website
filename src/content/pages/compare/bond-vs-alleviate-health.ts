@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj";
 
@@ -34,7 +35,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Alleviate Health because it pre-screens and schedules the leads a site already has, finds eligible patients in the site's own EHR before anyone is contacted, and carries each patient from outreach to consent support in one workflow.{{cite:bond-site}}",
+          text: "Bond is better than Alleviate Health because it pre-screens and schedules the leads a site already has, finds eligible patients in the site's own EHR before anyone is contacted, and carries each patient from outreach to consent support in one workflow.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -48,12 +49,12 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Eligible patients from the site's own EHR.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and is a [CRIO Certified Partner](/integrations/crio). It screens each chart against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, and ranks matches with the evidence behind them before anyone is contacted.{{cite:bond-site,bond-product}} Bond's August 2026 technical report, a preprint available on request, reports 0.9312 micro F1 on the held-out n2c2 2018 cohort-selection benchmark.{{cite:bond-whitepaper}}",
+            ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Consent support in the same workflow.** EHR screening, patient outreach and consent tracking run in one workflow, with complete visibility from first match to signed consent. Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support until close-out.** After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             `**Security you can inspect.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} It signs BAAs, supports SSO and audit logging, and publishes a [Trust Center](${TRUST_CENTER}) that lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-site,bond-trust-center}}`,
             "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
-            "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -78,7 +79,7 @@ const page: SeoPage = {
           rows: [
             [
               "Where patients come from",
-              "The site's own EHR: Bond screens 10,000+ charts per hour against each protocol's inclusion and exclusion criteria and ranks the matches, so chart criteria are checked before anyone is contacted. It also works any lead list the site already has, such as ad leads, referrals or registry contacts,{{cite:bond-site}} and Bond sets up Meta and Google ad campaigns for your studies, with those leads pre-screened by the same agents.{{cite:bond-product}}",
+              "The site's own EHR: Bond screens 10,000+ charts per hour against each protocol's inclusion and exclusion criteria and ranks the matches, so chart criteria are checked before anyone is contacted. It also works any lead list the site already has, such as ad leads, referrals or registry contacts,{{cite:bond-site}} and Bond creates and runs Meta and Google ad campaigns for your studies, with every ad lead contacted immediately, followed up until they respond and pre-screened by the same agents.{{cite:bond-product}}",
               "A site's lead sources, such as new Facebook leads (2026). EHR-based patient identification: not publicly documented (September 2026).{{cite:alleviate-home-2026}}",
             ],
             [
@@ -210,7 +211,7 @@ const page: SeoPage = {
     },
     {
       q: "Can Bond work the leads we already have?",
-      a: "Yes. Bond's voice and SMS/text agents can run outreach, pre-screening and scheduling on a list the site already has, such as ad leads, referrals or registry contacts. Full EHR integration typically takes 48 hours.{{cite:bond-site}} Once it is live, the voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation.{{cite:bond-product}} See [Engage](/engage). Bond can also generate new leads: it sets up Meta and Google ad campaigns for your studies, and those leads flow into the same pre-screening and scheduling.{{cite:bond-product}}",
+      a: "Yes. Bond's voice and SMS/text agents can run outreach, pre-screening and scheduling on a list the site already has, such as ad leads, referrals or registry contacts. Full EHR integration typically takes 48 hours.{{cite:bond-site}} Once it is live, the voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation.{{cite:bond-product}} See [Engage](/engage). Bond can also generate new leads: it creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately, keeps following up until they respond, and pre-screens and books them for visits.{{cite:bond-product}}",
     },
     {
       q: "How does pricing compare?",

@@ -22,7 +22,7 @@ export interface NavMenu {
 
 export const productLinks: NavItem[] = [
   { name: "Identify", href: "/identify", description: "LLM-based EHR screening" },
-  { name: "Engage", href: "/engage", description: "Meta and Google ads, voice and SMS outreach" },
+  { name: "Engage", href: "/engage", description: "Meta and Google ads, instant outreach and follow-up" },
   { name: "Consent", href: "/consent", description: "AI-powered informed consent support" },
   { name: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step" },
   { name: "Integrations", href: "/integrations", description: "EHRs, CTMS and eRegulatory" },

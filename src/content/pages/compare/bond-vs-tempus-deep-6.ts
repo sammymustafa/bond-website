@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare/bond-vs-tempus-deep-6",
@@ -31,7 +32,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "For sites running their own studies in any therapeutic area, Bond is better than Tempus and Deep 6 AI because it is one product that finds eligible patients in the EHR, contacts and schedules them by voice and text, and supports consent, with a success fee paid per randomized patient.{{cite:bond-site,bond-product}}",
+          text: "For sites running their own studies in any therapeutic area, Bond is better than Tempus and Deep 6 AI because it is one product that finds eligible patients in the EHR, contacts and schedules them by voice and text, and supports consent, with a success fee paid per randomized patient.{{cite:bond-site,bond-product}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -45,12 +46,12 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**One product from chart to consent.** Bond automates EHR screening, patient outreach and consent tracking in one workflow, with \"no data silos, no manual handoffs, and complete visibility from first match to signed consent.\"{{cite:bond-site}} In Deep 6 AI's published workflow, matches go to site staff to validate and track, and in TIME's 2024 workflow a Tempus nurse reviewed matches before sending them to sites.{{cite:deep6-life-sciences-2023,tempus-time-asco-2025}}",
+            ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak the patient's language, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}} Bond's site cites a 3x contact rate.{{cite:bond-site}}",
             "**Consent support for patients.** Plain-language explanations, patient Q&A and escalation to staff, with checks on the patient's understanding of key points and an auditable record for the site. Bond's site cites 90%+ completion for consent support. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
             "**Any study, any site.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Bond serves research sites, physician groups, FQHCs, site networks, CROs and sponsors.{{cite:bond-site}}",
             "**No integration fee.** A volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
-            "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
         },
         ...testimonialBlocks(),

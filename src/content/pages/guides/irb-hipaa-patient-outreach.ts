@@ -78,7 +78,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "FDA treats advertising for study subjects as the start of the informed consent and subject selection process, and expects the IRB to review both recruitment content and its mode of communication.{{cite:fda-recruiting}} ICH E6(R3) says the investigator should hold documented IRB approval of recruitment procedures before the trial starts.{{cite:ich-e6r3}} If Bond sets up Meta or Google ads for a study, the ad copy and landing page need IRB review like any other recruitment material.{{cite:fda-recruiting,bond-product}}",
+          text: "FDA treats advertising for study subjects as the start of the informed consent and subject selection process, and expects the IRB to review both recruitment content and its mode of communication.{{cite:fda-recruiting}} ICH E6(R3) says the investigator should hold documented IRB approval of recruitment procedures before the trial starts.{{cite:ich-e6r3}} If Bond creates Meta or Google ads for a study, the ad copy and landing page need IRB review like any other recruitment material.{{cite:fda-recruiting,bond-product}}",
         },
         {
           type: "p",

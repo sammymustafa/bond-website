@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare/bond-vs-power",
@@ -32,7 +33,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Power because it finds eligible patients among the people a site already treats, in its own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}}",
+          text: "Bond is better than Power because it finds eligible patients among the people a site already treats, in its own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -46,12 +47,12 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**The patients you already treat.** Bond connects to the site's own EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and screens every chart in scope against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, with the chart evidence behind each criterion.{{cite:bond-site,bond-product}} Power's sponsor program matches patients from its own opted-in community, who share their medical records with Power.{{cite:power-sponsors-2026}}",
+            ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. Bond's site cites 90%+ completion, and the site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Patient-facing consent support is not publicly documented in Power's materials (September 2026).",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**Any study, any therapeutic area.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Power's sponsor page focuses on Phase 2/3 CNS and I&I trials.{{cite:power-sponsors-2026}}",
             "**Live in 48 hours, with no integration fee.** Bond's team handles the EHR integration end to end, typically in 48 hours, and Bond is a [CRIO Certified Partner](/integrations/crio) with direct integrations with CTMS and calendars. Pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product,bond-acrp-talk}}",
-            "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -76,7 +77,7 @@ const page: SeoPage = {
           rows: [
             [
               "Where patients come from",
-              "The site's own EHR, screened against each protocol, plus any list the site already has, such as ad leads, referrals or registry contacts.{{cite:bond-site}} Bond also sets up Meta and Google ad campaigns for your studies, with those leads pre-screened by the same agents.{{cite:bond-product}}",
+              "The site's own EHR, screened against each protocol, plus any list the site already has, such as ad leads, referrals or registry contacts.{{cite:bond-site}} Bond also creates and runs Meta and Google ad campaigns for your studies, with every ad lead contacted immediately, followed up until they respond and pre-screened by the same agents.{{cite:bond-product}}",
               "A community of patients who have opted in to learn about clinical trials and shared their medical records with Power, plus a public trial search site (2026).{{cite:power-sponsors-2026,power-home-2026}}",
             ],
             [
@@ -221,7 +222,7 @@ const page: SeoPage = {
     },
     {
       q: "Where do Power's patients come from?",
-      a: "Power's sponsor page describes a community of patients who have opted in to learn about clinical trials and shared their medical records with Power, and its homepage lets patients browse trials by condition, location and drug type.{{cite:power-sponsors-2026,power-home-2026}} Bond starts with the patients a site already treats, in its own EHR, and sets up Meta and Google ad campaigns when a study needs patients beyond the site's records.{{cite:bond-site,bond-product}}",
+      a: "Power's sponsor page describes a community of patients who have opted in to learn about clinical trials and shared their medical records with Power, and its homepage lets patients browse trials by condition, location and drug type.{{cite:power-sponsors-2026,power-home-2026}} Bond starts with the patients a site already treats, in its own EHR, and creates and runs Meta and Google ad campaigns when a study needs patients beyond the site's records, contacting every ad lead immediately and following up until they respond.{{cite:bond-site,bond-product}}",
     },
     {
       q: "Does Power support informed consent?",

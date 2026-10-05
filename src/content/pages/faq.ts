@@ -106,11 +106,11 @@ const page: SeoPage = {
     },
     {
       q: "Can Bond Health run Meta and Google ads for our studies?",
-      a: "Yes. Bond Health sets up Meta and Google ad campaigns for your studies, and leads from those ads flow straight into Bond's voice and SMS/text agents for pre-screening and scheduling, alongside the patients Bond finds in your EHR.{{cite:bond-product}} Like any recruitment material, ad copy needs IRB review before it runs; FDA's guidance on recruiting study subjects asks IRBs to review advertising.{{cite:fda-recruiting}} See [Engage](/engage).",
+      a: "Yes. Bond Health creates and runs Meta and Google ad campaigns for your studies. Bond's voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients Bond finds in your EHR.{{cite:bond-product}} Like any recruitment material, ad copy needs IRB review before it runs; FDA's guidance on recruiting study subjects asks IRBs to review advertising.{{cite:fda-recruiting}} See [Engage](/engage).",
     },
     {
       q: "What does Bond do?",
-      a: "Bond runs three stages in one workflow. [Identify](/identify) screens EHR records against a study's inclusion and exclusion criteria, [Engage](/engage) contacts and pre-screens patients by voice and text and books visits, and [Consent](/consent) helps patients understand the consent form before the site obtains consent. A dashboard and audit trail cover all three for sites, CROs and sponsors.{{cite:bond-site}} When a study needs patients beyond your records, Bond also sets up Meta and Google ad campaigns and runs those leads through the same pre-screening.{{cite:bond-product}}",
+      a: "Bond runs three stages in one workflow. [Identify](/identify) screens EHR records against a study's inclusion and exclusion criteria, [Engage](/engage) contacts and pre-screens patients by voice and text and books visits, and [Consent](/consent) helps patients understand the consent form before the site obtains consent. A dashboard and audit trail cover all three for sites, CROs and sponsors.{{cite:bond-site}} When a study needs patients beyond your records, Bond also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
     },
     {
       q: "What parts of the chart does Bond read?",

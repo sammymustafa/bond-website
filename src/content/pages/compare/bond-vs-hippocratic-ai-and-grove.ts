@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare/bond-vs-hippocratic-ai-and-grove",
@@ -30,7 +31,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent. Bond also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -44,12 +45,12 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Patients come from your own charts.** Bond screens the site's EHR against each study's criteria before anyone is contacted, reading clinical notes, prescriptions and lab results at more than 10,000 charts per hour, along with imaging data and other unstructured documents.{{cite:bond-site,bond-product}}",
+            ADS_BULLET,
             "**Every match shows its evidence.** Coordinators review ranked matches with the note, lab or medication behind each criterion decision, and Bond reports 50%+ less chart review and fewer screen failures.{{cite:bond-site}}",
             "**Calls start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}}",
             "**One platform from chart to consent and beyond.** EHR screening, outreach, scheduling and consent support run in one workflow, with no data silos or manual handoffs from first match to signed consent.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
             "**Connected to the systems sites run.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7, and is a CRIO Certified Partner.{{cite:bond-site,bond-product}}",
             "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
-            "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -70,7 +71,7 @@ const page: SeoPage = {
           rows: [
             [
               "Where patients come from",
-              "Screens the site's own EHR, including clinical notes, against each study's criteria before anyone is contacted, and ranks the matches.{{cite:bond-site}} Also sets up Meta and Google ad campaigns for your studies, and pre-screens those leads with the same agents.{{cite:bond-product}}",
+              "Screens the site's own EHR, including clinical notes, against each study's criteria before anyone is contacted, and ranks the matches.{{cite:bond-site}} Also creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately, follows up until they respond, and pre-screens and books them with the same agents.{{cite:bond-product}}",
               "Calls candidates a feasibility model surfaces and follows up on referrals, registry hits and responses to ads and campaigns. Says its agents can pull a cohort from an EHR or CRM. Chart screening against a trial's criteria: not publicly documented (September 2026).{{cite:hippo-trial-enrollment,medcity-grove-2026,hippo-agents-call}}",
             ],
             [

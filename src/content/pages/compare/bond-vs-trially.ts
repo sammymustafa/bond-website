@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj";
 
@@ -33,7 +34,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Trially because it covers the whole path from chart review to consent support in one platform, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}}",
+          text: "Bond is better than Trially because it covers the whole path from chart review to consent support in one platform, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -47,11 +48,11 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**One workflow from chart to consent.** Bond screens the EHR, runs voice and SMS outreach and supports informed consent in one platform, with a real-time dashboard and audit trail from first match to signed consent. Its [Consent](/consent) support explains the consent form in plain language, answers patient questions and escalates to staff, while the site and PI obtain consent.{{cite:bond-site}} Informed consent support is not publicly documented in Trially's materials (September 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
+            ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call.{{cite:bond-product}} Patients are told AI is used and can reach a person at any time, by live transfer to a coordinator or a callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee.{{cite:bond-site,bond-product}} Trially described a monthly subscription, varying with site size and integration needs, in a March 2025 blog post.{{cite:trially-crio-webinar}} See [pricing](/pricing).",
             "**A method you can check.** Bond's matching method is written up in a technical report with results on public benchmarks, including 0.9312 micro F1 on the held-out n2c2 2018 cohort-selection task. The report is an August 2026 preprint, available on request.{{cite:bond-whitepaper}}",
-            "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
         },
         ...testimonialBlocks(),

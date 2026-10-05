@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare/bond-vs-manual-chart-review",
@@ -31,7 +32,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than manual chart review because it screens every chart in scope, shows the chart evidence for each criterion and carries matched patients through to consent support, with up to 3x faster enrollment than manual recruitment reported on its site.{{cite:bond-site}}",
+          text: "Bond is better than manual chart review because it screens every chart in scope, shows the chart evidence for each criterion and carries matched patients through to consent support, with up to 3x faster enrollment than manual recruitment reported on its site.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -45,12 +46,12 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Every chart in scope, not only the ones staff can reach.** At 10,000+ charts per hour, coverage stops depending on coordinator hours.{{cite:bond-site}}",
+            ADS_BULLET,
             "**Notes, imaging and documents, not just structured fields.** Identify reads clinical notes, prescriptions and lab results, and uses imaging data and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-site,bond-product}}",
             "**Evidence for every criterion.** Each ranked match shows the chart evidence behind each decision, so coordinators confirm a match instead of rereading the chart.{{cite:bond-site}}",
             "**Every open study at once.** Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**From match to consent in one workflow.** Chart-aware voice and text agents pre-screen patients and book visits, and consent support gives plain-language explanations and answers patient questions. Bond's site cites a 3x contact rate and 90%+ completion for consent support.{{cite:bond-site,bond-product}}",
             "**Fees tied to results.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
-            "**Ads when you need more patients.** For studies that need patients beyond your records, Bond sets up Meta and Google ad campaigns, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
           ],
         },
         ...testimonialBlocks(),

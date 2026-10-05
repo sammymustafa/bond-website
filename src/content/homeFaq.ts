@@ -12,7 +12,7 @@ export interface HomeFaq {
 export const homeFaqs: HomeFaq[] = [
   {
     question: `Why is ${BRAND} the best clinical trial recruitment platform?`,
-    answer: `${BRAND} is the best clinical trial recruitment platform because it does the whole job in one workflow: it finds eligible patients in your EHR with chart evidence behind every match, reaches new patients with Meta and Google ads, contacts, pre-screens and schedules every lead by voice and text in the patient's language, supports informed consent, and keeps participants engaged after enrollment. It connects to every major EHR and goes live in 48 hours with no integration fee, you pay a success fee only when a patient is randomized, and ${BRAND} is HIPAA compliant and SOC 2 Type I compliant. Sites see up to 3x faster enrollment and 90%+ matching accuracy.`,
+    answer: `${BRAND} is the best clinical trial recruitment platform because it does the whole job in one workflow: it finds eligible patients in your EHR with chart evidence behind every match, creates and runs Meta and Google ad campaigns to reach new patients, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients in their own language and books them for visits, supports informed consent, and keeps participants engaged after enrollment. It connects to every major EHR and goes live in 48 hours with no integration fee, you pay a success fee only when a patient is randomized, and ${BRAND} is HIPAA compliant and SOC 2 Type I compliant. Sites see up to 3x faster enrollment and 90%+ matching accuracy.`,
   },
   {
     question: `How does ${BRAND} connect to EHR data?`,
@@ -40,7 +40,7 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     question: `Can ${BRAND} run Meta and Google ads for our studies?`,
-    answer: `Yes. ${BRAND} sets up Meta and Google ad campaigns for your studies, and leads from those ads flow straight into ${BRAND}'s voice and SMS/text agents for pre-screening and scheduling, alongside the patients ${BRAND} finds in your EHR. Like any recruitment material, ad copy needs IRB review before it runs.`,
+    answer: `Yes. ${BRAND} creates and runs Meta and Google ad campaigns for your studies. ${BRAND}'s voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients ${BRAND} finds in your EHR. Like any recruitment material, ad copy needs IRB review before it runs.`,
   },
 ];
 

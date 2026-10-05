@@ -214,7 +214,7 @@ const page: SeoPage = {
     },
     {
       q: "What screen failure rate should a dermatology site expect?",
-      a: "Published data is thin. In the dupilumab SOLO 1 and SOLO 2 trials (2014 to 2016), 246 of 917 and 254 of 962 screened patients were not randomized, the closest registry proxy for screen failure.{{cite:solo-1,solo-2}} A single-center Danish actinic keratosis trial that recruited through social media reported a 33.3% in-clinic screen failure rate.{{cite:ortner-2024}} Bond can set up Meta and Google ad campaigns for a study and pre-screen those leads by voice and text before a clinic visit is booked.{{cite:bond-product}}",
+      a: "Published data is thin. In the dupilumab SOLO 1 and SOLO 2 trials (2014 to 2016), 246 of 917 and 254 of 962 screened patients were not randomized, the closest registry proxy for screen failure.{{cite:solo-1,solo-2}} A single-center Danish actinic keratosis trial that recruited through social media reported a 33.3% in-clinic screen failure rate.{{cite:ortner-2024}} Bond can create and run Meta and Google ad campaigns for a study, contact every ad lead immediately, follow up until they respond, and pre-screen them by voice and text before a clinic visit is booked.{{cite:bond-product}}",
     },
     {
       q: "Does Bond decide whether a patient is eligible?",

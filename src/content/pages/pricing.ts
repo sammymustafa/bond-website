@@ -146,7 +146,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Media recruitment reaches people who are not in the site's records at all. Bond covers that path too: it sets up Meta and Google ad campaigns for your studies, and those leads go through the same pre-screening and scheduling as EHR matches.{{cite:bond-product}} The cost of media recruitment varies widely. A 2026 Tufts CSDD study of 32 studies from eight sponsors and CROs found a median centralized outreach budget of $1.33 million, and median outreach cost per patient ranging from $143 in vaccine studies to $11,392 in immunology studies.{{cite:tufts-outreach-2026}} The abstract does not say whether a patient means referred, enrolled or randomized, and the figures cover centralized outreach spend only.",
+          text: "Media recruitment reaches people who are not in the site's records at all. Bond covers that path too: it creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately, keeps following up with every lead who has not responded, and pre-screens and books those patients the same way as EHR matches.{{cite:bond-product}} The cost of media recruitment varies widely. A 2026 Tufts CSDD study of 32 studies from eight sponsors and CROs found a median centralized outreach budget of $1.33 million, and median outreach cost per patient ranging from $143 in vaccine studies to $11,392 in immunology studies.{{cite:tufts-outreach-2026}} The abstract does not say whether a patient means referred, enrolled or randomized, and the figures cover centralized outreach spend only.",
         },
         {
           type: "p",

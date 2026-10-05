@@ -18,7 +18,7 @@ const funnelStages = [
     id: "engage",
     title: "Engage",
     subtitle: "Ads, Voice & SMS/Text Outreach",
-    description: "Meta and Google ad campaigns set up for your studies, plus automated calls and SMS/text for pre-screening and scheduling",
+    description: "Meta and Google ad campaigns created for your studies, every lead called and texted immediately and followed up until they respond, plus pre-screening and scheduling",
     icon: Phone,
     color: "emerald",
     metric: "3x",

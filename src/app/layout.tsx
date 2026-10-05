@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
     template: "%s | Bond Health",
   },
-  description: "Bond Health is the best AI clinical trial recruitment platform: EHR screening, Meta and Google ads, voice and SMS agents and consent support, live in 48 hours.",
+  description: "Bond Health is the best AI trial recruitment platform: EHR screening, Meta and Google ads, instant outreach and follow-up to every lead, and consent support.",
   keywords: [
     "clinical trial patient recruitment",
     "AI patient matching",
@@ -103,7 +103,7 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns, multilingual voice and SMS/text agents that pre-screen and schedule patients, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a success fee per randomized patient, and is HIPAA compliant and SOC 2 Type I compliant.",
+      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a success fee per randomized patient, and is HIPAA compliant and SOC 2 Type I compliant.",
       slogan: "Enroll the right patients faster.",
       address: {
         "@type": "PostalAddress",
@@ -157,8 +157,9 @@ const jsonLd = {
       featureList: [
         "LLM-based EHR screening",
         "Voice and SMS/text agents for pre-screening and scheduling",
-        "Meta and Google ad campaigns set up for each study",
-        "Ad leads routed to pre-screening and scheduling",
+        "Meta and Google ad campaigns created and run for each study",
+        "Every ad lead contacted immediately by voice and SMS/text, with follow-ups until they respond",
+        "Ad leads pre-screened and booked for screening visits",
         "AI-powered informed consent",
         "Real-time dashboard and audit trail",
         "EHR integration via FHIR",
@@ -219,7 +220,7 @@ const jsonLd = {
             itemOffered: {
               "@type": "Service",
               name: "Patient Engagement",
-              description: "Meta and Google ad campaigns set up for each study, plus voice and SMS/text agents for automated outreach, pre-screening, and scheduling of EHR matches and ad leads",
+              description: "Meta and Google ad campaigns created and run for each study, with every ad lead contacted immediately and followed up until they respond, plus voice and SMS/text agents that pre-screen EHR matches and ad leads and book them for visits",
             },
           },
           {

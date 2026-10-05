@@ -1,12 +1,13 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare/bond-vs-media-recruitment",
   category: "comparison",
   title: "Media recruitment vs Bond: ads and EHR in one workflow",
   description:
-    "Bond screens your EHR and sets up Meta and Google ad campaigns, then pre-screens, schedules and supports consent in one workflow. Compare Antidote and 1nHealth.",
+    "Bond creates Meta and Google ads, contacts every lead immediately and follows up until they book, and screens your EHR too. Compare Antidote and 1nHealth.",
   keywords: [
     "Antidote alternative",
     "1nHealth alternative",
@@ -19,9 +20,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs media recruitment: Antidote and 1nHealth",
   intro:
-    "Media recruiters such as Antidote and 1nHealth find patients through digital marketing, pre-screen the people who respond and refer likely candidates to sites.{{cite:antidote-partners,antidote-sponsors,1nhealth-pharma}} Bond Health [screens the site's EHR](/identify), including clinical notes, against each protocol and sets up Meta and Google ad campaigns to reach patients beyond it; chart matches and ad leads then go to the same voice and text agents for pre-screening and scheduling, and on to informed consent support.{{cite:bond-site,bond-product}} If you want one platform from ad click or chart match to consent, rather than referrals for your staff to follow up, Bond is the stronger choice.",
+    "Media recruiters such as Antidote and 1nHealth find patients through digital marketing, pre-screen the people who respond and refer likely candidates to sites.{{cite:antidote-partners,antidote-sponsors,1nhealth-pharma}} Bond Health [screens the site's EHR](/identify), including clinical notes, against each protocol and creates and runs Meta and Google ad campaigns to reach patients beyond it. Its voice and text agents contact every ad lead immediately, keep following up with every lead who has not responded, pre-screen and book chart matches and ad leads alike, and carry them on to informed consent support.{{cite:bond-site,bond-product}} If you want one platform from ad click or chart match to consent, rather than referrals for your staff to follow up, Bond is the stronger choice.",
   summary:
-    "Why sites choose Bond's EHR screening, ad campaigns and voice and text agents over media referrals, with published cost and conversion data.",
+    "Why Bond is better than media referrals: it creates the ads, contacts every lead immediately and follows up until they book, with published cost and conversion data.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -33,7 +34,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than media recruitment because it is one platform from ad click or chart match to consent: it screens your EHR, sets up Meta and Google ad campaigns for your studies, and sends every lead to the same voice and text agents for pre-screening and scheduling, with chart evidence behind every EHR match and pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
+          text: "Bond is better than media recruitment because it carries every lead all the way to a booked visit: it creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately by voice and text, keeps following up with every lead who has not responded to maximize response rates, and pre-screens patients and books them for screening visits. It also screens your EHR, with chart evidence behind every match, and its pricing is tied to randomized patients.{{cite:bond-site,bond-product}}",
         },
         {
           type: "stats",
@@ -46,7 +47,8 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**EHR screening and ad campaigns in one platform.** Bond starts with the patients the site already treats, screening its EHR against each protocol, and sets up Meta and Google ad campaigns for your studies to reach patients beyond the site's records. Leads from those ads flow straight into Bond's voice and SMS/text agents for pre-screening and scheduling, alongside patients found in your EHR.{{cite:bond-site,bond-product}}",
+            "**EHR screening and ad campaigns in one platform.** Bond starts with the patients the site already treats, screening its EHR against each protocol, and creates and runs Meta and Google ad campaigns for your studies to reach patients beyond the site's records.{{cite:bond-site,bond-product}}",
+            ADS_BULLET,
             "**Eligibility checked in the chart first.** [Identify](/identify) reads clinical notes, prescriptions and lab results, plus imaging data and other unstructured documents, including pathology, radiology and molecular reports, and ranks each match with the evidence for every criterion, for fewer screen failures.{{cite:bond-site,bond-product}}",
             "**Agents that start from the chart.** Bond's voice agents start from what Identify found, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation, in the patient's language and with a live transfer to your coordinators when the site wants one. Bond reports a 3x contact rate.{{cite:bond-product,bond-site}}",
             "**Every open study at once.** Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
@@ -77,13 +79,13 @@ const page: SeoPage = {
           rows: [
             [
               "One workflow from chart match or ad lead to consent",
-              "EHR screening, voice and text outreach, pre-screening, scheduling and consent support in one workflow, with complete visibility from first match to signed consent. Leads from the Meta and Google ad campaigns Bond sets up flow into the same workflow.{{cite:bond-site,bond-product}}",
+              "EHR screening, voice and text outreach, pre-screening, scheduling and consent support in one workflow, with complete visibility from first match to signed consent. Bond creates and runs the Meta and Google ad campaigns, and contacts every ad lead immediately and follows up until they respond, in the same workflow.{{cite:bond-site,bond-product}}",
               "Services \"from initial outreach through to site engagement\".{{cite:antidote-sponsors}}",
               "Digital recruitment and enrollment management services.{{cite:1nhealth-overview}}",
             ],
             [
               "Where patients come from",
-              "The site's own EHR, screened by LLM against each protocol, including clinical notes, prescriptions and lab results, plus imaging data and other unstructured documents, such as pathology, radiology and molecular reports. Each patient is screened against every open study at the site, so one who screens out of one study can be matched to another ([Identify](/identify)).{{cite:bond-site,bond-product}} Beyond the site's records, Bond sets up Meta and Google ad campaigns for your studies, and their leads flow straight into the same voice and text pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
+              "The site's own EHR, screened by LLM against each protocol, including clinical notes, prescriptions and lab results, plus imaging data and other unstructured documents, such as pathology, radiology and molecular reports. Each patient is screened against every open study at the site, so one who screens out of one study can be matched to another ([Identify](/identify)).{{cite:bond-site,bond-product}} Beyond the site's records, Bond creates and runs Meta and Google ad campaigns for your studies, and every ad lead gets the same immediate voice and text outreach, follow-up, pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
               "People reached through digital marketing and a partner network; SEQSTER medical-history matching announced July 2024. Reading a site's clinical notes: not publicly documented (September 2026).{{cite:antidote-partners,antidote-seqster-2024}}",
               "Direct-to-patient digital recruitment rather than patient databases. Reading a site's clinical notes: not publicly documented (September 2026).{{cite:1nhealth-pharma}}",
             ],
@@ -95,7 +97,7 @@ const page: SeoPage = {
             ],
             [
               "Outreach and follow-up",
-              "Voice and text agents. Voice agents start from what Identify found, skip questions the chart already answers and can explain why the patient was contacted. They speak the patient's language, with mid-call switching, and transfer live to a coordinator or book a callback, as the site prefers. Bond reports a 3x contact rate ([Engage](/engage)).{{cite:bond-product,bond-site}}",
+              "Voice and text agents. Voice agents start from what Identify found, skip questions the chart already answers and can explain why the patient was contacted. They speak the patient's language, with mid-call switching, and transfer live to a coordinator or book a callback, as the site prefers. Bond reports a 3x contact rate ([Engage](/engage)). Every ad lead is contacted immediately, and the agents keep following up with every lead who has not responded until the patient answers and is booked.{{cite:bond-product,bond-site}}",
               "A contact center for patient support.{{cite:antidote-seqster-2024}}",
               "Automated SMS follow-ups and email notifications in its 1nData platform.{{cite:1nhealth-pharma,1nhealth-home}}",
             ],
@@ -150,7 +152,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Reaching patients through digital marketing.** Antidote connects patients with research through digital marketing and its partner network, and 1nHealth recruits direct to patient.{{cite:antidote-partners,1nhealth-pharma}} Bond sets up Meta and Google ad campaigns for your studies, and leads from those ads flow straight into its voice and SMS/text agents for pre-screening and scheduling, alongside patients found in your EHR. Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
+            "**Reaching patients through digital marketing.** Antidote connects patients with research through digital marketing and its partner network, and 1nHealth recruits direct to patient.{{cite:antidote-partners,1nhealth-pharma}} Bond creates and runs Meta and Google ad campaigns for your studies, and its voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside patients found in your EHR. Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**Pre-screening before the site gets involved.** Antidote says it prescreens patients before referring them, and 1nHealth describes multiple levels of pre-screening.{{cite:antidote-sponsors,1nhealth-pharma}} For patients found in your EHR, Bond checks every criterion against the chart first; its voice agents then skip questions the chart already answers and can pre-screen and book a visit in one conversation.{{cite:bond-site,bond-product}}",
             "**Patient conversations and support.** Antidote describes a contact center for patient support, and 1nHealth sends automated SMS follow-ups.{{cite:antidote-seqster-2024,1nhealth-pharma}} Bond's voice and text agents tell patients that AI is used, and patients can reach a person at any time, by live transfer to a coordinator or a callback, as the site prefers. Conversations and consent Q&A run in the patient's preferred language, including English, Spanish and Mandarin, with mid-call switching.{{cite:bond-site,bond-product}}",
             "**One place to track enrollment.** 1nHealth puts its 1nData tools in a single login.{{cite:1nhealth-pharma}} Bond's real-time dashboard and audit trail report patients matched, contacted, pre-screened, consented and randomized, along with time to enrollment and coordinator hours saved.{{cite:bond-site}}",
@@ -167,7 +169,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "In a 2023 late-life depression trial, provider referrals converted to randomization at 30.3%, against 4.3% for Facebook self-referrals.{{cite:ajgp-depression-2023}} A 2020 meta-analysis found that offline recruitment turned screened people into enrollees at a higher rate than online recruitment, and its authors suggest this could be because sites already hold health records of suitable patients.{{cite:jmir-online-2020}} Both findings favor starting from patients already known to their care team or site. Bond starts there, with the site's own EHR, and sets up Meta and Google ad campaigns to fill the gaps.{{cite:bond-site,bond-product}}",
+          text: "In a 2023 late-life depression trial, provider referrals converted to randomization at 30.3%, against 4.3% for Facebook self-referrals.{{cite:ajgp-depression-2023}} A 2020 meta-analysis found that offline recruitment turned screened people into enrollees at a higher rate than online recruitment, and its authors suggest this could be because sites already hold health records of suitable patients.{{cite:jmir-online-2020}} Both findings favor starting from patients already known to their care team or site. Bond starts there, with the site's own EHR, and creates and runs Meta and Google ad campaigns to fill the gaps.{{cite:bond-site,bond-product}}",
         },
         {
           type: "p",
@@ -214,7 +216,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "What ad cost figures leave out",
-          text: "Most of these cost figures count ad or outreach spend and leave out the staff time spent contacting and screening self-referrals. The depression trial's US$956 per enrollee covers the Facebook ads alone, not the research staff time needed to contact and screen.{{cite:ajgp-depression-2023}} With Bond, leads from the Meta and Google ad campaigns it sets up go straight to its voice and SMS/text agents, which handle outreach, pre-screening and the scheduling handoff, as they do for patients found in your EHR.{{cite:bond-product,bond-site}}",
+          text: "Most of these cost figures count ad or outreach spend and leave out the staff time spent contacting and screening self-referrals. The depression trial's US$956 per enrollee covers the Facebook ads alone, not the research staff time needed to contact and screen.{{cite:ajgp-depression-2023}} With Bond, leads from the Meta and Google ad campaigns it creates and runs go straight to its voice and SMS/text agents, which contact every lead immediately, keep following up with those who have not responded, and handle pre-screening and the scheduling handoff, as they do for patients found in your EHR.{{cite:bond-product,bond-site}}",
         },
       ],
     },
@@ -228,7 +230,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond moves that work earlier and hands much of it to its agents. Leads from the Meta and Google ad campaigns Bond sets up flow straight into its voice and SMS/text agents for pre-screening and scheduling, alongside patients found in your EHR, instead of arriving at the site as referrals.{{cite:bond-product}} Each EHR match arrives with its chart evidence, and Bond's voice agents can pre-screen and book a visit in one conversation, with a human callback whenever a patient asks for one.{{cite:bond-site,bond-product}} An SCRS article notes that coordinators already juggle upwards of 22 logins for a single study; Bond puts EHR screening, patient outreach and consent tracking in one workflow instead of three vendors.{{cite:scrs-landscape-2025,bond-site}}",
+          text: "Bond moves that work earlier and hands much of it to its agents. Bond's voice and SMS/text agents contact every lead from the Meta and Google ad campaigns Bond creates immediately, keep following up with every lead who has not responded, and pre-screen and schedule them alongside patients found in your EHR, instead of the leads arriving at the site as referrals.{{cite:bond-product}} Each EHR match arrives with its chart evidence, and Bond's voice agents can pre-screen and book a visit in one conversation, with a human callback whenever a patient asks for one.{{cite:bond-site,bond-product}} An SCRS article notes that coordinators already juggle upwards of 22 logins for a single study; Bond puts EHR screening, patient outreach and consent tracking in one workflow instead of three vendors.{{cite:scrs-landscape-2025,bond-site}}",
         },
         {
           type: "p",
@@ -242,7 +244,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Some studies need patients outside the site's records, for example in a rare disease, where patients and caregivers seek out studies online, or where a site has no patients for the indication.{{cite:scrs-landscape-2025}} Bond sets up Meta and Google ad campaigns for those studies itself, and leads from those ads flow straight into its voice and SMS/text agents for pre-screening and scheduling, alongside patients found in your EHR.{{cite:bond-product}} Like any recruitment material, ad copy needs IRB review before it runs.{{cite:fda-recruiting-1998}} If you already have leads from a media vendor, a pilot can run outreach, pre-screening and scheduling on that list too.{{cite:bond-site}}",
+          text: "Some studies need patients outside the site's records, for example in a rare disease, where patients and caregivers seek out studies online, or where a site has no patients for the indication.{{cite:scrs-landscape-2025}} Bond creates and runs Meta and Google ad campaigns for those studies itself, and its voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside patients found in your EHR.{{cite:bond-product}} Like any recruitment material, ad copy needs IRB review before it runs.{{cite:fda-recruiting-1998}} If you already have leads from a media vendor, a pilot can run outreach, pre-screening and scheduling on that list too.{{cite:bond-site}}",
         },
       ],
     },
@@ -299,11 +301,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a good alternative to Antidote or 1nHealth?",
-      a: "Yes. Bond gives a site one platform from ad click or chart match to consent. It finds eligible patients in the site's EHR, including clinical notes, and sets up Meta and Google ad campaigns for your studies; its voice and text agents then pre-screen and schedule patients from both, and Bond supports informed consent, with pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
+      a: "Yes. Bond gives a site one platform from ad click or chart match to consent. It finds eligible patients in the site's EHR, including clinical notes, and creates and runs Meta and Google ad campaigns for your studies; its voice and text agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule patients from both, and Bond supports informed consent, with pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
     },
     {
       q: "Does Bond run ad campaigns?",
-      a: "Yes. Bond sets up Meta and Google ad campaigns for your studies, and leads from those ads flow straight into Bond's voice and SMS/text agents for pre-screening and scheduling, alongside patients found in your EHR.{{cite:bond-product}} Like any recruitment material, ad copy needs IRB review before it runs: FDA treats recruitment ads as the start of informed consent and expects the IRB to review and approve them.{{cite:fda-recruiting-1998}}",
+      a: "Yes. Bond creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside patients found in your EHR.{{cite:bond-product}} Like any recruitment material, ad copy needs IRB review before it runs: FDA treats recruitment ads as the start of informed consent and expects the IRB to review and approve them.{{cite:fda-recruiting-1998}}",
     },
     {
       q: "Can Bond pre-screen leads from our media vendor?",
