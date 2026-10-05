@@ -211,7 +211,7 @@ export const glossary: GlossaryTerm[] = [
       },
       {
         type: "p",
-        text: "Practical note: eConsent changes how information is delivered, not who is responsible. The consent process is still conducted by the investigator or site staff the investigator delegates.{{cite:ich-e6r3}} [Consent](/consent) is Bond's comprehension support: plain-language explanations and patient Q&A, with escalation to staff, while the site obtains consent.",
+        text: "Practical note: eConsent changes how information is delivered, not who is responsible. The consent process is still conducted by the investigator or site staff the investigator delegates.{{cite:ich-e6r3}} Bond's [consent support](/consent) is comprehension support: plain-language explanations and patient Q&A, with escalation to staff, while the site obtains consent.",
       },
     ],
     sources: [

@@ -7,7 +7,7 @@ const page: SeoPage = {
   category: "comparison",
   title: "Power clinical trials alternative: Bond Health vs Power",
   description:
-    "Bond finds eligible patients in your own EHR, then calls, texts, pre-screens and schedules them and supports consent. See how it compares with Power.",
+    "Bond finds eligible patients in your own EHR, then calls, texts, pre-screens and books them for visits. See how it compares with Power.",
   keywords: [
     "Power clinical trials alternative",
     "withpower alternative",
@@ -19,9 +19,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Power",
   intro:
-    "Power runs a clinical trial search site and a community of patients who have opted in to hear about trials. It checks their eligibility against the medical records they share, refers matched patients to sites, and describes calls, texts, AI voice agents and appointment booking along the way.{{cite:power-home-2026,power-sponsors-2026,power-grow-2026}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, supports informed consent and keeps participants engaged after enrollment, with chart evidence behind every match.{{cite:bond-site,bond-product}} For a site that wants to enroll the patients it already treats, with one platform from chart to consent, Bond is the stronger choice.",
+    "Power runs a clinical trial search site and a community of patients who have opted in to hear about trials. It checks their eligibility against the medical records they share, refers matched patients to sites, and describes calls, texts, AI voice agents and appointment booking along the way.{{cite:power-home-2026,power-sponsors-2026,power-grow-2026}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, supports informed consent and keeps participants engaged after enrollment, with chart evidence behind every match.{{cite:bond-site,bond-product}} For a site that wants to enroll the patients it already treats, with one platform from chart to booked study visit, Bond is the stronger choice.",
   summary:
-    "Why sites choose Bond over Power: the site's own EHR, chart-aware outreach, consent support, support after enrollment and no integration fee.",
+    "Why Bond is better than Power: the site's own EHR, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
   lastUpdated: "2026-09-29",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -33,14 +33,14 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Power because it finds eligible patients among the people a site already treats, in its own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+          text: "Bond is better than Power because it finds eligible patients among the people a site already treats, in its own EHR, then contacts, pre-screens and books them for study visits by voice and text in one workflow, with chart evidence behind every match and consent support after that.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
           items: [
             { value: "10,000+", label: "charts screened per hour against each protocol's criteria", cite: "bond-site" },
             { value: "48 hours", label: "typical time to go live with full EHR integration, with no integration fee", cite: "bond-site" },
-            { value: "90%+", label: "completion rate with Bond's informed consent support", cite: "bond-site" },
+            { value: "1 call", label: "to pre-screen a patient and book the screening visit", cite: "bond-product" },
           ],
         },
         {
@@ -49,7 +49,7 @@ const page: SeoPage = {
             "**The patients you already treat.** Bond connects to the site's own EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and screens every chart in scope against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, with the chart evidence behind each criterion.{{cite:bond-site,bond-product}} Power's sponsor program matches patients from its own opted-in community, who share their medical records with Power.{{cite:power-sponsors-2026}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
-            "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. Bond's site cites 90%+ completion, and the site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Patient-facing consent support is not publicly documented in Power's materials (September 2026).",
+            "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Patient-facing consent support is not publicly documented in Power's materials (September 2026).",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**Any study, any therapeutic area.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Power's sponsor page focuses on Phase 2/3 CNS and I&I trials.{{cite:power-sponsors-2026}}",
             "**Live in 48 hours, with no integration fee.** Bond's team handles the EHR integration end to end, typically in 48 hours, and Bond is a [CRIO Certified Partner](/integrations/crio) with direct integrations with CTMS and calendars. Pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product,bond-acrp-talk}}",
@@ -58,7 +58,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -97,7 +97,7 @@ const page: SeoPage = {
             ],
             [
               "Informed consent",
-              "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points, keeps an auditable record and runs in the patient's preferred language. Bond's site cites 90%+ completion. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+              "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points, keeps an auditable record and runs in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
               "Patient-facing consent support: not publicly documented (September 2026).",
             ],
             [
@@ -226,7 +226,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Power support informed consent?",
-      a: "Patient-facing consent support is not publicly documented in Power's materials as of September 2026, so ask Power directly. Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. Bond's site cites 90%+ completion, and the site and PI obtain consent.{{cite:bond-site,bond-product}}",
+      a: "Patient-facing consent support is not publicly documented in Power's materials as of September 2026, so ask Power directly. Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
     },
     {
       q: "How does pricing compare?",

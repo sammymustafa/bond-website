@@ -20,7 +20,7 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs media recruitment: Antidote and 1nHealth",
   intro:
-    "Media recruiters such as Antidote and 1nHealth find patients through digital marketing, pre-screen the people who respond and refer likely candidates to sites.{{cite:antidote-partners,antidote-sponsors,1nhealth-pharma}} Bond Health [screens the site's EHR](/identify), including clinical notes, against each protocol and creates and runs Meta and Google ad campaigns to reach patients beyond it. Its voice and text agents contact every ad lead immediately, keep following up with every lead who has not responded, pre-screen and book chart matches and ad leads alike, and carry them on to informed consent support.{{cite:bond-site,bond-product}} If you want one platform from ad click or chart match to consent, rather than referrals for your staff to follow up, Bond is the stronger choice.",
+    "Media recruiters such as Antidote and 1nHealth find patients through digital marketing, pre-screen the people who respond and refer likely candidates to sites.{{cite:antidote-partners,antidote-sponsors,1nhealth-pharma}} Bond Health [screens the site's EHR](/identify), including clinical notes, against each protocol and creates and runs Meta and Google ad campaigns to reach patients beyond it. Its voice and text agents contact every ad lead immediately, keep following up with every lead who has not responded, pre-screen and book chart matches and ad leads alike, and carry them on to informed consent support.{{cite:bond-site,bond-product}} If you want one platform from ad click or chart match to a booked study visit, rather than referrals for your staff to follow up, Bond is the stronger choice.",
   summary:
     "Why Bond is better than media referrals: it creates the ads, contacts every lead immediately and follows up until they book, with published cost and conversion data.",
   lastUpdated: "2026-09-24",
@@ -52,7 +52,7 @@ const page: SeoPage = {
             "**Eligibility checked in the chart first.** [Identify](/identify) reads clinical notes, prescriptions and lab results, plus imaging data and other unstructured documents, including pathology, radiology and molecular reports, and ranks each match with the evidence for every criterion, for fewer screen failures.{{cite:bond-site,bond-product}}",
             "**Agents that start from the chart.** Bond's voice agents start from what Identify found, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation, in the patient's language and with a live transfer to your coordinators when the site wants one. Bond reports a 3x contact rate.{{cite:bond-product,bond-site}}",
             "**Every open study at once.** Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
-            "**Consent support in the same workflow.** Plain-language explanations, patient Q&A and staff escalation, with 90%+ completion reported for consent support. The site and PI obtain consent ([Consent](/consent)).{{cite:bond-site}}",
+            "**Consent support in the same workflow.** Plain-language explanations, patient Q&A and staff escalation. The site and PI obtain consent ([Consent](/consent)).{{cite:bond-site}}",
             "**Support until close-out.** After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**No integration fee.** A volume-based platform fee plus a success fee per randomized patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
           ],
@@ -60,7 +60,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -78,8 +78,8 @@ const page: SeoPage = {
           columns: ["Capability", "Bond Health", "Antidote", "1nHealth"],
           rows: [
             [
-              "One workflow from chart match or ad lead to consent",
-              "EHR screening, voice and text outreach, pre-screening, scheduling and consent support in one workflow, with complete visibility from first match to signed consent. Bond creates and runs the Meta and Google ad campaigns, and contacts every ad lead immediately and follows up until they respond, in the same workflow.{{cite:bond-site,bond-product}}",
+              "One workflow from chart match or ad lead to booked visit and consent",
+              "EHR screening, voice and text outreach, pre-screening, scheduling and consent support in one workflow, with complete visibility from first match to booked visit and signed consent. Bond creates and runs the Meta and Google ad campaigns, and contacts every ad lead immediately and follows up until they respond, in the same workflow.{{cite:bond-site,bond-product}}",
               "Services \"from initial outreach through to site engagement\".{{cite:antidote-sponsors}}",
               "Digital recruitment and enrollment management services.{{cite:1nhealth-overview}}",
             ],
@@ -109,7 +109,7 @@ const page: SeoPage = {
             ],
             [
               "Informed consent",
-              "AI-powered consent support: plain-language explanations, patient Q&A, checks on understanding of key points and staff escalation, with 90%+ completion and an auditable record for the site. The site and PI obtain consent ([Consent](/consent)).{{cite:bond-site,bond-product}}",
+              "AI-powered consent support: plain-language explanations, patient Q&A, checks on understanding of key points and staff escalation, with an auditable record for the site. The site and PI obtain consent ([Consent](/consent)).{{cite:bond-site,bond-product}}",
               "Not publicly documented (September 2026).{{cite:antidote-sponsors}}",
               "Not publicly documented (September 2026).{{cite:1nhealth-home}}",
             ],
@@ -301,7 +301,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a good alternative to Antidote or 1nHealth?",
-      a: "Yes. Bond gives a site one platform from ad click or chart match to consent. It finds eligible patients in the site's EHR, including clinical notes, and creates and runs Meta and Google ad campaigns for your studies; its voice and text agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule patients from both, and Bond supports informed consent, with pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
+      a: "Yes. Bond gives a site one platform from ad click or chart match to a booked study visit. It finds eligible patients in the site's EHR, including clinical notes, and creates and runs Meta and Google ad campaigns for your studies; its voice and text agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule patients from both, and Bond supports informed consent, with pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
     },
     {
       q: "Does Bond run ad campaigns?",
@@ -317,7 +317,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Antidote or 1nHealth support informed consent?",
-      a: "Consent support is not publicly documented for either vendor as of September 2026.{{cite:antidote-sponsors,1nhealth-home}} Bond's consent support gives patients plain-language explanations and Q&A, checks their understanding of key points and escalates to staff, with 90%+ completion; the site and PI obtain consent.{{cite:bond-site,bond-product}}",
+      a: "Consent support is not publicly documented for either vendor as of September 2026.{{cite:antidote-sponsors,1nhealth-home}} Bond's consent support gives patients plain-language explanations and Q&A, checks their understanding of key points and escalates to staff; the site and PI obtain consent.{{cite:bond-site,bond-product}}",
     },
   ],
   sources: [

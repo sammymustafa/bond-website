@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "audience",
   title: "FQHC and community health center clinical trial recruitment",
   description:
-    "How FQHCs and community health centers can offer trials to more of their patients: EHR screening, outreach, consent support, what to measure, setup and pricing.",
+    "How FQHCs and community health centers can offer trials to more of their patients: EHR screening, outreach, booked visits, what to measure, setup and pricing.",
   keywords: [
     "FQHC clinical trial recruitment",
     "community health center research",
@@ -17,7 +17,7 @@ const page: SeoPage = {
   h1: "Trial access for the patients community health centers serve",
   intro:
     "Community health centers serve many of the patients that clinical trials enroll least, yet only about a quarter of centers reported using EHR data for research in 2025.{{cite:hrsa-uds-ehr-2025}} Bond Health finds eligible patients in your EHR, contacts them and supports the consent conversation, so a small research team can offer studies to more of its patients.",
-  summary: "How Bond helps FQHCs and community sites find eligible patients, contact them and support consent with a small research team.",
+  summary: "How Bond helps FQHCs and community sites find eligible patients, contact them and book them for visits with a small research team.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
@@ -119,7 +119,11 @@ const page: SeoPage = {
               text: "[Engage](/engage) calls or texts each candidate, runs the pre-screening script your IRB approved and books the visit. Patients are told AI is used and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers. Scripts are configured per study.{{cite:bond-site,bond-product}}",
             },
             {
-              title: "Consent: the conversation before the signature",
+              title: "Book: the visit on your calendar",
+              text: "Every pre-screened patient is booked straight into the site's calendar, with visit reminders by text, voice or email, and the same agents keep supporting participants after enrollment, from transportation booking to dropout-risk alerts.{{cite:bond-site,bond-product}}",
+            },
+            {
+              title: "Consent support: the conversation before the signature",
               text: "[Consent](/consent) explains the approved form in plain language, answers questions, helps the patient understand points such as randomization, and hands anything else to staff. The investigator or delegated staff still obtain consent.{{cite:bond-site}}",
             },
             {

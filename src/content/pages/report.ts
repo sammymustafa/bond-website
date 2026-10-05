@@ -241,7 +241,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "Where Bond fits",
-          text: "Bond's [Consent](/consent) stage gives patients plain-language explanations, answers their questions and escalates to staff when a question needs a person. The site and PI still obtain consent.{{cite:bond-site}}",
+          text: "Bond's [consent support](/consent) gives patients plain-language explanations, answers their questions and escalates to staff when a question needs a person. The site and PI still obtain consent.{{cite:bond-site}}",
         },
       ],
     },

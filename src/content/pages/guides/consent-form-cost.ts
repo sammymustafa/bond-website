@@ -184,7 +184,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Question support is where [Bond Health's Consent stage](/consent) fits. Bond gives patients plain-language explanations, answers their questions, supports comprehension, and escalates to staff when a question needs a person. The site and PI still obtain consent.{{cite:bond-site}} If you add AI support to consent, describe it to your IRB. The [IRB submission language template](/templates/irb-submission-language-ai-outreach) is a starting point.",
+          text: "Question support is where [Bond Health's consent support](/consent) fits. Bond gives patients plain-language explanations, answers their questions, supports comprehension, and escalates to staff when a question needs a person. The site and PI still obtain consent.{{cite:bond-site}} If you add AI support to consent, describe it to your IRB. The [IRB submission language template](/templates/irb-submission-language-ai-outreach) is a starting point.",
         },
       ],
     },

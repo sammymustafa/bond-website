@@ -254,8 +254,8 @@ const page: SeoPage = {
       a: "Each engagement is scoped and priced individually around the two fees described on this page.{{cite:bond-site}} Scope, studies and any visit milestones are agreed in the contract.",
     },
     {
-      q: "Are screening, outreach and consent support priced separately?",
-      a: "No. EHR screening, voice and SMS outreach, consent support, the dashboard and audit trail, and dedicated support are included in every engagement.{{cite:bond-site}}",
+      q: "Are screening, outreach, booking and consent support priced separately?",
+      a: "No. EHR screening, voice and SMS outreach and scheduling, consent support, the dashboard and audit trail, and dedicated support are included in every engagement.{{cite:bond-site}}",
     },
   ],
   sources: [

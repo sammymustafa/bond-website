@@ -31,8 +31,8 @@ const page: SeoPage = {
         {
           type: "callout",
           tone: "bond",
-          title: "One platform from chart to consent",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          title: "The only vendor that covers the whole path to a booked visit",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -45,7 +45,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**No handoffs between tools.** [Identify](/identify), [Engage](/engage) and [Consent](/consent) share one dashboard and one audit trail, from first match to signed consent.{{cite:bond-site}}",
+            "**No handoffs between tools.** [Identify](/identify), [Engage](/engage) and [Consent](/consent) share one dashboard and one audit trail, from first match to booked visit and signed consent.{{cite:bond-site}}",
             ADS_BULLET,
             "**Evidence behind every match.** Each candidate comes with criterion-by-criterion rationale linked to the chart, so coordinators check evidence instead of rereading records. Identify reads clinical notes, prescriptions and lab results, and uses imaging data and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-site,bond-product}}",
             "**Agents that speak your patients' language.** Voice and text conversations run in English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to your coordinators or book a callback, whichever your site prefers.{{cite:bond-product}}",
@@ -113,7 +113,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
-    { label: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software", description: "Every vendor's coverage of identify, engage and consent." },
+    { label: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software", description: "Every vendor's coverage of identify, engage, booking and consent." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a per-randomized-patient success fee." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },

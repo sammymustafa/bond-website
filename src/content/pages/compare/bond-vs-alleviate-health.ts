@@ -7,9 +7,9 @@ const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm
 const page: SeoPage = {
   path: "/compare/bond-vs-alleviate-health",
   category: "comparison",
-  title: "Alleviate Health alternative: from EHR screening to consent",
+  title: "Alleviate Health alternative: from EHR screening to booked visits",
   description:
-    "Bond finds eligible patients in your EHR, works the leads you already have, and pre-screens, schedules and supports consent. Compare it with Alleviate Health.",
+    "Bond finds eligible patients in your EHR, works the leads you already have, and pre-screens them and books visits. Compare it with Alleviate Health.",
   keywords: [
     "Alleviate Health alternative",
     "Bond Health vs Alleviate Health",
@@ -21,9 +21,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Alleviate Health",
   intro:
-    "Alleviate Health sells human-in-the-loop AI agents that pre-screen and schedule clinical trial leads over SMS and voice.{{cite:alleviate-home-2026,alleviate-launch-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to find eligible patients, work the leads it already has and carry each patient through to consent, Bond is the stronger choice.",
+    "Alleviate Health sells human-in-the-loop AI agents that pre-screen and schedule clinical trial leads over SMS and voice.{{cite:alleviate-home-2026,alleviate-launch-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to find eligible patients, work the leads it already has and carry each patient through to a booked study visit, Bond is the stronger choice.",
   summary:
-    "Why sites choose Bond over Alleviate Health: EHR identification, chart-aware outreach, consent support, support after enrollment and no integration fee.",
+    "Why Bond is better than Alleviate Health: EHR identification, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -35,14 +35,14 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Alleviate Health because it pre-screens and schedules the leads a site already has, finds eligible patients in the site's own EHR before anyone is contacted, and carries each patient from outreach to consent support in one workflow.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+          text: "Bond is better than Alleviate Health because it pre-screens and schedules the leads a site already has, finds eligible patients in the site's own EHR before anyone is contacted, and carries each patient from outreach to a booked study visit, then consent support, in one workflow.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
           items: [
             { value: "3x", label: "Contact rate for Bond's voice and SMS/text outreach", cite: "bond-site" },
             { value: "1,000", label: "Patients pre-screened by Bond's voice agents in under 2 hours", cite: "bond-acrp-talk" },
-            { value: "90%+", label: "Completion rate with Bond's informed consent support", cite: "bond-site" },
+            { value: "1 call", label: "to pre-screen a patient and book the screening visit", cite: "bond-product" },
           ],
         },
         {
@@ -51,7 +51,7 @@ const page: SeoPage = {
             "**Eligible patients from the site's own EHR.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and is a [CRIO Certified Partner](/integrations/crio). It screens each chart against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, and ranks matches with the evidence behind them before anyone is contacted.{{cite:bond-site,bond-product}} Bond's August 2026 technical report, a preprint available on request, reports 0.9312 micro F1 on the held-out n2c2 2018 cohort-selection benchmark.{{cite:bond-whitepaper}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
-            "**Consent support in the same workflow.** EHR screening, patient outreach and consent tracking run in one workflow, with complete visibility from first match to signed consent. Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+            "**Consent support in the same workflow.** EHR screening, patient outreach and consent tracking run in one workflow, with complete visibility from first match to booked visit and signed consent. Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support until close-out.** After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             `**Security you can inspect.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} It signs BAAs, supports SSO and audit logging, and publishes a [Trust Center](${TRUST_CENTER}) that lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-site,bond-trust-center}}`,
             "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
@@ -60,7 +60,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -99,7 +99,7 @@ const page: SeoPage = {
             ],
             [
               "Informed consent",
-              "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. Bond's site cites 90%+ completion. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+              "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
               "Informed consent support: not publicly documented (September 2026).",
             ],
             [

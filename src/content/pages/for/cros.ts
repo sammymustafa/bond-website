@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "For CROs",
   h1: "One recruitment workflow and one enrollment funnel across your sites",
   intro:
-    "A CRO answers to the sponsor for enrollment at sites it usually does not run, and each of those sites finds, contacts and counts patients its own way. Bond Health runs the same workflow at every participating site: EHR screening, voice and text outreach, and consent support. It reports one enrollment funnel for all of them.",
+    "A CRO answers to the sponsor for enrollment at sites it usually does not run, and each of those sites finds, contacts and counts patients its own way. Bond Health runs the same workflow at every participating site: EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit. It reports one enrollment funnel for all of them.",
   summary: "How CROs can get chart-based feasibility counts, one recruitment workflow per site, and one enrollment funnel across a portfolio.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
@@ -89,7 +89,11 @@ const page: SeoPage = {
               text: "[Engage](/engage) runs voice and text outreach, pre-screening and scheduling, with scripts set per site and study. Patients are told AI assistance is used and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             },
             {
-              title: "Consent",
+              title: "Book",
+              text: "Every pre-screened patient is booked straight into the site's calendar, with visit reminders by text, voice or email, and the same agents keep supporting participants after enrollment, from transportation booking to dropout-risk alerts.{{cite:bond-site,bond-product}}",
+            },
+            {
+              title: "Consent support",
               text: "[Consent](/consent) support gives plain-language explanations and answers patient questions before the visit, with escalation to staff. The site and PI still obtain consent.",
             },
           ],

@@ -49,12 +49,12 @@ const patientData = [
   },
   {
     id: "#1923",
-    status: "CONSENTED",
+    status: "BOOKED",
     statusColor: "emerald",
     icon: CheckCircle2,
     a1c: "7.4%",
     details: "BMI 27.8 · Age 62 · Last visit: 1 week ago",
-    action: { icon: CheckCircle2, text: "Consent signed", color: "emerald" },
+    action: { icon: Calendar, text: "Screening visit booked", color: "emerald" },
     bgClass: "bg-emerald-50/80 border-emerald-100",
   },
   {
@@ -89,9 +89,9 @@ export default function Hero() {
   const [activePatient, setActivePatient] = useState(0);
   
   // Animated counters
-  const preScreened = useCountUp(17, 1500, 800);
-  const scheduled = useCountUp(18, 1500, 1000);
-  const consented = useCountUp(12, 1500, 1200);
+  const contacted = useCountUp(32, 1500, 800);
+  const preScreened = useCountUp(18, 1500, 1000);
+  const booked = useCountUp(12, 1500, 1200);
   const matched = useCountUp(47, 2000, 500);
   
   // Cycle through patients
@@ -122,7 +122,7 @@ export default function Hero() {
 
             {/* Single clear value prop - consolidated */}
             <p className="text-lg sm:text-xl text-gray-600 mb-8 animate-fade-up stagger-2 pr-4 leading-relaxed">
-              Automate <span className="text-gray-900 font-medium">EHR screening</span>, <span className="text-gray-900 font-medium">Meta and Google ad campaigns</span>, <span className="text-gray-900 font-medium">instant outreach and follow-up to every lead</span>, and <span className="text-gray-900 font-medium">consent tracking</span> in one workflow.
+              Automate <span className="text-gray-900 font-medium">EHR screening</span>, <span className="text-gray-900 font-medium">Meta and Google ads</span>, and <span className="text-gray-900 font-medium">instant outreach and follow-up</span>, all the way to a <span className="text-gray-900 font-medium">booked study visit</span>.
             </p>
 
             {/* CTAs - More prominent */}
@@ -287,16 +287,16 @@ export default function Hero() {
                 {/* Stats Summary with animated numbers */}
                 <div className="grid grid-cols-3 gap-3 pt-4 border-t border-gray-100">
                   <div className="text-center">
-                    <p className="text-xl font-bold text-gray-900 tabular-nums">{preScreened}</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
+                    <p className="text-xl font-bold text-gray-900 tabular-nums">{contacted}</p>
+                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Contacted</p>
                   </div>
                   <div className="text-center border-x border-gray-100">
-                    <p className="text-xl font-bold text-bond-primary tabular-nums">{scheduled}</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Scheduled</p>
+                    <p className="text-xl font-bold text-bond-primary tabular-nums">{preScreened}</p>
+                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-xl font-bold text-green-600 tabular-nums">{consented}</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Consented</p>
+                    <p className="text-xl font-bold text-green-600 tabular-nums">{booked}</p>
+                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Booked</p>
                   </div>
                 </div>
               </div>

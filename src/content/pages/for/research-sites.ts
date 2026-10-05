@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "audience",
   title: "Patient recruitment for clinical research sites",
   description:
-    "How research sites find eligible patients in their own EHR, pre-screen them by phone and text, and support consent with Bond, plus metrics, setup and pricing.",
+    "How research sites find eligible patients in their own EHR, pre-screen them by phone and text, and book them for visits with Bond, plus metrics, setup and pricing.",
   keywords: [
     "patient recruitment for clinical research sites",
     "research site enrollment",
@@ -49,7 +49,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond runs three stages as one workflow: identify, engage and consent. Decisions that need a coordinator or clinician stay with your team.{{cite:bond-site}}",
+          text: "Bond runs three stages as one workflow: identify, engage and book, with consent support after that. Decisions that need a coordinator or clinician stay with your team.{{cite:bond-site}}",
         },
         {
           type: "steps",
@@ -63,7 +63,11 @@ const page: SeoPage = {
               text: "Voice and SMS agents contact matched patients, say that AI assistance is being used, ask the questions in your approved pre-screening script, and book visits into your calendar. A patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers. See [Engage](/engage).{{cite:bond-site,bond-product}}",
             },
             {
-              title: "Consent",
+              title: "Book",
+              text: "Every pre-screened patient is booked straight into the site's calendar, with visit reminders by text, voice or email, and the same agents keep supporting participants after enrollment, from transportation booking to dropout-risk alerts.{{cite:bond-site,bond-product}}",
+            },
+            {
+              title: "Consent support",
               text: "Bond gives patients plain-language explanations of the study, answers their questions and escalates to staff when needed. The PI or delegated staff still obtains consent. See [Consent](/consent).{{cite:bond-site}}",
             },
             {
