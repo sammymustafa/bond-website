@@ -180,7 +180,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "If a study will use ads, Bond sets up the Meta and Google ad campaigns alongside the outreach configuration.{{cite:bond-product}}",
+          text: "If a study will use ads, Bond creates the Meta and Google ad campaigns alongside the outreach configuration, so the agents contact every ad lead immediately and follow up from the first day the ads run.{{cite:bond-product}}",
         },
       ],
     },

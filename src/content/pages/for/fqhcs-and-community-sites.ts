@@ -130,7 +130,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "To reach community members who are not yet your patients, Bond sets up Meta and Google ad campaigns for a study.{{cite:bond-product}} Leads from those ads flow straight into Bond's voice and text agents for pre-screening and scheduling, alongside patients found in your EHR.{{cite:bond-product}}",
+          text: "To reach community members who are not yet your patients, Bond creates and runs Meta and Google ad campaigns for a study.{{cite:bond-product}} Bond's voice and text agents contact every new ad lead immediately, keep following up with every lead who has not responded, and pre-screen and book patients for visits, alongside patients found in your EHR.{{cite:bond-product}}",
         },
         {
           type: "p",

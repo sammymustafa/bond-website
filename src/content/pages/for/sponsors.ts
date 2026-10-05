@@ -105,7 +105,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond can also set up Meta and Google ad campaigns for your study across the sites it supports.{{cite:bond-product}} Leads from those ads flow straight into the same voice and text agents that pre-screen and schedule patients found in each site's EHR.{{cite:bond-product}}",
+          text: "Bond can also create and run Meta and Google ad campaigns for your study across the sites it supports.{{cite:bond-product}} The same voice and text agents that pre-screen and schedule patients found in each site's EHR contact every new ad lead immediately and keep following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
       ],
     },

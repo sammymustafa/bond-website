@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "product",
   title: "Engage: AI voice and SMS trial pre-screening and scheduling",
   description:
-    "Bond sets up Meta and Google ads for your studies, and its voice and SMS agents pre-screen and schedule every lead and EHR match, with AI disclosure built in.",
+    "Bond creates Meta and Google ads for your studies, calls and texts every lead immediately, follows up until they respond and books them for visits.",
   keywords: [
     "AI voice agent clinical trial pre-screening",
     "SMS patient outreach clinical trials",
@@ -15,9 +15,9 @@ const page: SeoPage = {
   eyebrow: "Engage",
   h1: "Voice and SMS agents that pre-screen and schedule matched patients",
   intro:
-    "Engage is the outreach stage of Bond Health. Voice and SMS agents contact the patients a site has approved for outreach, tell them AI assistance is being used, run a pre-screening script configured for the site and study, and book a screening visit into the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}} For studies that need patients beyond the site's records, Bond also sets up Meta and Google ad campaigns, and those leads go to the same agents.{{cite:bond-product}}",
+    "Engage is the outreach stage of Bond Health. Voice and SMS agents contact the patients a site has approved for outreach, tell them AI assistance is being used, run a pre-screening script configured for the site and study, and book a screening visit into the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}} For studies that need patients beyond the site's records, Bond also creates and runs Meta and Google ad campaigns: the agents contact every ad lead immediately and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}}",
   summary:
-    "Meta and Google ad campaigns plus voice and SMS agents that pre-screen every lead on the site's script, book visits and escalate to coordinators.",
+    "Meta and Google ad campaigns plus voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -62,11 +62,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Yes. Bond sets up Meta and Google ad campaigns for your studies. Leads from those ads flow straight into Bond's voice and SMS/text agents for pre-screening and scheduling, alongside the patients Bond finds in your EHR, so every lead gets the same script, the same AI disclosure and the same handoff to your coordinators.{{cite:bond-product}}",
+          text: "Yes. Bond creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients Bond finds in your EHR, so every lead gets the same script, the same AI disclosure and the same handoff to your coordinators.{{cite:bond-product}}",
         },
         {
           type: "ul",
           items: [
+            "**Every ad lead contacted immediately, and followed up.** Leads are called and texted as soon as they respond to an ad, while their interest is highest, and the agents keep following up with every lead who has not answered, so fewer leads go cold and more patients get booked for screening visits.{{cite:bond-product}}",
             "**One workflow for every source.** EHR matches, ad leads and lists the site already has go through the same pre-screening and scheduling, then on to [Consent](/consent) support.{{cite:bond-site,bond-product}}",
             "**Chart first, ads to fill the gap.** Patients the site already treats come with a chart that [Identify](/identify) checks against the protocol before anyone is contacted. Ads reach people the site has not seen, and the agents pre-screen them before a visit is booked.{{cite:bond-product}}",
             "**IRB review first.** Like any recruitment material, ad copy and landing pages need IRB review before they run. FDA's guidance on recruiting study subjects treats advertising as the start of informed consent.{{cite:fda-recruiting}}",

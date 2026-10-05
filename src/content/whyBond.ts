@@ -14,6 +14,18 @@ import type { Block, PageCategory, Section, SeoPage, Source } from "./types";
 
 type ReasonKey = "one-platform" | "evidence" | "ehr" | "pricing" | "languages" | "retention" | "ads" | "security";
 
+/**
+ * How the site describes Bond's ad campaigns: Bond creates the ads, contacts every
+ * ad lead immediately, follows up with every lead who has not responded, and books
+ * patients for visits. Reused on the comparison, product and FAQ pages so the
+ * wording stays the same everywhere. Both cite `bond-product`.
+ */
+export const ADS_BULLET =
+  "**Every ad lead contacted immediately, and followed up until they book.** Bond creates and runs Meta and Google ad campaigns for each study. Its voice and text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients Bond finds in your EHR.{{cite:bond-product}}";
+
+export const ADS_SENTENCES =
+  "Bond creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients Bond finds in your EHR.{{cite:bond-product}}";
+
 const REASONS: Record<ReasonKey, string> = {
   "one-platform":
     "**One platform from chart to consent.** [Identify](/identify), [Engage](/engage) and [Consent](/consent) share one dashboard and one audit trail, so no patient is lost in a handoff between separate vendors.{{cite:bond-site}}",
@@ -27,13 +39,12 @@ const REASONS: Record<ReasonKey, string> = {
     "**Agents that speak your patients' language.** Voice and text conversations run in English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to your coordinators or book a callback, whichever your site prefers.{{cite:bond-product}}",
   retention:
     "**Support after enrollment.** The same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-  ads:
-    "**More patients when your records run short.** Bond sets up Meta and Google ad campaigns for the study, and those leads flow into the same pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
+  ads: ADS_BULLET,
   security:
     "**Security you can check.** Bond is HIPAA compliant and SOC 2 Type I compliant, its SOC 2 Type II and ISO 27001 audits are underway, and its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously. See [security](/security).{{cite:bond-product,bond-trust-center}}",
 };
 
-const DEFAULT_ORDER: ReasonKey[] = ["one-platform", "evidence", "ehr", "pricing", "languages", "retention", "ads", "security"];
+const DEFAULT_ORDER: ReasonKey[] = ["one-platform", "ads", "evidence", "ehr", "pricing", "languages", "retention", "security"];
 
 export const WHY_BOND_STATS = [
   { value: "Up to 3x", label: "faster enrollment than manual recruitment", cite: "bond-site" },
@@ -80,7 +91,7 @@ interface Angle {
 const ANGLES: Record<string, Angle> = {
   // Product pages
   "/identify": { lead: ["evidence", "ehr"] },
-  "/engage": { lead: ["languages", "ads", "retention"] },
+  "/engage": { lead: ["ads", "languages", "retention"] },
   "/consent": { lead: ["one-platform", "languages"] },
   "/implementation": { lead: ["ehr", "pricing"] },
   "/pricing": { lead: ["pricing", "ehr"] },
@@ -90,8 +101,8 @@ const ANGLES: Record<string, Angle> = {
   "/for/site-networks": { audience: "site networks", lead: ["one-platform", "ehr", "pricing"] },
   "/for/physician-groups": { audience: "physician groups", lead: ["ehr", "pricing", "evidence"] },
   "/for/fqhcs-and-community-sites": { audience: "FQHCs and community sites", lead: ["languages", "pricing", "ehr"] },
-  "/for/cros": { audience: "CROs", lead: ["one-platform", "retention", "ads"] },
-  "/for/sponsors": { audience: "sponsors", lead: ["one-platform", "retention", "ads"] },
+  "/for/cros": { audience: "CROs", lead: ["one-platform", "ads", "retention"] },
+  "/for/sponsors": { audience: "sponsors", lead: ["one-platform", "ads", "retention"] },
   // Therapeutic areas
   "/oncology": { audience: "oncology trials", lead: ["evidence"] },
   "/cardiology": { audience: "cardiology trials", lead: ["evidence"] },
@@ -136,7 +147,7 @@ export function whyBondHeading(audience?: string): string {
 
 export function whyBondAnswer(audience?: string): string {
   const who = audience ? ` for ${audience}` : "";
-  return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, reaches new ones with Meta and Google ads, contacts, pre-screens and schedules every lead by voice and text, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a success fee only when a patient is randomized.{{cite:bond-site,bond-product}}`;
+  return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, creates and runs Meta and Google ad campaigns to reach new ones, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients and books them for visits, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a success fee only when a patient is randomized.{{cite:bond-site,bond-product}}`;
 }
 
 /** The blocks of a "why Bond" section. `compact` drops the stats and keeps the top five reasons. */

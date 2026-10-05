@@ -22,9 +22,10 @@ const pillars = [
     icon: Phone,
     title: "Engage",
     subtitle: "Voice and SMS/text agents, plus Meta and Google ads",
-    description: "Automated outreach to EHR matches and to leads from the Meta and Google ad campaigns we set up for your studies, with pre-screen scripts and scheduling handoff",
+    description: "Meta and Google ad campaigns we create for your studies, with every ad lead called and texted immediately and followed up until they respond, plus outreach to EHR matches, pre-screen scripts and visit booking",
     outcomes: [
-      "Higher contact and show rates",
+      "Every ad lead contacted immediately",
+      "Follow-ups until patients respond and book",
       "New patients from Meta and Google ads",
       "Coordinator time saved",
     ],

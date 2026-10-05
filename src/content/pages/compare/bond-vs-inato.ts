@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { ADS_BULLET } from "../../whyBond";
 
 const page: SeoPage = {
   path: "/compare/bond-vs-inato",
@@ -32,7 +33,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Inato because it finds eligible patients in the site's own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}}",
+          text: "Bond is better than Inato because it finds eligible patients in the site's own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -46,11 +47,11 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Outreach that starts from the chart.** Bond's voice and SMS/text agents contact, pre-screen and schedule the patients [Identify](/identify) finds. They start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Bond's site cites a 3x contact rate.{{cite:bond-site,bond-product}} Voice and text outreach is not publicly documented in Inato's materials (September 2026); its eClinPro integration passes ready-to-screen patients to that CTMS to manage outreach and next steps.{{cite:inato-eclinpro-2026}}",
+            ADS_BULLET,
             "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions and escalates to staff, and it checks the patient's understanding of key points and keeps an auditable record for the site. Bond's site cites 90%+ completion, and the site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Informed consent support is not publicly documented in Inato's materials (September 2026).",
             "**Every chart, every open study.** Bond screens 10,000+ charts per hour, reading clinical notes, prescriptions and lab results, and ranks matches with the evidence behind them.{{cite:bond-site}} Identify also uses imaging data and pathology, radiology and molecular reports, and Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**Conversations in the patient's language, with a person on request.** Voice and text conversations and consent Q&A run in the patient's preferred language, including English, Spanish, Mandarin and many others, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
-            "**Ads when you need more patients.** Bond sets up Meta and Google ad campaigns for your studies, and those leads flow straight into Bond's voice and SMS/text agents for pre-screening and scheduling, alongside patients found in your EHR. Like any recruitment material, ad copy needs IRB review before it runs.{{cite:bond-product}}",
             "**Integration handled for you, priced per randomized patient.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and Bond's team handles the integration end to end. Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee, and the success fee is paid only for randomized patients. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
@@ -106,7 +107,7 @@ const page: SeoPage = {
             ],
             [
               "New patients from ads",
-              "Bond sets up Meta and Google ad campaigns for your studies, and those leads flow straight into the same agents for pre-screening and scheduling.{{cite:bond-product}}",
+              "Bond creates and runs Meta and Google ad campaigns for your studies, and the same agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule them.{{cite:bond-product}}",
               "Not publicly documented (September 2026).",
             ],
             [
