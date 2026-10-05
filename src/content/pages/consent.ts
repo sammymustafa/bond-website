@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "Product: Consent",
   h1: "Consent support that leaves the investigator in charge",
   intro:
-    "Bond Health's Consent stage helps patients understand the consent form the study's IRB already approved. It explains the form in plain language, answers questions, checks understanding of key points and hands anything it should not answer to study staff. The investigator or delegated site staff still obtain consent, on paper or through eConsent, and the form itself does not change.",
+    "Bond Health's consent support helps patients understand the consent form the study's IRB already approved. It explains the form in plain language, answers questions, checks understanding of key points and hands anything it should not answer to study staff. The investigator or delegated site staff still obtain consent, on paper or through eConsent, and the form itself does not change.",
   summary: "How Bond explains the approved consent form, answers patient questions and escalates to staff while the site obtains consent.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
@@ -27,7 +27,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Consent is the third stage of Bond's workflow. [Identify](/identify) finds candidates in the EHR, [Engage](/engage) contacts and pre-screens them, and Consent helps each patient understand the study and its consent form.{{cite:bond-site}} Bond does four things at this stage:",
+          text: "Consent support comes after the booked visit in Bond's workflow. [Identify](/identify) finds candidates in the EHR, [Engage](/engage) contacts and pre-screens them, Book puts them on the site's calendar, and consent support then helps each patient understand the study and its consent form.{{cite:bond-site}} Bond does four things here:",
         },
         {
           type: "ul",
@@ -40,7 +40,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond's site cites 90%+ completion for its consent support, with faster consent completion and fewer drop-offs as the outcomes it aims for.{{cite:bond-site}}",
+          text: "The outcomes Bond's consent support aims for are faster consent completion and fewer drop-offs.{{cite:bond-product}}",
         },
         {
           type: "callout",
@@ -125,7 +125,7 @@ const page: SeoPage = {
             ["Record", "Notes in source documents", "Bond audit trail; the site still documents consent in its own records"],
             ["Status", "Spreadsheet or CTMS entry", "Consent status in Bond's real-time dashboard"],
           ],
-          note: "Bond column: the Consent stage as Bond describes it, configured per study.{{cite:bond-site}}",
+          note: "Bond column: consent support as Bond describes it, configured per study.{{cite:bond-site}}",
         },
       ],
     },
@@ -399,7 +399,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond finds candidates in the chart and explains each match." },
-    { label: "Engage: voice and text outreach", href: "/engage", description: "Pre-screening and scheduling before the consent stage." },
+    { label: "Engage: voice and text outreach", href: "/engage", description: "Pre-screening and booking before consent support." },
     { label: "What a consent form costs", href: "/guides/consent-form-cost", description: "Drafting, IRB review, translation and amendment costs." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What the IRB and privacy rules require before contacting patients." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },

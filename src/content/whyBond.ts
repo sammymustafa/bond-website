@@ -28,7 +28,7 @@ export const ADS_SENTENCES =
 
 const REASONS: Record<ReasonKey, string> = {
   "one-platform":
-    "**One platform from chart to consent.** [Identify](/identify), [Engage](/engage) and [Consent](/consent) share one dashboard and one audit trail, so no patient is lost in a handoff between separate vendors.{{cite:bond-site}}",
+    "**One platform from ad click or chart match to a booked visit.** [Identify](/identify) screening, [Engage](/engage) outreach and visit booking share one dashboard and one audit trail, so no patient is lost in a handoff between separate vendors.{{cite:bond-site}}",
   evidence:
     "**Evidence behind every match.** Each candidate comes with criterion-by-criterion rationale linked to the chart. Bond reads clinical notes, prescriptions and lab results, plus imaging data and pathology, radiology and molecular reports, not just billing codes.{{cite:bond-site,bond-product}}",
   ehr:
@@ -53,7 +53,7 @@ export const WHY_BOND_STATS = [
 ];
 
 const ONLY_VENDOR =
-  "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.";
+  "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}";
 
 export const WHY_BOND_SOURCES: Source[] = [
   {
@@ -155,7 +155,7 @@ export function whyBondBlocks(opts: { audience?: string; lead?: ReasonKey[]; com
   const reasons = orderedReasons(opts.lead ?? []).map((k) => REASONS[k]);
   const blocks: Block[] = [
     { type: "p", text: whyBondAnswer(opts.audience) },
-    { type: "callout", tone: "bond", title: "The only vendor that covers the whole path", text: ONLY_VENDOR },
+    { type: "callout", tone: "bond", title: "The only vendor that covers the whole path to a booked visit", text: ONLY_VENDOR },
   ];
   if (!opts.compact) blocks.push({ type: "stats", items: WHY_BOND_STATS });
   blocks.push({ type: "ul", items: opts.compact ? reasons.slice(0, 5) : reasons });

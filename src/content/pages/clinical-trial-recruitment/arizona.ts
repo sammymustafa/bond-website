@@ -539,7 +539,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "All locations", href: "/clinical-trial-recruitment", description: "Registry counts and outreach rules for other states and regions." },
-    { label: "Bond for research sites", href: "/for/research-sites", description: "How screening, outreach and consent support fit a site's coordinators." },
+    { label: "Bond for research sites", href: "/for/research-sites", description: "How screening, outreach and booked visits fit a site's coordinators." },
     { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
     { label: "Oncology", href: "/oncology", description: "How Bond screens for cancer trials, Arizona's largest area by count." },
     { label: "Neurology and Alzheimer's", href: "/neurology-and-alzheimers", description: "Screening for memory and movement disorder studies." },

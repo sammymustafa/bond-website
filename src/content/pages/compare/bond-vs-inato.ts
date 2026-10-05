@@ -7,7 +7,7 @@ const page: SeoPage = {
   category: "comparison",
   title: "Inato alternative: EHR screening, outreach and consent",
   description:
-    "Bond finds eligible patients in your EHR, then contacts, pre-screens and schedules them by voice and text and supports consent. See how it compares with Inato.",
+    "Bond finds eligible patients in your EHR, then contacts, pre-screens and books them for visits by voice and text. See how it compares with Inato.",
   keywords: [
     "Inato alternative",
     "Bond Health vs Inato",
@@ -21,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Inato runs an AI-powered platform that brings trial sponsors and research sites together for early planning and site selection, and it offers sites AI patient pre-screening that reviews patient records against a trial's inclusion and exclusion criteria.{{cite:inato-home-2026,inato-ehr-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to carry each eligible patient from the chart to a booked visit and consent, Bond is the stronger choice.",
   summary:
-    "Why sites choose Bond over Inato: EHR screening plus voice and text outreach, scheduling, consent support and pricing tied to randomized patients.",
+    "Why Bond is better than Inato: EHR screening plus its own ad campaigns and voice and text outreach through to a booked visit, with pricing tied to randomized patients.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -33,14 +33,14 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Inato because it finds eligible patients in the site's own EHR, then contacts, pre-screens and schedules them by voice and text and supports informed consent in one workflow, with chart evidence behind every match.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+          text: "Bond is better than Inato because it finds eligible patients in the site's own EHR, then contacts, pre-screens and books them for study visits by voice and text in one workflow, with chart evidence behind every match and consent support after that.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
           items: [
             { value: "10,000+", label: "charts screened per hour against each protocol's criteria", cite: "bond-site" },
             { value: "3x", label: "contact rate with Bond's voice and SMS/text outreach", cite: "bond-site" },
-            { value: "90%+", label: "completion rate with Bond's informed consent support", cite: "bond-site" },
+            { value: "1 call", label: "to pre-screen a patient and book the screening visit", cite: "bond-product" },
           ],
         },
         {
@@ -48,7 +48,7 @@ const page: SeoPage = {
           items: [
             "**Outreach that starts from the chart.** Bond's voice and SMS/text agents contact, pre-screen and schedule the patients [Identify](/identify) finds. They start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Bond's site cites a 3x contact rate.{{cite:bond-site,bond-product}} Voice and text outreach is not publicly documented in Inato's materials (September 2026); its eClinPro integration passes ready-to-screen patients to that CTMS to manage outreach and next steps.{{cite:inato-eclinpro-2026}}",
             ADS_BULLET,
-            "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions and escalates to staff, and it checks the patient's understanding of key points and keeps an auditable record for the site. Bond's site cites 90%+ completion, and the site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Informed consent support is not publicly documented in Inato's materials (September 2026).",
+            "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions and escalates to staff, and it checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Informed consent support is not publicly documented in Inato's materials (September 2026).",
             "**Every chart, every open study.** Bond screens 10,000+ charts per hour, reading clinical notes, prescriptions and lab results, and ranks matches with the evidence behind them.{{cite:bond-site}} Identify also uses imaging data and pathology, radiology and molecular reports, and Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**Conversations in the patient's language, with a person on request.** Voice and text conversations and consent Q&A run in the patient's preferred language, including English, Spanish, Mandarin and many others, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
@@ -58,7 +58,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -77,7 +77,7 @@ const page: SeoPage = {
           rows: [
             [
               "What it is",
-              "One platform that automates EHR screening, patient outreach and consent tracking in one workflow, with no manual handoffs and complete visibility from first match to signed consent.{{cite:bond-site}}",
+              "One platform that automates EHR screening, patient outreach, visit booking and consent tracking in one workflow, with no manual handoffs and complete visibility from first match to booked visit and signed consent.{{cite:bond-site}}",
               "An AI-powered platform that brings sponsors and research sites together. Sponsors use it for early planning and site selection; sites use it to apply for sponsor trials and to pre-screen patients with AI (2026).{{cite:inato-home-2026,inato-sites-2026}}",
             ],
             [
@@ -97,7 +97,7 @@ const page: SeoPage = {
             ],
             [
               "Informed consent",
-              "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points, keeps an auditable record and runs in the patient's preferred language. Bond's site cites 90%+ completion. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+              "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points, keeps an auditable record and runs in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
               "Not publicly documented (September 2026).",
             ],
             [

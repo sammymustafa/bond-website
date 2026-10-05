@@ -438,7 +438,7 @@ const page: SeoPage = {
   related: [
     { label: "Recruitment by state and region", href: "/clinical-trial-recruitment", description: "Registry counts and local context for every location page." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What the IRB reviews and which HIPAA path covers recruitment contact." },
-    { label: "Bond for research sites", href: "/for/research-sites", description: "How screening, outreach and consent support fit a site's workflow." },
+    { label: "Bond for research sites", href: "/for/research-sites", description: "How screening, outreach and booked visits fit a site's workflow." },
     { label: "Oncology recruitment", href: "/oncology", description: "How Bond screens and contacts patients for cancer trials." },
     { label: "Epic integration", href: "/integrations/epic", description: "How Bond connects to Epic, which Intermountain and University of Utah Health both run." },
     { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },

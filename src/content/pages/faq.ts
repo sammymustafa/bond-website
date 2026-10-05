@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "faq",
   title: "Bond Health FAQ: AI trial recruitment, data, IRB, pricing",
   description:
-    "Answers for research sites, CROs and sponsors on how Bond Health screens EHRs, contacts patients, supports consent, protects PHI, fits IRB review and is priced.",
+    "Answers for research sites, CROs and sponsors on how Bond Health screens EHRs, runs ads, books visits, protects PHI, fits IRB review and is priced.",
   keywords: [
     "Bond Health FAQ",
     "AI clinical trial recruitment questions",
@@ -32,7 +32,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Each stage has its own page ([Identify](/identify), [Engage](/engage) and [Consent](/consent)), and so do [integrations](/integrations), [pricing](/pricing), [implementation](/implementation) and [security](/security).",
+          text: "Identify and Engage each have their own page ([Identify](/identify) and [Engage](/engage), which also covers booking), and so do [consent support](/consent), [integrations](/integrations), [pricing](/pricing), [implementation](/implementation) and [security](/security).",
         },
       ],
     },
@@ -110,7 +110,7 @@ const page: SeoPage = {
     },
     {
       q: "What does Bond do?",
-      a: "Bond runs three stages in one workflow. [Identify](/identify) screens EHR records against a study's inclusion and exclusion criteria, [Engage](/engage) contacts and pre-screens patients by voice and text and books visits, and [Consent](/consent) helps patients understand the consent form before the site obtains consent. A dashboard and audit trail cover all three for sites, CROs and sponsors.{{cite:bond-site}} When a study needs patients beyond your records, Bond also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+      a: "Bond runs three stages in one workflow. [Identify](/identify) screens EHR records against a study's inclusion and exclusion criteria, [Engage](/engage) contacts and pre-screens patients by voice and text, and Book puts every pre-screened patient on the site's calendar, with visit reminders. [Consent](/consent) support then helps patients understand the consent form before the site obtains consent. A dashboard and audit trail cover the whole path for sites, CROs and sponsors.{{cite:bond-site}} When a study needs patients beyond your records, Bond also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
     },
     {
       q: "What parts of the chart does Bond read?",

@@ -1,6 +1,6 @@
 "use client";
 
-import { Database, FileText, Brain, Search, Phone, FileCheck, ArrowRight, Calendar } from "lucide-react";
+import { Database, FileText, Brain, Search, Phone, ArrowRight, Calendar } from "lucide-react";
 
 export default function Moat() {
   return (
@@ -173,7 +173,7 @@ export default function Moat() {
                 {[
                   { icon: Search, label: "Patient Matching", fullLabel: "Patient-to-Trial Matching", color: "text-blue-400" },
                   { icon: Phone, label: "Pre-screening", fullLabel: "Conversational Pre-screening", color: "text-emerald-400" },
-                  { icon: FileCheck, label: "Consent", fullLabel: "Informed Consent Support", color: "text-purple-400" },
+                  { icon: Calendar, label: "Booking", fullLabel: "Visit Booking", color: "text-purple-400" },
                 ].map((app) => (
                   <div key={app.fullLabel} className="flex flex-col md:flex-row items-center md:items-center gap-1.5 sm:gap-3 p-2 sm:p-3 bg-gray-800/30 rounded-lg sm:rounded-xl border border-gray-700/30 text-center md:text-left">
                     <app.icon className={`w-4 h-4 ${app.color} flex-shrink-0`} />

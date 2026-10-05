@@ -17,7 +17,7 @@ const page: SeoPage = {
   eyebrow: "For physician groups",
   h1: "Recruit for your studies from your own patient panel",
   intro:
-    "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and supports the consent conversation, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
+    "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and books them for screening visits, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
   summary: "How a community or specialty practice runs studies from its own patient panel while protecting clinic time and PI hours.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
@@ -77,6 +77,10 @@ const page: SeoPage = {
             {
               title: "Reach patients outside the visit",
               text: "[Engage](/engage) calls and texts candidates with scripts configured for your practice and study, asks pre-screening questions and books screening visits on your calendar. Patients are told AI assistance is used and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers. Clinical questions go to your coordinator.{{cite:bond-site,bond-product}}",
+            },
+            {
+              title: "Book the visit",
+              text: "Every pre-screened patient is booked straight into your calendar, with visit reminders by text, voice or email, and the same agents keep supporting participants after enrollment.{{cite:bond-site,bond-product}}",
             },
             {
               title: "Support the consent conversation",

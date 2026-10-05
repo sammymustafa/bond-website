@@ -6,7 +6,7 @@ const page: SeoPage = {
   category: "comparison",
   title: "Clinical trial recruitment software vendors list, compared",
   description:
-    "EHR screening tools, AI outreach agents, media recruiters and CTMS platforms in sourced tables, and how Bond covers the path from chart to consent.",
+    "EHR screening tools, AI outreach agents, media recruiters and CTMS platforms compared, and how Bond takes patients from chart or ad click to a booked visit.",
   keywords: [
     "clinical trial recruitment software",
     "clinical trial recruitment vendors list",
@@ -17,7 +17,7 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Clinical trial recruitment software, vendor by vendor",
   intro:
-    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart to consent, chart evidence behind every match, no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform covers EHR matches and ad leads through consent.{{cite:bond-site,bond-product}}",
+    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform covers EHR matches and ad leads through consent.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
   lastUpdated: "2026-09-29",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
@@ -44,8 +44,8 @@ const page: SeoPage = {
         {
           type: "callout",
           tone: "bond",
-          title: "One platform from chart to consent",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          title: "The only vendor that covers the whole path to a booked visit",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -106,7 +106,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond's row is the only one where software covers all three steps: reading notes in the chart, contacting patients by voice and text, and supporting consent. For a site, that means one BAA, one integration and one audit trail from first match to signed consent, with no handoffs between tools. See [Identify](/identify), [Engage](/engage) and [Consent](/consent).{{cite:bond-site}}",
+          text: "Bond's row is the only one where software covers the whole path: reading notes in the chart, running its own ad campaigns, and contacting patients by voice and text through to a booked visit. For a site, that means one BAA, one integration and one audit trail from first match to booked visit and signed consent, with no handoffs between tools. See [Identify](/identify), [Engage](/engage) and [Consent](/consent).{{cite:bond-site}}",
         },
       ],
     },
@@ -162,7 +162,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "In the first table, most vendors' public materials cover part of the path from chart to consent. Here is the work each kind of tool leaves with your coordinators, based on those materials as of September 2026.",
+          text: "In the first table, most vendors' public materials cover part of the path from chart to booked visit and consent. Here is the work each kind of tool leaves with your coordinators, based on those materials as of September 2026.",
         },
         { type: "h3", text: "EHR matching tools leave outreach, scheduling and consent" },
         {
@@ -177,7 +177,7 @@ const page: SeoPage = {
         { type: "h3", text: "Media and recruitment services leave the work after the referral" },
         {
           type: "p",
-          text: "Media recruiters, patient networks and call centers send referrals, often people who found a study online and answered eligibility questions themselves. 1nHealth, Antidote, IQVIA and Power describe pre-screening before referral, and Power also describes appointment booking and travel coordination.{{cite:1nhealth-pharma,antidote-enterprise-match,antidote-sponsors,iqvia-recruitment,power-sponsors-2026}} What these services leave to your team is the work after the referral: calling each self-referral, screening them against the full protocol, often without having seen their chart, and booking the ones who qualify. IQVIA also describes call center support, plus scheduling through its Study Hub and Referral Hub; for 1nHealth, Antidote and SubjectWell (now Clariness), scheduling is not publicly documented.{{cite:iqvia-recruitment,clariness-merger-2026}} Bond covers both paths to patients: it finds them in your EHR, and it creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS agents contact every ad lead immediately, keep following up until they respond, and pre-screen and schedule them alongside EHR matches, so both go through the same workflow to consent.{{cite:bond-site,bond-product}} The same agents can also pre-screen and schedule the referrals, ad leads and registry contacts the site already has.{{cite:bond-site}} See [Bond vs media recruitment](/compare/bond-vs-media-recruitment) and [Bond vs Power](/compare/bond-vs-power).",
+          text: "Media recruiters, patient networks and call centers send referrals, often people who found a study online and answered eligibility questions themselves. 1nHealth, Antidote, IQVIA and Power describe pre-screening before referral, and Power also describes appointment booking and travel coordination.{{cite:1nhealth-pharma,antidote-enterprise-match,antidote-sponsors,iqvia-recruitment,power-sponsors-2026}} What these services leave to your team is the work after the referral: calling each self-referral, screening them against the full protocol, often without having seen their chart, and booking the ones who qualify. IQVIA also describes call center support, plus scheduling through its Study Hub and Referral Hub; for 1nHealth, Antidote and SubjectWell (now Clariness), scheduling is not publicly documented.{{cite:iqvia-recruitment,clariness-merger-2026}} Bond covers both paths to patients: it finds them in your EHR, and it creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS agents contact every ad lead immediately, keep following up until they respond, and pre-screen and schedule them alongside EHR matches, so both go through the same workflow to a booked visit and on to consent.{{cite:bond-site,bond-product}} The same agents can also pre-screen and schedule the referrals, ad leads and registry contacts the site already has.{{cite:bond-site}} See [Bond vs media recruitment](/compare/bond-vs-media-recruitment) and [Bond vs Power](/compare/bond-vs-power).",
         },
         { type: "h3", text: "Site operations platforms leave finding and contacting patients" },
         {
@@ -192,7 +192,7 @@ const page: SeoPage = {
         { type: "h3", text: "Bond covers the whole path" },
         {
           type: "p",
-          text: "Bond runs each of these steps in one platform, from first match to signed consent, and the site and PI obtain consent.{{cite:bond-site}}",
+          text: "Bond runs each of these steps in one platform, from first match to booked visit and signed consent, and the site and PI obtain consent.{{cite:bond-site}}",
         },
         {
           type: "ul",
@@ -267,7 +267,7 @@ const page: SeoPage = {
           type: "cta",
           label: "Book a demo",
           href: "/book-a-demo",
-          text: "Bring one protocol. We will walk through how Bond would find, contact, schedule and support consent for its patients, so you can compare it with anything in these tables.",
+          text: "Bring one protocol. We will walk through how Bond would find, contact and book visits for its patients, so you can compare it with anything in these tables.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",
         },
@@ -277,7 +277,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Which vendor covers the whole recruitment workflow?",
-      a: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent. Bond finds eligible patients in the site's EHR, contacts, pre-screens and schedules them by voice and text, and supports informed consent in one workflow, priced per randomized patient.{{cite:bond-site}}",
+      a: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow priced per randomized patient.{{cite:bond-site}}",
     },
     {
       q: "Can Bond run Meta and Google ads for our studies?",

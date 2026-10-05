@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "audience",
   title: "Recruitment technology for clinical trial site networks",
   description:
-    "How site networks use Bond Health to screen charts, contact patients and support consent the same way at every site, and report one funnel across them.",
+    "How site networks use Bond Health to screen charts, contact patients and book visits the same way at every site, and report one funnel across them.",
   keywords: [
     "clinical trial site network recruitment technology",
     "site network patient recruitment",
@@ -17,7 +17,7 @@ const page: SeoPage = {
   h1: "One recruitment standard across every site in your network",
   intro:
     "A site network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
-  summary: "How multi-site networks run one screening, outreach and consent-support standard, with one set of reports.",
+  summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
@@ -53,7 +53,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond runs the same three stages at every site: identify, engage and consent. The network agrees once on how each protocol's criteria are read. Coordinators at each site then check that reading against a sample of their own records before go-live, as described in [how we validate eligibility logic](/blog/validating-eligibility-logic-before-go-live).",
+          text: "Bond runs the same three stages at every site: identify, engage and book, with consent support after that. The network agrees once on how each protocol's criteria are read. Coordinators at each site then check that reading against a sample of their own records before go-live, as described in [how we validate eligibility logic](/blog/validating-eligibility-logic-before-go-live).",
         },
         {
           type: "steps",
@@ -67,7 +67,11 @@ const page: SeoPage = {
               text: "[Engage](/engage) voice and text agents contact likely matches, ask the pre-screening questions the chart cannot answer, and book screening visits into the site's calendar. Patients are told AI assistance is used and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             },
             {
-              title: "Consent",
+              title: "Book",
+              text: "Every pre-screened patient is booked straight into the site's calendar, with visit reminders by text, voice or email, and the same agents keep supporting participants after enrollment, from transportation booking to dropout-risk alerts.{{cite:bond-site,bond-product}}",
+            },
+            {
+              title: "Consent support",
               text: "[Consent](/consent) explains the IRB-approved consent form in plain language and answers patient questions, with escalation to staff. The PI and delegated staff still obtain consent.{{cite:bond-site}}",
             },
           ],
@@ -340,7 +344,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Bond for research sites", href: "/for/research-sites", description: "How a single site uses Bond for screening, outreach and consent support." },
+    { label: "Bond for research sites", href: "/for/research-sites", description: "How a single site uses Bond for screening, outreach and booked visits." },
     { label: "CRIO integration", href: "/integrations/crio", description: "How pre-screened patients and statuses move between Bond and CRIO." },
     { label: "Implementation", href: "/implementation", description: "The step-by-step plan for connecting an EHR and going live." },
     { label: "Pricing", href: "/pricing", description: "A volume-based platform fee plus a success fee per randomized patient." },

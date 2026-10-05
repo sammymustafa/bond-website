@@ -199,7 +199,7 @@ const page: SeoPage = {
     },
     {
       q: "Where does Bond fit among the solutions sites listed?",
-      a: "Under implementing technology. Bond screens EHR records against a study's criteria, runs voice and text outreach, and supports the consent process, with a dashboard and audit trail for the site team.{{cite:bond-site}}",
+      a: "Under implementing technology. Bond screens EHR records against a study's criteria, runs voice and text outreach and books screening visits, with a dashboard and audit trail for the site team.{{cite:bond-site}}",
     },
   ],
   sources: [

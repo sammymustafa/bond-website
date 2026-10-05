@@ -9,7 +9,7 @@ const page: SeoPage = {
   category: "comparison",
   title: "Trially alternative: Bond Health vs Trially, compared",
   description:
-    "Bond Health vs Trially: Bond screens EHR notes, reaches patients by voice and text and supports consent in one platform, with fees tied to randomized patients.",
+    "Bond Health vs Trially: Bond screens EHR notes, runs its own ads and takes every patient to a booked visit in one platform, with fees tied to randomized patients.",
   keywords: [
     "Trially alternative",
     "Trially vs Bond Health",
@@ -20,9 +20,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Trially",
   intro:
-    "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart to consent, Bond is the stronger choice.",
+    "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart or ad click to a booked study visit, with consent support after that, Bond is the stronger choice.",
   summary:
-    "Why sites choose Bond over Trially: one workflow from chart to consent, chart-aware agents, support after enrollment and no integration fee.",
+    "Why Bond is better than Trially: one workflow from chart or ad click to a booked visit, chart-aware agents, consent support and no integration fee.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -34,20 +34,20 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Trially because it covers the whole path from chart review to consent support in one platform, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+          text: "Bond is better than Trially because it takes every patient all the way to a booked study visit, whether they come from your EHR or from the Meta and Google ad campaigns Bond creates and runs: it contacts every ad lead immediately and keeps following up until patients respond and are booked.{{cite:bond-product}} It does this in one platform, with chart evidence behind every match, consent support and a success fee per randomized patient.{{cite:bond-site}}",
         },
         {
           type: "stats",
           items: [
             { value: "10,000+", label: "charts screened per hour, with chart evidence for every criterion", cite: "bond-site" },
             { value: "3x", label: "contact rate with voice and SMS/text outreach", cite: "bond-site" },
-            { value: "90%+", label: "consent completion with Bond's consent support", cite: "bond-site" },
+            { value: "1 call", label: "to pre-screen a patient and book the screening visit", cite: "bond-product" },
           ],
         },
         {
           type: "ul",
           items: [
-            "**One workflow from chart to consent.** Bond screens the EHR, runs voice and SMS outreach and supports informed consent in one platform, with a real-time dashboard and audit trail from first match to signed consent. Its [Consent](/consent) support explains the consent form in plain language, answers patient questions and escalates to staff, while the site and PI obtain consent.{{cite:bond-site}} Informed consent support is not publicly documented in Trially's materials (September 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
+            "**One workflow from chart to booked visit, then consent.** Bond screens the EHR, runs voice and SMS outreach, books screening visits and supports informed consent in one platform, with a real-time dashboard and audit trail from first match to booked visit and signed consent. Its [Consent](/consent) support explains the consent form in plain language, answers patient questions and escalates to staff, while the site and PI obtain consent.{{cite:bond-site}} Informed consent support is not publicly documented in Trially's materials (September 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call.{{cite:bond-product}} Patients are told AI is used and can reach a person at any time, by live transfer to a coordinator or a callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
@@ -68,8 +68,8 @@ const page: SeoPage = {
           columns: ["Capability", "Bond Health", "Trially"],
           rows: [
             [
-              "One workflow from chart to consent",
-              "One platform for EHR screening, voice and SMS outreach, and consent support, with a real-time dashboard and audit trail from first match to signed consent.{{cite:bond-site}}",
+              "One workflow from chart to booked visit and consent",
+              "One platform for EHR screening, voice and SMS outreach, visit booking and consent support, with a real-time dashboard and audit trail from first match to booked visit and signed consent.{{cite:bond-site}}",
               "Trially Match finds patients in the EHR, and Margo pre-screens and schedules them. Consent support is not publicly documented (September 2026).{{cite:trially-faq-ai,trially-connect,trially-connect-blog}}",
             ],
             [
@@ -99,7 +99,7 @@ const page: SeoPage = {
             ],
             [
               "Consent",
-              "Plain-language explanations, patient Q&A that can run in the patient's preferred language, checks of understanding on key points with an auditable record, and staff escalation. Bond's site cites 90%+ completion, and the site and PI obtain consent.{{cite:bond-site,bond-product}}",
+              "Plain-language explanations, patient Q&A that can run in the patient's preferred language, checks of understanding on key points with an auditable record, and staff escalation. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
               "Not publicly documented (September 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
             ],
             [
@@ -179,7 +179,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "**Published figures.** Bond's website reports 90%+ matching accuracy, 50%+ less chart review, a 3x contact rate, 90%+ completion for consent support and up to 3x faster enrollment than manual recruitment.{{cite:bond-site}}",
+          text: "**Published figures.** Bond's website reports 90%+ matching accuracy, 50%+ less chart review, a 3x contact rate and up to 3x faster enrollment than manual recruitment.{{cite:bond-site}}",
         },
         {
           type: "p",
@@ -261,11 +261,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a good Trially alternative?",
-      a: "Yes. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, all in one platform with no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+      a: "Yes. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, all in one platform with no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
     },
     {
       q: "Does Trially support informed consent?",
-      a: "Informed consent and eConsent support are not publicly documented in the Trially materials we reviewed in September 2026, so ask Trially directly.{{cite:trially-home,trially-connect,trially-connect-blog}} Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. Bond's site cites 90%+ completion, and the site and PI obtain consent.{{cite:bond-site,bond-product}}",
+      a: "Informed consent and eConsent support are not publicly documented in the Trially materials we reviewed in September 2026, so ask Trially directly.{{cite:trially-home,trially-connect,trially-connect-blog}} Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
     },
     {
       q: "How does pricing compare?",

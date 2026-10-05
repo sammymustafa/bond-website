@@ -240,7 +240,7 @@ const page: SeoPage = {
           type: "cta",
           label: "Book a demo",
           href: "/book-a-demo",
-          text: "Bring a protocol and your EHR details to see how screening, outreach and consent support would run for you.",
+          text: "Bring a protocol and your EHR details to see how screening, outreach and booked visits would run for you.",
           secondaryLabel: "See the implementation plan",
           secondaryHref: "/implementation",
         },

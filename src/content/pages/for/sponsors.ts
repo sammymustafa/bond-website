@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "For sponsors",
   h1: "First-patient-in to last-patient-in, with every site's funnel in view",
   intro:
-    "A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, voice and text outreach, and consent support at each participating site, and reports one enrollment funnel back to you.",
+    "A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
   summary: "What a delay day costs, why sites enroll unevenly, and how Bond reports one enrollment funnel across a sponsor's sites.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },

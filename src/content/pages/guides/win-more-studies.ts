@@ -411,7 +411,7 @@ const page: SeoPage = {
   related: [
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "The sponsor's scorecard, and how to present EHR-derived patient counts." },
     { label: "Feasibility questionnaire template", href: "/templates/feasibility-questionnaire", description: "The questions sponsors ask, ready to fill in as a standing site profile." },
-    { label: "Bond for research sites", href: "/for/research-sites", description: "How sites use Bond for screening, outreach and consent support." },
+    { label: "Bond for research sites", href: "/for/research-sites", description: "How sites use Bond for screening, outreach and booked visits." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Screening against study criteria, with the chart evidence behind each match." },
     { label: "Study start-up", href: "/glossary/study-startup", description: "The steps between site selection and activation, defined." },
   ],

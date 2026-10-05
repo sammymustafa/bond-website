@@ -7,7 +7,7 @@ const page: SeoPage = {
   category: "comparison",
   title: "Deep 6 AI alternative: Bond Health vs Tempus trial matching",
   description:
-    "Looking for a Deep 6 AI alternative? Bond finds eligible patients in your EHR, calls or texts them, books visits and supports consent in one product.",
+    "Looking for a Deep 6 AI alternative? Bond finds eligible patients in your EHR, calls or texts them and books visits in one product.",
   keywords: [
     "Deep 6 AI alternative",
     "Tempus trial matching",
@@ -20,7 +20,7 @@ const page: SeoPage = {
   h1: "Bond Health vs Tempus (Deep 6 AI)",
   intro:
     "Tempus AI acquired Deep 6 AI on March 11, 2025, and offers EHR-based trial matching through Deep 6 AI, its TIME oncology trial network, and Next Trials pre-screening for trials already open at a practice.{{cite:tempus-10k-2025,tempus-time-site-2026,tempus-next-trials-2026}} Bond Health reads a site's own EHR, including clinical notes, against each protocol, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent.{{cite:bond-site}} For sites running their own studies in any therapeutic area, Bond covers finding, contacting, scheduling and consent in one product.",
-  summary: "How Bond compares with Tempus's Deep 6 AI, TIME and Next Trials, from EHR matching to outreach, consent and pricing.",
+  summary: "How Bond compares with Tempus's Deep 6 AI, TIME and Next Trials, from EHR matching to outreach, booked visits and pricing.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -45,10 +45,10 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**One product from chart to consent.** Bond automates EHR screening, patient outreach and consent tracking in one workflow, with \"no data silos, no manual handoffs, and complete visibility from first match to signed consent.\"{{cite:bond-site}} In Deep 6 AI's published workflow, matches go to site staff to validate and track, and in TIME's 2024 workflow a Tempus nurse reviewed matches before sending them to sites.{{cite:deep6-life-sciences-2023,tempus-time-asco-2025}}",
+            "**One product from chart to booked visit.** Bond automates EHR screening, patient outreach, visit booking and consent tracking in one workflow, with \"no data silos, no manual handoffs, and complete visibility from first ad click or chart match to a booked visit and signed consent.\"{{cite:bond-site}} In Deep 6 AI's published workflow, matches go to site staff to validate and track, and in TIME's 2024 workflow a Tempus nurse reviewed matches before sending them to sites.{{cite:deep6-life-sciences-2023,tempus-time-asco-2025}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak the patient's language, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}} Bond's site cites a 3x contact rate.{{cite:bond-site}}",
-            "**Consent support for patients.** Plain-language explanations, patient Q&A and escalation to staff, with checks on the patient's understanding of key points and an auditable record for the site. Bond's site cites 90%+ completion for consent support. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+            "**Consent support for patients.** Plain-language explanations, patient Q&A and escalation to staff, with checks on the patient's understanding of key points and an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
             "**Any study, any site.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Bond serves research sites, physician groups, FQHCs, site networks, CROs and sponsors.{{cite:bond-site}}",
             "**No integration fee.** A volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
@@ -57,7 +57,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent.",
+          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -75,8 +75,8 @@ const page: SeoPage = {
           columns: ["Capability", "Bond Health", "Tempus (Deep 6 AI, TIME, Next Trials)"],
           rows: [
             [
-              "One workflow from chart to consent",
-              "Yes. [Identify](/identify), [Engage](/engage) and [Consent](/consent) run as one workflow, with \"no manual handoffs\" from first match to signed consent.{{cite:bond-site}}",
+              "One workflow from chart to booked visit and consent",
+              "Yes. [Identify](/identify), [Engage](/engage) and [Consent](/consent) run as one workflow, with \"no manual handoffs\" from first match to booked visit and signed consent.{{cite:bond-site}}",
               "Deep 6 AI: matched patients go to site staff, who validate eligibility in the EMR and track recruitment status (2023). TIME: a Tempus nurse reviewed qualifying matches and sent confirmed ones to sites (2025), and Tempus describes a clinical team that pre-screens matched patients and presents them to each site (2026).{{cite:deep6-life-sciences-2023,tempus-time-asco-2025,tempus-time-site-2026}}",
             ],
             [
@@ -101,7 +101,7 @@ const page: SeoPage = {
             ],
             [
               "Consent",
-              "Plain-language explanations, patient Q&A and staff escalation. Consent support checks the patient's understanding of key points and keeps an auditable record for the site. Bond's site cites 90%+ completion for consent support. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+              "Plain-language explanations, patient Q&A and staff escalation. Consent support checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
               "Patient-facing consent support: not publicly documented (September 2026).",
             ],
             [

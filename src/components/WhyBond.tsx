@@ -45,7 +45,7 @@ export default function WhyBond({ compact = false }: { compact?: boolean }) {
               <Sparkles className="mt-0.5 h-5 w-5 flex-shrink-0 text-bond-primary" />
               <div className="text-sm leading-relaxed text-gray-700 sm:text-[15px]">
                 <p className="mb-1 font-semibold text-gray-900">{callout.title}</p>
-                <p>{renderInline(callout.text, noCites, "why-callout")}</p>
+                <p>{renderInline(stripCites(callout.text), noCites, "why-callout")}</p>
               </div>
             </aside>
           )}

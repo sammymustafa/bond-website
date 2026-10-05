@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Phone, FileCheck, ArrowRight } from "lucide-react";
+import { Search, Phone, CalendarCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const pillars = [
@@ -22,7 +22,7 @@ const pillars = [
     icon: Phone,
     title: "Engage",
     subtitle: "Voice and SMS/text agents, plus Meta and Google ads",
-    description: "Meta and Google ad campaigns we create for your studies, with every ad lead called and texted immediately and followed up until they respond, plus outreach to EHR matches, pre-screen scripts and visit booking",
+    description: "Meta and Google ad campaigns we create for your studies, with every ad lead called and texted immediately and followed up until they respond, plus outreach and pre-screening for EHR matches",
     outcomes: [
       "Every ad lead contacted immediately",
       "Follow-ups until patients respond and book",
@@ -35,18 +35,20 @@ const pillars = [
     href: "/engage",
   },
   {
-    icon: FileCheck,
-    title: "Consent",
-    subtitle: "AI-powered informed consent",
-    description: "Plain-language consent support with escalation to staff",
+    icon: CalendarCheck,
+    title: "Book",
+    subtitle: "Booked study visits",
+    description: "Pre-screened patients booked straight into your site's calendar, with visit reminders by text, voice or email",
     outcomes: [
-      "Faster consent completion",
-      "Clearer understanding, fewer drop-offs",
+      "Visits on your calendar, not a lead list",
+      "Reminders that keep patients showing up",
+      "Support after enrollment, from rides to check-ins",
     ],
     color: "bg-purple-500",
     lightColor: "bg-purple-50",
     textColor: "text-purple-600",
-    href: "/consent",
+    href: "/engage",
+    linkLabel: "How booking works",
   },
 ];
 
@@ -62,7 +64,7 @@ export default function Pillars() {
           </h2>
           <p className="body-lg">
             Bond covers the entire patient recruitment journey, from finding eligible 
-            patients to completing informed consent.
+            patients to a booked study visit.
           </p>
         </div>
 
@@ -99,7 +101,7 @@ export default function Pillars() {
                   href={pillar.href}
                   className="inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
                 >
-                  How {pillar.title.toLowerCase()} works <ArrowRight className="w-3 h-3" />
+                  {pillar.linkLabel ?? `How ${pillar.title.toLowerCase()} works`} <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
             </div>
@@ -113,7 +115,7 @@ export default function Pillars() {
             <ArrowRight className="w-4 h-4" />
             <span className="text-sm font-medium">Engage</span>
             <ArrowRight className="w-4 h-4" />
-            <span className="text-sm font-medium">Consent</span>
+            <span className="text-sm font-medium">Book</span>
           </div>
         </div>
 

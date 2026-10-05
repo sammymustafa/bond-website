@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Phone, FileCheck, ArrowRight, Sparkles, Zap, Target } from "lucide-react";
+import { Search, Phone, CalendarCheck, ArrowRight, Sparkles, Zap, Target } from "lucide-react";
 
 const funnelStages = [
   {
@@ -18,21 +18,21 @@ const funnelStages = [
     id: "engage",
     title: "Engage",
     subtitle: "Ads, Voice & SMS/Text Outreach",
-    description: "Meta and Google ad campaigns created for your studies, every lead called and texted immediately and followed up until they respond, plus pre-screening and scheduling",
+    description: "Meta and Google ad campaigns created for your studies, every lead called and texted immediately and followed up until they respond, plus pre-screening",
     icon: Phone,
     color: "emerald",
     metric: "3x",
     metricLabel: "contact rate",
   },
   {
-    id: "consent",
-    title: "Consent",
-    subtitle: "AI Support",
-    description: "Plain-language consent assistance with staff escalation",
-    icon: FileCheck,
+    id: "book",
+    title: "Book",
+    subtitle: "Booked Study Visits",
+    description: "Pre-screened patients booked straight into your site's calendar, with reminders by text, voice or email",
+    icon: CalendarCheck,
     color: "violet",
-    metric: "90%+",
-    metricLabel: "completion",
+    metric: "1 call",
+    metricLabel: "to pre-screen and book",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function FullFunnel() {
           </h2>
           <p className="body-lg text-gray-600">
             Most tools solve one part of recruitment. Bond spans the entire funnel 
-            with a unified workflow from match to consent.
+            with a unified workflow from ad click or chart match to a booked study visit.
           </p>
         </div>
 
@@ -200,7 +200,7 @@ export default function FullFunnel() {
               </h3>
               <p className="text-gray-400">
                 One integrated platform means no data silos, no manual handoffs, 
-                and complete visibility from first ad click or chart match to signed consent.
+                and complete visibility from first ad click or chart match to a booked visit and signed consent.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">

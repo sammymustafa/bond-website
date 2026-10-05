@@ -18,8 +18,8 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Hippocratic AI and Grove AI",
   intro:
-    "Hippocratic AI, which announced its acquisition of Grove AI and the Grace trial agent on January 12, 2026, sells AI agents that call and pre-screen trial candidates drawn from a feasibility model, referrals, registries and campaigns.{{cite:hippo-grove-acquisition,hippo-trial-enrollment}} Bond Health starts in the chart: it screens the site's own EHR, clinical notes included, against each study's criteria, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} If you want eligible patients found in your own records and carried to consent by one platform, with a success fee tied to randomized patients, Bond is the stronger choice.",
-  summary: "Why sites choose Bond over Hippocratic AI and Grove AI, compared capability by capability, with a plan for a head-to-head test.",
+    "Hippocratic AI, which announced its acquisition of Grove AI and the Grace trial agent on January 12, 2026, sells AI agents that call and pre-screen trial candidates drawn from a feasibility model, referrals, registries and campaigns.{{cite:hippo-grove-acquisition,hippo-trial-enrollment}} Bond Health starts in the chart: it screens the site's own EHR, clinical notes included, against each study's criteria, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} If you want eligible patients found in your own records and carried to a booked study visit by one platform, with a success fee tied to randomized patients, Bond is the stronger choice.",
+  summary: "Why Bond is better than Hippocratic AI and Grove AI, compared capability by capability, with a plan for a head-to-head test.",
   lastUpdated: "2026-09-24",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -31,7 +31,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that reads EHR notes against a protocol, contacts patients by voice and text, and supports informed consent. Bond also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -48,7 +48,7 @@ const page: SeoPage = {
             ADS_BULLET,
             "**Every match shows its evidence.** Coordinators review ranked matches with the note, lab or medication behind each criterion decision, and Bond reports 50%+ less chart review and fewer screen failures.{{cite:bond-site}}",
             "**Calls start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}}",
-            "**One platform from chart to consent and beyond.** EHR screening, outreach, scheduling and consent support run in one workflow, with no data silos or manual handoffs from first match to signed consent.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
+            "**One platform from chart to booked visit, and beyond.** EHR screening, outreach, scheduling and consent support run in one workflow, with no data silos or manual handoffs from first match to booked visit and signed consent.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
             "**Connected to the systems sites run.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7, and is a CRIO Certified Partner.{{cite:bond-site,bond-product}}",
             "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
@@ -91,7 +91,7 @@ const page: SeoPage = {
             ],
             [
               "Informed consent",
-              "Plain-language explanations, patient Q&A and staff escalation, with 90%+ completion; the site and PI obtain consent.{{cite:bond-site}} Checks the patient's understanding of key points and keeps an auditable record for the site.{{cite:bond-product}}",
+              "Plain-language explanations, patient Q&A and staff escalation; the site and PI obtain consent.{{cite:bond-site}} Checks the patient's understanding of key points and keeps an auditable record for the site.{{cite:bond-product}}",
               "Consent education; agents guide participants through consent, explain study expectations and confirm understanding before enrollment.{{cite:hippo-trial-enrollment,hippo-life-sciences}}",
             ],
             [
@@ -135,7 +135,7 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Fast phone pre-screening.** Bond's voice agents screened 1,000 patients in under 2 hours.{{cite:bond-acrp-talk}} Its voice and SMS outreach has a 3x contact rate, and the agents can pre-screen and schedule a list the site already has, such as ad leads, referrals or registry contacts.{{cite:bond-site}}",
-            "**Consent education.** Bond's consent support, with 90%+ completion, explains the consent form in plain language, answers patient questions and escalates to staff.{{cite:bond-site}} It checks the patient's understanding of key points and keeps an auditable record for the site.{{cite:bond-product}}",
+            "**Consent education.** Bond's consent support explains the consent form in plain language, answers patient questions and escalates to staff.{{cite:bond-site}} It checks the patient's understanding of key points and keeps an auditable record for the site.{{cite:bond-product}}",
             "**Retention.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out. Reminders can go by text, voice or email.{{cite:bond-product}}",
             "**Many languages.** Voice and text conversations and consent Q&A run in the patient's preferred language, including English, Spanish, Mandarin and many others, and can switch languages mid-call.{{cite:bond-product}}",
             "**Device studies.** Screening works for drug and device studies alike, because it is configured from each protocol's own criteria.{{cite:bond-product}}",

@@ -535,7 +535,7 @@ const page: SeoPage = {
     {
       label: "Bond for research sites",
       href: "/for/research-sites",
-      description: "How sites use Bond for screening, outreach and consent support.",
+      description: "How sites use Bond for screening, outreach and booked visits.",
     },
     {
       label: "All templates",
