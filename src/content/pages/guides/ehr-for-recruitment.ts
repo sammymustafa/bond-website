@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Many of the patients a site needs are already in its EHR. Finding them takes a legal basis for looking and reaching out, a query that returns a workable list, and a review step that catches what the query cannot read.",
   summary: "Structured data versus notes, HIPAA paths, cohort queries, LLM screening, coordinator review and the metrics that matter.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "See it on your protocol",
     href: "/book-a-demo",
@@ -212,7 +212,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "[Identify](/identify), the screening stage of Bond Health's platform, takes this approach. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through [FHIR](/glossary/fhir), HL7 or an aggregator.{{cite:bond-site,bond-product}} Identify reads structured fields, clinical notes, imaging data and other unstructured documents against each criterion, ranks candidates, and shows the chart evidence behind each decision.{{cite:bond-product}} Bond reports over 90 percent matching accuracy and at least 50 percent less chart review.{{cite:bond-site}}",
+          text: "[Identify](/identify), the screening stage of Bond Health's platform, takes this approach. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through [FHIR](/glossary/fhir), HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Identify reads structured fields, clinical notes, imaging data and other unstructured documents against each criterion, ranks candidates, and shows the chart evidence behind each decision.{{cite:bond-product}} Bond reports over 90 percent matching accuracy and at least 50 percent less chart review.{{cite:bond-site}}",
         },
       ],
     },
@@ -324,7 +324,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "osu-2014",

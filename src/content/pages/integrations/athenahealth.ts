@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health connects via athenahealth's FHIR R4 APIs to read athenaOne records, screens a practice's patients against a study's criteria, and hands matched, pre-screened patients to the practice's coordinators. Below: the data and FHIR resources involved, what your athenaOne administrator approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, practice approvals, timeline and PHI controls for connecting Bond to athenaOne.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -218,7 +218,7 @@ const page: SeoPage = {
     },
     {
       q: "How is the connection priced?",
-      a: "Bond charges no integration fee. Its volume-based platform fee covers the EHR connection, security review and setup, and a success fee applies per randomized patient. See [pricing](/pricing).{{cite:bond-site}}",
+      a: "Bond charges no integration fee. Its volume-based fee per screened patient covers the EHR connection, security review and setup, and a randomization share applies per randomized patient. See [pricing](/pricing).{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -235,7 +235,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "techtarget-athenahealth",

@@ -22,7 +22,7 @@ const page: SeoPage = {
     "Power runs a clinical trial search site and a community of patients who have opted in to hear about trials. It checks their eligibility against the medical records they share, refers matched patients to sites, and describes calls, texts, AI voice agents and appointment booking along the way.{{cite:power-home-2026,power-sponsors-2026,power-grow-2026}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, supports informed consent and keeps participants engaged after enrollment, with chart evidence behind every match.{{cite:bond-site,bond-product}} For a site that wants to enroll the patients it already treats, with one platform from chart to booked study visit, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Power: the site's own EHR, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
-  lastUpdated: "2026-09-29",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -46,13 +46,13 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**The patients you already treat.** Bond connects to the site's own EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and screens every chart in scope against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, with the chart evidence behind each criterion.{{cite:bond-site,bond-product}} Power's sponsor program matches patients from its own opted-in community, who share their medical records with Power.{{cite:power-sponsors-2026}}",
+            "**The patients you already treat.** Bond connects to the site's own EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and screens every chart in scope against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, with the chart evidence behind each criterion.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Power's sponsor program matches patients from its own opted-in community, who share their medical records with Power.{{cite:power-sponsors-2026}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Patient-facing consent support is not publicly documented in Power's materials (September 2026).",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**Any study, any therapeutic area.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Power's sponsor page focuses on Phase 2/3 CNS and I&I trials.{{cite:power-sponsors-2026}}",
-            "**Live in 48 hours, with no integration fee.** Bond's team handles the EHR integration end to end, typically in 48 hours, and Bond is a [CRIO Certified Partner](/integrations/crio) with direct integrations with CTMS and calendars. Pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product,bond-acrp-talk}}",
+            "**Live in 48 hours, with no integration fee.** Bond's team handles the EHR integration end to end, typically in 48 hours, and Bond is a [CRIO Certified Partner](/integrations/crio) with direct integrations with CTMS and calendars. Pricing is a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product,bond-acrp-talk}}",
           ],
         },
         ...testimonialBlocks(),
@@ -112,12 +112,12 @@ const page: SeoPage = {
             ],
             [
               "Integrations",
-              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator. [CRIO Certified Partner](/integrations/crio), with direct integrations with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-product,bond-acrp-talk}}",
+              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} [CRIO Certified Partner](/integrations/crio), with direct integrations with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-product,bond-acrp-talk}}",
               "A web portal for sites with no technical setup. Named EHR or CTMS integrations: not publicly documented (September 2026).{{cite:power-sites-2026}}",
             ],
             [
               "Pricing",
-              "A volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
               "For sponsors, most programs are outcomes-aligned partnerships based on enrollment milestones; sites can try it for free (2026).{{cite:power-sponsors-2026,power-sites-2026}}",
             ],
           ],
@@ -180,7 +180,7 @@ const page: SeoPage = {
             },
             {
               title: "Compare cost per randomized patient",
-              text: "Add up each option's fees and the coordinator hours spent on outreach, scheduling and consent, then divide by the patients randomized. Bond's success fee is paid only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
+              text: "Add up each option's fees and the coordinator hours spent on outreach, scheduling and consent, then divide by the patients randomized. Bond's the randomization share is owed only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
             },
           ],
         },
@@ -218,7 +218,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a good Power alternative?",
-      a: "Yes, for a site that wants to enroll the patients it already treats. Bond screens the site's own EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, with no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} After enrollment, its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
+      a: "Yes, for a site that wants to enroll the patients it already treats. Bond screens the site's own EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} After enrollment, its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
     },
     {
       q: "Where do Power's patients come from?",
@@ -230,7 +230,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee, and the success fee is paid only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}} Power's sponsor page says most programs are outcomes-aligned partnerships based on enrollment milestones, and its site page invites sites to try it for free.{{cite:power-sponsors-2026,power-sites-2026}} When you compare, include the coordinator time each option needs for outreach, scheduling and consent as well as the fees.",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee, and the randomization share is owed only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}} Power's sponsor page says most programs are outcomes-aligned partnerships based on enrollment milestones, and its site page invites sites to try it for free.{{cite:power-sponsors-2026,power-sites-2026}} When you compare, include the coordinator time each option needs for outreach, scheduling and consent as well as the fees.",
     },
   ],
   sources: [
@@ -247,7 +247,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-acrp-talk",
@@ -303,7 +303,7 @@ const page: SeoPage = {
     { label: "Clinical trial recruitment software, compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, from EHR matching to recruitment services." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule patients." },
-    { label: "Pricing", href: "/pricing", description: "A volume-based platform fee plus a success fee per randomized patient, with no integration fee." },
+    { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee." },
     { label: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliance, BAAs, SSO and audit logging." },
   ],
 };

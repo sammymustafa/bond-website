@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "The same three-stage workflow, identify, engage and book, fits differently depending on whether you run one site, a network, a clinic that is adding research, or a portfolio of studies. Each page below starts from that organization's problems and shows what changes day to day.",
   summary: "Audience pages for sites, networks, physician groups, FQHCs, CROs and sponsors.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-10-05",
   sections: [
     {
       id: "by-audience",

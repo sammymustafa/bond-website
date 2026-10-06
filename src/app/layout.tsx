@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
-    description: "Enroll the right patients faster. Bond uses LLM EHR screening, voice and SMS/text agents, and AI-powered consent to help research sites enroll patients up to 3x faster with 90%+ matching accuracy.",
+    description: "Enroll the right patients faster. Bond screens your EHR, creates and runs Meta and Google ads, and calls and texts every lead immediately, with follow-ups all the way to a booked study visit. Up to 3x faster enrollment.",
     url: "https://bondtrials.com",
     siteName: "Bond Health",
     locale: "en_US",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bond Health | AI-Powered Clinical Trial Patient Recruitment",
-    description: "Enroll the right patients faster. Up to 3x faster enrollment with 90%+ matching accuracy using AI.",
+    description: "EHR screening, Meta and Google ads, and instant outreach and follow-up, all the way to a booked study visit. Up to 3x faster enrollment.",
     images: ["/images/og-image.png"],
   },
   robots: {
@@ -103,7 +103,7 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a success fee per randomized patient, and is HIPAA compliant and SOC 2 Type I compliant.",
+      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, and is HIPAA compliant and SOC 2 Type I compliant.",
       slogan: "Enroll the right patients faster.",
       address: {
         "@type": "PostalAddress",
@@ -152,7 +152,7 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         priceCurrency: "USD",
-        description: "Volume-based platform fee plus a success fee per randomized patient, with no integration fee",
+        description: "Volume-based per-screened-patient fee plus a percentage of each patient's randomization milestone payment, with no integration fee",
       },
       featureList: [
         "LLM-based EHR screening",
@@ -164,8 +164,9 @@ const jsonLd = {
         "Real-time dashboard and audit trail",
         "EHR integration via FHIR",
         "Connects to every major EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth and eClinicalWorks",
+        "Works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault; CRIO Certified Partner with a two-way CRIO integration",
         "Live in 48 hours with no integration fee",
-        "Success fee only for randomized patients",
+        "A percentage of each randomization milestone payment, owed only for randomized patients",
         "Voice and SMS/text agents in the patient's language, with live transfer to a coordinator",
         "Retention support: visit reminders, transportation booking, symptom and diary collection, dropout-risk alerts",
         "HIPAA compliant and SOC 2 Type I compliant",

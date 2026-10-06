@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "As of September 2026, 6,258 studies on ClinicalTrials.gov were recruiting at one or more sites in ten Southeast states, about 28% of the 22,041 recruiting at a US site.{{cite:ctgov-southeast-unique,ctgov-api}} The ten are Georgia, North Carolina, South Carolina, Tennessee, Alabama, Mississippi, Kentucky, Virginia, Louisiana and Arkansas. Below: research hubs, EHRs, demographics, state laws, and how Bond Health deploys with a site.",
   summary: "Southeast recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI and privacy rules.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -85,7 +85,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} For MEDITECH, eClinicalWorks and other EHRs, Bond uses the same FHIR-based path, and the site's IT team provides API access. See [Epic](/integrations/epic), [MEDITECH](/integrations/meditech) and [eClinicalWorks](/integrations/eclinicalworks).",
+          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} For MEDITECH, eClinicalWorks and other EHRs, Bond uses the same FHIR-based path, and the site's IT team provides API access. See [Epic](/integrations/epic), [MEDITECH](/integrations/meditech) and [eClinicalWorks](/integrations/eclinicalworks).",
         },
       ],
     },
@@ -530,7 +530,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

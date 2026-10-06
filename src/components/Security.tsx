@@ -13,7 +13,7 @@ const features = [
   {
     icon: Lock,
     title: "Encryption at rest & in transit",
-    description: "AES-256 encryption for all patient data",
+    description: "AES-256 encryption for all patient data where applicable",
   },
   {
     icon: FileCheck,
@@ -87,7 +87,7 @@ export default function Security() {
               <div className="space-y-3 text-left max-w-xs mx-auto">
                 {[
                   "SOC 2 Type I compliant",
-                  "End-to-end encryption",
+                  "Encryption at rest and in transit",
                   "BAA available",
                   "Penetration testing",
                   "Employee security training",

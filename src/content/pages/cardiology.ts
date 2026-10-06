@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Cardiology protocols screen on ejection fraction, symptom class, lab thresholds and dated cardiac events, and much of that evidence sits in echo reports and notes rather than coded fields. In one heart failure trial, fewer than half of the 10,359 patients screened were randomized.{{cite:wjc-paragon-hf}} Here is where those criteria live in the chart and how Bond Health screens for them.",
   summary: "How cardiology criteria map to the chart, what drives screen failure, and how Bond screens for it.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -96,7 +96,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion, ranks candidates, and shows the evidence behind every criterion-level decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or through an aggregator.{{cite:bond-site,bond-product}}",
+          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion, ranks candidates, and shows the evidence behind every criterion-level decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or through an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
         },
         {
           type: "p",
@@ -345,7 +345,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

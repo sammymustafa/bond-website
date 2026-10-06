@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Pre-screening is how a site finds and sorts candidates before anyone signs a consent form. Screening confirms eligibility under the protocol after consent. The line between them decides what needs IRB approval, which log a person goes on, who counts as a screen failure, and who pays.",
   summary: "Definitions from FDA, NIH and ICH, what can happen before consent, how screen failures are counted, and what to log.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "See pre-screening on your protocol",
     href: "/book-a-demo",
@@ -447,7 +447,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

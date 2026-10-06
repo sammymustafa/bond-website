@@ -17,9 +17,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Clinical trial recruitment software, vendor by vendor",
   intro:
-    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform covers EHR matches and ad leads through consent.{{cite:bond-site,bond-product}}",
+    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform covers EHR matches and ad leads through consent.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
-  lastUpdated: "2026-09-29",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -116,7 +116,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Few vendors publish prices. Those that describe a model use a subscription, a fee paid when a patient reaches a milestone such as consent or randomization, or free site software with a paid tier. Bond charges no integration fee: a volume-based platform fee plus a success fee paid only for patients who are randomized. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+          text: "Few vendors publish prices. Those that describe a model use a subscription, a fee paid when a patient reaches a milestone such as consent or randomization, or free site software with a paid tier. Bond charges no integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, owed only for randomized patients. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
         },
         {
           type: "table",
@@ -128,7 +128,7 @@ const page: SeoPage = {
               "Not limited; configured from each protocol's criteria, for drug and device studies alike{{cite:bond-site,bond-product}}",
               "Sites, networks, physician groups, FQHCs, CROs, sponsors{{cite:bond-site}}",
               "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR, HL7 or an aggregator; CRIO Certified Partner; direct integrations with Google Sheets, CTMS and calendars{{cite:bond-site,bond-product,bond-acrp-talk}}",
-              "Volume-based platform fee plus success fee per randomized patient; no integration fee{{cite:bond-site,bond-product}}",
+              "Volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment; no integration fee{{cite:bond-site,bond-product}}",
             ],
             ["Trially", "Multiple, from cardiovascular to rare disease", "Sponsors, CROs, sites, hospitals", "Pre-built EHR connectors, including Epic and Oracle Health/Cerner; CRIO-certified API partner; says it integrates with other CTMS and CRMs", "Monthly subscription by site size and integration needs (2025){{cite:trially-trial-types,trially-home,trially-faq-ehr,crio-trially-2024,trially-crm-faq,trially-crio-webinar}}"],
             ["Tempus (Deep 6 AI)", "Deep 6 AI: used enterprise-wide across trial types (2024). Tempus TIME trial network: oncology (2026)", "Healthcare organizations, life sciences companies", "Integrates with health-system EMRs", "No public price list found{{cite:deep6-cassidy-2024,tempus-ttct-2026,deep6-ttuhsc-2023,tempus-deep6-acquisition}}"],
@@ -197,13 +197,13 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Find.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, reads structured fields, clinical notes, imaging data and other unstructured documents against each protocol, ranks the patients most likely to qualify and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}}",
+            "**Find.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, reads structured fields, clinical notes, imaging data and other unstructured documents against each protocol, ranks the patients most likely to qualify and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
             "**Match across studies.** Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**Size a study before it starts.** Bond runs feasibility from the same EHR screening, giving eligible-patient counts for a protocol backed by the chart evidence behind each match, with consistent metrics across sites.{{cite:bond-site,bond-product}}",
             "**Contact, pre-screen and schedule.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, with mid-call switching, and patients can reach a person at any time, by live transfer to a coordinator or a callback, as the site prefers. Bond keeps improving outreach messaging until study close-out.{{cite:bond-site,bond-product}}",
             "**Support consent.** Plain-language explanations, patient Q&A and escalation to staff. Consent support checks the patient's understanding of key points and keeps an auditable record for the site.{{cite:bond-site,bond-product}}",
             "**Stay in touch after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-            "**Report and pay on results.** One real-time dashboard and audit trail track patients matched, contacted, pre-screened, consented and randomized, and pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**Report and pay on results.** One real-time dashboard and audit trail track patients matched, contacted, pre-screened, consented and randomized, and pricing is a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
         {
@@ -241,7 +241,7 @@ const page: SeoPage = {
             },
             {
               title: "Count what reaches the site",
-              text: "Track contact rate, pre-screen passes, booked visits, time to first visit, consents, randomizations and cost per randomized patient, not matches or interactions. Tie any success fee to the same events, as Bond's per-randomization fee does.{{cite:bond-site}}",
+              text: "Track contact rate, pre-screen passes, booked visits, time to first visit, consents, randomizations and cost per randomized patient, not matches or interactions. Tie any randomization share to the same events, as Bond's share of the randomization milestone does.{{cite:bond-site}}",
             },
             {
               title: "Read the paperwork",
@@ -277,7 +277,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Which vendor covers the whole recruitment workflow?",
-      a: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow priced per randomized patient.{{cite:bond-site}}",
+      a: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow with part of the price tied to randomization.{{cite:bond-site}}",
     },
     {
       q: "Can Bond run Meta and Google ads for our studies?",
@@ -289,11 +289,11 @@ const page: SeoPage = {
     },
     {
       q: "Which vendors publish their prices?",
-      a: "Bond describes its model on its [pricing](/pricing) page: a volume-based platform fee plus a success fee per randomized patient, with no integration fee.{{cite:bond-site,bond-product}} Veeva SiteVault is free for sites with up to 20 concurrent active studies.{{cite:veeva-faq}} Trially, 1nHealth, Antidote, Hippocratic AI and SubjectWell (in 2023) describe a pricing model without amounts.{{cite:trially-crio-webinar,1nhealth-home,antidote-sponsors,hippocratic-agents,subjectwell-recruit-2023}}",
+      a: "Bond describes its model on its [pricing](/pricing) page: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-site,bond-product}} Veeva SiteVault is free for sites with up to 20 concurrent active studies.{{cite:veeva-faq}} Trially, 1nHealth, Antidote, Hippocratic AI and SubjectWell (in 2023) describe a pricing model without amounts.{{cite:trially-crio-webinar,1nhealth-home,antidote-sponsors,hippocratic-agents,subjectwell-recruit-2023}}",
     },
     {
       q: "Is our EHR vendor's research tool enough?",
-      a: "Epic supports recruiting and consent inside Epic, and its page describes health systems contacting candidates through MyChart recruitment messages. Oracle tells study teams which patients may be eligible, with an eligibility score and the reasons.{{cite:epic-life-sciences,oracle-2024}} Neither page we reviewed describes automated voice calls or SMS pre-screening (September 2026). Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator, then finds, contacts, pre-screens and schedules patients and supports consent in one workflow.{{cite:bond-site,bond-product}}",
+      a: "Epic supports recruiting and consent inside Epic, and its page describes health systems contacting candidates through MyChart recruitment messages. Oracle tells study teams which patients may be eligible, with an eligibility score and the reasons.{{cite:epic-life-sciences,oracle-2024}} Neither page we reviewed describes automated voice calls or SMS pre-screening (September 2026). Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator, then finds, contacts, pre-screens and schedules patients and supports consent in one workflow.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
     },
     {
       q: "Can Bond work with the CTMS we already use?",
@@ -314,7 +314,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-trust-center",
@@ -863,7 +863,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "All comparisons", href: "/compare", description: "One-on-one comparisons of Bond with each type of recruitment tool." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliance, BAAs, access control and audit logging." },
     { label: "Identify", href: "/identify", description: "How Bond screens structured fields and notes against a protocol." },
     { label: "Engage", href: "/engage", description: "Voice and SMS outreach, pre-screening and scheduling." },

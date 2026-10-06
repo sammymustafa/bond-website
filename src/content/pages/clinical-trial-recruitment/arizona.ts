@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "As of September 21, 2026, 1,689 studies on ClinicalTrials.gov were recruiting at one or more Arizona sites, about 7.7% of the 22,041 recruiting in the United States, from a state with about 2.2% of US residents.{{cite:ctgov-api,census-pop-2025}} This page is for research sites in Phoenix, Tucson and the rest of the state.",
   summary: "Arizona recruiting-trial counts, Phoenix and Tucson research hubs, health systems and their EHRs, demographics, and state outreach rules.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -101,7 +101,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Epic and Oracle Health split the large systems, so a study that draws on several metro Phoenix systems may need both. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} For Sunrise or eClinicalWorks, the site's IT team confirms which FHIR access its vendor supports. See [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner) and [eClinicalWorks](/integrations/eclinicalworks).",
+          text: "Epic and Oracle Health split the large systems, so a study that draws on several metro Phoenix systems may need both. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} For Sunrise or eClinicalWorks, the site's IT team confirms which FHIR access its vendor supports. See [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner) and [eClinicalWorks](/integrations/eclinicalworks).",
         },
         {
           type: "p",
@@ -534,7 +534,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

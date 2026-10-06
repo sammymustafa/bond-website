@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "Bond Health reads patient records, calls and texts patients, and helps explain consent forms, so it handles protected health information at every step. Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} This page covers where that PHI goes, the controls around it and the evidence your security reviewer can request.",
   summary: "Where PHI goes in a Bond deployment, the controls around it, and the evidence your security reviewer can request.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -65,7 +65,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Setup.** Implementation covers the EHR connection, security review, audit logging setup and workflow configuration, all in the volume-based platform fee, with no separate integration fee. See [pricing](/pricing).{{cite:bond-site}}",
+            "**Setup.** Implementation covers the EHR connection, security review, audit logging setup and workflow configuration, all in the volume-based fee per screened patient, with no separate integration fee. See [pricing](/pricing).{{cite:bond-site}}",
             "**Scripts.** Outreach scripts are configured per site and study.{{cite:bond-site}} FDA expects the IRB to review recruitment material and its mode of communication, so they go in your IRB package.{{cite:fda-recruiting}} See the [IRB and HIPAA outreach guide](/guides/irb-hipaa-patient-outreach).",
             "**Validation.** ICH E6(R3) expects computerized systems used in trials to be fit for purpose, for example through risk-based validation, and leaves the investigator to decide whether a service provider is appropriate.{{cite:ich-e6r3}} Ask Bond how its configuration is tested against your protocol.",
           ],
@@ -332,7 +332,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-trust-center",
@@ -467,7 +467,7 @@ const page: SeoPage = {
     { label: "Implementation", href: "/implementation", description: "Where security review and audit logging setup sit in the plan." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "The approval path and HIPAA basis for contacting patients." },
     { label: "Integrations", href: "/integrations", description: "How Bond connects to EHRs, CTMS and calendars." },
-    { label: "Pricing", href: "/pricing", description: "What the volume-based platform fee covers, including security review." },
+    { label: "Pricing", href: "/pricing", description: "What the volume-based fee per screened patient covers, including security review." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How the agents disclose AI use and hand off to coordinators." },
     { label: "Identify: EHR screening", href: "/identify", description: "What Bond reads in the chart and how matches are explained." },
   ],

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A demo on sample records tells you little about how a tool will do on your charts. This checklist is built to find out: whether the tool reads the notes where eligibility evidence often sits, shows its work criterion by criterion, fits your EHR and IRB process, and lets you leave with your data. It ends in a scoring grid you can use on every vendor, Bond included.",
   summary: "Questions, red flags and a weighted scoring grid for choosing an AI patient recruitment vendor.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -380,10 +380,10 @@ const page: SeoPage = {
           items: [
             "**Accuracy.** Our site states above 90 percent matching accuracy.{{cite:bond-site}} Our technical report gives 0.9312 micro F1 on a held-out n2c2 2018 cohort-selection evaluation, a benchmark result rather than a result on your charts.{{cite:bond-whitepaper}} Under the rubric, neither earns a 3 until you have seen a [validation on your own records](/blog/validating-eligibility-logic-before-go-live).",
             "**Notes and traceability.** [Identify](/identify) reads structured and unstructured records against a study's inclusion and exclusion criteria, ranks candidates and shows the evidence behind each criterion decision.{{cite:bond-site}}",
-            "**Integration.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}} Full EHR integration takes 48 hours, depending on your EHR, IT review and interface method.{{cite:bond-site}} See [implementation](/implementation).",
+            "**Integration.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Full EHR integration takes 48 hours, depending on your EHR, IT review and interface method.{{cite:bond-site}} See [implementation](/implementation).",
             "**Security.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Bond signs BAAs and lists its controls on the [security](/security) page and its Vanta Trust Center.{{cite:bond-site}}",
             "**Disclosure.** [Engage](/engage) tells patients that AI assistance is used, and they can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
-            "**Pricing.** A volume-based platform fee plus a success fee per enrolled patient, where enrolled means randomized. There is no integration fee. See [pricing](/pricing).{{cite:bond-site}}",
+            "**Pricing.** A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient. There is no integration fee. See [pricing](/pricing).{{cite:bond-site}}",
           ],
         },
         {
@@ -421,7 +421,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

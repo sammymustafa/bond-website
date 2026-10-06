@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Oracle Health, formerly Cerner, was the EHR vendor for 21.9 percent of US acute care hospitals at the end of 2025, second only to Epic, according to KLAS.{{cite:klas-2026-hsc}} Bond Health connects to its Millennium platform via FHIR R4 APIs, HL7 v2 where applicable, or an integration partner, and reads structured data and clinical notes against a study's criteria.{{cite:bond-site}} This page covers the data, the site's tasks, the [implementation](/implementation) timeline and what is not integrated today.",
   summary: "What Bond reads from Oracle Health Millennium, what site IT does, and how it differs from Oracle Patient Recruitment.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -227,7 +227,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "klas-2026-hsc",

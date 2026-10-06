@@ -47,7 +47,7 @@ const pillars = [
     color: "bg-purple-500",
     lightColor: "bg-purple-50",
     textColor: "text-purple-600",
-    href: "/engage",
+    href: "/book",
     linkLabel: "How booking works",
   },
 ];

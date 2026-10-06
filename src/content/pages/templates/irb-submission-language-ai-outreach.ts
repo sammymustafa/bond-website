@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Model paragraphs for the recruitment section of an IRB protocol when software screens the EHR and an AI voice or text assistant contacts patients. Each part names the rule it answers to and uses [bracketed placeholders] for site, study and vendor details. Adapt it to your IRB's forms and policies before you submit, because it is a starting draft and not legal advice.",
   summary: "Model protocol paragraphs for AI EHR pre-screening, voice and SMS outreach, data security and consent support.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -521,7 +521,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

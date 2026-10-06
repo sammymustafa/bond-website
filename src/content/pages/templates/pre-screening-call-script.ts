@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A pre-screening call is where many patients first talk to a study team, so the script behind it has to be clear, honest and approved by the IRB. This template gives you a complete call: an opening that confirms identity and asks permission, an optional AI disclosure, eligibility questions with placeholders for your protocol, scheduling, a voicemail and answers to common objections. Adapt it to your study, then submit it with your recruitment materials.",
   summary: "A complete pre-screening phone script with AI disclosure, eligibility placeholders, voicemail and objection handling, ready to adapt for your IRB.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",
@@ -641,7 +641,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

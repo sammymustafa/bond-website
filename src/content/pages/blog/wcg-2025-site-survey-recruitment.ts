@@ -17,8 +17,8 @@ const page: SeoPage = {
   intro:
     "Between July and September 2025, 611 clinical research sites answered WCG's third annual site challenges survey.{{cite:wcg-2025}} Recruitment and retention fell from second to fourth among their top challenges, and hiring and training were each more common responses than technology. Our argument: more staff does not lower the hours each enrollment costs, so a site should test tools against a measured baseline.",
   summary: "WCG's 2025 site survey, read closely: where recruitment ranks, what sites did about it, and what to measure next.",
-  lastUpdated: "2026-09-21",
-  blog: { date: "2026-09-21", author: "Bond Health", readingMinutes: 5 },
+  lastUpdated: "2026-10-05",
+  blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
   sections: [
     {

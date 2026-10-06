@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health finds and pre-screens patients from the EHR, then hands each referral to the system your coordinators already use. At a RealTime site, referrals, recruitment status and outcomes move between Bond and RealTime-CTMS through RealTime's API or a file export, depending on what the site enables. Bond works alongside RealTime; it is not a RealTime partner.",
   summary: "How referrals, recruitment status and outcomes move between Bond and RealTime-CTMS, and what is not integrated.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -111,7 +111,7 @@ const page: SeoPage = {
             [
               "Outcomes",
               "RealTime API read, or a periodic report export from RealTime",
-              "Screened, screen failed, consented, randomized. Used for reporting and for Bond's success fee, which is charged per randomized patient.{{cite:bond-site}}",
+              "Screened, screen failed, consented, randomized. Used for reporting and for Bond's randomization share, a percentage of each patient's randomization milestone payment.{{cite:bond-site}}",
             ],
             [
               "Consent support log",
@@ -242,7 +242,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "rt-ceo-2022",

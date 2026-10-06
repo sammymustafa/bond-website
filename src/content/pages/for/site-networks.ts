@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A site network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
   summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -128,7 +128,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**EHRs.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, over FHIR R4 APIs, HL7 v2 where applicable, or an integration partner. Each connection has its own approval. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).{{cite:bond-site,bond-product}}",
+            "**EHRs.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, over FHIR R4 APIs, HL7 v2 where applicable, or an integration partner. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Each connection has its own approval. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).{{cite:bond-site,bond-product}}",
             "**CRIO.** Bond is a CRIO Certified Partner and, as of September 2026, is listed on CRIO's partners page under Patient Acquisition & Retention.{{cite:bond-site,crio-partners}} Pre-screened patients go to CRIO through the CRIO API. CRIO says its Recruiting API lets vendors send patient updates, qualify patients into studies and schedule appointments.{{cite:crio-recruiting-api}} See the [CRIO integration](/integrations/crio).",
             "**Other CTMS products.** Bond works alongside systems such as [RealTime](/integrations/realtime) and [Advarra Clinical Conductor](/integrations/advarra-clinical-conductor), through the vendor's API or file export where the vendor supports it. Google Sheets and calendars connect directly.{{cite:bond-site}}",
           ],
@@ -199,7 +199,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Pricing has two parts: a volume-based platform fee covering EHR integration, implementation and ongoing operation, including EHR connections, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support; and a success fee per enrolled patient, where enrolled means randomized. There is no separate integration fee. Per-visit milestones can be added.{{cite:bond-site}}",
+          text: "Pricing has two parts: a volume-based fee per screened patient covering EHR integration, implementation and ongoing operation, including EHR connections, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support; and a percentage of the randomization milestone payment for each patient who is randomized. There is no separate integration fee.{{cite:bond-site}}",
         },
         {
           type: "p",
@@ -244,7 +244,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "tufts-impact-2026",
@@ -347,7 +347,7 @@ const page: SeoPage = {
     { label: "Bond for research sites", href: "/for/research-sites", description: "How a single site uses Bond for screening, outreach and booked visits." },
     { label: "CRIO integration", href: "/integrations/crio", description: "How pre-screened patients and statuses move between Bond and CRIO." },
     { label: "Implementation", href: "/implementation", description: "The step-by-step plan for connecting an EHR and going live." },
-    { label: "Pricing", href: "/pricing", description: "A volume-based platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors check in feasibility, and how to present patient counts." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Criterion-by-criterion screening with the chart evidence behind each match." },
   ],

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Psoriasis, atopic dermatitis and hidradenitis suppurativa trials screen on PASI, EASI or IGA scores, body surface area, prior biologics and washouts. Much of that evidence sits in exam notes rather than coded fields.{{cite:jaad-ehr-2019}} In two real-world cohorts, severity was the most common reason a treated patient would not have qualified.{{cite:alvarenga-2026,psobioteq-2020}} This page maps each criterion to the chart and shows how Bond Health screens for it.",
   summary: "How severity scores, biologic history and washouts map to the chart, and how Bond screens for them.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -133,7 +133,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion, ranks candidates, and shows the evidence behind each criterion-level decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}}",
+          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion, ranks candidates, and shows the evidence behind each criterion-level decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
         },
         {
           type: "steps",
@@ -382,7 +382,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

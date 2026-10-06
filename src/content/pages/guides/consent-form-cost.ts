@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Trial consent forms have grown longer for decades, and they are typically written well above the average reading level of the US adults asked to sign them.{{cite:berger-2009,duong-2021,mirza-2024}} The cost shows up as longer reading time, lower comprehension and, in observational data, higher dropout. Below are the numbers, the rules, and what a site can change without waiting on the sponsor.",
   summary: "The evidence on consent form length, reading level, comprehension and dropout, plus the fixes that work and how to measure them.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",

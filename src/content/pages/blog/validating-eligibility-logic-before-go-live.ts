@@ -12,8 +12,8 @@ const page: SeoPage = {
   intro:
     "An AI screening tool is only as good as the criteria it was given and the evidence it can find. This post describes what happens between signing and go-live: how a protocol's inclusion and exclusion criteria become checks the system can run, how those checks are tested against real records, and what a coordinator sees when a match is wrong.",
   summary: "The configure, test, adjudicate loop that runs before any live screening starts.",
-  lastUpdated: "2026-09-24",
-  blog: { date: "2026-09-21", author: "Bond Health", readingMinutes: 6 },
+  lastUpdated: "2026-10-05",
+  blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 6 },
   heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {

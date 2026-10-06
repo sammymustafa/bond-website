@@ -19,9 +19,9 @@ const page: SeoPage = {
   eyebrow: "Compare",
   h1: "How Bond compares",
   intro:
-    "Most recruitment tools cover one step. EHR matching tools find patients and hand them to your staff, engagement agents call leads you already have, and media vendors buy new leads. Bond does all of it: it finds eligible patients in your own EHR, creates and runs Meta and Google ad campaigns to reach new ones, contacts every ad lead immediately and keeps following up until they respond, pre-screens and schedules every lead, supports informed consent and keeps participants engaged after enrollment, in one workflow with no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}}",
+    "Most recruitment tools cover one step. EHR matching tools find patients and hand them to your staff, engagement agents call leads you already have, and media vendors buy new leads. Bond does all of it: it finds eligible patients in your own EHR, creates and runs Meta and Google ad campaigns to reach new ones, contacts every ad lead immediately and keeps following up until they respond, pre-screens and schedules every lead, supports informed consent and keeps participants engaged after enrollment, in one workflow with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}",
   summary: "Every comparison page in one place, and why sites choose one platform over separate tools.",
-  lastUpdated: "2026-09-29",
+  lastUpdated: "2026-10-05",
   sections: [
     {
       id: "why-bond",
@@ -50,8 +50,8 @@ const page: SeoPage = {
             "**Evidence behind every match.** Each candidate comes with criterion-by-criterion rationale linked to the chart, so coordinators check evidence instead of rereading records. Identify reads clinical notes, prescriptions and lab results, and uses imaging data and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-site,bond-product}}",
             "**Agents that speak your patients' language.** Voice and text conversations run in English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to your coordinators or book a callback, whichever your site prefers.{{cite:bond-product}}",
             "**Support after enrollment.** The same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-            "**No integration fee.** A volume-based platform fee plus a success fee paid only for patients who are randomized. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
-            "**Every major EHR, live in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs, its team handles the integration end to end, and Bond is a CRIO Certified Partner. See [implementation](/implementation).{{cite:bond-site,bond-product}}",
+            "**No integration fee.** A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, owed only for randomized patients. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**Every major EHR, live in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs, its team handles the integration end to end, and Bond is a CRIO Certified Partner. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} See [implementation](/implementation).{{cite:bond-site,bond-product}}",
             "**Security you can check.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway. Its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously. See [security](/security).{{cite:bond-product,bond-trust-center}}",
           ],
         },
@@ -100,7 +100,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-trust-center",
@@ -114,7 +114,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software", description: "Every vendor's coverage of identify, engage, booking and consent." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a per-randomized-patient success fee." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },
   ],

@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/integrations/crio",
   category: "integration",
-  title: "CRIO CTMS patient recruitment integration: Certified Partner",
+  title: "CRIO CTMS integration: Bond is a CRIO Certified Partner",
   description:
     "How Bond, a CRIO Certified Partner, screens charts, sends pre-screened patients into CRIO CTMS, reads status back, and what your CRIO admin sets up.",
   keywords: [
@@ -14,13 +14,35 @@ const page: SeoPage = {
     "CRIO Partner Directory",
   ],
   eyebrow: "Integration",
-  h1: "Connecting Bond to CRIO",
+  h1: "Bond and CRIO: a certified, two-way integration",
   intro:
-    "Bond Health is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of September 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}}",
+    "Bond Health is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of September 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}} CRIO is the one CTMS where Bond is a Certified Integration Partner: pre-screened patients go straight into CRIO through its API, and their status comes back to Bond, so coordinators never re-enter a patient.{{cite:crio-partners,crio-recruiting-api}}",
   summary: "How pre-screened patients and statuses move between Bond and CRIO, and what the CRIO Certified Partner badge covers.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
+    {
+      id: "why-crio-is-different",
+      heading: "Why is the CRIO integration different from other CTMS connections?",
+      blocks: [
+        {
+          type: "callout",
+          tone: "bond",
+          title: "Bond's only certified CTMS integration",
+          text: "Bond is a CRIO Certified Partner, the only vendor certification it holds. With CRIO, the connection runs both ways through CRIO's API: Bond sends pre-screened patients into CRIO and reads their status back.{{cite:bond-site,crio-partners,crio-recruiting-api}}",
+        },
+        {
+          type: "ul",
+          items: [
+            "**Patients land in CRIO, not in an export file.** Patients who pass pre-screening are sent to CRIO through the CRIO API, which CRIO says lets vendors send patient updates, qualify patients into studies and schedule appointments.{{cite:crio-recruiting-api}}",
+            "**Status comes back on its own.** After the handoff, CRIO is the system of record, and Bond reads subject status back through the same API, so Bond's reports follow each patient through to randomization without double entry.{{cite:crio-recruiting-api,bond-site}}",
+            "**Bond screens CRIO's records too.** Once the site activates API access, [Identify](/identify) screens the patient records the site keeps in CRIO as well as the EHR.{{cite:crio-bond-announcement}}",
+            "**Set up from CRIO's Partner Directory.** Sites find Bond in CRIO's Partner Directory and request API access activation there.{{cite:crio-partners-intro,crio-partners}}",
+            "**Other CTMS systems.** With Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault, Bond works through the site's own API access or file exports. See [all integrations](/integrations).{{cite:bond-site}}",
+          ],
+        },
+      ],
+    },
     {
       id: "what-is-crio",
       heading: "What is CRIO, and who uses it?",
@@ -221,7 +243,7 @@ const page: SeoPage = {
     },
     {
       q: "How is the CRIO connection priced?",
-      a: "Bond charges no integration fee: integration and workflow configuration fall under its volume-based platform fee, alongside a success fee per enrolled patient; see [pricing](/pricing).{{cite:bond-site}} CRIO describes its Partner Directory as complimentary for CRIO users.{{cite:crio-partners-intro}}",
+      a: "Bond charges no integration fee: integration and workflow configuration fall under its volume-based fee per screened patient, alongside a percentage of each patient's randomization milestone payment; see [pricing](/pricing).{{cite:bond-site}} CRIO describes its Partner Directory as complimentary for CRIO users.{{cite:crio-partners-intro}}",
     },
   ],
   sources: [
@@ -238,7 +260,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "crio-about",

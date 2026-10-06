@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "In 2023, 24.3% of US adults had chronic pain,{{cite:cdc-chronic-pain-2023}} yet in one review of phase 3 and 4 chronic pain trials, 33.8% of discontinued trials that gave a reason cited low accrual or insufficient recruitment.{{cite:jacobsen-2023}} Most pain protocols set a minimum pain score, and many also limit opioid dose, prior procedures and psychiatric history. This page maps those criteria to the chart and shows how Bond screens for them.",
   summary: "How pain scores, opioid limits, prior procedures and psychiatric exclusions map to the chart, and how Bond screens for them.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -118,7 +118,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion, ranks candidates, and shows the evidence behind each criterion-level decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}} FDA's draft guidance notes that such data may be valuable in identifying patients who may be eligible for trials.{{cite:fda-chronic-pain-2026}} In a pain chart, Bond reads these sources where the site's EHR connection makes them available:",
+          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion, ranks candidates, and shows the evidence behind each criterion-level decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} FDA's draft guidance notes that such data may be valuable in identifying patients who may be eligible for trials.{{cite:fda-chronic-pain-2026}} In a pain chart, Bond reads these sources where the site's EHR connection makes them available:",
         },
         {
           type: "ul",
@@ -230,7 +230,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

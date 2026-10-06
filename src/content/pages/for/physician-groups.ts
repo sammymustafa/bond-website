@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and books them for screening visits, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
   summary: "How a community or specialty practice runs studies from its own patient panel while protecting clinic time and PI hours.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -156,7 +156,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "In the federal 2024 National Electronic Health Record Survey, 27.7% of office-based physicians used an EHR from Epic, 7.5% from eClinicalWorks and 7.3% from athenahealth.{{cite:onc-nehrs-2024}} Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner.{{cite:bond-site,bond-product}} Its only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}}",
+          text: "In the federal 2024 National Electronic Health Record Survey, 27.7% of office-based physicians used an EHR from Epic, 7.5% from eClinicalWorks and 7.3% from athenahealth.{{cite:onc-nehrs-2024}} Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Its only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}}",
         },
         {
           type: "ul",
@@ -198,11 +198,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Pricing has two parts. A volume-based platform fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. There is no separate integration fee. A success fee is charged per enrolled patient, where enrolled means randomized, and per-visit milestones can be added.{{cite:bond-site}}",
+          text: "Pricing has two parts. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. There is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site}}",
         },
         {
           type: "p",
-          text: "The success fee moves with enrollment, not with charts screened or calls placed. Pricing is custom; the [pricing](/pricing) page lists what every engagement includes.",
+          text: "The randomization share moves with enrollment, not with charts screened or calls placed. Pricing is custom; the [pricing](/pricing) page lists what every engagement includes.",
         },
         {
           type: "cta",
@@ -243,7 +243,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "aamc-research",
@@ -323,7 +323,7 @@ const page: SeoPage = {
     { label: "eClinicalWorks integration", href: "/integrations/eclinicalworks", description: "How a practice turns on FHIR access and what Bond reads." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts and explains each match." },
     { label: "Implementation", href: "/implementation", description: "What your team and Bond do at each step of the 48-hour plan." },
-    { label: "Pricing", href: "/pricing", description: "The platform fee and the success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "The fee per screened patient and a percentage of each patient's randomization milestone payment." },
     { label: "How to use your EHR for recruitment", href: "/guides/ehr-for-recruitment", description: "Cohort queries, HIPAA paths and coordinator review, step by step." },
   ],
 };

@@ -33,6 +33,9 @@ const PRODUCT_PATHS = ["/identify", "/engage", "/consent", "/implementation", "/
 const STATIC_ROUTES = ["/", "/careers", "/privacy-policy", "/terms-of-service", "/book-a-demo", "/blog", "/glossary", "/newsletter"];
 // Filled in main(): registry routes in full mode, planned routes in single-file mode.
 const routes = new Set<string>(STATIC_ROUTES);
+// Blog post path -> publish date, so a page cannot link to a post that goes live after it does.
+const postDates = new Map<string, string>();
+let currentPublishDate = new Date().toISOString().slice(0, 10);
 const HOME_ANCHORS = ["/#product", "/#solutions", "/#pricing", "/#security", "/#faq", "/#contact", "/#about"];
 
 // Global regexes are only ever used with matchAll. Never call .test() on them:
@@ -113,6 +116,10 @@ function checkLink(href: string, where: string) {
   const clean = href.split("#")[0].split("?")[0];
   if (HOME_ANCHORS.includes(href)) return;
   if (!routes.has(clean)) errors.push(`${where}: internal link does not resolve: ${href}`);
+  const postDate = postDates.get(clean);
+  if (postDate && postDate > currentPublishDate) {
+    errors.push(`${where}: links to ${clean}, which is scheduled for ${postDate}, after this page goes live (${currentPublishDate})`);
+  }
 }
 
 function validatePage(page: SeoPage, where: string, opts: { isGlossary?: boolean } = {}) {
@@ -226,7 +233,10 @@ async function addRegistryRoutes() {
   try {
     const { pages } = await import("../src/content/registry");
     const { glossary } = await import("../src/content/glossary");
-    for (const p of pages) routes.add(p.path);
+    for (const p of pages) {
+      routes.add(p.path);
+      if (p.category === "blog" && p.blog) postDates.set(p.path, p.blog.date);
+    }
     for (const t of glossary) routes.add(`/glossary/${t.slug}`);
   } catch {
     // Links are then checked against STATIC_ROUTES and PLANNED_ROUTES only.
@@ -267,7 +277,10 @@ async function main() {
     const { glossary } = await import("../src/content/glossary");
     pageList = pages;
     termList = glossary;
-    for (const p of pages) routes.add(p.path);
+    for (const p of pages) {
+      routes.add(p.path);
+      if (p.category === "blog" && p.blog) postDates.set(p.path, p.blog.date);
+    }
     for (const t of glossary) routes.add(`/glossary/${t.slug}`);
   }
 
@@ -277,12 +290,15 @@ async function main() {
     if (seen.has(page.path)) errors.push(`${where}: duplicate path`);
     seen.add(page.path);
     // Validate the page as rendered, including the shared "why Bond" section.
+    const today = new Date().toISOString().slice(0, 10);
+    currentPublishDate = page.blog?.date && page.blog.date > today ? page.blog.date : today;
     validatePage(withWhyBond(page), where);
   }
   const seenSlugs = new Set<string>();
   for (const term of termList) {
     if (seenSlugs.has(term.slug)) errors.push(`[/glossary/${term.slug}]: duplicate slug`);
     seenSlugs.add(term.slug);
+    currentPublishDate = new Date().toISOString().slice(0, 10);
     validatePage(withWhyBond(glossaryTermToPage(term)), `[/glossary/${term.slug}]`, { isGlossary: true });
   }
 

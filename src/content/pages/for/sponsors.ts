@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
   summary: "What a delay day costs, why sites enroll unevenly, and how Bond reports one enrollment funnel across a sponsor's sites.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -193,7 +193,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond uses two-part pricing. A volume-based platform fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review and audit logging setup, workflow configuration and ongoing support. There is no separate integration fee. A success fee is charged per enrolled patient, meaning randomized, and per-visit milestones can be added.{{cite:bond-site}} The variable part tracks the same randomized count your reports show, not calls placed or leads passed. Pricing is custom; see [pricing](/pricing).",
+          text: "Bond uses two-part pricing. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review and audit logging setup, workflow configuration and ongoing support. There is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site}} The variable part tracks the same randomized count your reports show, not calls placed or leads passed. Pricing is custom; see [pricing](/pricing).",
         },
         {
           type: "cta",
@@ -213,7 +213,7 @@ const page: SeoPage = {
     },
     {
       q: "Can Bond work across sites on different EHRs?",
-      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner.{{cite:bond-site,bond-product}} The [integrations](/integrations) pages list what each site provides.",
+      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} The [integrations](/integrations) pages list what each site provides.",
     },
     {
       q: "Can Bond join a study that is already enrolling?",
@@ -321,13 +321,13 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [
     { label: "Bond for CROs", href: "/for/cros", description: "Screening, outreach and one enrollment funnel across a CRO's site portfolio." },
     { label: "Implementation", href: "/implementation", description: "What full EHR integration involves in 48 hours, and what a site provides." },
-    { label: "Pricing", href: "/pricing", description: "A platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each patient's randomization milestone payment." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Ranked candidates with the chart evidence for each criterion." },

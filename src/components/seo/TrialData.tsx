@@ -16,6 +16,10 @@ interface Geo {
   states: string[];
   counts: Record<string, number | null>;
   samples: Record<string, Trial[]>;
+  /** City areas only: a radius search, with its own query date and US totals from the same day. */
+  area?: string;
+  as_of?: string;
+  us?: Record<string, number | null>;
 }
 
 interface Dataset {
@@ -35,6 +39,12 @@ export const GEO_NAMES: Record<string, string> = {
   utah: "Utah",
   southeast: "Southeast",
   midwest: "Midwest",
+  boston: "the Boston area",
+  "new-york-city": "the New York City area",
+  philadelphia: "the Philadelphia area",
+  "los-angeles": "the Los Angeles area",
+  "san-francisco-bay-area": "the San Francisco Bay Area",
+  seattle: "the Seattle area",
 };
 
 const CONDITION_LABELS: Record<string, string> = {
@@ -91,7 +101,7 @@ export function TrialCounts({ geo, cite, cites }: { geo: string; cite: string; c
           <tbody>
             {keys.map((k) => {
               const local = g.counts[k];
-              const us = dataset.us[k];
+              const us = (g.us ?? dataset.us)[k];
               const share = local != null && us ? `${((local / us) * 100).toFixed(0)}%` : "n/a";
               return (
                 <tr key={k} className="border-t border-gray-100">
@@ -106,10 +116,10 @@ export function TrialCounts({ geo, cite, cites }: { geo: string; cite: string; c
         </table>
       </div>
       <p className="mt-2 text-xs text-gray-500">
-        Counts are studies with overall status Recruiting and at least one location in{" "}
-        {g.states.length > 1 ? `one of: ${g.states.join(", ")}` : name}, queried on {formatDate(dataset.as_of)}. Area
-        counts use keyword searches on the condition field and overlap; regional counts sum the states and can count a
-        multi-state study more than once.
+        Counts are studies with overall status Recruiting and at least one location{" "}
+        {g.area ? `within ${g.area}` : `in ${g.states.length > 1 ? `one of: ${g.states.join(", ")}` : name}`}, queried on{" "}
+        {formatDate(g.as_of ?? dataset.as_of)}. Area counts use keyword searches on the condition field and overlap
+        {g.states.length > 1 ? "; regional counts sum the states and can count a multi-state study more than once" : ""}.
       </p>
     </figure>
   );
@@ -129,11 +139,12 @@ export function TrialExamples({
   const g = dataset.geos[geo];
   const trials = g?.samples[condition];
   if (!g || !trials || !trials.length) return null;
-  const state = g.states[0];
+  // City areas have no state list; describe them by their radius instead.
+  const place = g.area ? `within ${g.area}` : `in ${g.states[0]}`;
   return (
     <figure className="my-8">
       <figcaption className="mb-3 font-semibold text-gray-900">
-        Examples of recruiting {CONDITION_LABELS[condition]?.toLowerCase() ?? condition} studies with a site in {state}
+        Examples of recruiting {CONDITION_LABELS[condition]?.toLowerCase() ?? condition} studies with a site {place}
         <Cite ids={[cite]} cites={cites} />
       </figcaption>
       <div className="overflow-x-auto rounded-2xl border border-gray-200">
@@ -170,7 +181,7 @@ export function TrialExamples({
         </table>
       </div>
       <p className="mt-2 text-xs text-gray-500">
-        Most recently updated recruiting studies as of {formatDate(dataset.as_of)}. Listing a study does not imply Bond
+        Most recently updated recruiting studies as of {formatDate(g?.as_of ?? dataset.as_of)}. Listing a study does not imply Bond
         Health works with its sponsor or sites.
       </p>
     </figure>

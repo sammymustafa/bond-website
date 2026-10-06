@@ -17,8 +17,8 @@ const page: SeoPage = {
   intro:
     "Ask a data warehouse for patients with a diagnosis code and a recent lab, and you get a list. Ask whether a patient's heart failure is symptomatic, why a drug was stopped, or whether disease progressed on the last scan, and the answer is often in a clinical note. Here is what studies have measured, and what to do about it.",
   summary: "What studies measured about trial criteria that only clinical notes can answer, and what that means for EHR queries.",
-  lastUpdated: "2026-09-21",
-  blog: { date: "2026-09-21", author: "Bond Health", readingMinutes: 5 },
+  lastUpdated: "2026-10-05",
+  blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {

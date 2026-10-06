@@ -3,22 +3,25 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/engage",
   category: "product",
-  title: "Engage: AI voice and SMS trial pre-screening and scheduling",
+  title: "Engage: trial ads, instant AI outreach and visit booking",
   description:
     "Bond creates Meta and Google ads for your studies, calls and texts every lead immediately, follows up until they respond and books them for visits.",
   keywords: [
+    "clinical trial recruitment ads",
+    "Meta and Google ads for clinical trials",
+    "clinical trial lead follow-up",
     "AI voice agent clinical trial pre-screening",
     "SMS patient outreach clinical trials",
     "clinical trial visit scheduling automation",
     "TCPA AI voice calls healthcare",
   ],
   eyebrow: "Engage",
-  h1: "Voice and SMS agents that pre-screen and schedule matched patients",
+  h1: "Meta and Google ads, instant outreach and follow-up, all the way to a booked visit",
   intro:
-    "Engage is the outreach stage of Bond Health. Voice and SMS agents contact the patients a site has approved for outreach, tell them AI assistance is being used, run a pre-screening script configured for the site and study, and book a screening visit into the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}} For studies that need patients beyond the site's records, Bond also creates and runs Meta and Google ad campaigns: the agents contact every ad lead immediately and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}}",
+    "Engage is the outreach stage of Bond Health. Bond creates and runs Meta and Google ad campaigns for each study, and its voice and SMS agents contact every new ad lead immediately and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
   summary:
     "Meta and Google ad campaigns plus voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -27,7 +30,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Engage starts from a list of patients who look eligible. With full EHR integration, that list comes from [Identify](/identify), ranked and shown with the chart evidence behind each match. For a pilot without EHR integration, the site can supply the list itself, for example in a Google Sheet. Bond's agents then work through the list by phone and text.{{cite:bond-site}}",
+          text: "Engage works two sources of patients: leads from the Meta and Google ad campaigns Bond creates for the study, contacted immediately, and patients who look eligible in the site's records. With full EHR integration, that second list comes from [Identify](/identify), ranked and shown with the chart evidence behind each match. For a pilot without EHR integration, the site can supply the list itself, for example in a Google Sheet. Bond's agents then work through the list by phone and text.{{cite:bond-site}}",
         },
         {
           type: "steps",
@@ -316,7 +319,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-acrp-talk",

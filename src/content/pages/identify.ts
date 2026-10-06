@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Identify is the first stage of Bond Health's recruitment workflow. Bond reads a site's EHR records, from structured fields to clinical notes, imaging data and other unstructured documents, against a study's inclusion and exclusion criteria, ranks the patients most likely to qualify, and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} Coordinators review a ranked, explained list instead of opening charts one at a time.",
   summary: "LLM-based EHR screening that ranks candidates and links every criterion decision to chart evidence.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -26,7 +26,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR,{{cite:bond-product}} through FHIR R4 APIs, HL7 v2 feeds where applicable, or an integration partner.{{cite:bond-site}} The [integrations](/integrations) page lists what each EHR needs from site IT. What Bond reads depends on what the site's connection exposes:",
+          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR,{{cite:bond-product}} through FHIR R4 APIs, HL7 v2 feeds where applicable, or an integration partner.{{cite:bond-site}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} The [integrations](/integrations) page lists what each EHR needs from site IT. What Bond reads depends on what the site's connection exposes:",
         },
         {
           type: "ul",
@@ -70,7 +70,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Screening starts from the study's own inclusion and exclusion criteria. Setting them up is part of the workflow configuration covered by Bond's platform fee, and it happens inside the [implementation](/implementation) plan, which takes 48 hours for full EHR integration depending on the EHR, IT review and interface method.{{cite:bond-site}}",
+          text: "Screening starts from the study's own inclusion and exclusion criteria. Setting them up is part of the workflow configuration covered by Bond's per-screened-patient fee, and it happens inside the [implementation](/implementation) plan, which takes 48 hours for full EHR integration depending on the EHR, IT review and interface method.{{cite:bond-site}}",
         },
         {
           type: "steps",
@@ -239,11 +239,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "Does Identify work with Epic and Oracle Health (Cerner)?",
-      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} Full EHR integration typically takes 48 hours depending on the EHR, IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
+      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Full EHR integration typically takes 48 hours depending on the EHR, IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
     },
     {
       q: "Is Identify priced separately?",
-      a: "No. LLM EHR screening is included in every engagement, alongside outreach, consent support and the dashboard. Pricing combines a volume-based platform fee with a success fee per enrolled (randomized) patient, and there is no integration fee, as described on the [pricing](/pricing) page.{{cite:bond-site}}",
+      a: "No. LLM EHR screening is included in every engagement, alongside outreach, consent support and the dashboard. Pricing combines a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, and there is no integration fee, as described on the [pricing](/pricing) page.{{cite:bond-site}}",
     },
     {
       q: "Can Identify support feasibility answers?",
@@ -251,7 +251,7 @@ const page: SeoPage = {
     },
     {
       q: "What happens when the protocol is amended?",
-      a: "The criteria configuration is updated to match the amended protocol; workflow configuration and ongoing support are covered by the platform fee.{{cite:bond-site}} Before relying on the updated list, have coordinators re-check a sample of decisions on the changed criteria.",
+      a: "The criteria configuration is updated to match the amended protocol; workflow configuration and ongoing support are covered by the per-screened-patient fee.{{cite:bond-site}} Before relying on the updated list, have coordinators re-check a sample of decisions on the changed criteria.",
     },
     {
       q: "When does Bond start reading real patient records?",
@@ -272,7 +272,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

@@ -1,4 +1,4 @@
-import { pages } from "./registry";
+import { publishedPages as pages } from "./published";
 import { glossary } from "./glossary";
 import {
   audienceLinks,

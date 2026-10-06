@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "A full Bond Health deployment with the EHR connected typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} What can add time is approvals Bond does not control: the BAA, the security review, the EHR connection and, where needed, IRB review of outreach scripts. Below is what Bond does, what your team does, and what exists after each step.",
   summary: "Step-by-step plan for a 48-hour EHR-integrated deployment, with site tasks, Bond tasks and a list-based pilot path.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -137,7 +137,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} Most certified EHRs already ship a standard interface. ONC's Cures Act Final Rule required certified EHR developers to update their API technology to FHIR-based APIs under § 170.315(g)(10) and provide it to customers by December 31, 2022, and ONC reported in February 2023 that more than 95 percent of developers met that deadline.{{cite:onc-cures-milestone}} The criterion is built on HL7 FHIR Release 4.0.1,{{cite:onc-g10}} so Bond's default path is FHIR R4 and the site's work is mostly approval and provisioning. Ask your IT team whether those APIs are turned on for third-party apps.",
+          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Most certified EHRs already ship a standard interface. ONC's Cures Act Final Rule required certified EHR developers to update their API technology to FHIR-based APIs under § 170.315(g)(10) and provide it to customers by December 31, 2022, and ONC reported in February 2023 that more than 95 percent of developers met that deadline.{{cite:onc-cures-milestone}} The criterion is built on HL7 FHIR Release 4.0.1,{{cite:onc-g10}} so Bond's default path is FHIR R4 and the site's work is mostly approval and provisioning. Ask your IT team whether those APIs are turned on for third-party apps.",
         },
         {
           type: "p",
@@ -254,7 +254,7 @@ const page: SeoPage = {
             "**It does not decide eligibility.** Bond reports matching accuracy above 90 percent,{{cite:bond-site}} so some matches will be wrong. Coordinators and the PI confirm each one, and the screening visit decides.",
             "**It does not obtain consent.** The PI and delegated staff do.",
             "**It does not replace your CTMS or eRegulatory system.** It works alongside them.",
-            "**It does not have a public price list.** Pricing is custom: a volume-based platform fee covers EHR integration, implementation and ongoing operation, with no separate integration fee, plus a success fee per randomized patient. See [pricing](/pricing).{{cite:bond-site}}",
+            "**It does not have a public price list.** Pricing is custom: a volume-based fee per screened patient covers EHR integration, implementation and ongoing operation, with no separate integration fee, plus a percentage of each patient's randomization milestone payment. See [pricing](/pricing).{{cite:bond-site}}",
           ],
         },
         {
@@ -279,7 +279,7 @@ const page: SeoPage = {
     },
     {
       q: "Does the EHR vendor charge for the connection?",
-      a: "That depends on your contract with the EHR vendor. Epic's developer documentation (as of September 2026) recommends that health systems request a licensing estimate early.{{cite:epic-implementing}} Bond charges no integration fee; its integration work is covered by its volume-based platform fee.{{cite:bond-site}}",
+      a: "That depends on your contract with the EHR vendor. Epic's developer documentation (as of September 2026) recommends that health systems request a licensing estimate early.{{cite:epic-implementing}} Bond charges no integration fee; its integration work is covered by its volume-based fee per screened patient.{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -303,7 +303,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "onc-cures-milestone",
@@ -359,7 +359,7 @@ const page: SeoPage = {
     { label: "Epic integration", href: "/integrations/epic", description: "The FHIR resources, approvals and IT tasks for Epic sites." },
     { label: "CRIO integration", href: "/integrations/crio", description: "How referrals and statuses move between Bond and CRIO." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
-    { label: "Pricing", href: "/pricing", description: "The volume-based platform fee and the per-enrolled-patient success fee." },
+    { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomization milestone payment." },
     { label: "Book a demo", href: "/book-a-demo", description: "Map the plan to your protocol, EHR and site calendar." },
   ],
 };

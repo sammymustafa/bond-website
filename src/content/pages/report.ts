@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "This Bond Health report brings together what ClinicalTrials.gov and published research say about clinical trial enrollment in 2026. Every figure is tied to a named, dated source, and older benchmarks carry their year.",
   summary: "Registry counts by state and area, plus sourced data on enrollment, sites, screen failure, workload, consent and representation.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: {
     label: "Download the PDF",

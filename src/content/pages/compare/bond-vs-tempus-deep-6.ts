@@ -21,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Tempus AI acquired Deep 6 AI on March 11, 2025, and offers EHR-based trial matching through Deep 6 AI, its TIME oncology trial network, and Next Trials pre-screening for trials already open at a practice.{{cite:tempus-10k-2025,tempus-time-site-2026,tempus-next-trials-2026}} Bond Health reads a site's own EHR, including clinical notes, against each protocol, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent.{{cite:bond-site}} For sites running their own studies in any therapeutic area, Bond covers finding, contacting, scheduling and consent in one product.",
   summary: "How Bond compares with Tempus's Deep 6 AI, TIME and Next Trials, from EHR matching to outreach, booked visits and pricing.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -32,7 +32,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "For sites running their own studies in any therapeutic area, Bond is better than Tempus and Deep 6 AI because it is one product that finds eligible patients in the EHR, contacts and schedules them by voice and text, and supports consent, with a success fee paid per randomized patient.{{cite:bond-site,bond-product}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
+          text: "For sites running their own studies in any therapeutic area, Bond is better than Tempus and Deep 6 AI because it is one product that finds eligible patients in the EHR, contacts and schedules them by voice and text, and supports consent, with a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} It also creates and runs Meta and Google ad campaigns, contacts every ad lead immediately and keeps following up until patients respond and are booked for visits.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -51,7 +51,7 @@ const page: SeoPage = {
             "**Consent support for patients.** Plain-language explanations, patient Q&A and escalation to staff, with checks on the patient's understanding of key points and an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
             "**Any study, any site.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Bond serves research sites, physician groups, FQHCs, site networks, CROs and sponsors.{{cite:bond-site}}",
-            "**No integration fee.** A volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**No integration fee.** A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -126,7 +126,7 @@ const page: SeoPage = {
             ],
             [
               "Integrations",
-              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator. [CRIO](/integrations/crio) Certified Partner. Direct integrations with CTMS and calendars.{{cite:bond-site,bond-product,bond-acrp-talk}}",
+              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} [CRIO](/integrations/crio) Certified Partner. Direct integrations with CTMS and calendars.{{cite:bond-site,bond-product,bond-acrp-talk}}",
               "Tempus connects to a provider's EHR, data warehouse or a third-party data provider, using near real-time HL7 and FHIR connections and batch data exchange (2026). Deep 6 AI integrates with the health system's EMR (2023) and can bring in genomics, cancer registry and CTMS data (2024).{{cite:tempus-10k-2025,deep6-ttuhsc-2023,osu-aaci-2024}}",
             ],
             [
@@ -136,7 +136,7 @@ const page: SeoPage = {
             ],
             [
               "Pricing",
-              "A volume-based platform fee plus a success fee per randomized patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
               "No public price list found (September 2026). Tempus's 10-K names the trial sponsor as the TIME customer. Depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls, and where the contract requires, it may help open the trial site and enroll the patient (2026).{{cite:tempus-10k-2025}}",
             ],
           ],
@@ -182,7 +182,7 @@ const page: SeoPage = {
             },
             {
               title: "Compare cost per randomized patient",
-              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's success fee is charged per randomized patient ([pricing](/pricing)).{{cite:bond-site}}",
+              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's randomization share is a percentage of each patient's randomization milestone payment ([pricing](/pricing)).{{cite:bond-site}}",
             },
             {
               title: "Compare the paperwork",
@@ -224,7 +224,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a Deep 6 AI alternative?",
-      a: "Yes. Like Deep 6 AI, Bond screens the site's EHR, including unstructured notes, and shows the evidence behind each criterion.{{cite:bond-site,osu-aaci-2024}} Bond then contacts, pre-screens and schedules matched patients by voice and text, supports informed consent, and charges a success fee per randomized patient ([pricing](/pricing)).{{cite:bond-site}}",
+      a: "Yes. Like Deep 6 AI, Bond screens the site's EHR, including unstructured notes, and shows the evidence behind each criterion.{{cite:bond-site,osu-aaci-2024}} Bond then contacts, pre-screens and schedules matched patients by voice and text, supports informed consent, and charges a percentage of each patient's randomization milestone payment ([pricing](/pricing)).{{cite:bond-site}}",
     },
     {
       q: "Is Deep 6 AI part of Tempus now?",
@@ -236,7 +236,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}} We found no public price list for Deep 6 AI, TIME or Next Trials as of September 2026. Tempus's 10-K names the trial sponsor as the TIME customer and says that, depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls.{{cite:tempus-10k-2025}}",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}} We found no public price list for Deep 6 AI, TIME or Next Trials as of September 2026. Tempus's 10-K names the trial sponsor as the TIME customer and says that, depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls.{{cite:tempus-10k-2025}}",
     },
   ],
   sources: [
@@ -349,7 +349,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",
@@ -377,7 +377,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a per-randomized-patient success fee." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule matched patients." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },

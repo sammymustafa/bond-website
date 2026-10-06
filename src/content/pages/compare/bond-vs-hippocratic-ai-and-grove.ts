@@ -18,9 +18,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Hippocratic AI and Grove AI",
   intro:
-    "Hippocratic AI, which announced its acquisition of Grove AI and the Grace trial agent on January 12, 2026, sells AI agents that call and pre-screen trial candidates drawn from a feasibility model, referrals, registries and campaigns.{{cite:hippo-grove-acquisition,hippo-trial-enrollment}} Bond Health starts in the chart: it screens the site's own EHR, clinical notes included, against each study's criteria, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} If you want eligible patients found in your own records and carried to a booked study visit by one platform, with a success fee tied to randomized patients, Bond is the stronger choice.",
+    "Hippocratic AI, which announced its acquisition of Grove AI and the Grace trial agent on January 12, 2026, sells AI agents that call and pre-screen trial candidates drawn from a feasibility model, referrals, registries and campaigns.{{cite:hippo-grove-acquisition,hippo-trial-enrollment}} Bond Health starts in the chart: it screens the site's own EHR, clinical notes included, against each study's criteria, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} If you want eligible patients found in your own records and carried to a booked study visit by one platform, with a randomization share tied to randomized patients, Bond is the stronger choice.",
   summary: "Why Bond is better than Hippocratic AI and Grove AI, compared capability by capability, with a plan for a head-to-head test.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -49,8 +49,8 @@ const page: SeoPage = {
             "**Every match shows its evidence.** Coordinators review ranked matches with the note, lab or medication behind each criterion decision, and Bond reports 50%+ less chart review and fewer screen failures.{{cite:bond-site}}",
             "**Calls start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}}",
             "**One platform from chart to booked visit, and beyond.** EHR screening, outreach, scheduling and consent support run in one workflow, with no data silos or manual handoffs from first match to booked visit and signed consent.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-            "**Connected to the systems sites run.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7, and is a CRIO Certified Partner.{{cite:bond-site,bond-product}}",
-            "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**Connected to the systems sites run.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7, and is a CRIO Certified Partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}}",
+            "**No integration fee.** Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -111,12 +111,12 @@ const page: SeoPage = {
             ],
             [
               "Integrations",
-              "FHIR and HL7 to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, or through an aggregator; CRIO Certified Partner.{{cite:bond-site,bond-product}} Direct integrations with CTMS and calendars.{{cite:bond-acrp-talk}}",
+              "FHIR and HL7 to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, or through an aggregator; CRIO Certified Partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} Direct integrations with CTMS and calendars.{{cite:bond-acrp-talk}}",
               "Agents pull the target population from an EHR or CRM and write outcomes back; the integration is mapped during scoping. Named EHR or CTMS vendors: not publicly documented (September 2026).{{cite:hippo-agents-call}}",
             ],
             [
               "Pricing",
-              "A volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
               "Says pricing scales with volume and use case.{{cite:hippo-agents-call}}",
             ],
           ],
@@ -162,7 +162,7 @@ const page: SeoPage = {
             { title: "Compare the evidence", text: "Ask each vendor to show why each patient qualifies. With EHR access, Bond shows the note, lab or medication behind each criterion decision.{{cite:bond-site}}" },
             { title: "Compare contact rates", text: "Count the patients each vendor reaches and pre-screens, and review real transcripts, including requests for a human." },
             { title: "Measure time to first visit", text: "Track the time from list to first screening visit, along with show-ups and screen failures." },
-            { title: "Compare cost per randomized patient", text: "Divide each vendor's total cost by the patients randomized. Bond charges its success fee per randomized patient; see [pricing](/pricing).{{cite:bond-site}}" },
+            { title: "Compare cost per randomized patient", text: "Divide each vendor's total cost by the patients randomized. Bond charges its percentage of each patient's randomization milestone payment; see [pricing](/pricing).{{cite:bond-site}}" },
           ],
         },
         {
@@ -199,7 +199,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond an alternative to Hippocratic AI's trial agents?",
-      a: "Yes. Bond's voice and SMS agents contact, pre-screen and schedule patients, and its consent support explains the consent form in plain language and answers questions.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}} Bond also finds those patients first, by screening the site's own EHR, clinical notes included, with chart evidence behind every match, and it charges a success fee per randomized patient.{{cite:bond-site}}",
+      a: "Yes. Bond's voice and SMS agents contact, pre-screen and schedule patients, and its consent support explains the consent form in plain language and answers questions.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}} Bond also finds those patients first, by screening the site's own EHR, clinical notes included, with chart evidence behind every match, and it charges a percentage of each patient's randomization milestone payment.{{cite:bond-site}}",
     },
     {
       q: "Is Grove AI part of Hippocratic AI?",
@@ -211,7 +211,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee.{{cite:bond-site,bond-product}} Hippocratic AI says its pricing scales with volume and use case.{{cite:hippo-agents-call}} See [pricing](/pricing) for how Bond's model works.",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-site,bond-product}} Hippocratic AI says its pricing scales with volume and use case.{{cite:hippo-agents-call}} See [pricing](/pricing) for how Bond's model works.",
     },
   ],
   sources: [
@@ -282,7 +282,7 @@ const page: SeoPage = {
     { id: "bond-site", title: "Bond Health: platform overview, FAQ and pricing", publisher: "Bond Health", url: "https://bondtrials.com", year: "2026" },
     { id: "bond-acrp-talk", title: "Modernizing Patient Recruitment: AI Tools, Workflows, and Outcomes", publisher: "Bond Health presentation to the ACRP New Jersey chapter (Goel R, Mustafa S)", year: "2026", note: "April 2026. Slides state \"1,000 patients screened in <2 hours\", \"Direct integrations with Google Sheets, CTMS, and Calendars\" and \"Flexible knowledge base for Voice Agents\"." },
     { id: "bond-whitepaper", title: "Terminology Infrastructure and Graph-Grounded RAG for Clinical Trial Patient Matching", publisher: "Bond Health, preprint", year: "2026", note: "Internal technical report by R. Goel, August 2026. Not peer reviewed. Available on request." },
-    { id: "bond-product", title: "Bond Health product information", publisher: "Bond Health", url: "https://bondtrials.com", year: "2026", note: "Capabilities, pricing and compliance status described by Bond Health, September 2026." },
+    { id: "bond-product", title: "Bond Health product information", publisher: "Bond Health", url: "https://bondtrials.com", year: "2026", note: "Capabilities, pricing and compliance status described by Bond Health, October 2026." },
     ...testimonialSources(),
   ],
   related: [
@@ -290,7 +290,7 @@ const page: SeoPage = {
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and shows the evidence for each match." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents call, text, pre-screen and schedule." },
     { label: "Consent support", href: "/consent", description: "Plain-language explanations, patient Q&A and understanding checks." },
-    { label: "Pricing", href: "/pricing", description: "Platform fee plus a per-randomized-patient success fee." },
+    { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each patient's randomization milestone payment." },
     { label: "Security", href: "/security", description: "BAAs, audit logging, encryption and Bond's public Trust Center." },
   ],
 };

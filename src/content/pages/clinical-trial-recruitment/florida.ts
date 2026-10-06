@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "On September 21, 2026, a ClinicalTrials.gov search for recruiting studies with a Florida location returned 3,876.{{cite:ctgov-api}} The state has four NCI-designated cancer centers with Florida facilities, health systems on Epic, MEDITECH and other EHRs, and a population older and more Hispanic than the US as a whole.{{cite:nci-find,floridatrend-epic,meditech-hca,census-asrh-2025}}",
   summary: "Florida recruiting-trial counts, research hubs, health system EHRs, site networks, demographics and outreach laws.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -104,7 +104,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "What this means for integration",
-          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an integration partner.{{cite:bond-site,bond-product}} For MEDITECH and other EHRs, the path is the EHR's FHIR API, with access the site or health system provides.{{cite:bond-site}} See [Epic](/integrations/epic), [Oracle Health](/integrations/oracle-cerner) and [MEDITECH](/integrations/meditech). Practices on a Community Connect instance should ask the host system who approves outside access.",
+          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an integration partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} For MEDITECH and other EHRs, the path is the EHR's FHIR API, with access the site or health system provides.{{cite:bond-site}} See [Epic](/integrations/epic), [Oracle Health](/integrations/oracle-cerner) and [MEDITECH](/integrations/meditech). Practices on a Community Connect instance should ask the host system who approves outside access.",
         },
       ],
     },
@@ -495,7 +495,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

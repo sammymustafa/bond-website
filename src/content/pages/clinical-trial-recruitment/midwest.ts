@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "The Census Bureau's Midwest region covers 12 states and 69.8 million residents, about one in five people in the United States.{{cite:census-pop-2025}} On September 21, 2026, the recruiting-study counts for those states on ClinicalTrials.gov added up to 16,812, with a multi-state study counted once in each state.{{cite:ctgov-api}}",
   summary: "Midwest recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI, biometric and records rules.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -125,7 +125,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "A listing shows the system publishes patient-access FHIR endpoints on that vendor's platform, not that a research interface exists, so confirm the route with IT. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} A site changing EHRs, as IU Health is, should plan screening around the cutover. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
+          text: "A listing shows the system publishes patient-access FHIR endpoints on that vendor's platform, not that a research interface exists, so confirm the route with IT. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} A site changing EHRs, as IU Health is, should plan screening around the cutover. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
         },
       ],
     },
@@ -441,7 +441,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

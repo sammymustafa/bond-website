@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { pages } from "@/content/registry";
+import { publishedPages as pages } from "@/content/published";
 import { getPage } from "@/content/site";
 import { buildMetadata } from "@/content/seo";
 import SeoArticle from "@/components/seo/SeoArticle";

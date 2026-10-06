@@ -24,7 +24,7 @@ const page: SeoPage = {
     "Alleviate Health sells human-in-the-loop AI agents that pre-screen and schedule clinical trial leads over SMS and voice.{{cite:alleviate-home-2026,alleviate-launch-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to find eligible patients, work the leads it already has and carry each patient through to a booked study visit, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Alleviate Health: EHR identification, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -48,13 +48,13 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Eligible patients from the site's own EHR.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and is a [CRIO Certified Partner](/integrations/crio). It screens each chart against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, and ranks matches with the evidence behind them before anyone is contacted.{{cite:bond-site,bond-product}} Bond's August 2026 technical report, a preprint available on request, reports 0.9312 micro F1 on the held-out n2c2 2018 cohort-selection benchmark.{{cite:bond-whitepaper}}",
+            "**Eligible patients from the site's own EHR.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and is a [CRIO Certified Partner](/integrations/crio). It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} It screens each chart against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, and ranks matches with the evidence behind them before anyone is contacted.{{cite:bond-site,bond-product}} Bond's August 2026 technical report, a preprint available on request, reports 0.9312 micro F1 on the held-out n2c2 2018 cohort-selection benchmark.{{cite:bond-whitepaper}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Consent support in the same workflow.** EHR screening, patient outreach and consent tracking run in one workflow, with complete visibility from first match to booked visit and signed consent. Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support until close-out.** After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             `**Security you can inspect.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} It signs BAAs, supports SSO and audit logging, and publishes a [Trust Center](${TRUST_CENTER}) that lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-site,bond-trust-center}}`,
-            "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**No integration fee.** Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -109,7 +109,7 @@ const page: SeoPage = {
             ],
             [
               "Integrations",
-              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator. [CRIO Certified Partner](/integrations/crio). Direct integrations with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-product,bond-acrp-talk}}",
+              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} [CRIO Certified Partner](/integrations/crio). Direct integrations with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-product,bond-acrp-talk}}",
               "Its launch release says each interaction is kept in a CRM built for clinical research (2025), and CNBC TV18 reported that its agents update clinical trial management systems in real time (2025). Its privacy policy describes Google Workspace calendar syncing (2025). Named EHR or CTMS integrations: not publicly documented (September 2026).{{cite:alleviate-launch-2025,cnbctv18-2025,alleviate-privacy-2025}}",
             ],
             [
@@ -119,7 +119,7 @@ const page: SeoPage = {
             ],
             [
               "Pricing",
-              "A volume-based platform fee plus a success fee per randomized patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
               "Not publicly documented (September 2026); the website's calls to action are demo bookings (2026). A May 2026 job post refers to new studies added under master agreements.{{cite:alleviate-home-2026,alleviate-job-account-manager-2026}}",
             ],
           ],
@@ -215,7 +215,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee, so part of its price depends on enrollment; see [pricing](/pricing).{{cite:bond-site,bond-product}} Alleviate's pricing is not publicly documented as of September 2026. Its website's calls to action are demo bookings, and a May 2026 job post refers to new studies added under master agreements.{{cite:alleviate-home-2026,alleviate-job-account-manager-2026}}",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee, so part of its price depends on enrollment; see [pricing](/pricing).{{cite:bond-site,bond-product}} Alleviate's pricing is not publicly documented as of September 2026. Its website's calls to action are demo bookings, and a May 2026 job post refers to new studies added under master agreements.{{cite:alleviate-home-2026,alleviate-job-account-manager-2026}}",
     },
   ],
   sources: [
@@ -232,7 +232,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-acrp-talk",
@@ -335,7 +335,7 @@ const page: SeoPage = {
     { label: "Clinical trial recruitment software, compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, from EHR matching to media recruitment." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule patients." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliant, with BAAs, SSO, audit logging and a public Trust Center." },
   ],
 };

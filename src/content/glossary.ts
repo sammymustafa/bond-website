@@ -67,7 +67,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
       { label: "AI recruitment vendor evaluation checklist", href: "/templates/ai-recruitment-vendor-evaluation-checklist" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "clinical-research-coordinator",
@@ -118,7 +118,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
       { label: "Principal investigator (PI)", href: "/glossary/principal-investigator" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "ctms",
@@ -153,7 +153,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "eRegulatory binder (eISF)", href: "/glossary/eregulatory-eisf" },
       { label: "eSource (electronic source data)", href: "/glossary/esource" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "diversity-action-plan",
@@ -193,7 +193,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites" },
       { label: "Site feasibility assessment", href: "/glossary/site-feasibility" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "econsent",
@@ -235,7 +235,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Informed consent", href: "/glossary/informed-consent" },
       { label: "What a consent form really costs", href: "/guides/consent-form-cost" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "ehr-phenotyping",
@@ -277,7 +277,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Unstructured clinical data", href: "/glossary/unstructured-clinical-data" },
       { label: "Using your EHR for recruitment", href: "/guides/ehr-for-recruitment" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "enrollment-rate",
@@ -328,7 +328,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How sites win more studies", href: "/guides/win-more-studies" },
       { label: "Screen failure rate", href: "/glossary/screen-failure-rate" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "eregulatory-eisf",
@@ -377,7 +377,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms" },
       { label: "eSource (electronic source data)", href: "/glossary/esource" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "esource",
@@ -412,7 +412,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "fhir",
@@ -463,7 +463,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "HL7 (Health Level Seven)", href: "/glossary/hl7" },
       { label: "Using your EHR for recruitment", href: "/guides/ehr-for-recruitment" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "first-patient-in",
@@ -515,7 +515,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Site activation", href: "/glossary/site-activation" },
       { label: "Last patient in (LPI)", href: "/glossary/last-patient-in" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "hipaa-authorization",
@@ -557,7 +557,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
       { label: "Waiver of HIPAA authorization", href: "/glossary/waiver-of-authorization" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "hl7",
@@ -599,7 +599,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "FHIR (Fast Healthcare Interoperability Resources)", href: "/glossary/fhir" },
       { label: "Using your EHR for recruitment", href: "/guides/ehr-for-recruitment" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "inclusion-and-exclusion-criteria",
@@ -658,7 +658,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How to reduce screen failure at your site", href: "/guides/reduce-screen-failure" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "informed-consent",
@@ -708,7 +708,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Electronic informed consent (eConsent)", href: "/glossary/econsent" },
       { label: "What a consent form really costs", href: "/guides/consent-form-cost" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "irb",
@@ -767,7 +767,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach" },
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "last-patient-in",
@@ -819,7 +819,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "First patient in (FPI)", href: "/glossary/first-patient-in" },
       { label: "Enrollment rate", href: "/glossary/enrollment-rate" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "pre-screening",
@@ -870,7 +870,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Pre-screening vs. screening", href: "/guides/pre-screening-vs-screening" },
       { label: "Pre-screening call script", href: "/templates/pre-screening-call-script" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "preparatory-to-research",
@@ -912,7 +912,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Site feasibility questionnaire template", href: "/templates/feasibility-questionnaire" },
       { label: "Waiver of HIPAA authorization", href: "/glossary/waiver-of-authorization" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "principal-investigator",
@@ -962,7 +962,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Clinical research coordinator (CRC)", href: "/glossary/clinical-research-coordinator" },
       { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "protocol-deviation",
@@ -1006,7 +1006,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Inclusion and exclusion criteria", href: "/glossary/inclusion-and-exclusion-criteria" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "randomization",
@@ -1024,7 +1024,7 @@ export const glossary: GlossaryTerm[] = [
       },
       {
         type: "p",
-        text: "Practical note: agree with the sponsor, and with any recruitment vendor, on exactly what counts as enrolled before the study starts. Bond's performance fee is charged per enrolled patient, defined as successfully randomized, so payment follows the same milestone sponsors count. See [Pricing](/pricing).",
+        text: "Practical note: agree with the sponsor, and with any recruitment vendor, on exactly what counts as enrolled before the study starts. Part of Bond's price is a percentage of the randomization milestone payment for each randomized patient, so payment follows the same milestone sponsors count. See [Pricing](/pricing).",
       },
     ],
     sources: [
@@ -1045,11 +1045,11 @@ export const glossary: GlossaryTerm[] = [
       },
     ],
     related: [
-      { label: "Pricing: platform fee plus per-enrollment success fee", href: "/pricing" },
+      { label: "Pricing: fee per screened patient plus a percentage of each patient's randomization milestone payment", href: "/pricing" },
       { label: "Screen failure rate", href: "/glossary/screen-failure-rate" },
       { label: "Screening", href: "/glossary/screening" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "screen-failure-rate",
@@ -1101,7 +1101,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How to reduce screen failure at your site", href: "/guides/reduce-screen-failure" },
       { label: "Screening", href: "/glossary/screening" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "screening",
@@ -1152,7 +1152,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Pre-screening vs. screening", href: "/guides/pre-screening-vs-screening" },
       { label: "Pre-screening", href: "/glossary/pre-screening" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "site-activation",
@@ -1195,7 +1195,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Study start-up", href: "/glossary/study-startup" },
       { label: "First patient in (FPI)", href: "/glossary/first-patient-in" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "site-feasibility",
@@ -1245,7 +1245,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Site feasibility questionnaire template", href: "/templates/feasibility-questionnaire" },
       { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "study-startup",
@@ -1296,7 +1296,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Site activation", href: "/glossary/site-activation" },
       { label: "Site feasibility assessment", href: "/glossary/site-feasibility" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "tcpa",
@@ -1345,7 +1345,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Patient outreach SMS templates", href: "/templates/patient-outreach-sms-templates" },
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
     ],
-    lastUpdated: "2026-09-24",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "unstructured-clinical-data",
@@ -1387,7 +1387,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "EHR phenotyping", href: "/glossary/ehr-phenotyping" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
   {
     slug: "waiver-of-authorization",
@@ -1430,7 +1430,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
       { label: "HIPAA authorization", href: "/glossary/hipaa-authorization" },
     ],
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-05",
   },
 ];
 
