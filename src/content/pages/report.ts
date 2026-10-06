@@ -3,12 +3,14 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/report",
   category: "report",
-  title: "State of Clinical Trial Enrollment Report 2026",
+  title: "Clinical trial enrollment statistics 2026, state by state",
   description:
-    "State of clinical trial enrollment in 2026: recruiting-study counts by state and area, plus sourced data on sites, screen failure, workload and consent.",
+    "Clinical trial enrollment statistics for 2026: recruiting studies by state and region from ClinicalTrials.gov, plus sourced data on screen failure and workload.",
   keywords: [
     "state of clinical trial enrollment report 2026",
     "clinical trial enrollment statistics",
+    "clinical trial enrollment statistics 2026",
+    "recruiting clinical trials by state 2026",
     "recruiting clinical trials by state",
     "screen failure rate benchmarks",
     "clinical trial diversity data",

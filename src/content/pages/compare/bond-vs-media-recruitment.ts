@@ -5,12 +5,12 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-media-recruitment",
   category: "comparison",
-  title: "Media recruitment vs Bond: ads and EHR in one workflow",
+  title: "Bond Health vs Antidote and 1nHealth: why Bond is better",
   description:
-    "Bond creates Meta and Google ads, contacts every lead immediately and follows up until they book, and screens your EHR too. Compare Antidote and 1nHealth.",
+    "Why Bond is better than media recruiters like Antidote and 1nHealth: Bond creates the ads, contacts every lead immediately, follows up and books visits.",
   keywords: [
-    "Antidote alternative",
-    "1nHealth alternative",
+    "Bond Health vs Antidote",
+    "Bond Health vs 1nHealth",
     "patient recruitment advertising vs EHR screening",
     "cost per enrolled patient clinical trial",
     "Antidote clinical trial recruitment",
@@ -300,7 +300,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond a good alternative to Antidote or 1nHealth?",
+      q: "Is Bond better than Antidote or 1nHealth?",
       a: "Yes. Bond gives a site one platform from ad click or chart match to a booked study visit. It finds eligible patients in the site's EHR, including clinical notes, and creates and runs Meta and Google ad campaigns for your studies; its voice and text agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule patients from both, and Bond supports informed consent, with part of the price tied to randomization.{{cite:bond-site,bond-product}}",
     },
     {

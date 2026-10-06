@@ -10,7 +10,7 @@ const page: SeoPage = {
     "How Bond compares with manual chart review for trial pre-screening: 10,000+ charts per hour, evidence for every criterion and 50%+ less chart review.",
   keywords: [
     "manual chart review clinical trials",
-    "manual chart review alternative",
+    "manual chart review vs AI pre-screening",
     "clinical trial pre-screening cost",
     "coordinator chart review time",
     "AI pre-screening vs manual review",
@@ -258,7 +258,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond a good alternative to manual chart review?",
+      q: "Is Bond better than manual chart review?",
       a: "Yes, for any site with more charts to read than coordinator hours. Bond screens every record in scope at 10,000+ charts per hour, reads clinical notes, prescriptions and lab results, and shows the chart evidence behind every criterion, so coordinators confirm matches instead of reading every chart. Its site reports 50%+ less chart review and up to 3x faster enrollment than manual recruitment.{{cite:bond-site}}",
     },
     {

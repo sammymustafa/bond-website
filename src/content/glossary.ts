@@ -128,7 +128,7 @@ export const glossary: GlossaryTerm[] = [
     body: [
       {
         type: "p",
-        text: "A clinical trial management system is the operational record of a study. Site-focused CTMS products are built to cover trial execution end to end; RealTime, for example, describes its CTMS as purpose-built for research sites to streamline trial execution, including recruitment, coordinator activities, finances and site management.{{cite:realtime-ctms}} Sponsor and CRO versions focus more on oversight across many sites: activation status, monitoring visits and enrollment by site.",
+        text: "A clinical trial management system is the operational record of a study. Site-focused CTMS products are built to cover trial execution end to end; RealTime, for example, describes its CTMS as one purpose-built system for the day-to-day work of trial management, from scheduling visits and tracking enrollment to recruitment and capturing study revenue.{{cite:realtime-ctms}} Sponsor and CRO versions focus more on oversight across many sites: activation status, monitoring visits and enrollment by site.",
       },
       {
         type: "p",
@@ -136,7 +136,7 @@ export const glossary: GlossaryTerm[] = [
       },
       {
         type: "p",
-        text: "Practical note: before adding a recruitment tool, decide which system is the source of truth for participant status and how referrals will reach it, whether by API, file import or manual entry. Bond is a CRIO Certified Partner and works alongside other CTMS platforms through API or file export where the vendor supports it; see [Implementation](/implementation).",
+        text: "Practical note: before adding a recruitment tool, decide which system is the source of truth for participant status and how referrals will reach it, whether by API, file import or manual entry. Bond is a CRIO Certified Partner and works alongside other CTMS platforms through API or file export where the vendor supports it; see [integrations](/integrations) and the [full guide to what a CTMS is](/guides/what-is-a-ctms).",
       },
     ],
     sources: [
@@ -144,11 +144,13 @@ export const glossary: GlossaryTerm[] = [
         id: "realtime-ctms",
         title: "RealTime-CTMS product page",
         publisher: "RealTime eClinical Solutions",
-        url: "https://realtime-eclinical.com/ctms/",
+        url: "https://realtime-eclinical.com/solutions/ctms/",
         year: "2026",
+        note: "Re-read October 6, 2026. Quote: \"RealTime CTMS brings the day-to-day work of clinical trial management into one purpose-built system, helping your coordinators stay ahead of study activity, your recruitment teams keep enrollment moving, and your finance teams capture the revenue your research has earned.\"",
       },
     ],
     related: [
+      { label: "What is a CTMS? Full guide", href: "/guides/what-is-a-ctms" },
       { label: "Implementation: how Bond connects to your systems", href: "/implementation" },
       { label: "eRegulatory binder (eISF)", href: "/glossary/eregulatory-eisf" },
       { label: "eSource (electronic source data)", href: "/glossary/esource" },
@@ -468,6 +470,9 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "first-patient-in",
     term: "First patient in (FPI)",
+    title: "What is FPI (first patient in) in clinical trials?",
+    description:
+      "FPI means first patient in: the first participant enrolled in a clinical trial or at a site. What counts as enrolled, and why sponsors track time to FPI.",
     short:
       "The milestone when the first participant enrolls in a study or at a site. Sponsors watch the time from site activation to first patient in closely.",
     body: [
@@ -1213,7 +1218,7 @@ export const glossary: GlossaryTerm[] = [
       },
       {
         type: "p",
-        text: "Practical note: base patient counts on a records query. Under HIPAA, reviews preparatory to research allow that kind of count without authorization if no PHI leaves the covered entity.{{cite:ecfr-164-512}} Start from the [feasibility questionnaire template](/templates/feasibility-questionnaire), and see [Identify](/identify), which screens EHR records against a study's criteria.",
+        text: "Practical note: base patient counts on a records query. Under HIPAA, reviews preparatory to research allow that kind of count without authorization if no PHI leaves the covered entity.{{cite:ecfr-164-512}} Start from the [feasibility questionnaire template](/templates/feasibility-questionnaire), read the [full guide to site feasibility](/guides/site-feasibility), and see [Identify](/identify), which screens EHR records against a study's criteria.",
       },
     ],
     sources: [
@@ -1242,6 +1247,7 @@ export const glossary: GlossaryTerm[] = [
     ],
     related: [
       { label: "Identify: LLM-based EHR screening", href: "/identify" },
+      { label: "Site feasibility in clinical trials: full guide", href: "/guides/site-feasibility" },
       { label: "Site feasibility questionnaire template", href: "/templates/feasibility-questionnaire" },
       { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites" },
     ],

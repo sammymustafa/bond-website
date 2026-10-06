@@ -155,6 +155,10 @@ export interface GlossaryTerm {
   term: string;
   /** One or two sentences. Shown on the index and used as the meta description. */
   short: string;
+  /** Search title, when it should differ from "<term>: definition". */
+  title?: string;
+  /** Meta description, when it should differ from `short`. */
+  description?: string;
   /** Longer explanation; usually two or three paragraphs plus a list. */
   body: Block[];
   sources: Source[];

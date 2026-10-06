@@ -3,12 +3,15 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/guides/pre-screening-vs-screening",
   category: "guide",
-  title: "Pre-screening vs screening in clinical trials: definitions",
+  title: "Pre-screening vs screening in clinical trials, explained",
   description:
-    "Where pre-screening ends and screening begins: what FDA, the Common Rule and HIPAA allow before consent, who counts as a screen failure, what to log, who pays.",
+    "What counts as pre-screening in a clinical trial, when screening begins, what FDA, the Common Rule and HIPAA allow before consent, and who is a screen failure.",
   keywords: [
     "pre-screening vs screening clinical trial definition",
     "clinical trial pre-screening before consent",
+    "pre-screening in clinical trials",
+    "prescreening subjects in clinical trials",
+    "medical record review prescreening",
     "screen failure definition",
     "pre-screening log",
     "screening procedures informed consent",

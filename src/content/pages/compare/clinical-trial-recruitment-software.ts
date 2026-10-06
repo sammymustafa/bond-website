@@ -4,20 +4,21 @@ import { testimonialBlocks, testimonialSources } from "../../testimonials";
 const page: SeoPage = {
   path: "/compare/clinical-trial-recruitment-software",
   category: "comparison",
-  title: "Clinical trial recruitment software vendors list, compared",
+  title: "Best clinical trial recruitment software in 2026, compared",
   description:
-    "EHR screening tools, AI outreach agents, media recruiters and CTMS platforms compared, and how Bond takes patients from chart or ad click to a booked visit.",
+    "The best clinical trial recruitment software for sites, CROs and sponsors: EHR screening, AI outreach, ads and CTMS tools compared, and why Bond leads.",
   keywords: [
     "clinical trial recruitment software",
     "clinical trial recruitment vendors list",
     "patient recruitment software comparison",
     "AI clinical trial matching vendors",
-    "Trially alternatives",
+    "best clinical trial recruitment software",
+    "patient recruitment software for CROs",
   ],
   eyebrow: "Comparison",
   h1: "Clinical trial recruitment software, vendor by vendor",
   intro:
-    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform covers EHR matches and ad leads through consent.{{cite:bond-site,bond-product}}",
+    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform takes EHR matches and ad leads all the way to a booked study visit.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
   lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
@@ -97,7 +98,7 @@ const page: SeoPage = {
             ["IQVIA", "CRO recruitment services", "AI-powered EMR data mining and protocol-specific patient models", "Chart review by IQVIA site enrollment staff", "Call centers and a marketing network of outreach partners", "Yes, through its Study Hub and Referral Hub", "eConsent and plain-language consent content{{cite:iqvia-recruitment}}"],
             ["Veeva SiteVault", "Site operations", "Not publicly documented", "Not publicly documented", "Not publicly documented", "Not publicly documented", "eConsent{{cite:veeva-sites-home}}"],
             ["CRIO", "Site operations", "Through API partners", "Through API partners", "Calling campaigns and text blasts", "Yes, with reminders", "eConsent{{cite:crio-independent-sites,crio-home,crio-trially-2024}}"],
-            ["RealTime eClinical Solutions", "Site operations", "Not publicly documented; its CTMS builds a subject database from website and Facebook leads", "Not publicly documented", "Email and mass texting campaigns; automated texts", "Yes, with visit-window calculation and text reminders", "eConsent{{cite:realtime-home,realtime-ctms}}"],
+            ["RealTime eClinical Solutions", "Site operations", "Not publicly documented; its CTMS searches the site's own patient database by history, diagnosis, medications, age and geography", "Not publicly documented", "Mass text alerts through RealTime Text; Mailchimp email remarketing; automated texts", "Yes, with automated target dates and visit window enforcement", "eConsent{{cite:realtime-home,realtime-ctms,realtime-api}}"],
             ["Medable", "Trial platform", "Not publicly documented", "Not publicly documented", "Digital and DCT screening tools", "Not publicly documented", "TeleConsent{{cite:medable-recruitment-guide}}"],
             ["Science 37", "Direct-to-patient site", "Not publicly documented", "Not publicly documented", "Direct-to-patient reach, with partners such as PatientsLikeMe", "Visits in patients' homes", "Runs trials as the site, under one Form FDA 1572 and a central IRB{{cite:science37-about,science37-home}}"],
             ["Manual review", "In-house process", "Staff read charts", "Yes, if staff read notes", "Staff calls", "Staff", "The site obtains consent{{cite:unlu-2024-rectifier}}"],
@@ -182,7 +183,7 @@ const page: SeoPage = {
         { type: "h3", text: "Site operations platforms leave finding and contacting patients" },
         {
           type: "p",
-          text: "CTMS and eConsent platforms run the study record, and several add recruiting tools that staff operate. CRIO manages calling campaigns and text blasts and takes EHR matches from certified API partners, RealTime's CTMS builds a subject database from website and Facebook leads and runs email and mass texting campaigns, and Veeva SiteVault offers eConsent.{{cite:crio-independent-sites,crio-trially-2024,realtime-ctms,veeva-sites-home}} Unless a partner tool supplies matches, finding eligible patients stays with your coordinators, as does working through the calls and texts. Each added tool is also one more login: an SCRS article notes that coordinators already juggle upwards of 22 logins for a single study.{{cite:scrs-landscape-2025}} Bond is a CRIO Certified Partner, listed under Patient Acquisition & Retention.{{cite:bond-site}} See [integrations](/integrations).",
+          text: "CTMS and eConsent platforms run the study record, and several add recruiting tools that staff operate. CRIO manages calling campaigns and text blasts and takes EHR matches from certified API partners, RealTime's CTMS searches the site's own patient database for new studies and sends mass text alerts, with Mailchimp for email remarketing, and Veeva SiteVault offers eConsent.{{cite:crio-independent-sites,crio-trially-2024,realtime-ctms,realtime-api,veeva-sites-home}} Unless a partner tool supplies matches, finding eligible patients stays with your coordinators, as does working through the calls and texts. Each added tool is also one more login: an SCRS article notes that coordinators already juggle upwards of 22 logins for a single study.{{cite:scrs-landscape-2025}} Bond is a CRIO Certified Partner, listed under Patient Acquisition & Retention.{{cite:bond-site}} See [integrations](/integrations).",
         },
         { type: "h3", text: "Manual review leaves all of it" },
         {
@@ -276,8 +277,12 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Which vendor covers the whole recruitment workflow?",
-      a: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow with part of the price tied to randomization.{{cite:bond-site}}",
+      q: "Which vendor offers the best workflow-integrated recruitment for clinical trials?",
+      a: "Bond Health. As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow with part of the price tied to randomization.{{cite:bond-site}}",
+    },
+    {
+      q: "What technology can pull eligible trial candidates directly from patient records?",
+      a: "EHR screening software, which reads a site's records against a study's inclusion and exclusion criteria and returns the patients who match. Bond's Identify reads clinical notes, prescriptions, lab results, imaging data and pathology, radiology and molecular reports, screens 10,000+ charts per hour with 90%+ matching accuracy and shows the chart evidence behind every criterion; matched patients then go straight to outreach and a booked study visit.{{cite:bond-site,bond-product}} The other EHR matching tools are compared in the [table above](#capabilities).",
     },
     {
       q: "Can Bond run Meta and Google ads for our studies?",
@@ -793,7 +798,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/ctms/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Grow your patient database with integrations for your website, Facebook ads, SubjectWell, and more.\"; \"Instant CTMS sync creates subject profiles automatically from website form submissions\"; \"Accelerate scheduling with automated study target dates and window calculations, text reminders, and Outlook integration.\"; \"Remarket directly from your database with our Mailchimp integration for email blasts and mass texting campaigns.\"",
+      note: "Page rewritten by RealTime; re-read October 6, 2026. Quotes: \"Query your patient database by medical history, diagnosis, medications, age, and geography to identify eligible subjects for new studies.\"; \"send mass text alerts via RealTime Text and automatically capture responses\"; \"Submit visits against pre-built protocol templates with automated target date calculations and visit window enforcement.\"",
     },
     {
       id: "realtime-api",
@@ -801,7 +806,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/api-integrations/",
       year: "2026",
-      note: "Accessed September 2026. Quote: the API offers \"a simple and efficient way to seamlessly integrate RealTime data with your other critical systems such as CRM, ERP, EMR, analytics, and business intelligence (BI) platforms.\" Named integrations: Devana, Mailchimp, Microsoft Outlook, SubjectWell and Twilio.",
+      note: "Accessed September 2026. Quote: the API offers \"a simple and efficient way to seamlessly integrate RealTime data with your other critical systems such as CRM, ERP, EMR, analytics, and business intelligence (BI) platforms.\" Named integrations: Devana, Mailchimp, Microsoft Outlook, SubjectWell and Twilio. Re-checked October 6, 2026: \"Remarket to your rapidly growing database of subjects with a two-way integration to Mailchimp.\"",
     },
     {
       id: "realtime-pricing",

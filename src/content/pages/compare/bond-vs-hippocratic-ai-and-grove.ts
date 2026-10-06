@@ -5,12 +5,12 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-hippocratic-ai-and-grove",
   category: "comparison",
-  title: "Hippocratic AI and Grove AI (Grace) trial agent alternative",
+  title: "Bond Health vs Hippocratic AI & Grove AI: why Bond is better",
   description:
-    "A Hippocratic AI and Grove AI alternative: Bond finds eligible patients in your own EHR, notes included, then calls, texts, pre-screens and supports consent.",
+    "Why Bond is better than Hippocratic AI and Grove AI: it finds eligible patients in your own EHR, runs ads, contacts every lead and books study visits.",
   keywords: [
-    "Hippocratic AI alternative",
-    "Grove AI Grace alternative",
+    "Bond Health vs Hippocratic AI",
+    "Bond Health vs Grove AI",
     "Hippocratic AI clinical trial agent",
     "Hippocratic AI Grove AI acquisition",
     "AI voice agent clinical trial recruitment",
@@ -198,7 +198,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond an alternative to Hippocratic AI's trial agents?",
+      q: "Is Bond better than Hippocratic AI's trial agents?",
       a: "Yes. Bond's voice and SMS agents contact, pre-screen and schedule patients, and its consent support explains the consent form in plain language and answers questions.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}} Bond also finds those patients first, by screening the site's own EHR, clinical notes included, with chart evidence behind every match, and it charges a percentage of each patient's randomization milestone payment.{{cite:bond-site}}",
     },
     {

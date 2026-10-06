@@ -289,6 +289,10 @@ const page: SeoPage = {
   ],
   faq: [
     {
+      q: "Where can we buy AI patient recruitment advertising for a clinical trial?",
+      a: "From Bond Health. Bond creates and runs Meta and Google ad campaigns for each study, and its AI voice and SMS agents contact every new ad lead immediately, keep following up with every lead who has not responded, pre-screen them and book qualified patients for visits.{{cite:bond-product}} Ad spend comes out of the site's own advertising budget for the study, and ad copy needs IRB review before it runs, like any recruitment material.{{cite:bond-product}}",
+    },
+    {
       q: "Do patients know they are talking to an AI?",
       a: "Yes. Patients are told that AI assistance is being used, and they can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
     },

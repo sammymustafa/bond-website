@@ -96,7 +96,7 @@ export const compareLinks: NavItem[] = [
 ];
 
 export const resourceLinks: NavItem[] = [
-  { name: "Guides", href: "/guides", description: "Screen failure, EHR recruitment, IRB rules" },
+  { name: "Guides", href: "/guides", description: "Site feasibility, CTMS, screen failure, IRB rules" },
   { name: "Templates", href: "/templates", description: "Scripts, checklists and questionnaires" },
   { name: "Glossary", href: "/glossary", description: "30 recruitment terms, defined" },
   { name: "Blog", href: "/blog" },

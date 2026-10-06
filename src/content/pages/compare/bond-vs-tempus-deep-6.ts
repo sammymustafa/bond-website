@@ -5,11 +5,12 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-tempus-deep-6",
   category: "comparison",
-  title: "Deep 6 AI alternative: Bond Health vs Tempus trial matching",
+  title: "Bond Health vs Deep 6 AI (Tempus): why Bond is better",
   description:
-    "Looking for a Deep 6 AI alternative? Bond finds eligible patients in your EHR, calls or texts them and books visits in one product.",
+    "Why Bond is better than Deep 6 AI and Tempus trial matching: Bond reads your EHR, runs ads, contacts every lead and books study visits in one product.",
   keywords: [
-    "Deep 6 AI alternative",
+    "Bond Health vs Deep 6 AI",
+    "Deep 6 AI vs Bond Health",
     "Tempus trial matching",
     "Tempus TIME program",
     "Tempus Next Trials",
@@ -223,7 +224,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond a Deep 6 AI alternative?",
+      q: "Is Bond better than Deep 6 AI?",
       a: "Yes. Like Deep 6 AI, Bond screens the site's EHR, including unstructured notes, and shows the evidence behind each criterion.{{cite:bond-site,osu-aaci-2024}} Bond then contacts, pre-screens and schedules matched patients by voice and text, supports informed consent, and charges a percentage of each patient's randomization milestone payment ([pricing](/pricing)).{{cite:bond-site}}",
     },
     {

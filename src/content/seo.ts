@@ -11,13 +11,16 @@ export function buildCiteIndex(page: Pick<SeoPage, "sources">): Map<string, numb
 
 export function buildMetadata(page: SeoPage): Metadata {
   const url = `${SITE_URL}${page.path}`;
+  // A title that already names the brand ("Bond Health vs Trially: ...") skips the " | Bond Health" suffix.
+  const branded = page.title.includes(BRAND);
+  const fullTitle = branded ? page.title : `${page.title} | ${BRAND}`;
   return {
-    title: page.title,
+    title: branded ? { absolute: page.title } : page.title,
     description: page.description,
     keywords: page.keywords,
     alternates: { canonical: url },
     openGraph: {
-      title: `${page.title} | ${BRAND}`,
+      title: fullTitle,
       description: page.description,
       url,
       siteName: BRAND,
@@ -27,7 +30,7 @@ export function buildMetadata(page: SeoPage): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${page.title} | ${BRAND}`,
+      title: fullTitle,
       description: page.description,
       images: ["/images/og-image.png"],
     },
@@ -188,8 +191,8 @@ export function glossaryTermToPage(term: GlossaryTerm): SeoPage {
   return {
     path: `/glossary/${term.slug}`,
     category: "glossary",
-    title: `${term.term}: definition`,
-    description: term.short.length > 160 ? `${term.short.slice(0, 157)}...` : term.short,
+    title: term.title ?? `${term.term}: definition`,
+    description: term.description ?? (term.short.length > 160 ? `${term.short.slice(0, 157)}...` : term.short),
     eyebrow: "Glossary",
     h1: term.term,
     intro: term.short,
