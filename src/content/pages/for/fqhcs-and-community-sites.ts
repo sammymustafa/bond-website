@@ -3,11 +3,13 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/for/fqhcs-and-community-sites",
   category: "audience",
-  title: "FQHC and community health center clinical trial recruitment",
+  title: "Clinical trials at FQHCs and community health centers",
   description:
-    "How FQHCs and community health centers can offer trials to more of their patients: EHR screening, outreach, booked visits, what to measure, setup and pricing.",
+    "How FQHCs and community health centers can offer clinical trials to their patients: EHR screening, outreach and follow-up, booked visits, setup and pricing.",
   keywords: [
     "FQHC clinical trial recruitment",
+    "clinical trials at FQHCs",
+    "community health center clinical trials",
     "community health center research",
     "clinical trial diversity recruitment",
     "diversity action plan research sites",

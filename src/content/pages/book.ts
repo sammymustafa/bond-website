@@ -131,6 +131,10 @@ const page: SeoPage = {
   ],
   faq: [
     {
+      q: "What is the best scheduling automation for clinical trial participant recruitment?",
+      a: "Bond Health, because it schedules as part of recruitment instead of as a separate calendar tool. Its voice and SMS agents contact every lead immediately, pre-screen them with the site's approved script and book qualified patients straight into the site's calendar, often in the same call, then send reminders by text, voice or email.{{cite:bond-site,bond-product}} CROs and sponsors can run the same workflow at every site, with status in Bond's dashboard, a Google Sheet or the site's CTMS.{{cite:bond-site}}",
+    },
+    {
       q: "Can Bond book visits for leads from our own ads or lists?",
       a: "Yes. Bond's agents can pre-screen and book patients from a list the site already has, such as ad leads, referrals or registry contacts, as well as leads from the Meta and Google ad campaigns Bond runs and patients found in the site's EHR.{{cite:bond-site,bond-product}}",
     },

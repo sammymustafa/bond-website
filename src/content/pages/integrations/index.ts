@@ -53,6 +53,16 @@ const page: SeoPage = {
       ],
     },
   ],
+  faq: [
+    {
+      q: "Which recruitment platforms integrate with trial management systems?",
+      a: "Bond Health integrates recruitment with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} Bond is a CRIO Certified Partner: pre-screened patients go straight into CRIO through its API and their status comes back to Bond. With the other systems, Bond works through the site's own API access or file exports, so pre-screened patients, call outcomes and consent records reach the system of record without double entry.{{cite:bond-site}}",
+    },
+    {
+      q: "Which EHRs does Bond integrate with?",
+      a: "Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs, through FHIR, HL7 or an integration partner; NextGen connects through FHIR. Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method, and there is no integration fee.{{cite:bond-site,bond-product}}",
+    },
+  ],
   sources: [
     {
       id: "bond-product",
@@ -64,6 +74,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "What is a CTMS?", href: "/guides/what-is-a-ctms", description: "What a clinical trial management system does and how recruitment data gets in." },
     { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },
     { label: "Security", href: "/security", description: "Data flows, BAAs and audit logging." },
   ],

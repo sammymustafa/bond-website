@@ -5,12 +5,11 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-power",
   category: "comparison",
-  title: "Power clinical trials alternative: Bond Health vs Power",
+  title: "Bond Health vs Power: why Bond is better for sites",
   description:
-    "Bond finds eligible patients in your own EHR, then calls, texts, pre-screens and books them for visits. See how it compares with Power.",
+    "Why Bond is better than Power: Bond finds eligible patients in your own EHR, runs Meta and Google ads, contacts every lead and books study visits.",
   keywords: [
-    "Power clinical trials alternative",
-    "withpower alternative",
+    "Power clinical trials vs Bond Health",
     "Bond Health vs Power",
     "Power patient recruitment",
     "central patient recruitment AI",
@@ -217,7 +216,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond a good Power alternative?",
+      q: "Is Bond better than Power?",
       a: "Yes, for a site that wants to enroll the patients it already treats. Bond screens the site's own EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} After enrollment, its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
     },
     {

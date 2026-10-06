@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/guides/how-sponsors-choose-sites",
   category: "guide",
-  title: "How sponsors select clinical trial sites: feasibility guide",
+  title: "How sponsors select clinical trial sites, step by step",
   description:
     "What sponsors and CROs check before selecting a site: feasibility questionnaires, performance history, start-up speed, EHR-derived counts and diversity plans.",
   keywords: [
@@ -373,7 +373,7 @@ const page: SeoPage = {
     { label: "How to win more studies", href: "/guides/win-more-studies", description: "Building the record and relationships that put a site on the list." },
     { label: "Bond for research sites", href: "/for/research-sites", description: "How sites use Bond for screening, outreach and booked visits." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Screens EHR records against trial criteria and shows the chart evidence for each decision." },
-    { label: "Site feasibility", href: "/glossary/site-feasibility", description: "What feasibility covers and who does the work." },
+    { label: "Site feasibility in clinical trials", href: "/guides/site-feasibility", description: "The full assessment, from CDA to selection visit, with a checklist." },
   ],
 };
 

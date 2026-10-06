@@ -7,11 +7,10 @@ const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm
 const page: SeoPage = {
   path: "/compare/bond-vs-alleviate-health",
   category: "comparison",
-  title: "Alleviate Health alternative: from EHR screening to booked visits",
+  title: "Bond Health vs Alleviate Health: why Bond is better",
   description:
-    "Bond finds eligible patients in your EHR, works the leads you already have, and pre-screens them and books visits. Compare it with Alleviate Health.",
+    "Why Bond is better than Alleviate Health: Bond finds eligible patients in your EHR, runs Meta and Google ads, contacts every lead and books study visits.",
   keywords: [
-    "Alleviate Health alternative",
     "Bond Health vs Alleviate Health",
     "Alleviate Health AI recruiter",
     "AI pre-screening agents clinical trials",
@@ -202,7 +201,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond a good Alleviate Health alternative?",
+      q: "Is Bond better than Alleviate Health?",
       a: "Yes. Bond runs outreach, pre-screening and scheduling by voice and SMS/text, both on the leads a site already has and on eligible patients it finds by reading the site's EHR, clinical notes included, and it supports informed consent in the same workflow.{{cite:bond-site}} Bond also screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another, and after enrollment its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
     },
     {

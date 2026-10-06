@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Integration",
   h1: "RealTime CTMS and Bond: how they work together",
   intro:
-    "Bond Health finds and pre-screens patients from the EHR, then hands each referral to the system your coordinators already use. At a RealTime site, referrals, recruitment status and outcomes move between Bond and RealTime-CTMS through RealTime's API or a file export, depending on what the site enables. Bond works alongside RealTime; it is not a RealTime partner.",
+    "Bond Health finds eligible patients in the EHR, creates and runs Meta and Google ad campaigns, contacts every lead immediately, pre-screens patients and books visits, then hands each referral to the system your coordinators already use. At a RealTime site, referrals, recruitment status and outcomes move between Bond and RealTime-CTMS through RealTime's API or a file export, depending on what the site enables. Bond works alongside RealTime; it is not a RealTime partner.",
   summary: "How referrals, recruitment status and outcomes move between Bond and RealTime-CTMS, and what is not integrated.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-06",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -27,11 +27,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "RealTime eClinical Solutions, formerly RealTime Software Solutions,{{cite:rt-awards-2025}} makes software for running clinical research sites. Its founder began building it in 2013 to meet the needs of the large research site he owned.{{cite:rt-ceo-2022}} RealTime-CTMS tracks recruitment, subjects, visits, finances and reporting; per RealTime's website, it can centrally manage an unlimited number of sites and studies in over 30 countries.{{cite:rt-ctms}} RealTime also sells eSource, eReg/eISF, SitePay participant payments and Engage!, a participant portal with remote eConsent.{{cite:rt-esource,rt-ereg,rt-sitepay,rt-engage}}",
+          text: "RealTime eClinical Solutions, formerly RealTime Software Solutions,{{cite:rt-awards-2025}} makes software for running clinical research sites. Its founder began building it in 2013 to meet the needs of the large research site he owned.{{cite:rt-ceo-2022}} Per RealTime's website, RealTime CTMS brings study and visit management, recruitment, financials and reporting into one system, and its Enterprise edition reports on study activity, recruitment and financials across a whole network from one dashboard.{{cite:rt-ctms}} RealTime also sells eSource, eReg/eISF, SitePay participant payments and Engage!, a participant portal with remote eConsent.{{cite:rt-esource,rt-ereg,rt-sitepay,rt-engage}}",
         },
         {
           type: "p",
-          text: "As of September 2026, RealTime's CTMS page lists recruitment integrations for websites, Facebook ads and SubjectWell, plus visit scheduling with window calculations and text reminders.{{cite:rt-ctms}} The figures below are RealTime's own; it does not name the customers or its ranking basis.",
+          text: "As of October 2026, RealTime's CTMS page describes searching the site's own patient database by medical history, diagnosis, medications, age and geography to find subjects for new studies, mass text alerts through RealTime Text, reporting on referral sources and advertising campaigns, and automated visit target dates with visit window enforcement.{{cite:rt-ctms}} Its API page lists a SubjectWell integration for SubjectWell's study-specific advertising campaigns.{{cite:rt-api}} The figures below are RealTime's own; it does not name the customers or its ranking basis.",
         },
         {
           type: "stats",
@@ -50,14 +50,18 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond works before a patient becomes a subject. RealTime-CTMS is where the site tracks the patient from referral onward. The referral is the handoff.",
+          text: "Bond works before a patient becomes a subject. RealTime CTMS is where the site tracks the patient from referral onward. The referral is the handoff.",
+        },
+        {
+          type: "p",
+          text: "The two also search different pools. Per RealTime, its database search covers people the site has already recruited, screened or previously considered.{{cite:rt-ctms}} Bond's [Identify](/identify) reads the site's full EHR, clinical notes included, so it also finds eligible patients who have never been in the research database, and Bond's ad campaigns bring in patients who are not in either.{{cite:bond-site,bond-product}}",
         },
         {
           type: "ol",
           items: [
             "[Identify](/identify) screens EHR records against the study's inclusion and exclusion criteria and shows the evidence for each criterion.",
             "A coordinator reviews the ranked list and accepts or rejects each match.",
-            "Bond's voice and text agents contact accepted patients, tell them AI assistance is used, pre-screen and book a visit. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
+            "Bond's voice and text agents contact accepted patients, and every new lead from the Meta and Google ad campaigns Bond runs, immediately, and keep following up with those who have not responded. They tell patients AI assistance is used, pre-screen them and book a visit. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             "Bond passes the referral to RealTime, by API or through a shared sheet, with the study, the referral source and a pre-screen summary.",
             "The coordinator works the subject in RealTime as usual. Screening and randomization outcomes come back to Bond for reporting.",
           ],
@@ -66,7 +70,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "What Bond does and does not claim",
-          text: "As of September 2026, RealTime's API page lists Devana, Mailchimp, Microsoft Outlook, SubjectWell and Twilio as integration partners. Bond is not on that list and holds no RealTime certification.{{cite:rt-api}} Bond's only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}}",
+          text: "As of October 2026, RealTime's API page lists Devana, Mailchimp, Microsoft Outlook, SubjectWell and Twilio as integration partners. Bond is not on that list and holds no RealTime certification.{{cite:rt-api}} Bond's only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}}",
         },
       ],
     },
@@ -221,7 +225,7 @@ const page: SeoPage = {
     },
     {
       q: "Will Bond referrals look different from our other sources in RealTime?",
-      a: "They carry Bond as the referral source and use the statuses your site already tracks, so source reports stay comparable with website, social and SubjectWell leads.",
+      a: "They carry Bond as the referral source and use the statuses your site already tracks, so RealTime's referral-source and campaign reporting counts Bond's referrals alongside your website, social and SubjectWell leads.{{cite:rt-ctms}}",
     },
     {
       q: "Does Bond replace RealTime Text?",
@@ -274,15 +278,15 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/",
       year: "2026",
-      note: "Homepage stat block, accessed September 2026. Quote: \"600,000+ patient visits supported per year\"",
+      note: "Homepage stat block, accessed September 2026; re-checked October 6, 2026. Quote: \"600,000+ patient visits supported per year\"",
     },
     {
       id: "rt-ctms",
-      title: "CTMS: Clinical Trial Management System",
+      title: "CTMS | Clinical Trial Management System",
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/ctms/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Centrally manage an unlimited number of sites, studies, personnel, finances, and reporting in over 30 countries around the globe with infinite scalability.\" Also: \"Grow your patient database with integrations for your website, Facebook ads, SubjectWell, and more.\" and \"Accelerate scheduling with automated study target dates and window calculations, text reminders, and Outlook integration.\"",
+      note: "Page rewritten by RealTime; re-read October 6, 2026. Quotes: \"RealTime CTMS brings the day-to-day work of clinical trial management into one purpose-built system\"; \"Every person your site has recruited, screened, or previously considered could be a match for a future study.\"; \"Query your patient database by medical history, diagnosis, medications, age, and geography to identify eligible subjects for new studies.\"; \"send mass text alerts via RealTime Text and automatically capture responses\"; \"Track referral sources and advertising campaign performance with built- in ROI reporting by vendor.\"; \"Submit visits against pre-built protocol templates with automated target date calculations and visit window enforcement.\"; Enterprise: \"View and report on study activity, recruitment performance, and financials across your entire network from one central dashboard.\"",
     },
     {
       id: "rt-api",
@@ -290,7 +294,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/api-integrations/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"OData enabled RESTful API allows the creation and consumption of query-able and interoperable RESTful APIs in a simple and standard way\". Partners listed on the page: Devana, Mailchimp, Microsoft Outlook, SubjectWell, Twilio.",
+      note: "Accessed September 2026; re-checked October 6, 2026. Quotes: \"OData enabled RESTful API allows the creation and consumption of query-able and interoperable RESTful APIs in a simple and standard way\"; \"RealTime-CTMS integrates with SubjectWell’s study-specific advertising campaigns.\" Partners listed on the page: Devana, Mailchimp, Microsoft Outlook, SubjectWell, Twilio.",
     },
     {
       id: "rt-ctms-blog",
@@ -306,7 +310,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/text/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Recruitment-related text messages are sent via short code in the US [...]\"",
+      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"Recruitment-related text messages are sent via short code in the US [...]\"",
     },
     {
       id: "rt-engage",
@@ -314,7 +318,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/engage/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Speed up recruiting with remote consenting that can be managed via desktop or mobile app with 'Sign on the Line.'\"",
+      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"Speed up recruiting with remote consenting that can be managed via desktop or mobile app with 'Sign on the Line.'\"",
     },
     {
       id: "rt-ereg",
@@ -322,7 +326,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/ereg-eisf/",
       year: "2026",
-      note: "Vendor's own description of its product, accessed September 2026.",
+      note: "Vendor's own description of its product, accessed September 2026; re-checked October 6, 2026.",
     },
     {
       id: "rt-esource",
@@ -330,7 +334,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/esource/",
       year: "2026",
-      note: "Vendor's own description of its product, accessed September 2026.",
+      note: "Vendor's own description of its product, accessed September 2026; re-checked October 6, 2026.",
     },
     {
       id: "rt-sitepay",
@@ -338,7 +342,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/sitepay/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Request funds and confirm account balances from within your CTMS.\"",
+      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"Request funds and confirm account balances from within your CTMS.\"",
     },
     {
       id: "rt-services",
@@ -346,7 +350,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/professional-services/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"For unique integration needs, we provide custom API development and configuration, allowing new software to communicate effectively with your existing systems.\"",
+      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"For unique integration needs, we provide custom API development and configuration, allowing new software to communicate effectively with your existing systems.\"",
     },
     {
       id: "rt-awards-2025",

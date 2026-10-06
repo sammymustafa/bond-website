@@ -3,11 +3,13 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/blog/tcpa-ai-outreach-2026",
   category: "blog",
-  title: "TCPA rules for AI voice calls and patient texts in 2026",
+  title: "TCPA compliance for AI calls and texts: 2026 best practices",
   description:
-    "AI voices count as artificial under the TCPA, opt-outs can come in any form, and the healthcare exemption omits recruitment. What sites should do in 2026.",
+    "TCPA best practices for AI calls and texts in 2026: AI voices need consent, any reasonable opt-out counts, and the healthcare exemption omits recruitment.",
   keywords: [
     "TCPA AI voice calls",
+    "TCPA compliance best practices AI voice calls",
+    "TCPA compliant AI calling consent",
     "TCPA texting patients rules",
     "FCC AI-generated voice ruling",
     "TCPA consent revocation rule",

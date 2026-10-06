@@ -247,6 +247,10 @@ const page: SeoPage = {
   ],
   faq: [
     {
+      q: "How much do patient recruitment platforms typically cost?",
+      a: "There is no standard price, because vendors charge for different units: media and digital recruitment vendors price campaigns, referrals or milestones such as randomization, outsourced staff is priced per full-time equivalent or per unit of output, and CTMS licenses are typically priced by users, studies or both.{{cite:1nhealth-pricing,clinical-leader-fsp,simpletrials-ctms}} Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee; Meta and Google ad spend is not included.{{cite:bond-product}} Ask for a quote for your study volume.",
+    },
+    {
       q: "What happens if no one enrolls?",
       a: "No randomization share is owed, because it is a percentage of the randomization milestone payment for each randomized patient.{{cite:bond-product}} The per-screened-patient fee still applies, since it covers the screening, outreach, EHR integration and operation that ran regardless. There is no separate integration fee.",
     },

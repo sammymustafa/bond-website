@@ -238,6 +238,10 @@ const page: SeoPage = {
   ],
   faq: [
     {
+      q: "What tools are used to analyze EHR data for clinical trial recruitment?",
+      a: "EHR screening software that reads patient records against a study's inclusion and exclusion criteria. Bond's Identify uses LLMs to read clinical notes, prescriptions, lab results, imaging data and pathology, radiology and molecular reports, screens 10,000+ charts per hour with 90%+ matching accuracy, and shows the chart evidence behind every criterion, so coordinators review evidence instead of reading every chart.{{cite:bond-site,bond-product}} Matched patients go straight to Bond's outreach and booking.",
+    },
+    {
       q: "Does Identify work with Epic and Oracle Health (Cerner)?",
       a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Full EHR integration typically takes 48 hours depending on the EHR, IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
     },

@@ -518,6 +518,11 @@ const page: SeoPage = {
   ],
   related: [
     {
+      label: "Site feasibility in clinical trials",
+      href: "/guides/site-feasibility",
+      description: "How the assessment works, the criteria sponsors check and a checklist.",
+    },
+    {
       label: "How sponsors choose sites",
       href: "/guides/how-sponsors-choose-sites",
       description: "What sponsors check during selection and how they read your answers.",

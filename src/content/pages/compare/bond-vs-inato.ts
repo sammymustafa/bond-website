@@ -5,11 +5,10 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-inato",
   category: "comparison",
-  title: "Inato alternative: EHR screening, outreach and consent",
+  title: "Bond Health vs Inato: why Bond is better for sites",
   description:
-    "Bond finds eligible patients in your EHR, then contacts, pre-screens and books them for visits by voice and text. See how it compares with Inato.",
+    "Why Bond is better than Inato: Bond screens your EHR, runs Meta and Google ads, contacts every lead immediately and books pre-screened patients for visits.",
   keywords: [
-    "Inato alternative",
     "Bond Health vs Inato",
     "Inato AI patient pre-screening",
     "AI chart review for clinical trials",
@@ -231,7 +230,7 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Is Bond a good Inato alternative?",
+      q: "Is Bond better than Inato?",
       a: "Yes, for a site that wants software to take eligible patients from the chart to a booked visit and consent. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also screens each patient against every open study at the site, and after enrollment its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
     },
     {
