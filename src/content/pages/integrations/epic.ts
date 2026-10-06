@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health connects to Epic through Epic's standard FHIR R4 APIs, screens charts against a study's criteria and passes ranked candidates to your coordinators.{{cite:bond-site}} Below: the data Bond requests, what your Epic team approves, and what is not integrated today.",
   summary: "The FHIR resources, Epic approvals, timeline and PHI controls for connecting Bond at an Epic site.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -234,7 +234,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Does Epic charge the health system for the connection?",
-      a: "It can, depending on your Epic contract. Epic recommends that health systems request a licensing estimate before enabling a third-party app, so they see the cost implications of the data it requests.{{cite:epic-implementing}} Bond charges no integration fee; its own integration work is covered by its volume-based platform fee. See [pricing](/pricing).{{cite:bond-site}}",
+      a: "It can, depending on your Epic contract. Epic recommends that health systems request a licensing estimate before enabling a third-party app, so they see the cost implications of the data it requests.{{cite:epic-implementing}} Bond charges no integration fee; its own integration work is covered by its volume-based fee per screened patient. See [pricing](/pricing).{{cite:bond-site}}",
     },
     {
       q: "Can we start before the Epic connection is approved?",
@@ -255,7 +255,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "klas-2026-hsc",

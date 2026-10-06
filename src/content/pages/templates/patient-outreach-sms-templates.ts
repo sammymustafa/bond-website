@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "These are the texts a research site or practice sends when it contacts its own patients about a study: first contact, follow-up, booking, reminders, reschedules, missed visits and opt-outs. Each one shows its character count, and the core messages are also written in Spanish. Send none of them until your IRB has approved the exact wording.",
   summary: "Fifteen editable outreach texts, from first contact to opt-out, with Spanish versions and TCPA notes.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Download the Word file",
     href: "/downloads/patient-outreach-sms-templates.docx",
@@ -411,7 +411,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "kpsc-recruitment",

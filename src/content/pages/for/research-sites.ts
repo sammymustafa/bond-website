@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Site enrollment depends on finding eligible patients in your own records and reaching them without using up staff time. This page covers where that breaks down, what Bond Health changes day to day, what gets reported, and what setup and pricing involve.",
   summary: "How Bond fits an independent or hospital-based research site: problems, workflow, metrics, setup and pricing.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
@@ -220,11 +220,11 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond uses two-part pricing. A volume-based platform fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging, workflow configuration and ongoing support. There is no separate integration fee. A success fee is charged per enrolled patient, where \"enrolled\" means randomized, and per-visit milestones can be added.{{cite:bond-site}}",
+          text: "Bond uses two-part pricing. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging, workflow configuration and ongoing support. There is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site}}",
         },
         {
           type: "p",
-          text: "The variable part follows randomized patients, not referrals, calls or leads, so a patient who fails screening adds no success fee. Pricing is custom; see [pricing](/pricing).{{cite:bond-site}}",
+          text: "The variable part follows randomized patients, not referrals, calls or leads, so a patient who fails screening adds no randomization share. Pricing is custom; see [pricing](/pricing).{{cite:bond-site}}",
         },
         {
           type: "cta",
@@ -252,7 +252,7 @@ const page: SeoPage = {
     },
     {
       q: "What does a site pay if no patients enroll?",
-      a: "The platform fee still applies, and there is no integration fee; the success fee is charged only per randomized patient. Ask for a quote on the [pricing](/pricing) page.{{cite:bond-site}}",
+      a: "The per-screened-patient fee still applies, and there is no integration fee; the randomization share is owed only for randomized patients. Ask for a quote on the [pricing](/pricing) page.{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -269,7 +269,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "tufts-2013",
@@ -332,7 +332,7 @@ const page: SeoPage = {
     { label: "Identify: AI EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Engage: voice and SMS pre-screening", href: "/engage", description: "How the agents contact patients, pre-screen and book visits." },
     { label: "Implementation", href: "/implementation", description: "The 48-hour plan, with site tasks and Bond tasks." },
-    { label: "Pricing", href: "/pricing", description: "Platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each patient's randomization milestone payment." },
     { label: "How to win more studies", href: "/guides/win-more-studies", description: "What sponsors look for in site feasibility and selection." },
     { label: "Feasibility questionnaire template", href: "/templates/feasibility-questionnaire", description: "A fill-in template for answering sponsor feasibility requests." },
   ],

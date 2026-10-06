@@ -85,10 +85,10 @@ export default function PrivacyPolicyPage() {
 
             <div className="flex flex-wrap gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-bond-primary/10 text-bond-primary text-sm font-medium">
-                Effective Date: April 1, 2026
+                Effective Date: October 5, 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">
-                Last Reviewed: April 1, 2026
+                Last Reviewed: October 5, 2026
               </span>
             </div>
           </div>
@@ -184,8 +184,31 @@ export default function PrivacyPolicyPage() {
             </BulletItem>
           </BulletList>
           <Paragraph>
-            You may manage cookie preferences through your browser settings. Disabling certain
-            cookies may limit the functionality of our Site.
+            We use the following third-party analytics and visitor-identification tools on our
+            Site:
+          </Paragraph>
+          <BulletList>
+            <BulletItem label="Google Analytics:">
+              Measures how visitors use the Site, such as the pages viewed and time spent on them.
+              It loads only if you choose &ldquo;Accept All&rdquo; in our cookie banner.
+            </BulletItem>
+            <BulletItem label="Microsoft Clarity:">
+              Records how visitors interact with our pages, such as clicks, scrolling and session
+              replays, so we can improve usability. It loads only if you choose &ldquo;Accept
+              All&rdquo; in our cookie banner.
+            </BulletItem>
+            <BulletItem label="RB2B:">
+              A business visitor-identification service that may identify the company or
+              professional profile of some visitors to our Site, so we can follow up with
+              organizations interested in Bond Health. RB2B runs on every page of the Site,
+              including when you choose &ldquo;Essential Only&rdquo; in our cookie banner. To ask
+              us not to use RB2B information about you, contact us at hello@bondtrials.com.
+            </BulletItem>
+          </BulletList>
+          <Paragraph>
+            You may manage cookie preferences through the Cookie Settings link at the bottom of
+            every page or through your browser settings. Disabling certain cookies may limit the
+            functionality of our Site.
           </Paragraph>
 
           <SubHeading>1.4 Information from Third Parties</SubHeading>

@@ -17,9 +17,9 @@ export default function Pricing() {
             Two-part pricing, aligned with enrollment.
           </h2>
           <p className="body-lg">
-            Bond combines a volume-based platform fee with a performance-based success fee
-            for each randomized patient, so we win when you enroll patients. There is no
-            integration fee.
+            Bond charges a volume-based fee for each screened patient plus a percentage of the
+            randomization milestone payment for each patient, so we win when you enroll patients.
+            There is no integration fee.
           </p>
         </div>
 
@@ -31,10 +31,10 @@ export default function Pricing() {
               <div className="w-14 h-14 rounded-2xl bg-bond-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Users className="w-7 h-7 text-bond-primary" />
               </div>
-              <h3 className="heading-sm mb-2">Per Enrolled Patient</h3>
+              <h3 className="heading-sm mb-2">Per Randomized Patient</h3>
               <p className="text-gray-600 mb-6">
-                You pay based on successful patient enrollment. 
-                Our incentives are aligned with your trial outcomes.
+                A percentage of the randomization milestone payment for each
+                patient who is randomized, so our incentives match your trial outcomes.
               </p>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-bond-primary/5 rounded-full">
                 <Check className="w-4 h-4 text-bond-primary" />
@@ -42,7 +42,7 @@ export default function Pricing() {
               </div>
             </div>
 
-            {/* Platform Fee - New detailed style */}
+            {/* Per screened patient - New detailed style */}
             <div className="card-elevated">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center">
@@ -52,9 +52,9 @@ export default function Pricing() {
                   <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Volume-based</span>
                 </div>
               </div>
-              <h3 className="heading-sm mb-3">Platform Fee</h3>
+              <h3 className="heading-sm mb-3">Per Screened Patient</h3>
               <p className="text-gray-600 mb-4">
-                Covers EHR integration, implementation, and the ongoing costs of screening, outreach, consent support, analytics, and audit logs. The fee is volume-based, and there is no separate integration fee.
+                A fee for each screened patient, meaning each patient we call and text to pre-screen for your study, covers EHR integration, implementation, and the ongoing costs of screening, outreach, booking, consent support, analytics, and audit logs. There is no separate integration fee.
               </p>
               <div className="space-y-2 pt-4 border-t border-gray-100">
                 {[
@@ -79,9 +79,9 @@ export default function Pricing() {
                 <Users className="w-5 h-5 text-gray-700" />
               </div>
               <div>
-                <p className="font-semibold text-gray-900 mb-2">How we define "enrolled"</p>
+                <p className="font-semibold text-gray-900 mb-2">When the randomization share applies</p>
                 <p className="text-gray-600">
-                  Successfully randomized. Additional milestones for each visit can be added as needed.
+                  Only when a patient is successfully randomized and the study's randomization milestone is paid. Ad spend for Meta and Google campaigns is not included in Bond's fees; it comes out of your study's advertising budget.
                 </p>
               </div>
             </div>

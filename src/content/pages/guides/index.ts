@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "Longer pieces for the questions that come up in every feasibility call and IRB meeting. Each guide states the rule or the number, cites where it comes from, and ends with what to do differently on Monday.",
   summary: "Seven guides on the operational and regulatory questions behind enrollment.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-10-05",
   sections: [
     {
       id: "guides",

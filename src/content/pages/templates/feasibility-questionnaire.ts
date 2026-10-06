@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs send a feasibility questionnaire before they shortlist a site, and many cover the same ground in a different order. This template puts those questions in one place so your site can answer once, keep the answers current, and copy them into each sponsor's form. It includes a worksheet for patient counts drawn from your EHR, because a count with its method attached is easier to believe than an estimate.",
   summary: "An editable site feasibility questionnaire with an EHR patient-count worksheet and guidance on answering with data.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",

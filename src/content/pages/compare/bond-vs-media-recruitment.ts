@@ -23,7 +23,7 @@ const page: SeoPage = {
     "Media recruiters such as Antidote and 1nHealth find patients through digital marketing, pre-screen the people who respond and refer likely candidates to sites.{{cite:antidote-partners,antidote-sponsors,1nhealth-pharma}} Bond Health [screens the site's EHR](/identify), including clinical notes, against each protocol and creates and runs Meta and Google ad campaigns to reach patients beyond it. Its voice and text agents contact every ad lead immediately, keep following up with every lead who has not responded, pre-screen and book chart matches and ad leads alike, and carry them on to informed consent support.{{cite:bond-site,bond-product}} If you want one platform from ad click or chart match to a booked study visit, rather than referrals for your staff to follow up, Bond is the stronger choice.",
   summary:
     "Why Bond is better than media referrals: it creates the ads, contacts every lead immediately and follows up until they book, with published cost and conversion data.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -34,7 +34,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than media recruitment because it carries every lead all the way to a booked visit: it creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately by voice and text, keeps following up with every lead who has not responded to maximize response rates, and pre-screens patients and books them for screening visits. It also screens your EHR, with chart evidence behind every match, and its pricing is tied to randomized patients.{{cite:bond-site,bond-product}}",
+          text: "Bond is better than media recruitment because it carries every lead all the way to a booked visit: it creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately by voice and text, keeps following up with every lead who has not responded to maximize response rates, and pre-screens patients and books them for screening visits. It also screens your EHR, with chart evidence behind every match, and part of its price is tied to randomization.{{cite:bond-site,bond-product}}",
         },
         {
           type: "stats",
@@ -54,7 +54,7 @@ const page: SeoPage = {
             "**Every open study at once.** Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**Consent support in the same workflow.** Plain-language explanations, patient Q&A and staff escalation. The site and PI obtain consent ([Consent](/consent)).{{cite:bond-site}}",
             "**Support until close-out.** After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
-            "**No integration fee.** A volume-based platform fee plus a success fee per randomized patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
+            "**No integration fee.** A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -127,7 +127,7 @@ const page: SeoPage = {
             ],
             [
               "Pricing",
-              "A volume-based platform fee plus a success fee per randomized patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
               "Risk-sharing payment model.{{cite:antidote-sponsors}}",
               "Milestones such as signed ICFs or randomization, with flexible models on request.{{cite:1nhealth-home}}",
             ],
@@ -157,7 +157,7 @@ const page: SeoPage = {
             "**Patient conversations and support.** Antidote describes a contact center for patient support, and 1nHealth sends automated SMS follow-ups.{{cite:antidote-seqster-2024,1nhealth-pharma}} Bond's voice and text agents tell patients that AI is used, and patients can reach a person at any time, by live transfer to a coordinator or a callback, as the site prefers. Conversations and consent Q&A run in the patient's preferred language, including English, Spanish and Mandarin, with mid-call switching.{{cite:bond-site,bond-product}}",
             "**One place to track enrollment.** 1nHealth puts its 1nData tools in a single login.{{cite:1nhealth-pharma}} Bond's real-time dashboard and audit trail report patients matched, contacted, pre-screened, consented and randomized, along with time to enrollment and coordinator hours saved.{{cite:bond-site}}",
             "**Keeping participants engaged.** 1nHealth says its retention strategies are tailored to each trial and patient population.{{cite:1nhealth-home}} After enrollment, Bond's same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and reminders can also go by email.{{cite:bond-product}}",
-            "**Paying for results.** Antidote describes a risk-sharing payment model, and 1nHealth prices by milestones such as signed ICFs or randomization.{{cite:antidote-sponsors,1nhealth-home}} Bond charges its success fee per randomized patient, on top of a volume-based platform fee, and charges no integration fee.{{cite:bond-site,bond-product}}",
+            "**Paying for results.** Antidote describes a risk-sharing payment model, and 1nHealth prices by milestones such as signed ICFs or randomization.{{cite:antidote-sponsors,1nhealth-home}} Bond charges its percentage of each patient's randomization milestone payment, on top of a volume-based fee per screened patient, and charges no integration fee.{{cite:bond-site,bond-product}}",
             "**Many therapeutic areas.** Both list a range of areas, including dermatology and immunology.{{cite:antidote-sponsors,1nhealth-pharma}} Bond's screening is configured from each protocol's own criteria, so it works for drug and device studies alike.{{cite:bond-product}}",
           ],
         },
@@ -301,7 +301,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a good alternative to Antidote or 1nHealth?",
-      a: "Yes. Bond gives a site one platform from ad click or chart match to a booked study visit. It finds eligible patients in the site's EHR, including clinical notes, and creates and runs Meta and Google ad campaigns for your studies; its voice and text agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule patients from both, and Bond supports informed consent, with pricing tied to randomized patients.{{cite:bond-site,bond-product}}",
+      a: "Yes. Bond gives a site one platform from ad click or chart match to a booked study visit. It finds eligible patients in the site's EHR, including clinical notes, and creates and runs Meta and Google ad campaigns for your studies; its voice and text agents contact every ad lead immediately, follow up until they respond, and pre-screen and schedule patients from both, and Bond supports informed consent, with part of the price tied to randomization.{{cite:bond-site,bond-product}}",
     },
     {
       q: "Does Bond run ad campaigns?",
@@ -313,7 +313,7 @@ const page: SeoPage = {
     },
     {
       q: "How does the cost model differ?",
-      a: "Antidote describes a risk-sharing payment model, and 1nHealth prices by milestones such as signed ICFs or randomization, with flexible models on request.{{cite:antidote-sponsors,1nhealth-home}} Bond charges a volume-based platform fee plus a success fee for each patient randomized into your study, with no integration fee.{{cite:bond-site,bond-product}} See [pricing](/pricing) for how the fees work.",
+      a: "Antidote describes a risk-sharing payment model, and 1nHealth prices by milestones such as signed ICFs or randomization, with flexible models on request.{{cite:antidote-sponsors,1nhealth-home}} Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-site,bond-product}} See [pricing](/pricing) for how the fees work.",
     },
     {
       q: "Does Antidote or 1nHealth support informed consent?",
@@ -470,7 +470,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-acrp-talk",
@@ -498,7 +498,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
     { label: "Engage: voice and text agents", href: "/engage", description: "Outreach, pre-screening and scheduling by voice and text." },

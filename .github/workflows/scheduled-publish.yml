@@ -1,0 +1,25 @@
+name: Scheduled publish
+
+# Rebuilds the live site once a day so blog posts dated today go live.
+# Posts dated in the future are left out of each build (src/content/published.ts).
+# Needs a repository secret CF_PAGES_DEPLOY_HOOK: a Cloudflare Pages deploy hook
+# for the main branch (Pages project > Settings > Builds > Deploy hooks).
+on:
+  schedule:
+    - cron: "0 11 * * *" # 11:00 UTC, 7 a.m. Eastern in summer, 6 a.m. in winter
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger a Cloudflare Pages rebuild
+        env:
+          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::warning::CF_PAGES_DEPLOY_HOOK is not set, so scheduled posts will only go live on the next deploy."
+            exit 0
+          fi
+          curl -fsS -X POST "$HOOK" > /dev/null
+          echo "Rebuild triggered."

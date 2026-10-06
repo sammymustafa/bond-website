@@ -21,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Manual pre-screening means coordinators, research nurses or clinicians reading each chart against a study's criteria.{{cite:parikh-2026,penberthy-2012}} Bond Health reads the site's EHR, including clinical notes, against each study's criteria, ranks the matches with the chart evidence behind them, then contacts, pre-screens and schedules patients by voice and text and supports informed consent.{{cite:bond-site}} For any site with more charts than coordinator hours, that makes Bond the stronger choice: coordinators keep the final eligibility call and review the cited evidence instead of reading every chart.",
   summary: "Why sites move trial pre-screening from manual chart review to Bond: coverage, evidence for every criterion, coordinator time and cost.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -51,7 +51,7 @@ const page: SeoPage = {
             "**Evidence for every criterion.** Each ranked match shows the chart evidence behind each decision, so coordinators confirm a match instead of rereading the chart.{{cite:bond-site}}",
             "**Every open study at once.** Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**From match to booked visit in one workflow.** Chart-aware voice and text agents pre-screen patients and book visits, and consent support gives plain-language explanations and answers patient questions. Bond's site cites a 3x contact rate.{{cite:bond-site,bond-product}}",
-            "**Fees tied to results.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**Fees tied to results.** Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -85,7 +85,7 @@ const page: SeoPage = {
             ["Consent", "Plain-language explanations and patient Q&A; checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent{{cite:bond-site,bond-product}}", "Staff time with each patient; the site and PI obtain consent"],
             ["Reporting and audit trail", "Real-time dashboard and audit trail covering patients matched, contacted, pre-screened, consented and randomized, plus coordinator hours saved{{cite:bond-site}}", "The coordinator's recorded assessment and the site's screening log, which ICH E6(R3) lists among essential records{{cite:unlu-2024-rectifier,ich-e6r3}}"],
             ["Integrations", "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR, HL7 or an aggregator; CRIO Certified Partner{{cite:bond-site,bond-product}}; direct Google Sheets, CTMS and calendar integrations{{cite:bond-acrp-talk}}", "Staff work directly in the EHR, screening log and CTMS"],
-            ["Cost model", "A volume-based platform fee plus a success fee per randomized patient, with no integration fee{{cite:bond-site,bond-product}}", "Staff hours: $129 to $336 in personnel cost per enrolled patient at one center in 2012{{cite:penberthy-2012}}"],
+            ["Cost model", "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee{{cite:bond-site,bond-product}}", "Staff hours: $129 to $336 in personnel cost per enrolled patient at one center in 2012{{cite:penberthy-2012}}"],
             ["Setup", "48 hours for full EHR integration, depending on the EHR, IT review and interface method, with Bond's implementation team handling it end to end and no integration fee{{cite:bond-site,bond-product}}", "Trained staff and a screening log{{cite:unlu-2024-rectifier,ich-e6r3}}"],
           ],
           note: "Bond figures come from Bond's website and product information, September 2026. Manual review figures come from single published studies with different methods.",
@@ -275,7 +275,7 @@ const page: SeoPage = {
     },
     {
       q: "How does Bond's pricing compare with the cost of manual review?",
-      a: "Manual review is paid for in staff hours: one cancer center put the personnel cost of screening at $129 to $336 per enrolled patient in 2012.{{cite:penberthy-2012}} Bond charges a volume-based platform fee plus a success fee for each randomized patient, with no integration fee, so part of what a site pays depends on patients reaching randomization. The [pricing](/pricing) page explains the model.{{cite:bond-site,bond-product}}",
+      a: "Manual review is paid for in staff hours: one cancer center put the personnel cost of screening at $129 to $336 per enrolled patient in 2012.{{cite:penberthy-2012}} Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee, so part of what a site pays depends on patients reaching randomization. The [pricing](/pricing) page explains the model.{{cite:bond-site,bond-product}}",
     },
   ],
   sources: [
@@ -388,7 +388,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-trust-center",
@@ -417,7 +417,7 @@ const page: SeoPage = {
   related: [
     { label: "All comparisons", href: "/compare", description: "Bond beside EHR matching tools, engagement agents and media recruitment." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and shows the evidence for each match." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist", description: "A consistent manual review, step by step." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "Scope, integrations and pricing models across vendors." },

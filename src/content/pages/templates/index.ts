@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "Each template is shown in full on its page and available as an editable Word document. They are written for coordinators and site directors, not lawyers, and every one that touches patient contact says where IRB approval is required.",
   summary: "Six editable templates for feasibility, pre-screening, outreach, vendor evaluation, IRB language and chart review.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-10-05",
   sections: [
     {
       id: "templates",

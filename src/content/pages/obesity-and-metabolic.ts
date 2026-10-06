@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "From August 2021 to August 2023, 40.3 percent of US adults had obesity.{{cite:cdc-obesity}} These trials rarely lack candidates on paper. They lack candidates whose measured BMI, A1c and medication history fall inside the protocol's windows on screening day. This page covers eligibility, screen failure, and what Bond Health reads in the chart.",
   summary: "BMI, A1c and GLP-1 washout criteria, screen failure drivers, and the recruiting-trial pool for obesity and type 2 diabetes.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
@@ -202,7 +202,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Full EHR integration usually takes 48 hours, depending on the EHR, IT review and interface method. Pricing is a volume-based platform fee plus a success fee per randomized patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site}}",
+          text: "Full EHR integration usually takes 48 hours, depending on the EHR, IT review and interface method. Pricing is a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee; see [pricing](/pricing).{{cite:bond-site}}",
         },
         {
           type: "cta",
@@ -375,7 +375,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

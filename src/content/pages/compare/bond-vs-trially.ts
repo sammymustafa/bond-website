@@ -9,7 +9,7 @@ const page: SeoPage = {
   category: "comparison",
   title: "Trially alternative: Bond Health vs Trially, compared",
   description:
-    "Bond Health vs Trially: Bond screens EHR notes, runs its own ads and takes every patient to a booked visit in one platform, with fees tied to randomized patients.",
+    "Bond Health vs Trially: Bond screens EHR notes, runs its own ads and takes every patient to a booked visit in one platform, with no integration fee.",
   keywords: [
     "Trially alternative",
     "Trially vs Bond Health",
@@ -20,10 +20,10 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Trially",
   intro:
-    "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a success fee per randomized patient.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart or ad click to a booked study visit, with consent support after that, Bond is the stronger choice.",
+    "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a percentage of each patient's randomization milestone payment.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart or ad click to a booked study visit, with consent support after that, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Trially: one workflow from chart or ad click to a booked visit, chart-aware agents, consent support and no integration fee.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -34,7 +34,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Trially because it takes every patient all the way to a booked study visit, whether they come from your EHR or from the Meta and Google ad campaigns Bond creates and runs: it contacts every ad lead immediately and keeps following up until patients respond and are booked.{{cite:bond-product}} It does this in one platform, with chart evidence behind every match, consent support and a success fee per randomized patient.{{cite:bond-site}}",
+          text: "Bond is better than Trially because it takes every patient all the way to a booked study visit, whether they come from your EHR or from the Meta and Google ad campaigns Bond creates and runs: it contacts every ad lead immediately and keeps following up until patients respond and are booked.{{cite:bond-product}} It does this in one platform, with chart evidence behind every match, consent support and a percentage of each patient's randomization milestone payment.{{cite:bond-site}}",
         },
         {
           type: "stats",
@@ -51,7 +51,7 @@ const page: SeoPage = {
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call.{{cite:bond-product}} Patients are told AI is used and can reach a person at any time, by live transfer to a coordinator or a callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
-            "**No integration fee.** Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee.{{cite:bond-site,bond-product}} Trially described a monthly subscription, varying with site size and integration needs, in a March 2025 blog post.{{cite:trially-crio-webinar}} See [pricing](/pricing).",
+            "**No integration fee.** Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-site,bond-product}} Trially described a monthly subscription, varying with site size and integration needs, in a March 2025 blog post.{{cite:trially-crio-webinar}} See [pricing](/pricing).",
             "**A method you can check.** Bond's matching method is written up in a technical report with results on public benchmarks, including 0.9312 micro F1 on the held-out n2c2 2018 cohort-selection task. The report is an August 2026 preprint, available on request.{{cite:bond-whitepaper}}",
           ],
         },
@@ -134,14 +134,14 @@ const page: SeoPage = {
             ],
             [
               "Pricing",
-              "A volume-based platform fee plus a success fee per randomized patient, with no integration fee.{{cite:bond-site,bond-product}} See [pricing](/pricing).",
+              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-site,bond-product}} See [pricing](/pricing).",
               "A monthly subscription that varies with site size and integration needs, per a March 2025 Trially blog post; current terms may differ.{{cite:trially-crio-webinar}}",
             ],
           ],
         },
         {
           type: "p",
-          text: "Both products read structured and unstructured EHR data and explain each match.{{cite:bond-site,trially-faq-ai,trially-faq-ranking}} Bond then keeps the patient in one platform through outreach, pre-screening, scheduling and consent support, and ties its success fee to randomized patients.{{cite:bond-site}}",
+          text: "Both products read structured and unstructured EHR data and explain each match.{{cite:bond-site,trially-faq-ai,trially-faq-ranking}} Bond then keeps the patient in one platform through outreach, pre-screening, scheduling and consent support, and ties its randomization share to randomized patients.{{cite:bond-site}}",
         },
       ],
     },
@@ -261,7 +261,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a good Trially alternative?",
-      a: "Yes. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, all in one platform with no integration fee and a success fee per randomized patient.{{cite:bond-site,bond-product}} As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
+      a: "Yes. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, all in one platform with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
     },
     {
       q: "Does Trially support informed consent?",
@@ -269,7 +269,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based platform fee plus a success fee per randomized patient, with no integration fee, so part of the cost depends on enrollment; see [pricing](/pricing).{{cite:bond-site,bond-product}} In a March 2025 blog post, Trially described a monthly subscription that varies with site size and integration needs. We found no published Trially prices, and its current terms may differ.{{cite:trially-crio-webinar}}",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee, so part of the cost depends on enrollment; see [pricing](/pricing).{{cite:bond-site,bond-product}} In a March 2025 blog post, Trially described a monthly subscription that varies with site size and integration needs. We found no published Trially prices, and its current terms may differ.{{cite:trially-crio-webinar}}",
     },
     {
       q: "Do Bond and Trially both work with CRIO?",
@@ -322,7 +322,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "trially-crio-webinar",
@@ -414,7 +414,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based platform fee plus a success fee per randomized patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "Outreach, pre-screening and scheduling after the match." },

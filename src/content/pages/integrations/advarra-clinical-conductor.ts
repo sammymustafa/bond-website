@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Clinical Conductor is the CTMS Advarra sells to growing research sites and site networks, and OnCore is its CTMS for academic medical centers and cancer centers.{{cite:advarra-cc,advarra-oncore}} Bond Health works alongside both: it finds and pre-screens candidates from the EHR, sends referrals to the CTMS by API or file export, and reads enrollment status back.",
   summary: "How referrals, pre-screen outcomes and enrollment status move between Bond and Advarra's CTMS products.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -56,7 +56,7 @@ const page: SeoPage = {
           items: [
             "**Pre-screening log.** One row per candidate: date, study, outcome and, for a fail, the criterion that ruled the patient out.",
             "**Referral source.** Each referral is tagged with its source and outreach channel, so the site's CTMS reports can show which sources lead to randomized patients.",
-            "**Enrollment status.** Consented, screen-failed and randomized statuses come back from the CTMS by API or export. Bond counts a patient as enrolled once randomized, the basis of its success fee.{{cite:bond-site}}",
+            "**Enrollment status.** Consented, screen-failed and randomized statuses come back from the CTMS by API or export. Bond counts a patient as enrolled once randomized, the basis of its randomization share.{{cite:bond-site}}",
           ],
         },
       ],
@@ -241,7 +241,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "advarra-cc",

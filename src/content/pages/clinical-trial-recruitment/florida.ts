@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "On September 21, 2026, a ClinicalTrials.gov search for recruiting studies with a Florida location returned 3,876.{{cite:ctgov-api}} The state has four NCI-designated cancer centers with Florida facilities, health systems on Epic, MEDITECH and other EHRs, and a population older and more Hispanic than the US as a whole.{{cite:nci-find,floridatrend-epic,meditech-hca,census-asrh-2025}}",
   summary: "Florida recruiting-trial counts, research hubs, health system EHRs, site networks, demographics and outreach laws.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -495,7 +495,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

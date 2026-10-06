@@ -1,0 +1,264 @@
+import type { SeoPage } from "../../types";
+
+const page: SeoPage = {
+  path: "/blog/state-ai-disclosure-laws-healthcare",
+  category: "blog",
+  title: "State AI disclosure laws for patient communications",
+  description:
+    "California, Utah, Texas, Colorado and others: which state laws require telling patients about AI, as of October 2026, and what that means for research outreach.",
+  keywords: [
+    "state AI disclosure laws health care",
+    "California AB 3030",
+    "Utah AI disclosure law",
+    "Texas TRAIGA health care AI disclosure",
+    "AI patient communication disclosure requirements",
+  ],
+  eyebrow: "Blog",
+  h1: "State laws on disclosing AI in patient communications, as of October 2026",
+  intro:
+    "Several states now require health care organizations or licensed professionals to tell patients when AI is involved. California requires a disclaimer on AI-generated messages about clinical information, Utah requires licensed professionals to disclose generative AI in high-risk interactions, and Texas requires providers to disclose AI used in health care services.{{cite:ca-ab3030,ut-13-77-103,tx-hb149}} This post summarizes the laws a research site using AI outreach should know, as of October 2026. It is not legal advice.",
+  summary: "Which state laws require disclosing AI to patients as of October 2026, from California AB 3030 to Utah, Texas and Colorado, and how to write one script that meets them.",
+  lastUpdated: "2026-10-30",
+  blog: { date: "2026-10-30", author: "Rishabh Goel", readingMinutes: 5 },
+  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  sections: [
+    {
+      id: "laws-at-a-glance",
+      heading: "Which state laws require telling patients about AI?",
+      blocks: [
+        {
+          type: "p",
+          text: "The laws below are the ones we found that speak directly to AI in patient-facing health care, checked against each legislature's published text in October 2026. The list may not be complete, and general consumer protection and AI laws can also apply.",
+        },
+        {
+          type: "table",
+          caption: "State AI disclosure laws relevant to patient communications, as of October 2026{{cite:ca-ab3030,ca-ab489,ca-const,ut-sb226,ut-13-77-103,tx-hb149,tx-sb1188,il-pa-104-0054,la-act-649,co-sb26-189}}",
+          columns: ["State and law", "Who it covers", "What it requires", "Status"],
+          rows: [
+            ["California AB 3030 (Health and Safety Code 1339.75)", "Health facilities, clinics, physician offices and group practices", "Disclaimer on generative AI messages about patient clinical information, plus how to reach a human", "In effect since January 1, 2025"],
+            ["California AB 489 (Business and Professions Code 4999.8 to 4999.9)", "Anyone who develops or deploys AI", "No terms or phrases implying care or advice comes from a licensed health professional", "Signed October 11, 2025; in effect since January 1, 2026"],
+            ["Utah SB 226 (Utah Code 13-77-103)", "People providing services in a regulated occupation; suppliers in consumer transactions", "Prominent disclosure of generative AI in high-risk interactions; truthful answer when asked", "In effect since May 7, 2025"],
+            ["Texas HB 149 (Business and Commerce Code 552.051)", "Providers of health care services or treatment", "Disclose AI used in relation to the service, no later than the date it is first provided", "In effect since January 1, 2026"],
+            ["Texas SB 1188 (Health and Safety Code 183.005)", "Practitioners using AI for diagnostic purposes", "Disclose that use to patients and review AI-created records", "In effect since September 1, 2025"],
+            ["Illinois HB 1806 (Public Act 104-0054)", "Therapy and psychotherapy services", "AI may not conduct therapeutic communication; written notice and consent for AI on recorded sessions", "In effect since August 1, 2025"],
+            ["Louisiana HB 475 (Act 649, R.S. 37:22.1)", "Licensed health care professionals", "Verbal disclosure before recording a visit for AI transcription", "In effect since August 1, 2026"],
+            ["Colorado SB26-189", "Deployers of automated decision tools used in consequential decisions, including health care services", "Clear notice at the point of interaction", "Signed May 14, 2026; developer duties start January 1, 2027"],
+          ],
+        },
+      ],
+    },
+    {
+      id: "california",
+      heading: "What does California require?",
+      blocks: [
+        {
+          type: "p",
+          text: "AB 3030 applies when a health facility, clinic, physician's office or group practice uses generative AI to write or speak to patients about \"patient clinical information\", meaning information about the patient's health status. Scheduling, billing and other clerical matters are excluded. The message must say it was generated by AI and tell the patient how to reach a human. For audio, the disclaimer must be spoken at the start and the end; for chat, it must stay on screen throughout. The rule does not apply if a licensed or certified provider reads and reviews the message.{{cite:ca-ab3030}} Enacted in September 2024, it took effect on January 1, 2025 under California's default effective-date rule.{{cite:ca-const}}",
+        },
+        {
+          type: "p",
+          text: "AB 489 adds a naming rule. AI advertising or functionality may not use terms, letters or phrases that suggest the advice or care is coming from a licensed health professional, and each use counts as a separate violation.{{cite:ca-ab489}} In practice, an AI agent should not be introduced as \"Nurse Sam\" or sign texts with clinical credentials.",
+        },
+      ],
+    },
+    {
+      id: "utah",
+      heading: "What does Utah require?",
+      blocks: [
+        {
+          type: "p",
+          text: "Utah's rule has two parts. A business using generative AI with consumers must say it is AI if the person clearly asks. Separately, someone providing services in a regulated occupation, such as a licensed clinician, must prominently disclose generative AI use in a \"high-risk\" interaction, which includes collecting health data and giving medical advice. The disclosure must be spoken at the start of a verbal interaction and given in writing before a written one.{{cite:ut-13-77-103,ut-sb226}}",
+        },
+        {
+          type: "p",
+          text: "The law offers a safe harbor: no enforcement action if the AI clearly and conspicuously discloses, at the outset and throughout the interaction, that it is generative AI, not human, or an AI assistant. It took effect May 7, 2025, and the same bill moved the repeal date of Utah's broader Artificial Intelligence Policy Act to July 1, 2027.{{cite:ut-sb226}}",
+        },
+      ],
+    },
+    {
+      id: "texas",
+      heading: "What does Texas require?",
+      blocks: [
+        {
+          type: "p",
+          text: "Texas has two laws. Under the Texas Responsible Artificial Intelligence Governance Act (HB 149), in effect since January 1, 2026, a provider that uses an AI system in relation to a health care service or treatment must disclose it to the patient or their representative no later than the date the service is first provided, except in emergencies. The disclosure must be clear and conspicuous, in plain language, and free of dark patterns, and it is required even if a reasonable person would already know they are dealing with AI.{{cite:tx-hb149}}",
+        },
+        {
+          type: "p",
+          text: "SB 1188, in effect since September 1, 2025, lets practitioners use AI for diagnostic purposes only if they act within their license and review all AI-created records, and requires them to disclose that use to patients.{{cite:tx-sb1188}}",
+        },
+      ],
+    },
+    {
+      id: "other-states",
+      heading: "What other state laws touch AI and patients?",
+      blocks: [
+        {
+          type: "ul",
+          items: [
+            "**Illinois.** Since August 1, 2025, AI may not make independent therapeutic decisions or interact with clients in therapeutic communication, and using AI on recorded or transcribed therapy sessions requires written notice and consent. Physicians are outside the act's definition of licensed professional.{{cite:il-pa-104-0054}}",
+            "**Louisiana.** Since August 1, 2026, a licensed health care professional must say out loud, before recording, that a device or software will record part of a visit for AI transcription.{{cite:la-act-649}}",
+            "**Colorado.** SB26-189, signed May 14, 2026, repeals and reenacts the state's 2024 AI law. Deployers of automated decision tools used in decisions about health care services must give clear notice at the point of interaction; the legislature's summary dates developer duties from January 1, 2027.{{cite:co-sb26-189}}",
+            "**Federal.** In August 2024 the FCC proposed requiring callers using AI-generated voices to disclose that at the beginning of each call.{{cite:fcc-24-84}} Our [TCPA post](/blog/tcpa-ai-outreach-2026) tracks its status.",
+          ],
+        },
+      ],
+    },
+    {
+      id: "one-script",
+      heading: "What should a site's AI outreach script include?",
+      blocks: [
+        {
+          type: "p",
+          text: "Whether a study invitation or pre-screening call falls inside each law depends on its definitions, and that is a question for counsel. The practical answer is one script that would meet the strictest version everywhere you recruit.",
+        },
+        {
+          type: "checklist",
+          items: [
+            "**Disclose at the start of every call** that the patient is speaking with an AI assistant, and put the same statement at the top of the first text.{{cite:ut-13-77-103}}",
+            "**Repeat the disclosure at the end of calls**, as California requires for audio messages about clinical information.{{cite:ca-ab3030}}",
+            "**Offer a human every time**, with clear instructions for reaching a coordinator.{{cite:ca-ab3030}}",
+            "**Never give the agent a clinical title** or credentials, or imply a licensed person is speaking.{{cite:ca-ab489}}",
+            "**Answer honestly** if a patient asks whether they are talking to a person.{{cite:ut-13-77-103}}",
+            "**Disclose before recording** any visit you plan to transcribe with AI.{{cite:la-act-649}}",
+            "**Log each disclosure** with the call or message record, and put the wording in your IRB submission ([sample language](/templates/irb-submission-language-ai-outreach)).",
+            "**Review the list every quarter.** Colorado's duties begin in 2027, and this area of state law is changing quickly.{{cite:co-sb26-189}}",
+          ],
+        },
+        {
+          type: "callout",
+          tone: "bond",
+          title: "How Bond handles this",
+          text: "Bond's [Engage](/engage) agents tell every patient that AI is being used, and the patient can reach a person at any time: the agent transfers the call live to a coordinator or books a callback, whichever the site prefers.{{cite:bond-site}}",
+        },
+        {
+          type: "cta",
+          label: "Book a demo",
+          href: "/book-a-demo",
+          text: "Review an Engage script for your study, including the AI disclosure, human handoff and opt-out wording.",
+          secondaryLabel: "Read the IRB and HIPAA guide",
+          secondaryHref: "/guides/irb-hipaa-patient-outreach",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Do these laws apply to clinical trial recruitment calls?",
+      a: "It depends on each law's definitions. California's rule covers AI messages about a patient's health status, Utah's covers high-risk interactions that include collecting health data, and Texas covers AI used in relation to health care services.{{cite:ca-ab3030,ut-13-77-103,tx-hb149}} A pre-screening call that asks about health may fall inside some of them, so ask counsel and disclose regardless.",
+    },
+    {
+      q: "Does human review remove the disclosure requirement?",
+      a: "In California, yes, if a licensed or certified health care provider reads and reviews the AI-generated communication.{{cite:ca-ab3030}} Utah's and Texas's rules contain no comparable exemption in the sections summarized here.{{cite:ut-13-77-103,tx-hb149}}",
+    },
+    {
+      q: "Is this legal advice?",
+      a: "No. It summarizes statutes as published by state legislatures, checked in October 2026. Laws change, and their application to a specific study depends on facts counsel should review.",
+    },
+  ],
+  sources: [
+    {
+      id: "ca-ab3030",
+      title: "AB-3030 Health care services: artificial intelligence (Chapter 848, Statutes of 2024)",
+      publisher: "California Legislative Information",
+      url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB3030",
+      year: "2024",
+      note: "Read October 2026. Approved by Governor September 28, 2024. Quote (Health and Safety Code 1339.75(a)(1)(C)): \"For audio communications, the disclaimer shall be provided verbally at the start and the end of the interaction.\" Quote (b): \"If a communication is generated by generative artificial intelligence and read and reviewed by a human licensed or certified health care provider, the requirements of subdivision (a) do not apply.\" Quote (c)(7): \"'Patient clinical information' means information relating to the health status of a patient. This information does not include administrative matters, including, but not limited to, appointment scheduling, billing, or other clerical or business matters.\"",
+    },
+    {
+      id: "ca-ab489",
+      title: "AB-489 Health care professions: deceptive terms or letters: artificial intelligence (Chapter 615, Statutes of 2025)",
+      publisher: "California Legislative Information",
+      url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB489",
+      year: "2025",
+      note: "Read October 2026. Approved by Governor October 11, 2025. Quote (Business and Professions Code 4999.9(c)): \"The use of a term, letter, or phrase in the advertising or functionality of an AI or GenAI system, program, device, or similar technology that indicates or implies that the care, advice, reports, or assessments being offered through the AI or GenAI technology is being provided by a natural person in possession of the appropriate license or certificate to practice as a health care professional, is prohibited.\" Quote (d): \"Each use of a prohibited term, letter, or phrase shall constitute a separate violation of this chapter.\"",
+    },
+    {
+      id: "ca-const",
+      title: "California Constitution, Article IV, Section 8",
+      publisher: "California Legislative Information",
+      url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CONS&sectionNum=SEC.%208.&article=IV",
+      year: "2016",
+      note: "Read October 2026. Basis for the January 1 effective dates of AB 3030 and AB 489. Quote (c)(1): \"a statute enacted at a regular session shall go into effect on January 1 next following a 90-day period from the date of enactment of the statute\". Quote (c)(2): a statute \"enacted by a bill passed by the Legislature on or before the date the Legislature adjourns for a joint recess to reconvene in the second calendar year of the biennium of the legislative session, and in the possession of the Governor after that date, shall go into effect on January 1 next following the enactment date of the statute\".",
+    },
+    {
+      id: "ut-sb226",
+      title: "S.B. 226 Artificial Intelligence Consumer Protection Amendments (2025 General Session, enrolled)",
+      publisher: "Utah State Legislature",
+      url: "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+      year: "2025",
+      note: "Read October 2026. Quote (definition): \"'High-risk artificial intelligence interaction' means an interaction with generative artificial intelligence that involves: (a) the collection of sensitive personal information, including: (i) health data\" and \"(iii) medical advice or services\". Quote (safe harbor): \"A person is not subject to an enforcement action for violating Section 13-75-103 if the person's generative artificial intelligence clearly and conspicuously discloses: (a) at the outset of any interaction ... and (b) throughout the interaction that it: (i) is generative artificial intelligence; (ii) is not human; or (iii) is an artificial intelligence assistant.\" Quote: \"Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed [May 1, 2025] July 1, 2027.\" Quote: \"this bill takes effect on May 7, 2025.\" Enacted as 13-75; now codified as Utah Code 13-77.",
+    },
+    {
+      id: "ut-13-77-103",
+      title: "Utah Code 13-77-103: Required disclosures",
+      publisher: "Utah State Legislature",
+      url: "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+      year: "2025",
+      note: "Read October 2026; current version effective 5/7/2025. Quote: \"(2) An individual providing services in a regulated occupation shall: (a) prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if the use of generative artificial intelligence constitutes a high-risk artificial intelligence interaction\". Quote (3): \"A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction.\" Quote (1)(a): a supplier must disclose \"if the individual asks or otherwise prompts the supplier about whether artificial intelligence is being used.\"",
+    },
+    {
+      id: "tx-hb149",
+      title: "H.B. No. 149, Texas Responsible Artificial Intelligence Governance Act (enrolled)",
+      publisher: "Texas Legislature Online",
+      url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm",
+      year: "2025",
+      note: "Read October 2026. Bill history shows \"Signed by the Governor\" and \"Effective on 1/1/26\". Quote (Sec. 552.051(f)): \"If an artificial intelligence system is used in relation to health care service or treatment, the provider of the service or treatment shall provide the disclosure under Subsection (b) to the recipient of the service or treatment or the recipient's personal representative not later than the date the service or treatment is first provided, except in the case of emergency\". Quote (c): the disclosure is required \"regardless of whether it would be obvious to a reasonable consumer that the consumer is interacting with an artificial intelligence system.\" Quote (d): it \"must be clear and conspicuous; (2) must be written in plain language; and (3) may not use a dark pattern\".",
+    },
+    {
+      id: "tx-sb1188",
+      title: "S.B. No. 1188, relating to electronic health record requirements (enrolled)",
+      publisher: "Texas Legislature Online",
+      url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB01188F.htm",
+      year: "2025",
+      note: "Read October 2026. Bill history shows \"Effective on 9/1/25\". Quote (Health and Safety Code 183.005(a)(3)): \"the practitioner reviews all records created with artificial intelligence in a manner that is consistent with medical records standards developed by the Texas Medical Board.\" Quote (b): \"A health care practitioner who uses artificial intelligence for diagnostic purposes as described by Subsection (a) must disclose the practitioner's use of that technology to the practitioner's patients.\"",
+    },
+    {
+      id: "il-pa-104-0054",
+      title: "Public Act 104-0054 (HB 1806), Wellness and Oversight for Psychological Resources Act",
+      publisher: "Illinois General Assembly",
+      url: "https://www.ilga.gov/Legislation/publicacts/view/104-0054",
+      year: "2025",
+      note: "Read October 2026. Effective Date: 8/1/2025. Quote (Section 20(b)): \"A licensed professional may not allow artificial intelligence to do any of the following: (1) make independent therapeutic decisions; (2) directly interact with clients in any form of therapeutic communication\". Quote (Section 15(b)): use of AI where the session is recorded or transcribed requires that the patient \"is informed in writing\" and \"provides consent\". The definition of licensed professional ends \"except for a physician.\"",
+    },
+    {
+      id: "la-act-649",
+      title: "HB 475 (Act 649), 2026 Regular Session: R.S. 37:22.1",
+      publisher: "Louisiana State Legislature",
+      url: "https://legis.la.gov/legis/BillInfo.aspx?s=26RS&b=HB475&sbi=y",
+      year: "2026",
+      note: "Read October 2026. History: \"Signed by the Governor. Becomes Act No. 649.\" (06/02) and \"Effective date: 08/01/2026.\" Quote (Act text): \"A healthcare professional licensed by this Title shall verbally disclose the use of any recording device, software, or service to a patient before recording any part of an appointment or treatment to be transcribed by artificial intelligence.\"",
+    },
+    {
+      id: "co-sb26-189",
+      title: "SB26-189 Automated Decision-Making Technology",
+      publisher: "Colorado General Assembly",
+      url: "https://leg.colorado.gov/bills/sb26-189",
+      year: "2026",
+      note: "Read October 2026. Status: Became Law; Signed Act dated 05/14/2026. Quote (summary): \"The act repeals and reenacts those provisions\" of Senate Bill 24-205; a consequential decision includes one relating to \"health-care services\"; \"mandating that deployers provide clear and conspicuous notice to consumers at the point of interaction with a covered ADMT\"; developer documentation duties apply \"starting January 1, 2027\".",
+    },
+    {
+      id: "fcc-24-84",
+      title: "Notice of Proposed Rulemaking and Notice of Inquiry, Implications of Artificial Intelligence Technologies on Protecting Consumers from Unwanted Robocalls and Robotexts (FCC 24-84)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-24-84A1.pdf",
+      year: "2024",
+      note: "Read October 2026. Adopted August 7, 2024; released August 8, 2024. Quote: \"we also propose requiring callers using AI-generated voice to, at the beginning of each call, clearly disclose to the called party that the call is using AI-generated technology.\"",
+    },
+    {
+      id: "bond-site",
+      title: "Bond Health: platform overview, FAQ and pricing",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+    },
+  ],
+  related: [
+    { label: "TCPA rules for AI calls and texts", href: "/blog/tcpa-ai-outreach-2026", description: "Federal consent and opt-out rules for automated patient outreach." },
+    { label: "Engage: voice and text outreach", href: "/engage", description: "How Bond's agents disclose AI, offer a human and escalate to coordinators." },
+    { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach", description: "Draft paragraphs that describe AI outreach in an IRB application." },
+    { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Who may contact which patients, under which HIPAA path, with what IRB approval." },
+  ],
+};
+
+export default page;

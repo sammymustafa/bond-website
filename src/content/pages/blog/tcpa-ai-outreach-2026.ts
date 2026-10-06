@@ -18,8 +18,8 @@ const page: SeoPage = {
   intro:
     "Since 2024 the FCC has ruled that AI-generated voices are artificial voices under the TCPA and has rewritten how patients revoke consent to automated calls and texts.{{cite:fcc-24-17,fcc-24-24}} The upshot for research sites: AI calls about a study need prior express consent, because the healthcare exemption does not cover recruitment, and opt-out handling has to catch plain-language requests. This post is not legal advice.",
   summary: "The FCC's AI voice ruling, the 2025 opt-out rules and the healthcare exemption, applied to trial recruitment.",
-  lastUpdated: "2026-09-24",
-  blog: { date: "2026-09-21", author: "Bond Health", readingMinutes: 5 },
+  lastUpdated: "2026-10-05",
+  blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
@@ -242,7 +242,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

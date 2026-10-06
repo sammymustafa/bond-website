@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs build site lists from performance databases, CRO networks, feasibility questionnaires and qualification visits. What moves a site onto the final list is evidence: enrollment against past commitments, start-up speed, data quality, and a patient count the sponsor can believe.",
   summary: "What sponsors check during site selection, and how a site can show enrollment, start-up and patient-count evidence.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",

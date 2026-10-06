@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "A cardiology protocol turns on an ejection fraction buried in an echo report. An oncology protocol turns on a biomarker in a molecular pathology PDF. A psychiatry protocol turns on a rating scale a clinician typed into a note. Each page below explains how eligibility works in that area, what usually causes screen failure, and what Bond reads in the chart to find it.",
   summary: "Eight pages on eligibility, screen failure and chart evidence by therapeutic area.",
-  lastUpdated: "2026-09-21",
+  lastUpdated: "2026-10-05",
   sections: [
     {
       id: "areas",

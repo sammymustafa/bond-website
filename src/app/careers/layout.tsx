@@ -42,7 +42,7 @@ const jobPostingsJsonLd = {
       "@type": "JobPosting",
       title: "ML/AI Engineer",
       description: "Build and improve our LLM-based EHR screening models. Work on clinical NLP, knowledge graph embeddings, and inference optimization.",
-      datePosted: "2026-01-02",
+      datePosted: "2026-10-05",
       employmentType: "FULL_TIME",
       hiringOrganization: {
         "@type": "Organization",
@@ -66,7 +66,7 @@ const jobPostingsJsonLd = {
       "@type": "JobPosting",
       title: "Full-Stack Engineer",
       description: "Build the platform that research sites use daily. Work on our React/Next.js frontend, Node.js backend, and real-time dashboards.",
-      datePosted: "2026-01-02",
+      datePosted: "2026-10-05",
       employmentType: "FULL_TIME",
       hiringOrganization: {
         "@type": "Organization",
@@ -90,7 +90,7 @@ const jobPostingsJsonLd = {
       "@type": "JobPosting",
       title: "Data Engineer",
       description: "Build and maintain our clinical data pipelines. Work with EHR integrations, FHIR/HL7 standards, and our knowledge graph infrastructure.",
-      datePosted: "2026-01-02",
+      datePosted: "2026-10-05",
       employmentType: "FULL_TIME",
       hiringOrganization: {
         "@type": "Organization",
@@ -114,7 +114,7 @@ const jobPostingsJsonLd = {
       "@type": "JobPosting",
       title: "Voice AI Engineer",
       description: "Build and optimize our voice agent system for patient outreach and pre-screening. Work on speech recognition, dialog management, and telephony.",
-      datePosted: "2026-01-02",
+      datePosted: "2026-10-05",
       employmentType: "FULL_TIME",
       hiringOrganization: {
         "@type": "Organization",

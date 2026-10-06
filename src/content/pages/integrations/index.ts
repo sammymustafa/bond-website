@@ -12,7 +12,7 @@ const page: SeoPage = {
   intro:
     "Bond reads patient data from the EHR and hands matched, pre-screened patients to the systems your site already runs on. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} EHR connections use FHIR R4 APIs, HL7 interfaces where they exist, or an integration partner. Research systems receive referrals, statuses and documents. Bond is a CRIO Certified Partner; every other page below says plainly what is integrated and what is a workflow handoff.",
   summary: "EHR and research-system integration pages, with what each connection requires.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   sections: [
     {
       id: "ehrs",
@@ -54,7 +54,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

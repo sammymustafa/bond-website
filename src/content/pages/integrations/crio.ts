@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of September 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}}",
   summary: "How pre-screened patients and statuses move between Bond and CRIO, and what the CRIO Certified Partner badge covers.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -221,7 +221,7 @@ const page: SeoPage = {
     },
     {
       q: "How is the CRIO connection priced?",
-      a: "Bond charges no integration fee: integration and workflow configuration fall under its volume-based platform fee, alongside a success fee per enrolled patient; see [pricing](/pricing).{{cite:bond-site}} CRIO describes its Partner Directory as complimentary for CRIO users.{{cite:crio-partners-intro}}",
+      a: "Bond charges no integration fee: integration and workflow configuration fall under its volume-based fee per screened patient, alongside a percentage of each patient's randomization milestone payment; see [pricing](/pricing).{{cite:bond-site}} CRIO describes its Partner Directory as complimentary for CRIO users.{{cite:crio-partners-intro}}",
     },
   ],
   sources: [
@@ -238,7 +238,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "crio-about",

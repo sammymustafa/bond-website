@@ -23,10 +23,11 @@ export interface NavMenu {
 export const productLinks: NavItem[] = [
   { name: "Identify", href: "/identify", description: "LLM-based EHR screening" },
   { name: "Engage", href: "/engage", description: "Meta and Google ads, instant outreach and follow-up" },
+  { name: "Book", href: "/book", description: "Visits booked straight onto your calendar" },
   { name: "Consent", href: "/consent", description: "AI-powered informed consent support" },
   { name: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step" },
   { name: "Integrations", href: "/integrations", description: "EHRs, CTMS and eRegulatory" },
-  { name: "Pricing", href: "/pricing", description: "No integration fee, plus a per-randomized-patient fee" },
+  { name: "Pricing", href: "/pricing", description: "Per screened patient plus a share of each randomization, no integration fee" },
   { name: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliant" },
 ];
 
@@ -58,6 +59,12 @@ export const geographyLinks: NavItem[] = [
   { name: "Utah", href: "/clinical-trial-recruitment/utah" },
   { name: "Southeast", href: "/clinical-trial-recruitment/southeast" },
   { name: "Midwest", href: "/clinical-trial-recruitment/midwest" },
+  { name: "Boston", href: "/clinical-trial-recruitment/boston" },
+  { name: "New York City", href: "/clinical-trial-recruitment/new-york-city" },
+  { name: "Philadelphia", href: "/clinical-trial-recruitment/philadelphia" },
+  { name: "Los Angeles", href: "/clinical-trial-recruitment/los-angeles" },
+  { name: "San Francisco Bay Area", href: "/clinical-trial-recruitment/san-francisco-bay-area" },
+  { name: "Seattle", href: "/clinical-trial-recruitment/seattle" },
 ];
 
 export const integrationLinks: NavItem[] = [
@@ -66,6 +73,9 @@ export const integrationLinks: NavItem[] = [
   { name: "MEDITECH", href: "/integrations/meditech" },
   { name: "athenahealth", href: "/integrations/athenahealth" },
   { name: "eClinicalWorks", href: "/integrations/eclinicalworks" },
+  { name: "NextGen", href: "/integrations/nextgen" },
+  { name: "Veradigm", href: "/integrations/veradigm" },
+  { name: "OncoEMR", href: "/integrations/oncoemr" },
   { name: "CRIO", href: "/integrations/crio" },
   { name: "RealTime", href: "/integrations/realtime" },
   { name: "Advarra Clinical Conductor", href: "/integrations/advarra-clinical-conductor" },

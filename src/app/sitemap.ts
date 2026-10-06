@@ -1,16 +1,16 @@
 import type { MetadataRoute } from "next";
-import { pages } from "@/content/registry";
+import { publishedPages as pages } from "@/content/published";
 import { glossary } from "@/content/glossary";
 import { SITE_URL } from "@/content/seo";
 
 // Last content change for pages built by hand outside the content registry.
 // Update the date when you edit one of these pages.
 const HAND_BUILT_UPDATED: Record<string, string> = {
-  "/": "2026-10-04",
-  "/book-a-demo": "2026-10-04",
-  "/newsletter": "2026-10-04",
-  "/careers": "2026-10-04",
-  "/privacy-policy": "2026-07-19",
+  "/": "2026-10-05",
+  "/book-a-demo": "2026-10-05",
+  "/newsletter": "2026-10-05",
+  "/careers": "2026-10-05",
+  "/privacy-policy": "2026-10-05",
   "/terms-of-service": "2026-07-19",
 };
 

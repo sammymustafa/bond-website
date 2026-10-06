@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Alzheimer's protocols screen for things a problem list rarely holds: a cognitive score inside a set window, amyloid confirmed by PET or spinal fluid, a clean brain MRI, and a study partner. At two California sites screening for a Phase 2 anti-amyloid antibody trial in 2024, 147 of 185 people failed screening.{{cite:huoh-2025}} Most of these criteria live in free-text notes and reports, not structured fields.",
   summary: "How Alzheimer's criteria map to the chart, why screen failure runs high, and how Bond screens for it.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -450,7 +450,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

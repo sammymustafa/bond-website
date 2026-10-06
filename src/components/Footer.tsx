@@ -34,7 +34,7 @@ const columns = [
   {
     title: "Company",
     links: [
-      { name: "About", href: "/#about" },
+      { name: "About", href: "/#product" },
       { name: "Careers", href: "/careers" },
       { name: "Book a demo", href: "/book-a-demo" },
       { name: "Contact", href: "/#contact" },
@@ -63,7 +63,7 @@ export default function Footer() {
               <span className="font-display font-bold text-2xl text-gray-900">Bond Health</span>
             </Link>
             <p className="text-gray-600 mb-6 max-w-sm text-sm">
-              Bond Health enables hyper-accurate clinical trial patient recruitment using AI.
+              Bond Health accelerates clinical trial patient recruitment using AI.
             </p>
             <div className="space-y-3">
               <button

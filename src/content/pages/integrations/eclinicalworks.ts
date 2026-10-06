@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health connects via the ONC-certified FHIR R4 APIs that eClinicalWorks offers its customers, screens a practice's patients against a study's criteria, and hands pre-screened patients to your coordinators. Below: the data involved, what your administrator turns on, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, practice activation steps, timeline and notes handling for connecting Bond at an eClinicalWorks practice or health center.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -218,11 +218,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "Does eClinicalWorks charge for FHIR API access?",
-      a: "As of September 2026, eClinicalWorks says its certified FHIR APIs are free to customers and third-party developers \"at this time\", with at least 30 days' notice before any fee.{{cite:ecw-cert}} Bond charges no integration fee; its integration work is covered by its volume-based platform fee. See [pricing](/pricing).{{cite:bond-site}}",
+      a: "As of September 2026, eClinicalWorks says its certified FHIR APIs are free to customers and third-party developers \"at this time\", with at least 30 days' notice before any fee.{{cite:ecw-cert}} Bond charges no integration fee; its integration work is covered by its volume-based fee per screened patient. See [pricing](/pricing).{{cite:bond-site}}",
     },
     {
       q: "We are a health center with a small IT team. What does this ask of us?",
-      a: "An administrator activates FHIR access and joins the security review; a PI or coordinator checks a validation sample. Bond's volume-based platform fee covers the EHR connection, security review and audit logging setup, and workflow configuration, with no separate integration fee.{{cite:bond-site}}",
+      a: "An administrator activates FHIR access and joins the security review; a PI or coordinator checks a validation sample. Bond's volume-based fee per screened patient covers the EHR connection, security review and audit logging setup, and workflow configuration, with no separate integration fee.{{cite:bond-site}}",
     },
     {
       q: "Can we start before FHIR access is activated?",
@@ -243,7 +243,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs give studies to sites they expect to open quickly and enroll what they promise. Much of what they check is the site's own history: enrollment against commitment, start-up time, investigator availability, and how fast and how credibly the site answered feasibility.",
   summary: "The levers a site controls to get selected for more studies, with benchmarks, a lever table and a plan for this week.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",

@@ -9,6 +9,8 @@ const audiences = [
     title: "Sites & Health Systems",
     description: "Research hospitals and health systems running clinical trials.",
     benefits: [
+      "Meta and Google ads, with every lead contacted immediately",
+      "Visits booked straight onto your calendar",
       "Fewer screen failures",
       "Less manual chart review",
       "Higher show rates",
@@ -20,6 +22,8 @@ const audiences = [
     title: "CROs",
     description: "Contract research organizations managing multi-site trials.",
     benefits: [
+      "Ads and instant lead follow-up at every site",
+      "Booked visits tracked across the network",
       "Network-wide standardization",
       "Faster feasibility assessments",
       "Consistent metrics across sites",
@@ -31,6 +35,8 @@ const audiences = [
     title: "Sponsors",
     description: "Pharmaceutical companies funding clinical research.",
     benefits: [
+      "Ads that turn into booked screening visits",
+      "Every lead followed up until they respond",
       "Faster enrollment timelines",
       "Better diversity reach",
       "Fewer protocol amendments",

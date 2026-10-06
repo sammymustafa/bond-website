@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Psoriasis, atopic dermatitis and hidradenitis suppurativa trials screen on PASI, EASI or IGA scores, body surface area, prior biologics and washouts. Much of that evidence sits in exam notes rather than coded fields.{{cite:jaad-ehr-2019}} In two real-world cohorts, severity was the most common reason a treated patient would not have qualified.{{cite:alvarenga-2026,psobioteq-2020}} This page maps each criterion to the chart and shows how Bond Health screens for it.",
   summary: "How severity scores, biologic history and washouts map to the chart, and how Bond screens for them.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -382,7 +382,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

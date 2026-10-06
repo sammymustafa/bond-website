@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "As of September 21, 2026, 565 studies on ClinicalTrials.gov were recruiting at one or more Nevada sites. That is about 17 per 100,000 residents, against about 22 in Arizona and 34 in Utah.{{cite:ctgov-api,census-nst-2025}} Most of that work runs through a few health systems, oncology practices and independent sites in Las Vegas and Reno.",
   summary: "Nevada recruiting-trial counts, Las Vegas and Reno research hubs, health systems and their EHRs, demographics, and state outreach rules.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -460,7 +460,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

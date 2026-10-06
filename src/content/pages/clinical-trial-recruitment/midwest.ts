@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "The Census Bureau's Midwest region covers 12 states and 69.8 million residents, about one in five people in the United States.{{cite:census-pop-2025}} On September 21, 2026, the recruiting-study counts for those states on ClinicalTrials.gov added up to 16,812, with a multi-state study counted once in each state.{{cite:ctgov-api}}",
   summary: "Midwest recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI, biometric and records rules.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -441,7 +441,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

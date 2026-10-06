@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Community health centers serve many of the patients that clinical trials enroll least, yet only about a quarter of centers reported using EHR data for research in 2025.{{cite:hrsa-uds-ehr-2025}} Bond Health finds eligible patients in your EHR, contacts them and supports the consent conversation, so a small research team can offer studies to more of its patients.",
   summary: "How Bond helps FQHCs and community sites find eligible patients, contact them and book them for visits with a small research team.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -222,11 +222,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Pricing has two parts. A volume-based platform fee covers EHR integration, implementation and ongoing operation, including the EHR connection, security review, workflow setup and ongoing support; there is no separate integration fee. A success fee is charged per enrolled, meaning randomized, patient; per-visit milestones can be added.{{cite:bond-site}} Amounts are custom; see [pricing](/pricing).",
+          text: "Pricing has two parts. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation, including the EHR connection, security review, workflow setup and ongoing support; there is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site,bond-product}} Amounts are custom; see [pricing](/pricing).",
         },
         {
           type: "p",
-          text: "For a center new to research, the platform fee is the commitment to weigh. The success fee, and any visit milestones you agree to, follows enrollment.",
+          text: "For a center new to research, the per-screened-patient fee is the commitment to weigh. The randomization share follows enrollment.",
         },
         {
           type: "callout",
@@ -273,7 +273,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "hrsa-uds-2025",
@@ -417,7 +417,7 @@ const page: SeoPage = {
     { label: "Consent support", href: "/consent", description: "How Bond explains the approved form while the site obtains consent." },
     { label: "eClinicalWorks integration", href: "/integrations/eclinicalworks", description: "The FHIR path for health centers on eClinicalWorks." },
     { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
-    { label: "Pricing", href: "/pricing", description: "The volume-based platform fee and per-enrollment success fee." },
+    { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomization milestone payment." },
     { label: "For physician groups", href: "/for/physician-groups", description: "How Bond fits a practice that is adding research." },
   ],
 };

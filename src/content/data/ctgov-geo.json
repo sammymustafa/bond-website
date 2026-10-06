@@ -2370,6 +2370,2131 @@
      }
     ]
    }
+  },
+  "boston": {
+   "states": [],
+   "area": "25 miles of downtown Boston",
+   "as_of": "2026-10-05",
+   "us": {
+    "all": 22007,
+    "oncology": 7064,
+    "obesity": 855,
+    "cardiology": 2826,
+    "neurology": 985,
+    "dermatology": 212,
+    "pain": 625,
+    "gastroenterology": 283,
+    "psychiatry": 1275
+   },
+   "counts": {
+    "all": 2961,
+    "oncology": 1130,
+    "obesity": 75,
+    "cardiology": 474,
+    "neurology": 160,
+    "dermatology": 39,
+    "pain": 75,
+    "gastroenterology": 49,
+    "psychiatry": 165
+   },
+   "samples": {
+    "oncology": [
+     {
+      "nct": "NCT07544589",
+      "title": "A Phase 1 Study Evaluating DISP-10 in Participants With Advanced Gastrointestinal Cancers",
+      "conditions": [
+       "Colorectal Cancer",
+       "Gastric Adenocarcinoma",
+       "Esophageal Adenocarcinoma",
+       "Gastroesophageal Adenocarcinoma"
+      ],
+      "sponsor": "Dispatch Biotherapeutics",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04548817",
+      "title": "Neurocutaneous Melanocytosis Registry",
+      "conditions": [
+       "Cutaneous Melanocytic Neoplasm",
+       "Large Cutaneous Melanocytic Nevi",
+       "Neurocutaneous Melanocytosis"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT01696721",
+      "title": "Proton and Photon Consortium Registry (PPCR): A Multi Center Registry of Pediatric Patients Treated With Radiation Therapy",
+      "conditions": [
+       "Pediatric Patients Treated With Radiation Therapy"
+      ],
+      "sponsor": "Massachusetts General Hospital",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT04928846",
+      "title": "A Study to Assess Disease Activity and Adverse Events of Intravenous (IV) Telisotuzumab Vedotin Compared to IV Docetaxel in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
+      "conditions": [
+       "Non Small Cell Lung Cancer",
+       "c-MET"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04883671",
+      "title": "Stereotactic Body Radiotherapy (SBRT) for Early Treatment of Oligometastatic Adenoid Cystic Carcinoma: The SOLAR Trial",
+      "conditions": [
+       "Adenoid Cystic Carcinoma",
+       "Metastatic Adenoid Cystic Carcinoma"
+      ],
+      "sponsor": "Dana-Farber Cancer Institute",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "obesity": [
+     {
+      "nct": "NCT06959277",
+      "title": "Balance4Mobility: Effects of Walkasins Use in Individuals With Peripheral Neuropathy and Balance Problems",
+      "conditions": [
+       "Peripheral Neuropathies",
+       "Peripheral Neuropathy Due to Chemotherapy",
+       "Peripheral Neuropathy With Type 2 Diabetes",
+       "Balance Control in Elderly"
+      ],
+      "sponsor": "RxFunction Inc.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04101669",
+      "title": "The RESET System Pivotal Clinical Trial (Protocol Revision H)",
+      "conditions": [
+       "Diabetes type2",
+       "Obesity"
+      ],
+      "sponsor": "Morphic Medical Inc.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07783802",
+      "title": "A Study of Clazakizumab (LY5724886) in Adults With Elevated hsCRP and at Increased Risk for Cardiovascular Event",
+      "conditions": [
+       "Atherosclerosis",
+       "Cardiovascular Disease",
+       "Obesity",
+       "Hypertension"
+      ],
+      "sponsor": "Eli Lilly and Company",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07064473",
+      "title": "EASi-PROTKT\u2122 - A Study to Test Vicadrostat (BI 690517) Taken Together With Empagliflozin in People With Type 2 Diabetes, High Blood Pressure, and Cardiovascular Disease",
+      "conditions": [
+       "Diabetes Mellitus, Type 2",
+       "Hypertension",
+       "Cardiovascular Diseases"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07794579",
+      "title": "A Study of Orforglipron in Participants With Overweight at Risk of Development of Obesity-Related Complications or Progression to Class 1 Obesity",
+      "conditions": [
+       "Overweight",
+       "Prediabetic State",
+       "Prehypertension",
+       "Obesity, Abdominal"
+      ],
+      "sponsor": "Eli Lilly and Company",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "cardiology": [
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07559903",
+      "title": "ANDREAS Registry (Assessment of Novel Drug-coated Balloon Revascularization: Effectiveness, Angiographic Outcomes, and Safety)",
+      "conditions": [
+       "Coronary Artery Disease"
+      ],
+      "sponsor": "Emory University",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT07601425",
+      "title": "Harmony-HHT: ATV-1601 in Participants With Hereditary Hemorrhagic Telangiectasia (HHT)",
+      "conditions": [
+       "Hereditary Hemorrhagic Telangiectasia (HHT)",
+       "Osler Weber Rendu Disease"
+      ],
+      "sponsor": "Atavistik Bio, Inc",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04774159",
+      "title": "Low Dose ColchicinE in pAtients With Peripheral Artery DiseasE to Address Residual Vascular Risk",
+      "conditions": [
+       "Peripheral Arterial Disease",
+       "Atherosclerosis of Extremities",
+       "Inflammation"
+      ],
+      "sponsor": "Population Health Research Institute",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05611242",
+      "title": "Proximal Internal Carotid Artery Acute Stroke Secondary to Tandem or Local Occlusion Thrombectomy Trial",
+      "conditions": [
+       "Acute Ischemic Stroke"
+      ],
+      "sponsor": "Mercy Health Ohio",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "neurology": [
+     {
+      "nct": "NCT03816345",
+      "title": "Testing an Immunotherapy Anti-cancer Drug, Nivolumab, for Advanced Cancers in Patients With Autoimmune Disorders, AIM-NIVO",
+      "conditions": [
+       "Autoimmune Disease",
+       "Crohn Disease",
+       "Dermatomyositis",
+       "Hematopoietic and Lymphoid Cell Neoplasm"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT00869817",
+      "title": "Dominantly Inherited Alzheimer Network (DIAN)",
+      "conditions": [
+       "Alzheimer's Disease"
+      ],
+      "sponsor": "Washington University School of Medicine",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT05104983",
+      "title": "Stopping TSC Onset and Progression 2B: Sirolimus TSC Epilepsy Prevention Study",
+      "conditions": [
+       "Tuberous Sclerosis Complex",
+       "Epilepsy"
+      ],
+      "sponsor": "Darcy Krueger",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07616128",
+      "title": "Study of EVO756 in Adults With Migraine",
+      "conditions": [
+       "Migraine"
+      ],
+      "sponsor": "Evommune, Inc.",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06623422",
+      "title": "A Study of Pembrolizumab (MK-3475) With or Without Intismeran Autogene (V940) in Participants With Non-small Cell Lung Cancer (V940-009/INTerpath-009)",
+      "conditions": [
+       "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06680830",
+      "title": "A Phase 2 Study and Open-Label Extension of NEU-411 in Companion Diagnostic-Positive Participants With Early Parkinson's Disease",
+      "conditions": [
+       "Parkinson Disease",
+       "Parkinson",
+       "Idiopathic Parkinson Disease",
+       "Early Parkinson Disease (Early PD)"
+      ],
+      "sponsor": "Neuron23 Inc.",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ]
+   }
+  },
+  "new-york-city": {
+   "states": [],
+   "area": "25 miles of Midtown Manhattan",
+   "as_of": "2026-10-05",
+   "us": {
+    "all": 22007,
+    "oncology": 7064,
+    "obesity": 855,
+    "cardiology": 2826,
+    "neurology": 985,
+    "dermatology": 212,
+    "pain": 625,
+    "gastroenterology": 283,
+    "psychiatry": 1275
+   },
+   "counts": {
+    "all": 4145,
+    "oncology": 1791,
+    "obesity": 86,
+    "cardiology": 591,
+    "neurology": 179,
+    "dermatology": 61,
+    "pain": 82,
+    "gastroenterology": 82,
+    "psychiatry": 198
+   },
+   "samples": {
+    "oncology": [
+     {
+      "nct": "NCT07223021",
+      "title": "A Study of Fludarabine Dosing in Children and Young Adults With B-cell Acute Lymphoblastic Leukemia",
+      "conditions": [
+       "B-cell Acute Lymphoblastic Leukemia"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04548817",
+      "title": "Neurocutaneous Melanocytosis Registry",
+      "conditions": [
+       "Cutaneous Melanocytic Neoplasm",
+       "Large Cutaneous Melanocytic Nevi",
+       "Neurocutaneous Melanocytosis"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT00588068",
+      "title": "Molecular Characterization of Neuroblastic Tumor: Correlation With Clinical Outcome",
+      "conditions": [
+       "Neuroblastoma"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT01696721",
+      "title": "Proton and Photon Consortium Registry (PPCR): A Multi Center Registry of Pediatric Patients Treated With Radiation Therapy",
+      "conditions": [
+       "Pediatric Patients Treated With Radiation Therapy"
+      ],
+      "sponsor": "Massachusetts General Hospital",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT04928846",
+      "title": "A Study to Assess Disease Activity and Adverse Events of Intravenous (IV) Telisotuzumab Vedotin Compared to IV Docetaxel in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
+      "conditions": [
+       "Non Small Cell Lung Cancer",
+       "c-MET"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "obesity": [
+     {
+      "nct": "NCT04101669",
+      "title": "The RESET System Pivotal Clinical Trial (Protocol Revision H)",
+      "conditions": [
+       "Diabetes type2",
+       "Obesity"
+      ],
+      "sponsor": "Morphic Medical Inc.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07090005",
+      "title": "Comparing the Efficacy and Safety of the EndoZip System and Apollo ESG in Obese Patients",
+      "conditions": [
+       "Obesity",
+       "Overweight"
+      ],
+      "sponsor": "Nitinotes Surgical Ltd.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07253285",
+      "title": "A Research Study on How Well Cagrilintide and CagriSema Work in Children and Adolescents With Excess Body Weight",
+      "conditions": [
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Novo Nordisk A/S",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07783802",
+      "title": "A Study of Clazakizumab (LY5724886) in Adults With Elevated hsCRP and at Increased Risk for Cardiovascular Event",
+      "conditions": [
+       "Atherosclerosis",
+       "Cardiovascular Disease",
+       "Obesity",
+       "Hypertension"
+      ],
+      "sponsor": "Eli Lilly and Company",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07754461",
+      "title": "A Study to Test Whether Survodutide Helps People With Type 2 Diabetes Control Their Blood Sugar",
+      "conditions": [
+       "Type 2 Diabetes"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07064473",
+      "title": "EASi-PROTKT\u2122 - A Study to Test Vicadrostat (BI 690517) Taken Together With Empagliflozin in People With Type 2 Diabetes, High Blood Pressure, and Cardiovascular Disease",
+      "conditions": [
+       "Diabetes Mellitus, Type 2",
+       "Hypertension",
+       "Cardiovascular Diseases"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "cardiology": [
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07069738",
+      "title": "Safety and Effectiveness of Left Bundle Branch Area Pacing Versus Conventional Cardiac Resynchronization Therapy in Heart Failure",
+      "conditions": [
+       "Heart Failure - NYHA II - IV"
+      ],
+      "sponsor": "Boston Scientific Corporation",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06976476",
+      "title": "Study of IgPro20 to Prevent Infection in People With Multiple Myeloma and Hypogammaglobulinemia",
+      "conditions": [
+       "Multiple Myeloma",
+       "Hypogammaglobulinemia",
+       "Hypogammaglobulinemia, Acquired"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06055894",
+      "title": "A Study of a Plant-Based Diet and Dietary Supplements in People With Smoldering Multiple Myeloma (SMM) or Monoclonal Gammopathy of Undetermined Significance (MGUS)",
+      "conditions": [
+       "Multiple Myeloma, Smoldering",
+       "Multiple Myeloma",
+       "Monoclonal Gammopathy of Undetermined Significance"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07398508",
+      "title": "NORTHERA (DROXIDOPA) for Dysautonomia in Pediatric Survivors of Menkes Disease",
+      "conditions": [
+       "Menkes Disease"
+      ],
+      "sponsor": "Stephen G. Kaler",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07559903",
+      "title": "ANDREAS Registry (Assessment of Novel Drug-coated Balloon Revascularization: Effectiveness, Angiographic Outcomes, and Safety)",
+      "conditions": [
+       "Coronary Artery Disease"
+      ],
+      "sponsor": "Emory University",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     }
+    ],
+    "neurology": [
+     {
+      "nct": "NCT03816345",
+      "title": "Testing an Immunotherapy Anti-cancer Drug, Nivolumab, for Advanced Cancers in Patients With Autoimmune Disorders, AIM-NIVO",
+      "conditions": [
+       "Autoimmune Disease",
+       "Crohn Disease",
+       "Dermatomyositis",
+       "Hematopoietic and Lymphoid Cell Neoplasm"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07067463",
+      "title": "A Study of Orelabrutinib in Patients With Primary Progressive Multiple Sclerosis",
+      "conditions": [
+       "Multiple Sclerosis (MS) Primary Progressive"
+      ],
+      "sponsor": "Zenas BioPharma (USA), LLC",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT00869817",
+      "title": "Dominantly Inherited Alzheimer Network (DIAN)",
+      "conditions": [
+       "Alzheimer's Disease"
+      ],
+      "sponsor": "Washington University School of Medicine",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT05711394",
+      "title": "A Study to Assess the Adverse Events and Change in Disease Activity of Oral Atogepant Tablets in Pediatric Participants (6-17 Years of Age) With Episodic Migraine",
+      "conditions": [
+       "Episodic Migraine"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05066217",
+      "title": "An Efficacy and Safety Study of Clemizole HCl in Patients With Lennox-Gastaut Syndrome",
+      "conditions": [
+       "Lennox Gastaut Syndrome"
+      ],
+      "sponsor": "Epygenix",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06992115",
+      "title": "A Study of the MIND Diet for Persons With Multiple Sclerosis",
+      "conditions": [
+       "Multiple Sclerosis"
+      ],
+      "sponsor": "Icahn School of Medicine at Mount Sinai",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ]
+   }
+  },
+  "philadelphia": {
+   "states": [],
+   "area": "25 miles of Center City Philadelphia",
+   "as_of": "2026-10-05",
+   "us": {
+    "all": 22007,
+    "oncology": 7064,
+    "obesity": 855,
+    "cardiology": 2826,
+    "neurology": 985,
+    "dermatology": 212,
+    "pain": 625,
+    "gastroenterology": 283,
+    "psychiatry": 1275
+   },
+   "counts": {
+    "all": 2146,
+    "oncology": 811,
+    "obesity": 55,
+    "cardiology": 322,
+    "neurology": 92,
+    "dermatology": 29,
+    "pain": 34,
+    "gastroenterology": 36,
+    "psychiatry": 96
+   },
+   "samples": {
+    "oncology": [
+     {
+      "nct": "NCT07223021",
+      "title": "A Study of Fludarabine Dosing in Children and Young Adults With B-cell Acute Lymphoblastic Leukemia",
+      "conditions": [
+       "B-cell Acute Lymphoblastic Leukemia"
+      ],
+      "sponsor": "Memorial Sloan Kettering Cancer Center",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT01696721",
+      "title": "Proton and Photon Consortium Registry (PPCR): A Multi Center Registry of Pediatric Patients Treated With Radiation Therapy",
+      "conditions": [
+       "Pediatric Patients Treated With Radiation Therapy"
+      ],
+      "sponsor": "Massachusetts General Hospital",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT06058377",
+      "title": "Adding an Immunotherapy Drug, MEDI4736 (Durvalumab), to the Usual Chemotherapy Treatment (Paclitaxel, Cyclophosphamide, and Doxorubicin) for Stage II-III Breast Cancer",
+      "conditions": [
+       "Anatomic Stage II Breast Cancer AJCC v8",
+       "Anatomic Stage III Breast Cancer AJCC v8",
+       "HER2-Negative Breast Carcinoma",
+       "Hormone Receptor-Positive Breast Carcinoma"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07437950",
+      "title": "Comparing Different Treatment Lengths for Venetoclax in Older People With Newly Diagnosed Acute Myeloid Leukemia (A MyeloMATCH Treatment Trial)",
+      "conditions": [
+       "Acute Myeloid Leukemia"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05564390",
+      "title": "MYELOMATCH: A Screening Study to Assign People With Myeloid Cancer to a Treatment Study or Standard of Care Treatment Within myeloMATCH (MyeloMATCH Screening Trial)",
+      "conditions": [
+       "Acute Myeloid Leukemia",
+       "Acute Myeloid Leukemia Arising From Previous Myelodysplastic/Myeloproliferative Neoplasm",
+       "Acute Myeloid Leukemia Post Cytotoxic Therapy",
+       "Acute Myeloid Leukemia, Myelodysplasia-Related"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06987539",
+      "title": "A Study to Evaluate the Pharmacokinetics, Pharmacodynamics, Safety and Tolerability of Inebilizumab in Children With Generalized Myasthenia Gravis (gMG)",
+      "conditions": [
+       "Generalized Myasthenia Gravis"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "obesity": [
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07783802",
+      "title": "A Study of Clazakizumab (LY5724886) in Adults With Elevated hsCRP and at Increased Risk for Cardiovascular Event",
+      "conditions": [
+       "Atherosclerosis",
+       "Cardiovascular Disease",
+       "Obesity",
+       "Hypertension"
+      ],
+      "sponsor": "Eli Lilly and Company",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07564414",
+      "title": "A Research Study to Look at How Two Different Doses of CagriSema and One Dose of Semaglutide Help People Living With Obesity With or Without Type 2 Diabetes Lose Weight",
+      "conditions": [
+       "Obesity",
+       "Type 2 Diabetes"
+      ],
+      "sponsor": "Novo Nordisk A/S",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07064473",
+      "title": "EASi-PROTKT\u2122 - A Study to Test Vicadrostat (BI 690517) Taken Together With Empagliflozin in People With Type 2 Diabetes, High Blood Pressure, and Cardiovascular Disease",
+      "conditions": [
+       "Diabetes Mellitus, Type 2",
+       "Hypertension",
+       "Cardiovascular Diseases"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07794579",
+      "title": "A Study of Orforglipron in Participants With Overweight at Risk of Development of Obesity-Related Complications or Progression to Class 1 Obesity",
+      "conditions": [
+       "Overweight",
+       "Prediabetic State",
+       "Prehypertension",
+       "Obesity, Abdominal"
+      ],
+      "sponsor": "Eli Lilly and Company",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06112418",
+      "title": "A Randomized Comparison of Stage-Based Care Versus Risk Factor-Based Care for Prevention of Cardiovascular Events",
+      "conditions": [
+       "Diabetes Mellitus, Type 2",
+       "PreDiabetes",
+       "Metabolic Syndrome"
+      ],
+      "sponsor": "Cleerly, Inc.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "cardiology": [
+     {
+      "nct": "NCT07069738",
+      "title": "Safety and Effectiveness of Left Bundle Branch Area Pacing Versus Conventional Cardiac Resynchronization Therapy in Heart Failure",
+      "conditions": [
+       "Heart Failure - NYHA II - IV"
+      ],
+      "sponsor": "Boston Scientific Corporation",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07166133",
+      "title": "GORE\u00ae TAG\u00ae Thoracic Branch Endoprosthesis Zone 0/1 Post-Approval Study",
+      "conditions": [
+       "Aortic Arch Dissection",
+       "Aortic Arch Aneurysm"
+      ],
+      "sponsor": "W.L.Gore & Associates",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05932680",
+      "title": "Limited-duration Teclistamab",
+      "conditions": [
+       "Myeloma Multiple"
+      ],
+      "sponsor": "Abramson Cancer Center at Penn Medicine",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06979362",
+      "title": "A Research Study Comparing Different Doses of CDR132L With Placebo on the Structure and Function of the Heart in People With Heart Failure With Preserved Ejection Fraction and Left Ventricular Hypertrophy",
+      "conditions": [
+       "Heart Failure"
+      ],
+      "sponsor": "Novo Nordisk A/S",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06909565",
+      "title": "Inclisiran Versus Placebo for the Prevention of Major Adverse Cardiovascular and Limb Events in Patients Undergoing Percutaneous Coronary Intervention or Peripheral Endovascular Intervention",
+      "conditions": [
+       "Percutaneous Coronary Intervention",
+       "Peripheral Endovascular Intervention"
+      ],
+      "sponsor": "Duke University",
+      "phase": [
+       "PHASE4"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "neurology": [
+     {
+      "nct": "NCT03816345",
+      "title": "Testing an Immunotherapy Anti-cancer Drug, Nivolumab, for Advanced Cancers in Patients With Autoimmune Disorders, AIM-NIVO",
+      "conditions": [
+       "Autoimmune Disease",
+       "Crohn Disease",
+       "Dermatomyositis",
+       "Hematopoietic and Lymphoid Cell Neoplasm"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05711394",
+      "title": "A Study to Assess the Adverse Events and Change in Disease Activity of Oral Atogepant Tablets in Pediatric Participants (6-17 Years of Age) With Episodic Migraine",
+      "conditions": [
+       "Episodic Migraine"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05066217",
+      "title": "An Efficacy and Safety Study of Clemizole HCl in Patients With Lennox-Gastaut Syndrome",
+      "conditions": [
+       "Lennox Gastaut Syndrome"
+      ],
+      "sponsor": "Epygenix",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06680830",
+      "title": "A Phase 2 Study and Open-Label Extension of NEU-411 in Companion Diagnostic-Positive Participants With Early Parkinson's Disease",
+      "conditions": [
+       "Parkinson Disease",
+       "Parkinson",
+       "Idiopathic Parkinson Disease",
+       "Early Parkinson Disease (Early PD)"
+      ],
+      "sponsor": "Neuron23 Inc.",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06782490",
+      "title": "A Study to Evaluate the Efficacy, Safety and Tolerability of BMS-986368 in Participants With Multiple Sclerosis Spasticity",
+      "conditions": [
+       "Multiple Sclerosis Spasticity"
+      ],
+      "sponsor": "Celgene",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07361549",
+      "title": "Localized Injection of Lidocaine Via the Middle Meningeal Artery for Headache Treatment",
+      "conditions": [
+       "Refractory Migraine",
+       "Headache"
+      ],
+      "sponsor": "Daniel A Tonetti, MD",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ]
+   }
+  },
+  "los-angeles": {
+   "states": [],
+   "area": "30 miles of downtown Los Angeles",
+   "as_of": "2026-10-05",
+   "us": {
+    "all": 22007,
+    "oncology": 7064,
+    "obesity": 855,
+    "cardiology": 2826,
+    "neurology": 985,
+    "dermatology": 212,
+    "pain": 625,
+    "gastroenterology": 283,
+    "psychiatry": 1275
+   },
+   "counts": {
+    "all": 3231,
+    "oncology": 1511,
+    "obesity": 110,
+    "cardiology": 421,
+    "neurology": 122,
+    "dermatology": 57,
+    "pain": 53,
+    "gastroenterology": 75,
+    "psychiatry": 152
+   },
+   "samples": {
+    "oncology": [
+     {
+      "nct": "NCT07544589",
+      "title": "A Phase 1 Study Evaluating DISP-10 in Participants With Advanced Gastrointestinal Cancers",
+      "conditions": [
+       "Colorectal Cancer",
+       "Gastric Adenocarcinoma",
+       "Esophageal Adenocarcinoma",
+       "Gastroesophageal Adenocarcinoma"
+      ],
+      "sponsor": "Dispatch Biotherapeutics",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07223385",
+      "title": "High Cardiovascular Risk Intervention With Cardio-Oncology Consultation for Prostate Cancer Following Androgen Receptor Pathway Inhibitor (ARPI) Therapy (Heart-Safe)",
+      "conditions": [
+       "Prostate Cancer (Diagnosis)",
+       "Prostate Cancer Stage IV",
+       "CV Risk"
+      ],
+      "sponsor": "Cedars-Sinai Medical Center",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04928846",
+      "title": "A Study to Assess Disease Activity and Adverse Events of Intravenous (IV) Telisotuzumab Vedotin Compared to IV Docetaxel in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
+      "conditions": [
+       "Non Small Cell Lung Cancer",
+       "c-MET"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07535112",
+      "title": "A Study to Learn More About How Safe BAY 3771249 is and How Well it Works in People With Advanced or Metastatic Colorectal Cancer That Has a KRAS G12D Mutation",
+      "conditions": [
+       "Advanced/Metastatic Colorectal Adenocarcinoma"
+      ],
+      "sponsor": "Bayer",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06524544",
+      "title": "A Study Comparing the Combination of Pembrolizumab and Sacituzumab Govitecan-hziy Versus Standard of Care in the Treatment of Advanced Urothelial Cancer",
+      "conditions": [
+       "Locally Advanced Urothelial Carcinoma",
+       "Metastatic Urothelial Carcinoma",
+       "Unresectable Urothelial Carcinoma"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "obesity": [
+     {
+      "nct": "NCT07684235",
+      "title": "Extension Trial to Evaluate the Long-term Efficacy, Safety, and Tolerability of Maridebart Cafraglutide (MARITIME-1-EXTENSION)",
+      "conditions": [
+       "Obesity",
+       "Overweight"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07684144",
+      "title": "Extension Trial to Evaluate the Long-term Efficacy, Safety, and Tolerability of Maridebart Cafraglutide (MARITIME-2-EXTENSION)",
+      "conditions": [
+       "Obesity",
+       "Overweight",
+       "Diabetes Mellitus, Type 2"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07752979",
+      "title": "Safety and Efficacy of ABBV-295 in Adults With Obesity or Overweight With Weight-Related Comorbidities",
+      "conditions": [
+       "Obesity",
+       "Overweight"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07090005",
+      "title": "Comparing the Efficacy and Safety of the EndoZip System and Apollo ESG in Obese Patients",
+      "conditions": [
+       "Obesity",
+       "Overweight"
+      ],
+      "sponsor": "Nitinotes Surgical Ltd.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07783802",
+      "title": "A Study of Clazakizumab (LY5724886) in Adults With Elevated hsCRP and at Increased Risk for Cardiovascular Event",
+      "conditions": [
+       "Atherosclerosis",
+       "Cardiovascular Disease",
+       "Obesity",
+       "Hypertension"
+      ],
+      "sponsor": "Eli Lilly and Company",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "cardiology": [
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07069738",
+      "title": "Safety and Effectiveness of Left Bundle Branch Area Pacing Versus Conventional Cardiac Resynchronization Therapy in Heart Failure",
+      "conditions": [
+       "Heart Failure - NYHA II - IV"
+      ],
+      "sponsor": "Boston Scientific Corporation",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06929806",
+      "title": "Multi-center Trial of Ferric Derisomaltose Versus no Intravenous Iron in Iron-deficient Subjects With Symptomatic Chronic Heart Failure",
+      "conditions": [
+       "Chronic Heart Failure",
+       "Iron Deficiencies"
+      ],
+      "sponsor": "Pharmacosmos A/S",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07223385",
+      "title": "High Cardiovascular Risk Intervention With Cardio-Oncology Consultation for Prostate Cancer Following Androgen Receptor Pathway Inhibitor (ARPI) Therapy (Heart-Safe)",
+      "conditions": [
+       "Prostate Cancer (Diagnosis)",
+       "Prostate Cancer Stage IV",
+       "CV Risk"
+      ],
+      "sponsor": "Cedars-Sinai Medical Center",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07166133",
+      "title": "GORE\u00ae TAG\u00ae Thoracic Branch Endoprosthesis Zone 0/1 Post-Approval Study",
+      "conditions": [
+       "Aortic Arch Dissection",
+       "Aortic Arch Aneurysm"
+      ],
+      "sponsor": "W.L.Gore & Associates",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06686121",
+      "title": "Improving Mobility After Revascularization in Peripheral Artery Disease",
+      "conditions": [
+       "Peripheral Artery Disease",
+       "Intermittent Claudication",
+       "Peripheral Vascular Disease",
+       "Mobility Limitation"
+      ],
+      "sponsor": "Northwestern University",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "neurology": [
+     {
+      "nct": "NCT06345729",
+      "title": "A Study of Calderasib (MK-1084) Plus Pembrolizumab (MK-3475) in Participants With KRAS G12C Mutant Non-small Cell Lung Cancer (NSCLC) With Programmed Cell Death Ligand 1 (PD-L1) Tumor Proportion Score (TPS) \u226550% (MK-1084-004/KANDLELIT-004)",
+      "conditions": [
+       "Non-small Cell Lung Cancer"
+      ],
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07067463",
+      "title": "A Study of Orelabrutinib in Patients With Primary Progressive Multiple Sclerosis",
+      "conditions": [
+       "Multiple Sclerosis (MS) Primary Progressive"
+      ],
+      "sponsor": "Zenas BioPharma (USA), LLC",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05711394",
+      "title": "A Study to Assess the Adverse Events and Change in Disease Activity of Oral Atogepant Tablets in Pediatric Participants (6-17 Years of Age) With Episodic Migraine",
+      "conditions": [
+       "Episodic Migraine"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05066217",
+      "title": "An Efficacy and Safety Study of Clemizole HCl in Patients With Lennox-Gastaut Syndrome",
+      "conditions": [
+       "Lennox Gastaut Syndrome"
+      ],
+      "sponsor": "Epygenix",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05104983",
+      "title": "Stopping TSC Onset and Progression 2B: Sirolimus TSC Epilepsy Prevention Study",
+      "conditions": [
+       "Tuberous Sclerosis Complex",
+       "Epilepsy"
+      ],
+      "sponsor": "Darcy Krueger",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05319730",
+      "title": "A Study to Evaluate Investigational Agents With or Without Pembrolizumab (MK-3475) in Participants With Advanced Esophageal Cancer Previously Exposed to Programmed Cell Death 1 Protein (PD-1)/ Programmed Cell Death Ligand 1 (PD-L1) Treatment (MK-3475-06B)",
+      "conditions": [
+       "Esophageal Squamous Cell Carcinoma"
+      ],
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ]
+   }
+  },
+  "san-francisco-bay-area": {
+   "states": [],
+   "area": "40 miles of San Mateo, covering San Francisco, Oakland and San Jose",
+   "as_of": "2026-10-05",
+   "us": {
+    "all": 22007,
+    "oncology": 7064,
+    "obesity": 855,
+    "cardiology": 2826,
+    "neurology": 985,
+    "dermatology": 212,
+    "pain": 625,
+    "gastroenterology": 283,
+    "psychiatry": 1275
+   },
+   "counts": {
+    "all": 2270,
+    "oncology": 803,
+    "obesity": 61,
+    "cardiology": 320,
+    "neurology": 113,
+    "dermatology": 42,
+    "pain": 55,
+    "gastroenterology": 36,
+    "psychiatry": 111
+   },
+   "samples": {
+    "oncology": [
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT01696721",
+      "title": "Proton and Photon Consortium Registry (PPCR): A Multi Center Registry of Pediatric Patients Treated With Radiation Therapy",
+      "conditions": [
+       "Pediatric Patients Treated With Radiation Therapy"
+      ],
+      "sponsor": "Massachusetts General Hospital",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT04883671",
+      "title": "Stereotactic Body Radiotherapy (SBRT) for Early Treatment of Oligometastatic Adenoid Cystic Carcinoma: The SOLAR Trial",
+      "conditions": [
+       "Adenoid Cystic Carcinoma",
+       "Metastatic Adenoid Cystic Carcinoma"
+      ],
+      "sponsor": "Dana-Farber Cancer Institute",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07193511",
+      "title": "BEACON-1: Study of AVZO-103 as a Single Agent and in Combination Therapy in Patients With Locally Advanced or Metastatic Urothelial Cancer or Other Solid Tumors (AVZO-103-1001)",
+      "conditions": [
+       "Solid Tumor Cancer",
+       "Locally Advanced",
+       "Metastatic Solid Tumors",
+       "Urothelial Cancer"
+      ],
+      "sponsor": "Avenzo Therapeutics, Inc.",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06058377",
+      "title": "Adding an Immunotherapy Drug, MEDI4736 (Durvalumab), to the Usual Chemotherapy Treatment (Paclitaxel, Cyclophosphamide, and Doxorubicin) for Stage II-III Breast Cancer",
+      "conditions": [
+       "Anatomic Stage II Breast Cancer AJCC v8",
+       "Anatomic Stage III Breast Cancer AJCC v8",
+       "HER2-Negative Breast Carcinoma",
+       "Hormone Receptor-Positive Breast Carcinoma"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05564390",
+      "title": "MYELOMATCH: A Screening Study to Assign People With Myeloid Cancer to a Treatment Study or Standard of Care Treatment Within myeloMATCH (MyeloMATCH Screening Trial)",
+      "conditions": [
+       "Acute Myeloid Leukemia",
+       "Acute Myeloid Leukemia Arising From Previous Myelodysplastic/Myeloproliferative Neoplasm",
+       "Acute Myeloid Leukemia Post Cytotoxic Therapy",
+       "Acute Myeloid Leukemia, Myelodysplasia-Related"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "obesity": [
+     {
+      "nct": "NCT07684235",
+      "title": "Extension Trial to Evaluate the Long-term Efficacy, Safety, and Tolerability of Maridebart Cafraglutide (MARITIME-1-EXTENSION)",
+      "conditions": [
+       "Obesity",
+       "Overweight"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07752979",
+      "title": "Safety and Efficacy of ABBV-295 in Adults With Obesity or Overweight With Weight-Related Comorbidities",
+      "conditions": [
+       "Obesity",
+       "Overweight"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07564414",
+      "title": "A Research Study to Look at How Two Different Doses of CagriSema and One Dose of Semaglutide Help People Living With Obesity With or Without Type 2 Diabetes Lose Weight",
+      "conditions": [
+       "Obesity",
+       "Type 2 Diabetes"
+      ],
+      "sponsor": "Novo Nordisk A/S",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07533175",
+      "title": "AMAZE 2: A Research Study Investigating How Well the Medicine NNC0487-0111 Helps People With Excess Body Weight and Type 2 Diabetes Lose Weight",
+      "conditions": [
+       "Diabetes Mellitus",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Novo Nordisk A/S",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07754461",
+      "title": "A Study to Test Whether Survodutide Helps People With Type 2 Diabetes Control Their Blood Sugar",
+      "conditions": [
+       "Type 2 Diabetes"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "cardiology": [
+     {
+      "nct": "NCT07225075",
+      "title": "Pivotal Study of the Silk Vista Baby Flow Diverters in the Treatment of Unruptured Intracranial Aneurysms (PIONEER)",
+      "conditions": [
+       "Intracranial Aneurysm"
+      ],
+      "sponsor": "Balt USA",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07069738",
+      "title": "Safety and Effectiveness of Left Bundle Branch Area Pacing Versus Conventional Cardiac Resynchronization Therapy in Heart Failure",
+      "conditions": [
+       "Heart Failure - NYHA II - IV"
+      ],
+      "sponsor": "Boston Scientific Corporation",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07166133",
+      "title": "GORE\u00ae TAG\u00ae Thoracic Branch Endoprosthesis Zone 0/1 Post-Approval Study",
+      "conditions": [
+       "Aortic Arch Dissection",
+       "Aortic Arch Aneurysm"
+      ],
+      "sponsor": "W.L.Gore & Associates",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05504356",
+      "title": "Volunteers to Investigate Best Results for Ablation and Novel Therapies for Atrial Fibrillation",
+      "conditions": [
+       "Atrial Fibrillation"
+      ],
+      "sponsor": "University of California, San Francisco",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT07780500",
+      "title": "REFOCUS-HTN US-WEST: A Data Infrastructure to Characterize Individuals With Hypertension",
+      "conditions": [
+       "Hypertension",
+       "Aldosterone Disorder",
+       "Cardiovascular Disease (CVD)"
+      ],
+      "sponsor": "Kaiser Permanente",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     }
+    ],
+    "neurology": [
+     {
+      "nct": "NCT03816345",
+      "title": "Testing an Immunotherapy Anti-cancer Drug, Nivolumab, for Advanced Cancers in Patients With Autoimmune Disorders, AIM-NIVO",
+      "conditions": [
+       "Autoimmune Disease",
+       "Crohn Disease",
+       "Dermatomyositis",
+       "Hematopoietic and Lymphoid Cell Neoplasm"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE1"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05711394",
+      "title": "A Study to Assess the Adverse Events and Change in Disease Activity of Oral Atogepant Tablets in Pediatric Participants (6-17 Years of Age) With Episodic Migraine",
+      "conditions": [
+       "Episodic Migraine"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05104983",
+      "title": "Stopping TSC Onset and Progression 2B: Sirolimus TSC Epilepsy Prevention Study",
+      "conditions": [
+       "Tuberous Sclerosis Complex",
+       "Epilepsy"
+      ],
+      "sponsor": "Darcy Krueger",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07616128",
+      "title": "Study of EVO756 in Adults With Migraine",
+      "conditions": [
+       "Migraine"
+      ],
+      "sponsor": "Evommune, Inc.",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06623422",
+      "title": "A Study of Pembrolizumab (MK-3475) With or Without Intismeran Autogene (V940) in Participants With Non-small Cell Lung Cancer (V940-009/INTerpath-009)",
+      "conditions": [
+       "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06680830",
+      "title": "A Phase 2 Study and Open-Label Extension of NEU-411 in Companion Diagnostic-Positive Participants With Early Parkinson's Disease",
+      "conditions": [
+       "Parkinson Disease",
+       "Parkinson",
+       "Idiopathic Parkinson Disease",
+       "Early Parkinson Disease (Early PD)"
+      ],
+      "sponsor": "Neuron23 Inc.",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ]
+   }
+  },
+  "seattle": {
+   "states": [],
+   "area": "25 miles of downtown Seattle",
+   "as_of": "2026-10-05",
+   "us": {
+    "all": 22007,
+    "oncology": 7064,
+    "obesity": 855,
+    "cardiology": 2826,
+    "neurology": 985,
+    "dermatology": 212,
+    "pain": 625,
+    "gastroenterology": 283,
+    "psychiatry": 1275
+   },
+   "counts": {
+    "all": 1475,
+    "oncology": 687,
+    "obesity": 52,
+    "cardiology": 194,
+    "neurology": 75,
+    "dermatology": 15,
+    "pain": 31,
+    "gastroenterology": 50,
+    "psychiatry": 57
+   },
+   "samples": {
+    "oncology": [
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT01696721",
+      "title": "Proton and Photon Consortium Registry (PPCR): A Multi Center Registry of Pediatric Patients Treated With Radiation Therapy",
+      "conditions": [
+       "Pediatric Patients Treated With Radiation Therapy"
+      ],
+      "sponsor": "Massachusetts General Hospital",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT04928846",
+      "title": "A Study to Assess Disease Activity and Adverse Events of Intravenous (IV) Telisotuzumab Vedotin Compared to IV Docetaxel in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
+      "conditions": [
+       "Non Small Cell Lung Cancer",
+       "c-MET"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06524544",
+      "title": "A Study Comparing the Combination of Pembrolizumab and Sacituzumab Govitecan-hziy Versus Standard of Care in the Treatment of Advanced Urothelial Cancer",
+      "conditions": [
+       "Locally Advanced Urothelial Carcinoma",
+       "Metastatic Urothelial Carcinoma",
+       "Unresectable Urothelial Carcinoma"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06568939",
+      "title": "A Study to Assess Adverse Events and How Intravenously (IV) Infused Telisotuzumab Vedotin (ABBV-399) Moves Through the Body as a Monotherapy in Adult Participants With Previously Treated Non-Squamous Non-Small Cell Lung Cancer (NSCLC)",
+      "conditions": [
+       "Non-Small Cell Lung Cancer",
+       "c-MET"
+      ],
+      "sponsor": "AbbVie",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06058377",
+      "title": "Adding an Immunotherapy Drug, MEDI4736 (Durvalumab), to the Usual Chemotherapy Treatment (Paclitaxel, Cyclophosphamide, and Doxorubicin) for Stage II-III Breast Cancer",
+      "conditions": [
+       "Anatomic Stage II Breast Cancer AJCC v8",
+       "Anatomic Stage III Breast Cancer AJCC v8",
+       "HER2-Negative Breast Carcinoma",
+       "Hormone Receptor-Positive Breast Carcinoma"
+      ],
+      "sponsor": "National Cancer Institute (NCI)",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "obesity": [
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05818384",
+      "title": "Wakaya: Rising Up for Choctaw Youth Health",
+      "conditions": [
+       "Obesity, Adolescent",
+       "Healthy Nutrition",
+       "Sedentary Behavior",
+       "Drug Abuse"
+      ],
+      "sponsor": "University of Washington",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07754461",
+      "title": "A Study to Test Whether Survodutide Helps People With Type 2 Diabetes Control Their Blood Sugar",
+      "conditions": [
+       "Type 2 Diabetes"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07064473",
+      "title": "EASi-PROTKT\u2122 - A Study to Test Vicadrostat (BI 690517) Taken Together With Empagliflozin in People With Type 2 Diabetes, High Blood Pressure, and Cardiovascular Disease",
+      "conditions": [
+       "Diabetes Mellitus, Type 2",
+       "Hypertension",
+       "Cardiovascular Diseases"
+      ],
+      "sponsor": "Boehringer Ingelheim",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07668414",
+      "title": "A Research Study Investigating How Well the Medicine Zenagamtide Helps People With Excess Body Weight Lose Weight Compared to Semaglutide",
+      "conditions": [
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Novo Nordisk A/S",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06112418",
+      "title": "A Randomized Comparison of Stage-Based Care Versus Risk Factor-Based Care for Prevention of Cardiovascular Events",
+      "conditions": [
+       "Diabetes Mellitus, Type 2",
+       "PreDiabetes",
+       "Metabolic Syndrome"
+      ],
+      "sponsor": "Cleerly, Inc.",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "cardiology": [
+     {
+      "nct": "NCT05006716",
+      "title": "A Dose-Escalation and Expansion Study of Tacabrutideg (BGB-16673) in Participants With B-Cell Malignancies",
+      "conditions": [
+       "B-cell Malignancy",
+       "Marginal Zone Lymphoma",
+       "Follicular Lymphoma",
+       "Non-Hodgkin Lymphoma"
+      ],
+      "sponsor": "BeOne Medicines",
+      "phase": [
+       "PHASE1",
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07166133",
+      "title": "GORE\u00ae TAG\u00ae Thoracic Branch Endoprosthesis Zone 0/1 Post-Approval Study",
+      "conditions": [
+       "Aortic Arch Dissection",
+       "Aortic Arch Aneurysm"
+      ],
+      "sponsor": "W.L.Gore & Associates",
+      "phase": [
+       "NA"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07037433",
+      "title": "Evaluating the Impact of Maridebart Cafraglutide on Cardiovascular Outcomes in Participants With Atherosclerotic Cardiovascular Disease and Overweight or Obesity",
+      "conditions": [
+       "Atherosclerotic Cardiovascular Disease",
+       "Overweight",
+       "Obesity"
+      ],
+      "sponsor": "Amgen",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06909565",
+      "title": "Inclisiran Versus Placebo for the Prevention of Major Adverse Cardiovascular and Limb Events in Patients Undergoing Percutaneous Coronary Intervention or Peripheral Endovascular Intervention",
+      "conditions": [
+       "Percutaneous Coronary Intervention",
+       "Peripheral Endovascular Intervention"
+      ],
+      "sponsor": "Duke University",
+      "phase": [
+       "PHASE4"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT04774159",
+      "title": "Low Dose ColchicinE in pAtients With Peripheral Artery DiseasE to Address Residual Vascular Risk",
+      "conditions": [
+       "Peripheral Arterial Disease",
+       "Atherosclerosis of Extremities",
+       "Inflammation"
+      ],
+      "sponsor": "Population Health Research Institute",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT05611242",
+      "title": "Proximal Internal Carotid Artery Acute Stroke Secondary to Tandem or Local Occlusion Thrombectomy Trial",
+      "conditions": [
+       "Acute Ischemic Stroke"
+      ],
+      "sponsor": "Mercy Health Ohio",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ],
+    "neurology": [
+     {
+      "nct": "NCT00869817",
+      "title": "Dominantly Inherited Alzheimer Network (DIAN)",
+      "conditions": [
+       "Alzheimer's Disease"
+      ],
+      "sponsor": "Washington University School of Medicine",
+      "phase": [],
+      "type": "OBSERVATIONAL"
+     },
+     {
+      "nct": "NCT05104983",
+      "title": "Stopping TSC Onset and Progression 2B: Sirolimus TSC Epilepsy Prevention Study",
+      "conditions": [
+       "Tuberous Sclerosis Complex",
+       "Epilepsy"
+      ],
+      "sponsor": "Darcy Krueger",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06623422",
+      "title": "A Study of Pembrolizumab (MK-3475) With or Without Intismeran Autogene (V940) in Participants With Non-small Cell Lung Cancer (V940-009/INTerpath-009)",
+      "conditions": [
+       "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "sponsor": "Merck Sharp & Dohme LLC",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06680830",
+      "title": "A Phase 2 Study and Open-Label Extension of NEU-411 in Companion Diagnostic-Positive Participants With Early Parkinson's Disease",
+      "conditions": [
+       "Parkinson Disease",
+       "Parkinson",
+       "Idiopathic Parkinson Disease",
+       "Early Parkinson Disease (Early PD)"
+      ],
+      "sponsor": "Neuron23 Inc.",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT06782490",
+      "title": "A Study to Evaluate the Efficacy, Safety and Tolerability of BMS-986368 in Participants With Multiple Sclerosis Spasticity",
+      "conditions": [
+       "Multiple Sclerosis Spasticity"
+      ],
+      "sponsor": "Celgene",
+      "phase": [
+       "PHASE2"
+      ],
+      "type": "INTERVENTIONAL"
+     },
+     {
+      "nct": "NCT07609108",
+      "title": "Pridopidine Phase 3 Study in Huntington's Disease",
+      "conditions": [
+       "Huntington Disease"
+      ],
+      "sponsor": "Prilenia",
+      "phase": [
+       "PHASE3"
+      ],
+      "type": "INTERVENTIONAL"
+     }
+    ]
+   }
   }
  },
  "us": {

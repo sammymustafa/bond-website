@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Manual chart review is slow, and its quality depends on habits that rarely get written down. This checklist writes them down: how to map each criterion before the first chart, where to look for each kind of evidence, how to record a decision someone else can check, and what goes in the pre-screening log. Copy it, edit it, and hand it to the next coordinator you train.",
   summary: "A manual pre-screening checklist with criteria mapping, EHR data sources, rationale notes, log fields, time tracking and escalation.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
     href: "/book-a-demo",

@@ -3,21 +3,21 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/pricing",
   category: "product",
-  title: "Clinical trial recruitment software pricing per enrollee",
+  title: "Clinical trial recruitment software pricing per patient",
   description:
-    "How Bond prices clinical trial recruitment: a volume-based platform fee plus a success fee per randomized patient, with no integration fee, and how it compares.",
+    "How Bond prices recruitment: a volume-based fee per screened patient plus a percentage of each randomization milestone payment, with no integration fee.",
   keywords: [
     "clinical trial recruitment software pricing",
-    "per enrolled patient pricing clinical trials",
-    "patient recruitment success fee",
+    "per screened patient pricing clinical trials",
+    "randomization milestone payment percentage",
     "clinical trial recruitment cost per randomized patient",
   ],
   eyebrow: "Pricing",
-  h1: "Pricing: a platform fee plus a success fee per randomized patient",
+  h1: "Pricing: a fee per screened patient plus a share of each randomization milestone",
   intro:
-    "Bond Health prices every engagement in two parts: a volume-based platform fee, and a success fee for each patient who is randomized. There is no integration fee.{{cite:bond-site}} Pricing is custom, and Bond does not publish dollar amounts. The platform fee covers EHR integration, implementation and ongoing operation.",
-  summary: "How Bond's two-part pricing works, what counts as enrolled, and how it compares with other ways to pay for recruitment.",
-  lastUpdated: "2026-09-24",
+    "Bond Health prices every engagement in two parts: a volume-based fee for each screened patient, and a percentage of the randomization milestone payment for each patient who is randomized. There is no integration fee.{{cite:bond-product}} Pricing is custom, and Bond does not publish dollar amounts. The per-screened-patient fee covers EHR integration, implementation and ongoing operation.",
+  summary: "How Bond's two-part pricing works, what counts as randomized, and how it compares with other ways to pay for recruitment.",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Get custom pricing", href: "/book-a-demo", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
@@ -26,17 +26,17 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "There are two fees. The **platform fee** is volume-based and covers EHR integration, implementation and ongoing operation, itemized below; there is no separate integration fee. The **success fee** is charged per enrolled patient, which Bond defines as a patient who is successfully randomized.{{cite:bond-site}}",
+          text: "There are two parts. The **per-screened-patient fee** is volume-based: a screened patient is a patient Bond calls and texts to pre-screen for the study, and the fee covers EHR integration, implementation and ongoing operation, itemized below; there is no separate integration fee. The **randomization share** is a percentage of the randomization milestone payment for each patient who is successfully randomized.{{cite:bond-product}}",
         },
         {
           type: "p",
-          text: "The split follows the costs. Connecting an EHR, passing a security review, configuring scripts and running the platform are covered by the platform fee. The success fee is the part that moves with results.",
+          text: "The split follows the work. Connecting an EHR, passing a security review, configuring scripts, screening and outreach scale with the number of patients screened. The randomization share is the part that moves with results.",
         },
       ],
     },
     {
       id: "platform-fee",
-      heading: "What does the platform fee cover?",
+      heading: "What does the per-screened-patient fee cover?",
       blocks: [
         {
           type: "ul",
@@ -78,15 +78,19 @@ const page: SeoPage = {
     },
     {
       id: "enrolled",
-      heading: "What counts as an enrolled patient?",
+      heading: "What counts as a screened patient and a randomized patient?",
       blocks: [
         {
           type: "p",
-          text: "Bond defines enrolled as successfully randomized.{{cite:bond-site}} A match, a referral, a completed pre-screening call, a booked visit or a signed consent form does not count. A patient who consents and then fails screening generates no randomization fee.",
+          text: "A screened patient is a patient Bond calls and texts to pre-screen for the study. Charts Bond reads in the EHR without contacting the patient are not screened patients.{{cite:bond-product}}",
         },
         {
           type: "p",
-          text: "Randomization is an event every randomized study already records, so the count can be checked against the study's own records. Where a study needs it, milestones for individual visits can be added on top, and those are written into the contract.{{cite:bond-site}}",
+          text: "The randomization share applies only when a patient is successfully randomized and the study's randomization milestone is paid.{{cite:bond-product}} A match, a referral, a completed pre-screening call, a booked visit or a signed consent form does not trigger it. A patient who consents and then fails screening generates no randomization share.",
+        },
+        {
+          type: "p",
+          text: "Randomization is an event every randomized study already records, and the milestone payment for it is set in the study's budget, so both the count and the amount can be checked against the study's own records.",
         },
         {
           type: "p",
@@ -94,7 +98,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The coordinator sees the same funnel the fee is based on. The dashboard reports patients matched, contacted, pre-screened, consented and randomized, along with time to enrollment and screen-failure signals. Reporting is available for sites, CROs and sponsors.{{cite:bond-site}}",
+          text: "The coordinator sees the same funnel the fees are based on. The dashboard reports patients matched, contacted, pre-screened, consented and randomized, along with time to enrollment and screen-failure signals. Reporting is available for sites, CROs and sponsors.{{cite:bond-site}}",
         },
       ],
     },
@@ -137,8 +141,8 @@ const page: SeoPage = {
             ],
             [
               "Bond",
-              "A volume-based platform fee, plus a success fee per randomized patient; no integration fee{{cite:bond-site}}",
-              "Shared. The platform fee is owed; the success fee is owed only for randomized patients",
+              "A volume-based fee per screened patient, plus a percentage of the randomization milestone payment for each patient; no integration fee{{cite:bond-product}}",
+              "Shared. The per-screened-patient fee scales with volume; the randomization share is owed only for randomized patients",
               "Reviews matches, takes escalations, runs screening visits and obtains consent",
             ],
           ],
@@ -180,7 +184,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "A site that enrolls no one still costs the sponsor money, and costs the site the coordinator hours spent looking. A success fee tied to randomization does not fix that by itself. What it does is keep the variable part of Bond's price at zero for a site that does not enroll.",
+          text: "A site that enrolls no one still costs the sponsor money, and costs the site the coordinator hours spent looking. Tying part of the price to the randomization milestone does not fix that by itself. What it does is keep the performance part of Bond's price at zero for a site that does not enroll.",
         },
       ],
     },
@@ -190,7 +194,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "When a site recruits from its own records, the main cost is coordinator time, and it is spent whether or not anyone is randomized. With Bond, part of that work moves to software covered by the platform fee, and part of the price waits for randomization.",
+          text: "When a site recruits from its own records, the main cost is coordinator time, and it is spent whether or not anyone is randomized. With Bond, part of that work moves to software priced per screened patient, and part of the price waits for randomization.",
         },
         {
           type: "table",
@@ -200,8 +204,8 @@ const page: SeoPage = {
             ["Finding candidates", "Coordinator hours on EHR reports and chart review", "Bond reads the records against the criteria and ranks matches with their evidence; Bond reports 50%+ less chart review{{cite:bond-site}}"],
             ["First contact and pre-screening", "Coordinator calls, voicemails and callbacks", "Voice and text agents call, pre-screen, schedule visits and escalate to coordinators{{cite:bond-site}}"],
             ["Consent conversation", "PI and coordinator time", "AI support explains the study in plain language and answers patient questions; the PI and delegated staff obtain consent{{cite:bond-site}}"],
-            ["Setup", "Staff training on the study", "Covered by the platform fee, with no integration fee; typically 48 hours for full EHR integration{{cite:bond-site}}"],
-            ["If no one is randomized", "Staff time already spent", "Platform fee already owed; no success fee"],
+            ["Setup", "Staff training on the study", "Covered by the per-screened-patient fee, with no integration fee; typically 48 hours for full EHR integration{{cite:bond-site}}"],
+            ["If no one is randomized", "Staff time already spent", "Per-screened-patient fees already owed; no randomization share"],
           ],
         },
       ],
@@ -214,8 +218,9 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**It does not publish a price list.** Quotes are custom and scoped to your sites and studies.{{cite:bond-site}}",
-            "**It is not purely pay-for-performance.** The platform fee is owed whether or not anyone is randomized. Only the success fee, plus any visit milestones agreed in the contract, depends on results.{{cite:bond-site}}",
-            "**It does not guarantee enrollment.** A protocol with few eligible patients, or a site without visit capacity, will enroll slowly with any tool. The success fee means Bond shares that outcome. It does not remove it.",
+            "**Its fees do not include ad spend.** Bond creates and runs the Meta and Google ad campaigns, but the spend comes out of the site's own advertising budget for the study.{{cite:bond-product}}",
+            "**It is not purely pay-for-performance.** The per-screened-patient fee is owed whether or not anyone is randomized. Only the randomization share depends on results.{{cite:bond-product}}",
+            "**It does not guarantee enrollment.** A protocol with few eligible patients, or a site without visit capacity, will enroll slowly with any tool. The randomization share means Bond shares that outcome. It does not remove it.",
             "**It does not obtain consent or decide eligibility.** The PI and delegated staff do both.",
           ],
         },
@@ -227,13 +232,13 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "[Book a demo](/book-a-demo) and bring one protocol. To scope the platform fee, Bond needs to know which EHR each site uses, how many sites and studies are in scope, whether a study will use Meta and Google ad campaigns, and whether you want to start with a pilot that does not need the EHR connection.{{cite:bond-site,bond-product}}",
+          text: "[Book a demo](/book-a-demo) and bring one protocol. To scope the per-screened-patient fee, Bond needs to know which EHR each site uses, how many sites and studies are in scope, roughly how many patients will be screened, whether a study will use Meta and Google ad campaigns, and whether you want to start with a pilot that does not need the EHR connection.{{cite:bond-site,bond-product}}",
         },
         {
           type: "cta",
           label: "Get custom pricing",
           href: "/book-a-demo",
-          text: "Bring a protocol and the name of your EHR. We will walk through what the platform fee covers for your sites and how randomizations are counted.",
+          text: "Bring a protocol and the name of your EHR. We will walk through what the per-screened-patient fee covers for your sites and how the randomization share is calculated.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",
         },
@@ -243,7 +248,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "What happens if no one enrolls?",
-      a: "No randomization fee is owed, because Bond counts a patient as enrolled only when they are randomized.{{cite:bond-site}} The platform fee still applies, since it covers the EHR integration, implementation and operation that ran regardless. There is no separate integration fee.",
+      a: "No randomization share is owed, because it is a percentage of the randomization milestone payment for each randomized patient.{{cite:bond-product}} The per-screened-patient fee still applies, since it covers the screening, outreach, EHR integration and operation that ran regardless. There is no separate integration fee.",
     },
     {
       q: "Is there a pilot option?",
@@ -251,7 +256,11 @@ const page: SeoPage = {
     },
     {
       q: "How are contracts structured?",
-      a: "Each engagement is scoped and priced individually around the two fees described on this page.{{cite:bond-site}} Scope, studies and any visit milestones are agreed in the contract.",
+      a: "Each engagement is scoped and priced individually around the two parts described on this page.{{cite:bond-product}} Scope and studies are agreed in the contract.",
+    },
+    {
+      q: "Is ad spend included in Bond's fees?",
+      a: "No. Bond creates and runs Meta and Google ad campaigns for your studies, but the ad spend itself comes out of the site's own advertising budget for the study, not out of Bond's fees.{{cite:bond-product}}",
     },
     {
       q: "Are screening, outreach, booking and consent support priced separately?",
@@ -272,7 +281,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "1nhealth-pricing",
@@ -361,7 +370,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Implementation", href: "/implementation", description: "What the platform fee pays for, step by step." },
+    { label: "Implementation", href: "/implementation", description: "What the per-screened-patient fee pays for, step by step." },
     { label: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment", description: "Bond's EHR screening and ad campaigns compared with media vendors." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "How recruitment tools differ in scope and approach." },
     { label: "Security", href: "/security", description: "The BAA, encryption, access control and audit logging in every engagement." },

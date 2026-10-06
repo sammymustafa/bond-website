@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Every screen failure uses coordinator hours, a visit slot and often procedures the study budget may not fully cover. This guide covers the benchmarks worth comparing against, the causes a site can predict, and a pre-screening routine that catches more of them before the consent visit.",
   summary: "Benchmarks by therapeutic area, root causes, and a pre-screening routine that cuts avoidable screen failures.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "See pre-screening on your protocol",
     href: "/book-a-demo",
@@ -379,7 +379,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
   ],
   related: [

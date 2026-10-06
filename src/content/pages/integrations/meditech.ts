@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "MEDITECH Expanse is MEDITECH's go-forward EHR platform, and MEDITECH lists community and critical access hospitals first among the customers it serves.{{cite:klas-2025-blog,meditech-about}} Bond Health connects to Expanse via FHIR R4 or an HL7 v2 feed that the hospital approves, screens coded data and clinical notes against a study's criteria, and hands ranked candidates to coordinators. This page covers the data, the approvals, the timeline and what is not integrated today.",
   summary: "The FHIR and HL7 paths, IT approvals, timeline and limits for connecting Bond at a MEDITECH hospital.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -262,7 +262,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "bond-whitepaper",

@@ -34,7 +34,7 @@ const REASONS: Record<ReasonKey, string> = {
   ehr:
     "**Every major EHR, live in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs. Its team handles the integration end to end, and Bond is a CRIO Certified Partner. See [implementation](/implementation).{{cite:bond-site,bond-product}}",
   pricing:
-    "**You pay for results, not setup.** There is no integration fee: a volume-based platform fee plus a success fee only for patients who are randomized. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+    "**No integration fee, and a price that moves with randomization.** You pay a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient who is randomized. See [pricing](/pricing).{{cite:bond-product}}",
   languages:
     "**Agents that speak your patients' language.** Voice and text conversations run in English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to your coordinators or book a callback, whichever your site prefers.{{cite:bond-product}}",
   retention:
@@ -69,7 +69,7 @@ export const WHY_BOND_SOURCES: Source[] = [
     publisher: "Bond Health",
     url: "https://bondtrials.com",
     year: "2026",
-    note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+    note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
   },
   {
     id: "bond-trust-center",
@@ -92,6 +92,7 @@ const ANGLES: Record<string, Angle> = {
   // Product pages
   "/identify": { lead: ["evidence", "ehr"] },
   "/engage": { lead: ["ads", "languages", "retention"] },
+  "/book": { lead: ["ads", "retention", "languages"] },
   "/consent": { lead: ["one-platform", "languages"] },
   "/implementation": { lead: ["ehr", "pricing"] },
   "/pricing": { lead: ["pricing", "ehr"] },
@@ -118,6 +119,9 @@ const ANGLES: Record<string, Angle> = {
   "/integrations/meditech": { audience: "sites on MEDITECH", lead: ["ehr", "evidence"] },
   "/integrations/athenahealth": { audience: "sites on athenahealth", lead: ["ehr", "evidence"] },
   "/integrations/eclinicalworks": { audience: "sites on eClinicalWorks", lead: ["ehr", "evidence"] },
+  "/integrations/nextgen": { audience: "sites on NextGen", lead: ["ehr", "evidence"] },
+  "/integrations/veradigm": { audience: "sites on Veradigm", lead: ["ehr", "evidence"] },
+  "/integrations/oncoemr": { audience: "oncology practices on OncoEMR", lead: ["evidence", "ehr"] },
   "/integrations/crio": { audience: "sites that run CRIO", lead: ["ehr", "one-platform"] },
   "/integrations/realtime": { audience: "sites that run RealTime", lead: ["ehr", "one-platform"] },
   "/integrations/advarra-clinical-conductor": { audience: "sites that run Advarra Clinical Conductor", lead: ["ehr", "one-platform"] },
@@ -130,6 +134,12 @@ const ANGLES: Record<string, Angle> = {
   "/clinical-trial-recruitment/utah": { audience: "research sites in Utah", lead: ["languages", "ehr"] },
   "/clinical-trial-recruitment/southeast": { audience: "research sites in the Southeast", lead: ["languages", "ehr"] },
   "/clinical-trial-recruitment/midwest": { audience: "research sites in the Midwest", lead: ["ehr", "languages"] },
+  "/clinical-trial-recruitment/boston": { audience: "research sites in the Boston area", lead: ["ads", "ehr"] },
+  "/clinical-trial-recruitment/new-york-city": { audience: "research sites in the New York City area", lead: ["languages", "ads"] },
+  "/clinical-trial-recruitment/philadelphia": { audience: "research sites in the Philadelphia area", lead: ["ads", "ehr"] },
+  "/clinical-trial-recruitment/los-angeles": { audience: "research sites in the Los Angeles area", lead: ["languages", "ads"] },
+  "/clinical-trial-recruitment/san-francisco-bay-area": { audience: "research sites in the San Francisco Bay Area", lead: ["languages", "ads"] },
+  "/clinical-trial-recruitment/seattle": { audience: "research sites in the Seattle area", lead: ["ads", "ehr"] },
 };
 
 /** Informational pages get the short version at the end; commercial pages get the full version near the top. */
@@ -147,7 +157,7 @@ export function whyBondHeading(audience?: string): string {
 
 export function whyBondAnswer(audience?: string): string {
   const who = audience ? ` for ${audience}` : "";
-  return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, creates and runs Meta and Google ad campaigns to reach new ones, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients and books them for visits, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a success fee only when a patient is randomized.{{cite:bond-site,bond-product}}`;
+  return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, creates and runs Meta and Google ad campaigns to reach new ones, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients and books them for visits, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}`;
 }
 
 /** The blocks of a "why Bond" section. `compact` drops the stats and keeps the top five reasons. */

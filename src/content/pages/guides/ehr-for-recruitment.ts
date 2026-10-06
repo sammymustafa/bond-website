@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Many of the patients a site needs are already in its EHR. Finding them takes a legal basis for looking and reaching out, a query that returns a workable list, and a review step that catches what the query cannot read.",
   summary: "Structured data versus notes, HIPAA paths, cohort queries, LLM screening, coordinator review and the metrics that matter.",
-  lastUpdated: "2026-09-24",
+  lastUpdated: "2026-10-05",
   heroCta: {
     label: "See it on your protocol",
     href: "/book-a-demo",
@@ -324,7 +324,7 @@ const page: SeoPage = {
       publisher: "Bond Health",
       url: "https://bondtrials.com",
       year: "2026",
-      note: "Capabilities, pricing and compliance status described by Bond Health, September 2026.",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
     {
       id: "osu-2014",
