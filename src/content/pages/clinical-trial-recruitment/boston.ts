@@ -134,7 +134,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Nearly every large Boston system now runs Epic, but several switched only in 2024 or 2025. A system that changed EHRs may keep older notes and results in a legacy archive, so confirm how many years of history the live record holds before relying on a lookback criterion. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} See [Epic](/integrations/epic), [MEDITECH](/integrations/meditech) and [EHRs for recruitment](/guides/ehr-for-recruitment).",
+          text: "Nearly every large Boston system now runs Epic, but several switched only in 2024 or 2025. A system that changed EHRs may keep older notes and results in a legacy archive, so confirm how many years of history the live record holds before relying on a lookback criterion. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Epic](/integrations/epic), [MEDITECH](/integrations/meditech) and [EHRs for recruitment](/guides/ehr-for-recruitment).",
         },
       ],
     },

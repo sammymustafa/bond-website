@@ -229,7 +229,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Can Bond work across sites that use different EHRs?",
-      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner.{{cite:bond-site,bond-product}} Each site connects separately; see [integrations](/integrations).",
+      a: "Yes. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Each site connects separately; see [integrations](/integrations).",
     },
     {
       q: "Does Bond replace site coordinators or the CRO's monitors?",

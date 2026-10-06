@@ -5,41 +5,33 @@ const page: SeoPage = {
   category: "integration",
   title: "Advarra Clinical Conductor CTMS integration for recruitment",
   description:
-    "How Bond works alongside Advarra Clinical Conductor and OnCore: referral and pre-screen handoff, API and export options, IT tasks, timeline and current limits.",
+    "How Bond works alongside Advarra Clinical Conductor: referral and pre-screen handoff, API and export options, IT tasks, timeline and current limits.",
   keywords: [
     "Advarra Clinical Conductor CTMS integration",
     "Clinical Conductor patient recruitment",
-    "OnCore CTMS recruitment",
+    "Clinical Conductor API integration",
     "CTMS pre-screening log",
     "CTMS referral source tracking",
   ],
   eyebrow: "Integration",
-  h1: "Using Bond alongside Advarra Clinical Conductor and OnCore",
+  h1: "Using Bond alongside Advarra Clinical Conductor",
   intro:
-    "Clinical Conductor is the CTMS Advarra sells to growing research sites and site networks, and OnCore is its CTMS for academic medical centers and cancer centers.{{cite:advarra-cc,advarra-oncore}} Bond Health works alongside both: it finds and pre-screens candidates from the EHR, sends referrals to the CTMS by API or file export, and reads enrollment status back.",
-  summary: "How referrals, pre-screen outcomes and enrollment status move between Bond and Advarra's CTMS products.",
-  lastUpdated: "2026-10-05",
+    "Clinical Conductor is the CTMS Advarra sells to growing research sites and site networks.{{cite:advarra-cc}} Bond Health works alongside it: it finds and pre-screens candidates from the EHR, sends referrals to Clinical Conductor by API or file export, and reads enrollment status back. Institutions on Advarra OnCore: see [Bond and OnCore](/integrations/oncore).",
+  summary: "How referrals, pre-screen outcomes and enrollment status move between Bond and Advarra Clinical Conductor.",
+  lastUpdated: "2026-10-06",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
-      id: "what-are-clinical-conductor-and-oncore",
-      heading: "What are Clinical Conductor and OnCore, and who uses them?",
+      id: "what-is-clinical-conductor",
+      heading: "What is Clinical Conductor, and who uses it?",
       blocks: [
         {
           type: "p",
-          text: "Advarra bought Bio-Optronics, the maker of Clinical Conductor, in March 2021, adding site networks, health systems and commercial sites to the academic and cancer centers it served through OnCore.{{cite:advarra-bio-optronics}} Advarra says OnCore typically serves academic medical centers, cancer centers and some health systems running 50 to 500+ active trials.{{cite:advarra-oncore}}",
-        },
-        {
-          type: "stats",
-          items: [
-            { value: "300+", label: "Enterprise research sites using Advarra site technology, per Advarra (November 2025)", cite: "advarra-ignitedata" },
-            { value: "90 of 125", label: "Top academic medical centers using Advarra site technology, per Advarra (November 2025)", cite: "advarra-ignitedata" },
-            { value: "50 to 500+", label: "Active trials at a typical OnCore customer, per Advarra", cite: "advarra-oncore" },
-          ],
+          text: "Advarra bought Bio-Optronics, the maker of Clinical Conductor, in March 2021, extending its reach to site networks, health systems of any size and commercial sites.{{cite:advarra-bio-optronics}} Advarra positions Clinical Conductor for growing sites and networks that manage operations and financials across locations, and its SoftwareOne listing describes it as scalable for research sites, site networks, hospitals and health systems.{{cite:advarra-cc,softwareone-cc}}",
         },
         {
           type: "p",
-          text: "The first two figures are Advarra's own and cover all its site products, not only the CTMS.{{cite:advarra-ignitedata}} Clinical Conductor has its own recruitment tools: enrollment tracking, outreach by text, email and phone, and CCText two-way texting.{{cite:advarra-cc,softwareone-cc}} As of September 2026, neither the Clinical Conductor nor the OnCore product page describes screening EHR records against eligibility criteria.{{cite:advarra-cc,advarra-oncore}} That is the step Bond adds.",
+          text: "Clinical Conductor has its own recruitment tools: enrollment tracking, outreach by text, email and phone, and CCText two-way texting.{{cite:advarra-cc,softwareone-cc}} As of October 2026, its product page does not describe screening EHR records against eligibility criteria.{{cite:advarra-cc}} That is the step Bond adds.",
         },
       ],
     },
@@ -63,7 +55,7 @@ const page: SeoPage = {
     },
     {
       id: "data-elements",
-      heading: "What data moves between Bond and the CTMS?",
+      heading: "What data moves between Bond and Clinical Conductor?",
       blocks: [
         {
           type: "p",
@@ -71,7 +63,7 @@ const page: SeoPage = {
         },
         {
           type: "table",
-          caption: "Data exchanged between Bond and Clinical Conductor or OnCore",
+          caption: "Data exchanged between Bond and Clinical Conductor",
           columns: ["Data element", "FHIR resource or interface", "Notes"],
           rows: [
             ["Chart data for screening", "From the EHR: FHIR R4 resources such as Condition, Observation and MedicationRequest, or HL7 v2", "Read from the EHR, not from the CTMS."],
@@ -93,7 +85,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Advarra's listing on the SoftwareOne Marketplace says customers can use Clinical Conductor's API to connect with other platforms.{{cite:softwareone-cc}} In March 2022 Devana Solutions announced a two-way API integration with Clinical Conductor after site networks Javara Research and Velocity Clinical Research encouraged one.{{cite:devana-2022}} Advarra says OnCore also provides an API for other applications.{{cite:advarra-oncore}} Bond uses these APIs only with access the site arranges under its own Advarra agreement.",
+          text: "Advarra's listing on the SoftwareOne Marketplace says customers can use Clinical Conductor's API to connect with other platforms.{{cite:softwareone-cc}} In March 2022 Devana Solutions announced a two-way API integration with Clinical Conductor after site networks Javara Research and Velocity Clinical Research encouraged one.{{cite:devana-2022}} Bond uses the API only with access the site arranges under its own Advarra agreement.",
         },
         {
           type: "ol",
@@ -107,7 +99,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "warning",
           title: "Works alongside, not certified",
-          text: "Bond is not certified by Advarra and is not an Advarra partner. As of September 2026, Clinical Conductor's product page lists no third-party recruitment platform among its integrations.{{cite:advarra-cc}}",
+          text: "Bond is not certified by Advarra and is not an Advarra partner. It is not in Advarra's API Partner Program, which Advarra launched in May 2022 to connect technology vendors to its platform in Silver, Gold and Platinum tiers.{{cite:advarra-partner-network}} As of October 2026, Clinical Conductor's product page lists no third-party recruitment platform among its integrations.{{cite:advarra-cc}} Bond's only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}}",
         },
       ],
     },
@@ -182,7 +174,7 @@ const page: SeoPage = {
     },
     {
       id: "not-integrated",
-      heading: "What is not integrated with Clinical Conductor or OnCore today?",
+      heading: "What is not integrated with Clinical Conductor today?",
       blocks: [
         {
           type: "ul",
@@ -208,7 +200,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond a certified Advarra or Clinical Conductor partner?",
-      a: "No. Bond works alongside Clinical Conductor and OnCore through the site's own API access or file exports. Its only vendor certification is [CRIO](/integrations/crio) Certified Partner.",
+      a: "No. Bond works alongside Clinical Conductor through the site's own API access or file exports. Its only vendor certification is [CRIO](/integrations/crio) Certified Partner.",
     },
     {
       q: "Does Bond replace Clinical Conductor's recruitment tools?",
@@ -219,12 +211,8 @@ const page: SeoPage = {
       a: "Yes, through the API where the site has access, or a scheduled status export.",
     },
     {
-      q: "Does the same approach work with OnCore?",
-      a: "Yes. Advarra says OnCore provides an API, and OnCore's own EMR interfaces with Epic and Cerner carry subject, protocol and billing data.{{cite:advarra-oncore}} Bond reads the EHR separately over FHIR and sends referrals to OnCore by API or export.",
-    },
-    {
       q: "How long does the CTMS connection take?",
-      a: "It runs inside the 48-hour full EHR integration.{{cite:bond-site}} A list-based pilot can also run before the EHR is connected, with referrals sent by file export.",
+      a: "It runs alongside the full EHR integration, which Bond estimates at 48 hours depending on the EHR, IT review and interface method.{{cite:bond-site}} If API access takes longer, the file export can start first. A list-based pilot can also run before the EHR is connected, with referrals sent by file export.",
     },
   ],
   sources: [
@@ -249,15 +237,7 @@ const page: SeoPage = {
       publisher: "Advarra",
       url: "https://www.advarra.com/solutions/sites/ctms/clinical-conductor/",
       year: "2026",
-      note: "Vendor product page, accessed September 2026. Quote: \"Clinical Conductor by Advarra is the CTMS growing research sites and networks count on to scale their footprint and efficiently manage clinical research operations and financials.\" Also: \"Reach prospective participants through text, email, and phone communications to support patient screening and enrollment across studies.\" And: \"CCText is the only CTMS-embedded, two-way text messaging solution designed to meet the centralized oversight needs of health systems, hospitals, site networks, and individual sites engaged in clinical research.\" (vendor claim). Enterprise integrations listed: eIRB (via OnCore API), CRPC Billing Grid (EMR), Demographics (EMR), Subject/Protocol Information (EMR), general ledger, Clinical Conductor Analytics, Advarra Payments.",
-    },
-    {
-      id: "advarra-oncore",
-      title: "OnCore Clinical Trial Management System (CTMS)",
-      publisher: "Advarra",
-      url: "https://www.advarra.com/solutions/sites/ctms/oncore/",
-      year: "2026",
-      note: "Vendor product page, accessed September 2026. Quote: \"OnCore typically addresses the needs of academic medical centers and cancer centers, as well as some health systems, conducting fifty to 500+ active trials.\" Also: \"OnCore also provides an API to interface with your applications, including your eIRB system.\" And: \"Connect subject, protocol, and billing data through deep EMR integration with widely used EMR systems, including Epic and Cerner.\"",
+      note: "Vendor product page, re-checked October 6, 2026. Quote: \"Clinical Conductor by Advarra is the CTMS growing research sites and networks count on to scale their footprint and efficiently manage clinical research operations and financials.\" Also: \"Reach prospective participants through text, email, and phone communications to support patient screening and enrollment across studies.\" And: \"CCText is the only CTMS-embedded, two-way text messaging solution designed to meet the centralized oversight needs of health systems, hospitals, site networks, and individual sites engaged in clinical research.\" (vendor claim). Enterprise integrations listed: eIRB (via OnCore API), CRPC Billing Grid (EMR), Demographics (EMR), Subject/Protocol Information (EMR), general ledger, Clinical Conductor Analytics, Advarra Payments.",
     },
     {
       id: "softwareone-cc",
@@ -265,7 +245,7 @@ const page: SeoPage = {
       publisher: "SoftwareOne Marketplace (Advarra vendor listing)",
       url: "https://platform.softwareone.com/product/clinical-conductor/PCP-3653-6205",
       year: "2026",
-      note: "Quote: \"Integrate with Advarra eReg or eSource + EDC, or use Clinical Conductor's API to connect with other platforms throughout your organization.\" Also: \"Use patient recruitment and enrollment tools to optimize your recruitment tasks, track progress in detail, and reach more participants in less time.\"",
+      note: "Advarra vendor listing, re-checked October 6, 2026. Quote: \"Clinical Conductor is a scalable CTMS that optimizes financial, regulatory, and operational efficiency for research sites, site networks, hospitals, and health systems.\" Also: \"Integrate with Advarra eReg or eSource + EDC, or use Clinical Conductor's API to connect with other platforms throughout your organization.\" Also: \"Use patient recruitment and enrollment tools to optimize your recruitment tasks, track progress in detail, and reach more participants in less time.\"",
     },
     {
       id: "devana-2022",
@@ -273,15 +253,7 @@ const page: SeoPage = {
       publisher: "PRWeb (Devana Solutions)",
       url: "https://www.prweb.com/releases/devana-solutions-connects-research-operations-and-business-intelligence-at-scale-with-clinical-conductor-integration-837428512.html",
       year: "2022",
-      note: "Press release, March 10, 2022. Quote: \"The Devana - Advarra integration is a dynamic, bi-directional data and process flow between Devana's IGNITE and PROPEL products, and Advarra's industry-leading Clinical Conductor CTMS.\" Also: \"When the leadership at highly-valued client-partners, Javara Research and Velocity Clinical Research, encouraged an API-integration with Advarra's Clinical Conductor CTMS to better support their study teams, we were eager to explore it.\"",
-    },
-    {
-      id: "advarra-ignitedata",
-      title: "Advarra and IgniteData Announce Partnership to Simplify Clinical Trial Data Transfer for Research Sites",
-      publisher: "PR Newswire (Advarra)",
-      url: "https://www.prnewswire.com/news-releases/advarra-and-ignitedata-announce-partnership-to-simplify-clinical-trial-data-transfer-for-research-sites-302612178.html",
-      year: "2025",
-      note: "Press release, November 12, 2025. Statement by Scott Uebele, Advarra COO. Quote: \"With 90 of the top 125 academic medical centers, 90% of NCI-Designated Cancer Centers, and over 300 enterprise research sites\" using Advarra's site technology, which the statement says includes OnCore CTMS, Clinical Conductor CTMS, eReg, eSource and EDC. Vendor-reported; the basis of the top 125 ranking is not stated.",
+      note: "Press release, March 10, 2022. Quote: \"The Devana - Advarra integration is a dynamic, bi-directional data and process flow between Devana's IGNITE and PROPEL products, and Advarra's industry-leading Clinical Conductor CTMS.\" Also: \"So, when the leadership at highly-valued client-partners, Javara Research and Velocity Clinical Research, encouraged an API-integration with Advarra's Clinical Conductor CTMS to better support their study teams, we were eager to explore it.\"",
     },
     {
       id: "advarra-integrations-blog",
@@ -289,7 +261,7 @@ const page: SeoPage = {
       publisher: "Advarra",
       url: "https://www.advarra.com/blog/4-key-integrations-for-your-clinical-trial-management-system/",
       year: "2021",
-      note: "Blog post, August 10, 2021, updated February 2025. Quote: \"You can also interface with your EMR to exchange subject enrollment status and protocol information, flagging research participants for clinical and billing workflows.\"",
+      note: "Blog post, August 10, 2021, modified February 11, 2025. Quote: \"You can also interface with your EMR to exchange subject enrollment status and protocol information, flagging research participants for clinical and billing workflows.\"",
     },
     {
       id: "advarra-bio-optronics",
@@ -305,7 +277,15 @@ const page: SeoPage = {
       publisher: "PR Newswire (Advarra)",
       url: "https://www.prnewswire.com/news-releases/advarra-expands-study-collaboration-solution-connecting-leading-clinical-trial-technology-partners-to-simplify-site-access-302637357.html",
       year: "2025",
-      note: "Press release, December 10, 2025. Quote: \"Advarra's expanded partner network unites leading research technologies within a vendor-agnostic, single sign-on (SSO) access point, simplifying how sites connect to the systems they use across studies, including EDC, eConsent, IRT/RTSM, eCOA, payments, and patient engagement.\"",
+      note: "Press release, December 10, 2025. Quote: \"Advarra's expanded partner network unites leading research technologies within a vendor-agnostic, single sign-on (SSO) access point\" covering \"EDC, eConsent, IRT/RTSM, eCOA, payments, and patient engagement.\"",
+    },
+    {
+      id: "advarra-partner-network",
+      title: "Advarra Launches Partner Network to Extend Research Capabilities and Enable Site-Centric Connectivity Across the Industry",
+      publisher: "Advarra",
+      url: "https://www.advarra.com/learn/newsroom/advarra-launches-partner-network/",
+      year: "2022",
+      note: "Press release, May 17, 2022. Quote: \"The API Partner Program allows technology vendors to connect with Advarra's technology platform and is further organized by Silver, Gold, and Platinum Tiers based on level of integration and implementation support.\" Bond is not among the partners named.",
     },
   ],
   related: [
@@ -313,6 +293,7 @@ const page: SeoPage = {
     { label: "For research sites", href: "/for/research-sites", description: "What Bond changes for a single site's coordinators." },
     { label: "Implementation", href: "/implementation", description: "Where the CTMS link sits in the 48-hour plan." },
     { label: "Integrations", href: "/integrations", description: "The EHR and research systems Bond works with, and what each needs." },
+    { label: "Advarra OnCore", href: "/integrations/oncore", description: "How Bond works alongside OnCore at academic medical and cancer centers." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts against each criterion and explains matches." },
   ],

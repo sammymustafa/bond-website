@@ -5,12 +5,12 @@ const page: SeoPage = {
   category: "hub",
   title: "Integrations: EHRs, CTMS and eRegulatory systems",
   description:
-    "How Bond connects to Epic, Oracle Health, MEDITECH, athenahealth and eClinicalWorks via FHIR, and works alongside CRIO, RealTime, Advarra and Veeva SiteVault.",
-  keywords: ["clinical trial recruitment EHR integration", "FHIR clinical trial matching", "CRIO integration"],
+    "How Bond connects to Epic, Oracle Health, MEDITECH, NextGen and other EHRs via FHIR, and works with CRIO, OnCore, Clinical Conductor, RealTime and SiteVault.",
+  keywords: ["clinical trial recruitment EHR integration", "FHIR clinical trial matching", "CRIO integration", "CTMS integration patient recruitment", "OnCore integration"],
   eyebrow: "Integrations",
   h1: "Where Bond connects",
   intro:
-    "Bond reads patient data from the EHR and hands matched, pre-screened patients to the systems your site already runs on. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} EHR connections use FHIR R4 APIs, HL7 interfaces where they exist, or an integration partner. Research systems receive referrals, statuses and documents. Bond is a CRIO Certified Partner; every other page below says plainly what is integrated and what is a workflow handoff.",
+    "Bond reads patient data from the EHR and hands matched, pre-screened patients to the systems your site already runs on. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-product}} EHR connections use FHIR R4 APIs, HL7 interfaces where they exist, or an integration partner. Research systems receive referrals, statuses and documents. Bond is a CRIO Certified Partner; every other page below says plainly what is integrated and what is a workflow handoff.",
   summary: "EHR and research-system integration pages, with what each connection requires.",
   lastUpdated: "2026-10-05",
   sections: [
@@ -22,18 +22,24 @@ const page: SeoPage = {
           type: "p",
           text: "Any certified EHR exposes a FHIR R4 API, which is the default path. Each page lists the data Bond needs, the FHIR resources that carry it, what your IT or vendor team has to approve, and how long that step usually takes inside the [implementation plan](/implementation).",
         },
-        { type: "pageList", category: "integration", exclude: ["/integrations/crio", "/integrations/realtime", "/integrations/advarra-clinical-conductor", "/integrations/veeva-sitevault"] },
+        { type: "pageList", category: "integration", exclude: ["/integrations/crio", "/integrations/realtime", "/integrations/advarra-clinical-conductor", "/integrations/oncore", "/integrations/veeva-sitevault"] },
       ],
     },
     {
       id: "research-systems",
-      heading: "How does Bond fit with CTMS and eRegulatory tools?",
+      heading: "Which CTMS and eRegulatory systems does Bond work with?",
       blocks: [
         {
           type: "p",
-          text: "Bond does not replace your CTMS or regulatory binder. Pre-screened patients, call outcomes and consent records flow into the system of record so nothing is double-entered.",
+          text: "Bond works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} It does not replace your CTMS or regulatory binder. Pre-screened patients, call outcomes and consent records flow into the system of record so nothing is double-entered.",
         },
-        { type: "pageList", category: "integration", exclude: ["/integrations/epic", "/integrations/oracle-cerner", "/integrations/meditech", "/integrations/athenahealth", "/integrations/eclinicalworks"] },
+        {
+          type: "callout",
+          tone: "bond",
+          title: "CRIO: a certified, two-way integration",
+          text: "Bond is a CRIO Certified Partner, its only vendor certification. With CRIO, pre-screened patients go straight into CRIO through its API and their status comes back to Bond. With the other CTMS systems, Bond works through the site's own API access or file exports. See [Bond and CRIO](/integrations/crio).{{cite:bond-site}}",
+        },
+        { type: "pageList", category: "integration", exclude: ["/integrations/epic", "/integrations/oracle-cerner", "/integrations/meditech", "/integrations/athenahealth", "/integrations/eclinicalworks", "/integrations/nextgen", "/integrations/veradigm", "/integrations/oncoemr"] },
       ],
     },
     {

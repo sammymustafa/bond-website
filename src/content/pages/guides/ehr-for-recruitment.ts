@@ -212,7 +212,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "[Identify](/identify), the screening stage of Bond Health's platform, takes this approach. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through [FHIR](/glossary/fhir), HL7 or an aggregator.{{cite:bond-site,bond-product}} Identify reads structured fields, clinical notes, imaging data and other unstructured documents against each criterion, ranks candidates, and shows the chart evidence behind each decision.{{cite:bond-product}} Bond reports over 90 percent matching accuracy and at least 50 percent less chart review.{{cite:bond-site}}",
+          text: "[Identify](/identify), the screening stage of Bond Health's platform, takes this approach. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through [FHIR](/glossary/fhir), HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Identify reads structured fields, clinical notes, imaging data and other unstructured documents against each criterion, ranks candidates, and shows the chart evidence behind each decision.{{cite:bond-product}} Bond reports over 90 percent matching accuracy and at least 50 percent less chart review.{{cite:bond-site}}",
         },
       ],
     },

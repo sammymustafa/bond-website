@@ -79,6 +79,7 @@ export const integrationLinks: NavItem[] = [
   { name: "CRIO", href: "/integrations/crio" },
   { name: "RealTime", href: "/integrations/realtime" },
   { name: "Advarra Clinical Conductor", href: "/integrations/advarra-clinical-conductor" },
+  { name: "Advarra OnCore", href: "/integrations/oncore" },
   { name: "Veeva SiteVault", href: "/integrations/veeva-sitevault" },
 ];
 

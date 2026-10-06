@@ -32,7 +32,7 @@ const REASONS: Record<ReasonKey, string> = {
   evidence:
     "**Evidence behind every match.** Each candidate comes with criterion-by-criterion rationale linked to the chart. Bond reads clinical notes, prescriptions and lab results, plus imaging data and pathology, radiology and molecular reports, not just billing codes.{{cite:bond-site,bond-product}}",
   ehr:
-    "**Every major EHR, live in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs. Its team handles the integration end to end, and Bond is a CRIO Certified Partner. See [implementation](/implementation).{{cite:bond-site,bond-product}}",
+    "**Every major EHR and CTMS, with EHR integration in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs, and works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault. Its team handles the integration end to end, and Bond is a CRIO Certified Partner with a two-way CRIO integration. See [integrations](/integrations).{{cite:bond-site,bond-product}}",
   pricing:
     "**No integration fee, and a price that moves with randomization.** You pay a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient who is randomized. See [pricing](/pricing).{{cite:bond-product}}",
   languages:
@@ -123,6 +123,7 @@ const ANGLES: Record<string, Angle> = {
   "/integrations/veradigm": { audience: "sites on Veradigm", lead: ["ehr", "evidence"] },
   "/integrations/oncoemr": { audience: "oncology practices on OncoEMR", lead: ["evidence", "ehr"] },
   "/integrations/crio": { audience: "sites that run CRIO", lead: ["ehr", "one-platform"] },
+  "/integrations/oncore": { audience: "institutions that run Advarra OnCore", lead: ["ehr", "evidence"] },
   "/integrations/realtime": { audience: "sites that run RealTime", lead: ["ehr", "one-platform"] },
   "/integrations/advarra-clinical-conductor": { audience: "sites that run Advarra Clinical Conductor", lead: ["ehr", "one-platform"] },
   "/integrations/veeva-sitevault": { audience: "sites that run Veeva SiteVault", lead: ["ehr", "one-platform"] },

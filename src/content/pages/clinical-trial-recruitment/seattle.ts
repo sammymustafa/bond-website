@@ -121,7 +121,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Seattle is close to an all-Epic market: UW Medicine, Providence, Kaiser, Seattle Children's, MultiCare, Overlake and EvergreenHealth all appear in Epic's directory.{{cite:epic-endpoints}} A study across several systems can often reuse one FHIR approach, though each system runs its own IT, privacy and research review. Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} See [Epic](/integrations/epic).",
+          text: "Seattle is close to an all-Epic market: UW Medicine, Providence, Kaiser, Seattle Children's, MultiCare, Overlake and EvergreenHealth all appear in Epic's directory.{{cite:epic-endpoints}} A study across several systems can often reuse one FHIR approach, though each system runs its own IT, privacy and research review. Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Epic](/integrations/epic).",
         },
         {
           type: "p",

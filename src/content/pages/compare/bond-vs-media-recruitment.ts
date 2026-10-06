@@ -121,7 +121,7 @@ const page: SeoPage = {
             ],
             [
               "EHR, CTMS and CRIO integration",
-              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator; direct integrations with CTMS, calendars and Google Sheets; CRIO Certified Partner.{{cite:bond-site,bond-product,bond-acrp-talk}}",
+              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator; direct integrations with CTMS, calendars and Google Sheets; CRIO Certified Partner.{{cite:bond-site,bond-product,bond-acrp-talk}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}}",
               "EHR matching product announced in 2016; 2024 partner SEQSTER cites nationwide EHR coverage. Site EHR or CTMS integration: not publicly documented (September 2026).{{cite:antidote-2016,antidote-seqster-2024,antidote-sponsors}}",
               "Not publicly documented (September 2026).{{cite:1nhealth-home}}",
             ],

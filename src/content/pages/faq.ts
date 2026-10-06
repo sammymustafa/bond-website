@@ -82,7 +82,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How does Bond Health connect to EHR data?",
-      a: "Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable).{{cite:bond-product}} Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
+      a: "Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable).{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.{{cite:bond-site}} See [integrations](/integrations).",
     },
     {
       q: "How does Bond Health validate trial eligibility logic?",
@@ -142,7 +142,7 @@ const page: SeoPage = {
     },
     {
       q: "Which EHRs does Bond work with?",
-      a: "Bond connects to all the major EHRs, including [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner), [MEDITECH](/integrations/meditech), [athenahealth](/integrations/athenahealth), [eClinicalWorks](/integrations/eclinicalworks), NextGen, Veradigm and OncoEMR.{{cite:bond-product}} Connections run through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner, and the site's IT team approves each one.{{cite:bond-site}} Certified health IT developers had until December 31, 2022 to deliver standardized FHIR-based APIs to their customers, and ONC reported that more than 95 percent met that deadline.{{cite:onc-cures-milestone}} See [integrations](/integrations).",
+      a: "Bond connects to all the major EHRs, including [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner), [MEDITECH](/integrations/meditech), [athenahealth](/integrations/athenahealth), [eClinicalWorks](/integrations/eclinicalworks), NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Connections run through FHIR R4 APIs, HL7 v2 where applicable, or an integration partner, and the site's IT team approves each one.{{cite:bond-site}} Certified health IT developers had until December 31, 2022 to deliver standardized FHIR-based APIs to their customers, and ONC reported that more than 95 percent met that deadline.{{cite:onc-cures-milestone}} See [integrations](/integrations).",
     },
     {
       q: "Does Bond integrate with CRIO and other CTMS systems?",

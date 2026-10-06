@@ -164,6 +164,7 @@ const jsonLd = {
         "Real-time dashboard and audit trail",
         "EHR integration via FHIR",
         "Connects to every major EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth and eClinicalWorks",
+        "Works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault; CRIO Certified Partner with a two-way CRIO integration",
         "Live in 48 hours with no integration fee",
         "A percentage of each randomization milestone payment, owed only for randomized patients",
         "Voice and SMS/text agents in the patient's language, with live transfer to a coordinator",

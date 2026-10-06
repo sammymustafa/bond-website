@@ -148,7 +148,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each criterion, ranks candidates, and shows the evidence behind each decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}}",
+          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each criterion, ranks candidates, and shows the evidence behind each decision.{{cite:bond-site}} It uses imaging data, clinical notes and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
         },
         {
           type: "steps",

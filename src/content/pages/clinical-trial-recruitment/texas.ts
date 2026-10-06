@@ -104,7 +104,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The nonprofit and academic systems in the table run Epic; HCA is moving to MEDITECH. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} For MEDITECH, eClinicalWorks and other EHRs, Bond uses the same FHIR-based path, and the site arranges API access with its vendor. See [Epic](/integrations/epic), [MEDITECH](/integrations/meditech) and [eClinicalWorks](/integrations/eclinicalworks).",
+          text: "The nonprofit and academic systems in the table run Epic; HCA is moving to MEDITECH. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} For MEDITECH, eClinicalWorks and other EHRs, Bond uses the same FHIR-based path, and the site arranges API access with its vendor. See [Epic](/integrations/epic), [MEDITECH](/integrations/meditech) and [eClinicalWorks](/integrations/eclinicalworks).",
         },
       ],
     },

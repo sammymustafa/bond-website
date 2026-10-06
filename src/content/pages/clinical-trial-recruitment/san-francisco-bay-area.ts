@@ -113,7 +113,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The Bay Area is mostly an Epic market: the academic centers, Kaiser, Sutter and five county and public systems all appear in Epic's directory.{{cite:epic-endpoints}} That makes a multi-system study simpler, though each system still runs its own IT, privacy and research review. Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} See [Epic](/integrations/epic) and [Oracle Health (Cerner)](/integrations/oracle-cerner).",
+          text: "The Bay Area is mostly an Epic market: the academic centers, Kaiser, Sutter and five county and public systems all appear in Epic's directory.{{cite:epic-endpoints}} That makes a multi-system study simpler, though each system still runs its own IT, privacy and research review. Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Epic](/integrations/epic) and [Oracle Health (Cerner)](/integrations/oracle-cerner).",
         },
         {
           type: "p",

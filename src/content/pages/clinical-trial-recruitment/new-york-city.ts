@@ -130,7 +130,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Epic dominates, but Northwell is mid-migration, so confirm whether a given hospital has gone live before planning chart review there. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} See [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner) and [eClinicalWorks](/integrations/eclinicalworks).",
+          text: "Epic dominates, but Northwell is mid-migration, so confirm whether a given hospital has gone live before planning chart review there. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner) and [eClinicalWorks](/integrations/eclinicalworks).",
         },
         {
           type: "p",

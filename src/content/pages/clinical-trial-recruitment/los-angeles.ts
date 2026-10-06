@@ -124,7 +124,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Los Angeles splits between Epic and Oracle Health. UCLA, Cedars-Sinai, Kaiser and City of Hope appear in Epic's directory, while Keck Medicine of USC, CHLA and the county system appear in Oracle's.{{cite:epic-endpoints,oracle-endpoints}} A study that draws on several of these systems may need both. Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} See [Epic](/integrations/epic) and [Oracle Health (Cerner)](/integrations/oracle-cerner).",
+          text: "Los Angeles splits between Epic and Oracle Health. UCLA, Cedars-Sinai, Kaiser and City of Hope appear in Epic's directory, while Keck Medicine of USC, CHLA and the county system appear in Oracle's.{{cite:epic-endpoints,oracle-endpoints}} A study that draws on several of these systems may need both. Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Epic](/integrations/epic) and [Oracle Health (Cerner)](/integrations/oracle-cerner).",
         },
         {
           type: "p",

@@ -56,7 +56,7 @@ const page: SeoPage = {
           items: [
             {
               title: "Identify",
-              text: "Bond reads structured and unstructured records against the study's inclusion and exclusion criteria, ranks candidates and shows the record evidence behind each criterion. It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR. See [Identify](/identify).{{cite:bond-site,bond-product}}",
+              text: "Bond reads structured and unstructured records against the study's inclusion and exclusion criteria, ranks candidates and shows the record evidence behind each criterion. It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Identify](/identify).{{cite:bond-site,bond-product}}",
             },
             {
               title: "Engage",

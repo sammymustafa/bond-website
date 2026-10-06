@@ -125,7 +125,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "A listing shows the system publishes patient-access FHIR endpoints on that vendor's platform, not that a research interface exists, so confirm the route with IT. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} A site changing EHRs, as IU Health is, should plan screening around the cutover. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
+          text: "A listing shows the system publishes patient-access FHIR endpoints on that vendor's platform, not that a research interface exists, so confirm the route with IT. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} A site changing EHRs, as IU Health is, should plan screening around the cutover. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
         },
       ],
     },

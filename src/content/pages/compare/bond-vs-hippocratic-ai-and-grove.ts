@@ -49,7 +49,7 @@ const page: SeoPage = {
             "**Every match shows its evidence.** Coordinators review ranked matches with the note, lab or medication behind each criterion decision, and Bond reports 50%+ less chart review and fewer screen failures.{{cite:bond-site}}",
             "**Calls start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}}",
             "**One platform from chart to booked visit, and beyond.** EHR screening, outreach, scheduling and consent support run in one workflow, with no data silos or manual handoffs from first match to booked visit and signed consent.{{cite:bond-site}} After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-            "**Connected to the systems sites run.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7, and is a CRIO Certified Partner.{{cite:bond-site,bond-product}}",
+            "**Connected to the systems sites run.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7, and is a CRIO Certified Partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}}",
             "**No integration fee.** Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
@@ -111,7 +111,7 @@ const page: SeoPage = {
             ],
             [
               "Integrations",
-              "FHIR and HL7 to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, or through an aggregator; CRIO Certified Partner.{{cite:bond-site,bond-product}} Direct integrations with CTMS and calendars.{{cite:bond-acrp-talk}}",
+              "FHIR and HL7 to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, or through an aggregator; CRIO Certified Partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} Direct integrations with CTMS and calendars.{{cite:bond-acrp-talk}}",
               "Agents pull the target population from an EHR or CRM and write outcomes back; the integration is mapped during scoping. Named EHR or CTMS vendors: not publicly documented (September 2026).{{cite:hippo-agents-call}}",
             ],
             [

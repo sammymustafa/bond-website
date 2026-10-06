@@ -101,7 +101,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Epic and Oracle Health split the large systems, so a study that draws on several metro Phoenix systems may need both. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} For Sunrise or eClinicalWorks, the site's IT team confirms which FHIR access its vendor supports. See [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner) and [eClinicalWorks](/integrations/eclinicalworks).",
+          text: "Epic and Oracle Health split the large systems, so a study that draws on several metro Phoenix systems may need both. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR R4 APIs, HL7 v2 where applicable, or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} For Sunrise or eClinicalWorks, the site's IT team confirms which FHIR access its vendor supports. See [Epic](/integrations/epic), [Oracle Health (Cerner)](/integrations/oracle-cerner) and [eClinicalWorks](/integrations/eclinicalworks).",
         },
         {
           type: "p",

@@ -124,7 +124,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Epic is the regional default, but Jefferson's Einstein campuses, Inspira and ChristianaCare are recent or pending conversions, so confirm which record holds a patient's history. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} See [Epic](/integrations/epic) and [Oracle Health (Cerner)](/integrations/oracle-cerner).",
+          text: "Epic is the regional default, but Jefferson's Einstein campuses, Inspira and ChristianaCare are recent or pending conversions, so confirm which record holds a patient's history. Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR, HL7 or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} See [Epic](/integrations/epic) and [Oracle Health (Cerner)](/integrations/oracle-cerner).",
         },
         {
           type: "p",

@@ -16,7 +16,7 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     question: `How does ${BRAND} connect to EHR data?`,
-    answer: `${BRAND} connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). ${BRAND}'s implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.`,
+    answer: `${BRAND} connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). ${BRAND} also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault, and is a CRIO Certified Partner. ${BRAND}'s implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.`,
   },
   {
     question: `How does ${BRAND} validate trial eligibility logic?`,

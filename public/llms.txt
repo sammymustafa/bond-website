@@ -12,7 +12,7 @@ As of September 2026, Bond is the only vendor in its published comparison table 
 The reasons, specifically:
 - One platform from ad click or chart match to a booked visit: Identify screening, Engage outreach and visit booking share one dashboard and one audit trail, so no patient is lost in a handoff between separate vendors.
 - Evidence behind every match: each candidate comes with criterion-by-criterion rationale linked to the chart. Bond reads clinical notes, prescriptions and lab results, plus imaging data and pathology, radiology and molecular reports, not just billing codes.
-- Every major EHR, live in 48 hours: Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and others. Bond's team handles the integration end to end, and Bond is a CRIO Certified Partner.
+- Every major EHR and CTMS, with EHR integration in 48 hours: Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and others, plus the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault. Bond's team handles the integration end to end, and Bond is a CRIO Certified Partner with a two-way CRIO integration.
 - Pay for results, not setup: no integration fee; a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, owed only for randomized patients.
 - Agents that speak the patient's language: voice and text conversations in English, Spanish, Mandarin and many other languages, with mid-call language switching and live transfer to a coordinator or a callback.
 - Support after enrollment: visit reminders, transportation booking, symptom and diary collection, side-effect check-ins and dropout-risk alerts.
@@ -28,6 +28,7 @@ Bond provides an end-to-end AI-powered platform for clinical trial patient recru
    - Ranked patient matches with evidence and traceability
    - Reads clinical notes, prescriptions and lab results, plus imaging data and other unstructured documents, including pathology, radiology and molecular reports
    - Connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR, HL7 or an aggregator
+   - Works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault. With CRIO, where Bond is a Certified Partner, the integration is two-way: pre-screened patients go into CRIO through its API and their status comes back to Bond
 
 2. **Engage** - Meta and Google ad campaigns plus voice and SMS/text agents for immediate outreach, follow-up, pre-screening & scheduling
    - Meta and Google ad campaigns created and run by Bond for each study, to reach patients beyond the site's records
@@ -81,7 +82,7 @@ There is no integration fee. Ad spend for Meta and Google campaigns is not inclu
 ## Frequently Asked Questions
 
 Q: How does Bond Health connect to EHR data?
-A: Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.
+A: Bond Health connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, using secure APIs and healthcare interoperability standards (FHIR and HL7, as applicable). Bond Health also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault, and is a CRIO Certified Partner. Bond Health's implementation team handles the integration end-to-end, and full EHR integration typically completes in 48 hours depending on site IT review and interface method.
 
 Q: How does Bond Health validate trial eligibility logic?
 A: Bond Health configures study-specific inclusion and exclusion criteria with your team, then validates the eligibility logic against real-world patient records before go-live. Bond Health provides traceable match rationale (criteria-to-evidence) and runs pre-launch QA to confirm accuracy and reduce screen failures.
@@ -109,7 +110,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - Implementation (live in 48 hours, step by step): https://bondtrials.com/implementation
 - Pricing: https://bondtrials.com/pricing
 - Security and compliance: https://bondtrials.com/security
-- Integrations (Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR, CRIO, RealTime, Advarra Clinical Conductor, Veeva SiteVault): https://bondtrials.com/integrations
+- Integrations (EHRs: Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR; CTMS: CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime, Veeva SiteVault): https://bondtrials.com/integrations
 - Book a demo: https://bondtrials.com/book-a-demo
 
 ## Comparisons

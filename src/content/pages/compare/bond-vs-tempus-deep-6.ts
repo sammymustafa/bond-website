@@ -126,7 +126,7 @@ const page: SeoPage = {
             ],
             [
               "Integrations",
-              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator. [CRIO](/integrations/crio) Certified Partner. Direct integrations with CTMS and calendars.{{cite:bond-site,bond-product,bond-acrp-talk}}",
+              "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} [CRIO](/integrations/crio) Certified Partner. Direct integrations with CTMS and calendars.{{cite:bond-site,bond-product,bond-acrp-talk}}",
               "Tempus connects to a provider's EHR, data warehouse or a third-party data provider, using near real-time HL7 and FHIR connections and batch data exchange (2026). Deep 6 AI integrates with the health system's EMR (2023) and can bring in genomics, cancer registry and CTMS data (2024).{{cite:tempus-10k-2025,deep6-ttuhsc-2023,osu-aaci-2024}}",
             ],
             [

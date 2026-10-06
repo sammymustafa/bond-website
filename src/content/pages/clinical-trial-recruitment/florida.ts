@@ -104,7 +104,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "What this means for integration",
-          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an integration partner.{{cite:bond-site,bond-product}} For MEDITECH and other EHRs, the path is the EHR's FHIR API, with access the site or health system provides.{{cite:bond-site}} See [Epic](/integrations/epic), [Oracle Health](/integrations/oracle-cerner) and [MEDITECH](/integrations/meditech). Practices on a Community Connect instance should ask the host system who approves outside access.",
+          text: "Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an integration partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} For MEDITECH and other EHRs, the path is the EHR's FHIR API, with access the site or health system provides.{{cite:bond-site}} See [Epic](/integrations/epic), [Oracle Health](/integrations/oracle-cerner) and [MEDITECH](/integrations/meditech). Practices on a Community Connect instance should ask the host system who approves outside access.",
         },
       ],
     },

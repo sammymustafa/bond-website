@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "Integration",
   h1: "Connecting Bond to NextGen Healthcare",
   intro:
-    "Bond Health connects to NextGen Enterprise and NextGen Office through NextGen's certified FHIR R4 APIs, screens a practice's patients against a study's criteria, and hands pre-screened patients to its coordinators.{{cite:bond-site}} Below: the FHIR resources involved, which NextGen API program applies to your product, what your NextGen administrator approves, the timeline, and what is not integrated today.",
+    "Bond Health connects to NextGen Enterprise and NextGen Office through NextGen's certified FHIR R4 APIs, screens a practice's patients against a study's criteria, and hands pre-screened patients to its coordinators.{{cite:bond-site,bond-product}} Below: the FHIR resources involved, which NextGen API program applies to your product, what your NextGen administrator approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, NextGen API programs and fees, practice approvals and timeline for connecting Bond at a NextGen Enterprise or NextGen Office practice.",
   lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
@@ -219,7 +219,7 @@ const page: SeoPage = {
             "**Running inside NextGen.** Bond does not run as an embedded app in the NextGen screen; coordinators review matches in Bond.",
             "**The NextGen schedule.** Bond books screening visits straight into the site's calendar, not NextGen scheduling.{{cite:bond-site}}",
             "**Portal messaging.** Bond does not message patients through the NextGen patient portal. Outreach is by voice and text through [Engage](/engage).",
-            "**Proprietary Enterprise APIs.** Bond's standard path is FHIR R4; an HL7 v2 feed or an aggregator is an option where a practice already has one.{{cite:bond-site}}",
+            "**Proprietary Enterprise APIs.** Bond connects to NextGen through its FHIR APIs, not NextGen's proprietary Enterprise APIs.{{cite:bond-product}}",
           ],
         },
         {
@@ -247,8 +247,8 @@ const page: SeoPage = {
       a: "No, the steps are the same. NextGen says it serves 300+ FQHCs and community health centers.{{cite:nextgen-about}} See [FQHCs and community sites](/for/fqhcs-and-community-sites).",
     },
     {
-      q: "Can we use an existing HL7 interface instead of FHIR?",
-      a: "Yes. FHIR R4 is Bond's standard path, but Bond also connects through an HL7 v2 feed or an aggregator where a practice already has one.{{cite:bond-site}}",
+      q: "Does Bond use FHIR or an HL7 interface with NextGen?",
+      a: "FHIR. Bond connects to NextGen Enterprise and NextGen Office through NextGen's certified FHIR R4 APIs.{{cite:bond-product}}",
     },
   ],
   sources: [
