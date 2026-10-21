@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Clinical Conductor is the CTMS Advarra sells to growing research sites and site networks.{{cite:advarra-cc}} Bond Health works alongside it: it finds and pre-screens candidates from the EHR, sends referrals to Clinical Conductor by API or file export, and reads enrollment status back. Institutions on Advarra OnCore: see [Bond and OnCore](/integrations/oncore).",
   summary: "How referrals, pre-screen outcomes and enrollment status move between Bond and Advarra Clinical Conductor.",
   lastUpdated: "2026-10-06",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "what-is-clinical-conductor",
@@ -189,7 +189,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your CTMS setup. We will map the handoff with your CTMS contact.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Beyond the endoscopy or biopsy, protocols add prior-therapy and safety rules, and many patients fail screening. In 17 phase 2 and 3 IBD trials run between 2012 and 2021, mean screen failure per trial was 43% in ulcerative colitis and 53% in Crohn's disease; published estimates for MASH trials are around 70% to 80%.{{cite:uzzan-2025,fichez-2025}}",
   summary: "How Mayo, SES-CD, biopsy and prior-therapy criteria map to the chart in IBD and MASH trials, and how Bond screens for them.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
       id: "how-gi-eligibility-works",
@@ -210,7 +210,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one IBD or MASH protocol and we will map its endoscopy, histology and prior-therapy criteria to your chart.",
           secondaryLabel: "Reduce screen failure",
           secondaryHref: "/guides/reduce-screen-failure",

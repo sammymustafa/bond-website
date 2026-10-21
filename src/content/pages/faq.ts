@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Thirty answers on product, data, IRB, patients' rights, AI disclosure, pricing, implementation and security.",
   lastUpdated: "2026-10-05",
   showLastUpdated: true,
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "what-this-covers",
@@ -71,7 +71,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol. The call can cover your EHR, your IRB's process and the criteria that are hardest to screen.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",
@@ -182,7 +182,7 @@ const page: SeoPage = {
     },
     {
       q: "How is Bond priced?",
-      a: "Pricing is custom and has two parts: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient. There is no integration fee.{{cite:bond-site}} The per-screened-patient fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. See [pricing](/pricing), or [book a demo](/book-a-demo) for a quote.",
+      a: "Pricing is custom and has two parts: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient. There is no integration fee.{{cite:bond-site}} The per-screened-patient fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. See [pricing](/pricing), or [book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true) for a quote.",
     },
     {
       q: "What is included in every engagement?",

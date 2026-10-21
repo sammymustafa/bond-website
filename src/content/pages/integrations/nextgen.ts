@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health connects to NextGen Enterprise and NextGen Office through NextGen's certified FHIR R4 APIs, screens a practice's patients against a study's criteria, and hands pre-screened patients to its coordinators.{{cite:bond-site,bond-product}} Below: the FHIR resources involved, which NextGen API program applies to your product, what your NextGen administrator approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, NextGen API programs and fees, practice approvals and timeline for connecting Bond at a NextGen Enterprise or NextGen Office practice.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "who-uses-nextgen",
@@ -225,7 +225,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol, your NextGen product and version, and the name of your NextGen administrator. We will map approvals and dates to your calendar.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

@@ -18,7 +18,7 @@ const page: SeoPage = {
     "Most of the evidence an oncology protocol screens on sits in pathology, molecular and imaging reports and in clinic notes, not in coded fields. In a pooled analysis of 13 studies of cancer patients, 21.5% were ineligible for a trial open at their institution, and 8.1% enrolled.{{cite:unger-2019}}",
   summary: "How oncology criteria map to the chart, what drives screen failure, and how Bond screens for it.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
       id: "how-oncology-eligibility-works",
@@ -211,7 +211,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one oncology protocol and we will walk through how its hardest criteria map to your chart.",
           secondaryLabel: "Reduce screen failure",
           secondaryHref: "/guides/reduce-screen-failure",

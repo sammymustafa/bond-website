@@ -19,7 +19,7 @@ const page: SeoPage = {
     "OnCore is the enterprise CTMS Advarra sells to academic medical centers, cancer centers and some health systems.{{cite:advarra-oncore}} Bond Health works alongside it. Bond screens the EHR, pre-screens likely matches by voice and text, books the screening visit and hands each referral to the research team. OnCore stays the system of record from consent onward. Bond is not an Advarra partner: it connects through the institution's own API access or file exports.",
   summary: "How Bond's EHR screening and outreach hand referrals to research teams at OnCore institutions, and what stays in OnCore.",
   lastUpdated: "2026-10-06",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "what-is-oncore",
@@ -252,7 +252,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your CTMS office contact. We will map the handoff to your OnCore SOP.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

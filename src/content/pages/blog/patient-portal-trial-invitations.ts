@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Published response and enrollment rates for patient portal trial invitations, portal vs email trials, equity gaps and tactics that help.",
   lastUpdated: "2026-11-11",
   blog: { date: "2026-11-11", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "portal-reach",
@@ -126,7 +126,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how portal invitations, calls and texts can work together for one of your studies.",
           secondaryLabel: "Read the IRB and HIPAA guide",
           secondaryHref: "/guides/irb-hipaa-patient-outreach",

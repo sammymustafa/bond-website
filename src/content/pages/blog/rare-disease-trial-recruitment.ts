@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "Registries, advocacy groups, ads and EHR search for rare disease trials: what the evidence shows and a plan for sites.",
   lastUpdated: "2026-12-07",
   blog: { date: "2026-12-07", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
       id: "why-rare-trials-struggle",
@@ -160,7 +160,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a rare disease protocol. We will show how Bond searches notes, reports and codes for it and follows up with every lead.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

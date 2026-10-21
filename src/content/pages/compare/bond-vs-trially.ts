@@ -24,7 +24,7 @@ const page: SeoPage = {
   summary:
     "Why Bond is better than Trially: one workflow from chart or ad click to a booked visit, chart-aware agents, consent support and no integration fee.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-bond",
@@ -234,7 +234,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol. We will show how Bond handles its hardest criteria and the evidence behind each decision.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

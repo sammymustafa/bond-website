@@ -146,9 +146,9 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                   <div className="rounded-2xl border border-gray-100 bg-gray-50 p-4">
                     <p className="text-sm font-semibold text-gray-900">See Bond on your own criteria</p>
                     <p className="mt-1 text-xs text-gray-600">A 15-minute demo with the Bond team.</p>
-                    <Link href={demoHref} className="btn-primary mt-3 w-full justify-center text-sm">
+                    <a href={demoHref} target="_blank" rel="noopener noreferrer" className="btn-primary mt-3 w-full justify-center text-sm">
                       Book a demo
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -220,7 +220,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
               <h2 className="heading-sm mb-5">Related pages</h2>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {page.related.map((r) => (
-                  <Link
+                  <SmartLink
                     key={r.href}
                     href={r.href}
                     className="group rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:border-bond-primary/30 hover:shadow-md"
@@ -228,9 +228,9 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                     <p className="font-semibold text-gray-900 group-hover:text-bond-primary">{r.label}</p>
                     {r.description && <p className="mt-1 text-sm text-gray-600">{r.description}</p>}
                     <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-bond-primary">
-                      Read <ArrowRight className="h-3.5 w-3.5" />
+                      {r.href.startsWith("http") ? "Open" : "Read"} <ArrowRight className="h-3.5 w-3.5" />
                     </span>
-                  </Link>
+                  </SmartLink>
                 ))}
               </div>
             </section>

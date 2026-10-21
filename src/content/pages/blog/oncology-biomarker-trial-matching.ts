@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "Where patients drop out between NGS testing and a genomically matched trial, and what sites can do at each step.",
   lastUpdated: "2026-11-20",
   blog: { date: "2026-11-20", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Oncology trial recruitment", secondaryHref: "/oncology" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Oncology trial recruitment", secondaryHref: "/oncology" },
   sections: [
     {
       id: "matched-trial-funnel",
@@ -164,7 +164,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a biomarker-selected protocol. We will show how Bond reads your molecular reports against it.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

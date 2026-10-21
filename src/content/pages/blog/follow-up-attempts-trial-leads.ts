@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Evidence on contact attempts, channels and timing for trial leads, and a follow-up cadence to adapt and measure.",
   lastUpdated: "2026-10-19",
   blog: { date: "2026-10-19", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "attempt-evidence",
@@ -135,7 +135,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond's agents follow up with every lead by call and text, pre-screen them and book visits.",
           secondaryLabel: "Patient outreach SMS templates",
           secondaryHref: "/templates/patient-outreach-sms-templates",

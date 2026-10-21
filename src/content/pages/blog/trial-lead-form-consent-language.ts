@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "TCPA written consent elements, carrier opt-in expectations and consent records for trial ad lead forms, as of October 2026.",
   lastUpdated: "2026-11-16",
   blog: { date: "2026-11-16", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read the TCPA guide", secondaryHref: "/blog/tcpa-ai-outreach-2026" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read the TCPA guide", secondaryHref: "/blog/tcpa-ai-outreach-2026" },
   sections: [
     {
       id: "which-standard",
@@ -134,7 +134,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond contacts each consented lead immediately, discloses AI use and routes opt-outs.",
           secondaryLabel: "SMS templates with opt-out wording",
           secondaryHref: "/templates/patient-outreach-sms-templates",

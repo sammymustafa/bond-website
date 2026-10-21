@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "Female enrollment by therapeutic area, how it compares with disease burden, what drives the gaps and what sites and sponsors can change.",
   lastUpdated: "2026-12-18",
   blog: { date: "2026-12-18", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
   sections: [
     {
       id: "by-therapeutic-area",

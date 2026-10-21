@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Where trial leads drop out between the first inquiry and the screening visit, with the published numbers and a fix for each step.",
   lastUpdated: "2026-11-09",
   blog: { date: "2026-11-09", author: "Rishabh Goel", readingMinutes: 6 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "where-it-leaks",
@@ -143,7 +143,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring the lead counts from one active study and we will map where your funnel loses patients.",
           secondaryLabel: "For research sites",
           secondaryHref: "/for/research-sites",

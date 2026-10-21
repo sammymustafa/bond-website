@@ -22,7 +22,7 @@ const page: SeoPage = {
     "Manual pre-screening means coordinators, research nurses or clinicians reading each chart against a study's criteria.{{cite:parikh-2026,penberthy-2012}} Bond Health reads the site's EHR, including clinical notes, against each study's criteria, ranks the matches with the chart evidence behind them, then contacts, pre-screens and schedules patients by voice and text and supports informed consent.{{cite:bond-site}} For any site with more charts than coordinator hours, that makes Bond the stronger choice: coordinators keep the final eligibility call and review the cited evidence instead of reading every chart.",
   summary: "Why sites move trial pre-screening from manual chart review to Bond: coverage, evidence for every criterion, coordinator time and cost.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-bond",
@@ -234,7 +234,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and we will walk through how Bond would screen its hardest criteria.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

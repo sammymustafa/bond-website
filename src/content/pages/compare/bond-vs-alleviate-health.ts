@@ -24,7 +24,7 @@ const page: SeoPage = {
   summary:
     "Why Bond is better than Alleviate Health: EHR identification, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-bond",
@@ -175,7 +175,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and a lead list. We will show how Bond screens the chart, works the list and supports consent, with the evidence behind every match.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

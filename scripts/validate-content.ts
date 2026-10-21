@@ -28,9 +28,10 @@ const WARN = process.argv.includes("--warn");
 const errors: string[] = [];
 const warnings: string[] = [];
 
-const PRODUCT_PATHS = ["/identify", "/engage", "/consent", "/implementation", "/pricing", "/security", "/book-a-demo"];
+// The demo scheduler (demoHref in src/content/nav.ts) counts as a product link.
+const PRODUCT_PATHS = ["/identify", "/engage", "/consent", "/implementation", "/pricing", "/security", "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"];
 // Routes outside the content registry. Mirrors STATIC_ROUTES in src/content/site.ts.
-const STATIC_ROUTES = ["/", "/careers", "/privacy-policy", "/terms-of-service", "/book-a-demo", "/blog", "/glossary", "/newsletter"];
+const STATIC_ROUTES = ["/", "/careers", "/privacy-policy", "/terms-of-service", "/blog", "/glossary", "/newsletter"];
 // Filled in main(): registry routes in full mode, planned routes in single-file mode.
 const routes = new Set<string>(STATIC_ROUTES);
 // Blog post path -> publish date, so a page cannot link to a post that goes live after it does.

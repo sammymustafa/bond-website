@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "WCG's 2025 site survey, read closely: where recruitment ranks, what sites did about it, and what to measure next.",
   lastUpdated: "2026-10-05",
   blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
   sections: [
     {
       id: "who-answered",
@@ -176,7 +176,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one active protocol. We will show how Bond screens it and what a pilot on your slowest step would measure.",
           secondaryLabel: "Bond for research sites",
           secondaryHref: "/for/research-sites",

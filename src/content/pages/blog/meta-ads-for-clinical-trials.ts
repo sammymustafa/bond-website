@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Targeting limits, ad copy rules, tracking restrictions, IRB review and measurement for Facebook and Instagram trial ads.",
   lastUpdated: "2026-10-12",
   blog: { date: "2026-10-12", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "targeting",
@@ -112,7 +112,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond runs a study's Meta campaign and works every lead through to a booked screening visit.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

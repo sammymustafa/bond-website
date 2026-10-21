@@ -7,7 +7,6 @@ import { SITE_URL } from "@/content/seo";
 // Update the date when you edit one of these pages.
 const HAND_BUILT_UPDATED: Record<string, string> = {
   "/": "2026-10-05",
-  "/book-a-demo": "2026-10-05",
   "/newsletter": "2026-10-05",
   "/careers": "2026-10-05",
   "/privacy-policy": "2026-10-05",
@@ -23,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, lastModified: HAND_BUILT_UPDATED["/"], changeFrequency: "weekly", priority: 1.0 },
-    { url: `${SITE_URL}/book-a-demo`, lastModified: HAND_BUILT_UPDATED["/book-a-demo"], changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/blog`, lastModified: blogUpdated, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/glossary`, lastModified: glossaryUpdated, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/newsletter`, lastModified: HAND_BUILT_UPDATED["/newsletter"], changeFrequency: "monthly", priority: 0.5 },

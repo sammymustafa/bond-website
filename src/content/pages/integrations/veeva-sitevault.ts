@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Veeva SiteVault is the eISF, CTMS and eConsent system many research sites use as their regulatory binder.{{cite:veeva-eisf,veeva-ctms-faq}} Bond Health works at the recruitment step, before a patient becomes a participant, and produces records the binder may need.",
   summary: "Which Bond records go into a SiteVault eISF, under which document types, and what stays manual today.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "what-is-sitevault",
@@ -228,7 +228,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your regulatory lead. We will map Bond's records to your binder.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

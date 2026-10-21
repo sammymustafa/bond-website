@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Before contacting a patient about a study, answer three questions: who may make contact, under which HIPAA provision, and with what IRB-approved words. Automated calls and texts add the TCPA and state AI laws. Not legal advice: confirm your plan with your privacy officer, IRB and counsel.",
   summary: "Who may contact patients, under which HIPAA path, with what IRB approval, and how TCPA and state AI laws apply.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "who-may-contact",
@@ -282,7 +282,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Engage handles AI disclosure, live transfers or human callbacks, and coordinator escalation with your own scripts.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

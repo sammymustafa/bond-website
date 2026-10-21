@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "Enrollment speed, volunteer registries, pre-screen exclusions and outreach cost data from published vaccine trials, with a site plan.",
   lastUpdated: "2026-12-21",
   blog: { date: "2026-12-21", author: "Rishabh Goel", readingMinutes: 6 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Engage works", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Engage works", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-fast",
@@ -175,7 +175,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a vaccine protocol. We will show how its exclusions become pre-screening questions and how leads reach your calendar.",
           secondaryLabel: "How Engage works",
           secondaryHref: "/engage",

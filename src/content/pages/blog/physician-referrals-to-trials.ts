@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Why physicians rarely refer patients to trials, from time and paperwork to distance and trust, and which interventions have measurably increased referrals.",
   lastUpdated: "2027-01-11",
   blog: { date: "2027-01-11", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "For physician groups", secondaryHref: "/for/physician-groups" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "For physician groups", secondaryHref: "/for/physician-groups" },
   sections: [
     {
       id: "offer-rates",
@@ -132,7 +132,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how a referral-light workflow would look for your practice and one of your open studies.",
           secondaryLabel: "For physician groups",
           secondaryHref: "/for/physician-groups",

@@ -20,7 +20,7 @@ const page: SeoPage = {
     "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and books them for screening visits, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
   summary: "How a community or specialty practice runs studies from its own patient panel while protecting clinic time and PI hours.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-it-is-hard",
@@ -207,7 +207,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your EHR administrator's name. We will show how Bond screens against its criteria and which approvals you need.",
           secondaryLabel: "How implementation works",
           secondaryHref: "/implementation",

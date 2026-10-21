@@ -18,7 +18,7 @@ const page: SeoPage = {
     "Bond Health prices every engagement in two parts: a volume-based fee for each screened patient, and a percentage of the randomization milestone payment for each patient who is randomized. There is no integration fee.{{cite:bond-product}} Pricing is custom, and Bond does not publish dollar amounts. The per-screened-patient fee covers EHR integration, implementation and ongoing operation.",
   summary: "How Bond's two-part pricing works, what counts as randomized, and how it compares with other ways to pay for recruitment.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Get custom pricing", href: "/book-a-demo", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
+  heroCta: { label: "Get custom pricing", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
       id: "two-parts",
@@ -232,12 +232,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "[Book a demo](/book-a-demo) and bring one protocol. To scope the per-screened-patient fee, Bond needs to know which EHR each site uses, how many sites and studies are in scope, roughly how many patients will be screened, whether a study will use Meta and Google ad campaigns, and whether you want to start with a pilot that does not need the EHR connection.{{cite:bond-site,bond-product}}",
+          text: "[Book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true) and bring one protocol. To scope the per-screened-patient fee, Bond needs to know which EHR each site uses, how many sites and studies are in scope, roughly how many patients will be screened, whether a study will use Meta and Google ad campaigns, and whether you want to start with a pilot that does not need the EHR connection.{{cite:bond-site,bond-product}}",
         },
         {
           type: "cta",
           label: "Get custom pricing",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol and the name of your EHR. We will walk through what the per-screened-patient fee covers for your sites and how the randomization share is calculated.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",
@@ -379,7 +379,7 @@ const page: SeoPage = {
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "How recruitment tools differ in scope and approach." },
     { label: "Security", href: "/security", description: "The BAA, encryption, access control and audit logging in every engagement." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how matches are explained." },
-    { label: "Book a demo", href: "/book-a-demo", description: "Bring a protocol and get a custom quote." },
+    { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", description: "Bring a protocol and get a custom quote." },
   ],
 };
 

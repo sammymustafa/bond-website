@@ -128,7 +128,7 @@ export default function Hero() {
             {/* CTAs - More prominent */}
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 animate-fade-up stagger-3">
               <a
-                href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+                href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary group"

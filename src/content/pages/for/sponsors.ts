@@ -19,7 +19,7 @@ const page: SeoPage = {
     "A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
   summary: "What a delay day costs, why sites enroll unevenly, and how Bond reports one enrollment funnel across a sponsor's sites.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "cost-of-delay",
@@ -198,7 +198,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol and your site list. We will walk through how its criteria would be configured and what your funnel reports would show.",
           secondaryLabel: "How implementation works",
           secondaryHref: "/implementation",

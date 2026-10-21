@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of September 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}} CRIO is the one CTMS where Bond is a Certified Integration Partner: pre-screened patients go straight into CRIO through its API, and their status comes back to Bond, so coordinators never re-enter a patient.{{cite:crio-partners,crio-recruiting-api}}",
   summary: "How pre-screened patients and statuses move between Bond and CRIO, and what the CRIO Certified Partner badge covers.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "why-crio-is-different",
@@ -224,7 +224,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your CRIO admin. We will walk through study mapping, statuses and visit slots.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",

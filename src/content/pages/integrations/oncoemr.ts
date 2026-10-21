@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health connects to OncoEMR through Flatiron Health's certified FHIR R4 APIs, reads the notes and pathology, radiology and molecular reports that decide oncology eligibility, and hands pre-screened patients to the practice's research staff.{{cite:bond-site,bond-product}} Below: the data and FHIR resources involved, Flatiron's API terms, what the practice approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, Flatiron API terms, practice approvals and timeline for connecting Bond at a community oncology practice on OncoEMR.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Oncology screening", secondaryHref: "/oncology" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Oncology screening", secondaryHref: "/oncology" },
   sections: [
     {
       id: "who-uses-oncoemr",
@@ -201,7 +201,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one oncology protocol and your OncoEMR practice PIN. We will map the registration, approvals and dates to your calendar.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

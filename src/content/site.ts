@@ -55,7 +55,6 @@ export const STATIC_ROUTES = [
   "/careers",
   "/privacy-policy",
   "/terms-of-service",
-  "/book-a-demo",
   "/blog",
   "/glossary",
   "/newsletter",

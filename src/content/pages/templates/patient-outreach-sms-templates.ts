@@ -23,7 +23,7 @@ const page: SeoPage = {
     label: "Download the Word file",
     href: "/downloads/patient-outreach-sms-templates.docx",
     secondaryLabel: "Book a demo",
-    secondaryHref: "/book-a-demo",
+    secondaryHref: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
   },
   sections: [
     {
@@ -371,7 +371,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See Bond's SMS agent send outreach texts, book a visit and escalate to a coordinator.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

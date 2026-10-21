@@ -173,7 +173,7 @@ export function whyBondBlocks(opts: { audience?: string; lead?: ReasonKey[]; com
   if (opts.compact) {
     blocks.push({
       type: "p",
-      text: "See [how Bond compares](/compare) with other recruitment tools, or [book a demo](/book-a-demo) to see it on your own protocol.",
+      text: "See [how Bond compares](/compare) with other recruitment tools, or [book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true) to see it on your own protocol.",
     });
   }
   return blocks;

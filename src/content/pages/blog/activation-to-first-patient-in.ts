@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Benchmarks for activation to first patient in, why the first patient predicts accrual, and a pre-activation checklist.",
   lastUpdated: "2026-11-13",
   blog: { date: "2026-11-13", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
       id: "benchmarks",
@@ -128,7 +128,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a study that is about to activate. We will show what Bond's screening list and outreach would look like on day one.",
           secondaryLabel: "How implementation works",
           secondaryHref: "/implementation",

@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Published dropout rates, why missing data matters, why participants leave, and the retention steps with evidence behind them.",
   lastUpdated: "2026-12-09",
   blog: { date: "2026-12-09", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-common",
@@ -137,7 +137,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how reminders, check-ins and dropout-risk flags work for an enrolled participant.",
           secondaryLabel: "For sponsors",
           secondaryHref: "/for/sponsors",

@@ -48,7 +48,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond also works from exported patient lists and spreadsheets for pilots that start before the EHR connection is approved, and connects to site calendars for scheduling. Ask about your system when you [book a demo](/book-a-demo).",
+          text: "Bond also works from exported patient lists and spreadsheets for pilots that start before the EHR connection is approved, and connects to site calendars for scheduling. Ask about your system when you [book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true).",
         },
       ],
     },

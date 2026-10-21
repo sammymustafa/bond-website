@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What FIB-4, FibroScan and composite scores catch and miss as MASH trial pre-screens, and a sequence sites can run before biopsy.",
   lastUpdated: "2026-11-06",
   blog: { date: "2026-11-06", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "IBD and MASH recruitment", secondaryHref: "/gastroenterology" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "IBD and MASH recruitment", secondaryHref: "/gastroenterology" },
   sections: [
     {
       id: "what-fib4-misses",
@@ -162,7 +162,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a MASH protocol. We will map its non-invasive and histology criteria to your chart.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Screen failure rates by therapeutic area, how sponsors pay for screen fails, the math behind caps, and a negotiation checklist.",
   lastUpdated: "2026-11-30",
   blog: { date: "2026-11-30", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How to reduce screen failure", secondaryHref: "/guides/reduce-screen-failure" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How to reduce screen failure", secondaryHref: "/guides/reduce-screen-failure" },
   sections: [
     {
       id: "how-common",
@@ -150,7 +150,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol with a high screen failure rate. We will show which criteria Bond can check in the record before the visit.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

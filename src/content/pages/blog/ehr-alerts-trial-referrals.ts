@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What clinical trial alerts and best practice advisories did for referrals and enrollment, why clinicians ignore them, and how to design one.",
   lastUpdated: "2026-11-25",
   blog: { date: "2026-11-25", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
+  heroCta: { label: "See it on your protocol", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
       id: "first-studies",
@@ -130,7 +130,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how a match list with evidence compares with the alerts you run today.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

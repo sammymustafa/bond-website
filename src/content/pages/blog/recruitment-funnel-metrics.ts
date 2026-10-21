@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Ten recruitment metrics with definitions, how to calculate them consistently, published benchmarks, and which fix each one points to.",
   lastUpdated: "2027-01-22",
   blog: { date: "2027-01-22", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "For research sites", secondaryHref: "/for/research-sites" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "For research sites", secondaryHref: "/for/research-sites" },
   sections: [
     {
       id: "why-funnel",
@@ -135,7 +135,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a month of lead and visit counts from one study, and we will walk through where your funnel loses patients.",
           secondaryLabel: "For research sites",
           secondaryHref: "/for/research-sites",

@@ -19,7 +19,7 @@ const page: SeoPage = {
     "A site network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
   summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "why-standards-slip",
@@ -208,7 +208,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and a list of your sites and EHRs. We will walk through screening and sketch a network rollout plan.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

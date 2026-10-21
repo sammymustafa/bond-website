@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "The formula for cost per randomized patient, the funnel data behind it, and how to use it to choose channels.",
   lastUpdated: "2026-10-23",
   blog: { date: "2026-10-23", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "what-it-is",
@@ -174,7 +174,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one study's funnel. We will show where Bond's ads, immediate outreach and booking would change cost per randomized patient.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

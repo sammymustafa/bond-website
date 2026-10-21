@@ -23,7 +23,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "Open the Trust Center",
     secondaryHref: TRUST_CENTER,
   },
@@ -296,7 +296,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring your security questionnaire. We will walk your IT and compliance team through the data flow, the BAA and the Trust Center.",
           secondaryLabel: "See how pricing works",
           secondaryHref: "/pricing",

@@ -34,7 +34,7 @@ const page: SeoPage = {
   related: [
     { label: "Therapeutic areas", href: "/therapeutic-areas", description: "How eligibility works in eight areas." },
     { label: "By location", href: "/clinical-trial-recruitment", description: "Recruiting trials and research hubs by state." },
-    { label: "Book a demo", href: "/book-a-demo", description: "See Bond on your own protocol." },
+    { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", description: "See Bond on your own protocol." },
   ],
 };
 

@@ -21,7 +21,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "See it on your protocol",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "How Identify reads the chart",
     secondaryHref: "/identify",
   },
@@ -284,7 +284,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and see how Bond would screen its criteria.",
           secondaryLabel: "How implementation works",
           secondaryHref: "/implementation",

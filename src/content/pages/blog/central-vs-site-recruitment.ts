@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Evidence on central versus site-led recruitment, where central referrals leak, and the handoff rules and metrics for a hybrid model.",
   lastUpdated: "2027-01-13",
   blog: { date: "2027-01-13", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for sponsors", secondaryHref: "/for/sponsors" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Bond for sponsors", secondaryHref: "/for/sponsors" },
   sections: [
     {
       id: "definitions",
@@ -158,7 +158,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond runs ads for each study, contacts every lead immediately and books pre-screened patients into your calendar.",
           secondaryLabel: "Bond vs media recruitment",
           secondaryHref: "/compare/bond-vs-media-recruitment",

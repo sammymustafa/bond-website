@@ -20,7 +20,7 @@ const page: SeoPage = {
     "In 2023, 24.3% of US adults had chronic pain,{{cite:cdc-chronic-pain-2023}} yet in one review of phase 3 and 4 chronic pain trials, 33.8% of discontinued trials that gave a reason cited low accrual or insufficient recruitment.{{cite:jacobsen-2023}} Most pain protocols set a minimum pain score, and many also limit opioid dose, prior procedures and psychiatric history. This page maps those criteria to the chart and shows how Bond screens for them.",
   summary: "How pain scores, opioid limits, prior procedures and psychiatric exclusions map to the chart, and how Bond screens for them.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
       id: "how-pain-eligibility-works",
@@ -194,7 +194,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a pain protocol and we will show how its criteria map to your charts.",
           secondaryLabel: "How Identify works",
           secondaryHref: "/identify",

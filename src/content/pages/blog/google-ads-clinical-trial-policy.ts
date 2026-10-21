@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Google's clinical trial recruitment policy, targeting limits, certification questions and landing page rules, as of October 2026.",
   lastUpdated: "2026-10-28",
   blog: { date: "2026-10-28", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "is-it-allowed",
@@ -128,7 +128,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond builds a study's Google campaign and turns each search lead into a booked visit.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

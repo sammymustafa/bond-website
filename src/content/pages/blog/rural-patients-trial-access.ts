@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "How many Americans are rural, how far they are from trial sites, whether they are asked, and the FDA-backed options that reduce travel.",
   lastUpdated: "2026-11-18",
   blog: { date: "2026-11-18", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-many-rural",

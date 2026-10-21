@@ -21,7 +21,7 @@ const page: SeoPage = {
     "Community health centers serve many of the patients that clinical trials enroll least, yet only about a quarter of centers reported using EHR data for research in 2025.{{cite:hrsa-uds-ehr-2025}} Bond Health finds eligible patients in your EHR, contacts them and supports the consent conversation, so a small research team can offer studies to more of its patients.",
   summary: "How Bond helps FQHCs and community sites find eligible patients, contact them and book them for visits with a small research team.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "why-community-sites",
@@ -239,7 +239,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your EHR's name. We will walk through the criteria and your team's part.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

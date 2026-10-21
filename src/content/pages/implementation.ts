@@ -18,7 +18,7 @@ const page: SeoPage = {
     "A full Bond Health deployment with the EHR connected typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} What can add time is approvals Bond does not control: the BAA, the security review, the EHR connection and, where needed, IRB review of outreach scripts. Below is what Bond does, what your team does, and what exists after each step.",
   summary: "Step-by-step plan for a 48-hour EHR-integrated deployment, with site tasks, Bond tasks and a list-based pilot path.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "step-by-step",
@@ -260,7 +260,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring your protocol and the name of your EHR. We will lay the plan against your calendar and show which steps are yours.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",
@@ -360,7 +360,7 @@ const page: SeoPage = {
     { label: "CRIO integration", href: "/integrations/crio", description: "How referrals and statuses move between Bond and CRIO." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomization milestone payment." },
-    { label: "Book a demo", href: "/book-a-demo", description: "Map the plan to your protocol, EHR and site calendar." },
+    { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", description: "Map the plan to your protocol, EHR and site calendar." },
   ],
 };
 

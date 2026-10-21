@@ -21,7 +21,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "Feasibility questionnaire template",
     secondaryHref: "/templates/feasibility-questionnaire",
   },
@@ -229,7 +229,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol you are evaluating and see how Bond screens records against each criterion and shows the evidence behind every decision.",
           secondaryLabel: "Bond for research sites",
           secondaryHref: "/for/research-sites",

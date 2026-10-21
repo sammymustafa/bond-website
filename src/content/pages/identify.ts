@@ -18,7 +18,7 @@ const page: SeoPage = {
     "Identify is the first stage of Bond Health's recruitment workflow. Bond reads a site's EHR records, from structured fields to clinical notes, imaging data and other unstructured documents, against a study's inclusion and exclusion criteria, ranks the patients most likely to qualify, and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} Coordinators review a ranked, explained list instead of opening charts one at a time.",
   summary: "LLM-based EHR screening that ranks candidates and links every criterion decision to chart evidence.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "what-bond-reads",
@@ -228,7 +228,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol. We will walk through how Bond would approach its hardest criteria and what your coordinators would see.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

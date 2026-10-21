@@ -35,7 +35,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-06",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "See CTMS integrations",
     secondaryHref: "/integrations",
   },
@@ -384,7 +384,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your CTMS administrator. We will show how referrals and statuses would move into your system.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",
