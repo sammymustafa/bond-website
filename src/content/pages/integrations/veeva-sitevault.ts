@@ -207,7 +207,7 @@ const page: SeoPage = {
             "**Agreements first.** The business associate agreement with Bond is signed at kickoff, before any PHI moves.{{cite:bond-site}}",
             "**Coded logs.** Veeva's screening log type lists participants by code, and monitors on the study can view it once final.{{cite:veeva-doctypes}}",
             "**The site decides what is shared.** In SiteVault the site owns its data and chooses which documents to share and with whom.{{cite:veeva-faq}}",
-            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging and penetration testing. See [security](/security).{{cite:bond-site}}",
+            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging and penetration testing. See [security](/security).{{cite:bond-site}}",
           ],
         },
       ],

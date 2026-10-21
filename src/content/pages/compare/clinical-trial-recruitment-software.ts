@@ -246,7 +246,7 @@ const page: SeoPage = {
             },
             {
               title: "Read the paperwork",
-              text: "Ask each vendor for its BAA, security documentation and the IRB status of patient-facing scripts. Bond signs BAAs, is HIPAA compliant and SOC 2 Type I compliant, and its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously by Vanta. See [security](/security).{{cite:bond-site,bond-product,bond-trust-center}}",
+              text: "Ask each vendor for its BAA, security documentation and the IRB status of patient-facing scripts. Bond signs BAAs and is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously by Vanta. See [security](/security).{{cite:bond-site,bond-product,bond-trust-center}}",
             },
           ],
         },
@@ -869,7 +869,7 @@ const page: SeoPage = {
   related: [
     { label: "All comparisons", href: "/compare", description: "One-on-one comparisons of Bond with each type of recruitment tool." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
-    { label: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliance, BAAs, access control and audit logging." },
+    { label: "Security", href: "/security", description: "ISO/IEC 27001 certification, HIPAA and SOC 2 Type I compliance, BAAs, access control and audit logging." },
     { label: "Identify", href: "/identify", description: "How Bond screens structured fields and notes against a protocol." },
     { label: "Engage", href: "/engage", description: "Voice and SMS outreach, pre-screening and scheduling." },
     { label: "Consent", href: "/consent", description: "Plain-language explanations, patient Q&A and staff escalation; the site obtains consent." },

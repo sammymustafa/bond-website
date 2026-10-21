@@ -28,7 +28,7 @@ export const productLinks: NavItem[] = [
   { name: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step" },
   { name: "Integrations", href: "/integrations", description: "EHRs, CTMS and eRegulatory" },
   { name: "Pricing", href: "/pricing", description: "Per screened patient plus a share of each randomization, no integration fee" },
-  { name: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliant" },
+  { name: "Security", href: "/security", description: "ISO 27001 certified, HIPAA and SOC 2 Type I compliant" },
 ];
 
 export const audienceLinks: NavItem[] = [

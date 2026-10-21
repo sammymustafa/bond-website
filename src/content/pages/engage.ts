@@ -170,7 +170,7 @@ const page: SeoPage = {
         { type: "h3", text: "HIPAA" },
         {
           type: "p",
-          text: "Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Bond signs a business associate agreement with the site, encrypts data in transit and at rest, limits access by role and keeps an audit trail.{{cite:bond-site}} HIPAA's minimum necessary standard applies to business associates as well as covered entities.{{cite:ecfr-164-502}} In practice, a script should ask only what pre-screening needs, and a first text should not name a diagnosis, since anyone holding the phone can read it. The [IRB and HIPAA guide for patient outreach](/guides/irb-hipaa-patient-outreach) covers authorizations and waivers, and the [security](/security) page lists Bond's controls.",
+          text: "Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Bond signs a business associate agreement with the site, encrypts data in transit and at rest, limits access by role and keeps an audit trail.{{cite:bond-site}} HIPAA's minimum necessary standard applies to business associates as well as covered entities.{{cite:ecfr-164-502}} In practice, a script should ask only what pre-screening needs, and a first text should not name a diagnosis, since anyone holding the phone can read it. The [IRB and HIPAA guide for patient outreach](/guides/irb-hipaa-patient-outreach) covers authorizations and waivers, and the [security](/security) page lists Bond's controls.",
         },
         {
           type: "callout",

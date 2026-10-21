@@ -52,7 +52,7 @@ const page: SeoPage = {
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Consent support in the same workflow.** EHR screening, patient outreach and consent tracking run in one workflow, with complete visibility from first match to booked visit and signed consent. Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
             "**Support until close-out.** After enrollment, the same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
-            `**Security you can inspect.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} It signs BAAs, supports SSO and audit logging, and publishes a [Trust Center](${TRUST_CENTER}) that lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-site,bond-trust-center}}`,
+            `**Security you can inspect.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} It signs BAAs, supports SSO and audit logging, and publishes a [Trust Center](${TRUST_CENTER}) that lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-site,bond-trust-center}}`,
             "**No integration fee.** Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
@@ -335,7 +335,7 @@ const page: SeoPage = {
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule patients." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
-    { label: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliant, with BAAs, SSO, audit logging and a public Trust Center." },
+    { label: "Security", href: "/security", description: "ISO 27001 certified, HIPAA and SOC 2 Type I compliant, with BAAs, SSO, audit logging and a public Trust Center." },
   ],
 };
 

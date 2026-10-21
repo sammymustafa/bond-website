@@ -187,7 +187,7 @@ const page: SeoPage = {
             },
             {
               title: "Compare the paperwork",
-              text: "BAA, audit logging, data-use terms and who does the IT work. Ask each vendor, Bond included, whether data from your connection is de-identified, retained or licensed to others. Bond signs BAAs, is HIPAA compliant and SOC 2 Type I compliant, and its public Trust Center lists 73 HIPAA Security Rule controls monitored continuously by Vanta ([security](/security)).{{cite:bond-site,bond-product,bond-trust-center}}",
+              text: "BAA, audit logging, data-use terms and who does the IT work. Ask each vendor, Bond included, whether data from your connection is de-identified, retained or licensed to others. Bond signs BAAs and is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its public Trust Center lists 73 HIPAA Security Rule controls monitored continuously by Vanta ([security](/security)).{{cite:bond-site,bond-product,bond-trust-center}}",
             },
           ],
         },

@@ -101,7 +101,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "For EHR screening and outreach tools, that translates into a short list of questions: who can access what, how matches are documented, how the vendor was assessed, and how incidents reach the site. Bond's [Identify](/identify) stage shows criterion-by-criterion evidence for every match, and Bond is HIPAA compliant and SOC 2 Type I compliant, signs BAAs and encrypts data at rest and in transit, with SOC 2 Type II and ISO 27001 audits underway.{{cite:bond-product}} Details are on our [security page](/security).",
+          text: "For EHR screening and outreach tools, that translates into a short list of questions: who can access what, how matches are documented, how the vendor was assessed, and how incidents reach the site. Bond's [Identify](/identify) stage shows criterion-by-criterion evidence for every match, and Bond is HIPAA compliant and SOC 2 Type I compliant, signs BAAs and encrypts data at rest and in transit, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Details are on our [security page](/security).",
         },
       ],
     },
@@ -213,7 +213,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Security and compliance", href: "/security", description: "Bond's HIPAA, SOC 2 and encryption posture." },
+    { label: "Security and compliance", href: "/security", description: "Bond's ISO 27001, HIPAA, SOC 2 and encryption posture." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Who may contact which patients, and with what approval." },
     { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach", description: "Draft paragraphs that describe AI outreach in an IRB application." },
     { label: "Pre-screening", href: "/glossary/pre-screening", description: "What counts as pre-screening and how it is documented." },

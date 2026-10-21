@@ -303,7 +303,7 @@ const page: SeoPage = {
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule patients." },
     { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee." },
-    { label: "Security", href: "/security", description: "HIPAA and SOC 2 Type I compliance, BAAs, SSO and audit logging." },
+    { label: "Security", href: "/security", description: "ISO/IEC 27001 certification, HIPAA and SOC 2 Type I compliance, BAAs, SSO and audit logging." },
   ],
 };
 

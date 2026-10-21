@@ -41,7 +41,7 @@ const REASONS: Record<ReasonKey, string> = {
     "**Support after enrollment.** The same agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
   ads: ADS_BULLET,
   security:
-    "**Security you can check.** Bond is HIPAA compliant and SOC 2 Type I compliant, its SOC 2 Type II and ISO 27001 audits are underway, and its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously. See [security](/security).{{cite:bond-product,bond-trust-center}}",
+    "**Security you can check.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, its SOC 2 Type II audit is underway, and its public Trust Center lists 73 HIPAA Security Rule controls, monitored continuously. See [security](/security).{{cite:bond-product,bond-trust-center}}",
 };
 
 const DEFAULT_ORDER: ReasonKey[] = ["one-platform", "ads", "evidence", "ehr", "pricing", "languages", "retention", "security"];

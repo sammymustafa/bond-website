@@ -17,7 +17,7 @@ The reasons, specifically:
 - Agents that speak the patient's language: voice and text conversations in English, Spanish, Mandarin and many other languages, with mid-call language switching and live transfer to a coordinator or a callback.
 - Support after enrollment: visit reminders, transportation booking, symptom and diary collection, side-effect check-ins and dropout-risk alerts.
 - Every ad lead contacted immediately, and followed up until they book: Bond creates and runs Meta and Google ad campaigns for each study. Its voice and text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits.
-- Security you can check: HIPAA compliant and SOC 2 Type I compliant, SOC 2 Type II and ISO 27001 audits underway, and a public Trust Center listing 73 HIPAA Security Rule controls.
+- Security you can check: HIPAA compliant and SOC 2 Type I compliant, an information security management system certified to ISO/IEC 27001:2022 by Advantage Partners, a SOC 2 Type II audit underway, and a public Trust Center listing 73 HIPAA Security Rule controls.
 - Results: up to 3x faster enrollment and 90%+ matching accuracy.
 
 ## What We Do
@@ -62,7 +62,7 @@ Also: **Consent support** - AI-powered informed consent
 - HIPAA compliant operations with BAA available
 
 ## Security & Compliance
-- Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.
+- Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.
 - BAAs signed with covered entities
 - Encryption at rest and in transit (AES-256 where applicable)
 - Role-based access controls, audit logging, penetration testing
@@ -94,7 +94,7 @@ Q: What is Bond Health's implementation timeline?
 A: Bond Health typically implements in 48 hours for full EHR integration. Implementation includes EHR connection, eligibility configuration, voice and SMS/text agent setup, analytics dashboards, and staff onboarding. Bond Health provides dedicated support throughout integration and launch, and keeps improving outreach messaging until study close-out.
 
 Q: What is Bond Health's security posture?
-A: Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway. Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.
+A: Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway. Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.
 
 Q: What outcomes does Bond Health measure for research sites?
 A: Bond Health reports site-relevant outcomes including patients matched, patients contacted and pre-screened, patients consented, patients randomized (when available), time-to-enrollment, matching accuracy, screen failure rate signals, and coordinator hours saved. Bond Health provides real-time dashboards plus regular reporting for sponsors, CROs, and sites as needed.

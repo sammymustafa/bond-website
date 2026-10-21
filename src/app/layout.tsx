@@ -103,7 +103,7 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, and is HIPAA compliant and SOC 2 Type I compliant.",
+      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, and is HIPAA compliant and SOC 2 Type I compliant, and its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners.",
       slogan: "Enroll the right patients faster.",
       address: {
         "@type": "PostalAddress",
@@ -170,6 +170,7 @@ const jsonLd = {
         "Voice and SMS/text agents in the patient's language, with live transfer to a coordinator",
         "Retention support: visit reminders, transportation booking, symptom and diary collection, dropout-risk alerts",
         "HIPAA compliant and SOC 2 Type I compliant",
+        "Information security management system certified to ISO/IEC 27001:2022 by Advantage Partners",
         "90%+ matching accuracy",
         "Up to 3x faster enrollment",
       ],

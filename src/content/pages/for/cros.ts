@@ -241,7 +241,7 @@ const page: SeoPage = {
     },
     {
       q: "How is patient data handled across sites?",
-      a: "Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Bond signs a business associate agreement with each site and uses encryption, role-based access and audit logging. Its current security posture is in a Vanta-hosted Trust Center.{{cite:bond-site}} See [security](/security).",
+      a: "Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Bond signs a business associate agreement with each site and uses encryption, role-based access and audit logging. Its current security posture is in a Vanta-hosted Trust Center.{{cite:bond-site}} See [security](/security).",
     },
     {
       q: "How does Bond fit with a site's CTMS?",

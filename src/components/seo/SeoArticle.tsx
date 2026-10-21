@@ -18,6 +18,7 @@ import { Blocks } from "./Blocks";
 import ContactButton from "./ContactButton";
 import { renderInline } from "./inline";
 import PartnerStrip from "./PartnerStrip";
+import ComplianceBadges from "@/components/ComplianceBadges";
 import SmartLink from "./SmartLink";
 
 export default function SeoArticle({ page: content }: { page: SeoPage }) {
@@ -97,6 +98,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
             )}
 
             {(page.category === "comparison" || page.path === "/compare") && <PartnerStrip />}
+            {page.path === "/security" && <ComplianceBadges title="Independently audited" className="no-print mt-8" />}
           </div>
         </header>
 

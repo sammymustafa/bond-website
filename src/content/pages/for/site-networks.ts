@@ -185,7 +185,7 @@ const page: SeoPage = {
           type: "checklist",
           items: [
             "**A network owner for the standard.** One person decides how criteria are read and which outreach model each study uses.",
-            "**An IT and security contact for each EHR.** Bond signs a BAA, and data is encrypted in transit and at rest.{{cite:bond-site}} Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} See [security](/security).",
+            "**An IT and security contact for each EHR.** Bond signs a BAA, and data is encrypted in transit and at rest.{{cite:bond-site}} Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} See [security](/security).",
             "**Coordinators for validation.** Staff at each site adjudicate a sample of screening decisions before go-live.",
             "**IRB review of scripts where required.** The [IRB submission language](/templates/irb-submission-language-ai-outreach) template describes how the agents work.",
             "**CTMS access.** For CRIO sites, the site requests API access activation for Bond through CRIO's Partner Directory.{{cite:crio-partners}} Other systems use an API or file export.",

@@ -1,8 +1,8 @@
 "use client";
 
 import { Shield, Lock, FileCheck, Server, CheckCircle, ExternalLink } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import ComplianceBadges from "@/components/ComplianceBadges";
 
 const features = [
   {
@@ -41,8 +41,9 @@ export default function Security() {
             </h2>
             <p className="body-lg mb-8">
               We handle sensitive patient data with the care it deserves. 
-              We sign BAAs and maintain HIPAA compliant operations 
-              at every step.
+              We sign BAAs, maintain HIPAA compliant operations at every step, 
+              and our information security management system is certified to 
+              ISO/IEC 27001:2022 by Advantage Partners.
             </p>
 
             {/* Features */}
@@ -64,29 +65,22 @@ export default function Security() {
           {/* Visual */}
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl border border-gray-100 p-8 md:p-12">
             <div className="text-center">
-              {/* HIPAA Compliance Badge */}
-              <div className="flex items-center justify-center mx-auto mb-6">
-                <Image
-                  src="/images/hipaa-compliant-badge.svg"
-                  alt="HIPAA Compliant"
-                  width={96}
-                  height={96}
-                  className="w-24 h-24"
-                />
-              </div>
+              {/* HIPAA, SOC 2 and ISO/IEC 27001 badges */}
+              <ComplianceBadges className="mb-6 flex justify-center [&_ul]:justify-center" />
 
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                HIPAA Compliant Operations
+                Independently audited
               </h3>
               <p className="text-gray-600 mb-8">
-                We follow strict protocols to ensure all patient health information 
-                is handled securely and in compliance with healthcare regulations.
+                Bond is HIPAA compliant and SOC 2 Type I compliant, and Bond Health&apos;s 
+                information security management system is certified to ISO/IEC 27001:2022 
+                by Advantage Partners.
               </p>
 
               {/* Security Highlights */}
               <div className="space-y-3 text-left max-w-xs mx-auto">
                 {[
-                  "SOC 2 Type I compliant",
+                  "SOC 2 Type I report issued, Type II audit underway",
                   "Encryption at rest and in transit",
                   "BAA available",
                   "Penetration testing",

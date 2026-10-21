@@ -126,7 +126,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "How Bond handles this",
-          text: "Bond is HIPAA compliant, signs business associate agreements and encrypts data at rest and in transit (AES-256 where applicable). It is SOC 2 Type I compliant, with SOC 2 Type II and ISO 27001 audits underway. See [security](/security) for details.{{cite:bond-product}}",
+          text: "Bond is HIPAA compliant, signs business associate agreements and encrypts data at rest and in transit (AES-256 where applicable). It is SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway. See [security](/security) for details.{{cite:bond-product}}",
         },
         {
           type: "cta",
@@ -239,7 +239,7 @@ const page: SeoPage = {
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Who may contact which patients, under which HIPAA path, with what IRB approval." },
     { label: "TCPA rules for AI calls and texts", href: "/blog/tcpa-ai-outreach-2026", description: "Consent, opt-outs and the healthcare exemption for automated outreach." },
     { label: "Patient outreach SMS templates", href: "/templates/patient-outreach-sms-templates", description: "First-contact, reminder and opt-out wording for texts." },
-    { label: "Security at Bond", href: "/security", description: "HIPAA, SOC 2 status, BAAs and encryption." },
+    { label: "Security at Bond", href: "/security", description: "ISO 27001, HIPAA and SOC 2 status, BAAs and encryption." },
   ],
 };
 

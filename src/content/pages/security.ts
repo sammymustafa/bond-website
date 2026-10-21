@@ -1,4 +1,5 @@
 import type { SeoPage } from "../types";
+import { ISO_27001_CERTIFICATE as CERT, iso27001Source } from "../compliance";
 
 const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj";
 
@@ -7,20 +8,21 @@ const page: SeoPage = {
   category: "product",
   title: "HIPAA-compliant trial recruitment AI: security and BAAs",
   description:
-    "How Bond handles PHI when it screens charts and contacts patients: SOC 2 Type I and HIPAA compliance, the BAA, encryption, access control and AI disclosure.",
+    "How Bond handles PHI: an ISO/IEC 27001:2022 certified ISMS, SOC 2 Type I and HIPAA compliance, the BAA, encryption, access control and AI disclosure.",
   keywords: [
     "HIPAA compliant clinical trial recruitment",
     "AI patient recruitment security",
     "business associate agreement AI vendor",
     "PHI handling clinical trial software",
     "clinical trial recruitment BAA",
+    "ISO 27001 clinical trial recruitment vendor",
   ],
   eyebrow: "Security",
   h1: "Security and compliance: how Bond handles PHI",
   intro:
-    "Bond Health reads patient records, calls and texts patients, and helps explain consent forms, so it handles protected health information at every step. Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} This page covers where that PHI goes, the controls around it and the evidence your security reviewer can request.",
+    "Bond Health reads patient records, calls and texts patients, and helps explain consent forms, so it handles protected health information at every step. Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product,bond-iso-27001}} This page covers where that PHI goes, the controls around it and the evidence your security reviewer can request.",
   summary: "Where PHI goes in a Bond deployment, the controls around it, and the evidence your security reviewer can request.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-21",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -28,6 +30,24 @@ const page: SeoPage = {
     secondaryHref: TRUST_CENTER,
   },
   sections: [
+    {
+      id: "certifications",
+      heading: "Which security standards has Bond been independently audited against?",
+      blocks: [
+        {
+          type: "p",
+          text: "Three independent checks stand behind Bond's security program, and your reviewer can confirm each one.",
+        },
+        {
+          type: "ul",
+          items: [
+            `**ISO/IEC 27001:2022.** Bond Health's information security management system (ISMS) is certified to ISO/IEC 27001:2022 by Advantage Partners, certificate ${CERT.number}, issued ${CERT.issued} and valid through ${CERT.expires}, subject to annual surveillance audits. The certified scope covers the assets, technologies and processes for the secure provision of Bond's clinical trial patient recruitment platform, including its web applications, APIs, cloud infrastructure, integrations and supporting business operations. To validate the certificate, contact Advantage Partners at [${CERT.verifyEmail}](mailto:${CERT.verifyEmail}).{{cite:bond-iso-27001}}`,
+            "**SOC 2 Type I.** Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report, and Bond's SOC 2 Type II audit is underway. Customers and prospective customers can request the report from [hello@bondtrials.com](mailto:hello@bondtrials.com).{{cite:bond-product}}",
+            "**HIPAA.** Bond is HIPAA compliant{{cite:bond-product}} and signs a business associate agreement with each site or health system.{{cite:bond-site}} Its [Trust Center](" + TRUST_CENTER + ") lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-trust-center}}",
+          ],
+        },
+      ],
+    },
     {
       id: "data-flow",
       heading: "Where does PHI go in a Bond deployment?",
@@ -171,14 +191,6 @@ const page: SeoPage = {
           ],
           note: "Bond's controls as described on bondtrials.com, which also lists employee security training.{{cite:bond-site}}",
         },
-        { type: "h3", text: "What is Bond's compliance status?" },
-        {
-          type: "ul",
-          items: [
-            "**SOC 2 Type I and HIPAA.** Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}}",
-            "**Trust Center.** Bond's [Trust Center](" + TRUST_CENTER + ") lists 73 HIPAA Security Rule controls, monitored continuously by Vanta.{{cite:bond-trust-center}}",
-          ],
-        },
       ],
     },
     {
@@ -311,7 +323,11 @@ const page: SeoPage = {
     },
     {
       q: "Is Bond SOC 2 compliant?",
-      a: "Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its current posture is in its Vanta-hosted Trust Center, and security questions go to hello@bondtrials.com.{{cite:bond-site}}",
+      a: "Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its current posture is in its Vanta-hosted Trust Center, and security questions go to hello@bondtrials.com.{{cite:bond-site}}",
+    },
+    {
+      q: "Is Bond ISO 27001 certified?",
+      a: `Yes. Bond Health's information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners (certificate ${CERT.number}, issued ${CERT.issued}). The certified scope covers the assets, technologies and processes behind Bond's platform, including its web applications, APIs, cloud infrastructure, integrations and supporting business operations. Advantage Partners validates certificates at ${CERT.verifyEmail}.{{cite:bond-iso-27001}}`,
     },
     {
       q: "Do language model providers see patient data?",
@@ -334,6 +350,7 @@ const page: SeoPage = {
       year: "2026",
       note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
     },
+    iso27001Source,
     {
       id: "bond-trust-center",
       title: "Bond Health Trust Center",

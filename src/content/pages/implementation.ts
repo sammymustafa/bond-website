@@ -127,7 +127,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Your IT team sees the data and API scopes Bond requests before approving them. Once PHI flows, it is encrypted in transit and at rest (AES-256 where applicable), with role-based access, SSO support and audit logging. Bond also runs penetration testing and keeps a [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj) for your reviewer.{{cite:bond-site}} Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} See [security](/security).",
+          text: "Your IT team sees the data and API scopes Bond requests before approving them. Once PHI flows, it is encrypted in transit and at rest (AES-256 where applicable), with role-based access, SSO support and audit logging. Bond also runs penetration testing and keeps a [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj) for your reviewer.{{cite:bond-site}} Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} See [security](/security).",
         },
       ],
     },

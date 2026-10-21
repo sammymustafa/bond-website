@@ -162,7 +162,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}}",
+            "Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}}",
             "A BAA is signed before any PHI moves.{{cite:bond-site}}",
             "Data is encrypted in transit and at rest.{{cite:bond-site}}",
             "Access is role-based, with SSO support.{{cite:bond-site}}",

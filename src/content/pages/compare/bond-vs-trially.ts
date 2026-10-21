@@ -188,7 +188,7 @@ const page: SeoPage = {
         {
           type: "p",
           text:
-            "**Security and compliance.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its public [Trust Center](" +
+            "**Security and compliance.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its public [Trust Center](" +
             TRUST_CENTER +
             ") lists 73 HIPAA Security Rule controls across infrastructure security, organizational security, internal security procedures, and data and privacy, monitored continuously by Vanta. They include encryption of ePHI, access controls, automatic log-off, log-in monitoring, backups, disaster recovery and contingency plans, and a named HIPAA security officer.{{cite:bond-trust-center}} Bond also signs BAAs and runs penetration testing and employee security training; the [security](/security) page has the details.{{cite:bond-site}}",
         },
