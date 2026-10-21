@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Psoriasis, atopic dermatitis and hidradenitis suppurativa trials screen on PASI, EASI or IGA scores, body surface area, prior biologics and washouts. Much of that evidence sits in exam notes rather than coded fields.{{cite:jaad-ehr-2019}} In two real-world cohorts, severity was the most common reason a treated patient would not have qualified.{{cite:alvarenga-2026,psobioteq-2020}} This page maps each criterion to the chart and shows how Bond Health screens for it.",
   summary: "How severity scores, biologic history and washouts map to the chart, and how Bond screens for them.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
       id: "how-dermatology-eligibility-works",
@@ -199,7 +199,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one dermatology protocol and we will walk through how its severity, prior-biologic and washout criteria map to your chart.",
           secondaryLabel: "Reduce screen failure",
           secondaryHref: "/guides/reduce-screen-failure",

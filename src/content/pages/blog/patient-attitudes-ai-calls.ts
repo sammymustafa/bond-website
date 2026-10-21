@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What national surveys and early studies say about patient comfort with AI, disclosure and trust, applied to AI recruitment calls and texts.",
   lastUpdated: "2027-01-08",
   blog: { date: "2027-01-08", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "comfort",
@@ -122,7 +122,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Hear how an AI pre-screening call discloses itself, hands off to a coordinator and books a visit.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

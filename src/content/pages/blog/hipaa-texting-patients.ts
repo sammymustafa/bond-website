@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "HHS guidance on unencrypted messages, patient preference and research contact, applied to texting patients about studies, plus the pending Security Rule changes.",
   lastUpdated: "2026-12-11",
   blog: { date: "2026-12-11", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about security", secondaryHref: "/security" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about security", secondaryHref: "/security" },
   sections: [
     {
       id: "unencrypted-allowed",
@@ -131,7 +131,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See the texting and calling scripts Bond would use for your study, including disclosure, opt-out and escalation to staff.",
           secondaryLabel: "Read the IRB and HIPAA guide",
           secondaryHref: "/guides/irb-hipaa-patient-outreach",

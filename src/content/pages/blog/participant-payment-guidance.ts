@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "FDA and OHRP positions on participant payment, the difference between reimbursement and incentives, what trials of payment found, and tax and SSI basics.",
   lastUpdated: "2027-01-15",
   blog: { date: "2027-01-15", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "IRB and HIPAA guide", secondaryHref: "/guides/irb-hipaa-patient-outreach" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "IRB and HIPAA guide", secondaryHref: "/guides/irb-hipaa-patient-outreach" },
   sections: [
     {
       id: "what-fda-says",

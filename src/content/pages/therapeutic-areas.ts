@@ -25,7 +25,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's screening is not limited to these areas. The pages cover the areas where sites most often ask us how criteria map to the chart. For anything else, [book a demo](/book-a-demo) with a protocol and we will walk through it live, or read how [Identify](/identify) handles criteria in general.",
+          text: "Bond's screening is not limited to these areas. The pages cover the areas where sites most often ask us how criteria map to the chart. For anything else, [book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true) with a protocol and we will walk through it live, or read how [Identify](/identify) handles criteria in general.",
         },
       ],
     },

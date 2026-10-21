@@ -23,7 +23,7 @@ const page: SeoPage = {
     "Tempus AI acquired Deep 6 AI on March 11, 2025, and offers EHR-based trial matching through Deep 6 AI, its TIME oncology trial network, and Next Trials pre-screening for trials already open at a practice.{{cite:tempus-10k-2025,tempus-time-site-2026,tempus-next-trials-2026}} Bond Health reads a site's own EHR, including clinical notes, against each protocol, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent.{{cite:bond-site}} For sites running their own studies in any therapeutic area, Bond covers finding, contacting, scheduling and consent in one product.",
   summary: "How Bond compares with Tempus's Deep 6 AI, TIME and Next Trials, from EHR matching to outreach, booked visits and pricing.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-bond",
@@ -198,7 +198,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol. We will show how Bond handles its hardest criteria and the evidence behind each decision, and plan a head-to-head pilot on your records.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

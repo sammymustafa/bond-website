@@ -22,7 +22,7 @@ const page: SeoPage = {
   summary: "The FCC's AI voice ruling, the 2025 opt-out rules and the healthcare exemption, applied to trial recruitment.",
   lastUpdated: "2026-10-05",
   blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "fcc-ai-voice-ruling",
@@ -139,7 +139,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how AI disclosure, live transfers, human callback requests and coordinator escalation work in an Engage script built for your study.",
           secondaryLabel: "Read the IRB and HIPAA guide",
           secondaryHref: "/guides/irb-hipaa-patient-outreach",

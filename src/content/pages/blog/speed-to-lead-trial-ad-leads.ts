@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What lead-response research and trial data say about how quickly to call a trial ad lead, and the response standard a site should set.",
   lastUpdated: "2026-10-05",
   blog: { date: "2026-10-05", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "lead-response-research",
@@ -128,7 +128,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond's agents call and text new ad leads the moment they arrive, pre-screen them and book visits into your calendar.",
           secondaryLabel: "Pre-screening call script",
           secondaryHref: "/templates/pre-screening-call-script",

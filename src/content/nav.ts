@@ -122,6 +122,7 @@ export const navMenus: NavMenu[] = [
   { label: "Resources", groups: [{ items: resourceLinks }] },
 ];
 
-export const demoHref = "/book-a-demo";
-export const calComHref = "https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true";
+export const calComHref = "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true";
+// Every "Book a demo" button and link opens the Cal.com scheduler directly.
+export const demoHref = calComHref;
 export const trustCenterHref = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj";

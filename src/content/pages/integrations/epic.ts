@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health connects to Epic through Epic's standard FHIR R4 APIs, screens charts against a study's criteria and passes ranked candidates to your coordinators.{{cite:bond-site}} Below: the data Bond requests, what your Epic team approves, and what is not integrated today.",
   summary: "The FHIR resources, Epic approvals, timeline and PHI controls for connecting Bond at an Epic site.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "epic-footprint",
@@ -223,7 +223,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your Epic contact. We will map scopes, approvals and dates to your calendar.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",

@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "How underrepresented adults over 75 are, which criteria and logistics keep them out, which channels reach them, and what to change.",
   lastUpdated: "2027-01-04",
   blog: { date: "2027-01-04", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-underrepresented",

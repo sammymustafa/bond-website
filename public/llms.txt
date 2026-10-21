@@ -111,7 +111,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - Pricing: https://bondtrials.com/pricing
 - Security and compliance: https://bondtrials.com/security
 - Integrations (EHRs: Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR; CTMS: CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime, Veeva SiteVault): https://bondtrials.com/integrations
-- Book a demo: https://bondtrials.com/book-a-demo
+- Book a demo: https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true
 
 ## Comparisons
 - All comparisons: https://bondtrials.com/compare
@@ -138,7 +138,7 @@ Boston, MA, United States
 
 ## Contact
 - Website: https://bondtrials.com
-- Demo booking: https://cal.com/rishabhgoel/bond-health-demo
+- Demo booking: https://bond-health.cal.com/rishabh-goel/bond-health-demo
 - LinkedIn: https://www.linkedin.com/company/bondtrials/
 
 ## Open Positions

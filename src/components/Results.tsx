@@ -85,7 +85,7 @@ export default function Results() {
         {/* CTA */}
         <div className="mt-12 text-center">
           <a
-            href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+            href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"

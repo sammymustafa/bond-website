@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What the evidence says about travel, enrollment and dropout in trials, and a transportation workflow for sites and sponsors.",
   lastUpdated: "2026-11-23",
   blog: { date: "2026-11-23", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-many",
@@ -118,7 +118,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how reminders, transportation booking and dropout-risk flags work for an enrolled participant.",
           secondaryLabel: "For sponsors",
           secondaryHref: "/for/sponsors",

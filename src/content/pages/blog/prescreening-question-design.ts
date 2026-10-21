@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Which criteria patients can answer, how to word the questions, what the rules allow before consent, and how to test the pre-screen.",
   lastUpdated: "2026-12-23",
   blog: { date: "2026-12-23", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Pre-screening call script", secondaryHref: "/templates/pre-screening-call-script" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Pre-screening call script", secondaryHref: "/templates/pre-screening-call-script" },
   sections: [
     {
       id: "before-consent",
@@ -151,7 +151,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and see which criteria can be checked in the chart and which belong on the call.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

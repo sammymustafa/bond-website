@@ -21,7 +21,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "See how Consent works",
     secondaryHref: "/consent",
   },
@@ -234,7 +234,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond supports the consent process, from plain-language answers to staff escalation.",
           secondaryLabel: "Read about Consent",
           secondaryHref: "/consent",

@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health connects via athenahealth's FHIR R4 APIs to read athenaOne records, screens a practice's patients against a study's criteria, and hands matched, pre-screened patients to the practice's coordinators. Below: the data and FHIR resources involved, what your athenaOne administrator approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, practice approvals, timeline and PHI controls for connecting Bond to athenaOne.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "who-uses-athenahealth",
@@ -195,7 +195,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and the name of your athenaOne administrator. We will map the scopes, approvals and dates to your calendar.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

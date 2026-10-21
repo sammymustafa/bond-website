@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Content, pre-screener design, tracking, fraud checks and the post-submit handoff for trial ad landing pages.",
   lastUpdated: "2026-12-02",
   blog: { date: "2026-12-02", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Pre-screening call script", secondaryHref: "/templates/pre-screening-call-script" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Pre-screening call script", secondaryHref: "/templates/pre-screening-call-script" },
   sections: [
     {
       id: "page-content",
@@ -126,7 +126,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond picks up every landing-page lead, pre-screens it and books the visit.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

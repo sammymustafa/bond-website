@@ -24,7 +24,7 @@ const page: SeoPage = {
   summary:
     "Why Bond is better than media referrals: it creates the ads, contacts every lead immediately and follows up until they book, with published cost and conversion data.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-bond",
@@ -274,7 +274,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol. We will show how Bond screens its hardest criteria, the chart evidence behind each decision, and how its agents pre-screen and schedule patients.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

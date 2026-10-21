@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What predicts a missed screening visit, which fixes have evidence behind them, and a six-step no-show plan for sites.",
   lastUpdated: "2026-10-09",
   blog: { date: "2026-10-09", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-often",
@@ -168,7 +168,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one active study and see how pre-screening, booking and reminders can run as one workflow at your site.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

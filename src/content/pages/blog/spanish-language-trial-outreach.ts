@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "Census data on Spanish speakers, the trial rules and costs that exclude them, what consent and Section 1557 require, and outreach that works.",
   lastUpdated: "2026-10-16",
   blog: { date: "2026-10-16", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See how Engage works", secondaryHref: "/engage" },
   sections: [
     {
       id: "how-many",

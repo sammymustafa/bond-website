@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "What studies measured about trial criteria that only clinical notes can answer, and what that means for EHR queries.",
   lastUpdated: "2026-10-05",
   blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
+  heroCta: { label: "See it on your protocol", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
       id: "the-80-percent-figure",
@@ -159,7 +159,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol. We will walk through which of its criteria depend on notes and how Bond reads them.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

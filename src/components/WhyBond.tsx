@@ -9,7 +9,7 @@ const noCites = new Map<string, number>();
 
 /**
  * The "Why is Bond the best...?" section for pages outside the content registry
- * (the homepage, book-a-demo, blog and glossary indexes, newsletter, careers).
+ * (the homepage, blog and glossary indexes, newsletter, careers).
  * Content pages get the same section from `withWhyBond` in SeoArticle.
  */
 export default function WhyBond({ compact = false }: { compact?: boolean }) {

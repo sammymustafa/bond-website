@@ -21,7 +21,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "Pre-screening vs screening",
     secondaryHref: "/guides/pre-screening-vs-screening",
   },
@@ -446,7 +446,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring your pre-screening script and see how Engage runs it, including AI disclosure, live transfer or human callback, and coordinator escalation.",
           secondaryLabel: "How Engage works",
           secondaryHref: "/engage",

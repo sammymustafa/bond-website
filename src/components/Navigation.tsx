@@ -160,9 +160,9 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-3">
-            <Link href={demoHref} className="btn-primary text-sm">
+            <a href={demoHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
               Book a demo
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -256,9 +256,15 @@ export default function Navigation() {
               );
             })}
             <div className="mt-6 pt-6 border-t border-gray-100">
-              <Link href={demoHref} onClick={() => setIsMobileMenuOpen(false)} className="btn-primary w-full justify-center">
+              <a
+                href={demoHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="btn-primary w-full justify-center"
+              >
                 Book a demo
-              </Link>
+              </a>
             </div>
           </div>
         </div>

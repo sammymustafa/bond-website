@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "How ResearchMatch and other registries work, their published conversion and cost data, who they miss, and how sites should use them.",
   lastUpdated: "2027-01-18",
   blog: { date: "2027-01-18", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
   sections: [
     {
       id: "how-researchmatch-works",
@@ -147,7 +147,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring an enrolling study. We will show how Bond finds candidates in your EHR and follows up with every ad lead.",
           secondaryLabel: "Bond for research sites",
           secondaryHref: "/for/research-sites",

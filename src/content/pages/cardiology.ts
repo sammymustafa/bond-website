@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Cardiology protocols screen on ejection fraction, symptom class, lab thresholds and dated cardiac events, and much of that evidence sits in echo reports and notes rather than coded fields. In one heart failure trial, fewer than half of the 10,359 patients screened were randomized.{{cite:wjc-paragon-hf}} Here is where those criteria live in the chart and how Bond Health screens for them.",
   summary: "How cardiology criteria map to the chart, what drives screen failure, and how Bond screens for it.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
       id: "how-cardiology-eligibility-works",
@@ -201,7 +201,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one cardiology protocol and we will walk through how its hardest criteria, such as a historical LVEF floor or an event window, map to your chart.",
           secondaryLabel: "Using the EHR for recruitment",
           secondaryHref: "/guides/ehr-for-recruitment",

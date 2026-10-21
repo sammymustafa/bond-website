@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "The E6(R3) sections that touch recruitment, how they treat recruitment vendors and systems, and a checklist for sites and sponsors.",
   lastUpdated: "2026-10-14",
   blog: { date: "2026-10-14", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Security and compliance", secondaryHref: "/security" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Security and compliance", secondaryHref: "/security" },
   sections: [
     {
       id: "status",
@@ -140,7 +140,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Walk through how Bond's screening evidence, outreach scripts and escalation fit your site's oversight plan.",
           secondaryLabel: "Security and compliance",
           secondaryHref: "/security",

@@ -172,7 +172,7 @@ export default function FullFunnel() {
         <div className="mt-16 text-center">
           <div className="inline-flex flex-col sm:flex-row items-center gap-4">
             <a
-              href="https://cal.com/rishabhgoel/bond-health-demo?overlayCalendar=true"
+              href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary group"

@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "Permission and assent rules for pediatric trials, how parents decide, and a site checklist for reaching and informing them.",
   lastUpdated: "2027-01-06",
   blog: { date: "2027-01-06", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Consent support", secondaryHref: "/consent" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Consent support", secondaryHref: "/consent" },
   sections: [
     {
       id: "why-pediatric-trials-struggle",
@@ -135,7 +135,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a pediatric protocol. We will show how outreach to parents and pre-screening would run for it.",
           secondaryLabel: "Consent support",
           secondaryHref: "/consent",

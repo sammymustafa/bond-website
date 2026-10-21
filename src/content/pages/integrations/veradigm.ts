@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health connects to Veradigm EHR and Practice Fusion through Veradigm's certified FHIR R4 APIs, screens a practice's patients against a study's criteria, and hands pre-screened patients to its coordinators.{{cite:bond-site}} Below: what Veradigm sells today, the FHIR resources involved, Veradigm's developer program, what the practice approves, the timeline, and what is not integrated.",
   summary: "The FHIR resources, Veradigm Connect program, practice approvals and timeline for connecting Bond at a Veradigm EHR or Practice Fusion practice.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "who-uses-veradigm",
@@ -195,7 +195,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol, your Veradigm product and version, and the name of your EHR administrator. We will map approvals and dates to your calendar.",
           secondaryLabel: "See all integrations",
           secondaryHref: "/integrations",

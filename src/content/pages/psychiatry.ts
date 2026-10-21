@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Psychiatry protocols screen on a confirmed diagnosis, a rating-scale threshold, treatment history, and exclusions for suicide risk, substance use and other psychiatric illness. When researchers applied the psychiatric entry criteria of 158 antidepressant trials to 1,271 outpatients with major depressive disorder at one Rhode Island practice, a mean of 86.1% would have been excluded.{{cite:zimmerman-2019}} Here is where each criterion sits in the chart and what Bond Health can check before a screening visit.",
   summary: "How psychiatry criteria map to the chart, why so many patients are excluded, and how Bond screens for them.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
       id: "how-psychiatry-eligibility-works",
@@ -183,7 +183,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one psychiatry protocol and we will walk through how its hardest criteria, such as treatment resistance and suicide-risk exclusions, map to your chart.",
           secondaryLabel: "Reduce screen failure",
           secondaryHref: "/guides/reduce-screen-failure",

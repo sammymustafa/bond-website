@@ -21,7 +21,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "See how Identify works",
     secondaryHref: "/identify",
   },
@@ -389,7 +389,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring this checklist and one protocol. We will walk through each area and show how Identify presents the evidence behind each criterion decision.",
           secondaryLabel: "Compare recruitment software",
           secondaryHref: "/compare/clinical-trial-recruitment-software",

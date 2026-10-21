@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Turnover figures from SCRS, Duke, ACRP and WCG, what a departure costs, and a way to score coordinator workload.",
   lastUpdated: "2027-01-20",
   blog: { date: "2027-01-20", author: "Rishabh Goel", readingMinutes: 6 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Bond for research sites", secondaryHref: "/for/research-sites" },
   sections: [
     {
       id: "how-high-is-turnover",
@@ -167,7 +167,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one active protocol and your coordinator hours for it. We will show which steps Bond would take off the desk.",
           secondaryLabel: "Bond for research sites",
           secondaryHref: "/for/research-sites",

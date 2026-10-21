@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Why enrollment forecasts run high, a funnel worksheet for feasibility, and how to give sponsors a range they can trust.",
   lastUpdated: "2026-12-30",
   blog: { date: "2026-12-30", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Feasibility questionnaire template", secondaryHref: "/templates/feasibility-questionnaire" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Feasibility questionnaire template", secondaryHref: "/templates/feasibility-questionnaire" },
   sections: [
     {
       id: "how-far-off",
@@ -149,7 +149,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol in feasibility. We will show how Bond screens your records against it and what the evidence behind each count looks like.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "The statute, the stalled guidance, the 2025 website episode and what sponsors and sites can do while the requirement waits on FDA.",
   lastUpdated: "2026-11-02",
   blog: { date: "2026-11-02", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for sponsors", secondaryHref: "/for/sponsors" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Bond for sponsors", secondaryHref: "/for/sponsors" },
   sections: [
     {
       id: "what-the-law-requires",

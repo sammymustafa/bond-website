@@ -18,7 +18,7 @@ const page: SeoPage = {
     "Site enrollment depends on finding eligible patients in your own records and reaching them without using up staff time. This page covers where that breaks down, what Bond Health changes day to day, what gets reported, and what setup and pricing involve.",
   summary: "How Bond fits an independent or hospital-based research site: problems, workflow, metrics, setup and pricing.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
       id: "where-enrollment-breaks",
@@ -229,7 +229,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one open protocol, and we will show how its criteria are screened and how matches are ranked and explained.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

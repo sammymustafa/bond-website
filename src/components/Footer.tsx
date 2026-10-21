@@ -8,6 +8,7 @@ import { useCookieConsent } from "@/context/CookieConsentContext";
 import {
   audienceLinks,
   compareLinks,
+  demoHref,
   productLinks,
   resourceLinks,
   trustCenterHref,
@@ -36,7 +37,7 @@ const columns = [
     links: [
       { name: "About", href: "/#product" },
       { name: "Careers", href: "/careers" },
-      { name: "Book a demo", href: "/book-a-demo" },
+      { name: "Book a demo", href: demoHref },
       { name: "Contact", href: "/#contact" },
     ],
   },

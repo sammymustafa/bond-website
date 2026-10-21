@@ -21,7 +21,7 @@ const page: SeoPage = {
   lastUpdated: "2026-10-05",
   heroCta: {
     label: "Book a demo",
-    href: "/book-a-demo",
+    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
     secondaryLabel: "Read the IRB and HIPAA guide",
     secondaryHref: "/guides/irb-hipaa-patient-outreach",
   },
@@ -341,7 +341,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how the AI disclosure, live transfer or human callback, and escalation steps work before you draft your submission.",
           secondaryLabel: "Browse all templates",
           secondaryHref: "/templates",

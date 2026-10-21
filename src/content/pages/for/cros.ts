@@ -19,7 +19,7 @@ const page: SeoPage = {
     "A CRO answers to the sponsor for enrollment at sites it usually does not run, and each of those sites finds, contacts and counts patients its own way. Bond Health runs the same workflow at every participating site: EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit. It reports one enrollment funnel for all of them.",
   summary: "How CROs can get chart-based feasibility counts, one recruitment workflow per site, and one enrollment funnel across a portfolio.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "portfolio-problem",
@@ -218,7 +218,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a study you are about to place, or one that is behind plan. We will walk through the funnel Bond would report for it.",
           secondaryLabel: "How implementation works",
           secondaryHref: "/implementation",

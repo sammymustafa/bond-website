@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Meta-analyses, a trial-recruitment experiment and a wording study, turned into a reminder setup a site can use.",
   lastUpdated: "2026-10-26",
   blog: { date: "2026-10-26", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Text message templates", secondaryHref: "/templates/patient-outreach-sms-templates" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Text message templates", secondaryHref: "/templates/patient-outreach-sms-templates" },
   sections: [
     {
       id: "how-much",
@@ -136,7 +136,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one active study and see the booking and reminder sequence on your own calendar.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

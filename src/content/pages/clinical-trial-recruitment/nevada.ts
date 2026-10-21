@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "Nevada recruiting-trial counts, Las Vegas and Reno research hubs, health systems and their EHRs, demographics, and state outreach rules.",
   lastUpdated: "2026-10-05",
   showLastUpdated: true,
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
     {
       id: "trial-counts",
@@ -230,7 +230,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one open protocol and tell us which EHR your patients are in.",
           secondaryLabel: "How implementation works",
           secondaryHref: "/implementation",

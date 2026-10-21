@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What studies measured about problem list completeness and diagnosis code accuracy, what notes add, and how to query the EHR for a trial.",
   lastUpdated: "2026-12-28",
   blog: { date: "2026-12-28", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
+  heroCta: { label: "See it on your protocol", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
       id: "problem-list-completeness",
@@ -141,7 +141,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol. We will show which of its criteria your codes can settle and which depend on notes.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

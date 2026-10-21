@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "What A2P 10DLC is, what carriers check, how long registration takes, what it costs and what gets research texting campaigns rejected.",
   lastUpdated: "2026-12-16",
   blog: { date: "2026-12-16", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "SMS templates", secondaryHref: "/templates/patient-outreach-sms-templates" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "SMS templates", secondaryHref: "/templates/patient-outreach-sms-templates" },
   sections: [
     {
       id: "what-is-10dlc",
@@ -138,7 +138,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond's text agents reach new leads, honor opt-outs and hand patients to your coordinators.",
           secondaryLabel: "Read about Engage",
           secondaryHref: "/engage",

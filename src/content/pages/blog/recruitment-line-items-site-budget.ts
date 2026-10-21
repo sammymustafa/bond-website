@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "A line-by-line list of recruitment costs to put in a site budget, with justification and contract terms.",
   lastUpdated: "2026-12-14",
   blog: { date: "2026-12-14", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "why-missing",
@@ -153,7 +153,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "We can help you estimate ad spend and outreach volume for a protocol before you send the budget back.",
           secondaryLabel: "See pricing",
           secondaryHref: "/pricing",

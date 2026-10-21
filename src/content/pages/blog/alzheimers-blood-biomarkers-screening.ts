@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "FDA-cleared Alzheimer's blood tests, trial experience with p-tau217 pre-screening, and how a site should set up a blood-first funnel.",
   lastUpdated: "2026-10-21",
   blog: { date: "2026-10-21", author: "Rishabh Goel", readingMinutes: 6 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Alzheimer's trial recruitment", secondaryHref: "/neurology-and-alzheimers" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Alzheimer's trial recruitment", secondaryHref: "/neurology-and-alzheimers" },
   sections: [
     {
       id: "cleared-tests",
@@ -174,7 +174,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring an Alzheimer's protocol. We will map its biomarker, cognitive and MRI criteria to your chart.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

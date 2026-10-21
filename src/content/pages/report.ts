@@ -26,7 +26,7 @@ const page: SeoPage = {
     label: "Download the PDF",
     href: "/downloads/state-of-trial-enrollment-2026.pdf",
     secondaryLabel: "Book a demo",
-    secondaryHref: "/book-a-demo",
+    secondaryHref: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
   },
   sections: [
     {
@@ -297,7 +297,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "See how Bond finds eligible patients in your own records, one protocol at a time.",
           secondaryLabel: "Get the next edition",
           secondaryHref: "/newsletter",

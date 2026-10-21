@@ -19,7 +19,7 @@ const page: SeoPage = {
     "From August 2021 to August 2023, 40.3 percent of US adults had obesity.{{cite:cdc-obesity}} These trials rarely lack candidates on paper. They lack candidates whose measured BMI, A1c and medication history fall inside the protocol's windows on screening day. This page covers eligibility, screen failure, and what Bond Health reads in the chart.",
   summary: "BMI, A1c and GLP-1 washout criteria, screen failure drivers, and the recruiting-trial pool for obesity and type 2 diabetes.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
       id: "large-pool-hard-fit",
@@ -207,7 +207,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring an obesity or type 2 diabetes protocol and we will walk through how Bond reads its BMI, A1c and GLP-1 washout criteria.",
           secondaryLabel: "All therapeutic areas",
           secondaryHref: "/therapeutic-areas",

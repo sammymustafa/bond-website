@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Bond Health connects via the ONC-certified FHIR R4 APIs that eClinicalWorks offers its customers, screens a practice's patients against a study's criteria, and hands pre-screened patients to your coordinators. Below: the data involved, what your administrator turns on, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, practice activation steps, timeline and notes handling for connecting Bond at an eClinicalWorks practice or health center.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
       id: "ecw-footprint",
@@ -207,7 +207,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring one protocol and your eClinicalWorks administrator. We will map activation, scopes and dates.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",

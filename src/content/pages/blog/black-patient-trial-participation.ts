@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary: "FDA Snapshots data on Black participation, the disease-population benchmark, eligibility rules that exclude without a clinical reason, and approaches with evidence.",
   lastUpdated: "2026-12-04",
   blog: { date: "2026-12-04", author: "Rishabh Goel", readingMinutes: 4 },
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "Bond for community sites", secondaryHref: "/for/fqhcs-and-community-sites" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Bond for community sites", secondaryHref: "/for/fqhcs-and-community-sites" },
   sections: [
     {
       id: "what-snapshots-show",

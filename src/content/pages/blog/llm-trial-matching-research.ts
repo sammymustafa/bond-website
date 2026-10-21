@@ -20,7 +20,7 @@ const page: SeoPage = {
   summary: "TrialGPT, RECTIFIER and newer randomized evaluations: what LLM trial-matching studies measured, where they fall short, and how to test a tool.",
   lastUpdated: "2026-10-07",
   blog: { date: "2026-10-07", author: "Rishabh Goel", readingMinutes: 5 },
-  heroCta: { label: "See it on your protocol", href: "/book-a-demo", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
+  heroCta: { label: "See it on your protocol", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
       id: "what-has-been-tested",
@@ -157,7 +157,7 @@ const page: SeoPage = {
         {
           type: "cta",
           label: "Book a demo",
-          href: "/book-a-demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
           text: "Bring a protocol and a set of charts your team has already screened. We will show the evidence behind each match.",
           secondaryLabel: "Read about Identify",
           secondaryHref: "/identify",

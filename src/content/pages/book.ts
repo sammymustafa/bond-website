@@ -19,7 +19,7 @@ const page: SeoPage = {
   summary:
     "Pre-screened patients booked straight into the site's calendar, with reminders by text, voice or email and support after enrollment.",
   lastUpdated: "2026-10-05",
-  heroCta: { label: "Book a demo", href: "/book-a-demo", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
       id: "what-book-does",
