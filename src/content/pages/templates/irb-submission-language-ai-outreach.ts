@@ -336,7 +336,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "For C.1, Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Bond signs BAAs, encrypts data at rest and in transit, supports role-based access and SSO, and keeps an audit log. The [security](/security) page has the details. Ask for the AI model processing details in writing, as you would from any vendor. Bond does not hold IRB approval for any study and does not obtain consent: your IRB reviews your submission, and your investigator or delegated staff obtain consent.{{cite:bond-site}}",
+          text: "For C.1, Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Bond signs BAAs, encrypts data at rest and in transit, supports role-based access and SSO, and keeps an audit log. The [security](/security) page has the details. Ask for the AI model processing details in writing, as you would from any vendor. Bond does not hold IRB approval for any study and does not obtain consent: your IRB reviews your submission, and your investigator or delegated staff obtain consent.{{cite:bond-site}}",
         },
         {
           type: "cta",

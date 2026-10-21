@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, User } from "lucide-react";
+import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, User, ShieldCheck } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Animated counter hook
 function useCountUp(end: number, duration: number = 2000, delay: number = 0) {
@@ -166,6 +167,20 @@ export default function Hero() {
                   />
                   <span>HIPAA Compliant</span>
                 </a>
+                <Link
+                  href="/security#certifications"
+                  className="flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <ShieldCheck className="w-3.5 h-3.5 text-green-600" />
+                  <span>ISO 27001 certified</span>
+                </Link>
+                <Link
+                  href="/security#certifications"
+                  className="flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <ShieldCheck className="w-3.5 h-3.5 text-green-600" />
+                  <span>SOC 2 Type I</span>
+                </Link>
                 <div className="flex items-center gap-1.5 text-xs text-gray-600">
                   <Lock className="w-3.5 h-3.5 text-green-600" />
                   <span>BAA available</span>

@@ -187,7 +187,7 @@ const page: SeoPage = {
           items: [
             "**A BAA first.** Bond signs a business associate agreement with each site before handling its PHI.{{cite:bond-site}}",
             "**Site-granted access.** CRIO activates Bond's API access at the site's request, for that site's CRIO organization.{{cite:crio-partners-intro}}",
-            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption at rest and in transit (AES-256 where applicable), role-based access with SSO, audit logging and penetration testing.{{cite:bond-site}}",
+            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its controls include encryption at rest and in transit (AES-256 where applicable), role-based access with SSO, audit logging and penetration testing.{{cite:bond-site}}",
           ],
         },
         {

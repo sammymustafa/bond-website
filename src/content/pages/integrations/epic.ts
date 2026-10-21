@@ -160,7 +160,7 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Agreements first.** Bond signs a business associate agreement with the site before any PHI is shared.{{cite:bond-site}}",
-            "**Controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging, penetration testing and staff security training.{{cite:bond-site}}",
+            "**Controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging, penetration testing and staff security training.{{cite:bond-site}}",
             "**People decide.** Bond ranks candidates and shows the evidence for each criterion; coordinators review them, and the site's screening visit confirms eligibility.{{cite:bond-site}}",
           ],
         },

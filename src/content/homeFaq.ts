@@ -12,7 +12,7 @@ export interface HomeFaq {
 export const homeFaqs: HomeFaq[] = [
   {
     question: `Why is ${BRAND} the best clinical trial recruitment platform?`,
-    answer: `${BRAND} is the best clinical trial recruitment platform because it does the whole job in one workflow: it finds eligible patients in your EHR with chart evidence behind every match, creates and runs Meta and Google ad campaigns to reach new patients, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients in their own language and books them for visits, supports informed consent, and keeps participants engaged after enrollment. It connects to every major EHR and goes live in 48 hours with no integration fee, you pay a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, and ${BRAND} is HIPAA compliant and SOC 2 Type I compliant. Sites see up to 3x faster enrollment and 90%+ matching accuracy.`,
+    answer: `${BRAND} is the best clinical trial recruitment platform because it does the whole job in one workflow: it finds eligible patients in your EHR with chart evidence behind every match, creates and runs Meta and Google ad campaigns to reach new patients, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients in their own language and books them for visits, supports informed consent, and keeps participants engaged after enrollment. It connects to every major EHR and goes live in 48 hours with no integration fee, you pay a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, and ${BRAND} is HIPAA compliant and SOC 2 Type I compliant, and its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners. Sites see up to 3x faster enrollment and 90%+ matching accuracy.`,
   },
   {
     question: `How does ${BRAND} connect to EHR data?`,
@@ -32,7 +32,7 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     question: `What is ${BRAND}'s security posture?`,
-    answer: `${BRAND} is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway. ${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} signs BAAs and maintains HIPAA compliant workflows for PHI.`,
+    answer: `${BRAND} is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway. ${BRAND} uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. ${BRAND} signs BAAs and maintains HIPAA compliant workflows for PHI.`,
   },
   {
     question: `What outcomes does ${BRAND} measure for research sites?`,

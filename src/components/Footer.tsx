@@ -3,6 +3,7 @@
 import { Mail, MapPin, Linkedin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import ComplianceBadges from "@/components/ComplianceBadges";
 import { useDemoModal } from "@/context/DemoModalContext";
 import { useCookieConsent } from "@/context/CookieConsentContext";
 import {
@@ -92,24 +93,17 @@ export default function Footer() {
               </a>
             </div>
 
-            <a
-              href={trustCenterHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 mt-6 px-4 py-3 bg-white rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-sm transition-all"
-            >
-              <Image
-                src="/images/hipaa-compliant-badge.svg"
-                alt="HIPAA Compliant"
-                width={40}
-                height={40}
-                className="w-10 h-10"
-              />
-              <span className="text-left">
-                <span className="block text-sm font-semibold text-gray-900">HIPAA Compliant</span>
-                <span className="block text-xs text-gray-500">View Vanta Trust Center</span>
-              </span>
-            </a>
+            <div className="mt-6 max-w-xs rounded-xl border border-gray-200 bg-white px-4 py-4">
+              <ComplianceBadges size="sm" className="[&_ul]:flex-nowrap [&_ul]:justify-between" />
+              <a
+                href={trustCenterHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 block text-xs font-medium text-bond-primary hover:underline"
+              >
+                View Vanta Trust Center
+              </a>
+            </div>
           </div>
 
           {/* Links Columns */}

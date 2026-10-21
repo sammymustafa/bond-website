@@ -163,7 +163,7 @@ const page: SeoPage = {
             "**Agreements first.** No PHI moves until the business associate agreement is signed.",
             "**Minimum necessary.** The site and Bond agree which fields go to the CTMS. Log rows for patients not referred can omit contact details.",
             "**Scoped credentials.** API access belongs to the site, which can revoke it.",
-            "**Controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO support, audit logging and penetration testing, documented in Bond's Trust Center.{{cite:bond-site}}",
+            "**Controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO support, audit logging and penetration testing, documented in Bond's Trust Center.{{cite:bond-site}}",
           ],
         },
         {

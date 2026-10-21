@@ -186,7 +186,7 @@ const page: SeoPage = {
           items: [
             "**Agreement first.** Bond signs a business associate agreement before any PHI moves.{{cite:bond-site}}",
             "**Only referrals cross over.** RealTime receives records only for patients Bond refers. The site decides whether declines and pre-screen failures are also logged there.",
-            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging and penetration testing.{{cite:bond-site}}",
+            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its controls include encryption in transit and at rest (AES-256 where applicable), role-based access, SSO, audit logging and penetration testing.{{cite:bond-site}}",
             "**Your risk analysis.** Data synced to RealTime or a shared sheet falls under that system's access controls, so list each connection. The [security](/security) page maps where PHI goes in a Bond deployment.",
           ],
         },

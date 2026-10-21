@@ -228,7 +228,7 @@ const page: SeoPage = {
             "**Agreement first.** Bond signs a business associate agreement before any PHI moves.{{cite:bond-site}}",
             "**Minimum necessary.** The institution and Bond agree which fields go to OnCore or the export.",
             "**Institution-owned credentials.** Any OnCore API access belongs to the institution, which can limit or revoke it.",
-            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} It encrypts data at rest and in transit (AES-256 where applicable) and uses role-based access controls and audit logging.{{cite:bond-site}} See [security](/security).",
+            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} It encrypts data at rest and in transit (AES-256 where applicable) and uses role-based access controls and audit logging.{{cite:bond-site}} See [security](/security).",
           ],
         },
       ],

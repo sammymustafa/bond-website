@@ -1,4 +1,5 @@
 import type { SeoPage } from "../types";
+import { ISO_27001_CERTIFICATE as CERT, iso27001Source } from "../compliance";
 
 const page: SeoPage = {
   path: "/faq",
@@ -18,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Answers to the questions research sites, CROs and sponsors ask before they sign: what Bond Health reads in the chart, how the voice and text agents treat patients, what the IRB reviews, how PHI is handled and how pricing works. Most answers link to the page with more detail, and figures Bond publishes about itself are labeled as Bond's.",
   summary: "Thirty answers on product, data, IRB, patients' rights, AI disclosure, pricing, implementation and security.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-21",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -98,7 +99,7 @@ const page: SeoPage = {
     },
     {
       q: "What is Bond Health's security posture?",
-      a: "Bond is HIPAA compliant and SOC 2 Type I compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.{{cite:bond-site}} See [security](/security).",
+      a: "Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Bond Health uses encryption at rest and in transit (AES-256 where applicable), role-based access controls, comprehensive audit logging, and routine security testing. Bond Health signs BAAs and maintains HIPAA compliant workflows for PHI.{{cite:bond-site}} See [security](/security).",
     },
     {
       q: "What outcomes does Bond Health measure for research sites?",
@@ -198,7 +199,11 @@ const page: SeoPage = {
     },
     {
       q: "Is Bond SOC 2 compliant?",
-      a: "Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, and its SOC 2 Type II and ISO 27001 audits are underway.{{cite:bond-product}} Its controls include encryption at rest and in transit, role-based access, audit logging, penetration testing and employee security training, and its [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj) on Vanta shows the current security posture.{{cite:bond-site}} Send security questionnaires to [hello@bondtrials.com](mailto:hello@bondtrials.com). See [security](/security).",
+      a: "Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its controls include encryption at rest and in transit, role-based access, audit logging, penetration testing and employee security training, and its [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj) on Vanta shows the current security posture.{{cite:bond-site}} Send security questionnaires to [hello@bondtrials.com](mailto:hello@bondtrials.com). See [security](/security).",
+    },
+    {
+      q: "Is Bond ISO 27001 certified?",
+      a: `Yes. Bond Health's information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners (certificate ${CERT.number}, issued ${CERT.issued}). The certified scope covers the assets, technologies and processes behind Bond's platform, including its web applications, APIs, cloud infrastructure, integrations and supporting business operations.{{cite:bond-iso-27001}} See [security](/security).`,
     },
     {
       q: "Is Bond cleared by the FDA?",
@@ -206,6 +211,7 @@ const page: SeoPage = {
     },
   ],
   sources: [
+    iso27001Source,
     {
       id: "bond-site",
       title: "Bond Health: platform overview, FAQ and pricing",

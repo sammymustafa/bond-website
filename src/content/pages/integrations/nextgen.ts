@@ -198,7 +198,7 @@ const page: SeoPage = {
           items: [
             "**Agreements first.** Bond signs a business associate agreement before any PHI is shared.{{cite:bond-product}}",
             "**Read-only access.** Bond requests read access to the resources above, and your security review approves the list. Both NextGen FHIR servers are read-only for them.{{cite:nge-fhir-metadata,ngo-fhir-metadata}}",
-            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its SOC 2 Type II and ISO 27001 audits are underway, and it encrypts data in transit and at rest (AES-256 where applicable).{{cite:bond-product}}",
+            "**Bond's controls.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, its SOC 2 Type II audit is underway, and it encrypts data in transit and at rest (AES-256 where applicable).{{cite:bond-product}}",
             "**People decide.** Coordinators review each ranked candidate and its evidence, and the site's screening visit confirms eligibility.{{cite:bond-site}}",
           ],
         },
