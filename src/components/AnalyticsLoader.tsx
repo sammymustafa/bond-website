@@ -5,6 +5,7 @@ import { useCookieConsent } from "@/context/CookieConsentContext";
 
 const GA_MEASUREMENT_ID = "G-3XBD4S2Z1Q";
 const CLARITY_PROJECT_ID = "w53jc3tqup";
+const RB2B_KEY = "QO92DHZ7JPN7";
 
 function loadScript(src: string, id: string): Promise<void> {
   return new Promise((resolve, reject) => {
@@ -27,6 +28,7 @@ declare global {
     dataLayer: unknown[];
     gtag: (...args: unknown[]) => void;
     clarity: (...args: unknown[]) => void;
+    reb2b?: { loaded: boolean };
   }
 }
 
@@ -58,6 +60,22 @@ function initClarity() {
   }
 }
 
+/**
+ * RB2B visitor identification, described in section 1.3 of the privacy policy. Like the tools above it
+ * loads only after "Accept All", and it is skipped when the browser sends a Global Privacy Control signal,
+ * because some state laws may treat sharing visits with RB2B as a "sale" or "sharing" of personal information.
+ */
+function initRB2B() {
+  if ((navigator as Navigator & { globalPrivacyControl?: boolean }).globalPrivacyControl) return;
+  if (window.reb2b) return;
+  window.reb2b = { loaded: true };
+  const script = document.createElement("script");
+  script.async = true;
+  script.id = "rb2b-script";
+  script.src = `https://ddwl4m2hdecbv.cloudfront.net/b/${RB2B_KEY}/${RB2B_KEY}.js.gz`;
+  document.head.appendChild(script);
+}
+
 export default function AnalyticsLoader() {
   const { consent } = useCookieConsent();
   const initialized = useRef(false);
@@ -72,6 +90,7 @@ export default function AnalyticsLoader() {
     ).then(initGA4);
 
     initClarity();
+    initRB2B();
   }, [consent]);
 
   return null;
