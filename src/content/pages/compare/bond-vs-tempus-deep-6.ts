@@ -20,9 +20,9 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Bond Health vs Tempus (Deep 6 AI)",
   intro:
-    "Tempus AI acquired Deep 6 AI on March 11, 2025, and offers EHR-based trial matching through Deep 6 AI, its TIME oncology trial network, and Next Trials pre-screening for trials already open at a practice.{{cite:tempus-10k-2025,tempus-time-site-2026,tempus-next-trials-2026}} Bond Health reads a site's own EHR, including clinical notes, against each protocol, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent.{{cite:bond-site}} For sites running their own studies in any therapeutic area, Bond covers finding, contacting, scheduling and consent in one product.",
+    "Bond Health is better than Tempus's Deep 6 AI for sites running their own studies because it does what Deep 6 AI does, finding eligible patients in the EHR, including clinical notes, and then contacts, pre-screens and schedules them by voice and text and supports informed consent, in one product.{{cite:bond-site,tempus-deep6-acquisition}} Tempus acquired Deep 6 AI on March 11, 2025, and also offers its TIME oncology trial network and Next Trials pre-screening for trials already open at a practice.{{cite:tempus-10k-2025,tempus-time-site-2026,tempus-next-trials-2026}}",
   summary: "How Bond compares with Tempus's Deep 6 AI, TIME and Next Trials, from EHR matching to outreach, booked visits and pricing.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -211,7 +211,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond wrote this page in September 2026. Tempus facts come from public sources: Tempus's 2025 Form 10-K, company press releases, a Tempus-authored conference abstract, an Ohio State customer abstract, an ACRP exhibitor listing and Tempus web pages. tempus.com returned rate-limit errors (HTTP 429) to our requests that month, so we read its pages from Internet Archive copies dated February to April 2026; the live pages may have changed since. Bond's figures and capabilities come from its website, its Trust Center, its technical report, an April 2026 ACRP presentation and product information Bond provided, each cited where used. We used no private or internal competitive material.",
+          text: "Bond wrote this page in September 2026. Tempus facts come from public sources: Tempus's 2025 Form 10-K, company press releases, a Tempus-authored conference abstract, an Ohio State customer abstract, an archived copy of Deep 6 AI's website and Tempus web pages. tempus.com returned rate-limit errors (HTTP 429) to our requests that month, so we read its pages from Internet Archive copies dated February to April 2026; the live pages may have changed since. Bond's figures and capabilities come from its website, its Trust Center, its technical report, an April 2026 ACRP presentation and product information Bond provided, each cited where used. We used no private or internal competitive material.",
         },
         {
           type: "callout",
@@ -229,7 +229,7 @@ const page: SeoPage = {
     },
     {
       q: "Is Deep 6 AI part of Tempus now?",
-      a: "Yes. Tempus's 2025 Form 10-K says it acquired Deep 6 AI, Inc. on March 11, 2025.{{cite:tempus-10k-2025}} The Deep 6 AI name is still in use: ACRP listed Deep 6 AI as an exhibitor at its 2026 meeting.{{cite:acrp-2026-deep6}} Tempus also runs TIME, its oncology trial network, and Next Trials, which pre-screens for trials already open at a practice.{{cite:tempus-time-site-2026,tempus-next-trials-2026}}",
+      a: "Yes. Tempus's 2025 Form 10-K says it acquired Deep 6 AI, Inc. on March 11, 2025.{{cite:tempus-10k-2025}} By January 2026, Deep 6 AI's own website said \"Deep 6 AI is now a Tempus AI company\", and deep6.ai no longer loaded in October 2026.{{cite:deep6-archive-2026}} Tempus also runs TIME, its oncology trial network, and Next Trials, which pre-screens for trials already open at a practice.{{cite:tempus-time-site-2026,tempus-next-trials-2026}}",
     },
     {
       q: "Does Bond work for oncology trials?",
@@ -322,12 +322,12 @@ const page: SeoPage = {
       note: "Customer work-in-progress abstract on Deep 6 AI at Ohio State, accessed September 2026. Quote: \"a user interface that speeds patient screening by presenting and highlighting patient data related to the inclusion/exclusion criteria across a longitudinal patient record\"; \"to be able to reference the text in which the NLP identified the keywords to view the keywords in context to confirm the finding\"; \"Deep 6 AI can incorporate multiple data sources beyond the electronic medical records (EMR), such as genomics, custom databases, cancer registries, CTMS, etc.\"",
     },
     {
-      id: "acrp-2026-deep6",
-      title: "ACRP 2026: Deep 6 AI exhibitor listing",
-      publisher: "Association of Clinical Research Professionals (ACRP)",
-      url: "https://2026.acrpnet.org/deep-6-ai",
+      id: "deep6-archive-2026",
+      title: "Deep 6 AI homepage (archived)",
+      publisher: "Deep 6 AI, via the Internet Archive",
+      url: "https://web.archive.org/web/20260103153921/https://deep6.ai/",
       year: "2026",
-      note: "Accessed September 2026. Exhibitor page titled \"ACRP 2026 | Deep 6 AI\".",
+      note: "Internet Archive copy of January 3, 2026. Quotes: \"Deep 6 AI has joined Tempus.\" and \"Deep 6 AI is now a Tempus AI company\". deep6.ai itself did not load when we checked on October 23, 2026.",
     },
     {
       id: "fda-recruiting-1998",

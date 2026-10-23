@@ -72,6 +72,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "clinical-research-coordinator",
     term: "Clinical research coordinator (CRC)",
+    title: "Clinical research coordinator (CRC): role and duties",
     short:
       "The study staff member who runs participation day to day, from pre-screening and scheduling to consent and visits, linking patient, investigator and sponsor.",
     body: [
@@ -86,6 +87,16 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: measure where coordinator time goes before adding tools or staff. If chart review and first-contact calls take most of the week, those are the steps [Identify](/identify) and [Engage](/engage) are built to take on, with patients handed back to the coordinator whenever a person is needed.",
+      },
+    ],
+    faq: [
+      {
+        q: "What does CRC mean in clinical research?",
+        a: "CRC stands for clinical research coordinator: the qualified study staff member who manages participants' involvement according to the protocol and coordinates communication among the participant, investigator and sponsor.{{cite:ncit-crc}}",
+      },
+      {
+        q: "What does a clinical research coordinator do?",
+        a: "Duties may include screening, enrollment, monitoring potential participants and informed consent.{{cite:ncit-crc}} The investigator can delegate these tasks to the coordinator but keeps responsibility for them.{{cite:ich-e6r3}}",
       },
     ],
     sources: [
@@ -118,11 +129,12 @@ export const glossary: GlossaryTerm[] = [
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
       { label: "Principal investigator (PI)", href: "/glossary/principal-investigator" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "ctms",
     term: "Clinical trial management system (CTMS)",
+    title: "CTMS meaning: clinical trial management system",
     short:
       "Software that sites, sponsors and CROs use to run studies, tracking participants, visits, staff tasks, budgets and recruitment status in one place.",
     body: [
@@ -137,6 +149,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: before adding a recruitment tool, decide which system is the source of truth for participant status and how referrals will reach it, whether by API, file import or manual entry. Bond is a CRIO Certified Partner and works alongside other CTMS platforms through API or file export where the vendor supports it; see [integrations](/integrations) and the [full guide to what a CTMS is](/guides/what-is-a-ctms).",
+      },
+    ],
+    faq: [
+      {
+        q: "What does CTMS stand for?",
+        a: "Clinical trial management system: software that sites, sponsors and CROs use to run studies. Site-focused products such as RealTime describe covering the day-to-day work of trial management, from scheduling visits and tracking enrollment to recruitment and study revenue.{{cite:realtime-ctms}}",
+      },
+      {
+        q: "Should recruitment status be tracked in the CTMS?",
+        a: "Yes. When referrals, pre-screens, scheduled visits, consents and randomizations reach the CTMS, the site keeps its own funnel data and can answer the next feasibility questionnaire from records instead of memory. See the [guide to what a CTMS is](/guides/what-is-a-ctms).",
+      },
+      {
+        q: "Does Bond work with CTMS platforms?",
+        a: "Bond is a CRIO Certified Partner and works alongside other CTMS platforms through API or file export where the vendor supports it. See [integrations](/integrations).",
       },
     ],
     sources: [
@@ -155,7 +181,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "eRegulatory binder (eISF)", href: "/glossary/eregulatory-eisf" },
       { label: "eSource (electronic source data)", href: "/glossary/esource" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "diversity-action-plan",
@@ -258,6 +284,16 @@ export const glossary: GlossaryTerm[] = [
         text: "Practical note: ask any phenotyping tool to show the evidence behind each criterion decision, so a coordinator can check it in seconds instead of re-reading the chart. [Identify](/identify) reads structured and unstructured records against the protocol and shows criterion-to-evidence rationale for each ranked candidate.",
       },
     ],
+    faq: [
+      {
+        q: "What is EHR phenotyping used for?",
+        a: "Finding patients with specific conditions or outcomes in electronic health record data. A 2018 review calls it one of the most fundamental research problems in using EHR data, and the basis of translational research, comparative effectiveness studies, clinical decision support and population health analyses.{{cite:banda-2018}}",
+      },
+      {
+        q: "How does phenotyping apply to trial recruitment?",
+        a: "Pre-screening is phenotyping with a protocol attached: each inclusion and exclusion criterion becomes a definition tested against the chart. Coded fields often miss what decides eligibility, because most healthcare data are unstructured.{{cite:plos-unstructured}}",
+      },
+    ],
     sources: [
       {
         id: "banda-2018",
@@ -279,7 +315,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Unstructured clinical data", href: "/glossary/unstructured-clinical-data" },
       { label: "Using your EHR for recruitment", href: "/guides/ehr-for-recruitment" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "enrollment-rate",
@@ -335,6 +371,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "eregulatory-eisf",
     term: "eRegulatory binder (eISF)",
+    title: "eISF meaning: electronic investigator site file",
     short:
       "A digital investigator site file that holds a site's essential regulatory records, such as approvals, logs and training, and lets monitors review them remotely.",
     body: [
@@ -349,6 +386,16 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: eISF platforms are now common; Florence says its eISF is trusted by more than 65,000 sites.{{cite:florence-home}} If a recruitment vendor produces logs or approved materials, agree up front how they will get into the site's eISF. Bond works alongside eRegulatory platforms such as Veeva SiteVault through export or API where the vendor supports it; see [Implementation](/implementation).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is an eISF?",
+        a: "An electronic investigator site file, also called an eRegulatory binder, keeps a site's essential study records digitally, such as approvals, delegation and training logs, protocol and consent versions, and correspondence. Florence Healthcare describes its eISF as supporting remote monitoring, document sharing, study management and compliance supervision in one place.{{cite:florence-ebinders}}",
+      },
+      {
+        q: "Do recruitment materials belong in the eISF?",
+        a: "Yes. ICH E6(R3) lists records that document the recruitment, pre-trial screening and consenting process among a trial's essential records.{{cite:ich-e6r3}} Keep IRB-approved call scripts, texts, advertisements and AI disclosure language there with their approval dates.",
       },
     ],
     sources: [
@@ -379,11 +426,12 @@ export const glossary: GlossaryTerm[] = [
       { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms" },
       { label: "eSource (electronic source data)", href: "/glossary/esource" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "esource",
     term: "eSource (electronic source data)",
+    title: "eSource in clinical trials: electronic source data",
     short:
       "Clinical trial data first recorded in electronic form, such as direct entry into a study system or an EHR, rather than transcribed from paper records.",
     body: [
@@ -400,6 +448,16 @@ export const glossary: GlossaryTerm[] = [
         text: "Practical note: record the source document behind each eligibility criterion at the time of pre-screening, so the coordinator, the investigator and the monitor all verify the same evidence. [Identify](/identify) shows the chart evidence for each criterion it evaluates, which shortens that check.",
       },
     ],
+    faq: [
+      {
+        q: "What does eSource mean in clinical trials?",
+        a: "FDA's guidance defines eSource as data initially recorded in electronic format, including original records and certified copies of clinical findings, observations or other activities used to reconstruct and evaluate a clinical investigation.{{cite:fda-esource}}",
+      },
+      {
+        q: "Is the EHR eSource?",
+        a: "Often, yes, because EHR records are initially recorded in electronic format.{{cite:fda-esource}} For recruitment, the EHR documentation behind each eligibility criterion is what monitors trace during source data verification.",
+      },
+    ],
     sources: [
       {
         id: "fda-esource",
@@ -414,11 +472,12 @@ export const glossary: GlossaryTerm[] = [
       { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "fhir",
     term: "FHIR (Fast Healthcare Interoperability Resources)",
+    title: "FHIR meaning: Fast Healthcare Interoperability Resources",
     short:
       "An HL7 standard for exchanging health data as modular resources over web APIs. Certified US EHRs must offer a FHIR API that approved outside apps can connect to.",
     body: [
@@ -435,7 +494,28 @@ export const glossary: GlossaryTerm[] = [
         text: "Practical note: what a site's FHIR API exposes varies, especially for clinical notes and scanned documents, so confirm the scope during IT review rather than after. Bond connects through FHIR R4 APIs, HL7 v2 feeds where applicable, or an integration partner; timelines depend on the EHR, the security review and the interface method. See [Implementation](/implementation).",
       },
     ],
+    faq: [
+      {
+        q: "What does FHIR stand for?",
+        a: "Fast Healthcare Interoperability Resources, HL7's standard for exchanging healthcare information electronically.{{cite:hl7-fhir-overview}}",
+      },
+      {
+        q: "What is the difference between HL7 and FHIR?",
+        a: "HL7 International is the standards organization; its standards include FHIR, Version 2 and CDA.{{cite:hl7-about}} FHIR is the web-API-based one, described as a RESTful specification.{{cite:hl7-fhir-rest}}",
+      },
+      {
+        q: "Do all EHRs support FHIR?",
+        a: "Certified US EHRs must offer a standardized API based on FHIR Release 4.0.1, constrained by the US Core Implementation Guide.{{cite:ecfr-170-215}} What each site's API exposes, especially clinical notes and scanned documents, still varies, so confirm it during IT review.",
+      },
+    ],
     sources: [
+      {
+        id: "hl7-about",
+        title: "About HL7",
+        publisher: "HL7 International",
+        url: "https://www.hl7.org/about/index.cfm",
+        year: "2026",
+      },
       {
         id: "hl7-fhir-overview",
         title: "FHIR Overview (HL7 FHIR specification)",
@@ -465,7 +545,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "HL7 (Health Level Seven)", href: "/glossary/hl7" },
       { label: "Using your EHR for recruitment", href: "/guides/ehr-for-recruitment" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "first-patient-in",
@@ -567,6 +647,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "hl7",
     term: "HL7 (Health Level Seven)",
+    title: "What is HL7 (Health Level Seven) in healthcare?",
     short:
       "The standards organization behind the HL7 v2 messages, CDA documents and FHIR APIs that most EHRs use to exchange data with other systems.",
     body: [
@@ -581,6 +662,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: ask the site's integration team which interfaces already exist before scoping a new one. Reusing an existing HL7 v2 feed or FHIR endpoint can shorten IT review. Bond connects via FHIR R4 APIs, HL7 v2 where applicable, or an integration partner; see [Implementation](/implementation).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is HL7 in healthcare?",
+        a: "Health Level Seven International is a not-for-profit, ANSI-accredited standards developing organization for the interoperability of healthcare data. Its standards include FHIR, Version 2 and CDA.{{cite:hl7-about}}",
+      },
+      {
+        q: "Why is it called Health Level Seven?",
+        a: "The name refers to the application layer, the seventh layer of the ISO networking model.{{cite:hl7-about}}",
+      },
+      {
+        q: "What is the difference between HL7 v2 and FHIR?",
+        a: "HL7 v2 messages are the event feeds, such as admissions, orders and lab results, that systems inside a health system send one another. FHIR is HL7's newer API-based standard, and certified EHRs must offer a FHIR Release 4.0.1 API.{{cite:ecfr-170-215}}",
       },
     ],
     sources: [
@@ -604,7 +699,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "FHIR (Fast Healthcare Interoperability Resources)", href: "/glossary/fhir" },
       { label: "Using your EHR for recruitment", href: "/guides/ehr-for-recruitment" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "inclusion-and-exclusion-criteria",
@@ -718,6 +813,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "irb",
     term: "Institutional review board (IRB)",
+    title: "IRB meaning: institutional review board definition",
     short:
       "The committee that reviews and approves human research, including recruitment materials and outreach scripts, to protect participants' rights and welfare.",
     body: [
@@ -741,6 +837,16 @@ export const glossary: GlossaryTerm[] = [
           "Patient-facing web pages and advertisements.",
           "How patients are told an AI assistant is used and how they reach a person. [Engage](/engage) supports both.",
         ],
+      },
+    ],
+    faq: [
+      {
+        q: "What does IRB stand for?",
+        a: "Institutional review board: a board, committee or other group formally designated by an institution to review, approve the initiation of, and periodically review biomedical research involving human subjects, primarily to protect their rights and welfare.{{cite:ecfr-56-102}}",
+      },
+      {
+        q: "Does the IRB review recruitment materials?",
+        a: "Yes. FDA considers direct advertising for study subjects the start of the informed consent and subject selection process, and expects advertisements to be reviewed and approved by the IRB.{{cite:fda-recruiting}}",
       },
     ],
     sources: [
@@ -772,11 +878,12 @@ export const glossary: GlossaryTerm[] = [
       { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach" },
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "last-patient-in",
     term: "Last patient in (LPI)",
+    title: "LPI in clinical trials: last patient in",
     short:
       "The milestone when the final participant enrolls and enrollment closes. The gap between planned and actual last patient in is a direct measure of recruitment.",
     body: [
@@ -791,6 +898,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: a late LPI is usually visible months ahead in the per-site enrollment rate. Forecast LPI from the current rate, not the planned one, and add sites or outreach capacity early rather than in the final quarter. [Engage](/engage) handles first contact and scheduling so coordinators can spend their time on visits.",
+      },
+    ],
+    faq: [
+      {
+        q: "What does LPI mean in a clinical trial?",
+        a: "Last patient in: the enrollment of the final participant, which closes the enrollment period. The CDISC Glossary defines it as the last subject enrolled in a clinical trial.{{cite:ncit-lsi}}",
+      },
+      {
+        q: "What is the difference between LPI and LPLV?",
+        a: "LPI marks the last participant enrolled. LPLV, last patient last visit, marks the final study visit of the last participant, so it comes after treatment and follow-up are complete.",
+      },
+      {
+        q: "Why do LPI dates slip?",
+        a: "Enrollment usually runs behind plan. A 2018 review cited a study of 114 UK trials in which only 31% met their enrollment goals.{{cite:fogel-2018}}",
       },
     ],
     sources: [
@@ -824,7 +945,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "First patient in (FPI)", href: "/glossary/first-patient-in" },
       { label: "Enrollment rate", href: "/glossary/enrollment-rate" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "pre-screening",
@@ -1016,6 +1137,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "randomization",
     term: "Randomization",
+    title: "Randomization in clinical trials: definition and purpose",
     short:
       "Assigning trial participants to treatment groups by chance to reduce bias. In many studies, randomization is also when a participant counts as enrolled.",
     body: [
@@ -1030,6 +1152,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: agree with the sponsor, and with any recruitment vendor, on exactly what counts as enrolled before the study starts. Part of Bond's price is a percentage of the randomization milestone payment for each randomized patient, so payment follows the same milestone sponsors count. See [Pricing](/pricing).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is randomization in a clinical trial?",
+        a: "ICH E6(R3) defines it as deliberately including an element of chance when assigning participants to groups that receive different treatments, in order to reduce bias.{{cite:ich-e6r3}}",
+      },
+      {
+        q: "What is the purpose of randomization?",
+        a: "To reduce bias. Because chance, not the investigator or the participant, decides the group, differences in outcomes can be attributed to the treatment rather than to who was picked for it.{{cite:ich-e6r3}}",
+      },
+      {
+        q: "Is a patient enrolled at randomization?",
+        a: "In many protocols, yes. A GSK protocol posted on ClinicalTrials.gov, for example, defines screen failures as participants who consent but are not subsequently randomized.{{cite:gsk-protocol}} Check each protocol's definition.",
       },
     ],
     sources: [
@@ -1054,7 +1190,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Screen failure rate", href: "/glossary/screen-failure-rate" },
       { label: "Screening", href: "/glossary/screening" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "screen-failure-rate",
@@ -1111,6 +1247,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "screening",
     term: "Screening",
+    title: "Screening in clinical trials: definition",
     short:
       "The period after a participant signs consent when study procedures confirm whether they meet every eligibility criterion before enrollment or randomization.",
     body: [
@@ -1125,6 +1262,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: every screening visit costs coordinator time, clinic space and patient goodwill, so the fewer candidates who arrive with a disqualifier already in the chart, the better. A records review and a short pre-screening call before the visit, the work of [Identify](/identify) and [Engage](/engage), can catch many of those.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is the difference between pre-screening and screening?",
+        a: "Pre-screening happens before a person signs a consent form, to see whether they might qualify and are interested, and it must not include research procedures. Screening happens after consent and can include them.{{cite:nih-ohsrp-screening}}",
+      },
+      {
+        q: "What are screening criteria in a clinical trial?",
+        a: "They are the protocol's inclusion and exclusion criteria. During screening, study procedures confirm whether a consented participant meets them before enrollment or randomization.{{cite:ncit-first-screened}}",
+      },
+      {
+        q: "When does screening start?",
+        a: "At informed consent. The CDISC Glossary dates the first-subject-screened milestone to when the first participant signs the informed consent form and is screened for potential enrollment or randomization.{{cite:ncit-first-screened}}",
       },
     ],
     sources: [
@@ -1157,7 +1308,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Pre-screening vs. screening", href: "/guides/pre-screening-vs-screening" },
       { label: "Pre-screening", href: "/glossary/pre-screening" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
   {
     slug: "site-activation",
@@ -1398,6 +1549,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "waiver-of-authorization",
     term: "Waiver of HIPAA authorization",
+    title: "HIPAA waiver of authorization for research",
     short:
       "IRB or Privacy Board approval to use or disclose protected health information for research without each patient's signed authorization, in whole or in part.",
     body: [
@@ -1422,6 +1574,20 @@ export const glossary: GlossaryTerm[] = [
         text: "Why it matters: records-based recruitment, such as screening an EHR population for a trial, often depends on this pathway, because authorization cannot practicably be collected from patients before they are identified. Practical note: name the exact data elements, who sees them and how long they are kept in the request. [Security](/security) covers how Bond limits and logs access to PHI.",
       },
     ],
+    faq: [
+      {
+        q: "What is a HIPAA waiver of authorization?",
+        a: "Approval from an IRB or Privacy Board that lets a covered entity use or disclose protected health information for research without each patient's signed authorization, in whole or in part.{{cite:ecfr-164-512}}",
+      },
+      {
+        q: "What is a partial HIPAA waiver?",
+        a: "HIPAA allows the waiver to cover only part of the research.{{cite:ecfr-164-512}} For recruitment, a partial waiver is often limited to identifying and contacting potential participants, with signed authorization collected later at consent.",
+      },
+      {
+        q: "What must the IRB find to approve a waiver?",
+        a: "Three things: the use of PHI involves no more than minimal risk to privacy, the research could not practicably be conducted without the waiver, and it could not practicably be conducted without access to the PHI.{{cite:ecfr-164-512}}",
+      },
+    ],
     sources: [
       {
         id: "ecfr-164-512",
@@ -1436,7 +1602,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
       { label: "HIPAA authorization", href: "/glossary/hipaa-authorization" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-23",
   },
 ];
 

@@ -10,9 +10,9 @@ const page: SeoPage = {
   eyebrow: "Templates",
   h1: "Templates you can use this week",
   intro:
-    "Each template is shown in full on its page and available as an editable Word document. They are written for coordinators and site directors, not lawyers, and every one that touches patient contact says where IRB approval is required.",
+    "These are free, editable templates for research sites: a feasibility questionnaire, a pre-screening call script, patient outreach text messages, an AI recruitment vendor evaluation checklist, IRB submission language for AI outreach and a coordinator chart review checklist. Each is shown in full on its page and available as a Word document. They are written for coordinators and site directors, not lawyers, and every one that touches patient contact says where IRB approval is required.",
   summary: "Six editable templates for feasibility, pre-screening, outreach, vendor evaluation, IRB language and chart review.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   sections: [
     {
       id: "templates",
