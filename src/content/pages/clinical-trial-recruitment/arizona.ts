@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "As of September 21, 2026, 1,689 studies on ClinicalTrials.gov were recruiting at one or more Arizona sites, about 7.7% of the 22,041 recruiting in the United States, from a state with about 2.2% of US residents.{{cite:ctgov-api,census-pop-2025}} This page is for research sites in Phoenix, Tucson and the rest of the state.",
   summary: "Arizona recruiting-trial counts, Phoenix and Tucson research hubs, health systems and their EHRs, demographics, and state outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -395,9 +395,9 @@ const page: SeoPage = {
       id: "elite-network",
       title: "Clinical sites",
       publisher: "Elite Clinical Network",
-      url: "https://eliteclinicalnetwork.com/clinical-sites/",
+      url: "https://web.archive.org/web/20260720203738/https://eliteclinicalnetwork.com/clinical-sites/",
       year: "2026",
-      note: "Quote: Arizona entries \"Noble Clinical Research, 2055 W Hospital Drive, Suite 175, Tucson, AZ 85704\"; \"Chandler Clinical Trials, 255 S Dobson Rd, Suite 4, Chandler, AZ 85224\"; \"Scottsdale Clinical Trials, 8997 E Desert Cove Ave #2, Scottsdale, AZ 85260\"; \"Sun City Clinical Research, 11851 North 51st Avenue, BLDG G, Glendale, AZ\".",
+      note: "Internet Archive copy of July 20, 2026. The live page (https://eliteclinicalnetwork.com/clinical-sites/) returned 404 in October 2026 after the network rebranded as ECN Clinical. Quote: Arizona entries \"Noble Clinical Research, 2055 W Hospital Drive, Suite 175, Tucson, AZ 85704\"; \"Chandler Clinical Trials, 255 S Dobson Rd, Suite 4, Chandler, AZ 85224\"; \"Scottsdale Clinical Trials, 8997 E Desert Cove Ave #2, Scottsdale, AZ 85260\"; \"Sun City Clinical Research, 11851 North 51st Avenue, BLDG G, Glendale, AZ\".",
     },
     {
       id: "mayo-epic",

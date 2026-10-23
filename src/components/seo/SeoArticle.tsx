@@ -28,6 +28,11 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
   const jsonLd = jsonLdFor(page);
   const showDate = showsLastUpdated(page);
   const hero = page.heroCta ?? { label: "Book a demo", href: demoHref };
+  const toc = [
+    ...page.sections.map((s) => ({ id: s.id, label: s.heading })),
+    ...(page.faq && page.faq.length > 0 ? [{ id: "faq", label: "Frequently asked questions" }] : []),
+    ...(page.sources.length > 0 ? [{ id: "sources", label: "Sources" }] : []),
+  ];
 
   return (
     <main className="min-h-screen bg-white">
@@ -111,36 +116,16 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                   <nav aria-label="On this page">
                     <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-gray-500">On this page</p>
                     <ul className="space-y-2 border-l border-gray-200">
-                      {page.sections.map((s) => (
-                        <li key={s.id}>
+                      {toc.map((t) => (
+                        <li key={t.id}>
                           <a
-                            href={`#${s.id}`}
+                            href={`#${t.id}`}
                             className="-ml-px block border-l-2 border-transparent pl-3 text-sm leading-snug text-gray-600 hover:border-bond-primary hover:text-gray-900"
                           >
-                            {s.heading}
+                            {t.label}
                           </a>
                         </li>
                       ))}
-                      {page.faq && page.faq.length > 0 && (
-                        <li>
-                          <a
-                            href="#faq"
-                            className="-ml-px block border-l-2 border-transparent pl-3 text-sm text-gray-600 hover:border-bond-primary hover:text-gray-900"
-                          >
-                            Frequently asked questions
-                          </a>
-                        </li>
-                      )}
-                      {page.sources.length > 0 && (
-                        <li>
-                          <a
-                            href="#sources"
-                            className="-ml-px block border-l-2 border-transparent pl-3 text-sm text-gray-600 hover:border-bond-primary hover:text-gray-900"
-                          >
-                            Sources
-                          </a>
-                        </li>
-                      )}
                     </ul>
                   </nav>
                 )}
@@ -157,6 +142,24 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
             </aside>
 
             <div className="min-w-0 max-w-3xl">
+              {/* Below lg the sidebar is hidden, so long pages get a collapsible contents list instead */}
+              {page.sections.length > 1 && (
+                <details className="no-print group mb-8 rounded-2xl border border-gray-200 bg-gray-50 lg:hidden">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900">
+                    On this page
+                    <ChevronDown className="h-4 w-4 text-gray-500 transition-transform group-open:rotate-180" />
+                  </summary>
+                  <ul className="space-y-1 px-4 pb-4">
+                    {toc.map((t) => (
+                      <li key={t.id}>
+                        <a href={`#${t.id}`} className="block py-1.5 text-sm leading-snug text-gray-600 hover:text-gray-900">
+                          {t.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
               {page.sections.map((s) => (
                 <section key={s.id} id={s.id} className="scroll-mt-28 border-b border-gray-100 py-8 first:pt-0 last:border-b-0">
                   <h2 className="heading-md mb-4">{s.heading}</h2>

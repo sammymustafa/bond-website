@@ -12,6 +12,7 @@ import PageList from "./PageList";
 import SmartLink from "./SmartLink";
 import { TrialCounts, TrialExamples } from "./TrialData";
 import BarChart from "./BarChart";
+import ScrollTable from "./ScrollTable";
 
 interface Props {
   blocks: Block[];
@@ -93,7 +94,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
       return (
         <figure className="my-8">
           {block.caption && <figcaption className="mb-3 font-semibold text-gray-900">{block.caption}</figcaption>}
-          <div className="overflow-x-auto rounded-2xl border border-gray-200">
+          <ScrollTable columns={block.columns.length} label={block.caption}>
             <table className="w-full text-sm">
               <thead className="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
                 <tr>
@@ -119,7 +120,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
                 ))}
               </tbody>
             </table>
-          </div>
+          </ScrollTable>
           {block.note && <p className="mt-2 text-xs text-gray-500">{renderInline(block.note, cites, `${k}-note`)}</p>}
         </figure>
       );
@@ -231,7 +232,8 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
     case "form":
       return (
         <div className="my-6 rounded-2xl border border-gray-200 bg-white p-5 sm:p-6">
-          {block.title && <p className="mb-4 font-semibold text-gray-900">{block.title}</p>}
+          {block.title && <p className="font-semibold text-gray-900">{block.title}</p>}
+          <p className="mb-4 mt-1 text-xs text-gray-500">Preview of the form. Use the Word download on this page to fill it in.</p>
           <div className="space-y-4">
             {block.fields.map((f, i) => (
               <div key={i}>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, User, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -95,13 +95,19 @@ export default function Hero() {
   const booked = useCountUp(12, 1500, 1200);
   const matched = useCountUp(47, 2000, 500);
   
-  // Cycle through patients
+  // Cycle through patients, pausing for a while after a visitor picks one with the dots
+  const pausedUntil = useRef(0);
   useEffect(() => {
     const interval = setInterval(() => {
+      if (Date.now() < pausedUntil.current) return;
       setActivePatient((prev) => (prev + 1) % patientData.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+  const showPatient = (index: number) => {
+    pausedUntil.current = Date.now() + 10000;
+    setActivePatient(index);
+  };
 
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-hero">
@@ -285,17 +291,23 @@ export default function Hero() {
                 </div>
 
                 {/* Patient indicator dots */}
-                <div className="flex justify-center gap-1.5 mb-4">
+                <div className="flex justify-center mb-4">
                   {patientData.map((_, index) => (
                     <button
                       key={index}
-                      onClick={() => setActivePatient(index)}
-                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === activePatient 
-                          ? "bg-bond-primary w-4" 
-                          : "bg-gray-300 hover:bg-gray-400"
-                      }`}
-                    />
+                      type="button"
+                      onClick={() => showPatient(index)}
+                      aria-label={`Show example patient ${index + 1} of ${patientData.length}`}
+                      aria-pressed={index === activePatient}
+                      className="group p-2"
+                    >
+                      <span
+                        aria-hidden
+                        className={`block h-2 rounded-full transition-all duration-300 ${
+                          index === activePatient ? "bg-bond-primary w-4" : "w-2 bg-gray-300 group-hover:bg-gray-400"
+                        }`}
+                      />
+                    </button>
                   ))}
                 </div>
 

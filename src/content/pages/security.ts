@@ -22,7 +22,7 @@ const page: SeoPage = {
   intro:
     "Bond Health reads patient records, calls and texts patients, and helps explain consent forms, so it handles protected health information at every step. Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product,bond-iso-27001}} This page covers where that PHI goes, the controls around it and the evidence your security reviewer can request.",
   summary: "Where PHI goes in a Bond deployment, the controls around it, and the evidence your security reviewer can request.",
-  lastUpdated: "2026-10-21",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -166,7 +166,7 @@ const page: SeoPage = {
             [
               "Encryption, 45 CFR 164.312(a)(2)(iv) and (e)",
               "Encrypts PHI at rest and in transit, using AES-256 where applicable",
-              "Trust Center, with detail on request from hello@bondtrials.com",
+              "Trust Center, with detail on request from [hello@bondtrials.com](mailto:hello@bondtrials.com)",
             ],
             [
               "Access control, 45 CFR 164.312(a)",
@@ -323,7 +323,7 @@ const page: SeoPage = {
     },
     {
       q: "Is Bond SOC 2 compliant?",
-      a: "Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its current posture is in its Vanta-hosted Trust Center, and security questions go to hello@bondtrials.com.{{cite:bond-site}}",
+      a: "Bond is SOC 2 Type I compliant: independent auditor Advantage Partners has issued Bond's SOC 2 Type I report. Bond is also HIPAA compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Its current posture is in its Vanta-hosted Trust Center, and security questions go to [hello@bondtrials.com](mailto:hello@bondtrials.com).{{cite:bond-site}}",
     },
     {
       q: "Is Bond ISO 27001 certified?",
