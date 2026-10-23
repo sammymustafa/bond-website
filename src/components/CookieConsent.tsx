@@ -17,7 +17,9 @@ export default function CookieConsent() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <p className="text-sm text-gray-600 leading-relaxed">
               We use cookies to improve your experience and analyze site
-              traffic. See our{" "}
+              traffic. If you choose Accept All, our visitor-identification
+              partner may also link your visit to your work email or online
+              profile so we can follow up. See our{" "}
               <Link
                 href="/privacy-policy"
                 className="text-bond-primary hover:underline font-medium"

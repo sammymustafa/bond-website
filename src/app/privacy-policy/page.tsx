@@ -85,10 +85,10 @@ export default function PrivacyPolicyPage() {
 
             <div className="flex flex-wrap gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-bond-primary/10 text-bond-primary text-sm font-medium">
-                Effective Date: October 5, 2026
+                Effective Date: October 22, 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">
-                Last Reviewed: October 5, 2026
+                Last Reviewed: October 22, 2026
               </span>
             </div>
           </div>
@@ -198,13 +198,31 @@ export default function PrivacyPolicyPage() {
               All&rdquo; in our cookie banner.
             </BulletItem>
             <BulletItem label="RB2B:">
-              A business visitor-identification service that may identify the company or
-              professional profile of some visitors to our Site, so we can follow up with
-              organizations interested in Bond Health. RB2B runs on every page of the Site,
-              including when you choose &ldquo;Essential Only&rdquo; in our cookie banner. To ask
-              us not to use RB2B information about you, contact us at hello@bondtrials.com.
+              A visitor-identification service that helps us learn which organizations and
+              professionals are interested in Bond Health. It loads only if you choose &ldquo;Accept
+              All&rdquo; in our cookie banner, and it does not load if your browser sends a Global
+              Privacy Control signal. See &ldquo;Visitor identification&rdquo; below.
             </BulletItem>
           </BulletList>
+          <Paragraph>
+            <strong className="text-gray-800">Visitor identification.</strong> If you choose
+            &ldquo;Accept All&rdquo; and your browser does not send a Global Privacy Control
+            signal: When you visit or log in to our website, cookies and similar technologies may
+            be used by our online data partners or vendors to associate these activities with other
+            personal information they or others have about you, including by association with your
+            email or online profiles. We (or service providers on our behalf) may then send
+            communications and marketing to these emails or profiles. You may opt out of receiving
+            this advertising by visiting{" "}
+            <a
+              href="https://app.retention.com/optout"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-bond-primary hover:underline"
+            >
+              https://app.retention.com/optout
+            </a>. You can also change your choice at any time through the Cookie Settings link,
+            or ask us not to use this information by emailing hello@bondtrials.com.
+          </Paragraph>
           <Paragraph>
             You may manage cookie preferences through the Cookie Settings link at the bottom of
             every page or through your browser settings. Disabling certain cookies may limit the
@@ -238,6 +256,11 @@ export default function PrivacyPolicyPage() {
               To respond to your inquiries, send service-related notices, and provide updates about
               our services or relevant clinical trial opportunities.
             </BulletItem>
+            <BulletItem label="Business Outreach:">
+              To learn which organizations and professionals are interested in Bond Health and to
+              contact them about our services, including through the visitor identification
+              described in Section 1.3.
+            </BulletItem>
             <BulletItem label="Analytics and Improvement:">
               To analyze usage patterns, monitor performance, and develop new features and services.
             </BulletItem>
@@ -258,8 +281,12 @@ export default function PrivacyPolicyPage() {
           {/* 3. Data Sharing and Disclosure */}
           <SectionHeading id="data-sharing">3. Data Sharing and Disclosure</SectionHeading>
           <Paragraph>
-            We do not sell, rent, or trade your personal information to third parties. We may share
-            your information in the following limited circumstances:
+            We do not sell, rent, or trade your personal information for money. If you choose
+            &ldquo;Accept All,&rdquo; information about your visits is shared with our
+            visitor-identification vendor as described in Section 1.3, and some state privacy laws
+            may treat that as a &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of personal information;
+            you can decline or opt out as described there. We may share your information in the
+            following limited circumstances:
           </Paragraph>
           <BulletList>
             <BulletItem label="Clinical Research Partners:">
@@ -271,6 +298,10 @@ export default function PrivacyPolicyPage() {
               With third-party vendors who perform services on our behalf (e.g., cloud hosting, data
               analytics, customer support). These providers are contractually bound to protect your
               information and may only use it to perform services for us.
+            </BulletItem>
+            <BulletItem label="Visitor-Identification Vendor:">
+              With RB2B and its data partners, only if you choose &ldquo;Accept All&rdquo; in our
+              cookie banner (see Section 1.3).
             </BulletItem>
             <BulletItem label="EHR Integration Partners:">
               With electronic health record system providers solely to the extent necessary to
@@ -410,7 +441,19 @@ export default function PrivacyPolicyPage() {
             </BulletItem>
             <BulletItem label="Right to Opt-Out:">
               You have the right to opt out of the sale or sharing of your personal information. Bond
-              Health does not sell personal information.
+              Health does not sell personal information for money. To opt out of the visitor
+              identification described in Section 1.3, which some laws may treat as a sale or
+              sharing, choose &ldquo;Essential Only&rdquo; in our cookie banner or through the
+              Cookie Settings link, use a browser that sends a Global Privacy Control signal, or
+              visit{" "}
+              <a
+                href="https://app.retention.com/optout"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-bond-primary hover:underline"
+              >
+                https://app.retention.com/optout
+              </a>.
             </BulletItem>
             <BulletItem label="Right to Non-Discrimination:">
               We will not discriminate against you for exercising your CCPA rights.
