@@ -2,11 +2,9 @@
 
 import { Check, ArrowRight, Users, Settings, Clock } from "lucide-react";
 import Link from "next/link";
-import { useDemoModal } from "@/context/DemoModalContext";
+import { demoHref } from "@/content/nav";
 
 export default function Pricing() {
-  const { openDemoModal } = useDemoModal();
-  
   return (
     <section id="pricing" className="section bg-gradient-section">
       <div className="container-md px-6">
@@ -120,13 +118,10 @@ export default function Pricing() {
 
           {/* CTA */}
           <div className="text-center mt-10">
-            <button
-              onClick={openDemoModal}
-              className="btn-primary"
-            >
+            <a href={demoHref} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Get custom pricing
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
             <p className="mt-4 text-sm text-gray-500">
               <Link href="/pricing" className="text-bond-primary font-medium hover:underline">How the pricing model works</Link>
               {" "}and{" "}

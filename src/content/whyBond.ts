@@ -52,6 +52,8 @@ export const WHY_BOND_STATS = [
   { value: "48 hours", label: "to full EHR integration, with no integration fee", cite: "bond-site" },
 ];
 
+const COMPARISON_TABLE_PATH = "/compare/clinical-trial-recruitment-software";
+
 const ONLY_VENDOR =
   "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}";
 
@@ -161,13 +163,16 @@ export function whyBondAnswer(audience?: string): string {
   return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, creates and runs Meta and Google ad campaigns to reach new ones, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients and books them for visits, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}`;
 }
 
-/** The blocks of a "why Bond" section. `compact` drops the stats and keeps the top five reasons. */
-export function whyBondBlocks(opts: { audience?: string; lead?: ReasonKey[]; compact?: boolean } = {}): Block[] {
+/**
+ * The blocks of a "why Bond" section. `compact` drops the stats and keeps the top five reasons; `omitOnlyVendor`
+ * drops the "only vendor" callout on a page that already shows it.
+ */
+export function whyBondBlocks(opts: { audience?: string; lead?: ReasonKey[]; compact?: boolean; omitOnlyVendor?: boolean } = {}): Block[] {
   const reasons = orderedReasons(opts.lead ?? []).map((k) => REASONS[k]);
-  const blocks: Block[] = [
-    { type: "p", text: whyBondAnswer(opts.audience) },
-    { type: "callout", tone: "bond", title: "The only vendor that covers the whole path to a booked visit", text: ONLY_VENDOR },
-  ];
+  const blocks: Block[] = [{ type: "p", text: whyBondAnswer(opts.audience) }];
+  if (!opts.omitOnlyVendor) {
+    blocks.push({ type: "callout", tone: "bond", title: "The only vendor that covers the whole path to a booked visit", text: ONLY_VENDOR });
+  }
   if (!opts.compact) blocks.push({ type: "stats", items: WHY_BOND_STATS });
   blocks.push({ type: "ul", items: opts.compact ? reasons.slice(0, 5) : reasons });
   if (opts.compact) {
@@ -192,7 +197,8 @@ export function withWhyBond(page: SeoPage): SeoPage {
   const section: Section = {
     id: "why-bond",
     heading: whyBondHeading(angle.audience),
-    blocks: whyBondBlocks({ audience: angle.audience, lead: angle.lead, compact }),
+    // The comparison table page opens with this callout already, linked to its own table.
+    blocks: whyBondBlocks({ audience: angle.audience, lead: angle.lead, compact, omitOnlyVendor: page.path === COMPARISON_TABLE_PATH }),
   };
 
   const sections = [...page.sections];

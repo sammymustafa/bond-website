@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "Hippocratic AI, which announced its acquisition of Grove AI and the Grace trial agent on January 12, 2026, sells AI agents that call and pre-screen trial candidates drawn from a feasibility model, referrals, registries and campaigns.{{cite:hippo-grove-acquisition,hippo-trial-enrollment}} Bond Health starts in the chart: it screens the site's own EHR, clinical notes included, against each study's criteria, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} If you want eligible patients found in your own records and carried to a booked study visit by one platform, with a randomization share tied to randomized patients, Bond is the stronger choice.",
   summary: "Why Bond is better than Hippocratic AI and Grove AI, compared capability by capability, with a plan for a head-to-head test.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -185,7 +185,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health wrote this page in September 2026. Facts about Hippocratic AI and Grove AI come only from their public web pages, press releases and press coverage, listed below with dates, not from private or internal competitive material. Grove AI's homepage now shows an acquisition notice, so Grove AI entries rely on the acquisition announcement and press coverage and may not match how Hippocratic AI offers Grace today.{{cite:grove-site-2026}} Facts about Bond come from Bond's website, its presentation to the ACRP New Jersey chapter, its technical report and product information Bond provided.",
+          text: "Bond Health wrote this page in September 2026. Facts about Hippocratic AI and Grove AI come only from their public web pages, press releases and press coverage, listed below with dates, not from private or internal competitive material. Grove AI's homepage showed an acquisition notice in September 2026 and no longer loads, so Grove AI entries rely on the acquisition announcement and press coverage and may not match how Hippocratic AI offers Grace today. Facts about Bond come from Bond's website, its presentation to the ACRP New Jersey chapter, its technical report and product information Bond provided.",
         },
         {
           type: "callout",
@@ -203,7 +203,7 @@ const page: SeoPage = {
     },
     {
       q: "Is Grove AI part of Hippocratic AI?",
-      a: "Yes. Hippocratic AI announced on January 12, 2026 that it had acquired Grove AI, maker of the Grace trial agent, and that Grove AI's team and technology now form a core pillar of its Life Sciences Division.{{cite:hippo-grove-acquisition}} Terms were not disclosed, and Grove AI's homepage now shows an acquisition notice.{{cite:medcity-grove-2026,grove-site-2026}}",
+      a: "Yes. Hippocratic AI announced on January 12, 2026 that it had acquired Grove AI, maker of the Grace trial agent, and that Grove AI's team and technology now form a core pillar of its Life Sciences Division.{{cite:hippo-grove-acquisition}} Terms were not disclosed.{{cite:medcity-grove-2026}} Grove AI's own website no longer loads.",
     },
     {
       q: "Can Bond's agents transfer a patient to our coordinators?",
@@ -270,14 +270,6 @@ const page: SeoPage = {
       url: "https://www.prnewswire.com/news-releases/hippocratic-ai-announces-next-generation-of-healthcare-ai-orchestrators-focused-on-outcomes-not-tasks-302850620.html",
       year: "2026",
       note: "Press release dated August 13, 2026, accessed September 22, 2026. Life Sciences (Pharma) products listed include \"AI Trial Enrollment, AI Trial Retention\"; Med Tech products include \"AI Device Trial Enroll\".",
-    },
-    {
-      id: "grove-site-2026",
-      title: "Grove AI homepage",
-      publisher: "Grove AI",
-      url: "https://www.grovetrials.com/",
-      year: "2026",
-      note: "Accessed September 22, 2026. The visible page shows the notice \"Grove AI has been acquired by Hippocratic AI\" and a sign-in link.",
     },
     { id: "bond-site", title: "Bond Health: platform overview, FAQ and pricing", publisher: "Bond Health", url: "https://bondtrials.com", year: "2026" },
     { id: "bond-acrp-talk", title: "Modernizing Patient Recruitment: AI Tools, Workflows, and Outcomes", publisher: "Bond Health presentation to the ACRP New Jersey chapter (Goel R, Mustafa S)", year: "2026", note: "April 2026. Slides state \"1,000 patients screened in <2 hours\", \"Direct integrations with Google Sheets, CTMS, and Calendars\" and \"Flexible knowledge base for Voice Agents\"." },

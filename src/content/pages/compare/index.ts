@@ -21,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Most recruitment tools cover one step. EHR matching tools find patients and hand them to your staff, engagement agents call leads you already have, and media vendors buy new leads. Bond does all of it: it finds eligible patients in your own EHR, creates and runs Meta and Google ad campaigns to reach new ones, contacts every ad lead immediately and keeps following up until they respond, pre-screens and schedules every lead, supports informed consent and keeps participants engaged after enrollment, in one workflow with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}",
   summary: "Every comparison page in one place, and why sites choose one platform over separate tools.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   sections: [
     {
       id: "why-bond",
@@ -80,7 +80,7 @@ const page: SeoPage = {
             "Facts about Bond come from Bond's website, its public Trust Center, its technical report and its product information.",
             "Where we found nothing public about a capability, the page says \"not publicly documented\" rather than guessing.",
             "Each page ends with a way to test Bond against the other option on your own protocol and patient list.",
-            "If something is out of date, email hello@bondtrials.com and we will correct it.",
+            "If something is out of date, email [hello@bondtrials.com](mailto:hello@bondtrials.com) and we will correct it.",
           ],
         },
       ],

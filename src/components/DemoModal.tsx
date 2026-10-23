@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { X, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
+import { useDialog } from "./useDialog";
 
 interface DemoModalProps {
   isOpen: boolean;
@@ -16,6 +17,8 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const panelRef = useRef<HTMLDivElement>(null);
+  useDialog(isOpen, panelRef, onClose);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -102,11 +105,19 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
         onClick={onClose}
       />
       
-      {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md p-8 animate-fade-in">
+      {/* Modal: scrolls inside itself so short or landscape screens can reach every field and the close button */}
+      <div
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-title"
+        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[calc(100dvh-2rem)] overflow-y-auto overscroll-contain p-8 animate-fade-in"
+      >
         {/* Close button */}
         <button
+          type="button"
           onClick={onClose}
+          aria-label="Close"
           className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-lg hover:bg-gray-100"
         >
           <X className="w-5 h-5" />
@@ -118,7 +129,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-green-600" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
+            <h3 id="contact-modal-title" className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
             <p className="text-gray-600">
               Thank you! We've received your message and will get back to you within 24 hours.
             </p>
@@ -127,7 +138,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           // Form
           <>
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
+              <h3 id="contact-modal-title" className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
               <p className="text-gray-600">
                 Have questions or need pricing information? We'll get back to you shortly.
               </p>
@@ -145,6 +156,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@company.com"
                   required
+                  data-autofocus
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
                 />
               </div>

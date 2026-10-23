@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
 
             <div className="flex flex-wrap gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-bond-primary/10 text-bond-primary text-sm font-medium">
-                Effective Date: October 22, 2026
+                Effective Date: October 23, 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">
                 Last Reviewed: October 22, 2026
@@ -203,6 +203,12 @@ export default function PrivacyPolicyPage() {
               All&rdquo; in our cookie banner, and it does not load if your browser sends a Global
               Privacy Control signal. See &ldquo;Visitor identification&rdquo; below.
             </BulletItem>
+            <BulletItem label="Cloudflare Web Analytics:">
+              Our hosting and security provider, Cloudflare, counts page views and measures page
+              performance in aggregate. Cloudflare states that this service does not use cookies or
+              local storage and does not fingerprint visitors. It runs for every visitor, whatever
+              you choose in our cookie banner.
+            </BulletItem>
           </BulletList>
           <Paragraph>
             <strong className="text-gray-800">Visitor identification.</strong> If you choose
@@ -221,7 +227,11 @@ export default function PrivacyPolicyPage() {
             >
               https://app.retention.com/optout
             </a>. You can also change your choice at any time through the Cookie Settings link,
-            or ask us not to use this information by emailing hello@bondtrials.com.
+            or ask us not to use this information by emailing{" "}
+            <a href="mailto:hello@bondtrials.com" className="text-bond-primary hover:underline">
+              hello@bondtrials.com
+            </a>
+            .
           </Paragraph>
           <Paragraph>
             You may manage cookie preferences through the Cookie Settings link at the bottom of

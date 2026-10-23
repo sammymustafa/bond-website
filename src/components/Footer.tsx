@@ -69,8 +69,9 @@ export default function Footer() {
             </p>
             <div className="space-y-3">
               <button
+                type="button"
                 onClick={openDemoModal}
-                className="flex items-center gap-2 text-bond-primary hover:text-bond-primary/80 transition-colors text-sm font-medium"
+                className="flex items-center gap-2 -my-2 py-2 text-bond-primary hover:text-bond-primary/80 transition-colors text-sm font-medium"
               >
                 <Mail className="w-4 h-4" />
                 Contact us
@@ -146,7 +147,7 @@ export default function Footer() {
             <Link href="/terms-of-service" className="hover:text-gray-900 transition-colors">
               Terms of Service
             </Link>
-            <button onClick={reopenBanner} className="hover:text-gray-900 transition-colors">
+            <button type="button" onClick={reopenBanner} className="-my-3 py-3 hover:text-gray-900 transition-colors">
               Cookie Settings
             </button>
           </div>

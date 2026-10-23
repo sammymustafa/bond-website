@@ -9,7 +9,7 @@ const HAND_BUILT_UPDATED: Record<string, string> = {
   "/": "2026-10-05",
   "/newsletter": "2026-10-05",
   "/careers": "2026-10-05",
-  "/privacy-policy": "2026-10-22",
+  "/privacy-policy": "2026-10-23",
   "/terms-of-service": "2026-07-19",
 };
 

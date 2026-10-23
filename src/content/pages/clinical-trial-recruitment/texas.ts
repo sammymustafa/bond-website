@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "As of September 21, 2026, 4,854 studies on ClinicalTrials.gov were recruiting at one or more Texas locations, about 22% of the 22,041 recruiting anywhere in the United States.{{cite:ctgov-api}}",
   summary: "Texas recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI and privacy rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -416,7 +416,7 @@ const page: SeoPage = {
       id: "tekton",
       title: "About Tekton Research",
       publisher: "Tekton Research",
-      url: "https://tektonresearch.com/about-tekton/",
+      url: "https://www.tektonresearch.com/about-tekton/",
       year: "2026",
       note: "Read September 22, 2026. Quote: \"Founded in Austin, Texas, in 2006, Tekton is a diversified, multi-specialty research site organization\". Texas locations listed on the page: Austin, Beaumont, Coppell, Houston, Irving, McKinney, San Antonio.",
     },

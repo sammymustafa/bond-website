@@ -56,7 +56,11 @@ export default function NewsletterPage() {
           <h2 className="heading-md mt-2">How many US trials are recruiting right now?</h2>
           <p className="mt-6 font-display text-5xl font-bold text-gray-900 sm:text-6xl">
             {(us.all ?? 0).toLocaleString("en-US")}
-            <sup className="ml-1 text-base font-medium text-bond-primary">[1]</sup>
+            <sup className="ml-1 text-base font-medium">
+              <a href="#src-ctgov" className="text-bond-primary hover:underline" aria-label="Source 1">
+                [1]
+              </a>
+            </sup>
           </p>
           <p className="mt-2 text-gray-600">
             Studies with overall status Recruiting and at least one US location on ClinicalTrials.gov, as of{" "}

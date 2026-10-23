@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "The Census Bureau's Midwest region covers 12 states and 69.8 million residents, about one in five people in the United States.{{cite:census-pop-2025}} On September 21, 2026, the recruiting-study counts for those states on ClinicalTrials.gov added up to 16,812, with a multi-state study counted once in each state.{{cite:ctgov-api}}",
   summary: "Midwest recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI, biometric and records rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -114,7 +114,7 @@ const page: SeoPage = {
             [
               "Indiana University Health",
               "Indiana",
-              "Oracle Health (Cerner); moving to Epic, with go-live planned for mid-2027 per a February 2025 report{{cite:oracle-r4,iuh-epic}}",
+              "Oracle Health (Cerner); moving to Epic, with go-live planned for May 1, 2027, per IU Health's VP of clinical applications (January 2026){{cite:oracle-r4,iuh-epic}}",
             ],
             [
               "Cook County Health; University of Missouri Health Care",
@@ -366,11 +366,11 @@ const page: SeoPage = {
     },
     {
       id: "iuh-epic",
-      title: "IU Health Gears Up for Major Epic EHR Transition by 2027",
-      publisher: "This Week Health",
-      url: "https://thisweekhealth.com/news/iu-health-gears-up-for-major-epic-ehr-transition-by-2027/",
-      year: "2025",
-      note: "Article dated February 16, 2025, summarizing Becker's Hospital Review. Quote: IU Health is \"undertaking a major transition to the Epic electronic health record (EHR) system, scheduled to go live in mid-2027.\" IU Health's own release (https://iuhealth.org/for-media/press-releases/iu-health-to-transition-ehr-platform) did not load during checking.",
+      title: "Kelley Wells, RPh, VP of Clinical Applications, Indiana University Health",
+      publisher: "Becker's Healthcare Podcast (transcript on Wave)",
+      url: "https://pod.wave.co/podcast/beckers-healthcare-podcast-c9704216-027c-4122-8f5a-abeb5422159d/kelley-wells-rph-vp-clinical-applications-indiana-university-health",
+      year: "2026",
+      note: "Episode dated January 3, 2026, read October 23, 2026. Quotes from the transcript: \"So we have been an Oracle Health Cerner client for about 25 years\"; \"we made the decision at the end of last year that we were switching to EPIC\"; \"We go live May 1, 2027.\" This replaces a This Week Health article that now redirects to an unrelated page. IU Health's own release (https://iuhealth.org/for-media/press-releases/iu-health-to-transition-ehr-platform) did not load during checking.",
     },
     {
       id: "velocity-meridian",

@@ -269,7 +269,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "We read vendor websites, press releases, trade press and partner coverage, and one vendor job post on September 21 to 23, 2026, using archived copies where a live page did not load, and cite a source for every vendor row. Facts about Bond come from Bond's website, its public Trust Center, its presentations and its product information. We did not test any other vendor's product, and the list is not exhaustive. Several of these companies have been acquired or merged since 2024, so details change. If anything here is wrong or out of date, email hello@bondtrials.com and we will correct it.",
+          text: "We read vendor websites, press releases, trade press and partner coverage, and one vendor job post on September 21 to 23, 2026, using archived copies where a live page did not load, and cite a source for every vendor row. Facts about Bond come from Bond's website, its public Trust Center, its presentations and its product information. We did not test any other vendor's product, and the list is not exhaustive. Several of these companies have been acquired or merged since 2024, so details change. If anything here is wrong or out of date, email [hello@bondtrials.com](mailto:hello@bondtrials.com) and we will correct it.",
         },
         {
           type: "cta",
