@@ -1,5 +1,6 @@
 import type { SeoPage } from "../../types";
 import { testimonialBlocks, testimonialSources } from "../../testimonials";
+import { deep6Sources } from "./_deep6-sources";
 
 const page: SeoPage = {
   path: "/compare/clinical-trial-recruitment-software",
@@ -20,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform takes EHR matches and ad leads all the way to a booked study visit.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -82,9 +83,9 @@ const page: SeoPage = {
               "Plain-language support and patient Q&A in the patient's language, with understanding checks and an auditable record; the site obtains consent{{cite:bond-site,bond-product}}",
             ],
             ["Trially", "EHR screening and outreach", "Yes", "Yes", "Voice, text and email", "Yes, with reminders", "Not publicly documented{{cite:trially-ai-faq,trially-connect}}"],
-            ["Tempus (Deep 6 AI)", "EHR matching", "Yes", "Yes", "Deep 6 AI matches go to site staff (2023); Tempus nurse navigators contact patients who ask about its TIME oncology trials (2026)", "Not publicly documented", "Not publicly documented{{cite:tempus-deep6-acquisition,deep6-ttuhsc-2023,deep6-life-sciences-2023,tempus-ttct-2026}}"],
+            ["Tempus (acquired Deep 6 AI in 2025)", "EHR matching, now sold as TIME and Next Trials; deep6.ai no longer loads (2026)", "Yes", "Yes", "Deep 6 AI matches went to site staff (2023); Tempus nurse navigators contact patients who ask about its TIME oncology trials (2026)", "Not publicly documented", "Not publicly documented{{cite:tempus-10k-2025,tempus-deep6-acquisition,deep6-ttuhsc-2023,deep6-life-sciences-2023,tempus-ttct-2026,tempus-next-trials-2026,deep6-archive-2026}}"],
             ["Triomics", "EHR matching, oncology", "Yes, inside Epic and oncology EMRs; matches scheduled patients against active trials daily", "Yes, including PDFs and images", "Not publicly documented", "Not publicly documented", "Not publicly documented{{cite:triomics-home}}"],
-            ["Mendel", "Chart abstraction", "Hypercube supports chart review, cohort analysis and trial matching (2025)", "Yes (2024)", "Not publicly documented", "Not publicly documented", "Not publicly documented{{cite:mendel-meta-2025,mendel-google-2024}}"],
+            ["Mendel (merged into Ensemble Health Partners, per its investor)", "Chart abstraction; mendel.ai no longer loads (2026)", "Hypercube supported chart review, cohort analysis and trial matching (2025)", "Yes (2024)", "Not publicly documented", "Not publicly documented", "Not publicly documented{{cite:mendel-meta-2025,mendel-google-2024,oak-mendel}}"],
             ["Inato", "EHR matching and sponsor-site marketplace", "Yes, from uploaded PDF records or a connected EHR or CTMS; ranked, with an explanation and source for each criterion", "Yes, including patient notes and handwriting", "Not publicly documented; its eClinPro integration passes ready-to-screen patients to eClinPro to manage outreach and next steps (2026)", "Not publicly documented", "Not publicly documented{{cite:inato-home-2026,inato-prescreening-2026,inato-ehr-2025,inato-launch-2025,inato-eclinpro-2026}}"],
             ["Oracle Patient Recruitment", "EHR vendor tool", "Yes, with an eligibility score and why a patient qualifies or falls short", "Not publicly documented", "Not publicly documented; informs study teams", "Shows past and upcoming appointments; study teams can tailor a visit schedule", "Not publicly documented{{cite:oracle-2024}}"],
             ["Epic (Life Sciences, Cosmos)", "EHR vendor tool", "Yes, inside Epic", "Not publicly documented", "MyChart recruitment messages and research profiles; patients can flag interest in MyChart", "Not publicly documented", "Consents collected in Epic{{cite:epic-2022,epic-life-sciences}}"],
@@ -104,6 +105,12 @@ const page: SeoPage = {
             ["Manual review", "In-house process", "Staff read charts", "Yes, if staff read notes", "Staff calls", "Staff", "The site obtains consent{{cite:unlu-2024-rectifier}}"],
           ],
           note: "Each Bond cell carries its own cite. For other vendors, cites in the last column cover the whole row.",
+        },
+        {
+          type: "callout",
+          tone: "info",
+          title: "Two vendors have changed hands",
+          text: "Tempus acquired Deep 6 AI on March 11, 2025. deep6.ai no longer loads, and Tempus now sells trial matching through TIME and Next Trials.{{cite:tempus-10k-2025,deep6-archive-2026,tempus-next-trials-2026}} Mendel's investor Oak HC/FT lists Mendel as merged into Ensemble Health Partners, and mendel.ai no longer loads; we found no press release from either company.{{cite:oak-mendel}} Their rows describe what each company published before. See [Deep 6 AI vs Mendel](/compare/deep-6-ai-vs-mendel).",
         },
         {
           type: "p",
@@ -132,9 +139,9 @@ const page: SeoPage = {
               "Volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment; no integration fee{{cite:bond-site,bond-product}}",
             ],
             ["Trially", "Multiple, from cardiovascular to rare disease", "Sponsors, CROs, sites, hospitals", "Pre-built EHR connectors, including Epic and Oracle Health/Cerner; CRIO-certified API partner; says it integrates with other CTMS and CRMs", "Monthly subscription by site size and integration needs (2025){{cite:trially-trial-types,trially-home,trially-faq-ehr,crio-trially-2024,trially-crm-faq,trially-crio-webinar}}"],
-            ["Tempus (Deep 6 AI)", "Deep 6 AI: used enterprise-wide across trial types (2024). Tempus TIME trial network: oncology (2026)", "Healthcare organizations, life sciences companies", "Integrates with health-system EMRs", "No public price list found{{cite:deep6-cassidy-2024,tempus-ttct-2026,deep6-ttuhsc-2023,tempus-deep6-acquisition}}"],
+            ["Tempus (acquired Deep 6 AI in 2025)", "Deep 6 AI: used enterprise-wide across trial types (2024). Tempus TIME trial network and Next Trials: oncology, with Next Trials expandable to other disease groups (2026)", "Healthcare organizations, life sciences companies; the trial sponsor is the TIME customer (2026)", "Deep 6 AI integrated with health-system EMRs (2023); Tempus uses near real-time HL7 and FHIR connections and batch data exchange (2026)", "No public price list found{{cite:deep6-cassidy-2024,tempus-ttct-2026,tempus-next-trials-2026,deep6-ttuhsc-2023,tempus-deep6-acquisition,tempus-10k-2025}}"],
             ["Triomics", "Oncology", "Cancer centers", "Inside Epic, OncoEMR and iKnowMed; on the Epic App Marketplace", "No public price list found{{cite:triomics-home}}"],
-            ["Mendel", "Not publicly documented", "Life sciences companies (2024)", "Not publicly documented", "No public price list found{{cite:mendel-google-2024}}"],
+            ["Mendel (merged into Ensemble Health Partners, per its investor)", "Not publicly documented", "Life sciences companies (2024)", "Not publicly documented", "No public price list found{{cite:mendel-google-2024,oak-mendel}}"],
             ["Inato", "Multiple; case studies in COPD, asthma, weight loss, oncology, cardiovascular disease and atopic dermatitis (2026)", "Research sites, sponsors, CROs", "Connectors for Epic, athenahealth, ModMed, eClinicalWorks, AdvancedMD, Office Ally, Practice Fusion and NextGen Enterprise; two-way syncs with the CRIO and eClinPro site CTMS", "AI pre-screening free for all sites (2026); revenue from participating sponsors (2024); no public sponsor prices{{cite:inato-case-studies-2026,inato-launch-2025,inato-connections-2026,inato-prescreening-faq-2026,inato-free-2024}}"],
             ["Oracle Patient Recruitment", "Not publicly documented", "Life sciences companies; informs study teams in health systems", "Oracle Health Data Intelligence over the EHR", "No public price list found{{cite:oracle-2024}}"],
             ["Epic (Life Sciences, Cosmos)", "Not publicly documented", "Epic customers; sponsors via Discovery, its life sciences platform", "Native to Epic", "No public price list found{{cite:epic-2022,epic-life-sciences}}"],
@@ -168,7 +175,7 @@ const page: SeoPage = {
         { type: "h3", text: "EHR matching tools leave outreach, scheduling and consent" },
         {
           type: "p",
-          text: "These tools find candidates and pass them to your staff. In the table, Deep 6 AI's matches go to site staff and Oracle Patient Recruitment informs study teams, and outreach, scheduling and consent support are not publicly documented for Triomics, Mendel or Inato, whose eClinPro integration passes ready-to-screen patients to that CTMS to manage outreach and next steps.{{cite:deep6-life-sciences-2023,oracle-2024,triomics-home,mendel-meta-2025,inato-eclinpro-2026}} Calling each candidate, pre-screening, booking the visit and explaining the consent form stay with your coordinators. Epic adds MyChart recruitment messages and collects consents in Epic, and Tempus nurse navigators contact patients who ask about its TIME oncology trials; automated voice or SMS pre-screening is not publicly documented for either.{{cite:epic-life-sciences,tempus-ttct-2026}} See [Bond vs Tempus (Deep 6 AI)](/compare/bond-vs-tempus-deep-6) and [Bond vs Inato](/compare/bond-vs-inato).",
+          text: "These tools find candidates and pass them to your staff. In the table, Deep 6 AI's matches went to site staff and Oracle Patient Recruitment informs study teams, and outreach, scheduling and consent support are not publicly documented for Triomics, Mendel or Inato, whose eClinPro integration passes ready-to-screen patients to that CTMS to manage outreach and next steps.{{cite:deep6-life-sciences-2023,oracle-2024,triomics-home,mendel-meta-2025,inato-eclinpro-2026}} Calling each candidate, pre-screening, booking the visit and explaining the consent form stay with your coordinators. Epic adds MyChart recruitment messages and collects consents in Epic, and Tempus nurse navigators contact patients who ask about its TIME oncology trials; automated voice or SMS pre-screening is not publicly documented for either.{{cite:epic-life-sciences,tempus-ttct-2026}} See [Bond vs Tempus (Deep 6 AI)](/compare/bond-vs-tempus-deep-6) and [Bond vs Inato](/compare/bond-vs-inato).",
         },
         { type: "h3", text: "Engagement agents leave finding eligible patients in the chart" },
         {
@@ -290,7 +297,7 @@ const page: SeoPage = {
     },
     {
       q: "Which vendors say they read unstructured clinical notes?",
-      a: "Among the vendors reviewed, public materials describe Bond, Trially, Deep 6 AI (now part of Tempus), Triomics, Mendel and Inato as working with unstructured notes or documents.{{cite:bond-site,trially-ai-faq,deep6-ttuhsc-2023,triomics-home,mendel-google-2024,inato-ehr-2025}} Bond reads clinical notes, prescriptions and lab results, uses imaging data and other unstructured documents, including pathology, radiology and molecular reports, and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} IQVIA describes AI-powered EMR data mining and chart review by its staff.{{cite:iqvia-recruitment}} For the engagement agents and other recruitment services listed, we did not find note reading described in their public materials, so ask them directly.",
+      a: "Among the vendors reviewed, public materials describe Bond, Trially, Deep 6 AI (now part of Tempus), Triomics, Mendel (now merged into Ensemble Health Partners) and Inato as working with unstructured notes or documents.{{cite:bond-site,trially-ai-faq,deep6-ttuhsc-2023,triomics-home,mendel-google-2024,inato-ehr-2025}} Bond reads clinical notes, prescriptions and lab results, uses imaging data and other unstructured documents, including pathology, radiology and molecular reports, and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} IQVIA describes AI-powered EMR data mining and chart review by its staff.{{cite:iqvia-recruitment}} For the engagement agents and other recruitment services listed, we did not find note reading described in their public materials, so ask them directly.",
     },
     {
       q: "Which vendors publish their prices?",
@@ -454,8 +461,17 @@ const page: SeoPage = {
       publisher: "Meta AI (blog)",
       url: "https://ai.meta.com/blog/mendel-ai-accelerating-clinical-trials-with-llama/",
       year: "2025",
-      note: "Published February 19, 2025, accessed September 2026. Quotes: \"Mendel Hypercube, tackles clinical tasks like data abstraction, chart reviews, and patient cohort analysis.\" and \"With Llama, Hypercube can also be used to chat and query in natural language for trial matching and putting together patient groups.\" Mendel's own website did not load when we checked in September 2026.",
+      note: "Published February 19, 2025, accessed September 2026. Quotes: \"Mendel Hypercube, tackles clinical tasks like data abstraction, chart reviews, and patient cohort analysis.\" and \"With Llama, Hypercube can also be used to chat and query in natural language for trial matching and putting together patient groups.\" Mendel's own website did not load when we checked in September and October 2026.",
     },
+    {
+      id: "oak-mendel",
+      title: "Mendel portfolio page",
+      publisher: "Oak HC/FT",
+      url: "https://www.oakhcft.com/company/mendel",
+      year: "2026",
+      note: "Read October 23, 2026. The page describes Mendel as a \"Clinical data extraction and processing platform\" with the status \"Merged: Ensemble Health Partners\".",
+    },
+    ...deep6Sources("tempus-10k-2025", "tempus-next-trials-2026", "deep6-archive-2026"),
     {
       id: "inato-home-2026",
       title: "Inato homepage",
