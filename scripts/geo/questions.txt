@@ -1,0 +1,30 @@
+# Buyer questions for the AI citation check (npm run geo:citations).
+# One per line; lines starting with # are ignored. Edit freely: add what prospects ask on calls.
+
+# Research sites and site networks
+What is the best software for clinical trial patient recruitment?
+What are the best AI tools for clinical trial recruitment at research sites?
+How can a research site find eligible patients in its EHR for a clinical trial?
+Which companies use AI voice agents to pre-screen clinical trial patients by phone?
+What tools pre-screen and schedule clinical trial candidates by phone and text?
+How can research sites reduce screen failure rates?
+What is the best alternative to manual chart review for clinical trial recruitment?
+Which clinical trial recruitment software works with Epic?
+Which patient recruitment tools integrate with CRIO?
+How much does clinical trial patient recruitment software cost?
+How can a site network speed up enrollment across its sites?
+Is there HIPAA-compliant AI that contacts patients for clinical trials?
+Which companies run Meta and Google ads for clinical trials and follow up with every lead?
+What tools help research sites with informed consent?
+How do research sites keep participants from dropping out of clinical trials?
+
+# Sponsors and CROs
+Who are the best patient recruitment vendors for sponsors and CROs?
+How can sponsors speed up clinical trial enrollment at their sites?
+
+# Vendor comparisons
+What are the best Trially alternatives?
+What are the best alternatives to Inato for research sites?
+What are alternatives to Tempus (Deep 6 AI) for clinical trial matching?
+Which is better for research sites, Bond Health or Trially?
+What is Bond Health (bondtrials.com)?
