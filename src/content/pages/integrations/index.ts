@@ -60,7 +60,7 @@ const page: SeoPage = {
     },
     {
       q: "Which EHRs does Bond integrate with?",
-      a: "Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs, through FHIR, HL7 or an integration partner; NextGen connects through FHIR. Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method, and there is no integration fee.{{cite:bond-site,bond-product}}",
+      a: "Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and other major EHRs, through FHIR, HL7 or an integration partner. Full EHR integration typically takes 48 hours, depending on the EHR, IT review and interface method, and there is no integration fee.{{cite:bond-site,bond-product}}",
     },
   ],
   sources: [

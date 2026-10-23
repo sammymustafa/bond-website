@@ -5,7 +5,7 @@ const page: SeoPage = {
   category: "integration",
   title: "NextGen EHR FHIR integration for clinical trial recruitment",
   description:
-    "How Bond connects to NextGen Enterprise and NextGen Office over FHIR R4: the data it reads, NextGen's API programs and fees, approvals, timeline and limits.",
+    "How Bond connects to NextGen Enterprise and NextGen Office: the data it reads, NextGen's API programs and fees, approvals, timeline and limits.",
   keywords: [
     "NextGen clinical trial recruitment",
     "NextGen Enterprise FHIR R4 API",
@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Integration",
   h1: "Connecting Bond to NextGen Healthcare",
   intro:
-    "Bond Health connects to NextGen Enterprise and NextGen Office through NextGen's certified FHIR R4 APIs, screens a practice's patients against a study's criteria, and hands pre-screened patients to its coordinators.{{cite:bond-site,bond-product}} Below: the FHIR resources involved, which NextGen API program applies to your product, what your NextGen administrator approves, the timeline, and what is not integrated today.",
+    "Bond Health connects to NextGen Enterprise and NextGen Office through NextGen's published APIs, screens a practice's patients against a study's criteria, and hands pre-screened patients to its coordinators.{{cite:bond-site,bond-product}} Below: the FHIR resources involved, which NextGen API program applies to your product, what your NextGen administrator approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, NextGen API programs and fees, practice approvals and timeline for connecting Bond at a NextGen Enterprise or NextGen Office practice.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-22",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -62,7 +62,7 @@ const page: SeoPage = {
           rows: [
             ["CHPL listing", "Enterprise 8, certified June 2, 2025{{cite:chpl-nge}}", "Version 5.0, certified February 20, 2018{{cite:chpl-ngo}}"],
             ["Published FHIR R4 server", "28 resource types, read and search only{{cite:nge-fhir-metadata}}", "26 resource types, read and search only{{cite:ngo-fhir-metadata}}"],
-            ["Population-level export", "None in the published R4 CapabilityStatement or route documentation{{cite:nge-fhir-metadata,nge-fhir-r4-routes}}", "Bulk FHIR API with Group and Patient `$export`{{cite:ngo-bulk-metadata}}"],
+            ["Population-level export", "None in the published R4 CapabilityStatement or route documentation{{cite:nge-fhir-metadata,nge-fhir-r4-routes}}", "Bulk FHIR API with Group `$export`{{cite:ngo-bulk-guide,ngo-bulk-swagger}}"],
             ["Other APIs", "Proprietary Enterprise APIs, 800+ routes, read and write{{cite:nextgen-api}}", "Published provider APIs are read-only FHIR for USCDI v1 data{{cite:nextgen-regulatory-ngo}}"],
             ["How a vendor app is enabled", "The practice grants access in the NextGen API Client Portal{{cite:nextgen-api}}", "NextGen onboards each provider API per vendor per practice, for a fee{{cite:nextgen-regulatory-ngo}}"],
           ],
@@ -219,7 +219,6 @@ const page: SeoPage = {
             "**Running inside NextGen.** Bond does not run as an embedded app in the NextGen screen; coordinators review matches in Bond.",
             "**The NextGen schedule.** Bond books screening visits straight into the site's calendar, not NextGen scheduling.{{cite:bond-site}}",
             "**Portal messaging.** Bond does not message patients through the NextGen patient portal. Outreach is by voice and text through [Engage](/engage).",
-            "**Proprietary Enterprise APIs.** Bond connects to NextGen through its FHIR APIs, not NextGen's proprietary Enterprise APIs.{{cite:bond-product}}",
           ],
         },
         {
@@ -248,7 +247,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Bond use FHIR or an HL7 interface with NextGen?",
-      a: "FHIR. Bond connects to NextGen Enterprise and NextGen Office through NextGen's certified FHIR R4 APIs.{{cite:bond-product}}",
+      a: "Bond connects through NextGen's published APIs rather than an HL7 interface.{{cite:bond-product}} NextGen Office publishes FHIR R4 and Bulk FHIR APIs; NextGen Enterprise publishes a FHIR R4 server and its proprietary Enterprise APIs.{{cite:ngo-fhir-metadata,ngo-bulk-guide,nge-fhir-metadata,nextgen-api}}",
     },
   ],
   sources: [
@@ -375,12 +374,28 @@ const page: SeoPage = {
       note: "Retrieved October 5, 2026. fhirVersion 4.0.1; instantiates the US Core server CapabilityStatement; 26 resource types with read or search-type only, including MedicationAdministration; no Appointment. Quote: \"url\": \"https://fhir.meditouchehr.com/api/fhir/r4\"",
     },
     {
+      id: "ngo-bulk-guide",
+      title: "NextGen Office Bulk FHIR API Developer Guide",
+      publisher: "NextGen Healthcare",
+      url: "https://www.nextgen.com/-/media/files/ngo/NextGen-Office-FHIR-R4-Bulk-FHIR-API-Developer-Guide",
+      year: "2025",
+      note: "Dated May 29, 2025; accessed October 22, 2026. Its one export route is \"Group of Patients Export\": \"(GET) https://fhir.meditouchehr.com/api/bulkfhir/r4/Group/<group-id>/$export\". Also: \"A client can create a group with a maximum of 1,000 patients.\"",
+    },
+    {
+      id: "ngo-bulk-swagger",
+      title: "NextGen Office Bulk FHIR API specification (OpenAPI)",
+      publisher: "NextGen Healthcare",
+      url: "https://hfstatic.s3.amazonaws.com/swagger/Bulk-API-R4-Swagger.yml",
+      year: "2026",
+      note: "Accessed October 22, 2026; linked from NextGen's NextGen Office regulatory API page. The only export path is \"/bulkfhir/r4/Group/{id}/$export\".",
+    },
+    {
       id: "ngo-bulk-metadata",
       title: "NextGen Office Bulk FHIR R4 CapabilityStatement (production /metadata)",
       publisher: "NextGen Healthcare",
       url: "https://fhir.meditouchehr.com/api/bulkfhir/r4/metadata",
       year: "2026",
-      note: "Retrieved October 5, 2026. Instantiates the Bulk Data CapabilityStatement; Group and Patient declare the export operation. Quote: \"name\": \"NGO Bulk FHIR Server\"",
+      note: "Retrieved October 5, 2026. Instantiates the Bulk Data CapabilityStatement; Group and Patient declare the export operation, though NextGen's developer guide and API specification document only Group export. Quote: \"name\": \"NGO Bulk FHIR Server\"",
     },
   ],
   related: [
