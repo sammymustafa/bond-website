@@ -40,3 +40,10 @@ next-env.d.ts
 # public/ (or src/app/ for Next.js icon conventions), never here. If you genuinely
 # need a PNG at the repo root, override with: git add -f <file>
 /*.png
+
+# geo script output (Search Console data, AI answers)
+/reports/
+# Google service-account keys
+*.service-account.json
+# Search Console UI exports
+*-Performance-on-Search-*/

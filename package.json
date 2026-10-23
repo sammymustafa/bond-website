@@ -10,7 +10,14 @@
     "validate": "tsx scripts/validate-content.ts --warn",
     "gen:registry": "node scripts/gen-registry.mjs",
     "gen:docx": "tsx scripts/gen-docx.ts",
-    "gen:report-pdf": "bash scripts/gen-report-pdf.sh"
+    "gen:report-pdf": "bash scripts/gen-report-pdf.sh",
+    "geo:check": "node --import tsx scripts/geo/check-setup.ts",
+    "geo:queries": "node --import tsx scripts/geo/classify-queries.ts",
+    "geo:citations": "node --import tsx scripts/geo/ai-citations.ts",
+    "geo:pages": "node --import tsx scripts/geo/page-audit.ts",
+    "geo:match": "node --import tsx scripts/geo/match-questions.ts",
+    "geo:score": "node --import tsx scripts/geo/score-pages.ts",
+    "geo:plan": "node --import tsx scripts/geo/plan-pages.ts"
   },
   "dependencies": {
     "@fontsource/space-grotesk": "^5.0.0",
@@ -21,6 +28,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
