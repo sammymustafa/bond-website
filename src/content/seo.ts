@@ -199,6 +199,7 @@ export function glossaryTermToPage(term: GlossaryTerm): SeoPage {
     summary: term.short,
     lastUpdated: term.lastUpdated,
     sections: [{ id: "definition", heading: `What does ${term.term} mean in clinical research?`, blocks: term.body }],
+    faq: term.faq,
     sources: term.sources,
     related: term.related,
   };

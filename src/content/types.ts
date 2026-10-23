@@ -161,6 +161,8 @@ export interface GlossaryTerm {
   description?: string;
   /** Longer explanation; usually two or three paragraphs plus a list. */
   body: Block[];
+  /** Short questions people search for this term, answered from the cited sources. Rendered with FAQPage schema. */
+  faq?: FaqItem[];
   sources: Source[];
   related: RelatedLink[];
   lastUpdated: string;

@@ -92,6 +92,9 @@ export const compareLinks: NavItem[] = [
   { name: "Bond vs Power", href: "/compare/bond-vs-power" },
   { name: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment" },
   { name: "Bond vs manual chart review", href: "/compare/bond-vs-manual-chart-review" },
+  { name: "Deep 6 AI vs Triomics", href: "/compare/deep-6-ai-vs-triomics" },
+  { name: "Deep 6 AI vs Paradigm Health", href: "/compare/deep-6-ai-vs-paradigm-health" },
+  { name: "Deep 6 AI vs Mendel", href: "/compare/deep-6-ai-vs-mendel" },
   { name: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software" },
 ];
 

@@ -10,9 +10,9 @@ const page: SeoPage = {
   eyebrow: "Solutions",
   h1: "Built for the people who enroll patients",
   intro:
-    "The same three-stage workflow, identify, engage and book, fits differently depending on whether you run one site, a network, a clinic that is adding research, or a portfolio of studies. Each page below starts from that organization's problems and shows what changes day to day.",
+    "Bond Health is for the organizations that enroll patients in clinical trials: research sites, site networks, physician groups, FQHCs and community sites, CROs and sponsors. The same three-stage workflow, identify, engage and book, fits each one differently, so each page below starts from that organization's problems and shows what changes day to day.",
   summary: "Audience pages for sites, networks, physician groups, FQHCs, CROs and sponsors.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   sections: [
     {
       id: "by-audience",

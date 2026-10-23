@@ -10,9 +10,9 @@ const page: SeoPage = {
   eyebrow: "Therapeutic areas",
   h1: "Eligibility is different in every therapeutic area",
   intro:
-    "A cardiology protocol turns on an ejection fraction buried in an echo report. An oncology protocol turns on a biomarker in a molecular pathology PDF. A psychiatry protocol turns on a rating scale a clinician typed into a note. Each page below explains how eligibility works in that area, what usually causes screen failure, and what Bond reads in the chart to find it.",
+    "Eligibility differs by therapeutic area because the deciding criteria sit in different parts of the chart: an ejection fraction in a cardiology echo report, a biomarker in an oncology molecular pathology PDF, a rating scale a psychiatrist typed into a note. Each page below explains how eligibility works in that area, what usually causes screen failure, and what Bond reads in the chart to find it.",
   summary: "Eight pages on eligibility, screen failure and chart evidence by therapeutic area.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   sections: [
     {
       id: "areas",

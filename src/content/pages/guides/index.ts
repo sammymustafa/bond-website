@@ -10,9 +10,9 @@ const page: SeoPage = {
   eyebrow: "Guides",
   h1: "Guides",
   intro:
-    "Longer pieces for the questions that come up in every feasibility call and IRB meeting. Each guide states the rule or the number, cites where it comes from, and ends with what to do differently on Monday.",
-  summary: "Seven guides on the operational and regulatory questions behind enrollment.",
-  lastUpdated: "2026-10-05",
+    "Bond Health's guides answer the operational, regulatory and cost questions research sites and sponsors face in feasibility calls and IRB meetings: how to reduce screen failure, how sponsors choose sites, what HIPAA and IRB rules allow in patient outreach, and what recruitment software costs. Each guide states the rule or the number, cites where it comes from, and ends with what to do differently on Monday.",
+  summary: "Guides on the operational, regulatory and cost questions behind enrollment.",
+  lastUpdated: "2026-10-23",
   sections: [
     {
       id: "guides",

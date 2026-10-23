@@ -10,9 +10,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruitment, by state and city",
   intro:
-    "As of September 21, 2026, 22,041 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Where those studies sit, which health systems hold the patients, and which state laws govern a text message to a patient all vary. Each page below pulls the registry counts for its area and describes the research landscape around them.",
+    "Clinical trial recruitment varies by location because the number of recruiting studies, the health systems that hold the patients, and the state laws that govern a text message to a patient all differ. As of September 21, 2026, 22,041 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Each page below pulls the registry counts for its area and describes the research landscape around them.",
   summary: "Thirteen location pages, for states, regions and major research cities, with registry counts, research hubs and local outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   sections: [
     {
