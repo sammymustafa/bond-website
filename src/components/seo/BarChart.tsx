@@ -9,16 +9,12 @@ interface Props {
   cites: CiteIndex;
 }
 
-/** A simple, dependency-free horizontal bar chart rendered as SVG. */
+/**
+ * A simple, dependency-free horizontal bar chart built from HTML, so labels wrap and text keeps its size on a phone
+ * (an SVG scaled to fit shrank them to about 8px). Below `sm` each label sits above its bar.
+ */
 export default function BarChart({ title, unit, data, cite, cites }: Props) {
   const max = Math.max(...data.map((d) => d.value), 1);
-  const rowH = 34;
-  const labelW = 190;
-  const width = 640;
-  // Leave room right of the longest bar for its value label (e.g. "7,074 studies").
-  const valueW = 130;
-  const barMax = width - labelW - valueW;
-  const height = data.length * rowH + 8;
   const fmt = (n: number) => n.toLocaleString("en-US");
   return (
     <figure className="my-8 rounded-2xl border border-gray-100 bg-white p-5 sm:p-6 shadow-sm">
@@ -26,32 +22,25 @@ export default function BarChart({ title, unit, data, cite, cites }: Props) {
         {title}
         <Cite ids={[cite]} cites={cites} />
       </figcaption>
-      <div className="overflow-x-auto">
-        <svg
-          viewBox={`0 0 ${width} ${height}`}
-          width="100%"
-          role="img"
-          aria-label={title}
-          className="min-w-[420px]"
-        >
-          {data.map((d, i) => {
-            const y = i * rowH + 4;
-            const w = Math.max(2, Math.round((d.value / max) * barMax));
-            return (
-              <g key={d.label} transform={`translate(0, ${y})`}>
-                <text x={labelW - 10} y={rowH / 2 + 1} textAnchor="end" fontSize="13" fill="#374151" dominantBaseline="middle">
-                  {d.label}
-                </text>
-                <rect x={labelW} y={6} width={w} height={rowH - 12} rx={5} fill="#0066FF" opacity={0.9} />
-                <text x={labelW + w + 8} y={rowH / 2 + 1} fontSize="13" fill="#111827" dominantBaseline="middle" fontWeight={600}>
-                  {fmt(d.value)}
-                  {unit ? ` ${unit}` : ""}
-                </text>
-              </g>
-            );
-          })}
-        </svg>
-      </div>
+      <ul className="space-y-3 sm:space-y-2">
+        {data.map((d) => (
+          <li key={d.label} className="grid gap-1 sm:grid-cols-[12rem_minmax(0,1fr)] sm:items-center sm:gap-3">
+            <span className="text-sm leading-snug text-gray-700 sm:text-right">{d.label}</span>
+            <span className="flex items-center gap-2">
+              {/* 7rem stays free beside the longest bar for its value, e.g. "7,074 studies" */}
+              <span
+                aria-hidden
+                className="h-5 min-w-0.5 rounded-md bg-bond-primary/90 [print-color-adjust:exact]"
+                style={{ width: `calc((100% - 7rem) * ${d.value / max})` }}
+              />
+              <span className="shrink-0 whitespace-nowrap text-sm font-semibold tabular-nums text-gray-900">
+                {fmt(d.value)}
+                {unit ? ` ${unit}` : ""}
+              </span>
+            </span>
+          </li>
+        ))}
+      </ul>
     </figure>
   );
 }

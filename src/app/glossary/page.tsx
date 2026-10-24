@@ -68,11 +68,11 @@ export default function GlossaryPage() {
                   <Link
                     key={t.slug}
                     href={`/glossary/${t.slug}`}
-                    className="group rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:border-bond-primary/30 hover:shadow-md"
+                    className="group flex flex-col rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:border-bond-primary/30 hover:shadow-md"
                   >
                     <h3 className="font-display text-lg font-semibold text-gray-900 group-hover:text-bond-primary">{t.term}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-gray-600">{t.short}</p>
-                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-bond-primary">
+                    <span className="mt-auto inline-flex items-center gap-1 pt-3 text-sm font-medium text-bond-primary">
                       Full definition <ArrowRight className="h-3.5 w-3.5" />
                     </span>
                   </Link>

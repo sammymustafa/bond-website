@@ -49,7 +49,7 @@ export default function BlogIndex() {
                 </p>
                 <h2 className="mt-2 font-display text-xl font-semibold text-gray-900 group-hover:text-bond-primary">{p.h1}</h2>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">{p.summary}</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-bond-primary">
+                <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-bond-primary">
                   Read <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                 </span>
               </Link>

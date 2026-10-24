@@ -41,7 +41,7 @@ export default function FullFunnel() {
 
   return (
     <section id="solutions" className="section bg-linear-to-b from-gray-50 to-white overflow-hidden">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bond-primary/5 border border-bond-primary/20 rounded-full mb-6">
@@ -63,8 +63,8 @@ export default function FullFunnel() {
           {/* Connection Lines - Desktop */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-blue-200 via-emerald-200 to-violet-200 -translate-y-1/2 z-0" />
           
-          {/* Stage Cards */}
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 relative z-10">
+          {/* Stage Cards: one column below lg, where three columns are too narrow for the copy */}
+          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 relative z-10">
             {funnelStages.map((stage, index) => {
               const Icon = stage.icon;
               const isHovered = hoveredStage === stage.id;
@@ -72,13 +72,13 @@ export default function FullFunnel() {
               return (
                 <div
                   key={stage.id}
-                  className="relative group"
+                  className="relative group h-full"
                   onMouseEnter={() => setHoveredStage(stage.id)}
                   onMouseLeave={() => setHoveredStage(null)}
                 >
                   {/* Card */}
                   <div className={`
-                    relative bg-white rounded-2xl p-6 lg:p-8 border transition-all duration-500
+                    relative h-full bg-white rounded-2xl p-6 lg:p-8 border transition-all duration-500
                     ${isHovered 
                       ? 'border-transparent shadow-2xl scale-[1.02]' 
                       : 'border-gray-200 shadow-lg hover:shadow-xl'
@@ -95,8 +95,8 @@ export default function FullFunnel() {
                       <div className="absolute inset-[2px] bg-white rounded-2xl" />
                     </div>
 
-                    {/* Content */}
-                    <div className="relative z-10">
+                    {/* Content; the metric sits at the bottom so it lines up across the equal-height cards */}
+                    <div className="relative z-10 flex flex-col h-full">
                       {/* Step Number */}
                       <div className="flex items-center justify-between mb-6">
                         <span className={`
@@ -137,10 +137,10 @@ export default function FullFunnel() {
                       </p>
 
                       {/* Metric */}
-                      <div className="pt-4 border-t border-gray-100">
-                        <div className="flex items-baseline gap-2">
+                      <div className="mt-auto pt-4 border-t border-gray-100">
+                        <div className="flex flex-wrap items-baseline gap-x-2">
                           <span className={`
-                            text-2xl font-bold
+                            whitespace-nowrap text-xl lg:text-2xl font-bold
                             ${stage.color === 'blue' ? 'text-blue-600' : ''}
                             ${stage.color === 'emerald' ? 'text-emerald-600' : ''}
                             ${stage.color === 'violet' ? 'text-violet-600' : ''}
@@ -203,17 +203,17 @@ export default function FullFunnel() {
                 and complete visibility from first ad click or chart match to a booked visit and signed consent.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-white/5 rounded-xl">
-                <p className="text-2xl lg:text-3xl font-bold text-white">1</p>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
+              <div className="text-center px-1 py-3 sm:p-4 bg-white/5 rounded-xl">
+                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">1</p>
                 <p className="text-xs text-gray-400 mt-1">Platform</p>
               </div>
-              <div className="text-center p-4 bg-white/5 rounded-xl">
-                <p className="text-2xl lg:text-3xl font-bold text-white">0</p>
+              <div className="text-center px-1 py-3 sm:p-4 bg-white/5 rounded-xl">
+                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">0</p>
                 <p className="text-xs text-gray-400 mt-1">Data silos</p>
               </div>
-              <div className="text-center p-4 bg-white/5 rounded-xl">
-                <p className="text-2xl lg:text-3xl font-bold text-white">100%</p>
+              <div className="text-center px-1 py-3 sm:p-4 bg-white/5 rounded-xl">
+                <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">100%</p>
                 <p className="text-xs text-gray-400 mt-1">Visibility</p>
               </div>
             </div>

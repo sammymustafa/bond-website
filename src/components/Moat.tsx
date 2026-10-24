@@ -2,10 +2,38 @@
 
 import { Database, FileText, Brain, Search, Phone, ArrowRight, Calendar } from "lucide-react";
 
+// Knowledge-graph picture. Positions are % of the square circle box and the connectors are drawn in an SVG
+// with a matching 0-100 viewBox, so the lines meet the nodes at every size.
+const polar = (angle: number, radius: number) => ({
+  x: 50 + Math.cos((angle * Math.PI) / 180) * radius,
+  y: 50 + Math.sin((angle * Math.PI) / 180) * radius,
+});
+
+const conceptNodes = [
+  { label: "Disease", color: "bg-purple-500", ...polar(-60, 30) },
+  { label: "Drug", color: "bg-orange-500", ...polar(60, 30) },
+  { label: "Symptom", color: "bg-purple-400", ...polar(180, 30) },
+];
+
+// Text evidence attached to a concept (index into conceptNodes)
+const evidenceFragments = [
+  { ...polar(-25, 41), concept: 0 },
+  { ...polar(25, 41), concept: 1 },
+  { ...polar(125, 40), concept: 1 },
+  { ...polar(215, 40), concept: 2 },
+];
+
+// Dashed concept-to-concept relations; the Disease-Drug one is highlighted
+const relations = [
+  { from: 0, to: 1, color: "#f97316" },
+  { from: 0, to: 2, color: "#6b7280" },
+  { from: 1, to: 2, color: "#6b7280" },
+];
+
 export default function Moat() {
   return (
     <section id="about" className="section bg-gray-900 text-white overflow-hidden">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <p className="text-bond-accent font-semibold text-xs sm:text-sm uppercase tracking-wide mb-3 sm:mb-4">
@@ -23,12 +51,13 @@ export default function Moat() {
         {/* Architecture Diagram */}
         <div className="relative max-w-5xl mx-auto">
           {/* Main Flow Container */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1.5fr_auto_1fr] gap-6 md:gap-6 items-center">
+          {/* Side by side only from lg; below that the graph comes first and the inputs and outputs stack under it */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1.5fr_auto_1fr] gap-6 items-center">
             
             {/* Left: Inputs */}
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-2 sm:gap-4">
               {/* Unstructured EHR Data */}
-              <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-3 sm:p-5">
+              <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-2.5 sm:p-5">
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-purple-500/20 flex items-center justify-center shrink-0">
                     <FileText className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
@@ -39,7 +68,7 @@ export default function Moat() {
               </div>
 
               {/* Structured Ontologies */}
-              <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-3 sm:p-5">
+              <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-2.5 sm:p-5">
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-blue-500/20 flex items-center justify-center shrink-0">
                     <Database className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
@@ -57,89 +86,84 @@ export default function Moat() {
             </div>
 
             {/* Arrow 1 */}
-            <div className="hidden md:flex items-center justify-center">
+            <div className="hidden lg:flex items-center justify-center">
               <ArrowRight className="w-6 h-6 text-gray-600" />
             </div>
 
             {/* Center: Knowledge Graph */}
-            <div className="relative order-first md:order-0">
-              <div className="aspect-square max-w-[180px] sm:max-w-xs mx-auto relative bg-linear-to-br from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50 p-4 sm:p-8">
+            <div className="relative order-first lg:order-0">
+              <div className="aspect-square w-[240px] sm:w-80 max-w-full mx-auto relative bg-linear-to-br from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50">
                 {/* Central Node */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-linear-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-linear-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
                     <div className="text-center">
-                      <p className="text-sm sm:text-lg font-bold text-white">1.6M</p>
-                      <p className="text-[8px] sm:text-[10px] text-white/80">nodes</p>
+                      <p className="text-base sm:text-lg font-bold text-white leading-tight">1.6M</p>
+                      <p className="text-[10px] sm:text-xs text-white/80">nodes</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Concept Nodes */}
-                {[
-                  { label: "Disease", color: "bg-purple-500", angle: -60, distance: 85 },
-                  { label: "Drug", color: "bg-orange-500", angle: 60, distance: 85 },
-                  { label: "Symptom", color: "bg-purple-400", angle: 180, distance: 85 },
-                ].map((node) => {
-                  const x = Math.cos((node.angle * Math.PI) / 180) * node.distance;
-                  const y = Math.sin((node.angle * Math.PI) / 180) * node.distance;
-                  return (
-                    <div
-                      key={node.label}
-                      className="absolute top-1/2 left-1/2 z-10"
-                      style={{ transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))` }}
-                    >
-                      <div className={`w-3 h-3 rounded-full ${node.color}`} />
-                    </div>
-                  );
-                })}
+                {conceptNodes.map((node) => (
+                  <div
+                    key={node.label}
+                    className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+                    style={{ left: `${node.x}%`, top: `${node.y}%` }}
+                  >
+                    <div className={`w-3 h-3 rounded-full ${node.color}`} />
+                  </div>
+                ))}
 
                 {/* Evidence Fragments */}
-                {[
-                  { angle: -30, distance: 110 },
-                  { angle: 30, distance: 100 },
-                  { angle: 120, distance: 105 },
-                  { angle: 210, distance: 100 },
-                ].map((frag, i) => {
-                  const x = Math.cos((frag.angle * Math.PI) / 180) * frag.distance;
-                  const y = Math.sin((frag.angle * Math.PI) / 180) * frag.distance;
-                  return (
-                    <div
-                      key={i}
-                      className="absolute top-1/2 left-1/2 z-10"
-                      style={{ transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))` }}
-                    >
-                      <div className="w-12 h-3 bg-gray-700/80 rounded-sm border border-gray-600/50" />
-                    </div>
-                  );
-                })}
+                {evidenceFragments.map((frag, i) => (
+                  <div
+                    key={i}
+                    className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+                    style={{ left: `${frag.x}%`, top: `${frag.y}%` }}
+                  >
+                    <div className="w-10 sm:w-12 h-2.5 sm:h-3 bg-gray-700 rounded-sm border border-gray-600/50" />
+                  </div>
+                ))}
 
-                {/* Connection Lines SVG */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
-                  {[-60, 60, 180].map((angle, i) => {
-                    const x2 = 100 + Math.cos((angle * Math.PI) / 180) * 42;
-                    const y2 = 100 + Math.sin((angle * Math.PI) / 180) * 42;
-                    return (
-                      <line
-                        key={i}
-                        x1="100"
-                        y1="100"
-                        x2={x2}
-                        y2={y2}
-                        stroke="url(#gradient-line)"
-                        strokeWidth="1.5"
-                        opacity="0.5"
-                      />
-                    );
-                  })}
-                  <line x1="75" y1="57" x2="125" y2="57" stroke="#6b7280" strokeWidth="1" strokeDasharray="3 3" opacity="0.4" />
-                  <line x1="75" y1="57" x2="57" y2="100" stroke="#6b7280" strokeWidth="1" strokeDasharray="3 3" opacity="0.4" />
-                  <line x1="125" y1="57" x2="57" y2="100" stroke="#f97316" strokeWidth="1" strokeDasharray="3 3" opacity="0.4" />
+                {/* Connection Lines SVG, same 0-100 space as the nodes; strokes stay in screen pixels */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden>
                   <defs>
-                    <linearGradient id="gradient-line" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient id="moat-line" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="100">
                       <stop offset="0%" stopColor="#0066FF" />
                       <stop offset="100%" stopColor="#00D4AA" />
                     </linearGradient>
                   </defs>
+                  {conceptNodes.map((node) => (
+                    <line key={node.label} x1="50" y1="50" x2={node.x} y2={node.y} stroke="url(#moat-line)" strokeWidth="1.5" opacity="0.6" vectorEffect="non-scaling-stroke" />
+                  ))}
+                  {relations.map(({ from, to, color }) => (
+                    <line
+                      key={`${from}-${to}`}
+                      x1={conceptNodes[from].x}
+                      y1={conceptNodes[from].y}
+                      x2={conceptNodes[to].x}
+                      y2={conceptNodes[to].y}
+                      stroke={color}
+                      strokeWidth="1"
+                      strokeDasharray="3 3"
+                      opacity="0.5"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  ))}
+                  {evidenceFragments.map((frag, i) => (
+                    <line
+                      key={i}
+                      x1={conceptNodes[frag.concept].x}
+                      y1={conceptNodes[frag.concept].y}
+                      x2={frag.x}
+                      y2={frag.y}
+                      stroke="#6b7280"
+                      strokeWidth="1"
+                      strokeDasharray="2 3"
+                      opacity="0.5"
+                      vectorEffect="non-scaling-stroke"
+                    />
+                  ))}
                 </svg>
 
                 <div className="absolute inset-0 rounded-full bg-bond-accent/5 blur-2xl" />
@@ -153,7 +177,7 @@ export default function Moat() {
             </div>
 
             {/* Arrow 2 */}
-            <div className="hidden md:flex items-center justify-center">
+            <div className="hidden lg:flex items-center justify-center">
               <ArrowRight className="w-6 h-6 text-gray-600" />
             </div>
 
@@ -169,16 +193,16 @@ export default function Moat() {
               </div>
 
               {/* Apps */}
-              <div className="grid grid-cols-3 md:grid-cols-1 gap-2 sm:gap-3">
+              <div className="grid grid-cols-3 lg:grid-cols-1 gap-2 sm:gap-3">
                 {[
                   { icon: Search, label: "Patient Matching", fullLabel: "Patient-to-Trial Matching", color: "text-blue-400" },
                   { icon: Phone, label: "Pre-screening", fullLabel: "Conversational Pre-screening", color: "text-emerald-400" },
                   { icon: Calendar, label: "Booking", fullLabel: "Visit Booking", color: "text-purple-400" },
                 ].map((app) => (
-                  <div key={app.fullLabel} className="flex flex-col md:flex-row items-center md:items-center gap-1.5 sm:gap-3 p-2 sm:p-3 bg-gray-800/30 rounded-lg sm:rounded-xl border border-gray-700/30 text-center md:text-left">
+                  <div key={app.fullLabel} className="flex flex-col lg:flex-row items-center gap-1.5 sm:gap-3 p-2 sm:p-3 bg-gray-800/30 rounded-lg sm:rounded-xl border border-gray-700/30 text-center lg:text-left">
                     <app.icon className={`w-4 h-4 ${app.color} shrink-0`} />
-                    <span className="text-[10px] sm:text-xs text-gray-300 hidden md:block">{app.fullLabel}</span>
-                    <span className="text-[10px] text-gray-300 md:hidden">{app.label}</span>
+                    <span className="text-[10px] sm:text-xs text-gray-300 hidden sm:block">{app.fullLabel}</span>
+                    <span className="text-[10px] text-gray-300 sm:hidden">{app.label}</span>
                   </div>
                 ))}
               </div>

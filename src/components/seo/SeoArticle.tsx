@@ -43,30 +43,31 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
 
       <article>
         {/* Header */}
-        <header className="border-b border-gray-100 bg-gradient-hero pt-28 pb-10 sm:pt-36 sm:pb-14">
+        <header className="border-b border-gray-100 bg-gradient-hero pt-28 pb-8 sm:pt-36 sm:pb-14">
           <div className="container-lg px-4 sm:px-6">
-            <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-1 text-xs text-gray-500 sm:text-sm">
+            {/* One line: the current page, which repeats the H1, is cut short rather than wrapping under its chevron */}
+            <nav aria-label="Breadcrumb" className="mb-6 flex min-w-0 items-center gap-1 text-xs text-gray-500 sm:text-sm">
               {crumbs.map((c, i) => (
-                <span key={c.href} className="flex items-center gap-1">
-                  {i > 0 && <ChevronRight className="h-3.5 w-3.5 text-gray-300" />}
+                <span key={c.href} className={`flex items-center gap-1 ${i < crumbs.length - 1 ? "shrink-0" : "min-w-0"}`}>
+                  {i > 0 && <ChevronRight className="h-3.5 w-3.5 shrink-0 text-gray-300" />}
                   {i < crumbs.length - 1 ? (
                     <Link href={c.href} className="hover:text-gray-900">
                       {c.label}
                     </Link>
                   ) : (
-                    <span className="text-gray-700">{c.label}</span>
+                    <span className="truncate text-gray-700">{c.label}</span>
                   )}
                 </span>
               ))}
             </nav>
 
             <p className="eyebrow mb-3">{page.eyebrow || categoryLabel(page.category)}</p>
-            <h1 className="max-w-4xl font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gray-900">
+            <h1 className="max-w-4xl font-display text-[clamp(1.75rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gray-900">
               {page.h1}
             </h1>
-            <p className="body-lg mt-5 max-w-3xl">{renderInline(page.intro, cites, "intro")}</p>
+            <p className="body-lg mt-4 max-w-3xl sm:mt-5">{renderInline(page.intro, cites, "intro")}</p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-500">
+            <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-gray-500 sm:mt-6">
               {page.blog && (
                 <span>
                   By {page.blog.author} · {formatDate(page.blog.date)}
@@ -87,7 +88,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
             </div>
 
             {page.category !== "hub" && (
-              <div className="no-print mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="no-print mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row">
                 <SmartLink href={hero.href} className="btn-primary">
                   {hero.label}
                   <ArrowRight className="h-4 w-4" />
@@ -108,7 +109,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
         </header>
 
         {/* Body */}
-        <div className="container-lg px-4 py-12 sm:px-6 sm:py-16">
+        <div className="container-lg px-4 py-8 sm:px-6 sm:py-16">
           <div className="grid gap-10 lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-16">
             <aside className="no-print hidden lg:block">
               <div className="sticky top-28 space-y-6">
@@ -172,7 +173,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                   <h2 className="heading-md mb-4">Frequently asked questions</h2>
                   <div>
                     {page.faq.map((f, i) => (
-                      <details key={i} className="faq-item group" open={i === 0}>
+                      <details key={i} className="faq-item group last:border-b-0" open={i === 0}>
                         <summary className="faq-question w-full list-none text-left">
                           <span>{f.q}</span>
                           <ChevronDown className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180" />
@@ -191,7 +192,8 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                     {page.sources.map((s, i) => (
                       <li key={s.id} id={`src-${s.id}`} className="flex gap-3 scroll-mt-28">
                         <span className="w-6 shrink-0 text-right font-medium text-gray-400">{i + 1}.</span>
-                        <span>
+                        {/* min-w-0 and overflow-wrap: long URLs and file names in notes otherwise run off a phone screen */}
+                        <div className="min-w-0 [overflow-wrap:anywhere]">
                           {s.url ? (
                             <a
                               href={s.url}
@@ -199,8 +201,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                               rel="noopener noreferrer"
                               className="font-medium text-gray-900 hover:text-bond-primary"
                             >
-                              {s.title}
-                              <ExternalLink className="ml-1 inline h-3 w-3 text-gray-400" />
+                              <TitleWithIcon title={s.title} />
                             </a>
                           ) : (
                             <span className="font-medium text-gray-900">{s.title}</span>
@@ -210,8 +211,8 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                             · {s.publisher}
                             {s.year ? `, ${s.year}` : ""}
                           </span>
-                          {s.note && <span className="block text-xs text-gray-500">{s.note}</span>}
-                        </span>
+                          {s.note && <SourceNote note={s.note} />}
+                        </div>
                       </li>
                     ))}
                   </ol>
@@ -223,7 +224,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
           {page.related.length > 0 && (
             <section className="no-print mt-12 border-t border-gray-100 pt-10">
               <h2 className="heading-sm mb-5">Related pages</h2>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 sm:max-lg:[&>:last-child:nth-child(odd)]:col-span-2 lg:grid-cols-3">
                 {page.related.map((r) => (
                   <SmartLink
                     key={r.href}
@@ -248,5 +249,47 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
       </div>
       <Footer />
     </main>
+  );
+}
+
+/**
+ * Keeps the external-link icon on the same line as the title's last word, so it never wraps alone. Not when that
+ * word is long (a file name, say): unbreakable, it would run off a phone screen.
+ */
+function TitleWithIcon({ title }: { title: string }) {
+  const cut = title.lastIndexOf(" ") + 1;
+  if (title.length - cut > 20) {
+    return (
+      <>
+        {title}
+        <ExternalLink className="ml-1 inline h-3 w-3 text-gray-400" />
+      </>
+    );
+  }
+  return (
+    <>
+      {title.slice(0, cut)}
+      <span className="whitespace-nowrap">
+        {title.slice(cut)}
+        <ExternalLink className="ml-1 inline h-3 w-3 text-gray-400" />
+      </span>
+    </>
+  );
+}
+
+/**
+ * Long notes (some run past 1,000 characters) made Sources lists several phone screens long, so they start
+ * collapsed to their opening words. The full text stays in the HTML.
+ */
+function SourceNote({ note }: { note: string }) {
+  if (note.length <= 160) return <span className="block text-xs text-gray-500">{note}</span>;
+  const preview = note.slice(0, note.lastIndexOf(" ", 130));
+  return (
+    <details className="group text-xs text-gray-500">
+      <summary className="cursor-pointer list-none group-open:hidden [&::-webkit-details-marker]:hidden">
+        {preview}… <span className="font-medium text-gray-700 underline">more</span>
+      </summary>
+      {note}
+    </details>
   );
 }

@@ -32,7 +32,7 @@ export default function CTA() {
           </a>
           <button
             onClick={openDemoModal}
-            className="btn-secondary border-gray-700 text-gray-300 hover:bg-gray-800 hover:border-gray-600"
+            className="btn-secondary border-gray-700 bg-transparent text-gray-300 hover:bg-gray-800 hover:border-gray-600"
           >
             <MessageCircle className="w-4 h-4" />
             Contact us

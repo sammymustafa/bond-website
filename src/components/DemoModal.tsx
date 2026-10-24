@@ -106,136 +106,137 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
         onClick={onClose}
       />
       
-      {/* Modal: scrolls inside itself so short or landscape screens can reach every field and the close button */}
+      {/* Modal: the body scrolls inside the panel so short or landscape screens can reach every field, while the close button stays put */}
       <div
         ref={panelRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="contact-modal-title"
-        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[calc(100dvh-2rem)] overflow-y-auto overscroll-contain p-8 animate-fade-in"
+        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-fade-in"
       >
         {/* Close button */}
         <button
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-lg hover:bg-gray-100"
+          className="absolute top-4 right-4 z-10 p-2 bg-white text-gray-400 hover:text-gray-600 transition-colors rounded-lg hover:bg-gray-100"
         >
           <X className="w-5 h-5" />
         </button>
-
-        {isSubmitted ? (
-          // Success state
-          <div className="text-center py-8">
-            <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-              <CheckCircle className="w-8 h-8 text-green-600" />
-            </div>
-            <h3 id="contact-modal-title" className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-            <p className="text-gray-600">
-              Thank you! We&apos;ve received your message and will get back to you within 24 hours.
-            </p>
-          </div>
-        ) : (
-          // Form
-          <>
-            <div className="text-center mb-6">
-              <h3 id="contact-modal-title" className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
+        <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto overscroll-contain p-6 sm:p-8">
+          {isSubmitted ? (
+            // Success state
+            <div className="text-center py-8">
+              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 id="contact-modal-title" className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
               <p className="text-gray-600">
-                Have questions or need pricing information? We&apos;ll get back to you shortly.
+                Thank you! We&apos;ve received your message and will get back to you within 24 hours.
               </p>
             </div>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Work Email <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@company.com"
-                  required
-                  data-autofocus
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
-                />
+          ) : (
+            // Form
+            <>
+              <div className="text-center mb-6 px-8">
+                <h3 id="contact-modal-title" className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
+                <p className="text-gray-600">
+                  Have questions or need pricing information? We&apos;ll get back to you shortly.
+                </p>
               </div>
 
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="John Smith"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
-                />
-              </div>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Work Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@company.com"
+                    required
+                    data-autofocus
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                  Organization
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                  placeholder="Your research site or company"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
-                />
-              </div>
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="John Smith"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message (optional)
-                </label>
-                <textarea
-                  id="message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Tell us about your recruitment challenges..."
-                  rows={3}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900 resize-none"
-                />
-              </div>
+                <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
+                    Organization
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    placeholder="Your research site or company"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
+                  />
+                </div>
 
-              {error && (
-                <p className="text-red-600 text-sm">{error}</p>
-              )}
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    Message (optional)
+                  </label>
+                  <textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Tell us about your recruitment challenges..."
+                    rows={3}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900 resize-none"
+                  />
+                </div>
 
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full btn-primary justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                    Sending...
-                  </>
-                ) : (
-                  <>
-                    Send Message
-                    <ArrowRight className="w-4 h-4" />
-                  </>
+                {error && (
+                  <p className="text-red-600 text-sm">{error}</p>
                 )}
-              </button>
-            </form>
 
-            <p className="text-xs text-gray-500 text-center mt-4">
-              By submitting, you agree to our{" "}
-              <Link href="/privacy-policy" className="text-bond-primary hover:underline">
-                privacy policy
-              </Link>
-              .
-            </p>
-          </>
-        )}
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full btn-primary justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <ArrowRight className="w-4 h-4" />
+                    </>
+                  )}
+                </button>
+              </form>
+
+              <p className="text-xs text-gray-500 text-center mt-4">
+                By submitting, you agree to our{" "}
+                <Link href="/privacy-policy" className="text-bond-primary hover:underline">
+                  privacy policy
+                </Link>
+                .
+              </p>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

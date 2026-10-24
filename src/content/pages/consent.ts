@@ -213,7 +213,7 @@ const page: SeoPage = {
       heading: "What does Bond not do in consent?",
       blocks: [
         {
-          type: "checklist",
+          type: "ul",
           items: [
             "**It does not obtain consent.** The investigator or delegated staff conduct and document it under the site's procedures.{{cite:ich-e6r3}}",
             "**It does not edit, shorten or translate the ICF.** Changes to the form go through the sponsor and the IRB as usual. If cost is the issue, see [what a consent form costs](/guides/consent-form-cost).",
