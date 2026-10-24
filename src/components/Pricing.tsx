@@ -7,9 +7,9 @@ import { demoHref } from "@/content/nav";
 export default function Pricing() {
   return (
     <section id="pricing" className="section bg-gradient-section">
-      <div className="container-md px-6">
+      <div className="container-md px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16 px-2">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <p className="eyebrow mb-3 sm:mb-4">Pricing</p>
           <h2 className="heading-lg mb-3 sm:mb-4">
             Two-part pricing, aligned with enrollment.
@@ -72,7 +72,7 @@ export default function Pricing() {
 
           {/* How we define enrolled */}
           <div className="mt-8 bg-white rounded-2xl border border-gray-200 p-6">
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
               <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
                 <Users className="w-5 h-5 text-gray-700" />
               </div>
@@ -86,7 +86,7 @@ export default function Pricing() {
           </div>
 
           {/* Typical implementation */}
-          <div className="mt-4 bg-gray-50 rounded-xl border border-gray-100 p-5 flex items-center gap-4">
+          <div className="mt-4 bg-gray-50 rounded-xl border border-gray-100 p-5 flex items-start gap-4">
             <div className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center shrink-0">
               <Clock className="w-5 h-5 text-gray-600" />
             </div>
@@ -97,7 +97,7 @@ export default function Pricing() {
           </div>
 
           {/* What's Included */}
-          <div className="mt-8 bg-white rounded-2xl border border-gray-100 p-8">
+          <div className="mt-8 bg-white rounded-2xl border border-gray-100 p-5 sm:p-8">
             <p className="text-center font-semibold text-gray-900 mb-6">Included in every engagement</p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {[
@@ -108,8 +108,8 @@ export default function Pricing() {
                 "EHR vendor integration via FHIR",
                 "Dedicated support",
               ].map((feature) => (
-                <div key={feature} className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-500 shrink-0" />
+                <div key={feature} className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
                   <span className="text-sm text-gray-600">{feature}</span>
                 </div>
               ))}

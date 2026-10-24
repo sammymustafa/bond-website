@@ -13,6 +13,7 @@ import SmartLink from "./SmartLink";
 import { TrialCounts, TrialExamples } from "./TrialData";
 import BarChart from "./BarChart";
 import ScrollTable from "./ScrollTable";
+import { roles, stacked } from "./stackedTable";
 
 interface Props {
   blocks: Block[];
@@ -90,28 +91,44 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
         </ul>
       );
 
-    case "table":
+    case "table": {
+      // On phones, 3+ columns become one card per row. A fill-in worksheet ("grid") keeps scrolling sideways, with
+      // columns wide enough to write in and the first column pinned so each row keeps its label.
+      const n = block.columns.length;
+      const wide = block.layout === "grid";
+      const stack = n >= 3 && !wide;
+      const s = stack ? stacked : null;
+      const r = stack ? roles : null;
+      const pin = wide ? "sticky left-0 z-[1] shadow-[inset_-1px_0_0_var(--color-gray-200)]" : "";
       return (
         <figure className="my-8">
           {block.caption && <figcaption className="mb-3 font-semibold text-gray-900">{block.caption}</figcaption>}
-          <ScrollTable columns={block.columns.length} label={block.caption}>
-            <table className="w-full text-sm">
-              <thead className="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
-                <tr>
+          <ScrollTable columns={n} label={block.caption}>
+            <table className={`w-full text-sm ${s?.table ?? ""}`} {...r?.table}>
+              <thead className={`bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500 ${s?.thead ?? ""}`} {...r?.rowgroup}>
+                <tr {...r?.row}>
                   {block.columns.map((c, i) => (
-                    <th key={i} className="px-4 py-3 font-semibold">
+                    <th
+                      key={i}
+                      className={`px-4 py-3 font-semibold ${wide ? (i === 0 ? `min-w-[5rem] bg-gray-50 ${pin}` : "min-w-[10rem]") : ""}`}
+                      {...r?.columnheader}
+                    >
                       {c}
                     </th>
                   ))}
                 </tr>
               </thead>
-              <tbody>
+              <tbody className={s?.tbody} {...r?.rowgroup}>
                 {block.rows.map((row, ri) => (
-                  <tr key={ri} className="border-t border-gray-100 align-top">
+                  <tr key={ri} className={`border-t border-gray-100 align-top ${s?.tr ?? ""}`} {...r?.row}>
                     {row.map((cell, ci) => (
                       <td
                         key={ci}
-                        className={`px-4 py-3 leading-relaxed ${ci === 0 ? "font-medium text-gray-900" : "text-gray-700"}`}
+                        data-label={stack ? block.columns[ci] : undefined}
+                        className={`px-4 py-3 leading-relaxed ${ci === 0 ? "font-medium text-gray-900" : "text-gray-700"} ${
+                          s ? (ci === 0 ? s.firstCell : s.cell) : ""
+                        } ${wide && ci === 0 ? `bg-white ${pin}` : ""}`}
+                        {...r?.cell}
                       >
                         {renderInline(cell, cites, `${k}-${ri}-${ci}`)}
                       </td>
@@ -124,6 +141,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
           {block.note && <p className="mt-2 text-xs text-gray-500">{renderInline(block.note, cites, `${k}-note`)}</p>}
         </figure>
       );
+    }
 
     case "callout": {
       const tone = block.tone ?? "info";
@@ -147,10 +165,11 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
 
     case "stats":
       return (
-        <div className={`my-8 grid gap-4 ${block.items.length >= 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
+        // Four stats go two by two: three across left the fourth alone on a row
+        <div className={`my-8 grid gap-3 sm:gap-4 ${block.items.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
           {block.items.map((s, i) => (
-            <div key={i} className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
-              <p className="font-display text-2xl font-bold text-gray-900 sm:text-3xl">
+            <div key={i} className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm sm:p-5">
+              <p className="font-display text-2xl font-bold text-balance text-gray-900 lg:text-3xl">
                 {s.value}
                 <Cite ids={[s.cite]} cites={cites} />
               </p>
@@ -220,7 +239,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
         <div className="my-6 space-y-3 rounded-2xl border border-gray-200 bg-gray-50 p-5 text-sm sm:text-[15px]">
           {block.lines.map((l, i) => (
             <p key={i} className="leading-relaxed text-gray-800">
-              <span className="mr-2 inline-block rounded-md bg-white px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-bond-primary ring-1 ring-gray-200">
+              <span className="mb-1 block w-fit rounded-md bg-white sm:mb-0 sm:mr-2 sm:inline-block px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-bond-primary ring-1 ring-gray-200">
                 {l.speaker}
               </span>
               {l.text}

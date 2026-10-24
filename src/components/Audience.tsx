@@ -48,7 +48,7 @@ const audiences = [
 export default function Audience() {
   return (
     <section className="section bg-white">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="eyebrow mb-4">Who it&apos;s for</p>
@@ -61,8 +61,8 @@ export default function Audience() {
           </p>
         </div>
 
-        {/* Audience Cards */}
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        {/* Audience Cards: one column below lg, where three columns are too narrow for the lists */}
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
           {audiences.map((audience) => (
             <div
               key={audience.title}
@@ -77,8 +77,9 @@ export default function Audience() {
               {/* Benefits */}
               <ul className="space-y-2 mb-6">
                 {audience.benefits.map((benefit) => (
-                  <li key={benefit} className="flex items-center gap-2 text-sm text-gray-600">
-                    <div className="w-1.5 h-1.5 rounded-full bg-bond-primary shrink-0" />
+                  <li key={benefit} className="flex items-start gap-2 text-sm text-gray-600">
+                    {/* mt-[7px] centres the dot on the first 20px line */}
+                    <div className="w-1.5 h-1.5 mt-[7px] rounded-full bg-bond-primary shrink-0" />
                     {benefit}
                   </li>
                 ))}

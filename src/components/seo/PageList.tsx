@@ -13,7 +13,7 @@ export default function PageList({
   const list = pagesInCategory(category, exclude);
   if (!list.length) return null;
   return (
-    <div className="not-prose my-8 grid gap-4 sm:grid-cols-2">
+    <div className="not-prose my-8 grid gap-4 sm:grid-cols-2 sm:[&>:last-child:nth-child(odd)]:col-span-2">
       {list.map((p) => (
         <Link
           key={p.path}

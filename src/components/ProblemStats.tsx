@@ -26,7 +26,7 @@ export default function ProblemStats() {
 
   return (
     <section className="section-sm bg-gray-50 border-y border-gray-100">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">

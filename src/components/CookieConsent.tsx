@@ -30,9 +30,9 @@ export default function CookieConsent() {
     <div aria-hidden className="no-print" style={{ height }} />
     <div role="region" aria-label="Cookie consent" className="no-print fixed bottom-0 inset-x-0 z-40 pointer-events-none">
       <div ref={bannerRef} className="pointer-events-auto bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="text-sm text-gray-600 leading-relaxed">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+            <p className="text-[13px] text-gray-600 leading-relaxed sm:text-sm">
               We use cookies to improve your experience and analyze site
               traffic. If you choose Accept All, our visitor-identification
               partner may also link your visit to your work email or online
@@ -46,16 +46,16 @@ export default function CookieConsent() {
               for details.
             </p>
 
-            <div className="flex items-center gap-3 shrink-0">
+            <div className="flex items-center gap-2 shrink-0 sm:gap-3">
               <button
                 onClick={acceptAll}
-                className="px-5 py-2 bg-bond-primary text-white text-sm font-medium rounded-lg hover:bg-bond-primary-dark transition-colors"
+                className="flex-1 whitespace-nowrap px-3 py-2.5 bg-bond-primary text-white text-[13px] sm:flex-none sm:px-5 sm:py-2 sm:text-sm font-medium rounded-lg hover:bg-bond-primary-dark transition-colors"
               >
                 Accept All
               </button>
               <button
                 onClick={acceptEssential}
-                className="px-5 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-200 transition-colors"
+                className="flex-1 whitespace-nowrap px-3 py-2.5 bg-gray-100 text-gray-700 text-[13px] sm:flex-none sm:px-5 sm:py-2 sm:text-sm font-medium rounded-lg hover:bg-gray-200 transition-colors"
               >
                 Essential Only
               </button>

@@ -6,7 +6,8 @@ export default function PartnerStrip() {
   return (
     <div className="no-print mt-8">
       <p className="mb-3 text-xs font-medium uppercase tracking-wider text-gray-500">Partnered with</p>
-      <ul className="flex flex-wrap items-center gap-x-8 gap-y-4">
+      {/* Two even columns on phones; a free-wrapping row left wide logos and small ones on uneven rows */}
+      <ul className="grid grid-cols-2 items-center gap-x-6 gap-y-4 sm:flex sm:flex-wrap sm:gap-x-8">
         {partners.map((p) => (
           <li key={p.name}>
             <Image
@@ -14,7 +15,7 @@ export default function PartnerStrip() {
               alt={p.name}
               width={200}
               height={80}
-              className="h-8 w-auto max-w-[140px] object-contain sm:h-10 sm:max-w-[160px]"
+              className="h-10 w-auto max-w-[150px] object-contain object-left sm:max-w-[160px]"
             />
           </li>
         ))}

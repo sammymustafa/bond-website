@@ -89,7 +89,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1">
             {navMenus.map((menu) => {
               const isOpen = openMenu === menu.label;
               const wide = menu.groups.length > 1;
@@ -189,7 +189,7 @@ export default function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <a href={demoHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
               Book a demo
             </a>
@@ -202,7 +202,7 @@ export default function Navigation() {
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
-            className="md:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+            className="lg:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -212,7 +212,7 @@ export default function Navigation() {
       {/* Mobile Menu: `invisible` when closed so its links leave the tab order and the accessibility tree */}
       <div
         id="mobile-menu"
-        className={`fixed inset-0 z-60 md:hidden transition-[opacity,visibility] duration-300 ${
+        className={`fixed inset-0 z-60 lg:hidden transition-[opacity,visibility] duration-300 ${
           isMobileMenuOpen ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"
         }`}
       >
@@ -295,7 +295,7 @@ export default function Navigation() {
                 </div>
               );
             })}
-            <div className="mt-6 pt-6 border-t border-gray-100">
+            <div className="mt-6">
               <a
                 href={demoHref}
                 target="_blank"

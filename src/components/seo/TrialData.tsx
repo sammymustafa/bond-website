@@ -2,6 +2,8 @@ import data from "@/content/data/ctgov-geo.json";
 import { formatDate } from "@/content/seo";
 import type { CiteIndex } from "./inline";
 import { Cite } from "./inline";
+import ScrollTable from "./ScrollTable";
+import { roles, stacked } from "./stackedTable";
 
 interface Trial {
   nct: string;
@@ -88,14 +90,14 @@ export function TrialCounts({ geo, cite, cites }: { geo: string; cite: string; c
         Recruiting trials with at least one site in {name}, by area
         <Cite ids={[cite]} cites={cites} />
       </figcaption>
-      <div className="overflow-x-auto rounded-2xl border border-gray-200">
+      <ScrollTable columns={4} label={`Recruiting trials in ${name}`}>
         <table className="w-full text-sm">
           <thead className="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
             <tr>
-              <th className="px-4 py-3 font-semibold">Area</th>
-              <th className="px-4 py-3 font-semibold text-right">{name}</th>
-              <th className="px-4 py-3 font-semibold text-right">United States</th>
-              <th className="px-4 py-3 font-semibold text-right">Share of US</th>
+              <th className="px-3 py-3 font-semibold sm:px-4">Area</th>
+              <th className="px-3 py-3 font-semibold text-right sm:px-4">{name}</th>
+              <th className="px-3 py-3 font-semibold text-right sm:px-4">United States</th>
+              <th className="px-3 py-3 font-semibold text-right sm:px-4">Share of US</th>
             </tr>
           </thead>
           <tbody>
@@ -105,16 +107,16 @@ export function TrialCounts({ geo, cite, cites }: { geo: string; cite: string; c
               const share = local != null && us ? `${((local / us) * 100).toFixed(0)}%` : "n/a";
               return (
                 <tr key={k} className="border-t border-gray-100">
-                  <td className="px-4 py-3 font-medium text-gray-900">{CONDITION_LABELS[k]}</td>
-                  <td className="px-4 py-3 text-right tabular-nums text-gray-900">{fmt(local)}</td>
-                  <td className="px-4 py-3 text-right tabular-nums text-gray-600">{fmt(us)}</td>
-                  <td className="px-4 py-3 text-right tabular-nums text-gray-600">{share}</td>
+                  <td className="px-3 py-3 font-medium text-gray-900 sm:px-4">{CONDITION_LABELS[k]}</td>
+                  <td className="px-3 py-3 text-right tabular-nums text-gray-900 sm:px-4">{fmt(local)}</td>
+                  <td className="px-3 py-3 text-right tabular-nums text-gray-600 sm:px-4">{fmt(us)}</td>
+                  <td className="px-3 py-3 text-right tabular-nums text-gray-600 sm:px-4">{share}</td>
                 </tr>
               );
             })}
           </tbody>
         </table>
-      </div>
+      </ScrollTable>
       <p className="mt-2 text-xs text-gray-500">
         Counts are studies with overall status Recruiting and at least one location{" "}
         {g.area ? `within ${g.area}` : `in ${g.states.length > 1 ? `one of: ${g.states.join(", ")}` : name}`}, queried on{" "}
@@ -147,20 +149,20 @@ export function TrialExamples({
         Examples of recruiting {CONDITION_LABELS[condition]?.toLowerCase() ?? condition} studies with a site {place}
         <Cite ids={[cite]} cites={cites} />
       </figcaption>
-      <div className="overflow-x-auto rounded-2xl border border-gray-200">
-        <table className="w-full text-sm">
-          <thead className="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
-            <tr>
-              <th className="px-4 py-3 font-semibold">Registry ID</th>
-              <th className="px-4 py-3 font-semibold">Study</th>
-              <th className="px-4 py-3 font-semibold">Lead sponsor</th>
-              <th className="px-4 py-3 font-semibold">Phase</th>
+      <ScrollTable columns={4} label="Example recruiting studies">
+        <table className={`w-full text-sm ${stacked.table}`} {...roles.table}>
+          <thead className={`bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500 ${stacked.thead}`} {...roles.rowgroup}>
+            <tr {...roles.row}>
+              <th className="px-4 py-3 font-semibold" {...roles.columnheader}>Registry ID</th>
+              <th className="px-4 py-3 font-semibold" {...roles.columnheader}>Study</th>
+              <th className="px-4 py-3 font-semibold" {...roles.columnheader}>Lead sponsor</th>
+              <th className="px-4 py-3 font-semibold" {...roles.columnheader}>Phase</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className={stacked.tbody} {...roles.rowgroup}>
             {trials.map((t) => (
-              <tr key={t.nct} className="border-t border-gray-100 align-top">
-                <td className="px-4 py-3 whitespace-nowrap">
+              <tr key={t.nct} className={`border-t border-gray-100 align-top ${stacked.tr}`} {...roles.row}>
+                <td className={`px-4 py-3 whitespace-nowrap ${stacked.firstCell}`} {...roles.cell}>
                   <a
                     href={`https://clinicaltrials.gov/study/${t.nct}`}
                     target="_blank"
@@ -170,16 +172,16 @@ export function TrialExamples({
                     {t.nct}
                   </a>
                 </td>
-                <td className="px-4 py-3 text-gray-900">{t.title}</td>
-                <td className="px-4 py-3 text-gray-600">{t.sponsor}</td>
-                <td className="px-4 py-3 text-gray-600 whitespace-nowrap">
+                <td data-label="Study" className={`px-4 py-3 text-gray-900 ${stacked.cell}`} {...roles.cell}>{t.title}</td>
+                <td data-label="Lead sponsor" className={`px-4 py-3 text-gray-600 ${stacked.cell}`} {...roles.cell}>{t.sponsor}</td>
+                <td data-label="Phase" className={`px-4 py-3 text-gray-600 whitespace-nowrap ${stacked.cell}`} {...roles.cell}>
                   {t.phase?.length ? t.phase.map((p) => p.replace("PHASE", "Phase ").replace("NA", "N/A")).join(", ") : "N/A"}
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-      </div>
+      </ScrollTable>
       <p className="mt-2 text-xs text-gray-500">
         Most recently updated recruiting studies as of {formatDate(g?.as_of ?? dataset.as_of)}. Listing a study does not imply Bond
         Health works with its sponsor or sites.

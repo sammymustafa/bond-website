@@ -314,6 +314,7 @@ const page: SeoPage = {
         {
           type: "table",
           caption: "Part C. Scoring grid",
+          layout: "grid",
           columns: ["Area", "Weight", "[Vendor A]", "[Vendor B]", "[Vendor C]", "Evidence seen"],
           rows: [
             ["Area 1. Accuracy on real EHR records", "3", "", "", "", ""],

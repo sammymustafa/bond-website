@@ -26,17 +26,15 @@ export default function Partners() {
                   alt={partner.name}
                   width={200}
                   height={80}
-                  className="h-10 sm:h-14 md:h-16 lg:h-20 w-auto object-contain max-w-[140px] sm:max-w-[180px] md:max-w-[200px]"
+                  className="h-10 sm:h-14 md:h-16 lg:h-20 w-auto object-contain max-w-[min(140px,100%)] sm:max-w-[180px] md:max-w-[200px]"
                 />
               </div>
             </div>
           ))}
           
-          {/* More Partners Indicator */}
-          <div className="col-span-2 sm:col-span-1 flex items-center justify-center">
-            <div className="h-12 sm:h-16 md:h-20 px-6 sm:px-8 md:px-10 flex items-center justify-center border-2 border-dashed border-gray-300 rounded-xl text-gray-500 hover:border-bond-primary hover:text-bond-primary transition-colors">
-              <span className="text-sm sm:text-base md:text-lg font-medium">+ more</span>
-            </div>
+          {/* More Partners Indicator: plain text, so it doesn't look tappable */}
+          <div className="col-span-2 sm:col-span-1 flex items-center justify-center sm:h-16 md:h-20">
+            <span className="text-sm sm:text-base md:text-lg font-medium text-gray-400">+ more</span>
           </div>
         </div>
       </div>

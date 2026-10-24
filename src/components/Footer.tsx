@@ -26,7 +26,8 @@ const columns = [
       { name: "By location", href: "/clinical-trial-recruitment" },
     ],
   },
-  { title: "Compare", links: [...compareLinks, { name: "All comparisons", href: "/compare" }] },
+  // The longest column: on phones it goes last, full width, in two columns, instead of leaving gaps beside it
+  { title: "Compare", links: [...compareLinks, { name: "All comparisons", href: "/compare" }], wide: true },
   {
     title: "Resources",
     links: [
@@ -113,11 +114,11 @@ export default function Footer() {
 
           {/* Links Columns */}
           {columns.map((col) => (
-            <div key={col.title}>
+            <div key={col.title} className={col.wide ? "col-span-2 order-last md:col-span-1 md:order-none" : undefined}>
               <h4 className="font-semibold text-gray-900 mb-4 text-sm">{col.title}</h4>
-              <ul className="space-y-2.5">
+              <ul className={col.wide ? "columns-2 gap-8 md:columns-1" : undefined}>
                 {col.links.map((link) => (
-                  <li key={link.href + link.name}>
+                  <li key={link.href + link.name} className="mb-2.5 break-inside-avoid">
                     {link.href.startsWith("http") ? (
                       <a
                         href={link.href}
@@ -144,14 +145,14 @@ export default function Footer() {
           <p className="text-xs sm:text-sm text-gray-500 text-center md:text-left">
             © {new Date().getFullYear()} Bond Health, Inc. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-500">
-            <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-x-6 text-xs sm:text-sm text-gray-500">
+            <Link href="/privacy-policy" className="whitespace-nowrap py-1 hover:text-gray-900 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="hover:text-gray-900 transition-colors">
+            <Link href="/terms-of-service" className="whitespace-nowrap py-1 hover:text-gray-900 transition-colors">
               Terms of Service
             </Link>
-            <button type="button" onClick={reopenBanner} className="-my-3 py-3 hover:text-gray-900 transition-colors">
+            <button type="button" onClick={reopenBanner} className="-my-3 py-3 whitespace-nowrap hover:text-gray-900 transition-colors">
               Cookie Settings
             </button>
           </div>

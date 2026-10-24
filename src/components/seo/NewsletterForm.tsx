@@ -42,8 +42,9 @@ export default function NewsletterForm() {
     );
   }
 
+  // sm:flex-wrap plus basis-full on the error line: the message drops to its own row instead of squeezing the input.
   return (
-    <form onSubmit={submit} className="flex flex-col gap-3 sm:flex-row">
+    <form onSubmit={submit} className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
       <label htmlFor="newsletter-email" className="sr-only">
         Work email
       </label>
@@ -54,13 +55,14 @@ export default function NewsletterForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@yoursite.org"
-        className="w-full flex-1 rounded-full border border-gray-200 px-5 py-3 text-gray-900 outline-none transition-all focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20"
+        className="w-full min-w-0 flex-1 rounded-full border border-gray-200 px-5 py-3 text-gray-900 outline-none transition-all focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20"
       />
-      <button type="submit" disabled={status === "sending"} className="btn-primary justify-center disabled:opacity-60">
+      {/* py-3.5 text-base matches the input's 52px height when the two stack on phones */}
+      <button type="submit" disabled={status === "sending"} className="btn-primary justify-center py-3.5 text-base disabled:opacity-60">
         {status === "sending" ? <Loader2 className="h-4 w-4 animate-spin" /> : <ArrowRight className="h-4 w-4" />}
         Subscribe
       </button>
-      {status === "error" && <p className="text-sm text-red-600 sm:w-full">Please check the address and try again.</p>}
+      {status === "error" && <p className="text-sm text-red-600 sm:basis-full">Please check the address and try again.</p>}
     </form>
   );
 }

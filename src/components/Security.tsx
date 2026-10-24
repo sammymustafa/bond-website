@@ -30,7 +30,7 @@ const features = [
 export default function Security() {
   return (
     <section id="security" className="section bg-white">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div>
@@ -63,7 +63,7 @@ export default function Security() {
           </div>
 
           {/* Visual */}
-          <div className="bg-linear-to-br from-gray-50 to-white rounded-3xl border border-gray-100 p-8 md:p-12">
+          <div className="bg-linear-to-br from-gray-50 to-white rounded-3xl border border-gray-100 p-5 sm:p-8 md:p-12">
             <div className="text-center">
               {/* HIPAA, SOC 2 and ISO/IEC 27001 badges */}
               <ComplianceBadges className="mb-6 flex justify-center [&_ul]:justify-center" />
@@ -86,7 +86,7 @@ export default function Security() {
                   "Penetration testing",
                   "Employee security training",
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
+                  <div key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
                     <span className="text-sm text-gray-700">{item}</span>
                   </div>

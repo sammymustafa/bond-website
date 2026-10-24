@@ -55,7 +55,7 @@ const pillars = [
 export default function Pillars() {
   return (
     <section id="product" className="section bg-gradient-section">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="eyebrow mb-4">What we do</p>
@@ -68,8 +68,8 @@ export default function Pillars() {
           </p>
         </div>
 
-        {/* Pillars Grid */}
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        {/* Pillars Grid: one column below lg, where three columns are too narrow for the copy */}
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
           {pillars.map((pillar) => (
             <div key={pillar.title} className="group">
               <div className="card h-full hover:border-gray-200 transition-all duration-300">
@@ -109,7 +109,7 @@ export default function Pillars() {
         </div>
 
         {/* Flow Arrows (Desktop) */}
-        <div className="hidden md:flex justify-center items-center gap-4 mt-8">
+        <div className="hidden lg:flex justify-center items-center gap-4 mt-8">
           <div className="flex items-center gap-2 text-gray-400">
             <span className="text-sm font-medium">Identify</span>
             <ArrowRight className="w-4 h-4" />

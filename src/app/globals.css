@@ -129,259 +129,263 @@
   }
 }
 
-/* Typography Classes */
-.heading-xl {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: var(--bond-gray-900);
-}
+/* Component classes live in the components layer so Tailwind utilities on the same element win (for example
+   `btn-primary bg-white`). Unlayered, they beat every utility and such overrides were silently ignored. */
+@layer components {
+  /* Typography Classes */
+  .heading-xl {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--bond-gray-900);
+  }
 
-.heading-lg {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(1.75rem, 4vw, 3rem);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: var(--bond-gray-900);
-}
+  .heading-lg {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--bond-gray-900);
+  }
 
-.heading-md {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  line-height: 1.25;
-  color: var(--bond-gray-900);
-}
+  .heading-md {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.25;
+    color: var(--bond-gray-900);
+  }
 
-.heading-sm {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.3;
-  color: var(--bond-gray-900);
-}
+  .heading-sm {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: var(--bond-gray-900);
+  }
 
-.body-lg {
-  font-size: clamp(1rem, 2vw, 1.125rem);
-  line-height: 1.7;
-  color: var(--bond-gray-600);
-}
+  .body-lg {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.7;
+    color: var(--bond-gray-600);
+  }
 
-.body-md {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--bond-gray-600);
-}
+  .body-md {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--bond-gray-600);
+  }
 
-.body-sm {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--bond-gray-500);
-}
+  .body-sm {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--bond-gray-500);
+  }
 
-/* Gradient Text */
-.gradient-text {
-  background: linear-gradient(135deg, var(--bond-primary) 0%, var(--bond-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--bond-primary) 0%, var(--bond-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-/* Section Spacing */
-.section {
-  @apply py-12 sm:py-20 md:py-28 lg:py-32 px-4 sm:px-6;
-}
+  /* Section Spacing */
+  .section {
+    @apply py-12 sm:py-20 md:py-28 lg:py-32;
+  }
 
-.section-sm {
-  @apply py-10 sm:py-12 md:py-16 px-4 sm:px-6;
-}
+  .section-sm {
+    @apply py-10 sm:py-12 md:py-16;
+  }
 
-/* Container */
-.container-lg {
-  @apply max-w-7xl mx-auto;
-}
+  /* Container */
+  .container-lg {
+    @apply max-w-7xl mx-auto;
+  }
 
-.container-md {
-  @apply max-w-5xl mx-auto;
-}
+  .container-md {
+    @apply max-w-5xl mx-auto;
+  }
 
-.container-sm {
-  @apply max-w-3xl mx-auto;
-}
+  .container-sm {
+    @apply max-w-3xl mx-auto;
+  }
 
-/* Cards */
-.card {
-  @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
-         shadow-xs hover:shadow-md transition-all duration-300;
-}
+  /* Cards */
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
+           shadow-xs hover:shadow-md transition-all duration-300;
+  }
 
-.card-elevated {
-  @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
-         shadow-lg hover:shadow-xl transition-all duration-300;
-}
+  .card-elevated {
+    @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
+           shadow-lg hover:shadow-xl transition-all duration-300;
+  }
 
-/* Buttons */
-.btn-primary {
-  @apply inline-flex items-center justify-center gap-2
-         px-4 py-2.5 sm:px-6 sm:py-3 bg-bond-primary text-white font-semibold rounded-full
-         text-sm sm:text-base
-         transition-all duration-200
-         hover:bg-bond-primary-dark hover:shadow-lg hover:shadow-bond-primary/25
-         active:scale-[0.98];
-}
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           px-4 py-2.5 sm:px-6 sm:py-3 bg-bond-primary text-white font-semibold rounded-full
+           text-sm sm:text-base
+           transition-all duration-200
+           hover:bg-bond-primary-dark hover:shadow-lg hover:shadow-bond-primary/25
+           active:scale-[0.98];
+  }
 
-.btn-secondary {
-  @apply inline-flex items-center justify-center gap-2
-         px-4 py-2.5 sm:px-6 sm:py-3 bg-white text-bond-gray-700 font-medium rounded-full
-         text-sm sm:text-base
-         border border-gray-200
-         transition-all duration-200
-         hover:bg-gray-50 hover:border-gray-300
-         active:scale-[0.98];
-}
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           px-4 py-2.5 sm:px-6 sm:py-3 bg-white text-bond-gray-700 font-medium rounded-full
+           text-sm sm:text-base
+           border border-gray-200
+           transition-all duration-200
+           hover:bg-gray-50 hover:border-gray-300
+           active:scale-[0.98];
+  }
 
-.btn-ghost {
-  @apply inline-flex items-center justify-center gap-2
-         px-4 py-2 text-bond-gray-600 font-medium rounded-lg
-         transition-all duration-200
-         hover:bg-gray-100 hover:text-bond-gray-900;
-}
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2
+           px-4 py-2 text-bond-gray-600 font-medium rounded-lg
+           transition-all duration-200
+           hover:bg-gray-100 hover:text-bond-gray-900;
+  }
 
-/* Stat Chip */
-.stat-chip {
-  @apply inline-flex items-center gap-2 px-4 py-2
-         bg-bond-primary/5 text-bond-primary text-sm font-semibold
-         rounded-full border border-bond-primary/10;
-}
+  /* Stat Chip */
+  .stat-chip {
+    @apply inline-flex items-center gap-2 px-4 py-2
+           bg-bond-primary/5 text-bond-primary text-sm font-semibold
+           rounded-full border border-bond-primary/10;
+  }
 
-/* Eyebrow */
-.eyebrow {
-  @apply text-sm font-semibold tracking-wide uppercase
-         text-bond-primary;
-}
+  /* Eyebrow */
+  .eyebrow {
+    @apply text-sm font-semibold tracking-wide uppercase
+           text-bond-primary;
+  }
 
-/* Badge */
-.badge {
-  @apply inline-flex items-center gap-1.5 px-3 py-1
-         text-xs font-medium rounded-full;
-}
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1
+           text-xs font-medium rounded-full;
+  }
 
-.badge-primary {
-  @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-bond-primary/10 text-bond-primary;
-}
+  .badge-primary {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-bond-primary/10 text-bond-primary;
+  }
 
-.badge-success {
-  @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-green-50 text-green-600;
-}
+  .badge-success {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-green-50 text-green-600;
+  }
 
-.badge-gray {
-  @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-600;
-}
+  .badge-gray {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-600;
+  }
 
-/* Gradient Backgrounds */
-.bg-gradient-soft {
-  background: linear-gradient(180deg, #F0F7FF 0%, #FFFFFF 100%);
-}
+  /* Gradient Backgrounds */
+  .bg-gradient-soft {
+    background: linear-gradient(180deg, #F0F7FF 0%, #FFFFFF 100%);
+  }
 
-.bg-gradient-hero {
-  background: 
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 102, 255, 0.08), transparent 70%),
-    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0, 212, 170, 0.05), transparent 60%),
-    linear-gradient(180deg, #FAFBFF 0%, #FFFFFF 100%);
-}
+  .bg-gradient-hero {
+    background: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 102, 255, 0.08), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0, 212, 170, 0.05), transparent 60%),
+      linear-gradient(180deg, #FAFBFF 0%, #FFFFFF 100%);
+  }
 
-.bg-gradient-section {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
-}
+  .bg-gradient-section {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+  }
 
-/* Link Underline */
-.link-underline {
-  position: relative;
-}
+  /* Link Underline */
+  .link-underline {
+    position: relative;
+  }
 
-.link-underline::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--bond-primary);
-  transition: width 0.2s ease;
-}
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--bond-primary);
+    transition: width 0.2s ease;
+  }
 
-.link-underline:hover::after {
-  width: 100%;
-}
+  .link-underline:hover::after {
+    width: 100%;
+  }
 
-/* Icon Container */
-.icon-container {
-  @apply w-12 h-12 rounded-xl bg-bond-primary/10 
-         flex items-center justify-center text-bond-primary;
-}
+  /* Icon Container */
+  .icon-container {
+    @apply w-12 h-12 rounded-xl bg-bond-primary/10 
+           flex items-center justify-center text-bond-primary;
+  }
 
-.icon-container-lg {
-  @apply w-16 h-16 rounded-2xl bg-bond-primary/10 
-         flex items-center justify-center text-bond-primary;
-}
+  .icon-container-lg {
+    @apply w-16 h-16 rounded-2xl bg-bond-primary/10 
+           flex items-center justify-center text-bond-primary;
+  }
 
-/* Divider */
-.divider {
-  @apply h-px bg-gray-200 w-full;
-}
+  /* Divider */
+  .divider {
+    @apply h-px bg-gray-200 w-full;
+  }
 
-/* Number Stat */
-.stat-number {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1;
-  color: var(--bond-gray-900);
-}
+  /* Number Stat */
+  .stat-number {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    color: var(--bond-gray-900);
+  }
 
-.stat-number-sm {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  line-height: 1;
-  color: var(--bond-gray-900);
-}
+  .stat-number-sm {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1;
+    color: var(--bond-gray-900);
+  }
 
-/* Funnel Step */
-.funnel-step {
-  @apply flex items-center gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100;
-}
+  /* Funnel Step */
+  .funnel-step {
+    @apply flex items-center gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100;
+  }
 
-/* FAQ */
-.faq-item {
-  @apply border-b border-gray-100 py-6;
-}
+  /* FAQ */
+  .faq-item {
+    @apply border-b border-gray-100 py-6;
+  }
 
-/* Remove default details marker */
-.faq-item summary {
-  list-style: none;
-}
+  /* Remove default details marker */
+  .faq-item summary {
+    list-style: none;
+  }
 
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
 
-.faq-item summary::marker {
-  display: none;
-  content: "";
-}
+  .faq-item summary::marker {
+    display: none;
+    content: "";
+  }
 
-.faq-question {
-  @apply text-base sm:text-lg font-semibold text-gray-900 cursor-pointer
-         flex items-center justify-between gap-3 sm:gap-4
-         hover:text-bond-primary transition-colors;
-}
+  .faq-question {
+    @apply text-base sm:text-lg font-semibold text-gray-900 cursor-pointer
+           flex items-center justify-between gap-3 sm:gap-4
+           hover:text-bond-primary transition-colors;
+  }
 
-.faq-answer {
-  @apply text-sm sm:text-base text-gray-600 leading-relaxed sm:leading-6;
+  .faq-answer {
+    @apply text-sm sm:text-base text-gray-600 leading-relaxed sm:leading-6;
+  }
 }
 
 /* Animations */

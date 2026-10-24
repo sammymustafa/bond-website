@@ -32,7 +32,7 @@ const results = [
 export default function Results() {
   return (
     <section className="section bg-gradient-section">
-      <div className="container-lg px-6">
+      <div className="container-lg px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="eyebrow mb-4">Results</p>

@@ -119,6 +119,7 @@ const page: SeoPage = {
         {
           type: "table",
           caption: "One row per inclusion and exclusion criterion",
+          layout: "grid",
           columns: ["Ref", "Criterion, verbatim", "Data type and where to look", "Time window", "Chart can decide?", "Agreed reading (PI initials, date)"],
           rows: [
             ["I-1", "[Copy inclusion criterion word for word]", "Diagnosis: problem list, then specialist notes", "[From protocol, e.g., diagnosed at least N months before consent]", "Yes", "[e.g., biopsy-confirmed only; a clinical diagnosis is not enough]"],

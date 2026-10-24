@@ -123,7 +123,7 @@ export default function Hero() {
             {/* Eyebrow with subtle animation */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bond-primary/5 border border-bond-primary/20 rounded-full mb-6 animate-fade-up">
               <span className="w-2 h-2 bg-bond-primary rounded-full animate-pulse" />
-              <span className="text-bond-primary font-medium text-sm">For research sites and health systems</span>
+              <span className="text-bond-primary font-medium text-[13px] sm:text-sm">For research sites and health systems</span>
             </div>
 
             {/* Headline - Cleaner, more impactful */}
@@ -162,12 +162,13 @@ export default function Hero() {
               <p className="text-sm text-gray-700 mb-3">
                 <span className="font-semibold text-gray-900">Up to 3x faster enrollment</span> · <span className="font-semibold text-gray-900">90%+ matching accuracy</span>
               </p>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
+              {/* py-1 on the links gives them a 24px tap height */}
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                 <a
                   href="https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 transition-colors"
+                  className="flex items-center gap-1.5 py-1 text-xs text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <Image
                     src="/images/hipaa-compliant-badge.svg"
@@ -180,14 +181,14 @@ export default function Hero() {
                 </a>
                 <Link
                   href="/security#certifications"
-                  className="flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 transition-colors"
+                  className="flex items-center gap-1.5 py-1 text-xs text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <ShieldCheck className="w-3.5 h-3.5 text-green-600" />
                   <span>ISO 27001 certified</span>
                 </Link>
                 <Link
                   href="/security#certifications"
-                  className="flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 transition-colors"
+                  className="flex items-center gap-1.5 py-1 text-xs text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <ShieldCheck className="w-3.5 h-3.5 text-green-600" />
                   <span>SOC 2 Type I</span>
@@ -196,12 +197,15 @@ export default function Hero() {
                   <Lock className="w-3.5 h-3.5 text-green-600" />
                   <span>BAA available</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs text-gray-600">
-                  <FileCheck className="w-3.5 h-3.5 text-green-600" />
-                  <span>Audit logs</span>
-                </div>
-                <div className="flex items-center gap-1.5 text-xs text-gray-600">
-                  <span className="text-bond-primary font-medium">FHIR</span>
+                {/* Wraps as one unit so "FHIR" never ends up alone on its own line */}
+                <div className="flex items-center gap-x-4">
+                  <div className="flex items-center gap-1.5 text-xs text-gray-600">
+                    <FileCheck className="w-3.5 h-3.5 text-green-600" />
+                    <span>Audit logs</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs text-gray-600">
+                    <span className="text-bond-primary font-medium">FHIR</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -229,28 +233,29 @@ export default function Hero() {
               {/* Dashboard Content */}
               <div className="p-5">
                 {/* Section Header with animated counter */}
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between gap-2 mb-4">
                   <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Eligibility Screening</h3>
-                  <span className="px-3 py-1.5 text-sm font-bold text-bond-primary bg-bond-primary/10 rounded-full tabular-nums">
+                  <span className="px-3 py-1.5 text-sm font-bold text-bond-primary bg-bond-primary/10 rounded-full tabular-nums whitespace-nowrap">
                     {matched} matched
                   </span>
                 </div>
 
-                {/* Cycling Patient Card with transition */}
-                <div className="relative h-[140px] mb-4 overflow-hidden">
+                {/* Cycling Patient Card with transition. The slides share one grid cell, so the box
+                    grows to the tallest slide (no clipped text on narrow phones) while they cross-fade. */}
+                <div className="grid mb-4 overflow-hidden">
                   {patientData.map((patient, index) => {
                     const PatientIcon = patient.icon;
                     const ActionIcon = patient.action?.icon;
                     return (
                       <div
                         key={patient.id}
-                        className={`absolute inset-0 p-4 rounded-xl border transition-all duration-500 ease-out ${patient.bgClass} ${
+                        className={`col-start-1 row-start-1 p-4 rounded-xl border transition-all duration-500 ease-out ${patient.bgClass} ${
                           index === activePatient 
                             ? "opacity-100 translate-y-0 scale-100" 
                             : "opacity-0 translate-y-4 scale-95"
                         }`}
                       >
-                        <div className="flex items-center justify-between mb-2">
+                        <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1 mb-2">
                           <div className="flex items-center gap-2">
                             <PatientIcon className={`w-4 h-4 ${
                               patient.statusColor === 'green' ? 'text-green-600' :
@@ -258,7 +263,7 @@ export default function Hero() {
                               patient.statusColor === 'emerald' ? 'text-emerald-600' :
                               'text-gray-500'
                             }`} />
-                            <span className="font-semibold text-gray-900 text-sm">Patient {patient.id}</span>
+                            <span className="font-semibold text-gray-900 text-sm whitespace-nowrap">Patient {patient.id}</span>
                             <span className={`px-1.5 py-0.5 text-[11px] font-semibold rounded ${
                               patient.statusColor === 'green' ? 'bg-green-100 text-green-700' :
                               patient.statusColor === 'blue' ? 'bg-blue-100 text-blue-700' :
@@ -266,12 +271,13 @@ export default function Hero() {
                               'bg-gray-200 text-gray-600'
                             }`}>{patient.status}</span>
                           </div>
-                          <span className="text-sm text-gray-600 font-medium">A1c: {patient.a1c}</span>
+                          <span className="text-sm text-gray-600 font-medium whitespace-nowrap">A1c: {patient.a1c}</span>
                         </div>
-                        <p className="text-sm text-gray-600 mb-2">{patient.details}</p>
+                        {/* The excluded patient shows its details once, as the reason below */}
+                        {!patient.isExcluded && <p className="text-sm text-gray-600 mb-2">{patient.details}</p>}
                         {patient.action && ActionIcon && (
-                          <div className="flex items-center gap-3">
-                            <span className={`flex items-center gap-1.5 text-sm font-medium ${
+                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                            <span className={`flex items-center gap-1.5 text-sm font-medium whitespace-nowrap ${
                               patient.action.color === 'green' ? 'text-green-700' :
                               patient.action.color === 'blue' ? 'text-blue-700' :
                               'text-emerald-700'
@@ -280,7 +286,7 @@ export default function Hero() {
                               {patient.action.text}
                             </span>
                             {patient.action.extra && (
-                              <span className="text-sm text-gray-500">{patient.action.extra}</span>
+                              <span className="text-sm text-gray-500 whitespace-nowrap">{patient.action.extra}</span>
                             )}
                           </div>
                         )}
@@ -346,14 +352,14 @@ export default function Hero() {
           
           {/* Mobile: even grid; each logo is optically sized (wider marks are scaled
               down) so they carry similar visual weight, and all are visible at once */}
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-6 sm:hidden">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-6 sm:hidden">
             {supporters.map((supporter) => {
               const aspect = supporter.w / supporter.h;
               const opticalHeight = Math.round((34 / Math.pow(aspect, 0.42)) * (supporter.boost ?? 1));
               return (
                 <div
                   key={supporter.name}
-                  className="flex h-12 w-[40%] items-center justify-center opacity-50 grayscale"
+                  className="flex h-12 w-[28%] items-center justify-center opacity-50 grayscale"
                 >
                   <Image
                     src={supporter.logo}

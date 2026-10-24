@@ -49,6 +49,8 @@ export type Block =
       columns: string[];
       rows: Inline[][];
       note?: Inline;
+      /** On phones, tables with 3+ columns become one card per row. "grid" keeps a fill-in worksheet a grid that scrolls sideways. */
+      layout?: "grid";
     }
   | { type: "callout"; tone?: Tone; title?: string; text: Inline }
   | { type: "stats"; items: { value: string; label: string; cite: string }[] }
