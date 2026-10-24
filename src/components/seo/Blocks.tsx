@@ -54,7 +54,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
         <ul className="my-4 space-y-2.5">
           {block.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3 leading-relaxed text-gray-700">
-              <span className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-bond-primary" />
+              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-bond-primary" />
               <span>{renderInline(item, cites, `${k}-${i}`)}</span>
             </li>
           ))}
@@ -66,7 +66,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
         <ol className="my-4 space-y-2.5">
           {block.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3 leading-relaxed text-gray-700">
-              <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-bond-primary/10 text-xs font-semibold text-bond-primary">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-bond-primary/10 text-xs font-semibold text-bond-primary">
                 {i + 1}
               </span>
               <span>{renderInline(item, cites, `${k}-${i}`)}</span>
@@ -82,7 +82,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
             <li key={i} className="flex items-start gap-3 leading-relaxed text-gray-700">
               <span
                 aria-hidden
-                className="mt-1 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded border-2 border-gray-300 bg-white"
+                className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 border-gray-300 bg-white"
               />
               <span>{renderInline(item, cites, `${k}-${i}`)}</span>
             </li>
@@ -136,7 +136,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
       const s = styles[tone];
       return (
         <aside className={`my-6 flex gap-3 rounded-2xl border p-4 sm:p-5 ${s.box}`}>
-          <span className="mt-0.5 flex-shrink-0">{s.icon}</span>
+          <span className="mt-0.5 shrink-0">{s.icon}</span>
           <div className="text-sm leading-relaxed text-gray-700 sm:text-[15px]">
             {block.title && <p className="mb-1 font-semibold text-gray-900">{block.title}</p>}
             <p>{renderInline(block.text, cites, k)}</p>
@@ -165,7 +165,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
         <ol className="my-6 space-y-4">
           {block.items.map((s, i) => (
             <li key={i} className="flex gap-4">
-              <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-bond-primary text-sm font-bold text-white">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-bond-primary text-sm font-bold text-white">
                 {i + 1}
               </span>
               <div>
@@ -187,7 +187,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
 
     case "cta":
       return (
-        <div className="no-print my-8 rounded-2xl border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8">
+        <div className="no-print my-8 rounded-2xl border border-gray-100 bg-linear-to-br from-gray-50 to-white p-6 sm:p-8">
           {block.text && <p className="mb-4 leading-relaxed text-gray-700">{renderInline(block.text, cites, k)}</p>}
           <div className="flex flex-col gap-3 sm:flex-row">
             <ButtonLink href={block.href} label={block.label} primary />
@@ -208,7 +208,7 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
               {block.note ? <> · {renderInline(block.note, cites, `${k}-note`)}</> : null}
             </p>
           </div>
-          <a href={block.href} download className="btn-primary flex-shrink-0">
+          <a href={block.href} download className="btn-primary shrink-0">
             <Download className="h-4 w-4" />
             Download
           </a>

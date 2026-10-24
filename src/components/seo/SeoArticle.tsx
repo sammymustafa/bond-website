@@ -175,7 +175,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                       <details key={i} className="faq-item group" open={i === 0}>
                         <summary className="faq-question w-full list-none text-left">
                           <span>{f.q}</span>
-                          <ChevronDown className="h-5 w-5 flex-shrink-0 transition-transform group-open:rotate-180" />
+                          <ChevronDown className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180" />
                         </summary>
                         <div className="faq-answer mt-3">{renderInline(f.a, cites, `faq-${i}`)}</div>
                       </details>
@@ -190,7 +190,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                   <ol className="space-y-3 text-sm text-gray-600">
                     {page.sources.map((s, i) => (
                       <li key={s.id} id={`src-${s.id}`} className="flex gap-3 scroll-mt-28">
-                        <span className="w-6 flex-shrink-0 text-right font-medium text-gray-400">{i + 1}.</span>
+                        <span className="w-6 shrink-0 text-right font-medium text-gray-400">{i + 1}.</span>
                         <span>
                           {s.url ? (
                             <a

@@ -30,7 +30,7 @@ export default function Moat() {
               {/* Unstructured EHR Data */}
               <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-3 sm:p-5">
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-purple-500/20 flex items-center justify-center shrink-0">
                     <FileText className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
                   </div>
                   <span className="text-xs sm:text-sm font-semibold text-white">EHR Data</span>
@@ -41,7 +41,7 @@ export default function Moat() {
               {/* Structured Ontologies */}
               <div className="bg-gray-800/50 backdrop-blur rounded-xl sm:rounded-2xl border border-gray-700/50 p-3 sm:p-5">
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-blue-500/20 flex items-center justify-center shrink-0">
                     <Database className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                   </div>
                   <span className="text-xs sm:text-sm font-semibold text-white">Ontologies</span>
@@ -62,11 +62,11 @@ export default function Moat() {
             </div>
 
             {/* Center: Knowledge Graph */}
-            <div className="relative order-first md:order-none">
-              <div className="aspect-square max-w-[180px] sm:max-w-xs mx-auto relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50 p-4 sm:p-8">
+            <div className="relative order-first md:order-0">
+              <div className="aspect-square max-w-[180px] sm:max-w-xs mx-auto relative bg-linear-to-br from-gray-800/80 to-gray-900/80 rounded-full border border-gray-700/50 p-4 sm:p-8">
                 {/* Central Node */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-linear-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
                     <div className="text-center">
                       <p className="text-sm sm:text-lg font-bold text-white">1.6M</p>
                       <p className="text-[8px] sm:text-[10px] text-white/80">nodes</p>
@@ -160,7 +160,7 @@ export default function Moat() {
             {/* Right: Outputs */}
             <div className="space-y-2 sm:space-y-3">
               {/* Inference Engine Label */}
-              <div className="bg-gradient-to-r from-bond-primary/20 to-bond-accent/20 rounded-lg sm:rounded-xl border border-bond-accent/30 p-3 sm:p-4 mb-2 sm:mb-4">
+              <div className="bg-linear-to-r from-bond-primary/20 to-bond-accent/20 rounded-lg sm:rounded-xl border border-bond-accent/30 p-3 sm:p-4 mb-2 sm:mb-4">
                 <div className="flex items-center gap-2 mb-1">
                   <Brain className="w-4 h-4 text-bond-accent" />
                   <span className="text-xs font-semibold text-white">Inference Engine</span>
@@ -176,7 +176,7 @@ export default function Moat() {
                   { icon: Calendar, label: "Booking", fullLabel: "Visit Booking", color: "text-purple-400" },
                 ].map((app) => (
                   <div key={app.fullLabel} className="flex flex-col md:flex-row items-center md:items-center gap-1.5 sm:gap-3 p-2 sm:p-3 bg-gray-800/30 rounded-lg sm:rounded-xl border border-gray-700/30 text-center md:text-left">
-                    <app.icon className={`w-4 h-4 ${app.color} flex-shrink-0`} />
+                    <app.icon className={`w-4 h-4 ${app.color} shrink-0`} />
                     <span className="text-[10px] sm:text-xs text-gray-300 hidden md:block">{app.fullLabel}</span>
                     <span className="text-[10px] text-gray-300 md:hidden">{app.label}</span>
                   </div>

@@ -27,11 +27,13 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close everything on navigation.
-  useEffect(() => {
+  // Close everything on navigation (state is adjusted during render when the path changes, as React recommends).
+  const [menusPath, setMenusPath] = useState(pathname);
+  if (menusPath !== pathname) {
+    setMenusPath(pathname);
     setOpenMenu(null);
     setIsMobileMenuOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -210,7 +212,7 @@ export default function Navigation() {
       {/* Mobile Menu: `invisible` when closed so its links leave the tab order and the accessibility tree */}
       <div
         id="mobile-menu"
-        className={`fixed inset-0 z-[60] md:hidden transition-[opacity,visibility] duration-300 ${
+        className={`fixed inset-0 z-60 md:hidden transition-[opacity,visibility] duration-300 ${
           isMobileMenuOpen ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"
         }`}
       >

@@ -43,7 +43,7 @@ function BulletList({ children }: { children: React.ReactNode }) {
 function BulletItem({ label, children }: { label?: string; children: React.ReactNode }) {
   return (
     <li className="flex items-start gap-3 text-gray-600 leading-relaxed">
-      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-bond-primary flex-shrink-0" />
+      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-bond-primary shrink-0" />
       <span>
         {label && <strong className="text-gray-800">{label}</strong>} {children}
       </span>

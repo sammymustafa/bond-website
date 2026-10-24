@@ -39,7 +39,7 @@ export default function FAQ() {
               >
                 <summary className="faq-question w-full text-left list-none cursor-pointer flex items-center justify-between">
                   <span>{faq.question}</span>
-                  <ChevronDown className="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" />
+                  <ChevronDown className="w-5 h-5 shrink-0 transition-transform group-open:rotate-180" />
                 </summary>
 
                 {/* Keep content in the DOM for crawl/LLM extraction */}

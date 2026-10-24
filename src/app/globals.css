@@ -1,8 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --color-bond-primary: #0066ff;
+  --color-bond-primary-light: #3385ff;
+  --color-bond-primary-dark: #0052cc;
+  --color-bond-accent: #00d4aa;
+  --color-bond-accent-light: #00ffd1;
+  --color-bond-white: #ffffff;
+  --color-bond-gray-50: #f9fafb;
+  --color-bond-gray-100: #f3f4f6;
+  --color-bond-gray-200: #e5e7eb;
+  --color-bond-gray-300: #d1d5db;
+  --color-bond-gray-400: #9ca3af;
+  --color-bond-gray-500: #6b7280;
+  --color-bond-gray-600: #4b5563;
+  --color-bond-gray-700: #374151;
+  --color-bond-gray-800: #1f2937;
+  --color-bond-gray-900: #111827;
+
+  --font-display: var(--font-display), system-ui, sans-serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+
+  --shadow-soft:
+    0 2px 8px -2px rgba(0, 0, 0, 0.05), 0 4px 16px -4px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-card-hover:
+    0 4px 12px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-button:
+    0 2px 4px rgba(0, 102, 255, 0.15), 0 4px 12px rgba(0, 102, 255, 0.1);
+
+  --radius-4xl: 2rem;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+
+  /* Tailwind v4 also dropped the pointer cursor on buttons and greyed placeholders by opacity; keep v3's look. */
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-gray-400);
+  }
+}
 
 :root {
   --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -29,33 +96,37 @@
   --bond-gray-900: #111827;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Element-level rules go in the base layer: Tailwind v4 puts utilities in a cascade layer, and unlayered rules
+   (even `*`) would otherwise override every utility, as `* { margin: 0; padding: 0 }` did with spacing. */
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-  /* clip, not hidden: hidden makes html and body scroll containers, which stops position: sticky from working */
-  overflow-x: clip;
-}
+  html {
+    scroll-behavior: smooth;
+    /* clip, not hidden: hidden makes html and body scroll containers, which stops position: sticky from working */
+    overflow-x: clip;
+  }
 
-body {
-  font-family: var(--font-body);
-  background: var(--bond-white);
-  color: var(--bond-gray-900);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
-  overflow-x: clip;
-  max-width: 100vw;
-}
+  body {
+    font-family: var(--font-body);
+    background: var(--bond-white);
+    color: var(--bond-gray-900);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    overflow-x: clip;
+    max-width: 100vw;
+  }
 
-/* Selection */
-::selection {
-  background: rgba(0, 102, 255, 0.15);
-  color: var(--bond-gray-900);
+  /* Selection */
+  ::selection {
+    background: rgba(0, 102, 255, 0.15);
+    color: var(--bond-gray-900);
+  }
 }
 
 /* Typography Classes */
@@ -144,7 +215,7 @@ body {
 /* Cards */
 .card {
   @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
-         shadow-sm hover:shadow-md transition-all duration-300;
+         shadow-xs hover:shadow-md transition-all duration-300;
 }
 
 .card-elevated {
@@ -199,15 +270,15 @@ body {
 }
 
 .badge-primary {
-  @apply badge bg-bond-primary/10 text-bond-primary;
+  @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-bond-primary/10 text-bond-primary;
 }
 
 .badge-success {
-  @apply badge bg-green-50 text-green-600;
+  @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-green-50 text-green-600;
 }
 
 .badge-gray {
-  @apply badge bg-gray-100 text-gray-600;
+  @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-600;
 }
 
 /* Gradient Backgrounds */
@@ -310,7 +381,7 @@ body {
 }
 
 .faq-answer {
-  @apply text-sm sm:text-base text-gray-600 leading-relaxed;
+  @apply text-sm sm:text-base text-gray-600 leading-relaxed sm:leading-6;
 }
 
 /* Animations */
@@ -408,8 +479,10 @@ body {
   .no-print {
     display: none !important;
   }
-  body {
-    background: white;
+  @layer base {
+    body {
+      background: white;
+    }
   }
   * {
     box-shadow: none !important;
@@ -417,9 +490,11 @@ body {
   header {
     padding-top: 1.5rem !important;
   }
-  a {
-    color: inherit;
-    text-decoration: none;
+  @layer base {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
   h2,
   h3 {

@@ -40,7 +40,7 @@ export default function FullFunnel() {
   const [hoveredStage, setHoveredStage] = useState<string | null>(null);
 
   return (
-    <section id="solutions" className="section bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="solutions" className="section bg-linear-to-b from-gray-50 to-white overflow-hidden">
       <div className="container-lg px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -61,7 +61,7 @@ export default function FullFunnel() {
         {/* Funnel Flow */}
         <div className="relative">
           {/* Connection Lines - Desktop */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-emerald-200 to-violet-200 -translate-y-1/2 z-0" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-blue-200 via-emerald-200 to-violet-200 -translate-y-1/2 z-0" />
           
           {/* Stage Cards */}
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8 relative z-10">
@@ -86,7 +86,7 @@ export default function FullFunnel() {
                   `}>
                     {/* Gradient border on hover */}
                     <div className={`
-                      absolute inset-0 rounded-2xl bg-gradient-to-br transition-opacity duration-500
+                      absolute inset-0 rounded-2xl bg-linear-to-br transition-opacity duration-500
                       ${stage.color === 'blue' ? 'from-blue-500 to-blue-600' : ''}
                       ${stage.color === 'emerald' ? 'from-emerald-500 to-emerald-600' : ''}
                       ${stage.color === 'violet' ? 'from-violet-500 to-violet-600' : ''}

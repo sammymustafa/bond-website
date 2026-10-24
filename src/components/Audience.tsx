@@ -51,12 +51,12 @@ export default function Audience() {
       <div className="container-lg px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="eyebrow mb-4">Who it's for</p>
+          <p className="eyebrow mb-4">Who it&apos;s for</p>
           <h2 className="heading-lg mb-4">
             Built for clinical research teams.
           </h2>
           <p className="body-lg">
-            Whether you're a site, CRO, or sponsor, Bond helps you enroll the 
+            Whether you&apos;re a site, CRO, or sponsor, Bond helps you enroll the 
             right patients faster.
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function Audience() {
               <ul className="space-y-2 mb-6">
                 {audience.benefits.map((benefit) => (
                   <li key={benefit} className="flex items-center gap-2 text-sm text-gray-600">
-                    <div className="w-1.5 h-1.5 rounded-full bg-bond-primary flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-bond-primary shrink-0" />
                     {benefit}
                   </li>
                 ))}

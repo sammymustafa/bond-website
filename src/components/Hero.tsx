@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, User, ShieldCheck } from "lucide-react";
+import { useState, useEffect } from "react";
+import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -95,18 +95,23 @@ export default function Hero() {
   const booked = useCountUp(12, 1500, 1200);
   const matched = useCountUp(47, 2000, 500);
   
-  // Cycle through patients, pausing for a while after a visitor picks one with the dots
-  const pausedUntil = useRef(0);
+  // Cycle through patients; after a visitor picks one with the dots, wait 10 seconds before cycling again
+  const [picks, setPicks] = useState(0);
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (Date.now() < pausedUntil.current) return;
-      setActivePatient((prev) => (prev + 1) % patientData.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+    let interval: number | undefined;
+    const cycle = () => {
+      interval = window.setInterval(() => setActivePatient((prev) => (prev + 1) % patientData.length), 3000);
+    };
+    const delay = picks > 0 ? window.setTimeout(cycle, 10000) : undefined;
+    if (picks === 0) cycle();
+    return () => {
+      window.clearTimeout(delay);
+      window.clearInterval(interval);
+    };
+  }, [picks]);
   const showPatient = (index: number) => {
-    pausedUntil.current = Date.now() + 10000;
     setActivePatient(index);
+    setPicks((n) => n + 1);
   };
 
   return (
@@ -128,7 +133,7 @@ export default function Hero() {
             </h1>
 
             {/* Single clear value prop - consolidated */}
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 animate-fade-up stagger-2 pr-4 leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 animate-fade-up stagger-2 pr-4 leading-relaxed sm:leading-7">
               Automate <span className="text-gray-900 font-medium">EHR screening</span>, <span className="text-gray-900 font-medium">Meta and Google ads</span>, and <span className="text-gray-900 font-medium">instant outreach and follow-up</span>, all the way to a <span className="text-gray-900 font-medium">booked study visit</span>.
             </p>
 
@@ -209,7 +214,7 @@ export default function Hero() {
               {/* App Header */}
               <div className="flex items-center justify-between px-5 py-3 bg-gray-50 border-b border-gray-100">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-bond-primary to-bond-accent flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-lg bg-linear-to-br from-bond-primary to-bond-accent flex items-center justify-center">
                     <span className="font-display font-bold text-white text-xs">B</span>
                   </div>
                   <span className="font-semibold text-gray-800 text-sm">Bond</span>
@@ -369,7 +374,7 @@ export default function Hero() {
               {[...supporters, ...supporters].map((supporter, index) => (
                 <div
                   key={`${supporter.name}-${index}`}
-                  className="flex-shrink-0 transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
+                  className="shrink-0 transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
                 >
                   <Image
                     src={supporter.logo}

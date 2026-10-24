@@ -24,6 +24,8 @@ jobs:
 
       - run: npx tsc --noEmit
 
+      - run: npm run lint
+
       # Content rules: question headings, sourced numbers, resolving links.
       - run: npm run validate
 
