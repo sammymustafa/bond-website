@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A site network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
   summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -129,7 +129,7 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**EHRs.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, over FHIR R4 APIs, HL7 v2 where applicable, or an integration partner. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Each connection has its own approval. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).{{cite:bond-site,bond-product}}",
-            "**CRIO.** Bond is a CRIO Certified Partner and, as of September 2026, is listed on CRIO's partners page under Patient Acquisition & Retention.{{cite:bond-site,crio-partners}} Pre-screened patients go to CRIO through the CRIO API. CRIO says its Recruiting API lets vendors send patient updates, qualify patients into studies and schedule appointments.{{cite:crio-recruiting-api}} See the [CRIO integration](/integrations/crio).",
+            "**CRIO.** Bond is a CRIO Certified Partner and, as of October 2026, is listed on CRIO's partners page under Patient Acquisition & Retention.{{cite:bond-site,crio-partners}} Pre-screened patients go to CRIO through the CRIO API. CRIO says its Recruiting API lets vendors send patient updates, qualify patients into studies and schedule appointments.{{cite:crio-recruiting-api}} See the [CRIO integration](/integrations/crio).",
             "**Other CTMS products.** Bond works alongside systems such as [RealTime](/integrations/realtime) and [Advarra Clinical Conductor](/integrations/advarra-clinical-conductor), through the vendor's API or file export where the vendor supports it. Google Sheets and calendars connect directly.{{cite:bond-site}}",
           ],
         },
@@ -324,7 +324,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/about/partners/",
       year: "2026",
-      note: "Accessed and re-checked September 22, 2026 (an earlier September 21 check did not show Bond). Bond Health is listed under Patient Acquisition & Retention with the blurb \"Automate chart review across your EMR and CRIO. Ranked, pre-screened candidates with cited evidence, delivered straight into your coordinators' workflow.\" Quote: \"Use the CRIO Partner Directory to search for providers, read reviews from other CRIO users, request information from CRIO Partners, and request API access activation for integrated partners.\"",
+      note: "Accessed and re-checked September 22, 2026 (an earlier September 21 check did not show Bond); re-checked October 23, 2026. Bond Health is listed under Patient Acquisition & Retention with the blurb \"Automate chart review across your EMR and CRIO. Ranked, pre-screened candidates with cited evidence, delivered straight into your coordinators' workflow.\" Quote: \"Use the CRIO Partner Directory to search for providers, read reviews from other CRIO users, request information from CRIO Partners, and request API access activation for integrated partners.\"",
     },
     {
       id: "crio-recruiting-api",
@@ -340,7 +340,7 @@ const page: SeoPage = {
       publisher: "Legal Information Institute, Cornell Law School",
       url: "https://www.law.cornell.edu/cfr/text/45/164.512",
       year: "2026",
-      note: "Accessed September 22, 2026. Paragraph (i)(1)(ii), reviews preparatory to research: the covered entity obtains representations from the researcher. Quote: \"No protected health information is to be removed from the covered entity by the researcher in the course of the review\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Paragraph (i)(1)(ii), reviews preparatory to research: the covered entity obtains representations from the researcher. Quote: \"No protected health information is to be removed from the covered entity by the researcher in the course of the review\"",
     },
   ],
   related: [

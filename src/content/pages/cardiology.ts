@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Cardiology protocols screen on ejection fraction, symptom class, lab thresholds and dated cardiac events, and much of that evidence sits in echo reports and notes rather than coded fields. In one heart failure trial, fewer than half of the 10,359 patients screened were randomized.{{cite:wjc-paragon-hf}} Here is where those criteria live in the chart and how Bond Health screens for them.",
   summary: "How cardiology criteria map to the chart, what drives screen failure, and how Bond screens for it.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -176,21 +176,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 2,845 studies with at least one US site were recruiting under a cardiology keyword search, about 13% of the 22,041 recruiting studies with a US site.{{cite:ctgov-api}} The search matches heart failure, coronary, atrial fibrillation, hypertension or cardiovascular in the condition field. It therefore counts hypertension and risk-factor studies, misses studies listed only under terms such as stroke, lipoprotein(a) or peripheral artery disease, and lets a study count in more than one area.",
+          text: "As of October 23, 2026, 2,827 studies with at least one US site were recruiting under a cardiology keyword search, about 13% of the 22,038 recruiting studies with a US site.{{cite:ctgov-api}} The search matches heart failure, coronary, atrial fibrillation, hypertension or cardiovascular in the condition field. It therefore counts hypertension and risk-factor studies, misses studies listed only under terms such as stroke, lipoprotein(a) or peripheral artery disease, and lets a study count in more than one area.",
         },
         {
           type: "chart",
-          title: "Recruiting studies with at least one US site, by area (keyword search, September 21, 2026)",
+          title: "Recruiting studies with at least one US site, by area (keyword search, October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -242,7 +242,7 @@ const page: SeoPage = {
       publisher: "ESC Heart Failure",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10192289/",
       year: "2023",
-      note: "Behnoush AH et al. Full text checked via NCBI E-utilities on September 22, 2026. Quote: \"In the latest ACC/AHA/HFSA guidelines, HF with improved LVEF (HFimpEF) has been added to the list.\" Table 1 (ESC column lists HFimpEF as N/A): \"HFrEF: LVEF ≤ 40%\" ... \"HFimpEF: Previous LVEF ≤ 40% and follow-up LVEF > 40%\" ... \"HFmrEF: LVEF 41%–49% and evidence of spontaneous or provokable increased LV filling pressures\" ... \"HFpEF: LVEF ≥ 50% and evidence of spontaneous or provokable increased LV filling pressures\"",
+      note: "Behnoush AH et al. Full text checked via NCBI E-utilities on September 22, 2026; re-checked October 23, 2026. Quote: \"In the latest ACC/AHA/HFSA guidelines, HF with improved LVEF (HFimpEF) has been added to the list.\" Table 1 (ESC column lists HFimpEF as N/A): \"HFrEF: LVEF ≤ 40%\" ... \"HFimpEF: Previous LVEF ≤ 40% and follow-up LVEF > 40%\" ... \"HFmrEF: LVEF 41%–49% and evidence of spontaneous or provokable increased LV filling pressures\" ... \"HFpEF: LVEF ≥ 50% and evidence of spontaneous or provokable increased LV filling pressures\"",
     },
     {
       id: "hakansson-2021",
@@ -250,7 +250,7 @@ const page: SeoPage = {
       publisher: "Cardiovascular Therapeutics (Håkansson E et al.)",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8720587/",
       year: "2021",
-      note: "Single center in Sweden (Umeå University Hospital), 2010 to 2019; non-US. Abstract checked via Europe PMC on September 22, 2026. Quote: \"681 patients had left ventricle ejection fraction ≤ 40%, and of these 352 (52%) and 268 (39%) patients met eligibility criteria for DAPA-HF and EMPEROR-reduced, respectively.\" ... \"The main reasons for ineligibility were low NT-proBNP or low eGFR.\"",
+      note: "Single center in Sweden (Umeå University Hospital), 2010 to 2019; non-US. Abstract checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"681 patients had left ventricle ejection fraction ≤ 40%, and of these 352 (52%) and 268 (39%) patients met eligibility criteria for DAPA-HF and EMPEROR-reduced, respectively.\" ... \"The main reasons for ineligibility were low NT-proBNP or low eGFR.\"",
     },
     {
       id: "can-hf-2023",
@@ -258,7 +258,7 @@ const page: SeoPage = {
       publisher: "JACC: Heart Failure (Moghaddam N et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/36732099/",
       year: "2023",
-      note: "CAN-HF registry, Canada; 809 patients discharged alive after acute heart failure admission, 2017 to 2020; non-US. Abstract checked via PubMed on September 22, 2026. Quote: \"A total of 809 patients with documented LVEF were discharged alive from hospital: 455 with HFrEF and 354 with HFpEF\" ... \"In HFrEF patients, eligibility for therapies was ...\" ... \"Additionally, 25.9% and 30.1% met trial criteria for vericiguat and omecamtiv mecarbil, respectively.\"",
+      note: "CAN-HF registry, Canada; 809 patients discharged alive after acute heart failure admission, 2017 to 2020; non-US. Abstract checked via PubMed on September 22, 2026; re-checked October 23, 2026. Quote: \"A total of 809 patients with documented LVEF were discharged alive from hospital: 455 with HFrEF and 354 with HFpEF\" ... \"In HFrEF patients, eligibility for therapies was ...\" ... \"Additionally, 25.9% and 30.1% met trial criteria for vericiguat and omecamtiv mecarbil, respectively.\"",
     },
     {
       id: "cv-termination-2026",
@@ -266,7 +266,7 @@ const page: SeoPage = {
       publisher: "JACC: Advances",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13131426/",
       year: "2026",
-      note: "Cardiovascular trials registered on ClinicalTrials.gov, 2000 to 2025. Full text checked via NCBI E-utilities on September 22, 2026. Quote: \"Among 19,191 trials, 2,202 (11.5%) were prematurely terminated. Low recruitment was the most common reported reason (946/2,202, 42.9%)\"",
+      note: "Cardiovascular trials registered on ClinicalTrials.gov, 2000 to 2025. Full text checked via NCBI E-utilities on September 22, 2026; re-checked October 23, 2026. Quote: \"Among 19,191 trials, 2,202 (11.5%) were prematurely terminated. Low recruitment was the most common reported reason (946/2,202, 42.9%)\"",
     },
     {
       id: "unlu-2024",
@@ -274,7 +274,7 @@ const page: SeoPage = {
       publisher: "medRxiv preprint (Unlu O et al.); peer-reviewed version in NEJM AI, 2024",
       url: "https://pubmed.ncbi.nlm.nih.gov/38370719/",
       year: "2024",
-      note: "Abstract text checked via PubMed on September 22, 2026. Quote: \"Currently, structured data in the EHR can only be used to determine 5 out of 6 inclusion and 5 out of 17 exclusion criteria. Trained, but non-licensed, study staff complete manual chart review to determine patient eligibility\" ... \"RECTIFIER performed better than study staff to determine the inclusion criteria of 'symptomatic heart failure' with an accuracy of 97.9% vs 91.7%.\"",
+      note: "Abstract text checked via PubMed on September 22, 2026; re-checked October 23, 2026. Quote: \"Currently, structured data in the EHR can only be used to determine 5 out of 6 inclusion and 5 out of 17 exclusion criteria. Trained, but non-licensed, study staff complete manual chart review to determine patient eligibility\" ... \"RECTIFIER performed better than study staff to determine the inclusion criteria of 'symptomatic heart failure' with an accuracy of 97.9% vs 91.7%.\"",
     },
     {
       id: "subramaniam-2024",
@@ -282,7 +282,7 @@ const page: SeoPage = {
       publisher: "Population Health Management (Subramaniam S et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/39630562/",
       year: "2024",
-      note: "Abstract text checked via PubMed on September 22, 2026. Quote: \"The RBS was deployed to streamline a PHM program at Brigham and Women's Hospital wherein the RBS was executed every other month to identify potentially eligible patients for further screening by the program staff.\" ... \"A total 5460 patients were manually screened, of which 1754 were found to be truly eligible with an accuracy of 32.1%.\" ... \"over 38% of the false positives were due to incorrect determination of symptomatic HF and medication history of the patients. The system's performance can be potentially improved by integrating information from clinical notes.\"",
+      note: "Abstract text checked via PubMed on September 22, 2026; re-checked October 23, 2026. Quote: \"The RBS was deployed to streamline a PHM program at Brigham and Women's Hospital wherein the RBS was executed every other month to identify potentially eligible patients for further screening by the program staff.\" ... \"A total 5460 patients were manually screened, of which 1754 were found to be truly eligible with an accuracy of 32.1%.\" ... \"over 38% of the false positives were due to incorrect determination of symptomatic HF and medication history of the patients. The system's performance can be potentially improved by integrating information from clinical notes.\"",
     },
     {
       id: "ctgov-lpa-horizon",
@@ -290,7 +290,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov",
       url: "https://clinicaltrials.gov/study/NCT04023552",
       year: "2026",
-      note: "Record read via the ClinicalTrials.gov API v2 on September 22, 2026; actual enrollment 8,323. Quote: \"Lp(a) ≥ 70 mg/dL at the screening visit, measured at the Central laboratory\" ... \"Myocardial infarction: ≥ 3 months from screening and randomization to ≤ 10 years prior to the screening visit\" ... \"Ischemic stroke: ≥ 3 months from screening and randomization to ≤ 10 years prior to the screening visit\" ... \"Clinically significant symptomatic peripheral artery disease\" ... Key Exclusion Criteria include: \"Heart failure New York Heart Association (NYHA) class IV\" ... \"History of malignancy of any organ system\" ... \"History of hemorrhagic stroke or other major bleeding\"",
+      note: "Record read via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026; actual enrollment 8,323. Quote: \"Lp(a) ≥ 70 mg/dL at the screening visit, measured at the Central laboratory\" ... \"Myocardial infarction: ≥ 3 months from screening and randomization to ≤ 10 years prior to the screening visit\" ... \"Ischemic stroke: ≥ 3 months from screening and randomization to ≤ 10 years prior to the screening visit\" ... \"Clinically significant symptomatic peripheral artery disease\" ... Key Exclusion Criteria include: \"Heart failure New York Heart Association (NYHA) class IV\" ... \"History of malignancy of any organ system\" ... \"History of hemorrhagic stroke or other major bleeding\"",
     },
     {
       id: "novartis-2026",
@@ -314,7 +314,7 @@ const page: SeoPage = {
       publisher: "Journal of the American Heart Association (Bhatia HS et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/37702041/",
       year: "2023",
-      note: "Abstract text checked via PubMed on September 22, 2026. Quote: \"From 2012 to 2021, there were 5 553 654 unique adults evaluated in the University of California health system, of whom 18 972 (0.3%) had lipoprotein(a) testing.\" ... \"Lipoprotein(a) testing was performed in 6469 individuals with ischemic heart disease (2.9%)\"",
+      note: "Abstract text checked via PubMed on September 22, 2026; re-checked October 23, 2026. Quote: \"From 2012 to 2021, there were 5 553 654 unique adults evaluated in the University of California health system, of whom 18 972 (0.3%) had lipoprotein(a) testing.\" ... \"Lipoprotein(a) testing was performed in 6469 individuals with ischemic heart disease (2.9%)\"",
     },
     {
       id: "hfsa-2023",
@@ -330,7 +330,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "bond-site",

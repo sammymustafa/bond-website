@@ -57,7 +57,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
+          text: "As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -71,7 +71,7 @@ const page: SeoPage = {
         },
         {
           type: "table",
-          caption: "Bond and manual chart review, side by side (September 2026)",
+          caption: "Bond and manual chart review, side by side (October 2026)",
           columns: ["Area", "Bond", "Manual review"],
           rows: [
             ["Workflow", "One workflow from EHR screening to outreach, scheduling and consent support{{cite:bond-site}}", "Chart review by staff; calls, booking and consent are further staff tasks"],
@@ -88,7 +88,7 @@ const page: SeoPage = {
             ["Cost model", "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee{{cite:bond-site,bond-product}}", "Staff hours: $129 to $336 in personnel cost per enrolled patient at one center in 2012{{cite:penberthy-2012}}"],
             ["Setup", "48 hours for full EHR integration, depending on the EHR, IT review and interface method, with Bond's implementation team handling it end to end and no integration fee{{cite:bond-site,bond-product}}", "Trained staff and a screening log{{cite:unlu-2024-rectifier,ich-e6r3}}"],
           ],
-          note: "Bond figures come from Bond's website and product information, September 2026. Manual review figures come from single published studies with different methods.",
+          note: "Bond figures come from Bond's website and product information, October 2026. Manual review figures come from single published studies with different methods.",
         },
       ],
     },
@@ -172,7 +172,7 @@ const page: SeoPage = {
         {
           type: "stats",
           items: [
-            { value: "$54,992", label: "Average coordinator base salary before benefits, self-reported on Payscale (accessed September 2026)", cite: "payscale-crc" },
+            { value: "$54,992", label: "Average coordinator base salary before benefits, self-reported on Payscale (accessed October 2026)", cite: "payscale-crc" },
             { value: "35% to 61%", label: "Yearly patient-facing staff turnover sites reported to SCRS for 2022, against 10% to 37% in a typical year", cite: "scrs-2023" },
             { value: "6 to 12 months", label: "Time a site can need to get a study back on track after a coordinator leaves", cite: "scrs-2023" },
           ],
@@ -247,7 +247,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "This comparison was made in September 2026 from published studies and abstracts, a health system press release, an SCRS white paper, O*NET, Payscale, the ICH E6(R3) guideline, and Bond's website, Trust Center, product information, conference presentation and technical report. Most studies are in oncology or cardiology, and the VCU costs date from 2012, so treat the manual figures as ranges. The RECTIFIER, Mendel.ai and randomized oncology studies each had authors from the team that built or sells the tool tested.{{cite:unlu-2024-rectifier,mgb-2025-rct,calaprice-whitty-2020,parikh-2026}}",
+          text: "This comparison was made in September 2026 and re-checked in October 2026 from published studies and abstracts, a health system press release, an SCRS white paper, O*NET, Payscale, the ICH E6(R3) guideline, and Bond's website, Trust Center, product information, conference presentation and technical report. Most studies are in oncology or cardiology, and the VCU costs date from 2012, so treat the manual figures as ranges. The RECTIFIER, Mendel.ai and randomized oncology studies each had authors from the team that built or sells the tool tested.{{cite:unlu-2024-rectifier,mgb-2025-rct,calaprice-whitty-2020,parikh-2026}}",
         },
         {
           type: "p",
@@ -285,7 +285,7 @@ const page: SeoPage = {
       publisher: "Journal of Oncology Practice (ASCO), via PubMed Central",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3500483/",
       year: "2012",
-      note: "VCU Massey Cancer Center; 3,467 eligibility evaluations on 2,315 patients for 130 open cancer trials over 18 months. Costs in 2012 dollars, personnel only. Read September 2026. Abstract quote (via PubMed, September 2026): \"Determining eligibility for a clinical trial (CT) typically requires a lengthy manual review of data for a single evaluation.\" Quote: \"The time required for eligibility determination was defined as the time recorded by CRS from identification of the patient as a potential study candidate through final eligibility determination.\" The evaluation covered \"review of the patient medical record to determine eligibility for the specific study, discussions with patient and family about the study, and time associated with efforts to obtain medical records from other locations.\" Time distribution: \"8.8% required less than 10 minutes, 35.8% required 10-30 minutes, 18.6% required 30 minutes, 15.3% required 30-60 minutes, 13.3% required 60-120 minutes, and 10.2% required 120-240 minutes.\" Quote: \"Approximately 80% of the screening was performed by the research nurses because of the complexity of the clinical requirements for cancer trials.\" Quote: \"The cost of eligibility screening ranged by study phase from $129.15 to $336.48 per enrolled patient\" ($129.15 is observational studies). Quote: \"The total estimated annual cost spent on the eligibility screening process for our center was $90,505.\"",
+      note: "VCU Massey Cancer Center; 3,467 eligibility evaluations on 2,315 patients for 130 open cancer trials over 18 months. Costs in 2012 dollars, personnel only. Read September 2026; re-checked October 23, 2026. Abstract quote (via PubMed, September 2026): \"Determining eligibility for a clinical trial (CT) typically requires a lengthy manual review of data for a single evaluation.\" Quote: \"The time required for eligibility determination was defined as the time recorded by CRS from identification of the patient as a potential study candidate through final eligibility determination.\" The evaluation covered \"review of the patient medical record to determine eligibility for the specific study, discussions with patient and family about the study, and time associated with efforts to obtain medical records from other locations where the patient may have received care.\" Effort categories: \"cursory (< 10 minutes), tertiary (≥ 10 to ≤ 30 minutes), minimal (30 minutes), average (> 30 to < 60 minutes), complex (≥ 60 to < 120 minutes), and super complex (≥ 120 to 240 minutes)\"; Table 2 totals put 8.8%, 35.8%, 18.6%, 15.3%, 13.3% and 10.2% of evaluations in these categories. Quote: \"The largest proportion of evaluations (35.8%) required 10 to 30 minutes, but more than 10% required between 2 to 4 hours for completion.\" Quote: \"The average time spent to find, screen, and enroll a patient varied from 3.4 to 8.8 hours\" Quote: \"Approximately 80% of the screening was performed by the research nurses because of the complexity of the clinical requirements for cancer trials.\" Quote: \"The cost of eligibility screening ranged by study phase from $129.15 to $336.48 per enrolled patient\" ($129.15 is observational studies). Quote: \"The total estimated annual cost spent on the eligibility screening process for our center was $90,505.\"",
     },
     {
       id: "wiess-2023",
@@ -293,7 +293,7 @@ const page: SeoPage = {
       publisher: "Association of American Cancer Institutes, Clinical Research Innovation abstracts",
       url: "https://www.aaci-cancer.org/Files/Admin/CRI/2023/77-Automated-Patient-Pre-Screening-Using-Clinical-Trials-Patient-Matching-Algorithm.pdf",
       year: "2023",
-      note: "Yale Cancer Center GI oncology clinic, one interventional trial; retrospective cohort of 161 patients seen September 14-20, 2020. Read September 2026. Quote: \"The time for eligibility review per subject with and without the use of the CTPM was tracked, taking an average of 1.82 and 3.11 minutes respectively.\" Quote: \"a clinical trials patient matching (CTPM) algorithm was created using artificial intelligence (AI) and natural language processing (NLP) to filter patients based on defined eligibility criteria, extract relevant patient data, and export the data in an easily reviewable format for research staff.\" Quote: \"Pre-screening has become increasingly burdensome due to the growing breadth of clinical trials and limited staffing resources to dedicate to this endeavor.\" Quote: \"research staff conducted chart review without use of the CTPM for the randomly selected week of September 14-20, 2020, during which 161 patients visited Yale New Haven Hospital GI Oncology.\"",
+      note: "Yale Cancer Center GI oncology clinic, one interventional trial; retrospective cohort of 161 patients seen September 14-20, 2020. Read September 2026; re-checked October 23, 2026. Quote: \"The time for eligibility review per subject with and without the use of the CTPM was tracked, taking an average of 1.82 and 3.11 minutes respectively.\" Quote: \"a clinical trials patient matching (CTPM) algorithm was created using artificial intelligence (AI) and natural language processing (NLP) to filter patients based on defined eligibility criteria, extract relevant patient data, and export the data in an easily reviewable format for research staff.\" Quote: \"Pre-screening has become increasingly burdensome due to the growing breadth of clinical trials and limited staffing resources to dedicate to this endeavor.\" Quote: \"research staff conducted chart review without use of the CTPM for the randomly selected week of September 14-20, 2020, during which 161 patients visited Yale New Haven Hospital GI Oncology.\"",
     },
     {
       id: "parikh-2026",
@@ -301,7 +301,7 @@ const page: SeoPage = {
       publisher: "Nature Communications, via PubMed Central",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12976108/",
       year: "2026",
-      note: "355 lung and colorectal cancer charts; NCT06561217. Authors include Mendel.ai staff, whose pipeline supplied the AI output. Abstract quote (re-read via Europe PMC, September 2026): \"Chart-level accuracy, the primary endpoint of Human+AI prescreening is noninferior and superior to Human-alone (76.5% vs. 71.1%). However, efficiency is unchanged with similar average time per chart review, the secondary endpoint, (37.4 vs. 37.8 min).\" The results section reports arm means of 76.1% (Human+AI) and 71.5% (Human-alone). Abstract quote: \"Prescreening is time-consuming, labor-intensive, and prone to human error, resulting in under-identification of eligible patients.\" Quote: \"Since our study was powered on chart-level accuracy, CRCs reviewed every EHR document in full for the presence or absence of all 12 criteria.\" Quote: \"Our efficiency result should be interpreted cautiously.\" Quote: \"However, in practice, many prescreens anchor to specific inclusion and exclusion criteria, allowing a CRC to quickly move on from a patient's EHR the moment an exclusion criterion is encountered.\" Quote: \"Prescreening is traditionally done by clinicians or clinical research coordinators (CRCs), who manually review health records to identify patients meeting eligibility criteria.\" Quote: \"This study was funded by Mendel.ai (to RBP).\" Full text read via Europe PMC, September 2026.",
+      note: "355 lung and colorectal cancer charts; NCT06561217. Authors include Mendel.ai staff, whose pipeline supplied the AI output. Abstract quote (re-read via Europe PMC, September 2026): \"Chart-level accuracy, the primary endpoint of Human+AI prescreening is noninferior and superior to Human-alone (76.5% vs. 71.1%). However, efficiency is unchanged with similar average time per chart review, the secondary endpoint, (37.4 vs. 37.8 min).\" The results section reports arm means of 76.1% (Human+AI) and 71.5% (Human-alone). Abstract quote: \"Prescreening is time-consuming, labor-intensive, and prone to human error, resulting in under-identification of eligible patients.\" Quote: \"Since our study was powered on chart-level accuracy, CRCs reviewed every EHR document in full for the presence or absence of all 12 criteria.\" Quote: \"Our efficiency result should be interpreted cautiously.\" Quote: \"However, in practice, many prescreens anchor to specific inclusion and exclusion criteria, allowing a CRC to quickly move on from a patient's EHR the moment an exclusion criterion is encountered.\" Quote: \"Prescreening is traditionally done by clinicians or clinical research coordinators (CRCs), who manually review health records to identify patients meeting eligibility criteria.\" Quote: \"This study was funded by Mendel.ai (to RBP).\" Full text read via Europe PMC, September 2026; re-checked October 23, 2026.",
     },
     {
       id: "unlu-2024-rectifier",
@@ -309,7 +309,7 @@ const page: SeoPage = {
       publisher: "medRxiv preprint via PubMed Central; peer-reviewed version in NEJM AI",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10871450/",
       year: "2024",
-      note: "Abstract read via the Europe PMC record for PMID 38370719, September 2026. Quote: \"Currently, structured data in the EHR can only be used to determine 5 out of 6 inclusion and 5 out of 17 exclusion criteria. Trained, but non-licensed, study staff complete manual chart review to determine patient eligibility and record their assessment of the inclusion and exclusion criteria.\" Quote: \"An expert clinician completed a blinded review of patients' charts to answer the eligibility questions and determine the 'gold standard' answers.\" Quote: \"Both RECTIFIER and study staff answers closely aligned with the expert clinician answers across criteria with accuracy ranging between 97.9% and 100% (MCC 0.837 and 1) for RECTIFIER and 91.7% and 100% (MCC 0.644 and 1) for study staff.\" Quote: \"Overall, the sensitivity and specificity of determining eligibility for the RECTIFIER was 92.3% (CI) and 93.9% (CI), and study staff was 90.1% (CI) and 83.6% (CI), respectively.\" Quote: \"As part of the screening process, a list of potentially eligible patients is created through an electronic health record (EHR) query.\" Quote: \"set up appropriate mitigation strategies such as final clinician review before patient engagement.\"",
+      note: "Abstract read via the Europe PMC record for PMID 38370719, September 2026; re-checked October 23, 2026. Quote: \"Currently, structured data in the EHR can only be used to determine 5 out of 6 inclusion and 5 out of 17 exclusion criteria. Trained, but non-licensed, study staff complete manual chart review to determine patient eligibility and record their assessment of the inclusion and exclusion criteria.\" Quote: \"An expert clinician completed a blinded review of patients' charts to answer the eligibility questions and determine the 'gold standard' answers.\" Quote: \"Both RECTIFIER and study staff answers closely aligned with the expert clinician answers across criteria with accuracy ranging between 97.9% and 100% (MCC 0.837 and 1) for RECTIFIER and 91.7% and 100% (MCC 0.644 and 1) for study staff.\" Quote: \"Overall, the sensitivity and specificity of determining eligibility for the RECTIFIER was 92.3% (CI) and 93.9% (CI), and study staff was 90.1% (CI) and 83.6% (CI), respectively.\" Quote: \"As part of the screening process, a list of potentially eligible patients is created through an electronic health record (EHR) query.\" Quote: \"set up appropriate mitigation strategies such as final clinician review before patient engagement.\"",
     },
     {
       id: "mgb-2025-rct",
@@ -317,7 +317,7 @@ const page: SeoPage = {
       publisher: "Mass General Brigham, via EurekAlert (AAAS)",
       url: "https://www.eurekalert.org/news-releases/1073636",
       year: "2025",
-      note: "Press release (February 17, 2025) on Unlu O et al., Manual vs AI-Assisted Prescreening for Trial Eligibility Using Large Language Models: A Randomized Clinical Trial, JAMA 2025;333(12):1084-1087, doi:10.1001/jama.2024.28047 (PMID 39960745). Single trial at one health system. Re-read September 2026. Quote: \"research staff manually reviewed patients' charts to determine if they met the eligibility criteria\" Quote: \"The study randomized 4,476 patients to be either manually screened or screened using generative AI\" Quote: \"The AI-assisted screening process was far more efficient, screening 458 eligible patients compared to the 284 patients screened by study staff.\" Quote: \"In the AI group, 35 patients enrolled in the trial, compared to 19 patients in the manual group.\" Quote: \"Study staff then conducted a short and rapid review of the patient charts that the AI-generated tool assessed as eligible for any outstanding issues with being considered.\" Quote: \"eligible for the Co-Operative Program for Implementation of Optimal Therapy in Heart Failure (COPILOT-HF) trial.\" Quote: \"according to a new study published in JAMA and led by Mass General Brigham researchers.\" Quote: \"The study follows an earlier proof of concept study by Blood, Aronson, Unlu and colleagues, which was published in June in NEJM AI.\"",
+      note: "Press release (February 17, 2025) on Unlu O et al., Manual vs AI-Assisted Prescreening for Trial Eligibility Using Large Language Models: A Randomized Clinical Trial, JAMA 2025;333(12):1084-1087, doi:10.1001/jama.2024.28047 (PMID 39960745). Single trial at one health system. Re-read September 2026; re-checked October 23, 2026. Quote: \"research staff manually reviewed patients' charts to determine if they met the eligibility criteria\" Quote: \"The study randomized 4,476 patients to be either manually screened or screened using generative AI\" Quote: \"The AI-assisted screening process was far more efficient, screening 458 eligible patients compared to the 284 patients screened by study staff.\" Quote: \"In the AI group, 35 patients enrolled in the trial, compared to 19 patients in the manual group.\" Quote: \"Study staff then conducted a short and rapid review of the patient charts that the AI-generated tool assessed as eligible for any outstanding issues with being considered.\" Quote: \"eligible for the Co-Operative Program for Implementation of Optimal Therapy in Heart Failure (COPILOT-HF) trial.\" Quote: \"according to a new study published in JAMA and led by Mass General Brigham researchers.\" Quote: \"The study follows an earlier proof of concept study by Blood, Aronson, Unlu and colleagues, which was published in June in NEJM AI.\"",
     },
     {
       id: "calaprice-whitty-2020",
@@ -325,7 +325,7 @@ const page: SeoPage = {
       publisher: "Therapeutic Innovation & Regulatory Science, via PubMed",
       url: "https://pubmed.ncbi.nlm.nih.gov/32008227/",
       year: "2020",
-      note: "Abstract read via the Europe PMC record for PMID 32008227, September 2026. Four of five authors list Mendel AI (San Jose, CA); the fifth, Calaprice-Whitty Consulting. Quote: \"Mendel.ai was applied retroactively to 2 completed oncology studies (1 breast, 1 lung), and 1 study that failed to enroll (lung), at the Comprehensive Blood and Cancer Center\" Quote: \"For each trial that enrolled, use of Mendel.ai resulted in a 24% to 50% increase over standard practices in the number of patients correctly identified as potentially eligible. No patients correctly identified by standard practices were missed by Mendel.ai.\" Quote: \"An average of 19 days for breast and 263 days for lung cancer patients elapsed between actual patient eligibility (based on clinical chart information) and identification when the standard prescreening practice was used.\" Quote: \"For the nonenrolling trial, both approaches failed to identify suitable patients.\"",
+      note: "Abstract read via the Europe PMC record for PMID 32008227, September 2026; re-checked October 23, 2026. Four of five authors list Mendel AI (San Jose, CA); the fifth, Calaprice-Whitty Consulting. Quote: \"Mendel.ai was applied retroactively to 2 completed oncology studies (1 breast, 1 lung), and 1 study that failed to enroll (lung), at the Comprehensive Blood and Cancer Center\" Quote: \"For each trial that enrolled, use of Mendel.ai resulted in a 24% to 50% increase over standard practices in the number of patients correctly identified as potentially eligible. No patients correctly identified by standard practices were missed by Mendel.ai.\" Quote: \"An average of 19 days for breast and 263 days for lung cancer patients elapsed between actual patient eligibility (based on clinical chart information) and identification when the standard prescreening practice was used.\" Quote: \"For the nonenrolling trial, both approaches failed to identify suitable patients.\"",
     },
     {
       id: "stubbs-2019",
@@ -341,7 +341,7 @@ const page: SeoPage = {
       publisher: "Payscale",
       url: "https://www.payscale.com/research/US/Job=Clinical_Research_Coordinator/Salary",
       year: "2025",
-      note: "Self-reported data, labeled Avg. Base Salary, accessed September 2026. Quote: \"The average salary for a Clinical Research Coordinator is $54,992 in 2026\" Quote: \"Base Salary $41k - $70k\" Quote: \"Based on 497 salary profiles (last updated Mar 01 2025)\"",
+      note: "Self-reported data, labeled Avg. Base Salary, accessed September 2026; re-checked October 23, 2026. Quote: \"The average salary for a Clinical Research Coordinator is $54,992 in 2026\" Quote: \"Base Salary $41k - $70k\" Quote: \"Based on 497 salary profiles (last updated Mar 01 2025)\"",
     },
     {
       id: "onet-crc",
@@ -349,7 +349,7 @@ const page: SeoPage = {
       publisher: "O*NET OnLine (U.S. Department of Labor)",
       url: "https://www.onetonline.org/link/summary/11-9121.01",
       year: "2025",
-      note: "Task quote: \"Assess eligibility of potential subjects through methods such as screening interviews, reviews of medical records, or discussions with physicians and nurses.\" Accessed September 2026.",
+      note: "Task quote: \"Assess eligibility of potential subjects through methods such as screening interviews, reviews of medical records, or discussions with physicians and nurses.\" Accessed September 2026; re-checked October 23, 2026.",
     },
     {
       id: "scrs-2023",
@@ -373,7 +373,7 @@ const page: SeoPage = {
       publisher: "International Council for Harmonisation (ICH)",
       url: "https://database.ich.org/sites/default/files/ICH_E6%28R3%29_Step4_FinalGuideline_2025_0106.pdf",
       year: "2025",
-      note: "Read September 2026. Essential records include those that \"Documents the recruitment, pre-trial screening and consenting process of trial participants and their identity and chronological enrolment as appropriate\", and the list includes a \"Completed participants screening log\".",
+      note: "Read September 2026; re-checked October 23, 2026. Essential records include those that \"Documents the recruitment, pre-trial screening and consenting process of trial participants and their identity and chronological enrolment as appropriate\", and the list includes a \"Completed participants screening log\".",
     },
     {
       id: "bond-site",
@@ -396,7 +396,7 @@ const page: SeoPage = {
       publisher: "Bond Health, monitored by Vanta",
       url: "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj",
       year: "2026",
-      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026.",
+      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026; re-checked October 23, 2026.",
     },
     {
       id: "bond-acrp-talk",

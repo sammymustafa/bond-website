@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health connects via athenahealth's FHIR R4 APIs to read athenaOne records, screens a practice's patients against a study's criteria, and hands matched, pre-screened patients to the practice's coordinators. Below: the data and FHIR resources involved, what your athenaOne administrator approves, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, practice approvals, timeline and PHI controls for connecting Bond to athenaOne.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -73,7 +73,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 2026, athenahealth's production FHIR server runs FHIR R4 (version 4.0.1) and declares conformance to US Core 3.1.1 and 6.1.0 and to the Bulk Data Access guide, versions 1.0.1 and 2.0.0. Its CapabilityStatement lists 32 resource types. Every resource in the table below supports read, and all but Binary support search. Searches accept an athenaOne practice filter (`ah-practice`), and Patient searches also accept a department filter (`ah-department`).{{cite:athena-fhir-metadata}}",
+          text: "As of October 2026, athenahealth's production FHIR server runs FHIR R4 (version 4.0.1) and declares conformance to US Core 3.1.1 and 6.1.0 and to the Bulk Data Access guide, versions 1.0.1 and 2.0.0. Its CapabilityStatement lists 32 resource types. Every resource in the table below supports read, and all but Binary support search. Searches accept an athenaOne practice filter (`ah-practice`), and Patient searches also accept a department filter (`ah-department`).{{cite:athena-fhir-metadata}}",
         },
         {
           type: "table",
@@ -90,7 +90,7 @@ const page: SeoPage = {
             ["Clinical notes", "DocumentReference and Binary", "Visit notes and documents the practice exposes. The main source for criteria that live in free text."],
             ["Visits", "Encounter, Appointment", "Recent and upcoming visits, used to time outreach around clinic dates."],
           ],
-          note: "Resources and profiles as declared in athenahealth's production CapabilityStatement, retrieved September 2026.{{cite:athena-fhir-metadata}}",
+          note: "Resources and profiles as declared in athenahealth's production CapabilityStatement, retrieved October 2026.{{cite:athena-fhir-metadata}}",
         },
         {
           type: "p",
@@ -108,7 +108,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond connects via athenahealth's standards-based FHIR APIs instead, under each practice's own authorization. As of September 2026, athenahealth's published SMART configuration lists the `client_credentials` grant and `private_key_jwt` client authentication, the combination the SMART Backend Services pattern uses for server-to-server access.{{cite:athena-smart}}",
+          text: "Bond connects via athenahealth's standards-based FHIR APIs instead, under each practice's own authorization. As of October 2026, athenahealth's published SMART configuration lists the `client_credentials` grant and `private_key_jwt` client authentication, the combination the SMART Backend Services pattern uses for server-to-server access.{{cite:athena-smart}}",
         },
         {
           type: "callout",
@@ -184,7 +184,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Writing to the chart.** For every resource in the data table, athenahealth's CapabilityStatement lists read and search only, as of September 2026.{{cite:athena-fhir-metadata}} Bond does not file notes, flags or orders in athenaOne.",
+            "**Writing to the chart.** For every resource in the data table, athenahealth's CapabilityStatement lists read and search only, as of October 2026.{{cite:athena-fhir-metadata}} Bond does not file notes, flags or orders in athenaOne.",
             "**Inside athenaOne.** Bond does not run as an embedded app in the athenaOne screen. Coordinators review matches in Bond's dashboard.",
             "**The athenaOne schedule.** Bond books screening visits in the site's calendar, not in athenaOne scheduling.",
             "**Portal messaging.** Bond does not message patients through athenahealth's patient portal. Outreach is by voice and text.",
@@ -243,7 +243,7 @@ const page: SeoPage = {
       publisher: "TechTarget",
       url: "https://www.techtarget.com/searchhealthit/definition/athenahealth-Inc",
       year: "2025",
-      note: "Published September 8, 2025; accessed September 2026. Quote: \"Athenahealth, Inc. provides cloud-based electronic health record (EHR) systems, revenue cycle management (RCM), patient engagement tools and point-of-care mobile applications. The company primarily serves small to medium-sized physician practices and hospitals\". Also: \"Athenahealth offers an integrated, cloud-based suite known as athenaOne\", listing athenaClinicals (\"An EHR system designed for ambulatory care settings\") and athenaCollector (\"A practice management and RCM solution\").",
+      note: "Published September 8, 2025; accessed September 2026; re-checked October 23, 2026. Quote: \"Athenahealth, Inc. provides cloud-based electronic health record (EHR) systems, revenue cycle management (RCM), patient engagement tools and point-of-care mobile applications. The company primarily serves small to medium-sized physician practices and hospitals\". Also: \"Athenahealth offers an integrated, cloud-based suite known as athenaOne\", listing athenaClinicals (\"An EHR system designed for ambulatory care settings\") and athenaCollector (\"A practice management and RCM solution\").",
     },
     {
       id: "trially-marketplace",
@@ -275,7 +275,7 @@ const page: SeoPage = {
       publisher: "athenahealth",
       url: "https://api.platform.athenahealth.com/fhir/r4/metadata",
       year: "2026",
-      note: "Machine-readable, retrieved September 2026. Declares fhirVersion 4.0.1, US Core 3.1.1 and 6.1.0, Bulk Data 1.0.1 and 2.0.0; lists 32 resource types. Each resource in the data table lists read and search-type (Binary: read only) and no create or update; each searchable one takes ah-practice; ah-department is on Patient (also CarePlan, CareTeam, Goal); DocumentReference (US Core 6.1.0 profile) searches by category, type and date; Group $export. Quote: \"publisher\":\"athenahealth\",\"instantiates\":[\"http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server|3.1.1\",\"http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server|6.1.0\"",
+      note: "Machine-readable, retrieved September 2026; re-checked October 23, 2026. Declares fhirVersion 4.0.1, US Core 3.1.1 and 6.1.0, Bulk Data 1.0.1 and 2.0.0; lists 32 resource types. Each resource in the data table lists read and search-type (Binary: read only) and no create or update; each searchable one takes ah-practice; ah-department is on Patient (also CarePlan, CareTeam, Goal); DocumentReference (US Core 6.1.0 profile) searches by category, type and date; Group $export. Quote: \"publisher\":\"athenahealth\",\"instantiates\":[\"http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server|3.1.1\",\"http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server|6.1.0\"",
     },
     {
       id: "athena-smart",
@@ -283,7 +283,7 @@ const page: SeoPage = {
       publisher: "athenahealth",
       url: "https://api.platform.athenahealth.com/fhir/r4/.well-known/smart-configuration",
       year: "2026",
-      note: "Machine-readable, retrieved September 2026. Lists private_key_jwt among token endpoint auth methods. Quote: \"grant_types_supported\":[\"authorization_code\",\"client_credentials\"]",
+      note: "Machine-readable, retrieved September 2026; re-checked October 23, 2026. Lists private_key_jwt among token endpoint auth methods. Quote: \"grant_types_supported\":[\"authorization_code\",\"client_credentials\"]",
     },
   ],
   related: [

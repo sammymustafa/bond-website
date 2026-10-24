@@ -73,8 +73,8 @@ export default function Results() {
           <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 text-center">
             <p className="text-sm text-gray-500 mb-2">Early results</p>
             <p className="text-gray-700 italic mb-4">
-              "Reduced our chart review time significantly while improving the quality 
-              of patients we bring in for screening."
+              &quot;Reduced our chart review time significantly while improving the quality 
+              of patients we bring in for screening.&quot;
             </p>
             <p className="text-sm text-gray-500">
               - Research coordinator, academic medical center, oncology trial

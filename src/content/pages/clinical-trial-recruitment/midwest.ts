@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "Midwest",
   h1: "Recruiting for clinical trials in the Midwest",
   intro:
-    "The Census Bureau's Midwest region covers 12 states and 69.8 million residents, about one in five people in the United States.{{cite:census-pop-2025}} On September 21, 2026, the recruiting-study counts for those states on ClinicalTrials.gov added up to 16,812, with a multi-state study counted once in each state.{{cite:ctgov-api}}",
+    "The Census Bureau's Midwest region covers 12 states and 69.8 million residents, about one in five people in the United States.{{cite:census-pop-2025}} On October 23, 2026, the recruiting-study counts for those states on ClinicalTrials.gov added up to 16,903, with a multi-state study counted once in each state.{{cite:ctgov-api}}",
   summary: "Midwest recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI, biometric and records rules.",
   lastUpdated: "2026-10-23",
   showLastUpdated: true,
@@ -28,7 +28,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Of the areas tracked below, oncology has the largest summed count at 6,895 and cardiology is next at 2,690.{{cite:ctgov-api}} Because the regional figures sum 12 states while the US figures count each study once, skip the share-of-US column for this region. Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Of the areas tracked below, oncology has the largest summed count at 6,962 and cardiology is next at 2,673.{{cite:ctgov-api}} Because the regional figures sum 12 states while the US figures count each study once, skip the share-of-US column for this region. Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "midwest", cite: "ctgov-api" },
         {
@@ -96,7 +96,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "EHRs at selected Midwest health systems, per vendor FHIR endpoint lists, September 2026",
+          caption: "EHRs at selected Midwest health systems, per vendor FHIR endpoint lists, October 2026",
           columns: ["System", "Where", "EHR"],
           rows: [
             [
@@ -177,7 +177,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "None of these laws was written for trial recruitment, and how each applies is unsettled. This is a map for your counsel, not legal advice, current as of September 2026. For federal rules, see [TCPA and AI outreach in 2026](/blog/tcpa-ai-outreach-2026) and [IRB and HIPAA rules for patient outreach](/guides/irb-hipaa-patient-outreach).",
+          text: "None of these laws was written for trial recruitment, and how each applies is unsettled. This is a map for your counsel, not legal advice, current as of October 2026. For federal rules, see [TCPA and AI outreach in 2026](/blog/tcpa-ai-outreach-2026) and [IRB and HIPAA rules for patient outreach](/guides/irb-hipaa-patient-outreach).",
         },
         {
           type: "ul",
@@ -250,7 +250,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "census-pop-2025",
@@ -258,7 +258,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
       year: "2026",
-      note: "Downloaded September 2026 and read by Bond. Midwest Region (REGION 2): POPESTIMATE2025 69,762,666, ESTIMATESBASE2020 68,999,462 (+1.1%). United States: 341,784,857, base 331,516,113 (+3.1%). Midwest share 20.4%. POPESTIMATE2025: Illinois 12,719,141 (base 12,821,741, -0.8%), Ohio 11,900,510, Michigan 10,127,884; together 49.8% of the region. Division 3, East North Central: Illinois, Indiana, Michigan, Ohio, Wisconsin. Division 4, West North Central: Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, South Dakota.",
+      note: "Downloaded September 2026 and read by Bond; re-checked October 23, 2026. Midwest Region (REGION 2): POPESTIMATE2025 69,762,666, ESTIMATESBASE2020 68,999,462 (+1.1%). United States: 341,784,857, base 331,516,113 (+3.1%). Midwest share 20.4%. POPESTIMATE2025: Illinois 12,719,141 (base 12,821,741, -0.8%), Ohio 11,900,510, Michigan 10,127,884; together 49.8% of the region. Division 3, East North Central: Illinois, Indiana, Michigan, Ohio, Wisconsin. Division 4, West North Central: Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, South Dakota.",
     },
     {
       id: "census-asrh-2025",
@@ -266,7 +266,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
       year: "2026",
-      note: "Downloaded September 2026 and summed by Bond, POPESTIMATE2025, both sexes, all ages. Midwest (REGION 2) of 69,762,666: non-Hispanic White alone 49,776,894 (71.4%); non-Hispanic Black alone 7,336,350 (10.5%); Hispanic 6,901,335 (9.9%); non-Hispanic Asian alone 2,812,726 (4.0%); 65 and over 13,626,957 (19.5%). US: 56.1%, 12.3%, 20.5%, 6.6% and 18.9%. Illinois: Hispanic 19.9%, non-Hispanic Black 13.7%. Non-Hispanic Black: Michigan 13.4%, Ohio 12.8%. American Indian and Alaska Native alone: South Dakota 9.0%, North Dakota 5.4%.",
+      note: "Downloaded September 2026 and summed by Bond; re-checked October 23, 2026. POPESTIMATE2025, both sexes, all ages. Midwest (REGION 2) of 69,762,666: non-Hispanic White alone 49,776,894 (71.4%); non-Hispanic Black alone 7,336,350 (10.5%); Hispanic 6,901,335 (9.9%); non-Hispanic Asian alone 2,812,726 (4.0%); 65 and over 13,626,957 (19.5%). US: 56.1%, 12.3%, 20.5%, 6.6% and 18.9%. Illinois: Hispanic 19.9%, non-Hispanic Black 13.7%. Non-Hispanic Black: Michigan 13.4%, Ohio 12.8%. American Indian and Alaska Native alone: South Dakota 9.0%, North Dakota 5.4%.",
     },
     {
       id: "census-rural-2020",
@@ -274,7 +274,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Geography Division",
       url: "https://www2.census.gov/geo/docs/reference/ua/State_Urban_Rural_Pop_2020_2010.xlsx",
       year: "2022",
-      note: "Downloaded September 2026 and summed by Bond: the 12 Midwest states had 17,728,484 rural residents out of 68,985,454 in 2020 (25.7%). Rural shares: South Dakota 42.8%, North Dakota 39.0%, Iowa 36.8%, Illinois 13.1%.",
+      note: "Downloaded September 2026 and summed by Bond; re-checked October 23, 2026. The 12 Midwest states had 17,728,484 rural residents out of 68,985,454 in 2020 (25.7%). Rural shares: South Dakota 42.8%, North Dakota 39.0%, Iowa 36.8%, Illinois 13.1%.",
     },
     {
       id: "census-rural-release",
@@ -298,7 +298,7 @@ const page: SeoPage = {
       publisher: "National Cancer Institute",
       url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find",
       year: "2026",
-      note: "Read September 22, 2026. Midwest entries: Illinois: Cancer Center at Illinois (Basic Laboratory), Robert H. Lurie Comprehensive Cancer Center and The University of Chicago Comprehensive Cancer Center (Comprehensive). Indiana: IU Melvin and Bren Simon Comprehensive Cancer Center (Comprehensive), Purdue Institute for Cancer Research (Basic Laboratory). Iowa: Holden. Kansas: The University of Kansas Cancer Center. Michigan: Karmanos, Rogel. Minnesota: Masonic, Mayo Clinic Cancer Center. Missouri: Siteman. Ohio: Case, Ohio State. Wisconsin: UW Carbone (all Comprehensive). Nebraska: Fred and Pamela Buffett Cancer Center (Clinical). None in North or South Dakota.",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Midwest entries: Illinois: Cancer Center at Illinois (Basic Laboratory), Robert H. Lurie Comprehensive Cancer Center and The University of Chicago Comprehensive Cancer Center (Comprehensive). Indiana: IU Melvin and Bren Simon Comprehensive Cancer Center (Comprehensive), Purdue Institute for Cancer Research (Basic Laboratory). Iowa: Holden. Kansas: The University of Kansas Cancer Center. Michigan: Karmanos, Rogel. Minnesota: Masonic, Mayo Clinic Cancer Center. Missouri: Siteman. Ohio: Case, Ohio State. Wisconsin: UW Carbone (all Comprehensive). Nebraska: Fred and Pamela Buffett Cancer Center (Clinical). None in North or South Dakota.",
     },
     {
       id: "feinberg",
@@ -354,7 +354,7 @@ const page: SeoPage = {
       publisher: "Epic Systems (open.epic)",
       url: "https://open.epic.com/Endpoints/R4",
       year: "2026",
-      note: "Read September 22, 2026. Entries include \"Cleveland Clinic\", \"UChicago Medicine\", \"Rush University Medical Center\", \"UW Health And Affiliates - Wisconsin\", \"Froedtert Health\", \"Allina Health System\", \"Fairview Health Services\", \"HealthPartners\" and \"Essentia Health\". A listing means the organization publishes patient-access FHIR endpoints on Epic.",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Entries include \"Cleveland Clinic\", \"UChicago Medicine\", \"Rush University Medical Center\", \"UW Health And Affiliates - Wisconsin\", \"Froedtert Health\", \"Allina Health System\", \"Fairview Health Services\", \"HealthPartners\" and \"Essentia Health\". A listing means the organization publishes patient-access FHIR endpoints on Epic.",
     },
     {
       id: "oracle-r4",
@@ -362,7 +362,7 @@ const page: SeoPage = {
       publisher: "Oracle (oracle-samples/ignite-endpoints on GitHub)",
       url: "https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json",
       year: "2026",
-      note: "Downloaded September 2026; the file was last updated August 20, 2026 (quarterly update). Organization entries include \"Indiana University Health\" (Indianapolis, IN), \"Cook County Health and Hospitals System\" (Chicago, IL) and \"The Curators of the University of Missouri on behalf of University of Missouri Health Care\" (Columbia, MO).",
+      note: "Downloaded September 2026; re-checked October 23, 2026, when the file was still last updated August 20, 2026 (quarterly update). Organization entries include \"Indiana University Health\" (Indianapolis, IN), \"Cook County Health and Hospitals System\" (Chicago, IL) and \"The Curators of the University of Missouri on behalf of University of Missouri Health Care\" (Columbia, MO).",
     },
     {
       id: "iuh-epic",
@@ -386,7 +386,7 @@ const page: SeoPage = {
       publisher: "Chicago Area Patient-Centered Outcomes Research Network (CAPriCORN)",
       url: "https://www.capricorncdrn.org/",
       year: "2026",
-      note: "Read September 22, 2026. Home page figures: \"Patient Population: 12,817,589\"; hospitals 32; children's hospitals 5; FQHC or community health center sites 20; primary care clinics 392.",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Home page figures: \"Patient Population: 12,817,589\"; hospitals 32; children's hospitals 5; FQHC or community health center sites 20; primary care clinics 392.",
     },
     {
       id: "il-bipa",

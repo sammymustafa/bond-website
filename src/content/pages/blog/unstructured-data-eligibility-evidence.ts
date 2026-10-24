@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Ask a data warehouse for patients with a diagnosis code and a recent lab, and you get a list. Ask whether a patient's heart failure is symptomatic, why a drug was stopped, or whether disease progressed on the last scan, and the answer is often in a clinical note. Here is what studies have measured, and what to do about it.",
   summary: "What studies measured about trial criteria that only clinical notes can answer, and what that means for EHR queries.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "See it on your protocol", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
@@ -200,7 +200,7 @@ const page: SeoPage = {
       publisher: "AMIA Joint Summits on Translational Science Proceedings (Raghavan P et al., Ohio State University)",
       url: "https://pubmed.ncbi.nlm.nih.gov/25717416/",
       year: "2014",
-      note: "Quote: \"Unstructured data is essential to solving 59% of the CLL trial criteria and 77% of the prostate cancer trial criteria.\" Abstract read from the PubMed record via NCBI E-utilities, September 2026. PMCID PMC4333685.",
+      note: "Quote: \"Unstructured data is essential to solving 59% of the CLL trial criteria and 77% of the prostate cancer trial criteria.\" Abstract read from the PubMed record via NCBI E-utilities, September 2026; re-checked October 23, 2026. PMCID PMC4333685.",
     },
     {
       id: "copilot-hf-2024",
@@ -208,7 +208,7 @@ const page: SeoPage = {
       publisher: "medRxiv preprint (Unlu O et al., Brigham and Women's Hospital)",
       url: "https://pubmed.ncbi.nlm.nih.gov/38370719/",
       year: "2024",
-      note: "Quote: \"Currently, structured data in the EHR can only be used to determine 5 out of 6 inclusion and 5 out of 17 exclusion criteria.\" Also: \"set up appropriate mitigation strategies such as final clinician review before patient engagement.\" Abstract read from the PubMed record via NCBI E-utilities, September 2026. DOI 10.1101/2024.02.08.24302376.",
+      note: "Quote: \"Currently, structured data in the EHR can only be used to determine 5 out of 6 inclusion and 5 out of 17 exclusion criteria.\" Also: \"set up appropriate mitigation strategies such as final clinician review before patient engagement.\" Abstract read from the PubMed record via NCBI E-utilities, September 2026; re-checked October 23, 2026. DOI 10.1101/2024.02.08.24302376.",
     },
     {
       id: "bwh-hf-2024",
@@ -224,7 +224,7 @@ const page: SeoPage = {
       publisher: "Journal of the American Medical Informatics Association (Thadani SR et al., Columbia University)",
       url: "https://pubmed.ncbi.nlm.nih.gov/19717797/",
       year: "2009",
-      note: "Quote: \"For all of these 125 patients, the performance of E-screening was compared with investigator review. E-screening achieved a negative predictive accuracy of 100% (95% CI: 98-100%), a positive predictive accuracy of 13% (95% CI: 6-13%), a sensitivity of 100% (95% CI: 45-100%), and a specificity of 84% (95% CI: 82-84%).\" Abstract read from the PubMed record via NCBI E-utilities, September 2026. DOI 10.1197/jamia.M3119.",
+      note: "Quote: \"For all of these 125 patients, the performance of E-screening was compared with investigator review. E-screening achieved a negative predictive accuracy of 100% (95% CI: 98-100%), a positive predictive accuracy of 13% (95% CI: 6-13%), a sensitivity of 100% (95% CI: 45-100%), and a specificity of 84% (95% CI: 82-84%).\" Abstract read from the PubMed record via NCBI E-utilities, September 2026; re-checked October 23, 2026. DOI 10.1197/jamia.M3119.",
     },
     {
       id: "uscdi-v1",

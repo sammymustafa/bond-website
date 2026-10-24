@@ -1,6 +1,7 @@
 "use client";
 
-import { Mail, MapPin, Linkedin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import { LinkedInIcon } from "./LinkedInIcon";
 import Link from "next/link";
 import Image from "next/image";
 import ComplianceBadges from "@/components/ComplianceBadges";
@@ -68,14 +69,17 @@ export default function Footer() {
               Bond Health accelerates clinical trial patient recruitment using AI.
             </p>
             <div className="space-y-3">
-              <button
-                type="button"
-                onClick={openDemoModal}
-                className="flex items-center gap-2 -my-2 py-2 text-bond-primary hover:text-bond-primary/80 transition-colors text-sm font-medium"
-              >
-                <Mail className="w-4 h-4" />
-                Contact us
-              </button>
+              {/* Wrapped so the button's larger tap area (-my-2 py-2) doesn't change the list spacing */}
+              <div>
+                <button
+                  type="button"
+                  onClick={openDemoModal}
+                  className="flex items-center gap-2 -my-2 py-2 text-bond-primary hover:text-bond-primary/80 transition-colors text-sm font-medium"
+                >
+                  <Mail className="w-4 h-4" />
+                  Contact us
+                </button>
+              </div>
               <div className="flex items-center gap-2 text-gray-600 text-sm">
                 <MapPin className="w-4 h-4" />
                 Boston, MA
@@ -90,7 +94,7 @@ export default function Footer() {
                 aria-label="Bond Health on LinkedIn"
                 className="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-all"
               >
-                <Linkedin className="w-4 h-4" />
+                <LinkedInIcon className="w-4 h-4" />
               </a>
             </div>
 

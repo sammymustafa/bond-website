@@ -50,7 +50,7 @@ export default function Security() {
             <div className="space-y-6">
               {features.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
                     <feature.icon className="w-6 h-6 text-gray-700" />
                   </div>
                   <div>
@@ -63,7 +63,7 @@ export default function Security() {
           </div>
 
           {/* Visual */}
-          <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl border border-gray-100 p-8 md:p-12">
+          <div className="bg-linear-to-br from-gray-50 to-white rounded-3xl border border-gray-100 p-8 md:p-12">
             <div className="text-center">
               {/* HIPAA, SOC 2 and ISO/IEC 27001 badges */}
               <ComplianceBadges className="mb-6 flex justify-center [&_ul]:justify-center" />
@@ -87,7 +87,7 @@ export default function Security() {
                   "Employee security training",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
                     <span className="text-sm text-gray-700">{item}</span>
                   </div>
                 ))}

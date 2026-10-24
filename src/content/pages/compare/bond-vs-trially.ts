@@ -23,7 +23,7 @@ const page: SeoPage = {
     "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a percentage of each patient's randomization milestone payment.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart or ad click to a booked study visit, with consent support after that, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Trially: one workflow from chart or ad click to a booked visit, chart-aware agents, consent support and no integration fee.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -47,7 +47,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**One workflow from chart to booked visit, then consent.** Bond screens the EHR, runs voice and SMS outreach, books screening visits and supports informed consent in one platform, with a real-time dashboard and audit trail from first match to booked visit and signed consent. Its [Consent](/consent) support explains the consent form in plain language, answers patient questions and escalates to staff, while the site and PI obtain consent.{{cite:bond-site}} Informed consent support is not publicly documented in Trially's materials (September 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
+            "**One workflow from chart to booked visit, then consent.** Bond screens the EHR, runs voice and SMS outreach, books screening visits and supports informed consent in one platform, with a real-time dashboard and audit trail from first match to booked visit and signed consent. Its [Consent](/consent) support explains the consent form in plain language, answers patient questions and escalates to staff, while the site and PI obtain consent.{{cite:bond-site}} Informed consent support is not publicly documented in Trially's materials (October 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call.{{cite:bond-product}} Patients are told AI is used and can reach a person at any time, by live transfer to a coordinator or a callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
             "**Support after enrollment.** The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
@@ -64,13 +64,13 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "Bond Health and Trially, from each company's materials as of September 2026",
+          caption: "Bond Health and Trially, from each company's materials as of October 2026",
           columns: ["Capability", "Bond Health", "Trially"],
           rows: [
             [
               "One workflow from chart to booked visit and consent",
               "One platform for EHR screening, voice and SMS outreach, visit booking and consent support, with a real-time dashboard and audit trail from first match to booked visit and signed consent.{{cite:bond-site}}",
-              "Trially Match finds patients in the EHR, and Margo pre-screens and schedules them. Consent support is not publicly documented (September 2026).{{cite:trially-faq-ai,trially-connect,trially-connect-blog}}",
+              "Trially Match finds patients in the EHR, and Margo pre-screens and schedules them. Consent support is not publicly documented (October 2026).{{cite:trially-faq-ai,trially-connect,trially-connect-blog}}",
             ],
             [
               "EHR identification",
@@ -100,7 +100,7 @@ const page: SeoPage = {
             [
               "Consent",
               "Plain-language explanations, patient Q&A that can run in the patient's preferred language, checks of understanding on key points with an auditable record, and staff escalation. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
-              "Not publicly documented (September 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
+              "Not publicly documented (October 2026).{{cite:trially-home,trially-connect,trially-connect-blog}}",
             ],
             [
               "Cross-study matching",
@@ -110,7 +110,7 @@ const page: SeoPage = {
             [
               "Support after enrollment",
               "The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-              "Margo sends appointment reminders by call, email and SMS. Other support after enrollment: not publicly documented (September 2026).{{cite:trially-connect}}",
+              "Margo sends appointment reminders by call, email and SMS. Other support after enrollment: not publicly documented (October 2026).{{cite:trially-connect}}",
             ],
             [
               "Feasibility",
@@ -247,7 +247,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health wrote this page in September 2026. Statements about Trially come only from public sources accessed that month: Trially's website, solution pages, FAQ and blog, and CRIO's partner announcement. Statements about Bond come from Bond's website, public Trust Center, product information, an April 2026 ACRP chapter presentation and Bond's technical report. We used no private or internal information about Trially. Where Trially's materials are silent on a capability, we say it is not publicly documented rather than guess. Trially® is a trademark of Trially Inc. Bond Health is not affiliated with or endorsed by Trially.",
+          text: "Bond Health wrote this page in September 2026. Statements about Trially come only from public sources accessed that month and re-checked on October 23, 2026: Trially's website, solution pages, FAQ and blog, and CRIO's partner announcement. Statements about Bond come from Bond's website, public Trust Center, product information, an April 2026 ACRP chapter presentation and Bond's technical report. We used no private or internal information about Trially. Where Trially's materials are silent on a capability, we say it is not publicly documented rather than guess. Trially® is a trademark of Trially Inc. Bond Health is not affiliated with or endorsed by Trially.",
         },
         {
           type: "callout",
@@ -261,11 +261,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond better than Trially?",
-      a: "Yes. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, all in one platform with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
+      a: "Yes. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, all in one platform with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
     },
     {
       q: "Does Trially support informed consent?",
-      a: "Informed consent and eConsent support are not publicly documented in the Trially materials we reviewed in September 2026, so ask Trially directly.{{cite:trially-home,trially-connect,trially-connect-blog}} Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+      a: "Informed consent and eConsent support are not publicly documented in the Trially materials we reviewed in October 2026, so ask Trially directly.{{cite:trially-home,trially-connect,trially-connect-blog}} Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
     },
     {
       q: "How does pricing compare?",
@@ -283,7 +283,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/",
       year: "2026",
-      note: "Homepage accessed September 23, 2026. Products listed: Trially Match, Trially Connect, Trially Intelligence. No mention of informed consent or eConsent.",
+      note: "Homepage accessed September 23, 2026; re-checked October 23, 2026. Products listed: Trially Match, Trially Connect, Trially Intelligence. No mention of informed consent or eConsent.",
     },
     {
       id: "trially-faq-ai",
@@ -291,7 +291,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/what-kind-of-ai-technology-does-trially-use",
       year: "2026",
-      note: "Accessed September 21, 2026. Quote: \"Trially is built on a native LLM (Large Language Model) and NLP (Natural Language Processing) architecture, capable of analyzing both structured and unstructured EHR data to determine eligibility with high precision in minutes, not days.\"",
+      note: "Accessed September 21, 2026; re-checked October 23, 2026. Quote: \"Trially is built on a native LLM (Large Language Model) and NLP (Natural Language Processing) architecture, capable of analyzing both structured and unstructured EHR data to determine eligibility with high precision in minutes, not days.\"",
     },
     {
       id: "trially-connect",
@@ -299,7 +299,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/solution-connect",
       year: "2026",
-      note: "Solution page accessed September 23, 2026. Quotes: \"Margo reactivates and engages dormant patient populations with voice call, text and email to build your trial-ready population.\"; \"Qualify patients for trials with automated pre-screening, scheduling and engagement.\"; \"Apts & Reminders\" and \"Scheduling through call, email, SMS.\" The page does not mention informed consent or eConsent.",
+      note: "Solution page accessed September 23, 2026; re-checked October 23, 2026. Quotes: \"Margo reactivates and engages dormant patient populations with voice call, text and email to build your trial-ready population.\"; \"Qualify patients for trials with automated pre-screening, scheduling and engagement.\"; \"Apts & Reminders\" and \"Scheduling through call, email, SMS.\" The page does not mention informed consent or eConsent.",
     },
     {
       id: "bond-site",
@@ -314,7 +314,7 @@ const page: SeoPage = {
       publisher: "Trially (blog)",
       url: "https://www.trially.ai/blog/trially-connect-margo-ai-gives-clinical-research-coordinators-the-backup-they-deserve",
       year: "2026",
-      note: "Blog post dated June 12, 2026. Quotes: \"It acts as a decision-support tool rather than an autonomous decision-maker.\"; \"ensuring the physician always retains the final decision-making authority.\" and \"It automates the crucial follow-up steps that humans simply do not have the time for, including pre-screening patients, scheduling appointments, and sending consistent reminders through text messages and voice calls.\" Our September 2026 review of Trially's homepage, About, Match, Connect and Intelligence pages and blog posts found no description of informed consent or eConsent support.",
+      note: "Blog post dated June 12, 2026. Quotes: \"It acts as a decision-support tool rather than an autonomous decision-maker.\"; \"ensuring the physician always retains the final decision-making authority.\" and \"It automates the crucial follow-up steps that humans simply do not have the time for, including pre-screening patients, scheduling appointments, and sending consistent reminders through text messages and voice calls.\" Our September 2026 review of Trially's homepage, About, Match, Connect and Intelligence pages and blog posts, re-checked October 23, 2026, found no description of informed consent or eConsent support.",
     },
     {
       id: "bond-product",
@@ -353,7 +353,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/how-are-matches-ranked",
       year: "2026",
-      note: "Accessed September 22, 2026. Quote: \"Patients are scored based on how closely they meet the inclusion/exclusion criteria, with the ability to triple-click into the detailed rationale provided for each match.\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Quote: \"Patients are scored based on how closely they meet the inclusion/exclusion criteria, with the ability to triple-click into the detailed rationale provided for each match.\"",
     },
     {
       id: "trially-match",
@@ -361,7 +361,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/solution-match",
       year: "2026",
-      note: "Solution page accessed September 23, 2026. Under \"Key Features\": \"Multi-Trial. Multi-Site.\" with \"Match across protocols and sites.\", and \"Realtime Matching\" with \"Match your database against protocols.\"",
+      note: "Solution page accessed September 23, 2026; re-checked October 23, 2026. Under \"Key Features\": \"Multi-Trial. Multi-Site.\" with \"Match across protocols and sites.\", and \"Realtime Matching\" with \"Match your database against protocols.\"",
     },
     {
       id: "trially-intelligence",
@@ -369,7 +369,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/solution-intelligence",
       year: "2026",
-      note: "Solution page accessed September 23, 2026. Quotes: \"Feasibility You Can Prove, Instantly.\" and \"Deliver sponsor-ready eligibility counts.\"",
+      note: "Solution page accessed September 23, 2026; re-checked October 23, 2026. Quotes: \"Feasibility You Can Prove, Instantly.\" and \"Deliver sponsor-ready eligibility counts.\"",
     },
     {
       id: "trially-faq-ehr",
@@ -377,7 +377,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/which-electronic-health-systems-(ehr)-systems-does-trially-integrate-with-how-long-does-that-take",
       year: "2026",
-      note: "Accessed September 22, 2026. Quote: \"Trially connects with the systems sites already use - including Epic, Carequality, Practice Fusion, ModMed, NextGen Healthcare, Oracle Health/Cerner, eClinicalWorks, Veradigm, athenahealth, and more.\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Quote: \"Trially connects with the systems sites already use - including Epic, Carequality, Practice Fusion, ModMed, NextGen Healthcare, Oracle Health/Cerner, eClinicalWorks, Veradigm, athenahealth, and more.\"",
     },
     {
       id: "bond-acrp-talk",
@@ -400,7 +400,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/which-crm-systems-does-trially-integrate-with-how-long-does-that-take",
       year: "2026",
-      note: "Accessed September 21, 2026. Quote: \"Trially can integrate with any CRM or CTMS system including (but not limited to): Salesforce, Hubspot, CRIO, RealtimeCTMS and more.\"",
+      note: "Accessed September 21, 2026; re-checked October 23, 2026. Quote: \"Trially can integrate with any CRM or CTMS system including (but not limited to): Salesforce, Hubspot, CRIO, RealtimeCTMS and more.\"",
     },
     {
       id: "trially-faq-trials",
@@ -408,7 +408,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/what-types-of-trials-can-trially-support",
       year: "2026",
-      note: "Accessed September 21, 2026. Quote: \"Trially supports all phases of clinical trials across multiple therapeutic areas\" and \"from cardiovascular to oncology to rare diseases. It's built to scale with your study portfolio.\"",
+      note: "Accessed September 21, 2026; re-checked October 23, 2026. Quote: \"Trially supports all phases of clinical trials across multiple therapeutic areas\" and \"from cardiovascular to oncology to rare diseases. It's built to scale with your study portfolio.\"",
     },
     ...testimonialSources(),
   ],

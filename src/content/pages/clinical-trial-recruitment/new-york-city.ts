@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruiting for clinical trials in the New York City area",
   intro:
-    "On October 5, 2026, a ClinicalTrials.gov radius search found 4,145 studies recruiting at one or more sites within 25 miles of Midtown Manhattan, about 19% of the 22,007 recruiting in the United States that day.{{cite:ctgov-api}} The radius reaches into northern New Jersey, so this page covers New Jersey rules alongside New York's.",
+    "On October 23, 2026, a ClinicalTrials.gov radius search found 4,130 studies recruiting at one or more sites within 25 miles of Midtown Manhattan, about 19% of the 22,038 recruiting in the United States that day.{{cite:ctgov-api}} The radius reaches into northern New Jersey, so this page covers New Jersey rules alongside New York's.",
   summary: "NYC-area recruiting-trial counts, research hubs, health systems and their EHRs, languages, and New York and New Jersey outreach and privacy rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Oncology dominates: 1,791 of the 7,064 recruiting US oncology studies, about 25%, list a site within the radius. The area's share is also high in gastroenterology (82 of 283) and dermatology (61 of 212), and lowest in obesity and type 2 diabetes (86 of 855) and pain (82 of 625).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Oncology dominates: 1,793 of the 7,092 recruiting US oncology studies, about 25%, list a site within the radius. The area's share is also high in gastroenterology (78 of 281) and dermatology (58 of 206), and lowest in obesity and type 2 diabetes (85 of 848) and pain (81 of 632).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "new-york-city", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A radius count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching on the condition field can pull in off-target studies. The oncology examples below are the most recently updated recruiting studies in the radius; three of the six are sponsored by Memorial Sloan Kettering.{{cite:ctgov-api}} See [oncology](/oncology) for how Bond screens for cancer trials.",
+          text: "A radius count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching on the condition field can pull in off-target studies. The oncology examples below are the most recently updated recruiting studies in the radius; three of the six are sponsored by the National Cancer Institute and two by Bristol-Myers Squibb.{{cite:ctgov-api}} See [oncology](/oncology) for how Bond screens for cancer trials.",
         },
         { type: "trials", geo: "new-york-city", condition: "oncology", cite: "ctgov-api" },
       ],
@@ -264,7 +264,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in the New York City area?",
-      a: "On October 5, 2026, a ClinicalTrials.gov search for recruiting studies with a site within 25 miles of Midtown Manhattan returned 4,145, including 1,791 that matched oncology keywords.{{cite:ctgov-api}}",
+      a: "On October 23, 2026, a ClinicalTrials.gov search for recruiting studies with a site within 25 miles of Midtown Manhattan returned 4,130, including 1,793 that matched oncology keywords.{{cite:ctgov-api}}",
     },
     {
       q: "Does New York require patients to be told when AI is used?",
@@ -282,7 +282,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Radius search queried October 5, 2026: filter.geo=distance(40.7549,-73.9840,25mi) (25 miles of Midtown Manhattan), filter.overallStatus=RECRUITING, countTotal=true; 4,145 studies. US totals from the same day use query.locn=United States; 22,007 studies. Area counts use keyword searches on the condition field. Shares are Bond's arithmetic.",
+      note: "Radius search queried October 23, 2026: filter.geo=distance(40.7549,-73.9840,25mi) (25 miles of Midtown Manhattan), filter.overallStatus=RECRUITING, countTotal=true; 4,130 studies. US totals from the same day use query.locn=United States; 22,038 studies. Area counts use keyword searches on the condition field. Shares are Bond's arithmetic.",
     },
     {
       id: "census-cities-2025",

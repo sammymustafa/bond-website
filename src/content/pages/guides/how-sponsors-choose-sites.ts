@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs build site lists from performance databases, CRO networks, feasibility questionnaires and qualification visits. What moves a site onto the final list is evidence: enrollment against past commitments, start-up speed, data quality, and a patient count the sponsor can believe.",
   summary: "What sponsors check during site selection, and how a site can show enrollment, start-up and patient-count evidence.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -177,7 +177,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The requirement applies to certain studies that begin enrollment more than 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of September 2026, FDA's guidance page still lists the June 2024 document as a draft and notes that it was restored under a court order, so the 180-day clock has not started.{{cite:fda-dap-guidance}} FDA received voluntary plans for some studies in fiscal years 2023 and 2024, and a sponsor that writes one needs sites that can help meet its goals.{{cite:fda-dap-report}}",
+          text: "The requirement applies to certain studies that begin enrollment more than 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of October 2026, FDA's guidance page still lists the June 2024 document as a draft and notes that it was restored under a court order, so the 180-day clock has not started.{{cite:fda-dap-guidance}} FDA received voluntary plans for some studies in fiscal years 2023 and 2024, and a sponsor that writes one needs sites that can help meet its goals.{{cite:fda-dap-report}}",
         },
         {
           type: "p",
@@ -342,7 +342,7 @@ const page: SeoPage = {
       publisher: "U.S. Food and Drug Administration",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
       year: "2024",
-      note: "Checked September 22, 2026: page lists status Draft, issued June 2024, docket FDA-2021-D-0789. Also: \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\" Quote: \"Not for implementation. Contains non-binding recommendations.\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026: page lists status Draft, issued June 2024, docket FDA-2021-D-0789. Also: \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\" Quote: \"Not for implementation. Contains non-binding recommendations.\"",
     },
     {
       id: "ecfr-312-53",

@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and books them for screening visits, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
   summary: "How a community or specialty practice runs studies from its own patient panel while protecting clinic time and PI hours.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -161,8 +161,8 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**athenahealth.** As of September 2026, athenahealth's published FHIR configuration supports the `client_credentials` grant used for server-to-server (backend) access, alongside user-launched apps.{{cite:athena-smart}} The [athenahealth](/integrations/athenahealth) page lists what your practice provides.",
-            "**eClinicalWorks.** Your practice turns on FHIR access through the On-Demand Activation feature in eClinicalWorks. Per its website (September 2026), eClinicalWorks makes its certified FHIR APIs available to third-party developers at no cost at this time.{{cite:ecw-cert}} See [eClinicalWorks](/integrations/eclinicalworks).",
+            "**athenahealth.** As of October 2026, athenahealth's published FHIR configuration supports the `client_credentials` grant used for server-to-server (backend) access, alongside user-launched apps.{{cite:athena-smart}} The [athenahealth](/integrations/athenahealth) page lists what your practice provides.",
+            "**eClinicalWorks.** Your practice turns on FHIR access through the On-Demand Activation feature in eClinicalWorks. Per its website (October 2026), eClinicalWorks makes its certified FHIR APIs available to third-party developers at no cost at this time.{{cite:ecw-cert}} See [eClinicalWorks](/integrations/eclinicalworks).",
             "**Epic or Oracle Health.** Groups on these systems, including those on an affiliated hospital's instance, follow the approval steps of whoever runs the EHR. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
           ],
         },
@@ -307,7 +307,7 @@ const page: SeoPage = {
       publisher: "athenahealth",
       url: "https://api.platform.athenahealth.com/fhir/r4/.well-known/smart-configuration",
       year: "2026",
-      note: "Quote: \"grant_types_supported\":[\"authorization_code\",\"client_credentials\"]. Retrieved September 21, 2026.",
+      note: "Quote: \"grant_types_supported\":[\"authorization_code\",\"client_credentials\"]. Retrieved September 21, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecw-cert",
@@ -315,7 +315,7 @@ const page: SeoPage = {
       publisher: "eClinicalWorks",
       url: "https://www.eclinicalworks.com/resources/certified-ehr-technology/",
       year: "2026",
-      note: "Quote: \"Certified FHIR APIs are available to third-party application developers and eClinicalWorks customers at no cost at this time.\" and \"Customers can learn more and enable FHIR APIs through the On-Demand Activation feature in the eClinicalWorks application.\" Retrieved September 2026.",
+      note: "Quote: \"Certified FHIR APIs are available to third-party application developers and eClinicalWorks customers at no cost at this time.\" and \"Customers can learn more and enable FHIR APIs through the On-Demand Activation feature in the eClinicalWorks application.\" Retrieved September 2026; re-checked October 23, 2026.",
     },
   ],
   related: [

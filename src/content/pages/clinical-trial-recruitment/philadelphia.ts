@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruiting for clinical trials in the Philadelphia area",
   intro:
-    "On October 5, 2026, a ClinicalTrials.gov radius search found 2,146 studies recruiting at one or more sites within 25 miles of Center City Philadelphia, about 10% of the 22,007 recruiting in the United States that day.{{cite:ctgov-api}} The radius crosses the Delaware River into South Jersey, so this page covers New Jersey rules alongside Pennsylvania's.",
+    "On October 23, 2026, a ClinicalTrials.gov radius search found 2,148 studies recruiting at one or more sites within 25 miles of Center City Philadelphia, about 10% of the 22,038 recruiting in the United States that day.{{cite:ctgov-api}} The radius crosses the Delaware River into South Jersey, so this page covers New Jersey rules alongside Pennsylvania's.",
   summary: "Philadelphia-area recruiting-trial counts, research hubs, health systems and their EHRs, languages, and Pennsylvania and New Jersey outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Oncology is the largest area at 811 of the 7,064 recruiting US oncology studies, about 11%, with cardiology next at 322 of 2,826. The area's share is highest in dermatology (29 of 212) and gastroenterology (36 of 283), and lowest in pain (34 of 625) and obesity and type 2 diabetes (55 of 855).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Oncology is the largest area at 813 of the 7,092 recruiting US oncology studies, about 11%, with cardiology next at 324 of 2,827. The area's share is highest in dermatology (26 of 206) and gastroenterology (34 of 281), and lowest in pain (34 of 632) and obesity and type 2 diabetes (53 of 848).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "philadelphia", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A radius count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching on the condition field can pull in off-target studies. The obesity and type 2 diabetes examples below are the most recently updated recruiting studies in the radius; five of the six are Phase 2 or 3 industry trials from Amgen, Eli Lilly, Novo Nordisk and Boehringer Ingelheim.{{cite:ctgov-api}} See [obesity and metabolic](/obesity-and-metabolic) and [cardiology](/cardiology).",
+          text: "A radius count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching on the condition field can pull in off-target studies. The obesity and type 2 diabetes examples below are the most recently updated recruiting studies in the radius; all six are Phase 3 industry trials, from AstraZeneca, Structure Therapeutics, Novo Nordisk, Boehringer Ingelheim and Roche.{{cite:ctgov-api}} See [obesity and metabolic](/obesity-and-metabolic) and [cardiology](/cardiology).",
         },
         { type: "trials", geo: "philadelphia", condition: "obesity", cite: "ctgov-api" },
       ],
@@ -260,7 +260,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in the Philadelphia area?",
-      a: "On October 5, 2026, a ClinicalTrials.gov search for recruiting studies with a site within 25 miles of Center City Philadelphia returned 2,146, including 811 that matched oncology keywords.{{cite:ctgov-api}}",
+      a: "On October 23, 2026, a ClinicalTrials.gov search for recruiting studies with a site within 25 miles of Center City Philadelphia returned 2,148, including 813 that matched oncology keywords.{{cite:ctgov-api}}",
     },
     {
       q: "Does Pennsylvania require patients to be told when AI is used?",
@@ -278,7 +278,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Radius search queried October 5, 2026: filter.geo=distance(39.9526,-75.1652,25mi) (25 miles of Center City Philadelphia), filter.overallStatus=RECRUITING, countTotal=true; 2,146 studies. US totals from the same day use query.locn=United States; 22,007 studies. Area counts use keyword searches on the condition field. Shares are Bond's arithmetic.",
+      note: "Radius search queried October 23, 2026: filter.geo=distance(39.9526,-75.1652,25mi) (25 miles of Center City Philadelphia), filter.overallStatus=RECRUITING, countTotal=true; 2,148 studies. US totals from the same day use query.locn=United States; 22,038 studies. Area counts use keyword searches on the condition field. Shares are Bond's arithmetic.",
     },
     {
       id: "census-cities-2025",

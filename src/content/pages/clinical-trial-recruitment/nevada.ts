@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Nevada",
   h1: "Recruiting for clinical trials in Nevada",
   intro:
-    "As of September 21, 2026, 565 studies on ClinicalTrials.gov were recruiting at one or more Nevada sites. That is about 17 per 100,000 residents, against about 22 in Arizona and 34 in Utah.{{cite:ctgov-api,census-nst-2025}} Most of that work runs through a few health systems, oncology practices and independent sites in Las Vegas and Reno.",
+    "As of October 23, 2026, 563 studies on ClinicalTrials.gov were recruiting at one or more Nevada sites. That is about 17 per 100,000 residents, against about 22 in Arizona and 35 in Utah.{{cite:ctgov-api,census-nst-2025}} Most of that work runs through a few health systems, oncology practices and independent sites in Las Vegas and Reno.",
   summary: "Nevada recruiting-trial counts, Las Vegas and Reno research hubs, health systems and their EHRs, demographics, and state outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Industry sponsors lead 429 of the 565 Nevada studies, about 76%.{{cite:ctgov-nv}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Industry sponsors lead 425 of the 563 Nevada studies, about 75%.{{cite:ctgov-nv}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "nevada", cite: "ctgov-api" },
         {
           type: "p",
-          text: "Las Vegas sites appear on 420 studies, Reno on 182, Henderson on 58 and Carson City on 30.{{cite:ctgov-nv}} A count shows where sponsors placed studies, not which ones enroll on schedule. The examples below come from oncology, the largest area. See [oncology](/oncology).",
+          text: "Las Vegas sites appear on 411 studies, Reno on 190, Henderson on 63 and Carson City on 30.{{cite:ctgov-nv}} A count shows where sponsors placed studies, not which ones enroll on schedule. The examples below come from oncology, the largest area. See [oncology](/oncology).",
         },
         { type: "trials", geo: "nevada", condition: "oncology", cite: "ctgov-api" },
       ],
@@ -66,7 +66,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "As of September 2026, Nevada has no NCI-designated cancer center.{{cite:nci-centers}} Cancer trials reach patients through community practices and the Nevada Cancer Research Foundation NCORP, whose affiliates include Comprehensive Cancer Centers of Nevada, OptumCare Cancer Care, UMC, Summerlin and Sunrise hospitals, Carson Tahoe Regional Medical Center and Cure 4 the Kids Foundation.{{cite:ncorp-nv}}",
+          text: "As of October 2026, Nevada has no NCI-designated cancer center.{{cite:nci-centers}} Cancer trials reach patients through community practices and the Nevada Cancer Research Foundation NCORP, whose affiliates include Comprehensive Cancer Centers of Nevada, OptumCare Cancer Care, UMC, Summerlin and Sunrise hospitals, Carson Tahoe Regional Medical Center and Cure 4 the Kids Foundation.{{cite:ncorp-nv}}",
         },
       ],
     },
@@ -76,17 +76,17 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "EHRs at selected Nevada health systems, from public sources as of September 2026",
+          caption: "EHRs at selected Nevada health systems, from public sources as of October 2026",
           columns: ["System", "Nevada footprint", "EHR"],
           rows: [
             [
               "Renown Health (Reno)",
-              "UNR Med's academic partner{{cite:unr-history}}; on 102 recruiting studies{{cite:ctgov-nv}}",
+              "UNR Med's academic partner{{cite:unr-history}}; on 110 recruiting studies{{cite:ctgov-nv}}",
               "Epic, listed as \"Renown, Barton, CVMC\" in Epic's FHIR endpoint directory{{cite:epic-endpoints}}",
             ],
             [
               "University Medical Center of Southern Nevada (Las Vegas)",
-              "Public academic hospital; on 40 recruiting studies{{cite:ctgov-nv}}",
+              "Public academic hospital; on 41 recruiting studies{{cite:ctgov-nv}}",
               "Epic; its UMConnect patient portal is developed by Epic{{cite:umc-mychart,epic-endpoints}}",
             ],
             [
@@ -122,19 +122,19 @@ const page: SeoPage = {
         },
         {
           type: "table",
-          caption: "Recruiting ClinicalTrials.gov studies that list a Nevada location, selected organizations, September 2026",
+          caption: "Recruiting ClinicalTrials.gov studies that list a Nevada location, selected organizations, October 2026",
           columns: ["Organization", "Type and city", "Studies"],
           rows: [
-            ["Renown Health", "Academic health system, Reno", "102{{cite:ctgov-nv}}"],
-            ["Comprehensive Cancer Centers of Nevada", "Oncology practice, Las Vegas and Henderson", "67{{cite:ctgov-nv}}"],
-            ["Optum Nevada practices, mostly OptumCare Cancer Care", "Physician group, Las Vegas and Henderson", "55{{cite:ctgov-nv}}"],
-            ["Cure 4 the Kids Foundation", "Pediatric specialty care, Las Vegas", "49{{cite:ctgov-nv}}"],
-            ["UMC Southern Nevada", "Public academic hospital, Las Vegas", "40{{cite:ctgov-nv}}"],
-            ["Summerlin Hospital Medical Center", "Hospital, Las Vegas", "38{{cite:ctgov-nv}}"],
-            ["Sunrise Hospital and Medical Center", "Hospital, Las Vegas", "31{{cite:ctgov-nv}}"],
+            ["Renown Health", "Academic health system, Reno", "110{{cite:ctgov-nv}}"],
+            ["Comprehensive Cancer Centers of Nevada", "Oncology practice, Las Vegas and Henderson", "68{{cite:ctgov-nv}}"],
+            ["Optum Nevada practices, mostly OptumCare Cancer Care", "Physician group, Las Vegas and Henderson", "53{{cite:ctgov-nv}}"],
+            ["Cure 4 the Kids Foundation", "Pediatric specialty care, Las Vegas", "50{{cite:ctgov-nv}}"],
+            ["UMC Southern Nevada", "Public academic hospital, Las Vegas", "41{{cite:ctgov-nv}}"],
+            ["Summerlin Hospital Medical Center", "Hospital, Las Vegas", "39{{cite:ctgov-nv}}"],
+            ["Sunrise Hospital and Medical Center", "Hospital, Las Vegas", "32{{cite:ctgov-nv}}"],
             ["Las Vegas Urology and Urology Specialists of Nevada", "Urology physician groups, Las Vegas area", "24{{cite:ctgov-nv}}"],
-            ["Excel Clinical Research, also listed as Alliance Clinical Las Vegas", "Research site, Las Vegas", "18{{cite:ctgov-nv}}"],
-            ["Vector Clinical Trials", "Research site, Las Vegas", "17{{cite:ctgov-nv}}"],
+            ["Excel Clinical Research, also listed as Alliance Clinical Las Vegas", "Research site, Las Vegas", "19{{cite:ctgov-nv}}"],
+            ["Vector Clinical Trials", "Research site, Las Vegas", "19{{cite:ctgov-nv}}"],
             ["Advanced Research Institute", "Research site, Reno", "6{{cite:ctgov-nv}}"],
           ],
           note: "Counts group facility-name variants and are approximate.",
@@ -183,7 +183,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**AI and mental health care (AB 406).** Since July 1, 2025, an AI provider may not offer a system programmed to provide professional mental or behavioral health care in Nevada, suggest that its system can, or present it as a therapist, counselor or doctor. Civil penalties can reach $15,000 per violation.{{cite:nv-ab406}} Mental health providers may still use AI for scheduling, records and billing.{{cite:nv-ab406}} With 41 recruiting psychiatry studies in Nevada,{{cite:ctgov-api}} keep [psychiatry](/psychiatry) pre-screening scripts to eligibility and logistics.",
+            "**AI and mental health care (AB 406).** Since July 1, 2025, an AI provider may not offer a system programmed to provide professional mental or behavioral health care in Nevada, suggest that its system can, or present it as a therapist, counselor or doctor. Civil penalties can reach $15,000 per violation.{{cite:nv-ab406}} Mental health providers may still use AI for scheduling, records and billing.{{cite:nv-ab406}} With 40 recruiting psychiatry studies in Nevada,{{cite:ctgov-api}} keep [psychiatry](/psychiatry) pre-screening scripts to eligibility and logistics.",
             "**Consumer health data (SB 370).** Since March 31, 2024, collecting consumer health data needs affirmative consent unless needed for a service the consumer requested, and sharing it needs separate consent.{{cite:nv-sb370}} HIPAA-regulated entities are exempt, as is research under the Common Rule, FDA human-subject rules or ICH GCP. Recruitment ads run by a company outside HIPAA may still be covered.",
             "**Geofencing (SB 370).** No one may set a geofence within 1,750 feet of a medical facility to track people seeking care or send them health-related ads.{{cite:nv-sb370}} That can reach location-targeted trial ads near clinics.",
             "**Autodialed sales calls (NRS 597.812 to 597.818).** The law covers equipment that dials random or sequential numbers to play prerecorded sales messages. Such calls must open with a natural voice that identifies the caller and may not reach Nevada phones between 8 p.m. and 9 a.m.; calls to people with a preexisting business relationship are exempt.{{cite:nrs-597}} Federal rules still apply; see [TCPA and AI outreach in 2026](/blog/tcpa-ai-outreach-2026).",
@@ -241,7 +241,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in Nevada?",
-      a: "As of September 21, 2026, 565 studies on ClinicalTrials.gov listed a recruiting Nevada site, 205 of them in oncology.{{cite:ctgov-api}}",
+      a: "As of October 23, 2026, 563 studies on ClinicalTrials.gov listed a recruiting Nevada site, 212 of them in oncology.{{cite:ctgov-api}}",
     },
     {
       q: "Can an AI agent call patients about a psychiatry study in Nevada?",
@@ -255,7 +255,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "ctgov-nv",
@@ -263,7 +263,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?query.locn=Nevada&filter.overallStatus=RECRUITING&pageSize=1000",
       year: "2026",
-      note: "Queried September 21, 2026 and tallied by Bond. 565 studies returned, all with a location whose state is Nevada. Lead sponsor class INDUSTRY on 429 (76%). Studies by city: Las Vegas 420, Reno 182, Henderson 58, Carson City 30, Pahrump 25. Organization counts group facility-name variants (for example, every Comprehensive Cancer Centers of Nevada location, and \"Excel Clinical Research\" with \"Alliance Clinical Las Vegas (Excel Clinical Research)\" and \"Alliance Clinical - Las Vegas\") and count each study once. Nevada studies listing AMR Clinical: 5; IMA Clinical Research: 6; Wake Research: 5. A follow-up search by each company name in September 2026 found recruiting locations for each in other states (AMR Clinical 11, IMA Clinical Research 9, Wake Research 8, Alliance Clinical 3).",
+      note: "Queried October 23, 2026 and tallied by Bond. 563 studies returned, all with a location whose state is Nevada. Lead sponsor class INDUSTRY on 425 (75%). Studies by city: Las Vegas 411, Reno 190, Henderson 63, Carson City 30, Pahrump 25. Organization counts group facility-name variants (for example, every Comprehensive Cancer Centers of Nevada location, and \"Excel Clinical Research\" with \"Alliance Clinical Las Vegas (Excel Clinical Research)\" and \"Alliance Clinical - Las Vegas\") and count each study once. Vector Clinical Trials counts Las Vegas locations. Nevada studies listing AMR Clinical: 5; IMA Clinical Research: 4; Wake Research (including M3 Wake Research): 7. A follow-up search by each company name on October 23, 2026 found recruiting locations for each in other states (number of other states: AMR Clinical 12, IMA Clinical Research 8, Wake Research 8, Alliance Clinical 3).",
     },
     {
       id: "census-nst-2025",
@@ -271,7 +271,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
       year: "2025",
-      note: "Downloaded September 21, 2026. Row \"Nevada\": ESTIMATESBASE2020 3,105,593; POPESTIMATE2025 3,282,188. Row \"Arizona\": POPESTIMATE2025 7,623,818. Row \"Utah\": POPESTIMATE2025 3,538,904. Nevada's 5.7% growth and its rank (10th of 50 states) are Bond's arithmetic from this file. Recruiting studies per 100,000 residents (Nevada 17.2, Arizona 22.2, Utah 34.2) are Bond's arithmetic from these rows and the ClinicalTrials.gov counts (565, 1,689 and 1,210).",
+      note: "Downloaded September 21, 2026; re-checked October 23, 2026. Row \"Nevada\": ESTIMATESBASE2020 3,105,593; POPESTIMATE2025 3,282,188. Row \"Arizona\": POPESTIMATE2025 7,623,818. Row \"Utah\": POPESTIMATE2025 3,538,904. Nevada's 5.7% growth and its rank (10th of 50 states) are Bond's arithmetic from this file. Recruiting studies per 100,000 residents (Nevada 17.2, Arizona 22.4, Utah 34.7) are Bond's arithmetic from these rows and the ClinicalTrials.gov counts of October 23, 2026 (563, 1,708 and 1,229).",
     },
     {
       id: "census-co-2025",
@@ -279,7 +279,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/totals/co-est2025-alldata.csv",
       year: "2025",
-      note: "Downloaded September 21, 2026. POPESTIMATE2025: Nevada 3,282,188; Clark County 2,407,226; Washoe County 509,386. The 73.3% and 15.5% shares are Bond's arithmetic.",
+      note: "Downloaded September 21, 2026; re-checked October 23, 2026. POPESTIMATE2025: Nevada 3,282,188; Clark County 2,407,226; Washoe County 509,386. The 73.3% and 15.5% shares are Bond's arithmetic.",
     },
     {
       id: "census-asrh-2025",
@@ -287,7 +287,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
       year: "2025",
-      note: "Downloaded September 21, 2026 and summed by Bond for Nevada, both sexes: POPESTIMATE2025 total 3,282,188; Hispanic origin 1,024,971 (31.2%); age 65 and over 599,211 (18.3%), against 511,632 of 3,116,851 in POPESTIMATE2020 (16.4%).",
+      note: "Downloaded September 21, 2026; re-checked October 23, 2026. Summed by Bond for Nevada, both sexes: POPESTIMATE2025 total 3,282,188; Hispanic origin 1,024,971 (31.2%); age 65 and over 599,211 (18.3%), against 511,632 of 3,116,851 in POPESTIMATE2020 (16.4%).",
     },
     {
       id: "census-acs-uninsured",
@@ -303,7 +303,7 @@ const page: SeoPage = {
       publisher: "Health Resources and Services Administration (HRSA), HHS",
       url: "https://data.hrsa.gov/topics/healthcenters/uds/overview/state/NV",
       year: "2026",
-      note: "Quote: \"Total Number of Reporting Program Awardees: 7 Reporting Period: 2025 Total Patients Served: 135,913\". Patient characteristics on the same page, 2025: Hispanic/Latino 53.62%; limited English proficiency 30.20%; uninsured 28.10%. Read September 2026.",
+      note: "Quote: \"Total Number of Reporting Program Awardees: 7 Reporting Period: 2025 Total Patients Served: 135,913\". Patient characteristics on the same page, 2025: Hispanic/Latino 53.62%; limited English proficiency 30.20%; uninsured 28.10%. Read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nv-pwin-2025",
@@ -319,7 +319,7 @@ const page: SeoPage = {
       publisher: "National Cancer Institute",
       url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find",
       year: "2026",
-      note: "Quote: \"Fred and Pamela Buffett Cancer Center, Nebraska Medicine and the University of Nebraska Medical Center (UNMC), Omaha, Nebraska\" is followed directly by \"Dartmouth Cancer Center, Dartmouth Health, Lebanon, New Hampshire\"; no Nevada entry. Read September 21, 2026.",
+      note: "Quote: \"Fred and Pamela Buffett Cancer Center, Nebraska Medicine and the University of Nebraska Medical Center (UNMC), Omaha, Nebraska\" is followed directly by \"Dartmouth Cancer Center, Dartmouth Health, Lebanon, New Hampshire\"; no Nevada entry. Read September 21, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ncorp-nv",
@@ -327,7 +327,7 @@ const page: SeoPage = {
       publisher: "National Cancer Institute, NCI Community Oncology Research Program",
       url: "https://ncorp.cancer.gov/findasite/?state=Nevada",
       year: "2026",
-      note: "Read September 2026. Nevada Cancer Research Foundation NCORP (Las Vegas) is the only Nevada NCORP site. Affiliates listed include \"Alliance for Childhood Diseases/Cure 4 the Kids Foundation\", \"Carson Tahoe Regional Medical Center\", \"Comprehensive Cancer Centers of Nevada\", \"OptumCare Cancer Care at Charleston\", \"Summerlin Hospital Medical Center\", \"Sunrise Hospital and Medical Center\" and \"University Medical Center of Southern Nevada\".",
+      note: "Read September 2026; re-checked October 23, 2026. Nevada Cancer Research Foundation NCORP (Las Vegas) is the only Nevada NCORP site. Affiliates listed include \"Alliance for Childhood Diseases/Cure 4 the Kids Foundation\", \"Carson Tahoe Regional Medical Center\", \"Comprehensive Cancer Centers of Nevada\", \"OptumCare Cancer Care at Charleston\", \"Summerlin Hospital Medical Center\", \"Sunrise Hospital and Medical Center\" and \"University Medical Center of Southern Nevada\".",
     },
     {
       id: "cccn",
@@ -397,7 +397,7 @@ const page: SeoPage = {
       publisher: "Digital Health News",
       url: "https://www.digitalhealthnews.com/intermountain-health-goes-live-with-epic-ehr-across-33-hospitals",
       year: "2025",
-      note: "Quote: \"Salt Lake City-based Intermountain Health has launched Epic across its 33 hospitals and six-state footprint.\" and \"Intermountain opted for a 'big-bang' launch favored by Epic and many health systems nowadays, turning the EHR on at all locations simultaneously.\" Dated September 21, 2025; read September 2026.",
+      note: "Quote: \"Salt Lake City-based Intermountain Health has launched Epic across its 33 hospitals and six-state footprint.\" and \"Intermountain opted for a 'big-bang' launch favored by Epic and many health systems nowadays, turning the EHR on at all locations simultaneously.\" Dated September 21, 2025; read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "epic-endpoints",
@@ -405,7 +405,7 @@ const page: SeoPage = {
       publisher: "Epic Systems (open.epic)",
       url: "https://open.epic.com/Endpoints/R4",
       year: "2026",
-      note: "Quote: endpoint entries \"name\": \"UMC Southern Nevada\"; \"name\": \"Renown, Barton, CVMC\"; \"name\": \"Intermountain Healthcare\", each with connection type \"hl7-fhir-rest\" and status \"active\". Downloaded September 21, 2026.",
+      note: "Quote: endpoint entries \"name\": \"UMC Southern Nevada\"; \"name\": \"Renown, Barton, CVMC\"; \"name\": \"Intermountain Healthcare\", each with connection type \"hl7-fhir-rest\" and status \"active\". Downloaded September 21, 2026; re-checked October 23, 2026.",
     },
     {
       id: "oracle-endpoints",
@@ -413,7 +413,7 @@ const page: SeoPage = {
       publisher: "Oracle (oracle-samples/ignite-endpoints on GitHub)",
       url: "https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json",
       year: "2026",
-      note: "Quote: Organization entries \"Humboldt General Hospital\" (city \"Winnemucca\", state \"NV\") and \"Boulder City Hospital Inc\" (city \"Boulder City\", state \"NV\"). Downloaded September 21, 2026. A listing shows a Millennium FHIR endpoint, not every system the organization runs.",
+      note: "Quote: Organization entries \"Humboldt General Hospital\" (city \"Winnemucca\", state \"NV\") and \"Boulder City Hospital Inc\" (city \"Boulder City\", state \"NV\"). Downloaded September 21, 2026; re-checked October 23, 2026. A listing shows a Millennium FHIR endpoint, not every system the organization runs.",
     },
     {
       id: "nv-ab406",
@@ -437,7 +437,7 @@ const page: SeoPage = {
       publisher: "Nevada Legislature",
       url: "https://www.leg.state.nv.us/NRS/NRS-597.html",
       year: "2021",
-      note: "Quote: NRS 597.812 defines the device as equipment that \"utilizes a random or sequential number generator producing telephone numbers to be called\" and is used \"to disseminate a prerecorded message to the telephone number called to solicit a person at the telephone number called to purchase goods or services\". NRS 597.814(1) requires \"a recorded or unrecorded natural voice\" to give \"the nature of the call\" and \"the name, address and telephone number of the business or organization\"; 597.814(2) bars calls \"between 8 p.m. and 9 a.m.\"; 597.814(3) exempts calls to \"a person with whom the person using the device ... has a preexisting business relationship\". Read September 2026.",
+      note: "Quote: NRS 597.812 defines the device as equipment that \"utilizes a random or sequential number generator producing telephone numbers to be called\" and is used \"to disseminate a prerecorded message to the telephone number called to solicit a person at the telephone number called to purchase goods or services\". NRS 597.814(1) requires \"a recorded or unrecorded natural voice\" to give \"the nature of the call\" and \"the name, address and telephone number of the business or organization\"; 597.814(2) bars calls \"between 8 p.m. and 9 a.m.\"; 597.814(3) exempts calls to \"a person with whom the person using the device ... has a preexisting business relationship\". Read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nrs-200",
@@ -445,7 +445,7 @@ const page: SeoPage = {
       publisher: "Nevada Legislature",
       url: "https://www.leg.state.nv.us/NRS/NRS-200.html",
       year: "2026",
-      note: "Quote: \"it is unlawful for any person to intercept or attempt to intercept any wire communication unless: (a) The interception or attempted interception is made with the prior consent of one of the parties to the communication; and (b) An emergency situation exists and it is impractical to obtain a court order\". NRS 200.690(1): \"A person who willfully and knowingly violates NRS 200.620 to 200.650, inclusive: (a) Shall be punished for a category D felony\". Read September 2026.",
+      note: "Quote: \"it is unlawful for any person to intercept or attempt to intercept any wire communication unless: (a) The interception or attempted interception is made with the prior consent of one of the parties to the communication; and (b) An emergency situation exists and it is impractical to obtain a court order\". NRS 200.690(1): \"A person who willfully and knowingly violates NRS 200.620 to 200.650, inclusive: (a) Shall be punished for a category D felony\". Read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "bond-site",

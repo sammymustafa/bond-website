@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Many of the patients a site needs are already in its EHR. Finding them takes a legal basis for looking and reaching out, a query that returns a workable list, and a review step that catches what the query cannot read.",
   summary: "Structured data versus notes, HIPAA paths, cohort queries, LLM screening, coordinator review and the metrics that matter.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "See it on your protocol",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -124,7 +124,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "For outside vendors, Epic's developer documentation (as of September 2026) says Bulk FHIR export needs the health system to build an analytics registry around the study's inclusion criteria.{{cite:epic-implementing}} Its API catalog exposes notes through FHIR DocumentReference and Binary resources.{{cite:epic-fhir}} For Oracle Health sites, Oracle Life Sciences announced a Patient Recruitment Cloud Service in October 2024 that tells authorized study teams which of their patients could potentially meet trial criteria.{{cite:oracle-prc}} Our [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner) pages cover each connection.",
+          text: "For outside vendors, Epic's developer documentation (as of October 2026) says Bulk FHIR export needs the health system to build an analytics registry around the study's inclusion criteria.{{cite:epic-implementing}} Its API catalog exposes notes through FHIR DocumentReference and Binary resources.{{cite:epic-fhir}} For Oracle Health sites, Oracle Life Sciences announced a Patient Recruitment Cloud Service in October 2024 that tells authorized study teams which of their patients could potentially meet trial criteria.{{cite:oracle-prc}} Our [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner) pages cover each connection.",
         },
         {
           type: "steps",
@@ -348,7 +348,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register)",
       url: "https://www.ecfr.gov/current/title-45/section-164.512",
       year: "2026",
-      note: "Paragraph (i)(1)(i) covers IRB or privacy board waivers \"in whole or in part\"; (i)(1)(ii) covers reviews preparatory to research, including representations that no PHI will be removed from the covered entity and that the PHI is necessary. Text current as of 2026-09-01.",
+      note: "Paragraph (i)(1)(i) covers IRB or privacy board waivers \"in whole or in part\"; (i)(1)(ii) covers reviews preparatory to research, including representations that no PHI will be removed from the covered entity and that the PHI is necessary. Text current as of 2026-09-01; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-506",
@@ -380,7 +380,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register)",
       url: "https://www.ecfr.gov/current/title-45/section-164.502",
       year: "2026",
-      note: "Paragraph (b), minimum necessary; (b)(2) lists exceptions, including \"Disclosures to or requests by a health care provider for treatment\" and \"Uses or disclosures made pursuant to an authorization under § 164.508\". Paragraph (e): a covered entity may disclose PHI to a business associate \"if the covered entity obtains satisfactory assurance that the business associate will appropriately safeguard the information.\" Text current as of 2026-09-01.",
+      note: "Paragraph (b), minimum necessary; (b)(2) lists exceptions, including \"Disclosures to or requests by a health care provider for treatment\" and \"Uses or disclosures made pursuant to an authorization under § 164.508\". Paragraph (e): a covered entity may disclose PHI to a business associate \"if the covered entity obtains satisfactory assurance that the business associate will appropriately safeguard the information.\" Text current as of 2026-09-01; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-160-103",
@@ -428,7 +428,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation (Epic on FHIR)",
       url: "https://fhir.epic.com/Documentation?docId=implementing",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Using Bulk FHIR requires configuration from the health system, as they will need to create an analytics registry around specific inclusion criteria, within Epic.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Using Bulk FHIR requires configuration from the health system, as they will need to create an analytics registry around specific inclusion criteria, within Epic.\"",
     },
     {
       id: "epic-fhir",
@@ -436,7 +436,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation",
       url: "https://fhir.epic.com/",
       year: "2026",
-      note: "Accessed September 2026. Catalog lists \"DocumentReference (Clinical Notes) Read, Search, Create\" and Binary (Clinical Notes).",
+      note: "Accessed September 2026; re-checked October 23, 2026. Catalog lists \"DocumentReference (Clinical Notes) Read, Search, Create\" and Binary (Clinical Notes).",
     },
     {
       id: "oracle-prc",

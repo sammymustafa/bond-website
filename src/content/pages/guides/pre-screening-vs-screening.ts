@@ -21,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Pre-screening is how a site finds and sorts candidates before anyone signs a consent form. Screening confirms eligibility under the protocol after consent. The line between them decides what needs IRB approval, which log a person goes on, who counts as a screen failure, and who pays.",
   summary: "Definitions from FDA, NIH and ICH, what can happen before consent, how screen failures are counted, and what to log.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "See pre-screening on your protocol",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -265,7 +265,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Does an AI voice or text agent change any of this?",
-      a: "The consent line does not move, but some states add AI disclosure rules. As of September 2026, California's AB 3030 requires a disclaimer and a way to reach a human when generative AI writes patient communications about clinical information, unless a licensed provider reviews them. Texas HB 149, in effect since January 1, 2026, requires providers to disclose AI used in health care services or treatment.{{cite:ca-ab-3030,tx-hb-149}} Ask counsel whether your outreach is covered. Bond's [Engage](/engage) agents tell patients AI is used and let them reach a person at any time, by live transfer to a coordinator or a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
+      a: "The consent line does not move, but some states add AI disclosure rules. As of October 2026, California's AB 3030 requires a disclaimer and a way to reach a human when generative AI writes patient communications about clinical information, unless a licensed provider reviews them. Texas HB 149, in effect since January 1, 2026, requires providers to disclose AI used in health care services or treatment.{{cite:ca-ab-3030,tx-hb-149}} Ask counsel whether your outreach is covered. Bond's [Engage](/engage) agents tell patients AI is used and let them reach a person at any time, by live transfer to a coordinator or a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
     },
   ],
   sources: [
@@ -317,7 +317,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.116",
       year: "2018",
-      note: "Paragraph (g), added by the revised Common Rule. Text current as of September 2026.",
+      note: "Paragraph (g), added by the revised Common Rule. Text current as of September 2026; re-checked October 23, 2026.",
     },
     {
       id: "fr-common-rule-2017",
@@ -332,7 +332,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
       year: "2026",
-      note: "Paragraphs (i)(1)(i) and (i)(1)(ii). Text current as of September 2026.",
+      note: "Paragraphs (i)(1)(i) and (i)(1)(ii). Text current as of September 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-50-20",
@@ -354,7 +354,7 @@ const page: SeoPage = {
       publisher: "WCG",
       url: "https://www.wcgclinical.com/insights/what-elements-of-informed-consent-must-we-include-when-pre-screening/",
       year: "n.d.",
-      note: "Undated article, accessed September 2026. Quote: \"The screening consent form must include a description of the tests, why the testing is needed, and a brief summary description of the study or type of studies in which the patient may later be asked to participate.\"",
+      note: "Undated article, accessed September 2026; re-checked October 23, 2026. Quote: \"The screening consent form must include a description of the tests, why the testing is needed, and a brief summary description of the study or type of studies in which the patient may later be asked to participate.\"",
     },
     {
       id: "gsk-213744",

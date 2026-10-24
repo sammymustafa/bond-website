@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, MessageCircle, Calendar } from "lucide-react";
+import { MessageCircle, Calendar } from "lucide-react";
 import { useDemoModal } from "@/context/DemoModalContext";
 
 export default function CTA() {

@@ -42,7 +42,7 @@ export default function WhyBond({ compact = false }: { compact?: boolean }) {
         <div className={compact ? "mt-6 max-w-3xl" : "mx-auto mt-10 max-w-3xl"}>
           {callout && (
             <aside className="mb-6 flex gap-3 rounded-2xl border border-bond-primary/20 bg-bond-primary/5 p-4 sm:p-5">
-              <Sparkles className="mt-0.5 h-5 w-5 flex-shrink-0 text-bond-primary" />
+              <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-bond-primary" />
               <div className="text-sm leading-relaxed text-gray-700 sm:text-[15px]">
                 <p className="mb-1 font-semibold text-gray-900">{callout.title}</p>
                 <p>{renderInline(stripCites(callout.text), noCites, "why-callout")}</p>
@@ -53,7 +53,7 @@ export default function WhyBond({ compact = false }: { compact?: boolean }) {
             <ul className="space-y-3">
               {reasons.items.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-left leading-relaxed text-gray-700">
-                  <span className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-bond-primary" />
+                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-bond-primary" />
                   <span>{renderInline(stripCites(item), noCites, `why-${i}`)}</span>
                 </li>
               ))}

@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Utah",
   h1: "Recruiting for clinical trials in Utah",
   intro:
-    "As of September 21, 2026, 1,210 studies on ClinicalTrials.gov were recruiting at one or more Utah sites, about 5.5% of the 22,041 recruiting in the United States, from a state with about 1.0% of US residents.{{cite:ctgov-api,census-pop-2025}} This page is for research sites in Salt Lake City and the rest of the state.",
+    "As of October 23, 2026, 1,229 studies on ClinicalTrials.gov were recruiting at one or more Utah sites, about 5.6% of the 22,038 recruiting in the United States, from a state with about 1.0% of US residents.{{cite:ctgov-api,census-pop-2025}} This page is for research sites in Salt Lake City and the rest of the state.",
   summary: "Utah recruiting-trial counts, Salt Lake City research hubs, health systems and their EHRs, demographics, and Utah's AI disclosure rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,7 +28,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Utah sites appear on 487 of the 7,074 recruiting US oncology studies and 197 of the 2,845 cardiology studies, about 6.9% of each. The share is lower in neurology, at 47 of 987.{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Utah sites appear on 491 of the 7,092 recruiting US oncology studies and 203 of the 2,827 cardiology studies, about 7% of each. The share is lower in neurology, at 48 of 1,000.{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "utah", cite: "ctgov-api" },
         {
@@ -44,11 +44,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "In a September 22, 2026 registry query, 767 Utah studies listed a recruiting site in Salt Lake City, followed by Murray (83), home to Intermountain Medical Center, West Valley City (75) and Ogden (41).{{cite:ctgov-utah-sites}}",
+          text: "In an October 23, 2026 registry query, 779 Utah studies listed a recruiting site in Salt Lake City, followed by Murray (79), home to Intermountain Medical Center, West Valley City (73) and Ogden (38).{{cite:ctgov-utah-sites}}",
         },
         {
           type: "table",
-          caption: "Utah research institutions and what they report about themselves, as of September 2026",
+          caption: "Utah research institutions and what they report about themselves, as of October 2026",
           columns: ["Institution", "What it is", "What it reports"],
           rows: [
             [
@@ -81,7 +81,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "EHRs at Utah's largest health systems, from public sources as of September 2026",
+          caption: "EHRs at Utah's largest health systems, from public sources as of October 2026",
           columns: ["System", "Footprint", "EHR"],
           rows: [
             [
@@ -140,7 +140,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Community and network sites also recruit in Utah, as described on their websites as of September 2026:",
+          text: "Community and network sites also recruit in Utah, as described on their websites as of October 2026:",
         },
         {
           type: "ul",
@@ -151,7 +151,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Other sites on recruiting Utah records in September 2026 include Alpine Research Organization (Clinton), Advanced Research Institute and Community Cancer Trials of Utah (Ogden), JBR Clinical Research and Wasatch Clinical Research (Salt Lake City), Cedar Clinical Research (Draper) and Pantheon Clinical Research (Bountiful).{{cite:ctgov-utah-sites}}",
+          text: "Other sites on recruiting Utah records in October 2026 include Alpine Research Organization (Clinton), Advanced Research Institute and Community Cancer Trials of Utah (Ogden), JBR Clinical Research and Wasatch Clinical Research (Salt Lake City), Cedar Clinical Research (Draper) and Pantheon Clinical Research (Bountiful).{{cite:ctgov-utah-sites}}",
         },
         {
           type: "p",
@@ -171,7 +171,7 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Artificial Intelligence Policy Act (SB 149, 2024).** From May 1, 2024, anyone using generative AI in a matter the Division of Consumer Protection enforces had to disclose it if asked, and people providing regulated-occupation services had to disclose it up front. The act also created the Office of Artificial Intelligence Policy, which can temporarily ease rules for AI companies through regulatory mitigation agreements.{{cite:ut-sb149}}",
-            "**2025 amendments (SB 226, Utah Code 13-75-103).** Since May 7, 2025, people in occupations that need a Department of Commerce license or state certification must prominently disclose generative AI in high-risk interactions, including collecting health data and giving medical or mental health advice. The disclosure is spoken at the start of a verbal interaction and written before a written one. A supplier in a consumer transaction must disclose AI when a person clearly asks. The law defines generative AI as systems producing non-scripted outputs with limited or no human oversight. Fines run up to $2,500 per violation.{{cite:ut-sb226}} Whether an AI recruitment call is a regulated service is a question for counsel.",
+            "**2025 amendments (SB 226, now Utah Code 13-77-103).** Since May 7, 2025, people in occupations that need a Department of Commerce license or state certification must prominently disclose generative AI in high-risk interactions, including collecting health data and giving medical or mental health advice. The disclosure is spoken at the start of a verbal interaction and written before a written one. A supplier in a consumer transaction must disclose AI when a person clearly asks. The law defines generative AI as systems producing non-scripted outputs with limited or no human oversight. Fines run up to $2,500 per violation.{{cite:ut-sb226}} Whether an AI recruitment call is a regulated service is a question for counsel.",
             "**Safe harbor.** A person is not subject to enforcement under the disclosure section if its AI clearly and conspicuously discloses, at the outset and throughout the interaction, that it is AI and not human. SB 226 also moved the AI Policy Act's repeal date to July 1, 2027.{{cite:ut-sb226}}",
             "**Telehealth (Utah Code 26B-4-704).** A telemedicine provider may not diagnose, treat or prescribe based solely on an online questionnaire, an email or a patient-generated history.{{cite:ut-26b-4-704}} An online pre-screen can inform eligibility review, not replace the investigator's assessment.",
           ],
@@ -231,7 +231,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in Utah?",
-      a: "As of September 21, 2026, 1,210 studies on ClinicalTrials.gov listed a recruiting Utah site, 487 of them in oncology.{{cite:ctgov-api}}",
+      a: "As of October 23, 2026, 1,229 studies on ClinicalTrials.gov listed a recruiting Utah site, 491 of them in oncology.{{cite:ctgov-api}}",
     },
     {
       q: "Does Utah require patients to be told when AI is used?",
@@ -249,7 +249,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "ctgov-utah-sites",
@@ -257,7 +257,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?query.locn=AREA%5BLocationState%5D%22Utah%22&filter.overallStatus=RECRUITING&countTotal=true&pageSize=1000&fields=NCTId%2CprotocolSection.contactsLocationsModule.locations",
       year: "2026",
-      note: "Queried September 22, 2026 and tallied by Bond: 1,207 studies with overall status Recruiting and a Utah location (this filter differs slightly from the 1,210 in the ClinicalTrials.gov API v2 source). Studies with a recruiting Utah site by city: Salt Lake City 767, Murray 83, West Valley City 75, Ogden 41. Murray facility entries include Intermountain Medical Center. Facilities with recruiting Utah records include Alpine Research Organization (Clinton), Advanced Research Institute (Ogden), Community Cancer Trials of Utah (Ogden), JBR Clinical Research (Salt Lake City), Wasatch Clinical Research, LLC (Salt Lake City), Cedar Clinical Research (Draper) and Pantheon Clinical Research (Bountiful).",
+      note: "Queried October 23, 2026 and tallied by Bond: 1,226 studies with overall status Recruiting and a Utah location (this filter differs slightly from the 1,229 in the ClinicalTrials.gov API v2 source). Studies with a recruiting Utah site by city: Salt Lake City 779, Murray 79, West Valley City 73, Ogden 38. Murray facility entries include Intermountain Medical Center. Facilities with recruiting Utah records include Alpine Research Organization (Clinton), Advanced Research Institute (Ogden), Community Cancer Trials of Utah (Ogden), JBR Clinical Research (Salt Lake City), Wasatch Clinical Research, LLC (Salt Lake City), Cedar Clinical Research (Draper) and Pantheon Clinical Research (Bountiful).",
     },
     {
       id: "census-pop-2025",
@@ -281,7 +281,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
       year: "2026",
-      note: "Downloaded September 2026 and summed by Bond for Utah, POPESTIMATE2025, both sexes: total 3,538,904; under 18, 922,267 (26.1%, highest of 50 states and DC); 65 and over, 460,179 (13.0%, lowest); Hispanic origin 623,494 (17.6%), against 15.1% of the April 2020 estimates base; Native Hawaiian and Other Pacific Islander alone 44,469 (1.3%, third after Hawaii and Alaska); American Indian and Alaska Native alone 72,748 (2.1%).",
+      note: "Downloaded September 2026; re-checked October 23, 2026. Summed by Bond for Utah, POPESTIMATE2025, both sexes: total 3,538,904; under 18, 922,267 (26.1%, highest of 50 states and DC); 65 and over, 460,179 (13.0%, lowest); Hispanic origin 623,494 (17.6%), against 15.1% of the April 2020 estimates base; Native Hawaiian and Other Pacific Islander alone 44,469 (1.3%, third after Hawaii and Alaska); American Indian and Alaska Native alone 72,748 (2.1%).",
     },
     {
       id: "census-acs-uninsured",
@@ -297,7 +297,7 @@ const page: SeoPage = {
       publisher: "Health Resources and Services Administration (HRSA), HHS",
       url: "https://data.hrsa.gov/tools/data-reporting/program-data/state/UT",
       year: "2026",
-      note: "Quote: \"Total Number of Reporting Program Awardees: 12 Reporting Period: 2025 Total Patients Served: 139,551\". Patient characteristics on the same page, 2025: \"% Hispanic, Latino/a, or Spanish Origin Patients\" 56.91% (of patients with known ethnicity); \"Limited English Proficiency\" 40.51% (under \"Language (% known)\"); \"% None/Uninsured Patients\" 39.12% (of total patients); \"% American Indian/Alaska Native Patients\" 10.71% (of patients with known race). Read September 22, 2026.",
+      note: "Quote: \"Total Number of Reporting Program Awardees: 12 Reporting Period: 2025 Total Patients Served: 139,551\". Patient characteristics on the same page, 2025: \"% Hispanic, Latino/a, or Spanish Origin Patients\" 56.91% (of patients with known ethnicity); \"Limited English Proficiency\" 40.51% (under \"Language (% known)\"); \"% None/Uninsured Patients\" 39.12% (of total patients); \"% American Indian/Alaska Native Patients\" 10.71% (of patients with known race). Read September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "uofu-about",
@@ -401,7 +401,7 @@ const page: SeoPage = {
       publisher: "Utah State Legislature",
       url: "https://le.utah.gov/~2025/bills/sbillenr/SB0226.pdf",
       year: "2025",
-      note: "Quote: \"'Generative artificial intelligence' means an artificial intelligence technology system that ... (c) generates non-scripted outputs similar to outputs created by a human, with limited or no human oversight.\" ... \"'Regulated occupation' means an occupation that: (a) is regulated by the Department of Commerce; and (b) requires an individual to obtain a license or state certification to practice the occupation.\" ... \"A person is not subject to an enforcement action for violating Section 13-75-103 if the person's generative artificial intelligence clearly and conspicuously discloses: (a) at the outset of any interaction ... and (b) throughout the interaction that it: (i) is generative artificial intelligence; (ii) is not human\" ... \"'High-risk artificial intelligence interaction' means an interaction with generative artificial intelligence that involves: (a) the collection of sensitive personal information, including: (i) health data\" ... \"(iii) medical advice or services; or (iv) mental health advice or services\" ... \"A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction.\" ... \"the division director may impose an administrative fine of up to $2,500 for each violation of this chapter\" ... \"Artificial Intelligence Policy Act, is repealed [May 1, 2025] July 1, 2027.\" ... \"this bill takes effect on May 7, 2025.\"",
+      note: "The bill's section 13-75-103 is codified as Utah Code 13-77-103 after technical renumbering (le.utah.gov, checked October 23, 2026). Quote: \"'Generative artificial intelligence' means an artificial intelligence technology system that ... (c) generates non-scripted outputs similar to outputs created by a human, with limited or no human oversight.\" ... \"'Regulated occupation' means an occupation that: (a) is regulated by the Department of Commerce; and (b) requires an individual to obtain a license or state certification to practice the occupation.\" ... \"A person is not subject to an enforcement action for violating Section 13-75-103 if the person's generative artificial intelligence clearly and conspicuously discloses: (a) at the outset of any interaction ... and (b) throughout the interaction that it: (i) is generative artificial intelligence; (ii) is not human\" ... \"'High-risk artificial intelligence interaction' means an interaction with generative artificial intelligence that involves: (a) the collection of sensitive personal information, including: (i) health data\" ... \"(iii) medical advice or services; or (iv) mental health advice or services\" ... \"A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction.\" ... \"the division director may impose an administrative fine of up to $2,500 for each violation of this chapter\" ... \"Artificial Intelligence Policy Act, is repealed [May 1, 2025] July 1, 2027.\" ... \"this bill takes effect on May 7, 2025.\"",
     },
     {
       id: "ut-26b-4-704",

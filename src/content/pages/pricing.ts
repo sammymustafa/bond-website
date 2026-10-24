@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Bond Health prices every engagement in two parts: a volume-based fee for each screened patient, and a percentage of the randomization milestone payment for each patient who is randomized. There is no integration fee.{{cite:bond-product}} Pricing is custom, and Bond does not publish dollar amounts. The per-screened-patient fee covers EHR integration, implementation and ongoing operation.",
   summary: "How Bond's two-part pricing works, what counts as randomized, and how it compares with other ways to pay for recruitment.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Get custom pricing", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
@@ -117,7 +117,7 @@ const page: SeoPage = {
           rows: [
             [
               "Media and digital recruitment vendors",
-              "Campaigns, referrals or milestones, depending on the vendor. Per their websites as of September 2026, 1nHealth prices on milestones such as signed consent forms or randomization, with other models available,{{cite:1nhealth-pricing}} and Trialfacts commits in writing to a participant number and timeframe and refunds the fee for any participants it does not deliver.{{cite:trialfacts-home}}",
+              "Campaigns, referrals or milestones, depending on the vendor. Per their websites as of October 2026, 1nHealth prices on milestones such as signed consent forms or randomization, with other models available,{{cite:1nhealth-pricing}} and Trialfacts commits in writing to a participant number and timeframe and refunds the fee for any participants it does not deliver.{{cite:trialfacts-home}}",
               "Depends on the unit priced; the closer it is to randomization, the more the vendor carries",
               "Screens the referrals it receives, including those who turn out not to qualify",
             ],
@@ -293,7 +293,7 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/",
       year: "2026",
-      note: "Vendor's own description of its pricing, read September 2026. The FAQ says its pricing is based on specific milestones, such as signed ICFs or patient randomization, and that flexible pricing models are offered when milestone pricing does not fit a study.",
+      note: "Vendor's own description of its pricing, read September 2026; re-checked October 23, 2026. The FAQ says its pricing is based on specific milestones, such as signed ICFs or patient randomization, and that flexible pricing models are offered when milestone pricing does not fit a study.",
     },
     {
       id: "trialfacts-home",
@@ -301,21 +301,21 @@ const page: SeoPage = {
       publisher: "Trialfacts",
       url: "https://trialfacts.com/",
       year: "2026",
-      note: "Vendor's own description of its guarantee, read September 2026. Quote: \"We commit to a specific number of participants and a timeframe in writing, before you pay anything. If we do not deliver, you receive a full refund of the fee for the participants we did not deliver.\"",
+      note: "Vendor's own description of its guarantee, read September 2026; re-checked October 23, 2026. Quote: \"We commit to a specific number of participants and a timeframe in writing, before you pay anything. If we do not deliver, you receive a full refund of the fee for the participants we did not deliver.\"",
     },
     {
       id: "clinical-leader-fsp",
       title: "The FSP Model In Clinical Research: How Functional Service Providers Support Trials",
       publisher: "Clinical Leader (Elizabeth Mann)",
       url: "https://www.clinicalleader.com/topic/fsp-model-clinical-research",
-      note: "Undated topic page on functional service provider contracts in general (not recruitment staff specifically), read September 22, 2026. Quote: \"Unit-based pricing is based on measurable outputs like data query resolutions or monitoring visits. FTE models contract dedicated professionals for a set period of hours or days, offering consistent support over time.\"",
+      note: "Undated topic page on functional service provider contracts in general (not recruitment staff specifically), read September 22, 2026; re-checked October 23, 2026. Quote: \"Unit-based pricing is based on measurable outputs like data query resolutions or monitoring visits. FTE models contract dedicated professionals for a set period of hours or days, offering consistent support over time.\"",
     },
     {
       id: "simpletrials-ctms",
       title: "True Cost of a CTMS",
       publisher: "SimpleTrials (CTMS vendor)",
       url: "https://www.simpletrials.com/true-cost-of-a-ctms",
-      note: "Undated vendor page, read September 22, 2026. Quote: \"CTMS fees are typically based on the number of users and/or studies.\"",
+      note: "Undated vendor page, read September 22, 2026; re-checked October 23, 2026. Quote: \"CTMS fees are typically based on the number of users and/or studies.\"",
     },
     {
       id: "mytomorrows-2026",

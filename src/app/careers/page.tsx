@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { ArrowRight, MapPin, Clock, Users, Zap, Heart, Brain, Code, Database, Headphones, X, CheckCircle, Loader2 } from "lucide-react";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhyBond from "@/components/WhyBond";
@@ -157,7 +158,7 @@ function ApplicationModal({
       } else {
         throw new Error("Form submission failed");
       }
-    } catch (err) {
+    } catch {
       setError(NETWORK_ERROR);
       setIsSubmitting(false);
     }
@@ -314,9 +315,9 @@ function ApplicationModal({
 
             <p className="text-xs text-gray-500 text-center mt-4">
               By submitting, you agree to our{" "}
-              <a href="/privacy-policy" className="text-bond-primary hover:underline">
+              <Link href="/privacy-policy" className="text-bond-primary hover:underline">
                 privacy policy
-              </a>
+              </Link>
               .
             </p>
           </>
@@ -348,14 +349,14 @@ export default function CareersPage() {
       <Navigation />
       
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50/50 to-white">
+      <section className="pt-32 pb-20 bg-linear-to-b from-blue-50/50 to-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-bond-primary font-semibold mb-4">Careers at Bond Health</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Help patients access <span className="text-bond-primary">life-changing trials</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We're building AI that helps research sites enroll the right patients faster. 
+            We&apos;re building AI that helps research sites enroll the right patients faster. 
             Join us if you want to work on hard problems that matter.
           </p>
         </div>
@@ -385,7 +386,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Open Roles</h2>
             <p className="text-gray-600">
-              We're looking for exceptional engineers who want to work on AI that impacts healthcare.
+              We&apos;re looking for exceptional engineers who want to work on AI that impacts healthcare.
             </p>
           </div>
 
@@ -396,7 +397,7 @@ export default function CareersPage() {
                 className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-bond-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-bond-primary/10 flex items-center justify-center shrink-0">
                     <role.icon className="w-6 h-6 text-bond-primary" />
                   </div>
                   <div className="flex-1">
@@ -418,7 +419,7 @@ export default function CareersPage() {
                     </div>
                     <p className="text-gray-600 mb-4">{role.description}</p>
                     <div className="mb-4">
-                      <p className="text-sm font-medium text-gray-900 mb-2">What we're looking for:</p>
+                      <p className="text-sm font-medium text-gray-900 mb-2">What we&apos;re looking for:</p>
                       <ul className="space-y-1">
                         {role.requirements.map((req, idx) => (
                           <li key={idx} className="text-sm text-gray-600 flex items-start gap-2">
@@ -447,10 +448,10 @@ export default function CareersPage() {
       <section className="py-20 bg-white">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Don't see a role that fits?
+            Don&apos;t see a role that fits?
           </h2>
           <p className="text-gray-600 mb-8">
-            We're always looking for exceptional people. Join our talent network and we'll reach out when we have the right opportunity.
+            We&apos;re always looking for exceptional people. Join our talent network and we&apos;ll reach out when we have the right opportunity.
           </p>
           <button
             onClick={openTalentModal}

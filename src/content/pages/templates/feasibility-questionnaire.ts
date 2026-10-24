@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs send a feasibility questionnaire before they shortlist a site, and many cover the same ground in a different order. This template puts those questions in one place so your site can answer once, keep the answers current, and copy them into each sponsor's form. It includes a worksheet for patient counts drawn from your EHR, because a count with its method attached is easier to believe than an estimate.",
   summary: "An editable site feasibility questionnaire with an EHR patient-count worksheet and guidance on answering with data.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -389,7 +389,7 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Running the EHR count.** Reviewing records to judge whether a study is feasible is usually handled under the HIPAA provision for reviews [preparatory to research](/glossary/preparatory-to-research). The covered entity must obtain the researcher's representation that the review is solely to prepare a research protocol or for similar purposes preparatory to research, that no protected health information will be removed from the covered entity, and that the information is necessary for the research.{{cite:ecfr-164-512}} Send the sponsor aggregate counts only, and follow your privacy office's rules on who may run queries.",
-            "**Contacting patients to test interest.** That is recruitment, not feasibility. FDA's recruiting guidance (issued January 1998 and posted on its website as of September 2026) treats direct advertising for study subjects as the start of the informed consent and subject selection process, and says advertisements should be reviewed and approved by the IRB.{{cite:fda-recruiting}} Wait until the study, its recruitment materials and any outreach scripts are approved.",
+            "**Contacting patients to test interest.** That is recruitment, not feasibility. FDA's recruiting guidance (issued January 1998 and posted on its website as of October 2026) treats direct advertising for study subjects as the start of the informed consent and subject selection process, and says advertisements should be reviewed and approved by the IRB.{{cite:fda-recruiting}} Wait until the study, its recruitment materials and any outreach scripts are approved.",
           ],
         },
         {
@@ -498,7 +498,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.512",
       year: "2026",
-      note: "Paragraph (i)(1)(ii), reviews preparatory to research. Quote: \"No protected health information is to be removed from the covered entity by the researcher in the course of the review.\" Accessed September 2026.",
+      note: "Paragraph (i)(1)(ii), reviews preparatory to research. Quote: \"No protected health information is to be removed from the covered entity by the researcher in the course of the review\". Accessed September 2026; re-checked October 23, 2026.",
     },
     {
       id: "fda-recruiting",

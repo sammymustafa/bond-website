@@ -72,10 +72,10 @@ export default function ScrollTable({ columns, label, children }: { columns: num
           {children}
         </div>
         {state.overflow && !state.atStart && (
-          <div aria-hidden className="pointer-events-none absolute inset-y-px left-px w-10 rounded-l-2xl bg-gradient-to-r from-white to-transparent" />
+          <div aria-hidden className="pointer-events-none absolute inset-y-px left-px w-10 rounded-l-2xl bg-linear-to-r from-white to-transparent" />
         )}
         {state.overflow && !state.atEnd && (
-          <div aria-hidden className="pointer-events-none absolute inset-y-px right-px w-10 rounded-r-2xl bg-gradient-to-l from-white to-transparent" />
+          <div aria-hidden className="pointer-events-none absolute inset-y-px right-px w-10 rounded-r-2xl bg-linear-to-l from-white to-transparent" />
         )}
       </div>
     </>

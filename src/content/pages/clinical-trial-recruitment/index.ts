@@ -10,7 +10,7 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruitment, by state and city",
   intro:
-    "Clinical trial recruitment varies by location because the number of recruiting studies, the health systems that hold the patients, and the state laws that govern a text message to a patient all differ. As of September 21, 2026, 22,041 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Each page below pulls the registry counts for its area and describes the research landscape around them.",
+    "Clinical trial recruitment varies by location because the number of recruiting studies, the health systems that hold the patients, and the state laws that govern a text message to a patient all differ. As of October 23, 2026, 22,038 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Each page below pulls the registry counts for its area and describes the research landscape around them.",
   summary: "Thirteen location pages, for states, regions and major research cities, with registry counts, research hubs and local outreach rules.",
   lastUpdated: "2026-10-23",
   showLastUpdated: true,
@@ -38,7 +38,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
   ],
   related: [

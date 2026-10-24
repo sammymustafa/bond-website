@@ -62,7 +62,7 @@ export default function Pricing() {
                   "Ongoing compute, monitoring, and support",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-600">{item}</span>
                   </div>
                 ))}
@@ -73,13 +73,13 @@ export default function Pricing() {
           {/* How we define enrolled */}
           <div className="mt-8 bg-white rounded-2xl border border-gray-200 p-6">
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
                 <Users className="w-5 h-5 text-gray-700" />
               </div>
               <div>
                 <p className="font-semibold text-gray-900 mb-2">When the randomization share applies</p>
                 <p className="text-gray-600">
-                  Only when a patient is successfully randomized and the study's randomization milestone is paid. Ad spend for Meta and Google campaigns is not included in Bond's fees; it comes out of your study's advertising budget.
+                  Only when a patient is successfully randomized and the study&apos;s randomization milestone is paid. Ad spend for Meta and Google campaigns is not included in Bond&apos;s fees; it comes out of your study&apos;s advertising budget.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Pricing() {
 
           {/* Typical implementation */}
           <div className="mt-4 bg-gray-50 rounded-xl border border-gray-100 p-5 flex items-center gap-4">
-            <div className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center shrink-0">
               <Clock className="w-5 h-5 text-gray-600" />
             </div>
             <div>
@@ -109,7 +109,7 @@ export default function Pricing() {
                 "Dedicated support",
               ].map((feature) => (
                 <div key={feature} className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                  <Check className="w-4 h-4 text-green-500 shrink-0" />
                   <span className="text-sm text-gray-600">{feature}</span>
                 </div>
               ))}

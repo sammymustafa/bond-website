@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin } from "lucide-react";
+import { LinkedInIcon } from "./LinkedInIcon";
 import Image from "next/image";
 
 const team = [
@@ -43,7 +43,7 @@ export default function Team() {
             <div key={member.name} className="text-center max-w-xs">
               {/* Headshot */}
               <div className="relative w-36 h-36 mx-auto mb-6">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-bond-primary to-bond-accent p-1">
+                <div className="absolute inset-0 rounded-full bg-linear-to-br from-bond-primary to-bond-accent p-1">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white">
                     <Image
                       src={member.image}
@@ -62,7 +62,7 @@ export default function Team() {
                 href={member.linkedin}
                 className="inline-flex items-center gap-1 text-gray-400 hover:text-bond-primary transition-colors"
               >
-                <Linkedin className="w-5 h-5" />
+                <LinkedInIcon className="w-5 h-5" />
               </a>
             </div>
           ))}

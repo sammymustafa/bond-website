@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "In 2023, 24.3% of US adults had chronic pain,{{cite:cdc-chronic-pain-2023}} yet in one review of phase 3 and 4 chronic pain trials, 33.8% of discontinued trials that gave a reason cited low accrual or insufficient recruitment.{{cite:jacobsen-2023}} Most pain protocols set a minimum pain score, and many also limit opioid dose, prior procedures and psychiatric history. This page maps those criteria to the chart and shows how Bond screens for them.",
   summary: "How pain scores, opioid limits, prior procedures and psychiatric exclusions map to the chart, and how Bond screens for them.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -28,7 +28,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Chronic pain protocols select a diagnosis with pain that is long-lasting, severe enough and stable, then exclude patients whose treatment, opioid or psychiatric history could cloud the result. FDA's May 2026 draft guidance asks for pain of appropriate intensity and chronicity, for example at least 3 months, and asks sponsors to avoid overly restrictive enrollment criteria where possible.{{cite:fda-chronic-pain-2026}} The examples below come from ClinicalTrials.gov records read in September 2026.",
+          text: "Chronic pain protocols select a diagnosis with pain that is long-lasting, severe enough and stable, then exclude patients whose treatment, opioid or psychiatric history could cloud the result. FDA's May 2026 draft guidance asks for pain of appropriate intensity and chronicity, for example at least 3 months, and asks sponsors to avoid overly restrictive enrollment criteria where possible.{{cite:fda-chronic-pain-2026}} The examples below come from ClinicalTrials.gov records read in October 2026.",
         },
         {
           type: "table",
@@ -165,21 +165,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 629 recruiting studies with at least one US site matched a pain keyword search of ClinicalTrials.gov, about 3% of the 22,041 recruiting studies with a US site.{{cite:ctgov-api}} The search ran chronic pain, low back pain, osteoarthritis, neuropathic pain or migraine through the registry's condition search, which also checks study titles and keywords. The count includes observational studies and every matching osteoarthritis or migraine study, whether or not pain is the primary outcome, and counts acute or postoperative pain studies only if they match one of the five terms.",
+          text: "As of October 23, 2026, 632 recruiting studies with at least one US site matched a pain keyword search of ClinicalTrials.gov, about 3% of the 22,038 recruiting studies with a US site.{{cite:ctgov-api}} The search ran chronic pain, low back pain, osteoarthritis, neuropathic pain or migraine through the registry's condition search, which also checks study titles and keywords. The count includes observational studies and every matching osteoarthritis or migraine study, whether or not pain is the primary outcome, and counts acute or postoperative pain studies only if they match one of the five terms.",
         },
         {
           type: "chart",
-          title: "Recruiting studies with a US site, by area (keyword searches, September 21, 2026)",
+          title: "Recruiting studies with a US site, by area (keyword searches, October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -245,7 +245,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026. Overall status Recruiting, location United States. Pain: condition search (query.cond) for \"chronic pain OR low back pain OR osteoarthritis OR neuropathic pain OR migraine\", 629 studies; all conditions, 22,041 studies. Other areas use their own keyword sets.",
+      note: "Queried October 23, 2026. Overall status Recruiting, location United States. Pain: condition search (query.cond) for \"chronic pain OR low back pain OR osteoarthritis OR neuropathic pain OR migraine\", 632 studies; all conditions, 22,038 studies. Other areas use their own keyword sets.",
     },
     {
       id: "cdc-chronic-pain-2023",
@@ -261,7 +261,7 @@ const page: SeoPage = {
       publisher: "U.S. Food and Drug Administration, CDER",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/development-non-opioid-analgesics-chronic-pain",
       year: "2026",
-      note: "Quote: \"the enrollment criteria should select participants with pain of appropriate intensity and chronicity (e.g., at least 3 months)\" and \"Sponsors should avoid overly restrictive enrollment criteria, where possible... geriatric participants or participants with renal or hepatic disease should not be routinely excluded from trials in the absence of a potential safety concern.\" Also: EHR and claims data \"can provide information on prescribing and dispensing patterns, but they are generally not sufficient for obtaining an accurate assessment of actual opioid use\" but \"may be valuable... in identifying patients who may be eligible for trial participation.\" And: \"Sponsors can consider incorporating an extended screening or preenrollment phase to evaluate participants' baseline pain severity... This preenrollment phase may also be used to identify participants who can comply with recording their pain scores.\" Draft, May 2026 (Revision 1). PDF checked September 23, 2026.",
+      note: "Quote: \"the enrollment criteria should select participants with pain of appropriate intensity and chronicity (e.g., at least 3 months)\" and \"Sponsors should avoid overly restrictive enrollment criteria, where possible... geriatric participants or participants with renal or hepatic disease should not be routinely excluded from trials in the absence of a potential safety concern.\" Also: EHR and claims data \"can provide information on prescribing and dispensing patterns, but they are generally not sufficient for obtaining an accurate assessment of actual opioid use\" but \"may be valuable... in identifying patients who may be eligible for trial participation.\" And: \"Sponsors can consider incorporating an extended screening or preenrollment phase to evaluate participants' baseline pain severity... This preenrollment phase may also be used to identify participants who can comply with recording their pain scores.\" Draft, May 2026 (Revision 1). PDF checked September 23, 2026; re-checked October 23, 2026.",
     },
     {
       id: "nct06176196",
@@ -269,7 +269,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Vertex Pharmaceuticals)",
       url: "https://clinicaltrials.gov/study/NCT06176196",
       year: "2025",
-      note: "Phase 2, status Completed; record last updated October 1, 2025. Quote: \"Diagnosis of PLSR for greater than (>)3 months\"; \"Weekly average of daily NPRS score >=4 and <10\"; exclusion: \"History of prior lumbar spine surgery (e.g., discectomies, laminectomies, foraminotomies, or fusion)\". Record read September 2026.",
+      note: "Phase 2, status Completed; record last updated October 1, 2025. Quote: \"Diagnosis of PLSR for greater than (>)3 months\"; \"Weekly average of daily NPRS score >=4 and <10\"; exclusion: \"History of prior lumbar spine surgery (e.g., discectomies, laminectomies, foraminotomies, or fusion)\". Record read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nct06628908",
@@ -277,7 +277,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Vertex Pharmaceuticals)",
       url: "https://clinicaltrials.gov/study/NCT06628908",
       year: "2026",
-      note: "Quote: \"Weekly average of daily NPRS score ≥4 and less than or equal to (≤) 9 with limited variation in the 7-day Baseline Period\"; \"Diagnosis of diabetes mellitus type 1 or type 2 by glycosylated hemoglobin A1c (HbA1c) ≤9%\"; exclusion: \"More than 3 missing daily NPRS scores during the 7-day Baseline Period\". Record read September 2026.",
+      note: "Quote: \"Weekly average of daily NPRS score ≥4 and less than or equal to (≤) 9 with limited variation in the 7-day Baseline Period\"; \"Diagnosis of diabetes mellitus type 1 or type 2 by glycosylated hemoglobin A1c (HbA1c) ≤9%\"; exclusion: \"More than 3 missing daily NPRS scores during the 7-day Baseline Period\". Record read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nct05986292",
@@ -285,7 +285,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Eli Lilly and Company)",
       url: "https://clinicaltrials.gov/study/NCT05986292",
       year: "2026",
-      note: "Quote: \"have a visual analog scale (VAS) pain value ≥40 and <95 at screening\"; \"have a history of daily pain for at least 12 weeks\"; \"have a value of ≤30 on the pain catastrophizing scale\"; exclusion: \"have a history of alcohol, illicit drug, analgesic or narcotic use disorder within 2 years prior to screening\". Record read September 2026.",
+      note: "Quote: \"have a visual analog scale (VAS) pain value ≥40 and <95 at screening\"; \"have a history of daily pain for at least 12 weeks\"; \"have a value of ≤30 on the pain catastrophizing scale\"; exclusion: \"have a history of alcohol, illicit drug, analgesic or narcotic use disorder within 2 years prior to screening\". Record read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nct06325566",
@@ -293,7 +293,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Mesoblast, Ltd.)",
       url: "https://clinicaltrials.gov/study/NCT06325566",
       year: "2026",
-      note: "Phase 3, status Active, not recruiting. Quote: \"Participants with moderate to severe low back pain for a duration of at least six months who have failed at least 3 months of conservative care\"; exclusions: \"Participants with severe depression or anxiety\" and \"Participants who received an epidural steroid injection within 6 weeks prior to informed consent\". Record read September 2026.",
+      note: "Phase 3, status Active, not recruiting. Quote: \"Participants with moderate to severe low back pain for a duration of at least six months who have failed at least 3 months of conservative care\"; exclusions: \"Participants with severe depression or anxiety\" and \"Participants who received an epidural steroid injection within 6 weeks prior to informed consent\". Record read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nct05968664",
@@ -301,7 +301,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (sponsor-investigator Ashwin Viswanathan, Baylor College of Medicine)",
       url: "https://clinicaltrials.gov/study/NCT05968664",
       year: "2024",
-      note: "Status Recruiting; record last updated November 22, 2024. Quote: \"Consumed an average total daily morphine equivalent of ≤200 mg during the 30 days prior to Screening.\" Record read September 2026.",
+      note: "Status Recruiting; record last updated November 22, 2024. Quote: \"Consumed an average total daily morphine equivalent of ≤200 mg during the 30 days prior to Screening.\" Record read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nct07507422",
@@ -309,7 +309,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Medtronic)",
       url: "https://clinicaltrials.gov/study/NCT07507422",
       year: "2026",
-      note: "Quote: inclusion \"Patient is on stable opioid dosage for 3 months prior to enrollment, if applicable\"; exclusion \"Has a current prescription of ≥90 morphine milligram equivalents (MME) per day\". Record read September 2026.",
+      note: "Quote: inclusion \"Patient is on stable opioid dosage for 3 months prior to enrollment, if applicable\"; exclusion \"Has a current prescription of ≥90 morphine milligram equivalents (MME) per day\". Record read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "best-trial-2025",
@@ -317,7 +317,7 @@ const page: SeoPage = {
       publisher: "Pain Medicine (Rowland B et al., BEST Trial, NIH HEAL BACPAC)",
       url: "https://academic.oup.com/painmedicine/article/26/11/758/8222744",
       year: "2025",
-      note: "Quote: \"We pre-screened 3140 potential participants, screened 1483 potential participants, enrolled 1019 participants, and randomized 805 participants in the BEST Trial.\" And: \"The most common reasons for pre-screen ineligibility were low PEG score (584/1408), a disqualifying medical condition (429/1408), back pain was not more severe than pain in other parts of the body (334/1408), or back pain for less than 3 months (204/1408)\". Also: \"We observed ratios of 3.9:1 and 1.8:1 for pre-screened and screened potential participants to those who were eventually randomized\"; \"All enrolled participants entered a 2-week run-in period\"; \"Seventy-two participants became ineligible during the run-in period, and 82 were lost to follow-up. The most common reasons for exclusion after the run-in period were lost to follow-up participants, failure to complete daily pain questionnaires, and failure to complete the BEST Trial educational modules.\" Full text checked via Europe PMC (PMC12585105) on September 23, 2026.",
+      note: "Quote: \"We pre-screened 3140 potential participants, screened 1483 potential participants, enrolled 1019 participants, and randomized 805 participants in the BEST Trial.\" And: \"The most common reasons for pre-screen ineligibility were low PEG score (584/1408), a disqualifying medical condition (429/1408), back pain was not more severe than pain in other parts of the body (334/1408), or back pain for less than 3 months (204/1408)\". Also: \"We observed ratios of 3.9:1 and 1.8:1 for pre-screened and screened potential participants to those who were eventually randomized\"; \"All enrolled participants entered a 2-week run-in period\"; \"Seventy-two participants became ineligible during the run-in period, and 82 were lost to follow-up. The most common reasons for exclusion after the run-in period were lost to follow-up participants, failure to complete daily pain questionnaires, and failure to complete the BEST Trial educational modules.\" Full text checked via Europe PMC (PMC12585105) on September 23, 2026; re-checked October 23, 2026.",
     },
     {
       id: "jacobsen-2023",
@@ -349,7 +349,7 @@ const page: SeoPage = {
       publisher: "Journal of Psychiatric Research (Humphreys K, Blodgett JC, Roberts LW)",
       url: "https://pubmed.ncbi.nlm.nih.gov/26424420/",
       year: "2015",
-      note: "Abstract checked via PubMed, PMID 26424420, on September 23, 2026. Quote: \"a sample of 400 highly-cited randomized trials (2002-2010) across 20 common chronic disorders... Half of all trials... reported possible or definite psychiatric exclusion criteria... Non-psychiatric conditions with high rates of reported psychiatric exclusion criteria included low back pain (75%), osteoarthritis (57%)\".",
+      note: "Abstract checked via PubMed, PMID 26424420, on September 23, 2026; re-checked October 23, 2026. Quote: \"a sample of 400 highly-cited randomized trials (2002-2010) across 20 common chronic disorders... Half of all trials... reported possible or definite psychiatric exclusion criteria... Non-psychiatric conditions with high rates of reported psychiatric exclusion criteria included low back pain (75%), osteoarthritis (57%)\".",
     },
     {
       id: "arnold-2026",
@@ -357,7 +357,7 @@ const page: SeoPage = {
       publisher: "PAIN (Arnold K, Al-Chalabi N, Mann M, et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/42153807/",
       year: "2026",
-      note: "Abstract checked via PubMed, PMID 42153807, on September 23, 2026. Quote: \"60% reported definite psychiatric exclusion criteria, 55% probable criteria, and 80% reported either or both.\" And: \"Substance-related disorders (38%) and depression (22%) were the most frequently specified exclusions\".",
+      note: "Abstract checked via PubMed, PMID 42153807, on September 23, 2026; re-checked October 23, 2026. Quote: \"60% reported definite psychiatric exclusion criteria, 55% probable criteria, and 80% reported either or both.\" And: \"Substance-related disorders (38%) and depression (22%) were the most frequently specified exclusions\".",
     },
     {
       id: "salmasi-2022",

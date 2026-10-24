@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type RefObject } from "react";
+import { useEffect, useEffectEvent, type RefObject } from "react";
 
 const FOCUSABLE =
   'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
@@ -11,8 +11,7 @@ const FOCUSABLE =
  * to whatever opened it, and the page behind does not scroll.
  */
 export function useDialog(open: boolean, panelRef: RefObject<HTMLElement | null>, onClose: () => void) {
-  const onCloseRef = useRef(onClose);
-  onCloseRef.current = onClose;
+  const close = useEffectEvent(onClose);
 
   useEffect(() => {
     if (!open) return;
@@ -29,7 +28,7 @@ export function useDialog(open: boolean, panelRef: RefObject<HTMLElement | null>
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         e.preventDefault();
-        onCloseRef.current();
+        close();
         return;
       }
       if (e.key !== "Tab" || !panel) return;

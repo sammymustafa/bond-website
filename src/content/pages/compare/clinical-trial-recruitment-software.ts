@@ -19,7 +19,7 @@ const page: SeoPage = {
   eyebrow: "Comparison",
   h1: "Clinical trial recruitment software, vendor by vendor",
   intro:
-    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform takes EHR matches and ad leads all the way to a booked study visit.{{cite:bond-site,bond-product}}",
+    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026 and re-checked in October 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform takes EHR matches and ad leads all the way to a booked study visit.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
   lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
@@ -47,7 +47,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The only vendor that covers the whole path to a booked visit",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
+          text: "As of October 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -66,11 +66,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Each row summarizes what the vendor says on its website or in press releases, or what reputable press reports, as accessed in September 2026. Bond's row comes from its website and product information, with a cite in each cell. A \"Yes\" means the vendor describes the capability; the [pilot steps](#evaluate) below show how to check it on your own protocols. \"Not publicly documented\" means we did not find it in the public materials we reviewed, not that the vendor lacks it, so ask the vendor.",
+          text: "Each row summarizes what the vendor says on its website or in press releases, or what reputable press reports, as re-checked in October 2026. Bond's row comes from its website and product information, with a cite in each cell. A \"Yes\" means the vendor describes the capability; the [pilot steps](#evaluate) below show how to check it on your own protocols. \"Not publicly documented\" means we did not find it in the public materials we reviewed, not that the vendor lacks it, so ask the vendor.",
         },
         {
           type: "table",
-          caption: "Recruitment workflow coverage by vendor, from public materials accessed September 2026",
+          caption: "Recruitment workflow coverage by vendor, from public materials re-checked October 2026",
           columns: ["Vendor", "Category", "EHR identification", "Unstructured notes", "Outreach (voice, SMS, other)", "Scheduling", "Consent"],
           rows: [
             [
@@ -94,7 +94,7 @@ const page: SeoPage = {
             ["Grove AI (part of Hippocratic AI since 2026)", "Engagement agent", "Not publicly documented", "Not publicly documented", "Voice, text and email", "Yes", "Not publicly documented{{cite:hippocratic-grove-2026,crn-grace-2025}}"],
             ["SubjectWell (now Clariness)", "Recruitment services", "Not publicly documented; draws on patient marketing and a large patient database", "Not publicly documented", "Patient marketing, the ClinLife patient portal and creative services", "Not publicly documented", "Not publicly documented{{cite:clariness-merger-2026}}"],
             ["Antidote", "Recruitment services", "Patients self-report via Match; EHR matching announced 2016; SEQSTER medical-history matching partnership (2024)", "Not publicly documented", "Digital marketing, a partner network and a patient-support contact center; prescreens before referral", "Not publicly documented", "Not publicly documented{{cite:antidote-sponsors,antidote-enterprise-match,antidote-rebrand-2016,antidote-seqster-2024,antidote-partners}}"],
-            ["1nHealth", "Recruitment services", "Direct-to-patient digital recruitment rather than patient databases", "Not publicly documented", "Online ads, several levels of pre-screening and automated SMS follow-ups", "Not publicly documented", "Not publicly documented{{cite:1nhealth-pharma}}"],
+            ["1nHealth", "Recruitment services", "Direct-to-patient digital recruitment rather than patient databases", "Not publicly documented", "Online ads, including on Facebook, Instagram and Google (2025), several levels of pre-screening and automated SMS follow-ups; for enrolled patients, an SMS agent and an AI voice agent (2026)", "For enrolled patients, its retention platform describes an AI voice agent that books visits and an SMS agent that reschedules (2026)", "One case study says it worked with the sponsor on the sponsor's online consent process (2025); patient-facing consent support: not publicly documented{{cite:1nhealth-pharma,1nhealth-colon-case,1nhealth-retention}}"],
             ["Power", "Recruitment services and patient community", "Checks community patients against the medical records they share, queried against the protocol's criteria; its provider tool uses AI to screen EMRs against full study protocols", "LLM review of medical records", "Calls, texts, emails, AI voice agents and an AI call center for after-hours coverage", "Appointment booking and travel coordination", "Patient-facing consent support: not publicly documented{{cite:power-sponsors-2026,power-providers-2026,power-grow-2026}}"],
             ["IQVIA", "CRO recruitment services", "AI-powered EMR data mining and protocol-specific patient models", "Chart review by IQVIA site enrollment staff", "Call centers and a marketing network of outreach partners", "Yes, through its Study Hub and Referral Hub", "eConsent and plain-language consent content{{cite:iqvia-recruitment}}"],
             ["Veeva SiteVault", "Site operations", "Not publicly documented", "Not publicly documented", "Not publicly documented", "Not publicly documented", "eConsent{{cite:veeva-sites-home}}"],
@@ -128,7 +128,7 @@ const page: SeoPage = {
         },
         {
           type: "table",
-          caption: "Focus, customers, integrations and pricing model, from public materials accessed September 2026",
+          caption: "Focus, customers, integrations and pricing model, from public materials re-checked October 2026",
           columns: ["Vendor", "Therapeutic focus", "Customer type", "EHR or CTMS integrations", "Pricing model (public)"],
           rows: [
             [
@@ -145,7 +145,7 @@ const page: SeoPage = {
             ["Inato", "Multiple; case studies in COPD, asthma, weight loss, oncology, cardiovascular disease and atopic dermatitis (2026)", "Research sites, sponsors, CROs", "Connectors for Epic, athenahealth, ModMed, eClinicalWorks, AdvancedMD, Office Ally, Practice Fusion and NextGen Enterprise; two-way syncs with the CRIO and eClinPro site CTMS", "AI pre-screening free for all sites (2026); revenue from participating sponsors (2024); no public sponsor prices{{cite:inato-case-studies-2026,inato-launch-2025,inato-connections-2026,inato-prescreening-faq-2026,inato-free-2024}}"],
             ["Oracle Patient Recruitment", "Not publicly documented", "Life sciences companies; informs study teams in health systems", "Oracle Health Data Intelligence over the EHR", "No public price list found{{cite:oracle-2024}}"],
             ["Epic (Life Sciences, Cosmos)", "Not publicly documented", "Epic customers; sponsors via Discovery, its life sciences platform", "Native to Epic", "No public price list found{{cite:epic-2022,epic-life-sciences}}"],
-            ["Alleviate Health", "Configured per study; says its workflows suit every indication (2026)", "Sites and site networks", "Calendar syncing through Google Workspace; a 2025 job post describes integrating with trial sites' existing tools; no EHR or CTMS vendor named", "No public price list found{{cite:alleviate-home,alleviate-privacy-2025,alleviate-job-engineer-2025}}"],
+            ["Alleviate Health", "Configured per study; says its workflows suit every indication (2026)", "Sites and site networks", "Calendar syncing through Google Workspace; a 2025 job post describes integrating with trial sites' existing tools; no EHR or CTMS vendor named", "No public price list found{{cite:alleviate-home,alleviate-privacy-2025,alleviate-job-engineer-2025,alleviate-job-account-manager-2026}}"],
             ["Hippocratic AI", "Not publicly documented", "Providers, payors, life sciences and med tech (2026)", "Pulls lists from and writes outcomes to an EHR or CRM", "Not published; scales with volume and use case{{cite:hippocratic-home,hippocratic-agents}}"],
             ["Grove AI", "Not publicly documented", "Pharma, CROs, sites", "Not publicly documented", "Software as a service; no public prices{{cite:medcity-grove-2026}}"],
             ["SubjectWell (now Clariness)", "Many indications, combined with Clariness", "Sponsors, CROs, sites", "Not publicly documented", "SubjectWell in 2023: paid only for patients who randomize. Current Clariness terms: not publicly documented{{cite:clariness-merger-2026,subjectwell-recruit-2023}}"],
@@ -170,7 +170,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "In the first table, most vendors' public materials cover part of the path from chart to booked visit and consent. Here is the work each kind of tool leaves with your coordinators, based on those materials as of September 2026.",
+          text: "In the first table, most vendors' public materials cover part of the path from chart to booked visit and consent. Here is the work each kind of tool leaves with your coordinators, based on those materials as of October 2026.",
         },
         { type: "h3", text: "EHR matching tools leave outreach, scheduling and consent" },
         {
@@ -185,7 +185,7 @@ const page: SeoPage = {
         { type: "h3", text: "Media and recruitment services leave the work after the referral" },
         {
           type: "p",
-          text: "Media recruiters, patient networks and call centers send referrals, often people who found a study online and answered eligibility questions themselves. 1nHealth, Antidote, IQVIA and Power describe pre-screening before referral, and Power also describes appointment booking and travel coordination.{{cite:1nhealth-pharma,antidote-enterprise-match,antidote-sponsors,iqvia-recruitment,power-sponsors-2026}} What these services leave to your team is the work after the referral: calling each self-referral, screening them against the full protocol, often without having seen their chart, and booking the ones who qualify. IQVIA also describes call center support, plus scheduling through its Study Hub and Referral Hub; for 1nHealth, Antidote and SubjectWell (now Clariness), scheduling is not publicly documented.{{cite:iqvia-recruitment,clariness-merger-2026}} Bond covers both paths to patients: it finds them in your EHR, and it creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS agents contact every ad lead immediately, keep following up until they respond, and pre-screen and schedule them alongside EHR matches, so both go through the same workflow to a booked visit and on to consent.{{cite:bond-site,bond-product}} The same agents can also pre-screen and schedule the referrals, ad leads and registry contacts the site already has.{{cite:bond-site}} See [Bond vs media recruitment](/compare/bond-vs-media-recruitment) and [Bond vs Power](/compare/bond-vs-power).",
+          text: "Media recruiters, patient networks and call centers send referrals, often people who found a study online and answered eligibility questions themselves. 1nHealth, Antidote, IQVIA and Power describe pre-screening before referral, and Power also describes appointment booking and travel coordination.{{cite:1nhealth-pharma,antidote-enterprise-match,antidote-sponsors,iqvia-recruitment,power-sponsors-2026}} What these services leave to your team is the work after the referral: calling each self-referral, screening them against the full protocol, often without having seen their chart, and booking the ones who qualify. IQVIA also describes call center support, plus scheduling through its Study Hub and Referral Hub; 1nHealth describes an AI voice agent that books visits for patients already enrolled, and for Antidote and SubjectWell (now Clariness), scheduling is not publicly documented.{{cite:iqvia-recruitment,1nhealth-retention,clariness-merger-2026}} Bond covers both paths to patients: it finds them in your EHR, and it creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS agents contact every ad lead immediately, keep following up until they respond, and pre-screen and schedule them alongside EHR matches, so both go through the same workflow to a booked visit and on to consent.{{cite:bond-site,bond-product}} The same agents can also pre-screen and schedule the referrals, ad leads and registry contacts the site already has.{{cite:bond-site}} See [Bond vs media recruitment](/compare/bond-vs-media-recruitment) and [Bond vs Power](/compare/bond-vs-power).",
         },
         { type: "h3", text: "Site operations platforms leave finding and contacting patients" },
         {
@@ -269,7 +269,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "We read vendor websites, press releases, trade press and partner coverage, and one vendor job post on September 21 to 23, 2026, using archived copies where a live page did not load, and cite a source for every vendor row. Facts about Bond come from Bond's website, its public Trust Center, its presentations and its product information. We did not test any other vendor's product, and the list is not exhaustive. Several of these companies have been acquired or merged since 2024, so details change. If anything here is wrong or out of date, email [hello@bondtrials.com](mailto:hello@bondtrials.com) and we will correct it.",
+          text: "We read vendor websites, press releases, trade press and partner coverage, and vendor job posts in September 2026, re-checked every vendor row against those sources on October 23, 2026, used archived copies where a live page did not load, and cite a source for every vendor row. Facts about Bond come from Bond's website, its public Trust Center, its presentations and its product information. We did not test any other vendor's product, and the list is not exhaustive. Several of these companies have been acquired or merged since 2024, so details change. If anything here is wrong or out of date, email [hello@bondtrials.com](mailto:hello@bondtrials.com) and we will correct it.",
         },
         {
           type: "cta",
@@ -285,7 +285,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Which vendor offers the best workflow-integrated recruitment for clinical trials?",
-      a: "Bond Health. As of September 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow with part of the price tied to randomization.{{cite:bond-site}}",
+      a: "Bond Health. As of October 2026, Bond is the only vendor in our [comparison table](#capabilities) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Bond finds eligible patients in the site's EHR, contacts, pre-screens and books them for study visits by voice and text, then supports informed consent, in one workflow with part of the price tied to randomization.{{cite:bond-site}}",
     },
     {
       q: "What technology can pull eligible trial candidates directly from patient records?",
@@ -305,7 +305,7 @@ const page: SeoPage = {
     },
     {
       q: "Is our EHR vendor's research tool enough?",
-      a: "Epic supports recruiting and consent inside Epic, and its page describes health systems contacting candidates through MyChart recruitment messages. Oracle tells study teams which patients may be eligible, with an eligibility score and the reasons.{{cite:epic-life-sciences,oracle-2024}} Neither page we reviewed describes automated voice calls or SMS pre-screening (September 2026). Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator, then finds, contacts, pre-screens and schedules patients and supports consent in one workflow.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
+      a: "Epic supports recruiting and consent inside Epic, and its page describes health systems contacting candidates through MyChart recruitment messages. Oracle tells study teams which patients may be eligible, with an eligibility score and the reasons.{{cite:epic-life-sciences,oracle-2024}} Neither page we reviewed describes automated voice calls or SMS pre-screening (October 2026). Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator, then finds, contacts, pre-screens and schedules patients and supports consent in one workflow.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
     },
     {
       q: "Can Bond work with the CTMS we already use?",
@@ -334,7 +334,7 @@ const page: SeoPage = {
       publisher: "Bond Health, monitored by Vanta",
       url: "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj",
       year: "2026",
-      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026.",
+      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026; re-checked October 23, 2026.",
     },
     {
       id: "bond-acrp-talk",
@@ -349,7 +349,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/",
       year: "2026",
-      note: "Homepage accessed September 22, 2026. The page describes pre-built connectors to EHRs, CTMS, CRM or lists. Products listed: Trially Match, Trially Connect, Trially Intelligence. The \"Who benefits\" section lists sponsors and CROs, research sites and hospitals. The site footer says all information presented is for illustrative purposes only.",
+      note: "Homepage accessed September 22, 2026; re-checked October 23, 2026. The page describes pre-built connectors to EHRs, CTMS, CRM or lists. Products listed: Trially Match, Trially Connect, Trially Intelligence. The \"Who benefits\" section lists sponsors and CROs, research sites and hospitals. The site footer says all information presented is for illustrative purposes only.",
     },
     {
       id: "trially-faq-ehr",
@@ -357,7 +357,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/which-electronic-health-systems-(ehr)-systems-does-trially-integrate-with-how-long-does-that-take",
       year: "2026",
-      note: "Accessed September 22, 2026. Quote: \"Trially connects with the systems sites already use - including Epic, Carequality, Practice Fusion, ModMed, NextGen Healthcare, Oracle Health/Cerner, eClinicalWorks, Veradigm, athenahealth, and more.\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Quote: \"Trially connects with the systems sites already use - including Epic, Carequality, Practice Fusion, ModMed, NextGen Healthcare, Oracle Health/Cerner, eClinicalWorks, Veradigm, athenahealth, and more.\"",
     },
     {
       id: "trially-ai-faq",
@@ -365,7 +365,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/what-kind-of-ai-technology-does-trially-use",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Trially is built on a native LLM (Large Language Model) and NLP (Natural Language Processing) architecture, capable of analyzing both structured and unstructured EHR data to determine eligibility with high precision in minutes, not days.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Trially is built on a native LLM (Large Language Model) and NLP (Natural Language Processing) architecture, capable of analyzing both structured and unstructured EHR data to determine eligibility with high precision in minutes, not days.\"",
     },
     {
       id: "trially-connect",
@@ -373,7 +373,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/solution-connect",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Margo reactivates and engages dormant patient populations with voice call, text and email to build your trial-ready population.\" Also: \"Qualify patients for trials with automated pre-screening, scheduling and engagement.\" and \"Apts & Reminders: Scheduling through call, email, SMS.\" We found no description of consent support on the page.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Margo reactivates and engages dormant patient populations with voice call, text and email to build your trial-ready population.\" Also: \"Qualify patients for trials with automated pre-screening, scheduling and engagement.\" and \"Apts & Reminders: Scheduling through call, email, SMS.\" We found no description of consent support on the page.",
     },
     {
       id: "trially-trial-types",
@@ -381,7 +381,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/what-types-of-trials-can-trially-support",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Trially supports all phases of clinical trials across multiple therapeutic areas\"; the FAQ gives the range as cardiovascular to oncology to rare diseases.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Trially supports all phases of clinical trials across multiple therapeutic areas\"; the FAQ gives the range as cardiovascular to oncology to rare diseases.",
     },
     {
       id: "trially-crm-faq",
@@ -389,7 +389,7 @@ const page: SeoPage = {
       publisher: "Trially",
       url: "https://www.trially.ai/faq/which-crm-systems-does-trially-integrate-with-how-long-does-that-take",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Trially can integrate with any CRM or CTMS system including (but not limited to): Salesforce, Hubspot, CRIO, RealtimeCTMS and more.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Trially can integrate with any CRM or CTMS system including (but not limited to): Salesforce, Hubspot, CRIO, RealtimeCTMS and more.\"",
     },
     {
       id: "trially-crio-webinar",
@@ -405,7 +405,7 @@ const page: SeoPage = {
       publisher: "Tempus AI, Inc. press release (republished by MemorialCare Innovation Fund)",
       url: "https://memorialcareinnovationfund.com/tempus-announces-acquisition-of-deep-6-ai/",
       year: "2025",
-      note: "Press release dated March 11, 2025, accessed September 2026. Quote: \"announced it has acquired Deep 6 AI, a leading AI-powered precision research platform for healthcare organizations and life sciences companies.\" The release also says Deep 6 AI is integrated with provider site locations.",
+      note: "Press release dated March 11, 2025, accessed September 2026; re-checked October 23, 2026. Quote: \"announced it has acquired Deep 6 AI, a leading AI-powered precision research platform for healthcare organizations and life sciences companies.\" The release also says Deep 6 AI is integrated with provider site locations.",
     },
     {
       id: "deep6-ttuhsc-2023",
@@ -427,9 +427,9 @@ const page: SeoPage = {
       id: "tempus-ttct-2026",
       title: "Clinical Trials for Patients | Tempus TIME",
       publisher: "Tempus AI, Inc. (tempus.com)",
-      url: "https://www.tempus.com/ttct/",
+      url: "https://www.tempus.com/patients-clinical-trials/",
       year: "2026",
-      note: "Read from the Internet Archive copy of March 16, 2026 (https://web.archive.org/web/20260316114747/https://www.tempus.com/ttct/) because tempus.com returned HTTP 429 when checked in September 2026. Quotes: \"A Tempus Nurse Navigator will contact you within 1 business day to share information about trials in our network that may be a match for you\" and \"The cancer clinical trials in the TIME program cover various cancer types, cancer stages, and biomarkers.\"",
+      note: "Read on tempus.com October 23, 2026. The page moved from https://www.tempus.com/ttct/, which we read in September 2026 from the Internet Archive copy of March 16, 2026 because tempus.com returned HTTP 429. Quotes: \"A Tempus Nurse Navigator will contact you within 1 business day to share information about trials in our network that may be a match for you\" and \"The cancer clinical trials in the TIME program cover various cancer types, cancer stages, and biomarkers.\"",
     },
     {
       id: "deep6-cassidy-2024",
@@ -445,7 +445,7 @@ const page: SeoPage = {
       publisher: "Triomics",
       url: "https://triomics.com/",
       year: "2026",
-      note: "Accessed September 2026, most recently September 23, 2026. Quotes: \"Built for cancer care's complexity\"; \"HL7, FHIR, CCDA, PDF, TIFF, JPEG, ingested and normalized natively. Live inside EMRs such as Epic, OncoEMR and iKnowMed. Approved on the Epic App Marketplace.\" and \"Every patient on the schedule is matched against every active trial, every day of the week.\" No pricing appears on the page.",
+      note: "Accessed September 2026, most recently September 23, 2026; re-checked October 23, 2026. Quotes: \"Built for cancer care's complexity\"; \"HL7, FHIR, CCDA, PDF, TIFF, JPEG, ingested and normalized natively. Live inside EMRs such as Epic, OncoEMR and iKnowMed. Approved on the Epic App Marketplace.\" and \"Every patient on the schedule is matched against every active trial, every day of the week.\" No pricing appears on the page.",
     },
     {
       id: "mendel-google-2024",
@@ -453,7 +453,7 @@ const page: SeoPage = {
       publisher: "Google Cloud Blog (Transform)",
       url: "https://cloud.google.com/transform/gen-ai-medical-records-solutions-llms-mendel",
       year: "2024",
-      note: "Published July 25, 2024, by Sumeet Ranu and Matt A.V. Chaban; accessed September 23, 2026. Quotes: \"They achieve this by structuring the complex world of unstructured clinical data, reconciling conflicting information, and generating comprehensive patient journeys.\"; Hypercube Charts: \"Chat with medical records through a user-friendly interface with sophisticated clinical reasoning to complete chart reviews for visits, pre-authorization, trial matching and more\".",
+      note: "Published July 25, 2024, by Sumeet Ranu and Matt A.V. Chaban; accessed September 23, 2026; re-checked October 23, 2026. Quotes: \"They achieve this by structuring the complex world of unstructured clinical data, reconciling conflicting information, and generating comprehensive patient journeys.\"; Hypercube Charts: \"Chat with medical records through a user-friendly interface with sophisticated clinical reasoning to complete chart reviews for visits, pre-authorization, trial matching and more\".",
     },
     {
       id: "mendel-meta-2025",
@@ -461,7 +461,7 @@ const page: SeoPage = {
       publisher: "Meta AI (blog)",
       url: "https://ai.meta.com/blog/mendel-ai-accelerating-clinical-trials-with-llama/",
       year: "2025",
-      note: "Published February 19, 2025, accessed September 2026. Quotes: \"Mendel Hypercube, tackles clinical tasks like data abstraction, chart reviews, and patient cohort analysis.\" and \"With Llama, Hypercube can also be used to chat and query in natural language for trial matching and putting together patient groups.\" Mendel's own website did not load when we checked in September and October 2026.",
+      note: "Published February 19, 2025, accessed September 2026; re-checked October 23, 2026. Quotes: \"Mendel Hypercube, tackles clinical tasks like data abstraction, chart reviews, and patient cohort analysis.\" and \"With Llama, Hypercube can also be used to chat and query in natural language for trial matching and putting together patient groups.\" Mendel's own website did not load when we checked in September and October 2026.",
     },
     {
       id: "oak-mendel",
@@ -478,7 +478,7 @@ const page: SeoPage = {
       publisher: "Inato",
       url: "https://www.inato.com/",
       year: "2026",
-      note: "Accessed September 24, 2026. Quote: \"Inato unites sponsors, research sites, and patients through one AI-powered platform, expanding access, increasing efficiency, and bringing life-changing treatments to more communities around the world.\" The platform section has three tabs, \"Early planning\", \"Site selection\" and \"AI Pre-screening\", with the lines \"Optimize across your portfolio with insights from sites who can deliver on your trials.\" and \"Reduce site burden and accelerate patient enrollment by using AI to automate chart review and pre-screening.\"",
+      note: "Accessed September 24, 2026; re-checked October 23, 2026. Quote: \"Inato unites sponsors, research sites, and patients through one AI-powered platform, expanding access, increasing efficiency, and bringing life-changing treatments to more communities around the world.\" The platform section has three tabs, \"Early planning\", \"Site selection\" and \"AI Pre-screening\", with the lines \"Optimize across your portfolio with insights from sites who can deliver on your trials.\" and \"Reduce site burden and accelerate patient enrollment by using AI to automate chart review and pre-screening.\"",
     },
     {
       id: "inato-prescreening-2026",
@@ -486,7 +486,7 @@ const page: SeoPage = {
       publisher: "Inato",
       url: "https://www.inato.com/patient-pre-screening",
       year: "2026",
-      note: "Accessed September 24, 2026. Under \"How do you want to upload patients?\" the page lists \"Upload PDF patient records\", \"Import patients from EHR\" and \"Import patients from CTMS\". Quotes: \"Designed around your workflow. Connect your EHR or CTMS, or simply upload PDFs.\" \"Track every candidate across studies, ranked by eligibility. Connect your CTMS for a fully streamlined workflow that lets site staff focus on the patients who matter.\"",
+      note: "Accessed September 24, 2026; re-checked October 23, 2026. Under \"How do you want to upload patients?\" the page lists \"Upload PDF patient records\", \"Import patients from EHR\" and \"Import patients from CTMS\". Quotes: \"Designed around your workflow. Connect your EHR or CTMS, or simply upload PDFs.\" \"Track every candidate across studies, ranked by eligibility. Connect your CTMS for a fully streamlined workflow that lets site staff focus on the patients who matter.\"",
     },
     {
       id: "inato-prescreening-faq-2026",
@@ -494,7 +494,7 @@ const page: SeoPage = {
       publisher: "Inato",
       url: "https://marketplace.inato.com/prescreening",
       year: "2026",
-      note: "Accessed September 24, 2026. The page's button reads \"Start pre-screening for free\". Quote from its FAQ: \"Is this really free? Yes, today, this is free for all sites\".",
+      note: "Accessed September 24, 2026; re-checked October 23, 2026. The page's button reads \"Start pre-screening for free\". Quote from its FAQ: \"Is this really free? Yes, today, this is free for all sites\".",
     },
     {
       id: "inato-ehr-2025",
@@ -502,7 +502,7 @@ const page: SeoPage = {
       publisher: "Inato blog",
       url: "https://www.inato.com/blogs/ehr-integration",
       year: "2025",
-      note: "Published November 14, 2025; accessed September 24, 2026. Quotes: \"The AI analyzes patient records against the full list of inclusion and exclusion criteria for all relevant trials at a site and provides an explanation and a source for each criterion\" and \"our tool can understand unstructured data in patient notes to determine whether or not a patient meets the diagnostic and demographic criteria for a trial.\" \"Get a prioritized list of pre-screened patients, from most likely to least likely to qualify\".",
+      note: "Published November 14, 2025; accessed September 24, 2026; re-checked October 23, 2026. Quotes: \"The AI analyzes patient records against the full list of inclusion and exclusion criteria for all relevant trials at a site and provides an explanation and a source for each criterion\" and \"our tool can understand unstructured data in patient notes to determine whether or not a patient meets the diagnostic and demographic criteria for a trial.\" \"Get a prioritized list of pre-screened patients, from most likely to least likely to qualify\".",
     },
     {
       id: "inato-launch-2025",
@@ -510,7 +510,7 @@ const page: SeoPage = {
       publisher: "Inato via PR Newswire",
       url: "https://www.prnewswire.com/news-releases/inato-launches-ai-powered-patient-pre-screening-to-reduce-site-burden-and-accelerate-enrollment-302361384.html",
       year: "2025",
-      note: "Press release dated January 28, 2025; accessed September 24, 2026. Quotes: \"This blend of models is capable of sophisticated medical reasoning and deduction, time-bound assessments, and understanding handwriting.\" From its About section: \"The global technology company combines trial planning, site selection, and patient pre-screening into a single AI-enabled platform to transform the way research sites, sponsors, and CROs work together to advance medical research.\"",
+      note: "Press release dated January 28, 2025; accessed September 24, 2026; re-checked October 23, 2026. Quotes: \"This blend of models is capable of sophisticated medical reasoning and deduction, time-bound assessments, and understanding handwriting.\" From its About section: \"The global technology company combines trial planning, site selection, and patient pre-screening into a single AI-enabled platform to transform the way research sites, sponsors, and CROs work together to advance medical research.\"",
     },
     {
       id: "inato-eclinpro-2026",
@@ -518,7 +518,7 @@ const page: SeoPage = {
       publisher: "Inato blog",
       url: "https://www.inato.com/blogs/inato-integrates-with-eclinpro-to-streamline-patient-screening-and-enrollment",
       year: "2026",
-      note: "Published April 15, 2026; accessed September 24, 2026. Quote: \"Send ready-to-screen patients on to eClinPro with a single click to easily manage outreach and next steps\".",
+      note: "Published April 15, 2026; accessed September 24, 2026; re-checked October 23, 2026. Quote: \"Send ready-to-screen patients on to eClinPro with a single click to easily manage outreach and next steps\".",
     },
     {
       id: "inato-connections-2026",
@@ -526,7 +526,7 @@ const page: SeoPage = {
       publisher: "Inato",
       url: "https://support.inato.com/connections",
       year: "2026",
-      note: "Accessed September 24, 2026. Quote: \"Integrate your EHR, CTMS, or bulk data exports directly into the platform\". Connectors listed: Athena, ModMed, CRIO, eClinicalWorks, AdvancedMD, Office Ally, Epic, eClinPro, Practice Fusion and NextGen Enterprise. The CRIO and eClinPro entries describe a \"two-way sync\".",
+      note: "Accessed September 24, 2026. Re-checked October 23, 2026. Quote: \"Integrate your EHR, CTMS, or bulk data exports directly into the platform\". Connectors listed: Athena, ModMed, CRIO, eClinicalWorks, AdvancedMD, Office Ally, Epic, eClinPro, Practice Fusion and NextGen Enterprise. The page offers a \"Bi-Directional CTMS Sync\", and the CRIO and eClinPro connector pages (https://support.inato.com/connections/crio and https://support.inato.com/connections/eclinpro) each describe a \"two-way sync\".",
     },
     {
       id: "inato-free-2024",
@@ -534,7 +534,7 @@ const page: SeoPage = {
       publisher: "Inato blog",
       url: "https://blog.inato.com/blog/disrupting-clinical-trials-with-inatos-free-marketplace-for-sites",
       year: "2024",
-      note: "Published January 25, 2024; accessed September 24, 2026. Quote: \"Liz emphasized that there is no catch: Inato is always free for sites. (To understand this works, check out the recording where Liz shared more details on how they generate revenue from participating sponsors.)\"",
+      note: "Published January 25, 2024; accessed September 24, 2026; re-checked October 23, 2026. Quote: \"Liz emphasized that there is no catch: Inato is always free for sites. (To understand this works, check out the recording where Liz shared more details on how they generate revenue from participating sponsors.)\"",
     },
     {
       id: "inato-case-studies-2026",
@@ -542,7 +542,7 @@ const page: SeoPage = {
       publisher: "Inato",
       url: "https://www.inato.com/case-studies",
       year: "2026",
-      note: "Accessed September 24, 2026. The page lists case studies in COPD, weight loss, asthma, oncology, cardiovascular disease and atopic dermatitis.",
+      note: "Accessed September 24, 2026; re-checked October 23, 2026. The page lists case studies in COPD, weight loss, asthma, oncology, cardiovascular disease and atopic dermatitis.",
     },
     {
       id: "oracle-2024",
@@ -566,7 +566,7 @@ const page: SeoPage = {
       publisher: "Epic",
       url: "https://www.epic.com/software/life-sciences/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Epic integrates clinical care and research by giving researchers the ability to explore study feasibility, organize studies, recruit participants, collect consents, track patient-reported outcomes, and more.\" Also: \"Patients use MyChart to indicate interest in participating in research.\"; \"Yale New Haven Health (YNHH) made participation in clinical trials more accessible by hosting research profiles in MyChart and reaching out directly to patients who could be candidates for specific studies.\"; \"The response rate to MyChart recruitment messages was 7.8%\" (Cleveland Clinic); and \"Discovery, Epic's life sciences platform, builds on the research toolset.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Epic integrates clinical care and research by giving researchers the ability to explore study feasibility, organize studies, recruit participants, collect consents, track patient-reported outcomes, and more.\" Also: \"Patients use MyChart to indicate interest in participating in research.\"; \"Yale New Haven Health (YNHH) made participation in clinical trials more accessible by hosting research profiles in MyChart and reaching out directly to patients who could be candidates for specific studies.\"; \"The response rate to MyChart recruitment messages was 7.8%\" (Cleveland Clinic); and \"Discovery, Epic's life sciences platform, builds on the research toolset.\"",
     },
     {
       id: "alleviate-home",
@@ -574,7 +574,7 @@ const page: SeoPage = {
       publisher: "Alleviate Health",
       url: "https://alleviatehealth.care/",
       year: "2026",
-      note: "Accessed September 21 to 23, 2026. Quotes: \"SMS Conduct pre-screening conversations via SMS before booking an on-site visit or call with CRC.\"; \"Warm-Transfer Pre-screen a patient via AI Voice Call before you transfer it to a human recruiter.\"; \"Voice-AI Pre-Screen participants via Voice AI before booking them for an on-site visit.\"; \"We then setup your study end-to-end with messaging optimized for your lead sources and indication.\"; \"The best AI workflows for every indication, study requirement, and site-specific need\"; an example result is labeled \"New Facebook Leads\". No pricing appears on the page.",
+      note: "Accessed September 21 to 23, 2026; re-checked October 23, 2026. Quotes: \"SMS Conduct pre-screening conversations via SMS before booking an on-site visit or call with CRC.\"; \"Warm-Transfer Pre-screen a patient via AI Voice Call before you transfer it to a human recruiter.\"; \"Voice-AI Pre-Screen participants via Voice AI before booking them for an on-site visit.\"; \"We then setup your study end-to-end with messaging optimized for your lead sources and indication.\"; \"The best AI workflows for every indication, study requirement, and site-specific need\"; an example result is labeled \"New Facebook Leads\"; and \"Helping research sites do more with less\". No pricing appears on the page.",
     },
     {
       id: "alleviate-privacy-2025",
@@ -582,7 +582,7 @@ const page: SeoPage = {
       publisher: "Alleviate Health",
       url: "https://alleviatehealth.care/privacy",
       year: "2025",
-      note: "Effective May 5, 2025; accessed September 23, 2026. Quote: \"Alleviate Health integrates with Google Workspace APIs only for functionality explicitly requested by users, such as calendar syncing or secure sign-in.\"",
+      note: "Effective May 5, 2025; accessed September 23, 2026; re-checked October 23, 2026. Quote: \"Alleviate Health integrates with Google Workspace APIs only for functionality explicitly requested by users, such as calendar syncing or secure sign-in.\"",
     },
     {
       id: "alleviate-job-engineer-2025",
@@ -590,7 +590,15 @@ const page: SeoPage = {
       publisher: "Alleviate Health (Ashby job board)",
       url: "https://jobs.ashbyhq.com/alleviatehealth/eb87c8f4-5a49-42df-a220-d07002c3dc2a",
       year: "2025",
-      note: "Posted October 13, 2025. Read September 23, 2026 through Ashby's public job-board feed (https://api.ashbyhq.com/posting-api/job-board/alleviatehealth). Under \"What you might work on\": \"Reverse engineering legacy healthcare systems that don't have public APIs to integrate with trial sites' existing tool stack.\"",
+      note: "Posted October 13, 2025. Read September 23, 2026, and re-checked October 23, 2026, through Ashby's public job-board feed (https://api.ashbyhq.com/posting-api/job-board/alleviatehealth). Under \"What you might work on\": \"Reverse engineering legacy healthcare systems that don't have public APIs to integrate with trial sites' existing tool stack.\"",
+    },
+    {
+      id: "alleviate-job-account-manager-2026",
+      title: "Account Manager job posting",
+      publisher: "Alleviate Health (Ashby job board)",
+      url: "https://jobs.ashbyhq.com/alleviatehealth/4d9bda63-06e6-419c-ba9b-61527c5da70a",
+      year: "2026",
+      note: "Posted May 3, 2026. Read October 23, 2026 through Ashby's public job-board feed (https://api.ashbyhq.com/posting-api/job-board/alleviatehealth). Quote: \"Drive expansion through new studies under master agreements, additional sites onboarded within networks, and adoption of new products, including AI voice, SMS, and more\".",
     },
     {
       id: "hippocratic-enrollment",
@@ -598,7 +606,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/ai-trial-enrollment/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"It calls every candidate the feasibility model surfaced, walks the I/E criteria conversationally\"; \"Every referral, registry hit, and campaign response gets same-day follow-up.\"; \"Mass pre-screening outreach against inclusion/exclusion criteria with non-linear intake and ambiguous-answer clarification\"; \"consent education; visit scheduling and live transfer to site coordinators\". The page also lists a 24/7 inbound trial-inquiry line. It does not say what data the feasibility model uses.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"It calls every candidate the feasibility model surfaced, walks the I/E criteria conversationally\"; \"Every referral, registry hit, and campaign response gets same-day follow-up.\"; \"Mass pre-screening outreach against inclusion/exclusion criteria with non-linear intake and ambiguous-answer clarification\"; \"consent education; visit scheduling and live transfer to site coordinators\". The page also lists a 24/7 inbound trial-inquiry line. It does not say what data the feasibility model uses.",
     },
     {
       id: "hippocratic-agents",
@@ -606,7 +614,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/ai-agents-that-call-your-patients/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Pull the cohort from your EHR/CRM\"; \"Agents pull the target population from your systems and write outcomes back\" (answer to \"Will it integrate with our EHR / CRM?\"); and \"Pricing scales with volume and use case.\" No EHR or CTMS vendors are named.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Pull the cohort from your EHR/CRM\"; \"Agents pull the target population from your systems and write outcomes back\" (answer to \"Will it integrate with our EHR / CRM?\"); and \"Pricing scales with volume and use case.\" No EHR or CTMS vendors are named.",
     },
     {
       id: "hippocratic-home",
@@ -614,7 +622,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/",
       year: "2026",
-      note: "Accessed September 23, 2026. The products menu groups products under \"Provider\", \"Payor\" and \"Life Sciences\", including a Med Tech group, and lists \"AI Trial Enrollment\" and \"AI Trial Retention\" among the Life Sciences products.",
+      note: "Accessed September 23, 2026; re-checked October 23, 2026. The products menu groups products under \"Provider\", \"Payor\" and \"Life Sciences\", including a Med Tech group, and lists \"AI Trial Enrollment\" and \"AI Trial Retention\" among the Life Sciences products.",
     },
     {
       id: "hippocratic-grove-2026",
@@ -630,7 +638,7 @@ const page: SeoPage = {
       publisher: "Clinical Research News (Deborah Borfitz)",
       url: "https://www.clinicalresearchnewsonline.com/news/2025/06/17/ai-agent-speeds-up-trials-with-instant-personalized-participant-interactions",
       year: "2025",
-      note: "Article dated June 17, 2025, about Grove AI's agent Grace; accessed September 23, 2026. Quote: \"The communications include phone calls, text messages, and emails to accomplish tasks such as screening participants and then making and reminding individuals about their on-site screening appointments.\"",
+      note: "Article dated June 17, 2025, about Grove AI's agent Grace; accessed September 23, 2026; re-checked October 23, 2026. Quote: \"The communications include phone calls, text messages, and emails to accomplish tasks such as screening participants and then making and reminding individuals about their on-site screening appointments.\"",
     },
     {
       id: "medcity-grove-2026",
@@ -646,7 +654,7 @@ const page: SeoPage = {
       publisher: "Clariness and SubjectWell (PR Newswire)",
       url: "https://www.prnewswire.com/news-releases/clariness-and-subjectwell-merge-to-form-global-full-service-patient-recruitment-platform-302670793.html",
       year: "2026",
-      note: "Press release dated January 27, 2026. Quotes: \"The combined organization will operate under the Clariness name.\"; the combined company brings \"best-in-class patient marketing, one of the largest patient databases in the world, full-service creative capabilities, and purpose-built technology\"; and its patient portal is \"ClinLife\". Customers are described as biopharma sponsors, CROs and study sites. It does not describe pricing, scheduling or EHR data access, and the Clariness homepage we checked in September 2026 shows no pricing.",
+      note: "Press release dated January 27, 2026. Quotes: \"The combined organization will operate under the Clariness name.\"; the combined company brings \"best-in-class patient marketing, one of the largest patient databases in the world, full-service creative capabilities, and purpose-built technology\"; and its patient portal is \"ClinLife\". Customers are described as biopharma sponsors, CROs and study sites. It does not describe pricing, scheduling or EHR data access, and the Clariness homepage we checked in September 2026 and re-checked on October 23, 2026 shows no pricing.",
     },
     {
       id: "subjectwell-recruit-2023",
@@ -662,7 +670,7 @@ const page: SeoPage = {
       publisher: "Antidote Technologies",
       url: "https://www.antidote.me/sponsors",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"We thoroughly prescreen patients before referring them\"; \"Our payment model is a risk-sharing one that aligns your objectives\". Undated case highlights cover a UK asthma study, a US Alzheimer's study, a global psoriasis study and a North American COPD study.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"We thoroughly prescreen patients before referring them\"; \"Our payment model is a risk-sharing one that aligns your objectives\". Undated case highlights cover a UK asthma study, a US Alzheimer's study, a global psoriasis study and a North American COPD study.",
     },
     {
       id: "antidote-enterprise-match",
@@ -670,7 +678,7 @@ const page: SeoPage = {
       publisher: "Antidote Technologies",
       url: "https://www.antidote.me/sponsors/enterprise-match",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Enterprise Match is a SaaS offering that provides an accurate, patient-friendly search of all the trials you're running, right on your company's website.\" Patients answer eligibility questions themselves.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Enterprise Match is a SaaS offering that provides an accurate, patient-friendly search of all the trials you're running, right on your company's website.\" and \"Make it as easy as possible for patients to match to your trials\". Antidote's patient page (https://www.antidote.me/patients) adds: \"You can also fill out your profile here to sign up for alerts from Antidote when new trials match your profile.\"",
     },
     {
       id: "antidote-rebrand-2016",
@@ -686,7 +694,7 @@ const page: SeoPage = {
       publisher: "Antidote Technologies",
       url: "https://www.antidote.me/partners",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"A precision recruitment company that connects patients with research and educational resources through digital marketing and our partner network.\" For partners: \"Receive free, dynamic content for your site that requires no expertise to install or use\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"A precision recruitment company that connects patients with research and educational resources through digital marketing and our partner network.\" For partners: \"Receive free, dynamic content for your site that requires no expertise to install or use\".",
     },
     {
       id: "antidote-seqster-2024",
@@ -702,7 +710,7 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/company-overview/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"1nHealth is a U.S.-based clinical trial patient recruitment and enrollment company founded in 2019 and headquartered in Orlando, Florida. The company provides digital recruitment and enrollment management services to sponsors, biotech firms, and CROs.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"1nHealth is a U.S.-based clinical trial patient recruitment and enrollment company founded in 2019 and headquartered in Orlando, Florida. The company provides digital recruitment and enrollment management services to sponsors, biotech firms, and CROs.\"",
     },
     {
       id: "1nhealth-home",
@@ -710,7 +718,7 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Our pricing is based on specific milestones\" ... \"such as signed ICFs or patient randomization.\" The FAQ adds that flexible pricing models are available, and the page says research sites use its 1nData software.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Our pricing is based on specific milestones\" ... \"such as signed ICFs or patient randomization.\" The FAQ adds that flexible pricing models are available, and the page says research sites use its 1nData software.",
     },
     {
       id: "1nhealth-pharma",
@@ -718,7 +726,23 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/patient-recruitment-for-pharma/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Our team conducts multiple levels of pre-screening before passing referrals on to your clinical sites.\"; \"We didn't choose direct-to-patient recruitment over databases because we wanted to be different\"; 1nData offers \"real-time patient insights, automated SMS follow-ups, and more\". Therapeutic areas listed: \"Cardiovascular, Gastrointestinal, Neurological, Infectious Diseases, Dermatology, Immunology, Pulmonary, Oncology\". The page also describes \"designing scroll-stopping ads\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Our team conducts multiple levels of pre-screening before passing referrals on to your clinical sites.\"; \"We didn't choose direct-to-patient recruitment over databases because we wanted to be different\"; 1nData offers \"real-time patient insights, automated SMS follow-ups, and more\". Therapeutic areas listed: \"Cardiovascular, Gastrointestinal, Neurological, Infectious Diseases, Dermatology, Immunology, Pulmonary, Oncology\". The page also describes \"designing scroll-stopping ads\".",
+    },
+    {
+      id: "1nhealth-retention",
+      title: "Patient Retention",
+      publisher: "1nHealth",
+      url: "https://1nhealth.com/patient-retention/",
+      year: "2026",
+      note: "Page published July 22, 2026, per its metadata; read October 23, 2026. Quotes: \"When it needs a voice, an AI agent calls, diagnoses the issue, and books the visit directly\" and \"a conversational agent texts the patient — answers questions, confirms windows, reschedules\". The page describes these agents for patients already enrolled in a study.",
+    },
+    {
+      id: "1nhealth-colon-case",
+      title: "Colon Cancer Screening (case study)",
+      publisher: "1nHealth",
+      url: "https://1nhealth.com/case-study/colon-cancer-screening/",
+      year: "2025",
+      note: "Case study published January 27, 2025, per its metadata; read October 23, 2026. Quotes: \"We also deployed ads across Facebook, Instagram, Google, Reddit, Snapchat, and Pinterest\" and \"1nHealth worked with the sponsor on their online consent process as well as enlisted support of a call center to handle the high volume of pre-screening consultations.\"",
     },
     {
       id: "power-sponsors-2026",
@@ -726,7 +750,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/for-sponsors",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Phase 2/3 CNS and I&I trials\"; \"The fastest-growing community of patients who've actively opted in to learn about clinical trials.\"; \"Patients share diagnoses, prescriptions, labs, and visit history\" and \"we query against your protocol's I/E criteria to build confidence in clinical eligibility before a single referral is made.\"; \"Calls, texts, emails, and an AI call center for after-hours coverage\"; \"Pre-screening, appointment booking, travel coordination, and follow-up\"; and \"Most programs are structured as outcomes-aligned partnerships based on enrollment milestones.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Phase 2/3 CNS and I&I trials\"; \"The fastest-growing community of patients who've actively opted in to learn about clinical trials.\"; \"Patients share diagnoses, prescriptions, labs, and visit history\" and \"we query against your protocol's I/E criteria to build confidence in clinical eligibility before a single referral is made.\"; \"Calls, texts, emails, and an AI call center for after-hours coverage\"; \"Pre-screening, appointment booking, travel coordination, and follow-up\"; and \"Most programs are structured as outcomes-aligned partnerships based on enrollment milestones.\"",
     },
     {
       id: "power-sites-2026",
@@ -734,7 +758,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/for-research-coordinators",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Work with high-intent, EMR-verified patients who are actively looking for trials (and actually answer the phone).\" and \"Try it for free. No technical set up.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Work with high-intent, EMR-verified patients who are actively looking for trials (and actually answer the phone).\" and \"Try it for free. No technical set up.\"",
     },
     {
       id: "power-providers-2026",
@@ -742,7 +766,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/for-providers",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Power uses AI to screen EMRs and match patients against the full study protocols.\" and \"Get started at no cost.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Power uses AI to screen EMRs and match patients against the full study protocols.\" and \"Get started at no cost.\"",
     },
     {
       id: "power-grow-2026",
@@ -750,7 +774,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://growwithpower.com/",
       year: "2026",
-      note: "Accessed September 29, 2026 (page rendered in a browser). Quotes: \"Advanced LLM technology analyzes patient medical records\"; \"EMR + Rx + Voice for full protocol pre-screening\"; and \"Our AI voice agents conduct natural conversations with potential participants\".",
+      note: "Accessed September 29, 2026 (page rendered in a browser); re-checked October 23, 2026. Quotes: \"Advanced LLM technology analyzes patient medical records\"; \"EMR + Rx + Voice for full protocol pre-screening\"; and \"Our AI voice agents conduct natural conversations with potential participants\".",
     },
     {
       id: "iqvia-recruitment",
@@ -758,7 +782,7 @@ const page: SeoPage = {
       publisher: "IQVIA",
       url: "https://www.iqvia.com/solutions/research-and-development/patient-and-site-centric-solutions/patient-recruitment",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"IQVIA uses AI-powered, protocol-specific patient models built on proprietary data to precisely identify and engage eligible participants\"; \"AI-powered EMR data mining\"; \"From chart review and prescreening to referral outreach and patient pathway mapping, Site Enrollment & Engagement Leads actively identify and engage patients.\"; \"call center support to extend site capacity\"; \"IQVIA's integrated patient- and site-facing technology (e.g., Study Hub, Referral Hub, eConsent/eCOA) streamlines education, screening, scheduling, communications, and referral-to-randomization workflows.\"; and, on consent, \"Plain-language content, multimedia tools, and accessibility features designed to improve understanding, support informed decision-making\". The page also describes a \"Health Marketing Network\" of outreach partners.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"IQVIA uses AI-powered, protocol-specific patient models built on proprietary data to precisely identify and engage eligible participants\"; \"AI-powered EMR data mining\"; \"From chart review and prescreening to referral outreach and patient pathway mapping, Site Enrollment & Engagement Leads actively identify and engage patients.\"; \"call center support to extend site capacity\"; \"IQVIA's integrated patient- and site-facing technology (e.g., Study Hub, Referral Hub, eConsent/eCOA) streamlines education, screening, scheduling, communications, and referral-to-randomization workflows.\"; and, on consent, \"Plain-language content, multimedia tools, and accessibility features designed to improve understanding, support informed decision-making\". The page also describes a \"Health Marketing Network\" of outreach partners.",
     },
     {
       id: "veeva-faq",
@@ -766,7 +790,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/sitevault-faq",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Why is SiteVault free for up to 20 concurrent active studies?\" and \"The SiteVault Enterprise Package enables integration. SiteVault is the only eRegulatory application with an open, publicly available API. The free version of SiteVault integrates with other Veeva applications but does not currently integrate with third-party systems\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Why is SiteVault free for up to 20 concurrent active studies?\" and \"The SiteVault Enterprise Package enables integration. SiteVault is the only eRegulatory application with an open, publicly available API. The free version of SiteVault integrates with other Veeva applications but does not currently integrate with third-party systems\"",
     },
     {
       id: "veeva-sites-home",
@@ -774,7 +798,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/",
       year: "2026",
-      note: "Accessed September 2026. The page presents SiteVault CTMS, eISF and eSource in one system, lists SiteVault eConsent separately, and says \"Free for 90% of Sites.\" No patient recruitment or EHR screening features are described.",
+      note: "Accessed September 2026; re-checked October 23, 2026. The page presents SiteVault CTMS, eISF and eSource in one system, lists SiteVault eConsent separately, and says \"Free for 90% of Sites.\" No patient recruitment or EHR screening features are described.",
     },
     {
       id: "crio-home",
@@ -782,7 +806,7 @@ const page: SeoPage = {
       publisher: "Clinical Research IO (CRIO)",
       url: "https://clinicalresearch.io/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Beyond eSource, CRIO connects the full site workflow: eConsent, eRegulatory, and CTMS all live within a single platform.\" and \"CRIO is the leading eSource and clinical trial management platform, purpose-built for research sites and trusted by sponsors and CROs worldwide.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Beyond eSource, CRIO connects the full site workflow: eConsent, eRegulatory, and CTMS all live within a single platform.\" and \"CRIO is the leading eSource and clinical trial management platform, purpose-built for research sites and trusted by sponsors and CROs worldwide.\"",
     },
     {
       id: "crio-independent-sites",
@@ -790,7 +814,7 @@ const page: SeoPage = {
       publisher: "Clinical Research IO (CRIO)",
       url: "https://clinicalresearch.io/solutions/independent-sites/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Manage calling campaigns, send text blasts, build interactive prescreening questionnaires, and pull web leads directly into the system\" and \"Schedule visits and preprogram appointment reminders to keep patient visits on track\". The page also lists eConsent to \"Automate informed consent completion and execution\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Manage calling campaigns, send text blasts, build interactive prescreening questionnaires, and pull web leads directly into the system\" and \"Schedule visits and preprogram appointment reminders to keep patient visits on track\". The page also lists eConsent to \"Automate informed consent completion and execution\".",
     },
     {
       id: "crio-trially-2024",
@@ -806,7 +830,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Site Operations Management System (SOMS) delivers the essential eClinical tools your research organization needs in a single, integrated platform.\"; \"Recruit, remind, and connect with participants\" (Engage!); \"Automated patient communication & reminders.\" (Text solution); \"eConsent\"; customer groups listed as \"Sites, Networks, SMOS AMCS & Health Systems Sponsors & CRO's\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Site Operations Management System (SOMS) delivers the essential eClinical tools your research organization needs in a single, integrated platform.\"; \"Recruit, remind, and connect with participants\" (Engage!); \"Automated patient communication & reminders.\" (Text solution); \"eConsent\"; customer groups listed as \"Sites, Networks, SMOS AMCS & Health Systems Sponsors & CRO's\".",
     },
     {
       id: "realtime-ctms",
@@ -814,7 +838,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/ctms/",
       year: "2026",
-      note: "Page rewritten by RealTime; re-read October 6, 2026. Quotes: \"Query your patient database by medical history, diagnosis, medications, age, and geography to identify eligible subjects for new studies.\"; \"send mass text alerts via RealTime Text and automatically capture responses\"; \"Submit visits against pre-built protocol templates with automated target date calculations and visit window enforcement.\"",
+      note: "Page rewritten by RealTime; re-read October 6, 2026; re-checked October 23, 2026. Quotes: \"Query your patient database by medical history, diagnosis, medications, age, and geography to identify eligible subjects for new studies.\"; \"send mass text alerts via RealTime Text and automatically capture responses\"; \"Submit visits against pre-built protocol templates with automated target date calculations and visit window enforcement.\"",
     },
     {
       id: "realtime-api",
@@ -822,7 +846,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/api-integrations/",
       year: "2026",
-      note: "Accessed September 2026. Quote: the API offers \"a simple and efficient way to seamlessly integrate RealTime data with your other critical systems such as CRM, ERP, EMR, analytics, and business intelligence (BI) platforms.\" Named integrations: Devana, Mailchimp, Microsoft Outlook, SubjectWell and Twilio. Re-checked October 6, 2026: \"Remarket to your rapidly growing database of subjects with a two-way integration to Mailchimp.\"",
+      note: "Accessed September 2026. Quote: the API offers \"a simple and efficient way to seamlessly integrate RealTime data with your other critical systems such as CRM, ERP, EMR, analytics, and business intelligence (BI) platforms.\" Named integrations: Devana, Mailchimp, Microsoft Outlook, SubjectWell and Twilio. Re-checked October 6 and October 23, 2026: \"Remarket to your rapidly growing database of subjects with a two-way integration to Mailchimp.\"",
     },
     {
       id: "realtime-pricing",
@@ -830,7 +854,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/pricing/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Transparent pricing that scales with your organization. No hidden fees, no surprises.\" The page offers pricing requests by organization type (sites, networks, AMCs, sponsors, CROs) and lists no prices.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Transparent pricing that scales with your organization. No hidden fees, no surprises.\" The page offers pricing requests by organization type (sites, networks, AMCs, sponsors, CROs) and lists no prices.",
     },
     {
       id: "medable-recruitment-guide",
@@ -838,7 +862,7 @@ const page: SeoPage = {
       publisher: "Medable",
       url: "https://www.medable.com/knowledge-center/guides-what-is-clinical-trial-recruitment",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Medable's Digital & DCT screening tools can help study teams create a unified recruitment strategy\" and \"Medable can help streamline the process with solutions like TeleConsent, ePRO and TeleVisit.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Medable's Digital & DCT screening tools can help study teams create a unified recruitment strategy\" and \"Medable can help streamline the process with solutions like TeleConsent, ePRO and TeleVisit.\"",
     },
     {
       id: "medable-agent-studio-2025",
@@ -854,7 +878,7 @@ const page: SeoPage = {
       publisher: "Science 37",
       url: "https://www.science37.com/about-us/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Science 37 is a modern clinical research site that delivers trials directly to patients' homes.\" and that it operates \"under a single Form FDA 1572 and a central IRB\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Science 37 is a modern clinical research site that delivers trials directly to patients' homes.\" and that it operates \"under a single Form FDA 1572 and a central IRB\".",
     },
     {
       id: "science37-home",
@@ -862,7 +886,7 @@ const page: SeoPage = {
       publisher: "Science 37",
       url: "https://www.science37.com/",
       year: "2026",
-      note: "Accessed September 2026. Therapeutic areas listed: \"Cardiovascular, Central Nervous System, Dermatology, Endocrinology, Gastroenterology, Hematology, Immunology, Infectious Disease, Men's Health, Musculoskeletal, Oncology, Ophthalmology, Respiratory, Urology, Women's Health\". Also: \"PatientsLikeMe and Science 37 Partner to Unlock Trial Access for Interested, Eligible Patients\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Therapeutic areas listed: \"Cardiovascular, Central Nervous System, Dermatology, Endocrinology, Gastroenterology, Hematology, Immunology, Infectious Disease, Men's Health, Musculoskeletal, Oncology, Ophthalmology, Respiratory, Urology, Women's Health\". Also: \"PatientsLikeMe and Science 37 Partner to Unlock Trial Access for Interested, Eligible Patients\".",
     },
     {
       id: "unlu-2024-rectifier",

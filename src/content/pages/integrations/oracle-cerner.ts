@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Oracle Health, formerly Cerner, was the EHR vendor for 21.9 percent of US acute care hospitals at the end of 2025, second only to Epic, according to KLAS.{{cite:klas-2026-hsc}} Bond Health connects to its Millennium platform via FHIR R4 APIs, HL7 v2 where applicable, or an integration partner, and reads structured data and clinical notes against a study's criteria.{{cite:bond-site}} This page covers the data, the site's tasks, the [implementation](/implementation) timeline and what is not integrated today.",
   summary: "What Bond reads from Oracle Health Millennium, what site IT does, and how it differs from Oracle Patient Recruitment.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -48,7 +48,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 2026, Oracle documents HL7 FHIR R4 (4.0.1) APIs for Millennium, secured with OAuth 2.0 and SMART on FHIR, with patient, user and system scopes.{{cite:oracle-r4-overview}} Oracle no longer supports the older DSTU 2 APIs and tells developers to move to R4.{{cite:oracle-api-index}} An app that screens records in the background, with no clinician logged in, uses system scopes. What Bond does with the records is covered under [Identify](/identify).",
+          text: "As of October 2026, Oracle documents HL7 FHIR R4 (4.0.1) APIs for Millennium, secured with OAuth 2.0 and SMART on FHIR, with patient, user and system scopes.{{cite:oracle-r4-overview}} Oracle no longer supports the older DSTU 2 APIs and tells developers to move to R4.{{cite:oracle-api-index}} An app that screens records in the background, with no clinician logged in, uses system scopes. What Bond does with the records is covered under [Identify](/identify).",
         },
         {
           type: "table",
@@ -105,7 +105,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "Oracle partner programs are optional",
-          text: "Oracle's developer page, as of September 2026, lists Oracle PartnerNetwork membership, Oracle Validated Integration and Millennium environment access as paid services and says they are not required to develop and deploy apps.{{cite:oracle-developer-api}} A site does not need them to connect Bond.",
+          text: "Oracle's developer page, as of October 2026, lists Oracle PartnerNetwork membership, Oracle Validated Integration and Millennium environment access as paid services and says they are not required to develop and deploy apps.{{cite:oracle-developer-api}} A site does not need them to connect Bond.",
         },
       ],
     },
@@ -138,7 +138,7 @@ const page: SeoPage = {
         },
         {
           type: "table",
-          caption: "Scope compared, based on Oracle's October 2024 announcement (checked September 2026)",
+          caption: "Scope compared, based on Oracle's October 2024 announcement (checked October 2026)",
           columns: ["Question", "Oracle Patient Recruitment", "Bond"],
           rows: [
             ["Who it is for", "Life sciences customers", "Research sites, site networks, CROs and sponsors"],
@@ -275,7 +275,7 @@ const page: SeoPage = {
       publisher: "Oracle Help Center",
       url: "https://docs.oracle.com/en/industries/health/millennium-platform-apis/mfrap/r4_overview.html",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"This topic describes the R4 (4.0.1) specification.\" and \"An endpoint secured with OAuth 2.0 is available with support for SMART Applications.\" The page lists patient, user and system scopes and names Patient, Condition, MedicationRequest, MedicationAdministration, Observation, Procedure, Encounter, Appointment, DocumentReference, DiagnosticReport and Binary.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"This topic describes the R4 (4.0.1) specification.\" and \"An endpoint secured with OAuth 2.0 is available with support for SMART Applications.\" The page lists patient, user and system scopes and names Patient, Condition, MedicationRequest, MedicationAdministration, Observation, Procedure, Encounter, Appointment, DocumentReference, DiagnosticReport and Binary.",
     },
     {
       id: "oracle-api-index",
@@ -283,7 +283,7 @@ const page: SeoPage = {
       publisher: "Oracle Help Center",
       url: "https://docs.oracle.com/en/industries/health/millennium-platform-apis/index.html",
       year: "2026",
-      note: "Quote: \"Oracle no longer supports DSTU 2 FHIR APIs. ... This functionality is replaced by the R4 version. Update your applications to use R4 as soon as possible\"",
+      note: "Re-checked October 23, 2026. Quote: \"Oracle no longer supports DSTU 2 FHIR APIs. ... This functionality is replaced by the R4 version. Update your applications to use R4 as soon as possible\"",
     },
     {
       id: "oracle-docref",
@@ -331,7 +331,7 @@ const page: SeoPage = {
       publisher: "Oracle Health",
       url: "https://www.oracle.com/health/developer/api/",
       year: "2026",
-      note: "Quote: \"Oracle Health offers value-added services to developers through the Oracle PartnerNetwork. These services are not required to develop and deploy apps.\"",
+      note: "Re-checked October 23, 2026. Quote: \"Oracle Health offers value-added services to developers through the Oracle PartnerNetwork. These services are not required to develop and deploy apps.\" Also: \"we offer an Oracle Validated Integration with Oracle Health Millennium Platform through the Oracle PartnerNetwork (OPN)\" and \"Developers choosing to forgo the validation process may connect to and access API resources but will not have access to value-added services\". The fee table lists OPN Membership, a row marked \"(Available with OPN Membership only)\" and Oracle Health Millennium Platform Environment Access.",
     },
     {
       id: "oracle-prc",
@@ -339,7 +339,7 @@ const page: SeoPage = {
       publisher: "Oracle via PR Newswire",
       url: "https://www.prnewswire.com/news-releases/new-oracle-cloud-services-help-pharmas-accelerate-clinical-trial-site-feasibility-assessment-and-patient-recruitment-302289032.html",
       year: "2024",
-      note: "October 29, 2024. Quote: \"It uses Health Data Intelligence (HDI) as its underlying technology infrastructure to surface data directly from the EHR and identify eligible and partially eligible patients for potential trial participation.\" and \"Oracle Patient Recruitment calculates an eligibility score for qualified patients and provides important insights to the study team about why a patient qualifies for a trial or where they may fall short.\" Availability: \"available globally for life sciences customers\".",
+      note: "October 29, 2024; re-checked October 23, 2026. Quote: \"It uses Health Data Intelligence (HDI) as its underlying technology infrastructure to surface data directly from the EHR and identify eligible and partially eligible patients for potential trial participation.\" and \"Oracle Patient Recruitment calculates an eligibility score for qualified patients and provides important insights to the study team about why a patient qualifies for a trial or where they may fall short.\" Availability: \"available globally for life sciences customers\".",
     },
     {
       id: "advisory-oracle-ehr",

@@ -46,7 +46,7 @@ export default function CookieConsent() {
               for details.
             </p>
 
-            <div className="flex items-center gap-3 flex-shrink-0">
+            <div className="flex items-center gap-3 shrink-0">
               <button
                 onClick={acceptAll}
                 className="px-5 py-2 bg-bond-primary text-white text-sm font-medium rounded-lg hover:bg-bond-primary-dark transition-colors"

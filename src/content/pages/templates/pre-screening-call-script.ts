@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A pre-screening call is where many patients first talk to a study team, so the script behind it has to be clear, honest and approved by the IRB. This template gives you a complete call: an opening that confirms identity and asks permission, an optional AI disclosure, eligibility questions with placeholders for your protocol, scheduling, a voicemail and answers to common objections. Adapt it to your study, then submit it with your recruitment materials.",
   summary: "A complete pre-screening phone script with AI disclosure, eligibility placeholders, voicemail and objection handling, ready to adapt for your IRB.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -423,7 +423,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "warning",
           title: "AI disclosure rules",
-          text: "The FCC ruled in February 2024 that AI-generated voices count as artificial voices under the TCPA, so those calls need prior express consent unless an exemption applies.{{cite:fcc-24-17}} An FCC proposal from August 2024 to require disclosure of AI-generated calls had not been finalized as of September 2026.{{cite:fcc-24-84}} California's AB 3030, in effect since January 1, 2025, requires health facilities, clinics and physician practices that use generative AI for patient communications about clinical information to give a disclaimer and instructions for reaching a human, spoken at the start and end of audio interactions, unless a licensed provider reviews the communication. Scheduling and other administrative messages are excluded.{{cite:ca-ab3030}} Texas's HB 149, in effect since January 1, 2026, requires providers that use AI in relation to health care services to disclose it to the patient.{{cite:tx-hb149}} Have counsel confirm which rules apply.",
+          text: "The FCC ruled in February 2024 that AI-generated voices count as artificial voices under the TCPA, so those calls need prior express consent unless an exemption applies.{{cite:fcc-24-17}} An FCC proposal from August 2024 to require disclosure of AI-generated calls had not been finalized as of October 2026.{{cite:fcc-24-84}} California's AB 3030, in effect since January 1, 2025, requires health facilities, clinics and physician practices that use generative AI for patient communications about clinical information to give a disclaimer and instructions for reaching a human, spoken at the start and end of audio interactions, unless a licensed provider reviews the communication. Scheduling and other administrative messages are excluded.{{cite:ca-ab3030}} Texas's HB 149, in effect since January 1, 2026, requires providers that use AI in relation to health care services to disclose it to the patient.{{cite:tx-hb149}} Have counsel confirm which rules apply.",
         },
         {
           type: "p",
@@ -465,7 +465,7 @@ const page: SeoPage = {
     },
     {
       q: "Do we have to tell patients an AI is calling?",
-      a: "As of September 2026, no final federal rule requires it, though the FCC proposed one in August 2024.{{cite:fcc-24-84}} California and Texas have their own disclosure rules for AI in health care.{{cite:ca-ab3030,tx-hb149}} Your IRB may also require a disclosure. Bond's agents tell patients that AI assistance is used.{{cite:bond-site}}",
+      a: "As of October 2026, no final federal rule requires it, though the FCC proposed one in August 2024.{{cite:fcc-24-84}} California and Texas have their own disclosure rules for AI in health care.{{cite:ca-ab3030,tx-hb149}} Your IRB may also require a disclosure. Bond's agents tell patients that AI assistance is used.{{cite:bond-site}}",
     },
     {
       q: "How many times should we try to reach a patient?",
@@ -602,7 +602,7 @@ const page: SeoPage = {
       publisher: "Federal Communications Commission",
       url: "https://docs.fcc.gov/public/attachments/FCC-24-84A1.pdf",
       year: "2024",
-      note: "Adopted August 7, 2024. Quote: \"we propose to define AI-generated calls and propose new rules that would require callers disclose to consumers when they receive an AI-generated call.\" Still a proposal, not a final rule, as of September 2026.",
+      note: "Adopted August 7, 2024. Quote: \"we propose to define AI-generated calls and propose new rules that would require callers disclose to consumers when they receive an AI-generated call.\" Still a proposal, not a final rule, as of September 2026; re-checked October 23, 2026 (no final rule in the Federal Register).",
     },
     {
       id: "fcc-24-24",

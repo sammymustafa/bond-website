@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Integration",
   h1: "Bond and CRIO: a certified, two-way integration",
   intro:
-    "Bond Health is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of September 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}} CRIO is the one CTMS where Bond is a Certified Integration Partner: pre-screened patients go straight into CRIO through its API, and their status comes back to Bond, so coordinators never re-enter a patient.{{cite:crio-partners,crio-recruiting-api}}",
+    "Bond Health is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of October 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}} CRIO is the one CTMS where Bond is a Certified Integration Partner: pre-screened patients go straight into CRIO through its API, and their status comes back to Bond, so coordinators never re-enter a patient.{{cite:crio-partners,crio-recruiting-api}}",
   summary: "How pre-screened patients and statuses move between Bond and CRIO, and what the CRIO Certified Partner badge covers.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -54,7 +54,7 @@ const page: SeoPage = {
         {
           type: "stats",
           items: [
-            { value: "3,000", label: "Sites using CRIO, per CRIO's page for sites (September 2026)", cite: "crio-sites" },
+            { value: "3,000", label: "Sites using CRIO, per CRIO's page for sites (October 2026)", cite: "crio-sites" },
             { value: "6,000+", label: "Protocols run on CRIO, per the same page", cite: "crio-sites" },
             { value: "30+", label: "Countries with CRIO sites, per the same page", cite: "crio-sites" },
             { value: "28%", label: "Average share of US sites that were CRIO clients in 50 Phase 2 and 3 studies, per CRIO", cite: "crio-clinical-leader" },
@@ -215,7 +215,7 @@ const page: SeoPage = {
             ["eConsent", "Electronic informed consent", "No. Bond's [consent support](/consent) is separate; the site documents consent"],
             ["EDC integration, Reviewer EDC, reporting, patient stipends", "Data transfer and review, reports, stipends", "No"],
           ],
-          note: "Module names and descriptions from CRIO's product pages, September 2026.{{cite:crio-products,crio-ereg}}",
+          note: "Module names and descriptions from CRIO's product pages, October 2026.{{cite:crio-products,crio-ereg}}",
         },
         {
           type: "p",
@@ -268,7 +268,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/about/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Founded in 2015 by current Co-CEO Raymond Nomizu and Phuc Truong\". Footer address: 68 Harrison Avenue, Boston, MA 02111. Some older CRIO materials give 2016, the year its eSource product launched.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Founded in 2015 by current Co-CEO Raymond Nomizu and Phuc Truong\". Footer address: 68 Harrison Avenue, Boston, MA 02111. Some older CRIO materials give 2016, the year its eSource product launched.",
     },
     {
       id: "crio-esource",
@@ -276,7 +276,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/products/esource/",
       year: "2026",
-      note: "Vendor page, accessed September 2026. Quote: \"Our eSource system is fully integrated with our Site CTMS, eRegulatory, and eConsent solutions. It also has an open API, allowing for integration with other technology providers.\"",
+      note: "Vendor page, accessed September 2026; re-checked October 23, 2026. Quote: \"Our eSource system is fully integrated with our Site CTMS, eRegulatory, and eConsent solutions. It also has an open API, allowing for integration with other technology providers.\"",
     },
     {
       id: "crio-sites",
@@ -284,7 +284,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/solutions/sites/",
       year: "2026",
-      note: "Vendor claim, accessed September 2026. Quote: \"3,000 sites use the CRIO platform on 6,000+ protocols for over 3000 sponsors in over 30 different countries.\"",
+      note: "Vendor claim, accessed September 2026; re-checked October 23, 2026. Quote: \"3,000 sites use the CRIO platform on 6,000+ protocols for over 3000 sponsors in over 30 different countries.\"",
     },
     {
       id: "crio-sponsors",
@@ -292,7 +292,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/solutions/sponsors/",
       year: "2026",
-      note: "Vendor claim, accessed September 2026. Quote: \"CRIO is the eSource solution they're already using, trusted by 2,500 sites on 6,000+ protocols across 30+ countries.\"",
+      note: "Vendor claim, accessed September 2026; re-checked October 23, 2026. Quote: \"CRIO is the eSource solution they're already using, trusted by 2,500 sites on 6,000+ protocols across 30+ countries.\"",
     },
     {
       id: "crio-clinical-leader",
@@ -308,7 +308,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/products/site-ctms/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Manage your patient database, search for patients that meet feasibility criteria, and have website leads come in automatically\". Also: \"Make calls and send texts from within the system to move patients through the funnel\" and \"Simplify phone screenings with interactive patient questionnaires\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Manage your patient database, search for patients that meet feasibility criteria, and have website leads come in automatically\". Also: \"Make calls and send texts from within the system to move patients through the funnel\" and \"Simplify phone screenings with interactive patient questionnaires\".",
     },
     {
       id: "crio-products",
@@ -316,7 +316,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/products/",
       year: "2026",
-      note: "Product list, accessed September 2026: Central eSource, Site eSource, Reviewer EDC, EDC Integration, eConsent, eRegulatory, Site CTMS, Reporting and Patient Stipends. Quote: \"Site eSource Capture source data in real time\" and \"EDC Integration Integrate Central eSource with select third-party EDC systems\" and \"Patient Stipends Issue and load patient stipend cards\"",
+      note: "Product list, accessed September 2026; re-checked October 23, 2026: Central eSource, Site eSource, Reviewer EDC, EDC Integration, eConsent, eRegulatory, Site CTMS, Reporting and Patient Stipends. Quote: \"Site eSource Capture source data in real time\" and \"EDC Integration Integrate Central eSource with select third-party EDC systems\" and \"Patient Stipends Issue and load patient stipend cards\"",
     },
     {
       id: "crio-ereg",
@@ -324,7 +324,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/products/eregulatory/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Build electronic delegation (eDOA) logs and copy duty profiles from one user to the other\". Also: \"Upload, version, route, and e-sign regulatory documents\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Build electronic delegation (eDOA) logs and copy duty profiles from one user to the other\". Also: \"Upload, version, route, and e-sign regulatory documents\".",
     },
     {
       id: "crio-partners-intro",
@@ -332,7 +332,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/blog/introducing-the-crio-partners-program-coming-soon/",
       year: "2024",
-      note: "Blog dated June 18, 2024, re-checked September 22, 2026. Quote: \"The Partners Program is an umbrella program whereby CRIO partners with best-in-class third party suppliers to bring needed products or services to CRIO site clients.\" Also: \"Partners in the program have been qualified by demonstrating competency with CRIO's platform. You will be able to view a list of CRIO certified Partners using the Partner Directory, a complimentary tool which will be available to all CRIO users, in the in-app Help Center.\" and \"Each Partner Directory listing displays reviews from users and enables sites to directly communicate with the Partner or request integration with the Partner to their organization via the CRIO API.\"",
+      note: "Blog dated June 18, 2024, re-checked September 22 and October 23, 2026. Quote: \"The Partners Program is an umbrella program whereby CRIO partners with best-in-class third party suppliers to bring needed products or services to CRIO site clients.\" Also: \"Partners in the program have been qualified by demonstrating competency with CRIO's platform. You will be able to view a list of CRIO certified Partners using the Partner Directory, a complimentary tool which will be available to all CRIO users, in the in-app Help Center.\" and \"Each Partner Directory listing displays reviews from users and enables sites to directly communicate with the Partner or request integration with the Partner to their organization via the CRIO API.\"",
     },
     {
       id: "crio-partners-launch",
@@ -348,7 +348,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/about/partners/",
       year: "2026",
-      note: "Accessed September 22, 2026 (Bond Health was not yet listed when checked on September 21). Bond Health's listing under Patient Acquisition & Retention reads: \"Automate chart review across your EMR and CRIO. Ranked, pre-screened candidates with cited evidence, delivered straight into your coordinators' workflow.\" Also: \"Use the CRIO Partner Directory to search for providers, read reviews from other CRIO users, request information from CRIO Partners, and request API access activation for integrated partners.\" and \"Does Your Vendor Integrate With CRIO?\" followed by \"Look for the badge!\" (a hexagonal badge reading Certified, Integration, Partner).",
+      note: "Accessed September 22, 2026 (Bond Health was not yet listed when checked on September 21); re-checked October 23, 2026. Bond Health's listing under Patient Acquisition & Retention reads: \"Automate chart review across your EMR and CRIO. Ranked, pre-screened candidates with cited evidence, delivered straight into your coordinators' workflow.\" Also: \"Use the CRIO Partner Directory to search for providers, read reviews from other CRIO users, request information from CRIO Partners, and request API access activation for integrated partners.\" and \"Does Your Vendor Integrate With CRIO?\" followed by \"Look for the badge!\" (a hexagonal badge reading Certified, Integration, Partner).",
     },
     {
       id: "crio-recruiting-api",
@@ -356,7 +356,7 @@ const page: SeoPage = {
       publisher: "CRIO",
       url: "https://clinicalresearch.io/blog/recruitment-simplified1/",
       year: "2022",
-      note: "Blog dated January 4, 2022, re-checked September 22, 2026. Quote: \"Vendors can send patient updates, qualify patients into studies, schedule appointments, and more.\" Also: \"Here are a few examples of patient data that can be sent and received using the API: Medical conditions Study qualifications Appointments Scheduling Demographics Subject status\" and \"eliminate manual entry of patient recruitment data and updates.\"",
+      note: "Blog dated January 4, 2022, re-checked September 22 and October 23, 2026. Quote: \"Vendors can send patient updates, qualify patients into studies, schedule appointments, and more.\" Also: \"Here are a few examples of patient data that can be sent and received using the API: Medical conditions Study qualifications Appointments Scheduling Demographics Subject status\" and \"eliminate manual entry of patient recruitment data and updates.\"",
     },
     {
       id: "crio-bond-announcement",
@@ -364,7 +364,7 @@ const page: SeoPage = {
       publisher: "CRIO and Bond Health, via Bond Health's LinkedIn company page",
       url: "https://www.linkedin.com/company/bondtrials",
       year: "2026",
-      note: "Posts from September 2026, accessed September 22, 2026. CRIO's post: \"CRIO is excited to welcome Bond Health to the CRIO Partners Program, bringing AI-powered patient recruitment to sites running trials on CRIO.\" Bond's post: \"Excited to announce that Bond Health is now a CRIO partner\"; on CRIO: \"It runs the trial once a patient is in. Visits, source docs, billing, the regulatory binder\"; on Bond: \"Finding the patient, screening them, getting them to the visit\"; and for CRIO sites: \"LLM-based screening to identify eligible patients from the EHR, CRIO, and Meta/Google Ads\" and \"Voice and SMS/text agents for pre-screening and scheduling\".",
+      note: "Posts from September 2026, accessed September 22, 2026; re-checked October 23, 2026. CRIO's post: \"CRIO is excited to welcome Bond Health to the CRIO Partners Program, bringing AI-powered patient recruitment to sites running trials on CRIO.\" Bond's post: \"Excited to announce that Bond Health is now a CRIO partner\"; on CRIO: \"It runs the trial once a patient is in. Visits, source docs, billing, the regulatory binder\"; on Bond: \"Finding the patient, screening them, getting them to the visit\"; and for CRIO sites: \"LLM-based screening to identify eligible patients from the EHR, CRIO, and Meta/Google Ads\" and \"Voice and SMS/text agents for pre-screening and scheduling\".",
     },
   ],
   related: [

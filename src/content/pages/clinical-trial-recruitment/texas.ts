@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "Texas",
   h1: "Recruiting for clinical trials in Texas",
   intro:
-    "As of September 21, 2026, 4,854 studies on ClinicalTrials.gov were recruiting at one or more Texas locations, about 22% of the 22,041 recruiting anywhere in the United States.{{cite:ctgov-api}}",
+    "As of October 23, 2026, 4,873 studies on ClinicalTrials.gov were recruiting at one or more Texas locations, about 22% of the 22,038 recruiting anywhere in the United States.{{cite:ctgov-api}}",
   summary: "Texas recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI and privacy rules.",
   lastUpdated: "2026-10-23",
   showLastUpdated: true,
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Oncology is the largest area. 2,128 of the 7,074 recruiting US oncology studies, about 30%, list a Texas site, well above the state's 22% share of all studies.{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Oncology is the largest area. 2,124 of the 7,092 recruiting US oncology studies, about 30%, list a Texas site, well above the state's 22% share of all studies.{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "texas", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A count shows where sponsors placed studies, not which ones are enrolling on schedule. The neurology examples below, from Alzheimer's screening to migraine prevention, come from the same query.{{cite:ctgov-api}} See [neurology and Alzheimer's](/neurology-and-alzheimers) and [oncology](/oncology) for how Bond screens in each area.",
+          text: "A count shows where sponsors placed studies, not which ones are enrolling on schedule. The neurology examples below, from early Alzheimer's disease to multiple sclerosis, epilepsy and Parkinson's disease, come from the same query.{{cite:ctgov-api}} See [neurology and Alzheimer's](/neurology-and-alzheimers) and [oncology](/oncology) for how Bond screens in each area.",
         },
         { type: "trials", geo: "texas", condition: "neurology", cite: "ctgov-api" },
       ],
@@ -64,7 +64,7 @@ const page: SeoPage = {
             "**Dallas-Fort Worth.** UT Southwestern reports more than $816 million a year in research funding.{{cite:utsw}}",
             "**San Antonio.** In a 2024 profile, UT Health San Antonio calls itself the largest academic research institution in South Texas, with a research portfolio above $413 million a year.{{cite:uthsa}}",
             "**Statewide.** According to the UT System, four of its institutions hold NIH Clinical and Translational Science Awards and form the Texas CTSA Consortium.{{cite:ut-system-ctsa}} Voters created CPRIT, the state cancer research and prevention institute, in 2007 and added $3 billion in 2019, for a total of $6 billion.{{cite:cprit}}",
-            "**Dementia.** Proposition 14, approved by voters in November 2025, gives a new Dementia Prevention and Research Institute of Texas $3 billion over 10 years. As of September 2026, litigation had delayed its launch.{{cite:dprit}}",
+            "**Dementia.** Proposition 14, approved by voters in November 2025, gives a new Dementia Prevention and Research Institute of Texas $3 billion over 10 years. As of October 2026, litigation had delayed its launch.{{cite:dprit}}",
           ],
         },
       ],
@@ -75,7 +75,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "EHRs at selected Texas health systems, from their public statements and trade press, as of September 2026",
+          caption: "EHRs at selected Texas health systems, from their public statements and trade press, as of October 2026",
           columns: ["System", "Texas footprint", "EHR"],
           rows: [
             [
@@ -134,9 +134,9 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**DM Clinical Research**, headquartered in Houston, says on its website (September 2026) that it is the largest privately owned US site network, with 30+ integrated sites across 13 states.{{cite:dm-clinical}}",
+            "**DM Clinical Research**, headquartered in Houston, says on its website (October 2026) that it is the largest privately owned US site network, with 30+ integrated sites across 13 states.{{cite:dm-clinical}}",
             "**Summit Clinical Research Solutions**, based in San Antonio, reported 15 owned US sites and 110+ partner sites in eight countries, focused on metabolic disease, MASH, obesity and Alzheimer's, when it announced its purchase of Dallas Research Institute on September 10, 2026.{{cite:summit-pinnacle}} See [obesity and metabolic trials](/obesity-and-metabolic).",
-            "**Tekton Research**, founded in Austin in 2006, lists Texas sites on its website (September 2026) in Austin, Beaumont, Coppell, Houston, Irving, McKinney and San Antonio.{{cite:tekton}}",
+            "**Tekton Research**, founded in Austin in 2006, lists Texas sites on its website (October 2026) in Austin, Beaumont, Coppell, Houston, Irving, McKinney and San Antonio.{{cite:tekton}}",
           ],
         },
         {
@@ -227,7 +227,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "census-pop-2025",
@@ -243,7 +243,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/tables/2020-2025/state/asrh/sc-est2025-sr11h-48.xlsx",
       year: "2026",
-      note: "Read September 22, 2026. July 1, 2025 column: \"TOTAL POPULATION 31,709,821\"; \"HISPANIC 12,965,860\" (40.9%); Not Hispanic, one race, \"White 11,814,178\" (37.3%) and \"Black or African American 3,890,682\" (12.3%). Percentages computed by Bond.",
+      note: "Read September 22, 2026; re-checked October 23, 2026. July 1, 2025 column: \"TOTAL POPULATION 31,709,821\"; \"HISPANIC 12,965,860\" (40.9%); Not Hispanic, one race, \"White 11,814,178\" (37.3%) and \"Black or African American 3,890,682\" (12.3%). Percentages computed by Bond.",
     },
     {
       id: "census-metro-2025",
@@ -309,7 +309,7 @@ const page: SeoPage = {
       publisher: "National Cancer Institute",
       url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find",
       year: "2026",
-      note: "Read September 22, 2026. Texas entries: Dan L Duncan Comprehensive Cancer Center (Houston, Comprehensive Cancer Center); Harold C. Simmons Comprehensive Cancer Center (Dallas, Comprehensive Cancer Center); Mays Cancer Center at UT Health San Antonio (San Antonio, Clinical Cancer Center); The University of Texas MD Anderson Cancer Center (Houston, Comprehensive Cancer Center).",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Texas entries: Dan L Duncan Comprehensive Cancer Center (Houston, Comprehensive Cancer Center); Harold C. Simmons Comprehensive Cancer Center (Dallas, Comprehensive Cancer Center); Mays Cancer Center at UT Health San Antonio (San Antonio, Clinical Cancer Center); The University of Texas MD Anderson Cancer Center (Houston, Comprehensive Cancer Center).",
     },
     {
       id: "ut-system-ctsa",
@@ -332,7 +332,7 @@ const page: SeoPage = {
       publisher: "American Heart Association Newsroom",
       url: "https://newsroom.heart.org/news/organizations-unite-to-defend-texas-dementia-research-initiative",
       year: "2026",
-      note: "Release dated September 17, 2026, from organizations that support DPRIT. Quotes: \"Proposition 14 provides $3 billion to DPRIT over 10 years\"; \"The filing comes as litigation has delayed implementation of the groundbreaking initiative approved through Proposition 14 in November 2025\"; \"The brief requests the Court of Appeals for the Fifteenth Judicial District\" to affirm dismissal of the case.",
+      note: "Release dated September 17, 2026, from organizations that support DPRIT. Quotes: \"Proposition 14 provides $3 billion to DPRIT over 10 years\"; \"The filing comes as litigation has delayed implementation of the groundbreaking initiative approved through Proposition 14 in November 2025\"; \"The brief requests the Court of Appeals for the Fifteenth Judicial District\" to affirm dismissal of the case. Re-checked October 23, 2026: quotes unchanged, and the court's docket for the appeal (No. 15-26-00074-CV, https://search.txcourts.gov/Case.aspx?cn=15-26-00074-CV&coa=coa15) showed it submitted on briefs on September 23, 2026, with no opinion issued.",
     },
     {
       id: "memorial-hermann",
@@ -348,7 +348,7 @@ const page: SeoPage = {
       publisher: "Baylor Scott & White Health",
       url: "https://www.bswhealth.com/about",
       year: "2026",
-      note: "Read September 22, 2026. Quote: \"the largest not-for-profit health system in the state of Texas\" serving customers \"through 55 hospitals\" and \"1,300+ access points\".",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Quote: \"the largest not-for-profit health system in the state of Texas\" serving customers \"through 55 hospitals\" and \"1,300+ access points\".",
     },
     {
       id: "bsw-epic",
@@ -356,7 +356,7 @@ const page: SeoPage = {
       publisher: "Baylor Scott & White Health",
       url: "https://www.bswhealth.com/medical-professionals/referrals/epiccare-link",
       year: "2026",
-      note: "Read September 22, 2026. Quote: \"EpicCare Link securely connects referring practitioners and staff to select patient information in the Baylor Scott & White Health Epic electronic health record\".",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Quote: \"EpicCare Link securely connects referring practitioners and staff to select patient information in the Baylor Scott & White Health Epic electronic health record\".",
     },
     {
       id: "thr-epic",
@@ -364,7 +364,7 @@ const page: SeoPage = {
       publisher: "Texas Health Resources",
       url: "https://thepiccarelink.org/carelink/access.html",
       year: "2026",
-      note: "Read September 22, 2026. Quote: \"Texas Health EpicCare Link is a web-based application that facilitates secure, real-time access to your patient's demographic and clinical information documented during an encounter at a Texas Health hospital.\"",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Quote: \"Texas Health EpicCare Link is a web-based application that facilitates secure, real-time access to your patient's demographic and clinical information documented during an encounter at a Texas Health hospital.\"",
     },
     {
       id: "uthsa-epic",
@@ -387,7 +387,7 @@ const page: SeoPage = {
       publisher: "HIT Consultant",
       url: "https://hitconsultant.net/2026/09/16/meditech-completes-expanse-ehr-implementation-34-hospitals-hca-healthcare-divisions/",
       year: "2026",
-      note: "Article dated September 16, 2026. Quote: \"Expands HCA Healthcare's total operational footprint on MEDITECH Expanse to 72 hospitals live across the United States and the United Kingdom\" and \"The completion of the 34 facilities in August pushed the active hospital count to 72.\" The planned scope is \"approximately 182 hospitals and over 2,300 care sites.\" The two completed divisions are Capital (Virginia and New Hampshire) and North Florida.",
+      note: "Article dated September 16, 2026. Quote: \"Expands HCA Healthcare's total operational footprint on MEDITECH Expanse to 72 hospitals live across the United States and the United Kingdom\" and \"The completion of the 34 facilities in August pushed the active hospital count to 72.\" The planned scope is \"approximately 182 hospitals and over 2,300 care sites.\" The two completed divisions are Capital (Virginia and New Hampshire) and North Florida. Re-checked October 23, 2026: quotes unchanged, and MEDITECH's news page (https://ehr.meditech.com/news) listed no later HCA go-live.",
     },
     {
       id: "ecw-fqhc",
@@ -403,6 +403,7 @@ const page: SeoPage = {
       publisher: "DM Clinical Research",
       url: "https://www.dmclinicalresearch.com/about",
       year: "2026",
+      note: "Re-checked October 23, 2026. Quotes: \"DM Clinical Research is the largest privately owned clinical research site network in the country, 30+ integrated research sites across 13 states\" and \"DM is headquartered in Houston, Texas\".",
     },
     {
       id: "summit-pinnacle",
@@ -418,7 +419,7 @@ const page: SeoPage = {
       publisher: "Tekton Research",
       url: "https://www.tektonresearch.com/about-tekton/",
       year: "2026",
-      note: "Read September 22, 2026. Quote: \"Founded in Austin, Texas, in 2006, Tekton is a diversified, multi-specialty research site organization\". Texas locations listed on the page: Austin, Beaumont, Coppell, Houston, Irving, McKinney, San Antonio.",
+      note: "Read September 22, 2026; re-checked October 23, 2026. Quote: \"Founded in Austin, Texas, in 2006, Tekton is a diversified, multi-specialty research site organization\". Texas locations listed on the page: Austin, Beaumont, Coppell, Houston, Irving, McKinney, San Antonio.",
     },
     {
       id: "tx-hb149",

@@ -36,7 +36,7 @@ export default function NewsletterForm() {
   if (status === "done") {
     return (
       <div className="flex items-center gap-3 rounded-2xl border border-emerald-100 bg-emerald-50 p-5 text-emerald-800">
-        <CheckCircle className="h-5 w-5 flex-shrink-0" />
+        <CheckCircle className="h-5 w-5 shrink-0" />
         <p className="text-sm">You are on the list. The next issue goes out at the start of the month.</p>
       </div>
     );

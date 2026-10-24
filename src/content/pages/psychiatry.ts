@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Psychiatry protocols screen on a confirmed diagnosis, a rating-scale threshold, treatment history, and exclusions for suicide risk, substance use and other psychiatric illness. When researchers applied the psychiatric entry criteria of 158 antidepressant trials to 1,271 outpatients with major depressive disorder at one Rhode Island practice, a mean of 86.1% would have been excluded.{{cite:zimmerman-2019}} Here is where each criterion sits in the chart and what Bond Health can check before a screening visit.",
   summary: "How psychiatry criteria map to the chart, why so many patients are excluded, and how Bond screens for them.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -158,21 +158,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 1,273 studies with at least one US site were recruiting under a ClinicalTrials.gov condition search for depression, schizophrenia, bipolar, anxiety, PTSD or ADHD, about 6% of the 22,041 recruiting studies with a US site.{{cite:ctgov-api}} Matching is broad: the count can include behavioral studies and studies of anxiety or depressive symptoms in other illnesses, and a study can count in more than one area of the chart. See the other [therapeutic areas](/therapeutic-areas).",
+          text: "As of October 23, 2026, 1,278 studies with at least one US site were recruiting under a ClinicalTrials.gov condition search for depression, schizophrenia, bipolar, anxiety, PTSD or ADHD, about 6% of the 22,038 recruiting studies with a US site.{{cite:ctgov-api}} Matching is broad: the count can include behavioral studies and studies of anxiety or depressive symptoms in other illnesses, and a study can count in more than one area of the chart. See the other [therapeutic areas](/therapeutic-areas).",
         },
         {
           type: "chart",
-          title: "Recruiting studies with at least one US site, by keyword area (September 21, 2026)",
+          title: "Recruiting studies with at least one US site, by keyword area (October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -216,7 +216,7 @@ const page: SeoPage = {
       publisher: "Psychotherapy and Psychosomatics 88(3):165-170 (Zimmerman M, Balling C, Chelminski I, Dalrymple K)",
       url: "https://pubmed.ncbi.nlm.nih.gov/31096246/",
       year: "2019",
-      note: "Abstract checked via Europe PMC on September 22, 2026. Rhode Island MIDAS project; psychiatric criteria only. Quote: \"We applied the inclusion and exclusion criteria used in 158 AETs to 1,271 patients presenting to an outpatient practice who received a principal diagnosis of major depressive disorder.\" \"Across all 158 studies, the percentage of patients that would have been excluded ranged from 44.4 to 99.8% (mean = 86.1%). The percentage of patients that would have been excluded was significantly higher in the studies published in 2010 through 2014 compared to the studies published from 1995 to 2009 (91.4 vs. 83.8%, t(156) = 3.74, p < 0.001).\"",
+      note: "Abstract checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Rhode Island MIDAS project; psychiatric criteria only. Quote: \"We applied the inclusion and exclusion criteria used in 158 AETs to 1,271 patients presenting to an outpatient practice who received a principal diagnosis of major depressive disorder.\" \"Across all 158 studies, the percentage of patients that would have been excluded ranged from 44.4 to 99.8% (mean = 86.1%). The percentage of patients that would have been excluded was significantly higher in the studies published in 2010 through 2014 compared to the studies published from 1995 to 2009 (91.4 vs. 83.8%, t(156) = 3.74, p < 0.001).\"",
     },
     {
       id: "taipale-2022",
@@ -224,7 +224,7 @@ const page: SeoPage = {
       publisher: "JAMA Psychiatry 79(3) (Taipale H, et al.)",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8792792/",
       year: "2022",
-      note: "Full text checked via Europe PMC on September 22, 2026. Criteria typical of relapse-prevention RCTs applied to national registries in Finland and Sweden; cohort limited to people who had used antipsychotics continuously for 12 weeks in outpatient care. Quote: \"A total of 20 060 individuals (79%) with schizophrenia spectrum disorders would be ineligible for RCTs\"; \"The most frequent reasons for ineligibility observed in the 2 cohorts were serious somatic comorbidities and concomitant use of mood stabilizers or antidepressants, followed by history of substance use and risk of suicide.\" Also: \"some symptoms are often underreported in diagnostic data (eg, suicidality and substance use)\".",
+      note: "Full text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Criteria typical of relapse-prevention RCTs applied to national registries in Finland and Sweden; cohort limited to people who had used antipsychotics continuously for 12 weeks in outpatient care. Quote: \"A total of 20 060 individuals (79%) with schizophrenia spectrum disorders would be ineligible for RCTs\"; \"The most frequent reasons for ineligibility observed in the 2 cohorts were serious somatic comorbidities and concomitant use of mood stabilizers or antidepressants, followed by history of substance use and risk of suicide.\" Also: \"some symptoms are often underreported in diagnostic data (eg, suicidality and substance use)\".",
     },
     {
       id: "zimmerman-2005",
@@ -232,7 +232,7 @@ const page: SeoPage = {
       publisher: "American Journal of Psychiatry 162(7):1370-1372 (Zimmerman M, Chelminski I, Posternak MA)",
       url: "https://pubmed.ncbi.nlm.nih.gov/15994721/",
       year: "2005",
-      note: "Abstract checked via Europe PMC on September 22, 2026. Quote: \"The authors compared three groups: 123 depressed patients who would qualify for an antidepressant efficacy trial, 289 whose symptom severity was too mild to qualify for an antidepressant efficacy trial, and 187 who would be excluded because they were suicidal or had a comorbid anxiety or substance use disorder.\" \"patients who would be excluded because of comorbidity or suicidality were a more chronically ill group with more previous episodes, greater psychosocial impairment, and more personality pathology.\"",
+      note: "Abstract checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"The authors compared three groups: 123 depressed patients who would qualify for an antidepressant efficacy trial, 289 whose symptom severity was too mild to qualify for an antidepressant efficacy trial, and 187 who would be excluded because they were suicidal or had a comorbid anxiety or substance use disorder.\" \"patients who would be excluded because of comorbidity or suicidality were a more chronically ill group with more previous episodes, greater psychosocial impairment, and more personality pathology.\"",
     },
     {
       id: "fda-mdd-2018",
@@ -240,7 +240,7 @@ const page: SeoPage = {
       publisher: "U.S. Food and Drug Administration, CDER",
       url: "https://www.fda.gov/media/113988/download",
       year: "2018",
-      note: "Draft guidance, June 2018, Revision 1; PDF text checked September 22, 2026. Quote: \"The diagnosis should be confirmed via a semi-structured interview such as the current Structured Clinical Interview for DSM or MINI International Neuropsychiatric Interview.\" \"trials to date in patients with less-than-moderate depression have not been successful.\" \"Patients with a history of suicidal ideation and behavior need not be systematically excluded from trials.\" \"Patients who have not responded to more than one prior antidepressant, administered at an adequate dose and duration, should be enrolled in TRD studies.\"",
+      note: "Draft guidance, June 2018, Revision 1; PDF text checked September 22, 2026; re-checked October 23, 2026. Quote: \"The diagnosis should be confirmed via a semi-structured interview such as the current Structured Clinical Interview for DSM or MINI International Neuropsychiatric Interview.\" \"trials to date in patients with less-than-moderate depression have not been successful.\" \"Patients with a history of suicidal ideation and behavior need not be systematically excluded from trials.\" \"Patients who have not responded to more than one prior antidepressant, administered at an adequate dose and duration, should be enrolled in TRD studies.\"",
     },
     {
       id: "transform-2",
@@ -248,15 +248,15 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Janssen Research & Development",
       url: "https://clinicaltrials.gov/study/NCT02418585",
       year: "2019",
-      note: "Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026. Quote: \"DSM-5 diagnostic criteria for single-episode major depressive disorder (MDD) ... or recurrent MDD, without psychotic features, based upon clinical assessment and confirmed by the Mini-International Neuropsychiatric Interview (MINI)\"; \"non-response ... to >=1 but less than or equal to (<=) 5 ... oral antidepressant treatments in the current episode of depression ... documented by medical history and pharmacy/prescription records\"; \"depression symptom severity (Week 1 MADRS total score >=28 required) ... must be confirmed using a Site Independent Qualification Assessment\"; excludes \"a current or prior DSM-5 diagnosis of a psychotic disorder or MDD with psychosis, bipolar or related disorders ... borderline personality disorder\" and \"suicidal ideation with some intent to act within 6 months prior to the start of the screening/prospective observational phase, per the investigator's clinical judgment or based on the Columbia Suicide Severity Rating Scale (C-SSRS)\".",
+      note: "Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026. Quote: \"Diagnostic and Statistical Manual of Mental Disorders (DSM-5) diagnostic criteria for single-episode major depressive disorder (MDD) ... or recurrent MDD, without psychotic features, based upon clinical assessment and confirmed by the Mini-International Neuropsychiatric Interview (MINI)\"; \"non-response ... to ≥1 but less than or equal to (<=) 5 ... oral antidepressant treatments in the current episode of depression ... documented by medical history and pharmacy/prescription records\"; \"depression symptom severity (Week 1 MADRS total score >=28 required) ... must be confirmed using a Site Independent Qualification Assessment\"; excludes \"a current or prior DSM-5 diagnosis of a psychotic disorder or MDD with psychosis, bipolar or related disorders ... borderline personality disorder\" and \"suicidal ideation with some intent to act within 6 months prior to the start of the screening/prospective observational phase, per the investigator's clinical judgment or based on the Columbia Suicide Severity Rating Scale (C-SSRS)\".",
     },
     {
       id: "sage-217-mdd",
       title: "A Study to Evaluate the Efficacy of Sage-217 in the Treatment of Adult Participants With Major Depressive Disorder (MDD), NCT04442490",
-      publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Sage Therapeutics",
+      publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Biogen",
       url: "https://clinicaltrials.gov/study/NCT04442490",
       year: "2022",
-      note: "Sage-217 is zuranolone. Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026. Quote: \"diagnosis of MDD as diagnosed by Structured Clinical Interview for ... DSM-5 Clinical Trial Version [SCID-5-CT], with symptoms that have been present for at least a 4-week period\"; \"Hamilton Rating Scale for Depression (HAM-D) total score >=24 at screening and Day 1\"; \"Participants taking antidepressants must have been taking these medications at the same dose for at least 60 days prior to Day 1\"; excludes \"currently at significant risk of suicide, as judged by the Investigator\", \"treatment-resistant depression, defined as persistent depressive symptoms despite treatment with adequate doses of antidepressants within the current major depressive episode (excluding antipsychotics) from two different classes for at least 4 weeks of treatment\" and \"a history of mild, moderate, or severe substance use disorder ... in the 12 months prior to screening\".",
+      note: "Sage-217 is zuranolone. Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026, when the record listed Biogen as lead sponsor. Quote: \"diagnosis of MDD as diagnosed by Structured Clinical Interview for ... (DSM-5) Clinical Trial Version [SCID-5-CT], with symptoms that have been present for at least a 4-week period\"; \"Hamilton Rating Scale for Depression (HAM-D) total score ≥24 at screening and Day 1\"; \"Participants taking antidepressants must have been taking these medications at the same dose for at least 60 days prior to Day 1\"; excludes \"currently at significant risk of suicide, as judged by the Investigator\", \"treatment-resistant depression, defined as persistent depressive symptoms despite treatment with adequate doses of antidepressants within the current major depressive episode (excluding antipsychotics) from two different classes for at least 4 weeks of treatment\" and \"a history of mild, moderate, or severe substance use disorder ... in the 12 months prior to screening\".",
     },
     {
       id: "emergent-3",
@@ -264,7 +264,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (U.S. National Library of Medicine); sponsor Karuna Therapeutics",
       url: "https://clinicaltrials.gov/study/NCT04738123",
       year: "2023",
-      note: "Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026. Quote: \"primary diagnosis of schizophrenia established by a comprehensive psychiatric evaluation based on the DSM-5 criteria and confirmed by Mini International Neuropsychiatric Interview\"; \"Positive and Negative Syndrome Scale total score between 80 and 120, inclusive\"; \"acute exacerbation or relapse of psychotic symptoms, with onset less than 2 months before screening\"; \"free of all oral antipsychotic medications for at least 5 half-lives or 1 week, whichever is longer, before baseline\"; excludes \"Risk for suicidal behavior during the study as determined by the investigator's clinical assessment and Columbia-Suicide Severity Rating Scale (C-SSRS)\" and \"Participation in another clinical study in which the subject received an experimental or investigational drug agent within 3 months before screening\".",
+      note: "Eligibility criteria checked via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026. Quote: \"primary diagnosis of schizophrenia established by a comprehensive psychiatric evaluation based on the DSM-5 criteria and confirmed by Mini International Neuropsychiatric Interview\"; \"Positive and Negative Syndrome Scale total score between 80 and 120, inclusive\"; \"acute exacerbation or relapse of psychotic symptoms, with onset less than 2 months before screening\"; \"free of all oral antipsychotic medications for at least 5 half-lives or 1 week, whichever is longer, before baseline\"; excludes \"Risk for suicidal behavior during the study as determined by the investigator's clinical assessment and Columbia-Suicide Severity Rating Scale (C-SSRS)\" and \"Participation in another clinical study in which the subject received an experimental or investigational drug agent within 3 months before screening\".",
     },
     {
       id: "star-d-2006",
@@ -343,7 +343,7 @@ const page: SeoPage = {
       publisher: "SAMHSA, Center for Behavioral Health Statistics and Quality",
       url: "https://www.samhsa.gov/data/sites/default/files/reports/rpt56287/2024-nsduh-annual-national/2024-nsduh-annual-national-html-071425-edited/2024-nsduh-annual-national.htm",
       year: "2025",
-      note: "HTML report text checked September 22, 2026. Quote: \"In 2024, 8.2 percent of adults aged 18 or older (or 21.4 million people) had a past year MDE.\" \"Of these adults with a past year MDE, 64.4 percent (or 13.8 million people) received any of the following types of mental health treatment in the past year: inpatient or outpatient mental health treatment; prescription medication to help with mental health; treatment via telehealth; or treatment in a prison, jail, or juvenile detention center\".",
+      note: "HTML report text checked September 22, 2026; re-checked October 23, 2026. Quote: \"In 2024, 8.2 percent of adults aged 18 or older (or 21.4 million people) had a past year MDE.\" \"Of these adults with a past year MDE, 64.4 percent (or 13.8 million people) received any of the following types of mental health treatment in the past year: inpatient or outpatient mental health treatment; prescription medication to help with mental health; treatment via telehealth; or treatment in a prison, jail, or juvenile detention center\".",
     },
     {
       id: "nimh-schizophrenia",
@@ -358,7 +358,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "bond-site",

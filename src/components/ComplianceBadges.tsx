@@ -3,8 +3,8 @@ import SmartLink from "@/components/seo/SmartLink";
 import { complianceBadges } from "@/content/compliance";
 
 const SIZES = {
-  sm: { img: "h-12 w-auto", label: "max-w-[5rem] text-[11px]", gap: "gap-x-3" },
-  md: { img: "h-20 w-auto", label: "max-w-[8rem] text-xs", gap: "gap-x-8" },
+  sm: { img: "h-12 w-auto", label: "max-w-20 text-[11px]", gap: "gap-x-3" },
+  md: { img: "h-20 w-auto", label: "max-w-32 text-xs", gap: "gap-x-8" },
 };
 
 /**

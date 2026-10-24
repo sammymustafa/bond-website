@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { X, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
+import Link from "next/link";
 import { useDialog } from "./useDialog";
 
 interface DemoModalProps {
@@ -67,7 +68,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
       } else {
         throw new Error("Form submission failed");
       }
-    } catch (err) {
+    } catch {
       // Fallback to mailto if Formspree fails
       const subject = encodeURIComponent(`Contact Request from ${name || email}`);
       const body = encodeURIComponent(
@@ -131,7 +132,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             </div>
             <h3 id="contact-modal-title" className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
             <p className="text-gray-600">
-              Thank you! We've received your message and will get back to you within 24 hours.
+              Thank you! We&apos;ve received your message and will get back to you within 24 hours.
             </p>
           </div>
         ) : (
@@ -140,7 +141,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             <div className="text-center mb-6">
               <h3 id="contact-modal-title" className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
               <p className="text-gray-600">
-                Have questions or need pricing information? We'll get back to you shortly.
+                Have questions or need pricing information? We&apos;ll get back to you shortly.
               </p>
             </div>
 
@@ -228,9 +229,9 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
 
             <p className="text-xs text-gray-500 text-center mt-4">
               By submitting, you agree to our{" "}
-              <a href="/privacy-policy" className="text-bond-primary hover:underline">
+              <Link href="/privacy-policy" className="text-bond-primary hover:underline">
                 privacy policy
-              </a>
+              </Link>
               .
             </p>
           </>

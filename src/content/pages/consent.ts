@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health's consent support helps patients understand the consent form the study's IRB already approved. It explains the form in plain language, answers questions, checks understanding of key points and hands anything it should not answer to study staff. The investigator or delegated site staff still obtain consent, on paper or through eConsent, and the form itself does not change.",
   summary: "How Bond explains the approved consent form, answers patient questions and escalates to staff while the site obtains consent.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -135,7 +135,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 2026, these rules set what consent must contain, who conducts it and how electronic tools fit.",
+          text: "As of October 2026, these rules set what consent must contain, who conducts it and how electronic tools fit.",
         },
         {
           type: "ul",
@@ -386,7 +386,7 @@ const page: SeoPage = {
       publisher: "California Legislative Information",
       url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB3030",
       year: "2024",
-      note: "Health and Safety Code 1339.75, operative January 1, 2025. Does not apply where a licensed or certified provider reads and reviews the communication. Checked September 2026.",
+      note: "Health and Safety Code 1339.75, operative January 1, 2025. Does not apply where a licensed or certified provider reads and reviews the communication. Checked September 2026; re-checked October 23, 2026 in the Internet Archive copy of October 3, 2026, because the live page served a bot check.",
     },
     {
       id: "tx-hb-149",
@@ -394,7 +394,7 @@ const page: SeoPage = {
       publisher: "Texas Legislature Online",
       url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm",
       year: "2025",
-      note: "Effective January 1, 2026. Checked September 2026. Quote: \"(d) A disclosure under Subsection (b): (1) must be clear and conspicuous; (2) must be written in plain language; and (3) may not use a dark pattern.\" Subsection (f) applies the disclosure duty to AI used in relation to health care services or treatment.",
+      note: "Effective January 1, 2026. Checked September 2026; re-checked October 23, 2026. Quote: \"(d) A disclosure under Subsection (b): (1) must be clear and conspicuous; (2) must be written in plain language; and (3) may not use a dark pattern, as that term is defined by Section 541.001.\" Subsection (f) applies the disclosure duty to AI used in relation to health care services or treatment.",
     },
   ],
   related: [

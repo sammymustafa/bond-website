@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Beyond the endoscopy or biopsy, protocols add prior-therapy and safety rules, and many patients fail screening. In 17 phase 2 and 3 IBD trials run between 2012 and 2021, mean screen failure per trial was 43% in ulcerative colitis and 53% in Crohn's disease; published estimates for MASH trials are around 70% to 80%.{{cite:uzzan-2025,fichez-2025}}",
   summary: "How Mayo, SES-CD, biopsy and prior-therapy criteria map to the chart in IBD and MASH trials, and how Bond screens for them.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -27,7 +27,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "The protocol language below comes from ClinicalTrials.gov entries read in September 2026: Janssen's recruiting icotrokinra trials ICONIC-UC (phase 3) and ICONIC-CD (phase 2b/3), and Madrigal's phase 3 resmetirom trial MAESTRO-NASH, now closed to recruitment.{{cite:icotrokinra-uc,icotrokinra-cd,maestro-nash-protocol}}",
+          text: "The protocol language below comes from ClinicalTrials.gov entries read in October 2026: Janssen's recruiting icotrokinra trials ICONIC-UC (phase 3) and ICONIC-CD (phase 2b/3), and Madrigal's phase 3 resmetirom trial MAESTRO-NASH, now closed to recruitment.{{cite:icotrokinra-uc,icotrokinra-cd,maestro-nash-protocol}}",
         },
         {
           type: "table",
@@ -185,21 +185,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 285 recruiting studies with at least one US location matched a gastroenterology keyword search on ClinicalTrials.gov, about 1.3% of the 22,041 recruiting US studies.{{cite:ctgov-api}} The terms (Crohn, ulcerative colitis, NASH, MASH, irritable bowel, celiac, eosinophilic esophagitis) ran through the registry's condition search, which also matches study titles, keywords and MeSH terms. The count includes observational studies and leaves out GI cancers, GERD, pancreatitis and viral hepatitis. Each area below is a separate search, so a MASH study that also lists obesity counts in both.",
+          text: "As of October 23, 2026, 281 recruiting studies with at least one US location matched a gastroenterology keyword search on ClinicalTrials.gov, about 1.3% of the 22,038 recruiting US studies.{{cite:ctgov-api}} The terms (Crohn, ulcerative colitis, NASH, MASH, irritable bowel, celiac, eosinophilic esophagitis) ran through the registry's condition search, which also matches study titles, keywords and MeSH terms. The count includes observational studies and leaves out GI cancers, GERD, pancreatitis and viral hepatitis. Each area below is a separate search, so a MASH study that also lists obesity counts in both.",
         },
         {
           type: "chart",
-          title: "Recruiting studies with a US location, by area (keyword search, September 21, 2026)",
+          title: "Recruiting studies with a US location, by area (keyword search, October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -239,7 +239,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026: condition search (query.cond) for Crohn OR ulcerative colitis OR NASH OR MASH OR irritable bowel OR celiac OR eosinophilic esophagitis, location United States, overall status Recruiting, all study types. The all-conditions total uses the same location and status filters.",
+      note: "Queried October 23, 2026: condition search (query.cond) for Crohn OR ulcerative colitis OR NASH OR MASH OR irritable bowel OR celiac OR eosinophilic esophagitis, location United States, overall status Recruiting, all study types. The all-conditions total uses the same location and status filters.",
     },
     {
       id: "icotrokinra-uc",
@@ -247,7 +247,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Janssen Research & Development, LLC)",
       url: "https://clinicaltrials.gov/study/NCT07196748",
       year: "2025",
-      note: "Phase 3, recruiting. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"Moderately to severely active UC, defined as a baseline (Week I-0) modified Mayo score of 5 to 9, inclusive, using the endoscopy subscore obtained during the central review of the screening video endoscopy\"; \"An endoscopy subscore greater than or equal to (>=) 2 as obtained during central review of the screening video endoscopy\"; \"Diagnosis of ulcerative colitis (UC) established at least 12 weeks before screening including both endoscopic evidence and a histopathology report consistent with a diagnosis of UC\". Exclusions include \"fulminant colitis, toxic megacolon\", \"Presence of a stoma\" and \"Colonic resection within 24 weeks before baseline\".",
+      note: "Phase 3, recruiting. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"Moderately to severely active UC, defined as a baseline (Week I-0) modified Mayo score of 5 to 9, inclusive, using the endoscopy subscore obtained during the central review of the screening video endoscopy\"; \"An endoscopy subscore greater than or equal to (>=) 2 as obtained during central review of the screening video endoscopy\"; \"Diagnosis of ulcerative colitis (UC) established at least 12 weeks before screening including both endoscopic evidence and a histopathology report consistent with a diagnosis of UC\". Exclusions include \"fulminant colitis, toxic megacolon\", \"Presence of a stoma\" and \"Colonic resection within 24 weeks before baseline\".",
     },
     {
       id: "icotrokinra-cd",
@@ -255,7 +255,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Janssen Research & Development, LLC)",
       url: "https://clinicaltrials.gov/study/NCT07196722",
       year: "2025",
-      note: "Phase 2b/3, recruiting. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"Moderately to severely active CD based on CDAI criteria, defined as baseline (Week I-0) CDAI score >=220 but <=450 and either mean daily SF count >=4, or mean daily AP score >=2\"; \"SES-CD >= 6 for participants with colonic or ileocolonic disease, and SES-CD >= 4 for participants with isolated ileal disease\"; \"Diagnosis of CD established at least 12 weeks before screening including both endoscopic evidence and a histopathology report consistent with a diagnosis of CD\".",
+      note: "Phase 2b/3, recruiting. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"Moderately to severely active CD based on CDAI criteria, defined as baseline (Week I-0) CDAI score >=220 but <=450 and either mean daily SF count >=4, or mean daily AP score >=2\"; \"SES-CD >= 6 for participants with colonic or ileocolonic disease, and SES-CD >= 4 for participants with isolated ileal disease\"; \"Diagnosis of CD established at least 12 weeks before screening including both endoscopic evidence and a histopathology report consistent with a diagnosis of CD\".",
     },
     {
       id: "maestro-nash-protocol",
@@ -263,7 +263,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Madrigal Pharmaceuticals, Inc.)",
       url: "https://clinicaltrials.gov/study/NCT03900429",
       year: "2019",
-      note: "Phase 3, active, not recruiting; actual enrollment 1,759. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"Biopsy-proven NASH (baseline liver biopsy) based on a liver biopsy obtained ≤6 months before anticipated date of randomization ... with fibrosis stage 1A/1C, 1B, 2, or 3 on liver biopsy and NAS of ≥4 with a score of at least 1 in each of the following NAS components\"; \"FibroScan with transient elastography ≥8.5 kPa and controlled attenuation parameter ≥280 dB.m-1\"; \"Historical biochemical test for fibrosis: PRO-C3 >14 ng/mL or ELF ≥9\"; \"Historical liver biopsy obtained <2 years before expected randomization\"; \"MRI-PDFF fat fraction ≥8% obtained during the screening period\". Exclusions include \"HbA1c ≥ 9.0%\", \"Presence of cirrhosis on liver biopsy defined as stage 4 fibrosis\", \"History of significant alcohol consumption\" and \"Glucagon-like peptide 1 [GLP-1] agonist, high dose Vitamin E (> 400 IU/day), or pioglitazone therapy unless stable dose for 24 weeks prior to biopsy\".",
+      note: "Phase 3, active, not recruiting; actual enrollment 1,759. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"Biopsy-proven NASH (baseline liver biopsy) based on a liver biopsy obtained ≤6 months before anticipated date of randomization ... with fibrosis stage 1A/1C, 1B, 2, or 3 on liver biopsy and NAS of ≥4 with a score of at least 1 in each of the following NAS components\"; \"FibroScan with transient elastography ≥8.5 kPa and controlled attenuation parameter ≥280 dB.m-1\"; \"Historical biochemical test for fibrosis: PRO-C3 >14 ng/mL or ELF ≥9\"; \"Historical liver biopsy obtained <2 years before expected randomization\"; \"MRI-PDFF fat fraction ≥8% obtained during the screening period\". Exclusions include \"HbA1c ≥ 9.0%\", \"Presence of cirrhosis on liver biopsy defined as stage 4 fibrosis\", \"History of significant alcohol consumption\" and \"Glucagon-like peptide 1 [GLP-1] agonist, high dose Vitamin E (> 400 IU/day), or pioglitazone therapy unless stable dose for 24 weeks prior to biopsy\".",
     },
     {
       id: "uzzan-2025",
@@ -271,7 +271,7 @@ const page: SeoPage = {
       publisher: "Inflammatory Bowel Diseases (Uzzan M et al.)",
       url: "https://academic.oup.com/ibdjournal/article/31/7/1811/7778241",
       year: "2025",
-      note: "2025;31(7):1811-1818. Abstract read via the PubMed record and full text checked on September 23, 2026. Abstract: \"We analyzed SF-related data from 17 randomized controlled phase 2 or 3 IBD trials. Twelve trials were in ulcerative colitis (UC) and 5 trials were in Crohn's disease (CD) operated by a single contract research organization, IQVIA\"; \"We analyzed a total of 11 161 patients with UC and 5752 patients with CD. The mean SF proportion was 0.43 per trial in UC\"; \"In CD clinical trials, the mean SF proportion was at 0.53. The primary cause for SFs was not meeting the CDAI eligibility criteria (23.1% of all SFs).\" Methods: \"operated by the clinical research organization, IQVIA between 2012 and 2021.\" Results: \"not achieving the eligibility thresholds of the MS or its modified version (MMS) and/or the requested endoscopic subscore of at least 2 which in total represented one-third of all SF (32.6%). The next common causes were Clostridioides difficile or any other intestinal infection (9.8%), concurrent illnesses (9.75%), and not meeting tuberculosis screening (9.4%).\" The abstract gives 33.8% for the Mayo and endoscopic subscore category, so this page uses the authors' \"one-third\". In CD, CDAI was \"followed by inadequate endoscopic (sub)scores and tuberculosis screening abnormalities\". A September 2025 correction changed only an author's name.",
+      note: "2025;31(7):1811-1818. Abstract read via the PubMed record and full text checked on September 23, 2026; abstract re-checked October 23, 2026 (the OUP full text returned a bot challenge and could not be re-read). Abstract: \"We analyzed SF-related data from 17 randomized controlled phase 2 or 3 IBD trials. Twelve trials were in ulcerative colitis (UC) and 5 trials were in Crohn's disease (CD) operated by a single contract research organization, IQVIA\"; \"We analyzed a total of 11 161 patients with UC and 5752 patients with CD. The mean SF proportion was 0.43 per trial in UC\"; \"In CD clinical trials, the mean SF proportion was at 0.53. The primary cause for SFs was not meeting the CDAI eligibility criteria (23.1% of all SFs).\" Methods: \"operated by the clinical research organization, IQVIA between 2012 and 2021.\" Results: \"not achieving the eligibility thresholds of the MS or its modified version (MMS) and/or the requested endoscopic subscore of at least 2 which in total represented one-third of all SF (32.6%). The next common causes were Clostridioides difficile or any other intestinal infection (9.8%), concurrent illnesses (9.75%), and not meeting tuberculosis screening (9.4%).\" The abstract gives 33.8% for the Mayo and endoscopic subscore category, so this page uses the authors' \"one-third\". In CD, CDAI was \"followed by inadequate endoscopic (sub)scores and tuberculosis screening abnormalities\". A September 2025 correction changed only an author's name.",
     },
     {
       id: "feagan-2013",
@@ -279,7 +279,7 @@ const page: SeoPage = {
       publisher: "Gastroenterology (Feagan BG et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/23528626/",
       year: "2013",
-      note: "2013;145(1):149-157. Abstract read via the PubMed record on September 22, 2026. Quotes: \"a 10-week, randomized, double-blind, placebo-controlled study of 281 patients with mildly to moderately active UC\"; \"Thirty-one percent of participants, all of whom had a UCDAI sigmoidoscopy score ≥2 as read by the site investigator, were considered ineligible by the central reader.\"",
+      note: "2013;145(1):149-157. Abstract read via the PubMed record on September 22, 2026; re-checked October 23, 2026. Quotes: \"a 10-week, randomized, double-blind, placebo-controlled study of 281 patients with mildly to moderately active UC\"; \"Thirty-one percent of participants, all of whom had a UCDAI sigmoidoscopy score ≥2 as read by the site investigator, were considered ineligible by the central reader.\"",
     },
     {
       id: "outtier-2023",
@@ -287,7 +287,7 @@ const page: SeoPage = {
       publisher: "Inflammatory Bowel Diseases (Outtier A et al.)",
       url: "https://academic.oup.com/ibdjournal/article/29/9/1440/6815647",
       year: "2023",
-      note: "2023;29(9):1440-1445. University Hospitals Leuven, Belgium. Abstract and full text checked on September 23, 2026. Quotes: \"We reviewed all IBD patients screened for sponsored multicenter phase 1-3 induction studies with available global SF rates between January 2008 and March 2021.\"; \"During the study period, 642 local screenings were performed as part of 53 studies. We identified an overall SF rate of 17.1%, compared with 39.2% in the global study population (P < .00001).\"; \"about one-quarter of SFs could have been avoided by thorough prescreening of the patient by clinical examination, more careful investigation of the patient's medical history, and available laboratory analyses.\"",
+      note: "2023;29(9):1440-1445. University Hospitals Leuven, Belgium. Abstract and full text checked on September 23, 2026; abstract re-checked via PubMed October 23, 2026 (the OUP full text returned a bot challenge and could not be re-read). Quotes: \"We reviewed all IBD patients screened for sponsored multicenter phase 1-3 induction studies with available global SF rates between January 2008 and March 2021.\"; \"During the study period, 642 local screenings were performed as part of 53 studies. We identified an overall SF rate of 17.1%, compared with 39.2% in the global study population (P < .00001).\"; \"about one-quarter of SFs could have been avoided by thorough prescreening of the patient by clinical examination, more careful investigation of the patient's medical history, and available laboratory analyses.\"",
     },
     {
       id: "vieujean-2024",
@@ -303,7 +303,7 @@ const page: SeoPage = {
       publisher: "JHEP Reports (Fichez J et al.)",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11985113/",
       year: "2025",
-      note: "2025;7(4):101351. 1,005 patients with biopsy-proven MASLD from cohorts in France, Belgium and China. Full text read via Europe PMC on September 23, 2026. Quotes: \"Therapeutic trials in metabolic dysfunction-associated steatohepatitis (MASH) are hampered by a high 70-80% screen failure rate mostly because of the absence of fibrotic MASH on baseline liver biopsies\"; \"biopsy-proven fibrotic MASH, that is, MASH with a MASLD activity score (MAS) ≥4 and a fibrosis stage F ≥2\"; \"Among elastography-based tests (n = 817), FAST had a significantly higher AUROC (0.774 [0.743-0.806]) than FibroScan (0.728 [0.694-0.763], p = 0.013) and Agile3+ (0.708 [0.672-0.744], p = 0.004).\"",
+      note: "2025;7(4):101351. 1,005 patients with biopsy-proven MASLD from cohorts in France, Belgium and China. Full text read via Europe PMC on September 23, 2026; re-checked October 23, 2026. Quotes: \"Therapeutic trials in metabolic dysfunction-associated steatohepatitis (MASH) are hampered by a high 70-80% screen failure rate mostly because of the absence of fibrotic MASH on baseline liver biopsies\"; \"biopsy-proven fibrotic MASH, that is, MASH with a MASLD activity score (MAS) ≥4 and a fibrosis stage F ≥2\"; \"Among elastography-based tests (n = 817), FAST had a significantly higher AUROC (0.774 [0.743-0.806]) than FibroScan (0.728 [0.694-0.763], p = 0.013) and Agile3+ (0.708 [0.672-0.744], p = 0.004).\"",
     },
     {
       id: "synergy-nash-2024",
@@ -311,7 +311,7 @@ const page: SeoPage = {
       publisher: "Alimentary Pharmacology & Therapeutics (Vuppalanchi R et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/38768298/",
       year: "2024",
-      note: "2024;60(1):17-32. Several authors are Eli Lilly employees. Abstract read via the PubMed record on September 22, 2026. Quote: \"1583 participants were screened, 651 participants proceeded to liver biopsy and 190 participants were randomised with an overall screen fail rate of 87%. Following the protocol amendment, the overall qualification rate for per-protocol biopsies was minimally changed from 27.5% to 28.9% with considerable variation among different investigator medical speciality types: endocrinology: from 37.5% to 39.3%; gastroenterology/hepatology: from 26.0% to 23.3%\"; \"New inclusion criteria (FAST score >0.35 and an increase in AST inclusion criterion from >20 to >23 U/L) were adopted during the trial\".",
+      note: "2024;60(1):17-32. Several authors are Eli Lilly employees. Abstract read via the PubMed record on September 22, 2026; re-checked October 23, 2026. Quote: \"1583 participants were screened, 651 participants proceeded to liver biopsy and 190 participants were randomised with an overall screen fail rate of 87%. Following the protocol amendment, the overall qualification rate for per-protocol biopsies was minimally changed from 27.5% to 28.9% with considerable variation among different investigator medical speciality types: endocrinology: from 37.5% to 39.3%; gastroenterology/hepatology: from 26.0% to 23.3%\"; \"New inclusion criteria (FAST score >0.35 and an increase in AST inclusion criterion from >20 to >23 U/L) were adopted during the trial\".",
     },
     {
       id: "pulaski-2025",
@@ -327,7 +327,7 @@ const page: SeoPage = {
       publisher: "Liver International (Lawitz EJ, Poordad F, Goodman ZD)",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13390309/",
       year: "2026",
-      note: "2026;46(8):e70808. Full text checked on September 23, 2026. Quote: \"Screen failure rates of 70%-80% have been reported in MASH trials, driven in large part by the absence of ballooning on screening biopsies\".",
+      note: "2026;46(8):e70808. Full text checked on September 23, 2026; re-checked October 23, 2026. Quote: \"Screen failure rates of 70%-80% have been reported in MASH trials, driven in large part by the absence of ballooning on screening biopsies\".",
     },
     {
       id: "madrigal-2024",
@@ -343,7 +343,7 @@ const page: SeoPage = {
       publisher: "Gastroenterology (Lewis JD et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/37481117/",
       year: "2023",
-      note: "2023;165(5):1197-1205. Claims-based estimate. Abstract read via the PubMed record on September 22, 2026. Quote: \"The age-, sex- and insurance-standardized prevalence of IBD was 721 per 100,000 population (95% CI, 717-726). Extrapolated to the 2020 United States Census, an estimated 2.39 million Americans are diagnosed with IBD.\"",
+      note: "2023;165(5):1197-1205. Claims-based estimate. Abstract read via the PubMed record on September 22, 2026; re-checked October 23, 2026. Quote: \"The age-, sex- and insurance-standardized prevalence of IBD was 721 per 100,000 population (95% CI, 717-726). Extrapolated to the 2020 United States Census, an estimated 2.39 million Americans are diagnosed with IBD.\"",
     },
     {
       id: "fda-resmetirom-2024",
