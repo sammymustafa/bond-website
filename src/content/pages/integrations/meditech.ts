@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "MEDITECH Expanse is MEDITECH's go-forward EHR platform, and MEDITECH lists community and critical access hospitals first among the customers it serves.{{cite:klas-2025-blog,meditech-about}} Bond Health connects to Expanse via FHIR R4 or an HL7 v2 feed that the hospital approves, screens coded data and clinical notes against a study's criteria, and hands ranked candidates to coordinators. This page covers the data, the approvals, the timeline and what is not integrated today.",
   summary: "The FHIR and HL7 paths, IT approvals, timeline and limits for connecting Bond at a MEDITECH hospital.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -31,7 +31,7 @@ const page: SeoPage = {
             { value: "14.7%", label: "US acute care hospitals on MEDITECH, 2025 (KLAS)", cite: "klas-2026-hsc" },
             { value: "12.5%", label: "US acute care beds on MEDITECH, 2025 (KLAS)", cite: "klas-2026-hsc" },
             { value: "84%", label: "Legacy MEDITECH customers making a go-forward decision in 2025 who chose Expanse (KLAS)", cite: "klas-2026-hsc" },
-            { value: "2,000+", label: "Organizations in 28 countries and territories, per MEDITECH (September 2026)", cite: "meditech-about" },
+            { value: "2,000+", label: "Organizations in 28 countries and territories, per MEDITECH (October 2026)", cite: "meditech-about" },
           ],
         },
         {
@@ -40,7 +40,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "MEDITECH offers patient registries and a Business and Clinical Analytics platform, and Expanse Genomics can build research cohorts by genetic marker.{{cite:meditech-pop-health,meditech-genomics}} As of September 2026, MEDITECH's pages describe these as cohort tools, not criterion-by-criterion review of a patient's notes, which is what Bond's [Identify](/identify) stage does.",
+          text: "MEDITECH offers patient registries and a Business and Clinical Analytics platform, and Expanse Genomics can build research cohorts by genetic marker.{{cite:meditech-pop-health,meditech-genomics}} As of October 2026, MEDITECH's pages describe these as cohort tools, not criterion-by-criterion review of a patient's notes, which is what Bond's [Identify](/identify) stage does.",
         },
       ],
     },
@@ -83,7 +83,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "warning",
           title: "Patient access is not population access",
-          text: "As of September 2026, MEDITECH's public FHIR pages describe apps a patient authorizes. Screening a population needs system-level access that the hospital grants to Bond under a business associate agreement. The path, FHIR or an HL7 v2 feed, is settled at scoping with IT and, where needed, MEDITECH.",
+          text: "As of October 2026, MEDITECH's public FHIR pages describe apps a patient authorizes. Screening a population needs system-level access that the hospital grants to Bond under a business associate agreement. The path, FHIR or an HL7 v2 feed, is settled at scoping with IT and, where needed, MEDITECH.",
         },
       ],
     },
@@ -145,7 +145,7 @@ const page: SeoPage = {
         {
           type: "checklist",
           items: [
-            "Confirm the Expanse release and its USCDI version. Certified health IT had to support USCDI v3 by the end of 2025; MEDITECH's public Greenfield page still listed USCDI v1 as of September 2026.{{cite:onc-hti1,meditech-greenfield}}",
+            "Confirm the Expanse release and its USCDI version. Certified health IT had to support USCDI v3 by the end of 2025; MEDITECH's public Greenfield page still listed USCDI v1 as of October 2026.{{cite:onc-hti1,meditech-greenfield}}",
             "Choose the access path: population-level FHIR, an HL7 v2 feed from the interface engine, or an integration partner.",
             "Register Bond's client, issue credentials and approve scopes limited to the table above.",
             "Run the vendor security review and sign the business associate agreement.",
@@ -277,7 +277,7 @@ const page: SeoPage = {
       publisher: "healthsystemCIO.com (reporting KLAS Research)",
       url: "https://healthsystemcio.com/2026/05/14/acute-care-ehr-market-share-2026/",
       year: "2026",
-      note: "Reports KLAS's US Acute Care EHR Market Share 2026 report, covering EHR contracts executed January through December 2025. Accessed September 2026. Quote: \"Epic now holds 43.7% of acute care hospital market share and 56.9% of beds. Oracle Health, meanwhile, sits second at 21.9% of hospitals and 20.4% of beds, followed by Meditech at 14.7% and 12.5%.\" Also: \"84% of legacy Meditech customers making a go-forward decision chose to migrate to Expanse.\"",
+      note: "Reports KLAS's US Acute Care EHR Market Share 2026 report, covering EHR contracts executed January through December 2025. Accessed September 2026; re-checked October 23, 2026. Quote: \"Epic now holds 43.7% of acute care hospital market share and 56.9% of beds. Oracle Health, meanwhile, sits second at 21.9% of hospitals and 20.4% of beds, followed by Meditech at 14.7% and 12.5%.\" Also: \"84% of legacy Meditech customers making a go-forward decision chose to migrate to Expanse.\"",
     },
     {
       id: "klas-2025-blog",
@@ -301,7 +301,7 @@ const page: SeoPage = {
       publisher: "MEDITECH",
       url: "https://ehr.meditech.com/about/meditech",
       year: "2026",
-      note: "Vendor figures, accessed September 2026. Quote: \"Over 2,000 healthcare organizations across 28 countries and territories have chosen MEDITECH to meet the challenges of a new era in healthcare.\" Customer types listed first: \"Community and critical access hospitals\". Also: \"MEDITECH was founded in 1969\", headquartered \"in Canton, Massachusetts\", and \"MEDITECH Expanse is cloud-native and highly scalable, making it the ideal EHR platform for health systems of all sizes.\"",
+      note: "Vendor figures, accessed September 2026; re-checked October 23, 2026. Quote: \"Over 2,000 healthcare organizations across 28 countries and territories have chosen MEDITECH to meet the challenges of a new era in healthcare.\" Customer types listed first: \"Community and critical access hospitals\". Also: \"MEDITECH was founded in 1969\", headquartered \"in Canton, Massachusetts\", and \"MEDITECH Expanse is cloud-native and highly scalable, making it the ideal EHR platform for health systems of all sizes.\"",
     },
     {
       id: "meditech-hca",
@@ -317,7 +317,7 @@ const page: SeoPage = {
       publisher: "MEDITECH",
       url: "https://ehr.meditech.com/ehr-solutions/meditech-population-health",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Actionable patient registries enable practices to take advantage of upcoming appointments to address gaps in care.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Actionable patient registries enable practices to take advantage of upcoming appointments to address gaps in care.\"",
     },
     {
       id: "meditech-genomics",
@@ -333,7 +333,7 @@ const page: SeoPage = {
       publisher: "MEDITECH",
       url: "https://ehr.meditech.com/ehr-solutions/greenfield-workspace",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Developers can execute APIs and test their applications against a real MEDITECH EHR.\" Also: \"US Core FHIR R4 APIs: Provides view-only access to patient-facing data after patients give the requesting app authorization to access their data. USCDI V1 and DSTU2/R4 compatible.\" On FHIR Scheduling: \"User and patient workflows are supported for Expanse customers only.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Developers can execute APIs and test their applications against a real MEDITECH EHR.\" Also: \"US Core FHIR R4 APIs: Provides view-only access to patient-facing data after patients give the requesting app authorization to access their data. USCDI V1 and DSTU2/R4 compatible.\" On FHIR Scheduling: \"User and patient workflows are supported for Expanse customers only.\"",
     },
     {
       id: "meditech-greenfield-howto",
@@ -355,9 +355,9 @@ const page: SeoPage = {
       id: "onc-g10",
       title: "§ 170.315(g)(10) Standardized API for patient and population services",
       publisher: "HealthIT.gov (ASTP/ONC)",
-      url: "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services",
+      url: "https://healthit.gov/test-method/standardized-api-for-patient-and-population-services-acb-atl/",
       year: "2025",
-      note: "Test method for the certification criterion. Requires FHIR R4 with US Core 6.1.0, SMART App Launch 2.0.0 and FHIR Bulk Data Access for multiple patients as of December 31, 2025, and plain-text representation of clinical note text.",
+      note: "Test method for the certification criterion; the old healthit.gov URL now redirects to this address (checked October 23, 2026). Requires FHIR R4 with US Core 6.1.0, SMART App Launch 2.0.0 and FHIR Bulk Data Access for multiple patients as of December 31, 2025, and plain-text representation of clinical note text.",
     },
     {
       id: "onc-uscdi",
@@ -365,7 +365,7 @@ const page: SeoPage = {
       publisher: "HealthIT.gov (ASTP/ONC)",
       url: "https://isp.healthit.gov/united-states-core-data-interoperability-uscdi",
       year: "2026",
-      note: "Accessed September 2026. Clinical Notes data class: \"Narrative patient data relevant to the context identified by note types.\" Note types vary by version; Consultation Note, Discharge Summary Note, History & Physical, Procedure Note and Progress Note appear in both USCDI v1 and v5.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Clinical Notes data class: \"Narrative patient data relevant to the context identified by note types.\" Note types vary by version; Consultation Note, Discharge Summary Note, History & Physical, Procedure Note and Progress Note appear in both USCDI v1 and v5.",
     },
     {
       id: "us-core-docref",

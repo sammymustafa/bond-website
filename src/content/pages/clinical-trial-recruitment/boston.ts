@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruiting for clinical trials in the Boston area",
   intro:
-    "On October 5, 2026, a ClinicalTrials.gov radius search found 2,961 studies recruiting at one or more sites within 25 miles of downtown Boston, about 13% of the 22,007 recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites in the city and its suburbs. Bond Health is based in Boston.{{cite:bond-site}}",
+    "On October 23, 2026, a ClinicalTrials.gov radius search found 2,965 studies recruiting at one or more sites within 25 miles of downtown Boston, about 13% of the 22,038 recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites in the city and its suburbs. Bond Health is based in Boston.{{cite:bond-site}}",
   summary: "Boston-area recruiting-trial counts, research hubs, health systems and their EHRs, languages, and Massachusetts outreach and privacy rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Oncology is the largest area: 1,130 of the 7,064 recruiting US oncology studies, about 16%, list a site within the radius. The area's share is highest in dermatology (39 of 212) and is also above its overall 13% in cardiology (474 of 2,826), gastroenterology (49 of 283) and neurology (160 of 985). It is lowest in obesity and type 2 diabetes, at 75 of 855.{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Oncology is the largest area: 1,147 of the 7,092 recruiting US oncology studies, about 16%, list a site within the radius. The area's share is highest in dermatology (38 of 206) and is also above its overall 13% in cardiology (473 of 2,827), gastroenterology (47 of 281) and neurology (161 of 1,000). It is lowest in obesity and type 2 diabetes, at 74 of 848.{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "boston", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A radius count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching on the condition field can pull in off-target studies. The oncology examples below are the most recently updated recruiting studies in the radius, from investigator-led studies at Dana-Farber and Massachusetts General Hospital to industry trials.{{cite:ctgov-api}} See [oncology](/oncology) for how Bond screens for cancer trials.",
+          text: "A radius count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching on the condition field can pull in off-target studies. The oncology examples below are the most recently updated recruiting studies in the radius: three industry trials, from Bristol-Myers Squibb, Novartis and Exelixis, and three from the National Cancer Institute and NRG Oncology.{{cite:ctgov-api}} See [oncology](/oncology) for how Bond screens for cancer trials.",
         },
         { type: "trials", geo: "boston", condition: "oncology", cite: "ctgov-api" },
       ],
@@ -261,7 +261,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting near Boston?",
-      a: "On October 5, 2026, a ClinicalTrials.gov search for recruiting studies with a site within 25 miles of downtown Boston returned 2,961, including 1,130 that matched oncology keywords.{{cite:ctgov-api}}",
+      a: "On October 23, 2026, a ClinicalTrials.gov search for recruiting studies with a site within 25 miles of downtown Boston returned 2,965, including 1,147 that matched oncology keywords.{{cite:ctgov-api}}",
     },
     {
       q: "Can an AI recruitment call be recorded in Massachusetts?",
@@ -279,7 +279,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Radius search queried October 5, 2026: filter.geo=distance(42.3601,-71.0589,25mi) (25 miles of downtown Boston), filter.overallStatus=RECRUITING, countTotal=true; 2,961 studies. US totals from the same day use query.locn=United States; 22,007 studies. Area counts use keyword searches on the condition field. Shares are Bond's arithmetic.",
+      note: "Radius search queried October 23, 2026: filter.geo=distance(42.3601,-71.0589,25mi) (25 miles of downtown Boston), filter.overallStatus=RECRUITING, countTotal=true; 2,965 studies. US totals from the same day use query.locn=United States; 22,038 studies. Area counts use keyword searches on the condition field. Shares are Bond's arithmetic.",
     },
     {
       id: "census-cities-2025",

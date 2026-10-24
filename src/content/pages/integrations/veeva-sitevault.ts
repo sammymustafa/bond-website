@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Veeva SiteVault is the eISF, CTMS and eConsent system many research sites use as their regulatory binder.{{cite:veeva-eisf,veeva-ctms-faq}} Bond Health works at the recruitment step, before a patient becomes a participant, and produces records the binder may need.",
   summary: "Which Bond records go into a SiteVault eISF, under which document types, and what stays manual today.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -27,11 +27,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "SiteVault eISF is an electronic investigator site file that replaces paper regulatory binders and gives study teams and monitors self-serve access to documents.{{cite:veeva-eisf}} Veeva launched SiteVault as a free eRegulatory product in January 2020.{{cite:veeva-launch}} As of September 2026, the free edition includes CTMS, eISF and eConsent for sites with 20 or fewer concurrent active studies, which Veeva says is over 90% of research sites globally.{{cite:veeva-ctms-faq}} Larger sites move to SiteVault Enterprise, which has tiered pricing.{{cite:veeva-eisf,veeva-ctms-faq}}",
+          text: "SiteVault eISF is an electronic investigator site file that replaces paper regulatory binders and gives study teams and monitors self-serve access to documents.{{cite:veeva-eisf}} Veeva launched SiteVault as a free eRegulatory product in January 2020.{{cite:veeva-launch}} As of October 2026, the free edition includes CTMS, eISF and eConsent for sites with 20 or fewer concurrent active studies, which Veeva says is over 90% of research sites globally.{{cite:veeva-ctms-faq}} Larger sites move to SiteVault Enterprise, which has tiered pricing.{{cite:veeva-eisf,veeva-ctms-faq}}",
         },
         {
           type: "p",
-          text: "Site staff file essential documents in SiteVault, and monitors assigned to a study review them there.{{cite:veeva-eisf,veeva-doctypes}} The figures below are Veeva's, as of September 2026.",
+          text: "Site staff file essential documents in SiteVault, and monitors assigned to a study review them there.{{cite:veeva-eisf,veeva-doctypes}} The figures below are Veeva's, as of October 2026.",
         },
         {
           type: "stats",
@@ -55,7 +55,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "What Bond does and does not claim",
-          text: "Bond works alongside SiteVault and has no Veeva partnership. Its only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}} As of September 2026, Veeva's AI page says only Veeva-governed AI agents operate on SiteVault data.{{cite:veeva-ai}} Bond's AI runs on EHR data, never on SiteVault.",
+          text: "Bond works alongside SiteVault and has no Veeva partnership. Its only vendor certification is [CRIO](/integrations/crio) Certified Partner.{{cite:bond-site}} As of October 2026, Veeva's AI page says only Veeva-governed AI agents operate on SiteVault data.{{cite:veeva-ai}} Bond's AI runs on EHR data, never on SiteVault.",
         },
       ],
     },
@@ -125,7 +125,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "It depends on the edition. As of September 2026, Veeva's FAQ says the free version integrates with other Veeva applications but does not currently integrate with third-party systems, and that the Enterprise package enables integration.{{cite:veeva-faq}} On Veeva's plans page, Open API and single sign-on are Enterprise features.{{cite:veeva-plans}}",
+          text: "It depends on the edition. As of October 2026, Veeva's FAQ says the free version integrates with other Veeva applications but does not currently integrate with third-party systems, and that the Enterprise package enables integration.{{cite:veeva-faq}} On Veeva's plans page, Open API and single sign-on are Enterprise features.{{cite:veeva-plans}}",
         },
         {
           type: "table",
@@ -247,7 +247,7 @@ const page: SeoPage = {
     },
     {
       q: "How is Bond different from Veeva AI in SiteVault?",
-      a: "As of September 2026, SiteVault's first production AI agent reads a protocol's schedule of assessments and builds the visit schedule in CTMS.{{cite:veeva-ai}} That is study setup. Bond works on a different step: finding and pre-screening patients from the EHR.",
+      a: "As of October 2026, SiteVault's first production AI agent reads a protocol's schedule of assessments and builds the visit schedule in CTMS.{{cite:veeva-ai}} That is study setup. Bond works on a different step: finding and pre-screening patients from the EHR.",
     },
   ],
   sources: [
@@ -272,7 +272,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/solutions/eisf",
       year: "2026",
-      note: "Vendor page, accessed September 2026. Quote: \"SiteVault eISF is an electronic investigator site file (eISF) that reduces the administrative burden of managing paper binders so research teams can focus on what matters most.\" Also: \"SiteVault is free for sites with up to 20 active studies, and available with tiered pricing options for larger sites.\" Also: \"Join over 8,000 sites across more than 80 countries.\"",
+      note: "Vendor page, accessed September 2026; re-checked October 23, 2026. Quote: \"SiteVault eISF is an electronic investigator site file (eISF) that reduces the administrative burden of managing paper binders so research teams can focus on what matters most.\" Also: \"SiteVault is free for sites with up to 20 active studies, and available with tiered pricing options for larger sites.\" Also: \"Join over 8,000 sites across more than 80 countries.\"",
     },
     {
       id: "veeva-home",
@@ -280,7 +280,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/",
       year: "2026",
-      note: "Vendor homepage, accessed September 2026. Quote: \"2000 + Monthly Active Sites Use SiteVault\"",
+      note: "Vendor homepage, accessed September 2026; re-checked October 23, 2026. Quote: \"2000 + Monthly Active Sites Use SiteVault\"",
     },
     {
       id: "veeva-ctms-faq",
@@ -288,7 +288,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veevavault.help/gr/sitevault/ctms/ctms-faq/",
       year: "2026",
-      note: "Quote: \"The 'SiteVault Free' edition (which now includes CTMS, eISF, and eConsent) is available to any site managing 20 or fewer concurrent active studies. This is over 90% of research sites, globally.\" Also: \"The Enterprise tier provides the same core CTMS capabilities but includes additional features like Single Sign-On (SSO), API access for custom integrations, and dedicated account management.\" Also: \"For sponsors and CROs using Veeva's Clinical Platform, SiteVault CTMS allows for bidirectional data flow. This streamlines the exchange of information, such as recruitment status and milestone completions.\"",
+      note: "Re-checked October 23, 2026. Quote: \"The 'SiteVault Free' edition (which now includes CTMS, eISF, and eConsent) is available to any site managing 20 or fewer concurrent active studies. This is over 90% of research sites, globally.\" Also: \"The Enterprise tier provides the same core CTMS capabilities but includes additional features like Single Sign-On (SSO), API access for custom integrations, and dedicated account management to support larger-scale operations.\" Also: \"For sponsors and CROs using Veeva's Clinical Platform, SiteVault CTMS allows for bidirectional data flow. This streamlines the exchange of information, such as recruitment status and milestone completions, directly between the site and the sponsor.\"",
     },
     {
       id: "veeva-launch",
@@ -304,7 +304,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/sitevault-faq",
       year: "2026",
-      note: "Accessed September 22, 2026. Quote: \"The free version of SiteVault integrates with other Veeva applications but does not currently integrate with third-party systems.\" Also: \"The SiteVault Enterprise Package enables integration.\" Also: \"The SiteVault eBinder structure is based on the eISF Reference Model and is an intentional product design choice.\" Also: \"The sites decide what documents to share and with whom to share them.\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Quote: \"The free version of SiteVault integrates with other Veeva applications but does not currently integrate with third-party systems.\" Also: \"The SiteVault Enterprise Package enables integration.\" Also: \"The SiteVault eBinder structure is based on the eISF Reference Model and is an intentional product design choice [...]\" Also: \"The sites decide what documents to share and with whom to share them.\"",
     },
     {
       id: "veeva-plans",
@@ -312,7 +312,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/plans",
       year: "2026",
-      note: "Feature table, SiteVault Free then SiteVault Enterprise. Quote: \"Connection to sponsor systems from Veeva ✓ ✓ One login across Veeva applications ✓ ✓ Open API – ✓ Single sign-on (SSO) – ✓\"",
+      note: "Feature table, SiteVault Free then SiteVault Enterprise; re-checked October 23, 2026. Quote: \"Connection to sponsor systems from Veeva ✓ ✓ One login across Veeva applications ✓ ✓ Open API – ✓ Single sign-on (SSO) – ✓\"",
     },
     {
       id: "veeva-vault-api",
@@ -336,7 +336,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veevavault.help/gr/uploads/sitevault/downloads/SiteVault-DocumentTypes.xlsx",
       year: "2026",
-      note: "Spreadsheet downloaded and read September 22, 2026 (\"Current\" sheet; the Updates sheet is dated August 7, 2026). Quote: \"Participant Screening Log | Subject Screening Log -- Lists all study participants screened at the site. Participants are coded to respect personal identification. | Draft to Current | ... | Participants > Logs\" Also: \"Advertisement for Recruitment | Recruiting Ad -- Materials used in study recruitment campaigns; approved by the IRB/IEC to ensure recruitment measures are appropriate and not coercive.\" (Participant Facing > Recruiting & Consenting). Also: \"Recruitment Plan | To describe the planned participant enrollment/recruitment goals for the study, and the methods by which those goals will be tracked and achieved.\" (Key Study Materials > Manuals & Procedures). Also: \"System User Access | ... Identifies which site staff have received accounts for a third party system (such as randomization or ePRO) used for the study. May also identify revocation of access.\" (PI Oversight). Also: Source \"May include medical treatment and history, concomitant medication (con med) records, documentation of the consent process\" (Participants > Source). Also: \"Training Evidence (study-specific) | Verifies completion of study-specific training. Often in form of a Sign-in Sheet.\" (Study Training). Also: \"IRB/IEC Response | Ethics Committee Approval, Decision, Acknowledgement\" (IRB/IEC > Submissions). Also: \"Participant ID Code List | Subject Identification Code List, Subject ID List -- Fully identifies all participants for the study at the site, with unique identifiers/codes where relevant.\" (Participants > Logs). Can Monitors View: \"Yes, if steady state and monitor is on the study.\"",
+      note: "Spreadsheet downloaded and read September 22, 2026; re-checked October 23, 2026 (\"Current\" sheet; the Updates sheet is still dated August 7, 2026). Quote: \"Participant Screening Log | Subject Screening Log -- Lists all study participants screened at the site. Participants are coded to respect personal identification. | Draft to Current | ... | Participants > Logs\" Also: \"Advertisement for Recruitment | Recruiting Ad -- Materials used in study recruitment campaigns; approved by the IRB/IEC to ensure recruitment measures are appropriate and not coercive.\" (Participant Facing > Recruiting & Consenting). Also: \"Recruitment Plan | To describe the planned participant enrollment/recruitment goals for the study, and the methods by which those goals will be tracked and achieved.\" (Key Study Materials > Manuals & Procedures). Also: \"System User Access | ... Identifies which site staff have received accounts for a third party system (such as randomization or ePRO) used for the study. May also identify revocation of access.\" (PI Oversight). Also: Source \"May include medical treatment and history, concomitant medication (con med) records, documentation of the consent process\" (Participants > Source). Also: \"Training Evidence (study-specific) | Verifies completion of study-specific training. Often in form of a Sign-in Sheet.\" (Study Training). Also: \"IRB/IEC Response | Ethics Committee Approval, Decision, Acknowledgement\" (IRB/IEC > Submissions). Also: \"Participant ID Code List | Subject Identification Code List, Subject ID List -- Fully identifies all participants for the study at the site, with unique identifiers/codes where relevant.\" (Participants > Logs). Can Monitors View: \"Yes, if steady state and monitor is on the study.\"",
     },
     {
       id: "veeva-participant",
@@ -352,7 +352,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/ai",
       year: "2026",
-      note: "Accessed September 22, 2026. Quote: \"Not permitted. Only Veeva-governed agents operate on SiteVault data.\" (row: third-party AI apps reaching into your data). Also: \"SiteVault's first production ready AI agent is live in CTMS, built to eliminate the manual overhead of study setup.\" Also: \"The agent reads the schedule of assessments the way an experienced study manager would, automatically generating the visit schedule directly in CTMS.\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Quote: \"Not permitted. Only Veeva-governed agents operate on SiteVault data.\" (row: third-party AI apps reaching into your data). Also: \"SiteVault's first production ready AI agent is live in CTMS, built to eliminate the manual overhead of study setup and give teams valuable time back.\" Also: \"The agent reads the schedule of assessments the way an experienced study manager would, automatically generating the visit schedule directly in CTMS.\"",
     },
     {
       id: "veeva-econsent",
@@ -360,7 +360,7 @@ const page: SeoPage = {
       publisher: "Veeva Systems",
       url: "https://sites.veeva.com/solutions/econsent",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"SiteVault eConsent provides a digital way to consent clinical trial participants in-person or remotely.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"SiteVault eConsent provides a digital way to consent clinical trial participants in-person or remotely.\"",
     },
   ],
   related: [

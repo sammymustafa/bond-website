@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Before contacting a patient about a study, answer three questions: who may make contact, under which HIPAA provision, and with what IRB-approved words. Automated calls and texts add the TCPA and state AI laws. Not legal advice: confirm your plan with your privacy officer, IRB and counsel.",
   summary: "Who may contact patients, under which HIPAA path, with what IRB approval, and how TCPA and state AI laws apply.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
     {
@@ -116,10 +116,10 @@ const page: SeoPage = {
           items: [
             "**AI voices count as artificial voices.** The FCC ruled so in February 2024.{{cite:fcc-24-17}} The rule turns on method, not topic: an autodialed or artificial-voice call to a mobile number needs prior express consent even when it is not marketing.{{cite:cfr-47-64-1200}}",
             "**The healthcare exemption does not list recruitment.** Without prior consent, providers may call or text a patient's mobile number only for listed purposes such as appointment reminders and lab results, at most one message a day and three a week, each with an opt-out.{{cite:cfr-47-64-1200}}",
-            "**Opt-outs are broad and fast.** Patients can revoke consent by any reasonable means, and callers must honor revocation within 10 business days.{{cite:fcc-24-24,cfr-47-64-1200}} As of September 2026, the FCC has delayed to January 31, 2027 the rule that treats one opt-out as revoking consent for all unrelated automated messages.{{cite:fcc-da-26-12}}",
+            "**Opt-outs are broad and fast.** Patients can revoke consent by any reasonable means, and callers must honor revocation within 10 business days.{{cite:fcc-24-24,cfr-47-64-1200}} The rule that treats one opt-out as revoking consent for all unrelated automated messages was delayed to January 31, 2027.{{cite:fcc-da-26-12}} As of October 2026, it is being replaced: an FCC order adopted September 30, 2026 lets callers apply an opt-out from one category of informational messages to that category only, and lets them designate an exclusive opt-out method (a key-press or voice opt-out, a reply text with a standard word such as STOP, or a designated website or phone number) if they disclose it on the call or in the text. It takes effect 30 days after Federal Register publication.{{cite:fcc-26-67}}",
             "**Calling hours.** Telephone solicitations are barred before 8 a.m. and after 9 p.m. at the patient's location.{{cite:cfr-47-64-1200}} Recruitment calls are generally not solicitations, but the window is a sensible default. In one three-health-system trial, opt-outs appeared higher for calls placed from 7 to 9 p.m.{{cite:jgim-2023}}",
             "**Texting has carrier rules too.** Carriers expect opt-in and a STOP opt-out, with plain-language opt-outs honored.{{cite:ctia-2023}} Texts from a 10-digit number need 10DLC brand and campaign registration.{{cite:tcr}}",
-            "**Federal AI disclosure is still a proposal.** The FCC proposed it in August 2024.{{cite:fcc-24-84}} As of September 2026, no such requirement appears in 47 CFR 64.1200.{{cite:cfr-47-64-1200}}",
+            "**Federal AI disclosure is still a proposal.** The FCC proposed it in August 2024.{{cite:fcc-24-84}} As of October 2026, no such requirement appears in 47 CFR 64.1200.{{cite:cfr-47-64-1200}}",
           ],
         },
         {
@@ -140,7 +140,7 @@ const page: SeoPage = {
         },
         {
           type: "table",
-          caption: "State AI disclosure laws that may reach recruitment calls and texts (as of September 2026)",
+          caption: "State AI disclosure laws that may reach recruitment calls and texts (as of October 2026)",
           columns: ["State", "Law", "What it requires", "In effect"],
           rows: [
             [
@@ -175,7 +175,7 @@ const page: SeoPage = {
             ],
             [
               "Utah",
-              "[SB 226](https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf), Utah Code 13-75-103",
+              "[SB 226](https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf), Utah Code 13-77-103",
               "Licensed professionals must prominently disclose generative AI in high-risk interactions, including health data collection: spoken at the start of a call, written before a text exchange.{{cite:utah-sb226}}",
               "May 7, 2025",
             ],
@@ -307,7 +307,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register and GPO)",
       url: "https://www.ecfr.gov/current/title-45/section-164.512",
       year: "2026",
-      note: "Paragraph (i) covers research: waiver of authorization in whole or in part, reviews preparatory to research, and the waiver criteria. Text current as of September 1, 2026.",
+      note: "Paragraph (i) covers research: waiver of authorization in whole or in part, reviews preparatory to research, and the waiver criteria. Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-508",
@@ -409,7 +409,7 @@ const page: SeoPage = {
       publisher: "Legal Information Institute, Cornell Law School",
       url: "https://www.law.cornell.edu/cfr/text/47/64.1200",
       year: "2025",
-      note: "Quote (paragraph (a)(9)(iv)(C)): \"Voice calls and text messages are strictly limited to those for the following purposes: appointment and exam confirmations and reminders, wellness checkups, hospital pre-registration instructions, pre-operative instructions, lab results, post-discharge follow-up intended to prevent readmission, prescription notifications, and home healthcare instructions\". Checked against the eCFR text current as of September 18, 2026, which contains no AI-call disclosure requirement.",
+      note: "Quote (paragraph (a)(9)(iv)(C)): \"Voice calls and text messages are strictly limited to those for the following purposes: appointment and exam confirmations and reminders, wellness checkups, hospital pre-registration instructions, pre-operative instructions, lab results, post-discharge follow-up intended to prevent readmission, prescription notifications, and home healthcare instructions\". Checked against the eCFR text current as of September 18, 2026, which contains no AI-call disclosure requirement; re-checked October 23, 2026.",
     },
     {
       id: "fcc-24-24",
@@ -424,6 +424,14 @@ const page: SeoPage = {
       publisher: "Federal Communications Commission, Consumer and Governmental Affairs Bureau",
       url: "https://docs.fcc.gov/public/attachments/DA-26-12A1.pdf",
       year: "2026",
+    },
+    {
+      id: "fcc-26-67",
+      title: "Report and Order and Further Notice of Proposed Rulemaking on TCPA consent revocation (FCC 26-67)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-26-67A1.pdf",
+      year: "2026",
+      note: "Adopted September 30, 2026; released October 1, 2026. Read October 23, 2026. Quote (Appendix A, revised 64.1200(a)(10)): \"Callers may designate any of the following methods as the exclusive means to revoke consent\"; \"The caller must clearly and conspicuously disclose the designated method to revoke consent on the call or in the text.\"; and \"Callers may interpret a revocation request made in response to an informational call or text message (i.e., a call or text message that does not contain any advertising or telemarketing) as applying only to the specific category of informational robocalls and text messages to which the revocation was directed and not to all communications.\" Quote (paragraph 24): \"The revised rule amendments contained herein become effective 30 days after Federal Register publication.\" The (a)(10) change will \"supersede the delayed effective date of the relevant portion of that rule that was previously extended to January 31, 2027.\" The Federal Register summary (FR Doc. 2026-21821) was on public inspection October 23, 2026, scheduled for publication October 26, 2026.",
     },
     {
       id: "fcc-24-84",
@@ -494,7 +502,7 @@ const page: SeoPage = {
       publisher: "Utah State Legislature",
       url: "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
       year: "2025",
-      note: "Quote (Utah Code 13-75-103(2) and (3)): \"An individual providing services in a regulated occupation shall: (a) prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if the use of generative artificial intelligence constitutes a high-risk artificial intelligence interaction ... A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction.\" Section 13-75-101(5) defines a high-risk interaction to include the collection of health data. The bill takes effect May 7, 2025.",
+      note: "Quote (bill section 13-75-103(2) and (3), codified as Utah Code 13-77-103 after technical renumbering; codified text re-checked October 23, 2026): \"An individual providing services in a regulated occupation shall: (a) prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if the use of generative artificial intelligence constitutes a high-risk artificial intelligence interaction ... A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction.\" Section 13-75-101(5) (codified as 13-77-101(5)) defines a high-risk interaction to include the collection of health data. The bill takes effect May 7, 2025.",
     },
     {
       id: "ciscrp-2025",

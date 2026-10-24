@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Most of the evidence an oncology protocol screens on sits in pathology, molecular and imaging reports and in clinic notes, not in coded fields. In a pooled analysis of 13 studies of cancer patients, 21.5% were ineligible for a trial open at their institution, and 8.1% enrolled.{{cite:unger-2019}}",
   summary: "How oncology criteria map to the chart, what drives screen failure, and how Bond screens for it.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -165,21 +165,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 7,074 studies with a US site were recruiting under an oncology keyword search, about a third of the 22,041 recruiting US studies.{{cite:ctgov-api}} The search covers cancer, neoplasm, carcinoma, lymphoma or leukemia in the condition field, so it can miss tumor types named otherwise and includes some supportive care studies. Other areas use similar keyword sets (neurology covers only Alzheimer, dementia, Parkinson, multiple sclerosis, migraine and epilepsy), and a study can count in more than one area.",
+          text: "As of October 23, 2026, 7,092 studies with a US site were recruiting under an oncology keyword search, about a third of the 22,038 recruiting US studies.{{cite:ctgov-api}} The search covers cancer, neoplasm, carcinoma, lymphoma or leukemia in the condition field, so it can miss tumor types named otherwise and includes some supportive care studies. Other areas use similar keyword sets (neurology covers only Alzheimer, dementia, Parkinson, multiple sclerosis, migraine and epilepsy), and a study can count in more than one area.",
         },
         {
           type: "chart",
-          title: "Recruiting studies with at least one US site, by area (keyword search, September 21, 2026)",
+          title: "Recruiting studies with at least one US site, by area (keyword search, October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -195,7 +195,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "These studies were recruiting at US sites in September 2026, per ClinicalTrials.gov.{{cite:ctgov-api}}",
+          text: "These studies were recruiting at US sites in October 2026, per ClinicalTrials.gov.{{cite:ctgov-api}}",
         },
         {
           type: "ul",
@@ -248,7 +248,7 @@ const page: SeoPage = {
       publisher: "Clinical Genitourinary Cancer (Wong SE, North SA, Sweeney CJ, Stockler MR, Sridhar SS)",
       url: "https://pubmed.ncbi.nlm.nih.gov/28993132/",
       year: "2017",
-      note: "Abstract text checked via Europe PMC on September 22, 2026. Quote: \"We reviewed 50 phase II and III trials in advanced genitourinary cancers conducted between 1999 and 2016 ... Of the 50 trials, only 48% (24 of 50) published screen failure rates ... The main reason for screen failure was reported as ineligibility ... with the most frequent reasons being ineligibility and patient refusal ... Contemporary trials in genitourinary cancer reported screen failure rates of approximately 20% to 30%.\"",
+      note: "Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"We reviewed 50 phase II and III trials in advanced genitourinary cancers conducted between 1999 and 2016 ... Of the 50 trials, only 48% (24 of 50) published screen failure rates ... The main reason for screen failure was reported as ineligibility ... with the most frequent reasons being ineligibility and patient refusal ... Contemporary trials in genitourinary cancer reported screen failure rates of approximately 20% to 30%.\"",
     },
     {
       id: "korakis-2025",
@@ -296,7 +296,7 @@ const page: SeoPage = {
       publisher: "AMIA Joint Summits on Translational Science Proceedings (Raghavan P, Chen JL, Fosler-Lussier E, Lai AM)",
       url: "https://pubmed.ncbi.nlm.nih.gov/25717416/",
       year: "2014",
-      note: "Abstract text checked via Europe PMC on September 22, 2026. Quote: \"We perform an empirical study to validate the argument and show that structured data alone is insufficient in resolving eligibility criteria for recruiting patients onto clinical trials for chronic lymphocytic leukemia (CLL) and prostate cancer. Unstructured data is essential to solving 59% of the CLL trial criteria and 77% of the prostate cancer trial criteria.\"",
+      note: "Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"We perform an empirical study to validate the argument and show that structured data alone is insufficient in resolving eligibility criteria for recruiting patients onto clinical trials for chronic lymphocytic leukemia (CLL) and prostate cancer. Unstructured data is essential to solving 59% of the CLL trial criteria and 77% of the prostate cancer trial criteria.\"",
     },
     {
       id: "lee-2021",
@@ -328,7 +328,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "bond-site",

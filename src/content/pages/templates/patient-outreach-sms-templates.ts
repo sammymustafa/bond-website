@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "These are the texts a research site or practice sends when it contacts its own patients about a study: first contact, follow-up, booking, reminders, reschedules, missed visits and opt-outs. Each one shows its character count, and the core messages are also written in Spanish. Send none of them until your IRB has approved the exact wording.",
   summary: "Fifteen editable outreach texts, from first contact to opt-out, with Spanish versions and TCPA notes.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Download the Word file",
     href: "/downloads/patient-outreach-sms-templates.docx",
@@ -98,7 +98,7 @@ const page: SeoPage = {
             },
             {
               title: "Register the sending number",
-              text: "As of September 2026, texts from a standard 10-digit number need your brand and campaign verified through The Campaign Registry, via your texting vendor, before they are allowed to send.{{cite:tcr-10dlc}}",
+              text: "As of October 2026, texts from a standard 10-digit number need your brand and campaign verified through The Campaign Registry, via your texting vendor, before they are allowed to send.{{cite:tcr-10dlc}}",
             },
             {
               title: "Log every reply",
@@ -249,7 +249,7 @@ const page: SeoPage = {
             "**Any reasonable wording counts.** STOP, QUIT, END, CANCEL, UNSUBSCRIBE and similar words are opt-outs, and so is any reply a reasonable person would read as one.{{cite:ecfr-64-1200}} Treat ALTO, PARAR or BAJA the same way.",
             "**Confirm once, then stop.** One confirmation with no promotional content is allowed, and one sent within five minutes is presumed to fall within consent.{{cite:ecfr-64-1200}} CTIA also calls for no messages after it.{{cite:ctia-messaging}}",
             "**Honor it fast.** The limit is 10 business days, or immediately for texts sent under the healthcare exemption.{{cite:ecfr-64-1200}}",
-            "**Plan for revoke-all.** As of September 2026, the FCC has delayed to January 31, 2027 the rule that makes an opt-out from one type of message revoke consent for the sender's unrelated robocalls and robotexts.{{cite:da-26-12}} If the practice also texts clinical reminders, decide with counsel how a research STOP applies.",
+            "**Plan for the revoke-all change.** The FCC rule that makes an opt-out from one type of message revoke consent for the sender's unrelated robocalls and robotexts was delayed to January 31, 2027.{{cite:da-26-12}} As of October 2026, it is being replaced: an FCC order adopted September 30, 2026 lets a sender apply an opt-out from one category of informational messages to that category only, and lets it designate an exclusive opt-out method, such as a reply with one of the standard words, if each message discloses it. It takes effect 30 days after Federal Register publication.{{cite:fcc-26-67}} If the practice also texts clinical reminders, decide with counsel how a research STOP applies.",
             "**Answer HELP.** E11 repeats the five items CTIA asks a recurring program's opt-in confirmation to include: program name, customer care contact, how to opt out, message frequency and any charges.{{cite:ctia-messaging}}",
           ],
         },
@@ -352,7 +352,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "warning",
           title: "Not legal advice",
-          text: "Federal rules as of September 2026. State laws vary; have counsel review your consent basis and opt-out process.",
+          text: "Federal rules as of October 2026. State laws vary; have counsel review your consent basis and opt-out process.",
         },
       ],
     },
@@ -468,6 +468,14 @@ const page: SeoPage = {
       year: "2026",
     },
     {
+      id: "fcc-26-67",
+      title: "Report and Order and Further Notice of Proposed Rulemaking on TCPA consent revocation (FCC 26-67)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-26-67A1.pdf",
+      year: "2026",
+      note: "Adopted September 30, 2026; released October 1, 2026. Read October 23, 2026. Quote (Appendix A, revised 64.1200(a)(10)): \"Callers may designate any of the following methods as the exclusive means to revoke consent\"; \"The caller must clearly and conspicuously disclose the designated method to revoke consent on the call or in the text.\"; and \"Callers may interpret a revocation request made in response to an informational call or text message (i.e., a call or text message that does not contain any advertising or telemarketing) as applying only to the specific category of informational robocalls and text messages to which the revocation was directed and not to all communications.\" Quote (paragraph 24): \"The revised rule amendments contained herein become effective 30 days after Federal Register publication.\" The (a)(10) change will \"supersede the delayed effective date of the relevant portion of that rule that was previously extended to January 31, 2027.\" The Federal Register summary (FR Doc. 2026-21821) was on public inspection October 23, 2026, scheduled for publication October 26, 2026.",
+    },
+    {
       id: "ctia-messaging",
       title: "Messaging Principles and Best Practices",
       publisher: "CTIA",
@@ -488,7 +496,7 @@ const page: SeoPage = {
       publisher: "Twilio Docs (glossary)",
       url: "https://www.twilio.com/docs/glossary/what-sms-character-limit",
       year: "2026",
-      note: "Quote: \"If your message includes a UCS-2 character like an emoji or a Chinese hanzi, SMS switches to the UCS-2 encoding. This reduces the character length limit of the message to 70 characters: 140 bytes divided by two-bytes per character.\" Also: \"To include characters from extended Latin or non-Latin scripts requires the two-byte Universal Coded Character Set (UCS-2) encoding.\" and \"GSM-7 messages contain 153 alphanumeric characters. UCS-2 encoded messages contain 67 Unicode characters.\" Accessed September 22, 2026.",
+      note: "Quote: \"If your message includes a UCS-2 character like an emoji or a Chinese hanzi, SMS switches to the UCS-2 encoding. This reduces the character length limit of the message to 70 characters: 140 bytes divided by two-bytes per character.\" Also: \"To include characters from extended Latin or non-Latin scripts requires the two-byte Universal Coded Character Set (UCS-2) encoding.\" and \"GSM-7 messages contain 153 alphanumeric characters. UCS-2 encoded messages contain 67 Unicode characters.\" Accessed September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-502",

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Model paragraphs for the recruitment section of an IRB protocol when software screens the EHR and an AI voice or text assistant contacts patients. Each part names the rule it answers to and uses [bracketed placeholders] for site, study and vendor details. Adapt it to your IRB's forms and policies before you submit, because it is a starting draft and not legal advice.",
   summary: "Model protocol paragraphs for AI EHR pre-screening, voice and SMS outreach, data security and consent support.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -167,7 +167,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "Why the disclosure is written this way",
-          text: "As of September 2026, California requires health facilities, clinics and physician offices that use generative AI for patient communications about clinical information to include an AI disclaimer and instructions for reaching a human: at the start of each written message, and at the start and end of a call. Messages a licensed provider reads and reviews are exempt, and administrative matters such as scheduling are excluded.{{cite:ca-ab3030}} California also bars AI systems from using terms that imply care or advice comes from a licensed person.{{cite:ca-ab489}} Since January 1, 2026, Texas has required licensed providers that use AI in health care services or treatment to disclose it clearly and in plain language.{{cite:tx-hb149}} Whether a recruitment call falls under these laws is a question for counsel. Writing to the strictest reading keeps one script usable across states.",
+          text: "As of October 2026, California requires health facilities, clinics and physician offices that use generative AI for patient communications about clinical information to include an AI disclaimer and instructions for reaching a human: at the start of each written message, and at the start and end of a call. Messages a licensed provider reads and reviews are exempt, and administrative matters such as scheduling are excluded.{{cite:ca-ab3030}} California also bars AI systems from using terms that imply care or advice comes from a licensed person.{{cite:ca-ab489}} Since January 1, 2026, Texas has required licensed providers that use AI in health care services or treatment to disclose it clearly and in plain language.{{cite:tx-hb149}} Whether a recruitment call falls under these laws is a question for counsel. Writing to the strictest reading keeps one script usable across states.",
         },
         { type: "h3", text: "Appendix [X]: required statements, sample wording" },
         {
@@ -360,7 +360,7 @@ const page: SeoPage = {
     },
     {
       q: "Do patients have to be told they are talking to AI?",
-      a: "As of September 2026, some states require it in health care settings. California requires an AI disclaimer on generative AI patient communications about clinical information, and Texas requires licensed providers to disclose AI used in health care services.{{cite:ca-ab3030,tx-hb149}} Whether a recruitment call is covered depends on the facts, so this template discloses AI use at the start and end of every call and in every text. Bond's agents also tell patients that AI assistance is used.{{cite:bond-site}}",
+      a: "As of October 2026, some states require it in health care settings. California requires an AI disclaimer on generative AI patient communications about clinical information, and Texas requires licensed providers to disclose AI used in health care services.{{cite:ca-ab3030,tx-hb149}} Whether a recruitment call is covered depends on the facts, so this template discloses AI use at the start and end of every call and in every text. Bond's agents also tell patients that AI assistance is used.{{cite:bond-site}}",
     },
     {
       q: "Is informed consent needed before software pre-screens a chart?",
@@ -378,7 +378,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register and GPO)",
       url: "https://www.ecfr.gov/current/title-45/section-164.512",
       year: "2026",
-      note: "Paragraph (i) covers research: waiver of authorization in whole or in part, reviews preparatory to research, and the waiver criteria in (i)(2)(ii). Text current as of September 1, 2026.",
+      note: "Paragraph (i) covers research: waiver of authorization in whole or in part, reviews preparatory to research, and the waiver criteria in (i)(2)(ii). Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-508",

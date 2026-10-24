@@ -21,7 +21,7 @@ const page: SeoPage = {
     "Power runs a clinical trial search site and a community of patients who have opted in to hear about trials. It checks their eligibility against the medical records they share, refers matched patients to sites, and describes calls, texts, AI voice agents and appointment booking along the way.{{cite:power-home-2026,power-sponsors-2026,power-grow-2026}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, supports informed consent and keeps participants engaged after enrollment, with chart evidence behind every match.{{cite:bond-site,bond-product}} For a site that wants to enroll the patients it already treats, with one platform from chart to booked study visit, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Power: the site's own EHR, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -48,7 +48,7 @@ const page: SeoPage = {
             "**The patients you already treat.** Bond connects to the site's own EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and screens every chart in scope against the protocol, reading clinical notes, prescriptions, lab results, imaging data and other unstructured documents, with the chart evidence behind each criterion.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Power's sponsor program matches patients from its own opted-in community, who share their medical records with Power.{{cite:power-sponsors-2026}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what [Identify](/identify) found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. Conversations run in the patient's language, including English, Spanish and Mandarin, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
-            "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Patient-facing consent support is not publicly documented in Power's materials (September 2026).",
+            "**Consent support in the same workflow.** Bond explains the consent form in plain language, answers patient questions, escalates to staff, checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent. See [Consent](/consent).{{cite:bond-site,bond-product}} Patient-facing consent support is not publicly documented in Power's materials (October 2026).",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
             "**Any study, any therapeutic area.** Screening is configured from each protocol's own criteria, so it works for drug and device studies alike, in any [therapeutic area](/therapeutic-areas).{{cite:bond-product,bond-site}} Power's sponsor page focuses on Phase 2/3 CNS and I&I trials.{{cite:power-sponsors-2026}}",
             "**Live in 48 hours, with no integration fee.** Bond's team handles the EHR integration end to end, typically in 48 hours, and Bond is a [CRIO Certified Partner](/integrations/crio) with direct integrations with CTMS and calendars. Pricing is a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product,bond-acrp-talk}}",
@@ -57,7 +57,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
+          text: "As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -67,11 +67,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond entries come from Bond's own materials. Each Power entry carries the year of its source. \"Not publicly documented\" means we found no public description as of September 2026, not that the capability does not exist; ask Power directly.",
+          text: "Bond entries come from Bond's own materials. Each Power entry carries the year of its source. \"Not publicly documented\" means we found no public description as of October 2026, not that the capability does not exist; ask Power directly.",
         },
         {
           type: "table",
-          caption: "Bond Health and Power, from public materials reviewed in September 2026",
+          caption: "Bond Health and Power, from public materials reviewed in October 2026",
           columns: ["Capability", "Bond Health", "Power"],
           rows: [
             [
@@ -87,7 +87,7 @@ const page: SeoPage = {
             [
               "Screening a site's own patients",
               "Bond connects to the site's EHR and screens every chart in scope against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-site,bond-product}}",
-              "Its provider tool uses AI to screen EMRs against full study protocols and shows how well each patient qualifies for each of a site's trials. Named EHR integrations: not publicly documented (September 2026).{{cite:power-providers-2026}}",
+              "Its provider tool uses AI to screen EMRs against full study protocols and shows how well each patient qualifies for each of a site's trials. Named EHR integrations: not publicly documented (October 2026).{{cite:power-providers-2026}}",
             ],
             [
               "Outreach and scheduling",
@@ -97,12 +97,12 @@ const page: SeoPage = {
             [
               "Informed consent",
               "[Consent support](/consent) with plain-language explanations, patient Q&A and staff escalation. It checks the patient's understanding of key points, keeps an auditable record and runs in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
-              "Patient-facing consent support: not publicly documented (September 2026).",
+              "Patient-facing consent support: not publicly documented (October 2026).",
             ],
             [
               "Support after enrollment",
               "The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out. Reminders can go by text, voice or email.{{cite:bond-product}}",
-              "Not publicly documented (September 2026).",
+              "Not publicly documented (October 2026).",
             ],
             [
               "Therapeutic focus",
@@ -112,7 +112,7 @@ const page: SeoPage = {
             [
               "Integrations",
               "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR and HL7 or an aggregator. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} [CRIO Certified Partner](/integrations/crio), with direct integrations with CTMS, calendars and Google Sheets.{{cite:bond-site,bond-product,bond-acrp-talk}}",
-              "A web portal for sites with no technical setup. Named EHR or CTMS integrations: not publicly documented (September 2026).{{cite:power-sites-2026}}",
+              "A web portal for sites with no technical setup. Named EHR or CTMS integrations: not publicly documented (October 2026).{{cite:power-sites-2026}}",
             ],
             [
               "Pricing",
@@ -203,7 +203,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health wrote this page in September 2026. Statements about Power come only from its public web pages for patients, sponsors, research sites and providers, read on September 29, 2026, each cited with its year. Statements about Bond come from Bond's website, product information from Bond Health and an April 2026 presentation to the ACRP New Jersey chapter. We did not test Power's product and used no private or internal information about Power. Where Power's materials are silent on a capability, we say it is not publicly documented rather than guess. Bond Health is not affiliated with or endorsed by Power.",
+          text: "Bond Health wrote this page in September 2026. Statements about Power come only from its public web pages for patients, sponsors, research sites and providers, read on September 29, 2026 and re-checked on October 23, 2026, each cited with its year. Statements about Bond come from Bond's website, product information from Bond Health and an April 2026 presentation to the ACRP New Jersey chapter. We did not test Power's product and used no private or internal information about Power. Where Power's materials are silent on a capability, we say it is not publicly documented rather than guess. Bond Health is not affiliated with or endorsed by Power.",
         },
         {
           type: "callout",
@@ -225,7 +225,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Power support informed consent?",
-      a: "Patient-facing consent support is not publicly documented in Power's materials as of September 2026, so ask Power directly. Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
+      a: "Patient-facing consent support is not publicly documented in Power's materials as of October 2026, so ask Power directly. Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions, checks understanding of key points and keeps an auditable record for the site, and consent Q&A can run in the patient's preferred language. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
     },
     {
       q: "How does pricing compare?",
@@ -261,7 +261,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Where patients find promising new treatments\" and \"Browse clinical trials by condition, location, and drug type.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Where patients find promising new treatments\" and \"Browse clinical trials by condition, location, and drug type.\"",
     },
     {
       id: "power-sponsors-2026",
@@ -269,7 +269,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/for-sponsors",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Phase 2/3 CNS and I&I trials\"; \"The fastest-growing community of patients who've actively opted in to learn about clinical trials.\"; \"Real people who've raised their hand\" and \"shared their medical records so we can find the right match.\"; \"Patients share diagnoses, prescriptions, labs, and visit history\" and \"we query against your protocol's I/E criteria to build confidence in clinical eligibility before a single referral is made.\"; \"We verify diagnoses, treatment history, labs, and severity from real medical records\"; \"Calls, texts, emails, and an AI call center for after-hours coverage\"; \"Pre-screening, appointment booking, travel coordination, and follow-up\"; \"Our platform manages travel coordination, follow-up automation, and real-time visibility across the entire funnel\"; and \"Most programs are structured as outcomes-aligned partnerships based on enrollment milestones.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Phase 2/3 CNS and I&I trials\"; \"The fastest-growing community of patients who've actively opted in to learn about clinical trials.\"; \"Real people who've raised their hand\" and \"shared their medical records so we can find the right match.\"; \"Patients share diagnoses, prescriptions, labs, and visit history\" and \"we query against your protocol's I/E criteria to build confidence in clinical eligibility before a single referral is made.\"; \"We verify diagnoses, treatment history, labs, and severity from real medical records\"; \"Calls, texts, emails, and an AI call center for after-hours coverage\"; \"Pre-screening, appointment booking, travel coordination, and follow-up\"; \"Our platform manages travel coordination, follow-up automation, and real-time visibility across the entire funnel\"; and \"Most programs are structured as outcomes-aligned partnerships based on enrollment milestones.\"",
     },
     {
       id: "power-sites-2026",
@@ -277,7 +277,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/for-research-coordinators",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Work with high-intent, EMR-verified patients who are actively looking for trials (and actually answer the phone).\" and \"Try it for free. No technical set up.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Work with high-intent, EMR-verified patients who are actively looking for trials (and actually answer the phone).\" and \"Try it for free. No technical set up.\"",
     },
     {
       id: "power-providers-2026",
@@ -285,7 +285,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://www.withpower.com/for-providers",
       year: "2026",
-      note: "Accessed September 29, 2026. Quotes: \"Power uses AI to screen EMRs and match patients against the full study protocols.\"; \"At a glance, see how well qualified each patient is for each of your clinical trials.\"; \"you can configure the pre-screening questions as you desire\"; and \"Get started at no cost.\"",
+      note: "Accessed September 29, 2026; re-checked October 23, 2026. Quotes: \"Power uses AI to screen EMRs and match patients against the full study protocols.\"; \"At a glance, see how well qualified each patient is for each of your clinical trials.\"; \"you can configure the pre-screening questions as you desire\"; and \"Get started at no cost.\"",
     },
     {
       id: "power-grow-2026",
@@ -293,7 +293,7 @@ const page: SeoPage = {
       publisher: "Power",
       url: "https://growwithpower.com/",
       year: "2026",
-      note: "Accessed September 29, 2026 (page rendered in a browser). Quotes: \"Advanced LLM technology analyzes patient medical records\"; \"EMR + Rx + Voice for full protocol pre-screening\"; \"Our AI voice agents conduct natural conversations with potential participants\"; and \"Comprehensive site portal equipped with AI tools, power dialer, and intelligent patient management systems\".",
+      note: "Accessed September 29, 2026 (page rendered in a browser); re-checked October 23, 2026. Quotes: \"Advanced LLM technology analyzes patient medical records\"; \"EMR + Rx + Voice for full protocol pre-screening\"; \"Our AI voice agents conduct natural conversations with potential participants\"; and \"Comprehensive site portal equipped with AI tools, power dialer, and intelligent patient management systems\".",
     },
     ...testimonialSources(),
   ],

@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "Since 2024 the FCC has ruled that AI-generated voices are artificial voices under the TCPA and has rewritten how patients revoke consent to automated calls and texts.{{cite:fcc-24-17,fcc-24-24}} The upshot for research sites: AI calls about a study need prior express consent, because the healthcare exemption does not cover recruitment, and opt-out handling has to catch plain-language requests. This post is not legal advice.",
   summary: "The FCC's AI voice ruling, the 2025 opt-out rules and the healthcare exemption, applied to trial recruitment.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   blog: { date: "2026-09-21", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
@@ -40,7 +40,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "AI disclosure is not yet a federal rule",
-          text: "In August 2024 the FCC proposed defining AI-generated calls and requiring callers to tell consumers when they receive one. As of September 2026 the proposal had not been finalized.{{cite:fcc-24-84}}",
+          text: "In August 2024 the FCC proposed defining AI-generated calls and requiring callers to tell consumers when they receive one. As of October 2026 the proposal had not been finalized.{{cite:fcc-24-84}}",
         },
       ],
     },
@@ -84,7 +84,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Still pending is the \"revoke-all\" rule, under which an opt-out from one type of informational message also revokes consent for the same caller's robocalls and robotexts on unrelated matters. As of September 2026 it has been delayed twice and is set to take effect January 31, 2027.{{cite:fcc-da-26-12}} For a site that sends both appointment reminders and study outreach, one opt-out could then cover both.",
+          text: "When this post was published, the \"revoke-all\" rule, under which an opt-out from one type of informational message also revokes consent for the same caller's robocalls and robotexts on unrelated matters, had been delayed twice and was set to take effect January 31, 2027.{{cite:fcc-da-26-12}} On September 30, 2026 the FCC adopted an order that replaces it. A caller may treat an opt-out made in response to an informational message as applying only to that category of informational messages, while an opt-out from a marketing message still ends all marketing. Callers may also designate an exclusive opt-out method (an automated voice or key-press opt-out, a reply text with one of the standard words, or a designated website or phone number) if they disclose it on the call or in the text; callers that do not must keep accepting any reasonable means. The changes take effect 30 days after Federal Register publication.{{cite:fcc-26-67}} A site that sends both appointment reminders and study outreach should decide with counsel whether a research opt-out also stops reminders.",
         },
       ],
     },
@@ -133,7 +133,7 @@ const page: SeoPage = {
             "**Test opt-outs in plain language.** Try free-text replies and mid-call requests, not only the word STOP.",
             "**Suppress fast.** Log each opt-out with its date and remove the number well inside the 10 business day limit.{{cite:fcc-24-24}}",
             "**Register before you text.** Build 10DLC brand and campaign registration into the launch timeline.{{cite:tcr}}",
-            "**Mark January 31, 2027** and decide how one opt-out will apply across reminders and research outreach.{{cite:fcc-da-26-12}}",
+            "**Plan for the new opt-out rules.** Before the FCC's September 2026 order takes effect, decide how one opt-out will apply across reminders and research outreach, and whether to designate an exclusive opt-out method.{{cite:fcc-26-67}}",
           ],
         },
         {
@@ -154,7 +154,7 @@ const page: SeoPage = {
     },
     {
       q: "Does federal law require an AI call to say it is AI?",
-      a: "Not as of September 2026; the FCC's 2024 proposal is still pending.{{cite:fcc-24-84}} Every artificial-voice call must already name the organization behind it, and Texas requires disclosure of AI use in health care.{{cite:cfr-47-64-1200,tx-hb149}}",
+      a: "Not as of October 2026; the FCC's 2024 proposal is still pending.{{cite:fcc-24-84}} Every artificial-voice call must already name the organization behind it, and Texas requires disclosure of AI use in health care.{{cite:cfr-47-64-1200,tx-hb149}}",
     },
   ],
   sources: [
@@ -171,6 +171,7 @@ const page: SeoPage = {
       publisher: "Federal Communications Commission",
       url: "https://docs.fcc.gov/public/attachments/FCC-24-84A1.pdf",
       year: "2024",
+      note: "Still a proposal as of October 23, 2026: no final rule on AI-generated call disclosure has been published in the Federal Register.",
     },
     {
       id: "fcc-24-24",
@@ -186,6 +187,14 @@ const page: SeoPage = {
       url: "https://docs.fcc.gov/public/attachments/DA-26-12A1.pdf",
       year: "2026",
       note: "Quote (paragraph 1): \"we extend the waiver of section 64.1200(a)(10) of the Commission's rules to the extent the rule requires callers to treat a request to revoke consent made by a called party in response to one type of informational message as applicable to all future robocalls and robotexts from that caller on unrelated matters. Specifically, we find that good cause exists to extend the effective date for this requirement until January 31, 2027\"",
+    },
+    {
+      id: "fcc-26-67",
+      title: "Report and Order and Further Notice of Proposed Rulemaking on TCPA consent revocation (FCC 26-67)",
+      publisher: "Federal Communications Commission",
+      url: "https://docs.fcc.gov/public/attachments/FCC-26-67A1.pdf",
+      year: "2026",
+      note: "Adopted September 30, 2026; released October 1, 2026. Read October 23, 2026. Quote (Appendix A, revised 64.1200(a)(10)): \"Revocation requests made in response to calls or text messages that contain an advertisement or constitute telemarketing revoke consent to all future calls or text messages containing an advertisement or constitute telemarketing from that caller.\" Also: \"Callers may designate any of the following methods as the exclusive means to revoke consent\"; \"The caller must clearly and conspicuously disclose the designated method to revoke consent on the call or in the text.\"; and \"Callers may interpret a revocation request made in response to an informational call or text message (i.e., a call or text message that does not contain any advertising or telemarketing) as applying only to the specific category of informational robocalls and text messages to which the revocation was directed and not to all communications.\" Quote (revised 64.1200(a)(11)): \"Callers that do not designate an exclusive means to revoke consent pursuant to paragraph (a)(10) of this section must process revocation requests made by any reasonable means.\" Quote (paragraph 24): \"The revised rule amendments contained herein become effective 30 days after Federal Register publication.\" The (a)(10) change will \"supersede the delayed effective date of the relevant portion of that rule that was previously extended to January 31, 2027.\" The Federal Register summary (FR Doc. 2026-21821) was on public inspection October 23, 2026, scheduled for publication October 26, 2026.",
     },
     {
       id: "cfr-47-64-1200",

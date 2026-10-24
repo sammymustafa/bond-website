@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors and CROs give studies to sites they expect to open quickly and enroll what they promise. Much of what they check is the site's own history: enrollment against commitment, start-up time, investigator availability, and how fast and how credibly the site answered feasibility.",
   summary: "The levers a site controls to get selected for more studies, with benchmarks, a lever table and a plan for this week.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -326,7 +326,7 @@ const page: SeoPage = {
       publisher: "Electronic Code of Federal Regulations (eCFR)",
       url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-D/section-312.53",
       year: "2026",
-      note: "Checked September 2026. Quote: \"A sponsor shall select only investigators qualified by training and experience as appropriate experts to investigate the drug.\" Paragraph (c)(1): \"A signed investigator statement (Form FDA-1572) containing:\" and (c)(1)(vi)(c): \"Will personally conduct or supervise the described investigation(s)\"",
+      note: "Checked September 2026; re-checked October 23, 2026. Quote: \"A sponsor shall select only investigators qualified by training and experience as appropriate experts to investigate the drug.\" Paragraph (c)(1): \"A signed investigator statement (Form FDA-1572) containing:\" and (c)(1)(vi)(c): \"Will personally conduct or supervise the described investigation(s)\"",
     },
     {
       id: "ich-e6r3",

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Trial consent forms have grown longer for decades, and they are typically written well above the average reading level of the US adults asked to sign them.{{cite:berger-2009,duong-2021,mirza-2024}} The cost shows up as longer reading time, lower comprehension and, in observational data, higher dropout. Below are the numbers, the rules, and what a site can change without waiting on the sponsor.",
   summary: "The evidence on consent form length, reading level, comprehension and dropout, plus the fixes that work and how to measure them.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -112,7 +112,7 @@ const page: SeoPage = {
             ],
             [
               "Translation",
-              "One translation vendor's website lists $25 per page to translate a consent form into Spanish, or $80 per page with back-translation (as of September 2026).{{cite:gts-translation}}",
+              "One translation vendor's website lists $25 per page to translate a consent form into Spanish, or $80 per page with back-translation (as of October 2026).{{cite:gts-translation}}",
               "Single vendor price list, not a benchmark",
             ],
             [
@@ -274,7 +274,7 @@ const page: SeoPage = {
       publisher: "Annals of Oncology (Berger O et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/18922881/",
       year: "2009",
-      note: "Quote: \"The mean length of the ICDs increased from 338 (range 276-464) words in 1987-1990 to 1087 words (range 399-2345) in 2005-2007.\" Also: \"The increased length of the ICDs is explained by an increased complexity of the documents and especially more information about formalities.\" Formal components are defined as \"juridical aspects, financing, insurance and storage of data\". 87 documents approved by the Regional Committee for Medical and Health Research Ethics in central Norway. Abstract read via NCBI E-utilities (September 2026).",
+      note: "Quote: \"The mean length of the ICDs increased from 338 (range 276-464) words in 1987-1990 to 1087 words (range 399-2345) in 2005-2007.\" Also: \"The increased length of the ICDs is explained by an increased complexity of the documents and especially more information about formalities.\" Formal components are defined as \"juridical aspects, financing, insurance and storage of data\". 87 documents approved by the Regional Committee for Medical and Health Research Ethics in central Norway. Abstract read via NCBI E-utilities (September 2026; re-checked October 23, 2026).",
     },
     {
       id: "sharp-2004",
@@ -357,7 +357,7 @@ const page: SeoPage = {
       publisher: "Clinical Trials (Emanuel EJ et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/41902712/",
       year: "2026",
-      note: "Quote: \"The medium informed consent form (mean score of 79.3%) scored significantly higher on comprehension than the long informed consent form (65.7% mean score, p < 0.001) or the short informed consent form (69.3% mean score, p = 0.006).\" Also: \"more short informed consent form participants reported wanting more information on study procedures.\" Methods: the medium (14 pages) and short (3 pages) forms \"both used simpler words, shorter sentences, less passive voice, tables, and other patient-friendly edits to achieve below sixth-grade reading levels\"; the long form \"was written just below an 11th-grade level\". Conclusion: \"The short informed consent form produced the same level of comprehension as a long informed consent form used in approved clinical trials.\" 334 US adults reading forms for a hypothetical study. Abstract read via NCBI E-utilities (September 2026).",
+      note: "Quote: \"The medium informed consent form (mean score of 79.3%) scored significantly higher on comprehension than the long informed consent form (65.7% mean score, p < 0.001) or the short informed consent form (69.3% mean score, p = 0.006).\" Also: \"more short informed consent form participants reported wanting more information on study procedures.\" Methods: the medium (14 pages) and short (3 pages) forms \"both used simpler words, shorter sentences, less passive voice, tables, and other patient-friendly edits to achieve below sixth-grade reading levels\"; the long form \"was written just below an 11th-grade level\". Conclusion: \"The short informed consent form produced the same level of comprehension as a long informed consent form used in approved clinical trials.\" 334 US adults reading forms for a hypothetical study. Abstract read via NCBI E-utilities (September 2026; re-checked October 23, 2026).",
     },
     {
       id: "ciscrp-2013",
@@ -373,7 +373,7 @@ const page: SeoPage = {
       publisher: "GTS Translation (vendor pricing page)",
       url: "https://www.gts-translation.com/services/medical_translation_services/translation-service-for-informed-consent-documents/",
       year: "2026",
-      note: "Single vendor list price, accessed September 2026. Illustrative, not an industry benchmark.",
+      note: "Single vendor list price, accessed September 2026; re-checked October 23, 2026. Illustrative, not an industry benchmark.",
     },
     {
       id: "velez-2023",
@@ -423,7 +423,7 @@ const page: SeoPage = {
       publisher: "US Food and Drug Administration and HHS Office for Human Research Protections",
       url: "https://www.fda.gov/media/176663/download",
       year: "2024",
-      note: "Quote: \"We recommend that the key information section of a consent document be relatively short (e.g., generally no more than a few pages).\" Also: \"We recommend following plain language principles for the entire consent form.\" Those principles include \"organizing information with the most important points first, breaking complex information into understandable groups, using simple language, and defining technical terms.\" And: \"FDA's proposed regulations would add identical language to 21 CFR 50.20(e)(1).\" Draft dated March 2024; nonbinding. PDF text checked September 2026.",
+      note: "Quote: \"We recommend that the key information section of a consent document be relatively short (e.g., generally no more than a few pages).\" Also: \"We recommend following plain language principles for the entire consent form.\" Those principles include \"organizing information with the most important points first, breaking complex information into understandable groups, using simple language, and defining technical terms.\" And: \"FDA's proposed regulations would add identical language to 21 CFR 50.20(e)(1).\" Draft dated March 2024; nonbinding. PDF text checked September 2026; re-checked October 23, 2026.",
     },
     {
       id: "fr-econsent-2016",

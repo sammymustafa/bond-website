@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruiting for clinical trials in the Los Angeles area",
   intro:
-    "On October 5, 2026, a ClinicalTrials.gov radius search found 3,231 recruiting studies with at least one site within 30 miles of downtown Los Angeles, about 14.7% of the 22,007 recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites across Los Angeles County and nearby Orange County: where the research hubs are, which EHRs hold the patients, who lives here, and which California rules shape AI-assisted outreach.",
+    "On October 23, 2026, a ClinicalTrials.gov radius search found 3,230 recruiting studies with at least one site within 30 miles of downtown Los Angeles, about 14.7% of the 22,038 recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites across Los Angeles County and nearby Orange County: where the research hubs are, which EHRs hold the patients, who lives here, and which California rules shape AI-assisted outreach.",
   summary: "Los Angeles area recruiting-trial counts, research hubs, health systems and their EHRs, languages, and California outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Cancer leads. In the same radius search, 1,511 recruiting studies matched an oncology keyword search: 46.8% of the local total and 21.4% of the 7,064 recruiting oncology studies in the US. The area's share of US studies is also high in dermatology (57 of 212) and gastroenterology (75 of 283), and lowest in pain (53 of 625).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Cancer leads. In the same radius search, 1,516 recruiting studies matched an oncology keyword search: 46.9% of the local total and 21.4% of the 7,092 recruiting oncology studies in the US. The area's share of US studies is also high in dermatology (54 of 206) and gastroenterology (72 of 281), and lowest in pain (53 of 632).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "los-angeles", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A radius count includes every recruiting study with at least one location inside the circle, so a study with sites in both Pasadena and Orange counts once. Area counts come from keyword searches, overlap, and can pull in off-target studies. A count shows where sponsors placed studies, not which ones enroll on schedule. The oncology examples below come from the same October 5, 2026 query.{{cite:ctgov-api}} See [oncology](/oncology) for how Bond screens cancer studies.",
+          text: "A radius count includes every recruiting study with at least one location inside the circle, so a study with sites in both Pasadena and Orange counts once. Area counts come from keyword searches, overlap, and can pull in off-target studies. A count shows where sponsors placed studies, not which ones enroll on schedule. The oncology examples below come from the same October 23, 2026 query.{{cite:ctgov-api}} See [oncology](/oncology) for how Bond screens cancer studies.",
         },
         { type: "trials", geo: "los-angeles", condition: "oncology", cite: "ctgov-api" },
       ],
@@ -266,7 +266,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in the Los Angeles area?",
-      a: "A ClinicalTrials.gov radius search on October 5, 2026 found 3,231 recruiting studies with a site within 30 miles of downtown Los Angeles, 1,511 of them matching an oncology keyword search.{{cite:ctgov-api}}",
+      a: "A ClinicalTrials.gov radius search on October 23, 2026 found 3,230 recruiting studies with a site within 30 miles of downtown Los Angeles, 1,516 of them matching an oncology keyword search.{{cite:ctgov-api}}",
     },
     {
       q: "Does California require patients to be told when AI is used?",
@@ -284,7 +284,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?filter.geo=distance(34.0522,-118.2437,30mi)&filter.overallStatus=RECRUITING&countTotal=true&pageSize=1",
       year: "2026",
-      note: "Radius search queried October 5, 2026: filter.geo distance(34.0522,-118.2437,30mi), overall status Recruiting; \"totalCount\": 3231. Area counts add a query.cond keyword search (oncology: cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia) and returned oncology 1,511; cardiology 421; obesity and type 2 diabetes 110; neurology 122; dermatology 57; pain 53; gastroenterology 75; psychiatry 152. US totals from query.locn=United States the same day: all 22,007; oncology 7,064; dermatology 212; gastroenterology 283; pain 625. Shares are Bond's arithmetic.",
+      note: "Radius search queried October 23, 2026: filter.geo distance(34.0522,-118.2437,30mi), overall status Recruiting; \"totalCount\": 3230. Area counts add a query.cond keyword search (oncology: cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia) and returned oncology 1,516; cardiology 421; obesity and type 2 diabetes 109; neurology 122; dermatology 54; pain 53; gastroenterology 72; psychiatry 151. US totals from query.locn=United States the same day: all 22,038; oncology 7,092; dermatology 206; gastroenterology 281; pain 632. Shares are Bond's arithmetic.",
     },
     {
       id: "ctgov-locations",
@@ -292,7 +292,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?filter.geo=distance(34.0522,-118.2437,30mi)&filter.overallStatus=RECRUITING&fields=NCTId,LocationFacility,LocationCity,LocationGeoPoint&pageSize=1000",
       year: "2026",
-      note: "Queried October 5, 2026; Bond listed the facility names on location records inside the radius. Facility names as they appear: \"Kaiser Permanente Los Angeles Medical Center\"; \"Providence Saint Joseph Medical Center/Disney Family Cancer Center\"; \"Tower Cancer Research Foundation\"; \"The Angeles Clinic and Research Institute\"; \"MemorialCare Long Beach Medical Center\".",
+      note: "Queried October 5, 2026; re-queried October 23, 2026, when every name below still appeared. Bond listed the facility names on location records inside the radius. Facility names as they appear: \"Kaiser Permanente Los Angeles Medical Center\"; \"Providence Saint Joseph Medical Center/Disney Family Cancer Center\"; \"Tower Cancer Research Foundation\"; \"The Angeles Clinic and Research Institute\"; \"MemorialCare Long Beach Medical Center\".",
     },
     {
       id: "nci-centers",

@@ -16,7 +16,7 @@ const page: SeoPage = {
   eyebrow: "Arizona",
   h1: "Recruiting for clinical trials in Arizona",
   intro:
-    "As of September 21, 2026, 1,689 studies on ClinicalTrials.gov were recruiting at one or more Arizona sites, about 7.7% of the 22,041 recruiting in the United States, from a state with about 2.2% of US residents.{{cite:ctgov-api,census-pop-2025}} This page is for research sites in Phoenix, Tucson and the rest of the state.",
+    "As of October 23, 2026, 1,708 studies on ClinicalTrials.gov were recruiting at one or more Arizona sites, about 7.8% of the 22,038 recruiting in the United States, from a state with about 2.2% of US residents.{{cite:ctgov-api,census-pop-2025}} This page is for research sites in Phoenix, Tucson and the rest of the state.",
   summary: "Arizona recruiting-trial counts, Phoenix and Tucson research hubs, health systems and their EHRs, demographics, and state outreach rules.",
   lastUpdated: "2026-10-23",
   showLastUpdated: true,
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Arizona sites appear on 709 of the 7,074 recruiting US oncology studies and 100 of the 987 neurology studies, about 10% each. Among tracked areas, its share is highest in gastroenterology (56 of 285) and dermatology (38 of 214) and lowest in psychiatry (43 of 1,273).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Arizona sites appear on 717 of the 7,092 recruiting US oncology studies and 99 of the 1,000 neurology studies, about 10% each. Among tracked areas, its share is highest in gastroenterology (56 of 281) and dermatology (34 of 206) and lowest in psychiatry (43 of 1,278).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "arizona", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching can pull in off-target studies. The examples below are cardiology, where Arizona sites appear on 257 of 2,845 studies.{{cite:ctgov-api}} See [cardiology](/cardiology) and [oncology](/oncology).",
+          text: "A count shows where sponsors placed studies, not which ones enroll on schedule, and keyword matching can pull in off-target studies. The examples below are cardiology, where Arizona sites appear on 265 of 2,827 studies.{{cite:ctgov-api}} See [cardiology](/cardiology) and [oncology](/oncology).",
         },
         { type: "trials", geo: "arizona", condition: "cardiology", cite: "ctgov-api" },
       ],
@@ -79,7 +79,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "EHRs at selected Arizona health systems, from public sources as of September 2026",
+          caption: "EHRs at selected Arizona health systems, from public sources as of October 2026",
           columns: ["System", "Arizona footprint", "EHR"],
           rows: [
             [
@@ -142,13 +142,13 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Each organization's own website, as of September 2026:",
+          text: "Each organization's own website, as of October 2026:",
         },
         {
           type: "ul",
           items: [
             "**HonorHealth Research Institute** in Scottsdale reports about 300 studies a year, about 2,500 participating patients and an average launch window of four months.{{cite:honorhealth-research}}",
-            "**Elite Clinical Network** lists four Arizona sites: Noble Clinical Research in Tucson, Chandler Clinical Trials, Scottsdale Clinical Trials and Sun City Clinical Research in Glendale.{{cite:elite-network}}",
+            "**ECN Clinical** (formerly Elite Clinical Network) lists four Arizona sites: East Valley Clinical Research, Noble Clinical Research, Scottsdale Clinical Trials and West Valley Clinical Trials.{{cite:elite-network}}",
             "**AMR Clinical** runs a Phase I to IV site in Tempe on the campus of Tempe St. Luke's Hospital.{{cite:amr-tempe}}",
             "**Celerion** runs a Tempe early-phase unit with more than 350 beds, which it calls the largest in the US.{{cite:celerion}}",
           ],
@@ -175,7 +175,7 @@ const page: SeoPage = {
             "**Telephone solicitation (A.R.S. 44-1278 and 44-1282).** Artificial or prerecorded voice calls to residential phones need prior express consent.{{cite:ars-44-1278}} Solicitation calls and texts to numbers on the national do-not-call registry carry civil penalties of up to $1,000 per violation.{{cite:ars-44-1282}} Both cover telephone solicitation, which state law defines as a call that offers merchandise for sale or rent, so a study invitation may fall outside them.{{cite:ars-44-1271}} Federal rules apply regardless; see [TCPA and AI outreach in 2026](/blog/tcpa-ai-outreach-2026).",
             "**Call recording (A.R.S. 13-3012).** The state wiretap law exempts recording made with the consent of one party to the call.{{cite:ars-13-3012}}",
             "**Breach notice (A.R.S. 18-552).** HIPAA covered entities and business associates follow HIPAA's breach rules, not the state's 45-day notice rule.{{cite:ars-18-552}}",
-            "**AI disclosure.** As of September 2026, no Arizona statute we reviewed requires AI disclosure in patient outreach. The House-passed version of HB 2311 would have required a conversational AI service to disclose it is AI when a person could be misled into thinking they were talking to a human; the governor vetoed the bill in June 2026.{{cite:az-hb2311,az-vetoes}} HB 2175, in force since July 1, 2026, requires a medical director's individual review of insurers' medical-necessity denials; it governs claims, not recruitment.{{cite:az-hb2175}}",
+            "**AI disclosure.** As of October 2026, no Arizona statute we reviewed requires AI disclosure in patient outreach. The House-passed version of HB 2311 would have required a conversational AI service to disclose it is AI when a person could be misled into thinking they were talking to a human; the governor vetoed the bill in June 2026.{{cite:az-hb2311,az-vetoes}} HB 2175, in force since July 1, 2026, requires a medical director's individual review of insurers' medical-necessity denials; it governs claims, not recruitment.{{cite:az-hb2175}}",
           ],
         },
         {
@@ -235,11 +235,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in Arizona?",
-      a: "As of September 21, 2026, 1,689 studies on ClinicalTrials.gov listed a recruiting Arizona site, 709 of them in oncology.{{cite:ctgov-api}}",
+      a: "As of October 23, 2026, 1,708 studies on ClinicalTrials.gov listed a recruiting Arizona site, 717 of them in oncology.{{cite:ctgov-api}}",
     },
     {
       q: "Does Arizona require patients to be told when AI is used?",
-      a: "As of September 2026, no Arizona statute we reviewed requires it for patient outreach, and a 2026 AI disclosure bill was vetoed.{{cite:az-vetoes}} Bond's agents disclose AI use regardless.{{cite:bond-site}}",
+      a: "As of October 2026, no Arizona statute we reviewed requires it for patient outreach, and a 2026 AI disclosure bill was vetoed.{{cite:az-vetoes}} Bond's agents disclose AI use regardless.{{cite:bond-site}}",
     },
     {
       q: "Can Arizona HIE data be used to find trial patients?",
@@ -253,7 +253,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "census-pop-2025",
@@ -269,7 +269,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
       year: "2026",
-      note: "Downloaded September 2026 and summed by Bond for Arizona, POPESTIMATE2025, both sexes, all ages: total 7,623,818; Hispanic origin 2,479,648 (32.5%); American Indian and Alaska Native alone 425,209 (5.6%); age 65 and over 1,571,773 (20.6%), against 1,344,960 of the 2020 estimate (18.7%).",
+      note: "Downloaded September 2026; re-checked October 23, 2026. Summed by Bond for Arizona, POPESTIMATE2025, both sexes, all ages: total 7,623,818; Hispanic origin 2,479,648 (32.5%); American Indian and Alaska Native alone 425,209 (5.6%); age 65 and over 1,571,773 (20.6%), against 1,344,960 of the 2020 estimate (18.7%).",
     },
     {
       id: "census-metro-2025",
@@ -293,7 +293,7 @@ const page: SeoPage = {
       publisher: "Health Resources and Services Administration (HRSA), HHS",
       url: "https://data.hrsa.gov/tools/data-reporting/program-data/state/AZ",
       year: "2026",
-      note: "Quote: \"Total Number of Reporting Program Awardees: 23. Reporting Period: 2025. Total Patients Served: 856,192.\" Patient characteristics on the same page, 2025: Hispanic, Latino/a, or Spanish Origin 54.81%; Limited English Proficiency 22.65%; Medicaid/CHIP 41.72%. Rechecked September 22, 2026.",
+      note: "Quote: \"Total Number of Reporting Program Awardees: 23. Reporting Period: 2025. Total Patients Served: 856,192.\" Patient characteristics on the same page, 2025: Hispanic, Latino/a, or Spanish Origin 54.81%; Limited English Proficiency 22.65%; Medicaid/CHIP 41.72%. Rechecked September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ihs-phoenix",
@@ -393,11 +393,11 @@ const page: SeoPage = {
     },
     {
       id: "elite-network",
-      title: "Clinical sites",
-      publisher: "Elite Clinical Network",
-      url: "https://web.archive.org/web/20260720203738/https://eliteclinicalnetwork.com/clinical-sites/",
+      title: "Our sites: site directory",
+      publisher: "ECN Clinical (formerly Elite Clinical Network)",
+      url: "https://www.ecnclinical.com/our-sites/",
       year: "2026",
-      note: "Internet Archive copy of July 20, 2026. The live page (https://eliteclinicalnetwork.com/clinical-sites/) returned 404 in October 2026 after the network rebranded as ECN Clinical. Quote: Arizona entries \"Noble Clinical Research, 2055 W Hospital Drive, Suite 175, Tucson, AZ 85704\"; \"Chandler Clinical Trials, 255 S Dobson Rd, Suite 4, Chandler, AZ 85224\"; \"Scottsdale Clinical Trials, 8997 E Desert Cove Ave #2, Scottsdale, AZ 85260\"; \"Sun City Clinical Research, 11851 North 51st Avenue, BLDG G, Glendale, AZ\".",
+      note: "Read October 23, 2026. Arizona entries in the site directory: \"East Valley Clinical Research Phase 2-4 Arizona\"; \"Noble Clinical Research Phase 1-4 Arizona\"; \"Scottsdale Clinical Trials Phase 2-4 Arizona\"; \"West Valley Clinical Trials Phase 2-4 Arizona\". The network rebranded from Elite Clinical Network; its old page (https://eliteclinicalnetwork.com/clinical-sites/), which listed Chandler Clinical Trials and Sun City Clinical Research, now returns 404.",
     },
     {
       id: "mayo-epic",
@@ -413,7 +413,7 @@ const page: SeoPage = {
       publisher: "Oracle (oracle-samples/ignite-endpoints on GitHub)",
       url: "https://raw.githubusercontent.com/oracle-samples/ignite-endpoints/main/oracle_health_fhir_endpoints/millennium_patient_r4_endpoints.json",
       year: "2026",
-      note: "Quote: Organization entries \"BANNER HEALTH\" (city \"Phoenix\", state \"AZ\") and \"Northern Arizona HealthCare\" (city \"FLAGSTAFF\", state \"AZ\"). Downloaded September 22, 2026. A listing shows a Millennium FHIR endpoint, not every system the organization runs.",
+      note: "Quote: Organization entries \"BANNER HEALTH\" (city \"Phoenix\", state \"AZ\") and \"Northern Arizona HealthCare\" (city \"FLAGSTAFF\", state \"AZ\"). Downloaded September 22, 2026; re-checked October 23, 2026. A listing shows a Millennium FHIR endpoint, not every system the organization runs.",
     },
     {
       id: "epic-endpoints",
@@ -421,7 +421,7 @@ const page: SeoPage = {
       publisher: "Epic Systems (open.epic)",
       url: "https://open.epic.com/Endpoints/R4",
       year: "2026",
-      note: "Quote: endpoint entries \"name\": \"HonorHealth\"; \"name\": \"TMC HealthCare\"; \"name\": \"El Rio Health\"; \"name\": \"Yuma Regional Medical Center\", each with connection type \"hl7-fhir-rest\" and status \"active\". Downloaded September 22, 2026.",
+      note: "Quote: endpoint entries \"name\": \"HonorHealth\"; \"name\": \"TMC HealthCare\"; \"name\": \"El Rio Health\"; \"name\": \"Yuma Regional Medical Center\", each with connection type \"hl7-fhir-rest\" and status \"active\". Downloaded September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "altera-pch",
@@ -429,7 +429,7 @@ const page: SeoPage = {
       publisher: "Altera Digital Health",
       url: "https://www.alterahealth.com/client-stories/phoenix-childrens-hospital-extends-reach-of-care-with-altera-digital-health/",
       year: "2026",
-      note: "Quote: \"Phoenix Children's quickly rolled out its hospital's electronic health record (EHR) system, Sunrise, as a turnkey solution\". Vendor client story, undated; read September 2026.",
+      note: "Quote: \"Phoenix Children's quickly rolled out its hospital's electronic health record (EHR) system, Sunrise, as a turnkey solution\". Vendor client story, undated; read September 2026; re-checked October 23, 2026.",
     },
     {
       id: "bhn-ehr",
@@ -473,7 +473,7 @@ const page: SeoPage = {
       publisher: "Arizona State Legislature",
       url: "https://www.azleg.gov/ars/44/01271.htm",
       year: "2026",
-      note: "Quote: paragraph 18, \"Telephone solicitation\" means \"Any voice communication from a live operator, announcing device or otherwise that offers merchandise for sale or rent and that is to or from a person located in this state.\" Read September 22, 2026.",
+      note: "Quote: paragraph 18, \"Telephone solicitation\" means \"any voice communication from a live operator, announcing device or otherwise that offers merchandise for sale or rent and that is to or from a person located in this state.\" Read September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ars-44-1282",
@@ -511,7 +511,7 @@ const page: SeoPage = {
       publisher: "Office of the Arizona Governor",
       url: "https://azgovernor.gov/office-arizona-governor/news/2026/06/governor-katie-hobbs-legislative-action-update-0",
       year: "2026",
-      note: "Quote: the update dated June 19, 2026 lists \"HB2311 artificial intelligence service; disclosures; requirements\" among the bills vetoed, with a link to the veto letter. Rechecked September 22, 2026.",
+      note: "Quote: the update dated June 19, 2026 lists \"HB2311 artificial intelligence service; disclosures; requirements\" among the bills vetoed, with a link to the veto letter. Rechecked September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "az-hb2175",

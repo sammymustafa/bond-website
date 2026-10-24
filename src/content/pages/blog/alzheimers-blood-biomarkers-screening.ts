@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Plasma p-tau217 and related blood tests let an Alzheimer's study check for likely amyloid with a blood draw, before anyone books a PET scan or a lumbar puncture. They do not remove screen failure; they move it to the first visit, where it costs much less. Here is where FDA clearance stands as of October 2026, what trials have learned, and what a site should set up before its next blood-first protocol.",
   summary: "FDA-cleared Alzheimer's blood tests, trial experience with p-tau217 pre-screening, and how a site should set up a blood-first funnel.",
-  lastUpdated: "2026-10-21",
+  lastUpdated: "2026-10-23",
   blog: { date: "2026-10-21", author: "Rishabh Goel", readingMinutes: 6 },
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Alzheimer's trial recruitment", secondaryHref: "/neurology-and-alzheimers" },
   sections: [
@@ -27,7 +27,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of FDA's September 2026 data refresh, four blood tests for amyloid pathology are cleared, all as Class II devices through the 510(k) pathway under 21 CFR 866.5840.{{cite:openfda-set}} The first, Fujirebio's Lumipulse test, was cleared on May 16, 2025.{{cite:fda-lumipulse-2025}}",
+          text: "As of FDA's October 2026 data refresh, four blood tests for amyloid pathology are cleared, all as Class II devices through the 510(k) pathway under 21 CFR 866.5840.{{cite:openfda-set}} The first, Fujirebio's Lumipulse test, was cleared on May 16, 2025.{{cite:fda-lumipulse-2025}}",
         },
         {
           type: "table",
@@ -203,7 +203,7 @@ const page: SeoPage = {
       publisher: "US Food and Drug Administration (openFDA)",
       url: "https://api.fda.gov/device/510k.json?search=product_code:SET&limit=50",
       year: "2026",
-      note: "Queried October 2026; dataset last updated 2026-09-28. Four records, each \"Substantially Equivalent\", clearance type \"Traditional\", regulation 866.5840, device class 2: K242706 Lumipulse G pTau217/ß-Amyloid 1-42 Plasma Ratio (decision 2025-05-16); K252163 Elecsys Phospho-Tau (181P) Plasma (2025-10-08); K253240 PrecivityAD2 Test (2026-08-19); K261686 Elecsys Phospho-Tau (217P) Plasma (2026-08-19). Classification text: \"used to identify patients with amyloid pathology associated with Alzheimer's Disease who have signs and symptoms of cognitive decline.\"",
+      note: "Queried October 2026; dataset last updated 2026-09-28. Re-checked October 23, 2026: dataset last updated 2026-10-12, still the same four records. Four records, each \"Substantially Equivalent\", clearance type \"Traditional\", regulation 866.5840, device class 2: K242706 Lumipulse G pTau217/ß-Amyloid 1-42 Plasma Ratio (decision 2025-05-16); K252163 Elecsys Phospho-Tau (181P) Plasma (2025-10-08); K253240 PrecivityAD2 Test (2026-08-19); K261686 Elecsys Phospho-Tau (217P) Plasma (2026-08-19). Classification text: \"used to identify patients with amyloid pathology associated with Alzheimers Disease who have signs and symptoms of cognitive decline.\"",
     },
     {
       id: "fda-lumipulse-2025",

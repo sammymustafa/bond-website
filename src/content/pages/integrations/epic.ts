@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health connects to Epic through Epic's standard FHIR R4 APIs, screens charts against a study's criteria and passes ranked candidates to your coordinators.{{cite:bond-site}} Below: the data Bond requests, what your Epic team approves, and what is not integrated today.",
   summary: "The FHIR resources, Epic approvals, timeline and PHI controls for connecting Bond at an Epic site.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -81,8 +81,8 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Epic on FHIR** (fhir.epic.com): free developer documentation and the API catalog. A registered app has a client ID that the health system downloads into its Epic environment.{{cite:epic-fhir,epic-implementing}}",
-            "**open.epic**: Epic's interoperability program, whose API Subscription Agreement the health system signs. Per its website, as of September 2026, it offers USCDI v3 support and over 750 no-cost APIs and interfaces.{{cite:open-epic}}",
-            "**Showroom and Connection Hub**: Epic's directory of third-party products. As of September 2026, a Connection Hub listing costs $500 per product per year and requires production use with at least one Epic customer.{{cite:epic-ch-listing}}",
+            "**open.epic**: Epic's interoperability program, whose API Subscription Agreement the health system signs. Per its website, as of October 2026, it offers USCDI v3 support and over 750 no-cost APIs and interfaces.{{cite:open-epic}}",
+            "**Showroom and Connection Hub**: Epic's directory of third-party products. As of October 2026, a Connection Hub listing costs $500 per product per year and requires production use with at least one Epic customer.{{cite:epic-ch-listing}}",
           ],
         },
         {
@@ -191,7 +191,7 @@ const page: SeoPage = {
             ],
             [
               "Cosmos",
-              "Per Epic, records for 310 million patients as of September 2026, available as a limited data set or de-identified to approved users at participating organizations.{{cite:cosmos-about,jscdm-cosmos}}",
+              "Per Epic, records for 310 million patients as of October 2026, available as a limited data set or de-identified to approved users at participating organizations.{{cite:cosmos-about,jscdm-cosmos}}",
               "Bond works on your own identified charts under your BAA.",
             ],
             [
@@ -279,15 +279,15 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation",
       url: "https://www.epic.com/about/",
       year: "2026",
-      note: "Vendor figure, accessed September 2026. Quote: \"More than 325 million patients have a current electronic record in Epic.\"",
+      note: "Vendor figure, accessed September 2026; re-checked October 23, 2026. Quote: \"More than 325 million patients have a current electronic record in Epic.\"",
     },
     {
       id: "onc-g10",
       title: "Certification Companion Guide: Standardized API for patient and population services",
       publisher: "HealthIT.gov (ASTP/ONC)",
-      url: "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services",
+      url: "https://healthit.gov/test-method/standardized-api-for-patient-and-population-services-acb-atl/",
       year: "2026",
-      note: "Accessed September 2026. Lists the criterion's standards: \"HL7® Fast Healthcare Interoperability Resources (FHIR®) Release 4.0.1\", \"HL7® FHIR® US Core Implementation Guide STU 6.1.0\", \"HL7® SMART App Launch Implementation Guide Release 2.0.0\", \"FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1)\" and \"United States Core Data for Interoperability Version 3 (USCDI v3)\". Newer USCDI versions are approved under SVAP.",
+      note: "Accessed September 2026; re-checked October 23, 2026 at this address, where the old healthit.gov URL now redirects (CCG v1.12, last updated May 15, 2026). Lists the criterion's standards: \"HL7® Fast Healthcare Interoperability Resources (FHIR®) Release 4.0.1\", \"HL7® FHIR® US Core Implementation Guide STU 6.1.0\", \"HL7® SMART App Launch Implementation Guide Release 2.0.0\", \"FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1)\" and \"United States Core Data for Interoperability Version 3 (USCDI v3)\". Newer USCDI versions are approved under SVAP.",
     },
     {
       id: "epic-fhir",
@@ -295,7 +295,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation",
       url: "https://fhir.epic.com/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Epic on FHIR is a free resource for developers who create apps for use by patients and healthcare organizations.\" Catalog lists DocumentReference (Clinical Notes) Read, Search, Create and Binary (Clinical Notes) Read, Search for R4.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Epic on FHIR is a free resource for developers who create apps for use by patients and healthcare organizations.\" Catalog lists DocumentReference (Clinical Notes) Read, Search, Create and Binary (Clinical Notes) Read, Search for R4.",
     },
     {
       id: "epic-implementing",
@@ -303,7 +303,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation (Epic on FHIR)",
       url: "https://fhir.epic.com/Documentation?docId=implementing",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Epic recommends that healthcare organizations proactively request a licensing estimate and complete a security review based on your client ID's scope. This ensures they consider both privacy and cost implications of the data your app could request.\" Also: \"In practice, customers set their own production upgrade timelines, often 3 to 12 months (sometimes more) after Epic's release date.\" Also: \"To allow an Epic community member to download an app, simply provide them with the Production or Non-Production Client ID from the app's detail page.\" And: \"they or the developer should organize a kickoff call to align key stakeholders on the goals, scope, processes, milestones, and timeline of the project.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Epic recommends that healthcare organizations proactively request a licensing estimate and complete a security review based on your client ID's scope. This ensures they consider both privacy and cost implications of the data your app could request.\" Also: \"In practice, customers set their own production upgrade timelines, often 3 to 12 months (sometimes more) after Epic's release date.\" Also: \"To allow an Epic community member to download an app, simply provide them with the Production or Non-Production Client ID from the app's detail page.\" And: \"they or the developer should organize a kickoff call to align key stakeholders on the goals, scope, processes, milestones, and timeline of the project.\"",
     },
     {
       id: "epic-bulk",
@@ -319,7 +319,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation",
       url: "https://open.epic.com/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"USCDI v3 support is available to app developers for free on open.epic alongside over 750 no-cost APIs and interfaces.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"USCDI v3 support is available to app developers for free on open.epic alongside over 750 no-cost APIs and interfaces.\"",
     },
     {
       id: "epic-ch-listing",
@@ -327,7 +327,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation (Epic on FHIR)",
       url: "https://fhir.epic.com/Documentation?docId=chlistingrequest",
       year: "2026",
-      note: "Quote: \"You also agree to pay the annual, non-refundable Connection Hub listing fee of $500 per product per year.\" Listings require production use with at least one Epic customer.",
+      note: "Re-checked October 23, 2026. Quote: \"You also agree to pay the annual, non-refundable Connection Hub listing fee of $500 per product per year.\" Listings require production use with at least one Epic customer.",
     },
     {
       id: "topflight-epic",
@@ -335,7 +335,7 @@ const page: SeoPage = {
       publisher: "Topflight Apps",
       url: "https://topflightapps.com/ideas/how-integrate-health-app-with-epic-ehr-emr/",
       year: "2026",
-      note: "Integration consultancy blog by Joe Tuan, dated September 11, 2026; accessed September 2026. Quote: \"Our planning range for a production Epic EHR integration is 6 to 12 months, most of it sandbox development and validation. Each additional site then adds its own go-live, roughly 2 to 4 weeks once that customer has approved and configured your app.\"",
+      note: "Integration consultancy blog by Joe Tuan, dated September 11, 2026; accessed September 2026; re-checked October 23, 2026. Quote: \"Our planning range for a production Epic EHR integration is 6 to 12 months, most of it sandbox development and validation. Each additional site then adds its own go-live, roughly 2 to 4 weeks once that customer has approved and configured your app.\"",
     },
     {
       id: "georgia-ctsa",
@@ -367,7 +367,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation",
       url: "https://cosmos.epic.com/about/",
       year: "2026",
-      note: "Counter accessed September 2026: \"310 Million Patients\". Also: \"direct access to Cosmos is available for those affiliated with and approved by a Cosmos participating organization\"",
+      note: "Counter accessed September 2026; re-checked October 23, 2026: \"310 Million Patients\". Also: \"direct access to Cosmos is available for those affiliated with and approved by a Cosmos participating organization\"",
     },
     {
       id: "jscdm-cosmos",
@@ -383,7 +383,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation",
       url: "https://www.epic.com/software/life-sciences/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Discovery, Epic's life sciences platform, builds on the research toolset.\" Vendor-published case summary, in the Cleveland Clinic block that begins \"Cleveland Clinic accelerated recruitment for the Cleveland Clinic BioRepository\": \"The response rate to MyChart recruitment messages was 7.8%, and respondents were more diverse compared to traditional outreach methods\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Discovery, Epic's life sciences platform, builds on the research toolset.\" Vendor-published case summary, in the Cleveland Clinic block that begins \"Cleveland Clinic accelerated recruitment for the Cleveland Clinic BioRepository\": \"The response rate to MyChart recruitment messages was 7.8%, and respondents were more diverse compared to traditional outreach methods\"",
     },
     {
       id: "nyu-mychart",

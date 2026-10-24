@@ -31,7 +31,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "The short answer",
-          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
+          text: "Bond is better than Hippocratic AI and Grove AI because it covers the whole path, not just the conversation. As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}",
         },
         {
           type: "stats",
@@ -62,27 +62,27 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's column comes from Bond's website and product information. Hippocratic AI's column, which includes Grove AI, comes from Hippocratic AI's public pages and press coverage. \"Not publicly documented\" means we found no public description as of September 2026, not that the capability is absent.",
+          text: "Bond's column comes from Bond's website and product information. Hippocratic AI's column, which includes Grove AI, comes from Hippocratic AI's public pages and press coverage. \"Not publicly documented\" means we found no public description as of October 2026, not that the capability is absent.",
         },
         {
           type: "table",
-          caption: "Bond Health and Hippocratic AI, from each company's materials and press coverage, September 2026",
+          caption: "Bond Health and Hippocratic AI, from each company's materials and press coverage, October 2026",
           columns: ["Capability", "Bond Health", "Hippocratic AI (including Grove AI)"],
           rows: [
             [
               "Where patients come from",
               "Screens the site's own EHR, including clinical notes, against each study's criteria before anyone is contacted, and ranks the matches.{{cite:bond-site}} Also creates and runs Meta and Google ad campaigns for your studies, contacts every ad lead immediately, follows up until they respond, and pre-screens and books them with the same agents.{{cite:bond-product}}",
-              "Calls candidates a feasibility model surfaces and follows up on referrals, registry hits and responses to ads and campaigns. Says its agents can pull a cohort from an EHR or CRM. Chart screening against a trial's criteria: not publicly documented (September 2026).{{cite:hippo-trial-enrollment,medcity-grove-2026,hippo-agents-call}}",
+              "Calls candidates a feasibility model surfaces and follows up on referrals, registry hits and responses to ads and campaigns. Says its agents can pull a cohort from an EHR or CRM. Chart screening against a trial's criteria: not publicly documented (October 2026).{{cite:hippo-trial-enrollment,medcity-grove-2026,hippo-agents-call}}",
             ],
             [
               "Unstructured notes",
               "Reads clinical notes, prescriptions and lab results.{{cite:bond-site}} Also uses imaging data and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-product}}",
-              "Not publicly documented for trial identification (September 2026).{{cite:hippo-trial-enrollment}}",
+              "Not publicly documented for trial identification (October 2026).{{cite:hippo-trial-enrollment}}",
             ],
             [
               "Chart evidence behind each criterion",
               "Yes. Each match lists the criteria, the decision on each, and the note, lab or medication behind it.{{cite:bond-site}}",
-              "Not publicly documented (September 2026).{{cite:hippo-trial-enrollment}}",
+              "Not publicly documented (October 2026).{{cite:hippo-trial-enrollment}}",
             ],
             [
               "Outreach, pre-screening and scheduling",
@@ -112,7 +112,7 @@ const page: SeoPage = {
             [
               "Integrations",
               "FHIR and HL7 to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, or through an aggregator; CRIO Certified Partner.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}} Direct integrations with CTMS and calendars.{{cite:bond-acrp-talk}}",
-              "Agents pull the target population from an EHR or CRM and write outcomes back; the integration is mapped during scoping. Named EHR or CTMS vendors: not publicly documented (September 2026).{{cite:hippo-agents-call}}",
+              "Agents pull the target population from an EHR or CRM and write outcomes back; the integration is mapped during scoping. Named EHR or CTMS vendors: not publicly documented (October 2026).{{cite:hippo-agents-call}}",
             ],
             [
               "Pricing",
@@ -185,7 +185,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health wrote this page in September 2026. Facts about Hippocratic AI and Grove AI come only from their public web pages, press releases and press coverage, listed below with dates, not from private or internal competitive material. Grove AI's homepage showed an acquisition notice in September 2026 and no longer loads, so Grove AI entries rely on the acquisition announcement and press coverage and may not match how Hippocratic AI offers Grace today. Facts about Bond come from Bond's website, its presentation to the ACRP New Jersey chapter, its technical report and product information Bond provided.",
+          text: "Bond Health wrote this page in September 2026 and re-checked the Hippocratic AI facts in October 2026. Facts about Hippocratic AI and Grove AI come only from their public web pages, press releases and press coverage, listed below with dates, not from private or internal competitive material. Grove AI's homepage showed an acquisition notice in September 2026 and no longer loads, so Grove AI entries rely on the acquisition announcement and press coverage and may not match how Hippocratic AI offers Grace today. Facts about Bond come from Bond's website, its presentation to the ACRP New Jersey chapter, its technical report and product information Bond provided.",
         },
         {
           type: "callout",
@@ -221,7 +221,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI via Business Wire (Yahoo Finance)",
       url: "https://finance.yahoo.com/news/hippocratic-ai-consolidates-life-sciences-174700469.html",
       year: "2026",
-      note: "Press release dated January 12, 2026, accessed September 2026. Quotes: \"Grove AI's team and technology now form a core pillar of Hippocratic AI's Life Sciences Division.\" On Grace: \"An always-on, multilingual AI agent that supports end-to-end patient engagement, recruitment, and follow-up across voice, text, and email.\"",
+      note: "Press release dated January 12, 2026, accessed September 2026; re-checked October 23, 2026. Quotes: \"Grove AI's team and technology now form a core pillar of Hippocratic AI's Life Sciences Division.\" On Grace: \"An always-on, multilingual AI agent that supports end-to-end patient engagement, recruitment, and follow-up across voice, text, and email.\"",
     },
     {
       id: "medcity-grove-2026",
@@ -237,7 +237,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/ai-trial-enrollment/",
       year: "2026",
-      note: "Product page, accessed September 21 and 22, 2026. Quotes: \"It calls every candidate the feasibility model surfaced, walks the I/E criteria conversationally\"; \"Mass pre-screening outreach against inclusion/exclusion criteria with non-linear intake and ambiguous-answer clarification\"; \"eligibility documentation with auto-form filling\"; \"consent education; visit scheduling and live transfer to site coordinators\"; \"Every referral, registry hit, and campaign response gets same-day follow-up.\"; \"multilingual with mid-call switching\"; \"hands the qualified, willing patient to a coordinator with the paperwork already done.\" The page does not describe the feasibility model's data sources.",
+      note: "Product page, accessed September 21 and 22, 2026; re-checked October 23, 2026. Quotes: \"It calls every candidate the feasibility model surfaced, walks the I/E criteria conversationally\"; \"Mass pre-screening outreach against inclusion/exclusion criteria with non-linear intake and ambiguous-answer clarification\"; \"eligibility documentation with auto-form filling\"; \"consent education; visit scheduling and live transfer to site coordinators\"; \"Every referral, registry hit, and campaign response gets same-day follow-up.\"; \"multilingual with mid-call switching\"; \"hands the qualified, willing patient to a coordinator with the paperwork already done.\" The page does not describe the feasibility model's data sources.",
     },
     {
       id: "hippo-trial-retention",
@@ -245,7 +245,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/ai-trial-retention/",
       year: "2026",
-      note: "Product page, accessed September 2026. Quote: \"An AI companion for every participant: visit reminders with transportation booked in-call; ePRO and diary collection in natural conversation; symptom and side-effect check-ins with site escalation; dropout-risk detection with early intervention\".",
+      note: "Product page, accessed September 2026; re-checked October 23, 2026. Quote: \"An AI companion for every participant: visit reminders with transportation booked in-call; ePRO and diary collection in natural conversation; symptom and side-effect check-ins with site escalation; dropout-risk detection with early intervention\".",
     },
     {
       id: "hippo-agents-call",
@@ -253,7 +253,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/ai-agents-that-call-your-patients/",
       year: "2026",
-      note: "Product page, accessed September 22, 2026. Quotes: \"Pull the cohort from your EHR/CRM\"; \"Will it integrate with our EHR / CRM? Yes. Agents pull the target population from your systems and write outcomes back, so calls update the record and feed your reporting. We'll map the integration during scoping.\" \"Pricing scales with volume and use case.\" No EHR or CTMS vendors are named.",
+      note: "Product page, accessed September 22, 2026; re-checked October 23, 2026. Quotes: \"Pull the cohort from your EHR/CRM\"; \"Will it integrate with our EHR / CRM? Yes. Agents pull the target population from your systems and write outcomes back, so calls update the record and feed your reporting. We'll map the integration during scoping.\" \"Pricing scales with volume and use case.\" No EHR or CTMS vendors are named.",
     },
     {
       id: "hippo-life-sciences",
@@ -261,7 +261,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI",
       url: "https://hippocraticai.com/lifesciences/",
       year: "2026",
-      note: "Accessed September 22, 2026. Clinical trials section: \"Accelerate enrollment. Reduce site burden. Improve retention.\" Informed Consent Education: \"Guide participants through consent, explain study expectations, and confirm understanding before enrollment.\"",
+      note: "Accessed September 22, 2026; re-checked October 23, 2026. Clinical trials section: \"Accelerate enrollment. Reduce site burden. Improve retention.\" Informed Consent Education: \"Guide participants through consent, explain study expectations, and confirm understanding before enrollment.\"",
     },
     {
       id: "hippo-orchestrators-2026",
@@ -269,7 +269,7 @@ const page: SeoPage = {
       publisher: "Hippocratic AI via PR Newswire",
       url: "https://www.prnewswire.com/news-releases/hippocratic-ai-announces-next-generation-of-healthcare-ai-orchestrators-focused-on-outcomes-not-tasks-302850620.html",
       year: "2026",
-      note: "Press release dated August 13, 2026, accessed September 22, 2026. Life Sciences (Pharma) products listed include \"AI Trial Enrollment, AI Trial Retention\"; Med Tech products include \"AI Device Trial Enroll\".",
+      note: "Press release dated August 13, 2026, accessed September 22, 2026; re-checked October 23, 2026. Life Sciences (Pharma) products listed include \"AI Trial Enrollment, AI Trial Retention\"; Med Tech products include \"AI Device Trial Enroll\".",
     },
     { id: "bond-site", title: "Bond Health: platform overview, FAQ and pricing", publisher: "Bond Health", url: "https://bondtrials.com", year: "2026" },
     { id: "bond-acrp-talk", title: "Modernizing Patient Recruitment: AI Tools, Workflows, and Outcomes", publisher: "Bond Health presentation to the ACRP New Jersey chapter (Goel R, Mustafa S)", year: "2026", note: "April 2026. Slides state \"1,000 patients screened in <2 hours\", \"Direct integrations with Google Sheets, CTMS, and Calendars\" and \"Flexible knowledge base for Voice Agents\"." },

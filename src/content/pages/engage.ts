@@ -21,7 +21,7 @@ const page: SeoPage = {
     "Engage is the outreach stage of Bond Health. Bond creates and runs Meta and Google ad campaigns for each study, and its voice and SMS agents contact every new ad lead immediately and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
   summary:
     "Meta and Google ad campaigns plus voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -152,7 +152,7 @@ const page: SeoPage = {
         { type: "h3", text: "Disclosure" },
         {
           type: "p",
-          text: "As of September 2026, no federal rule specifically requires AI disclosure on calls: the FCC proposed an AI-call disclosure rule in August 2024 but had not finalized it.{{cite:fcc-24-84}} Some states do require it. Since January 1, 2026, Texas has required a provider that uses AI in relation to health care services to disclose that use to the patient in plain language.{{cite:tx-hb149}} California requires a disclaimer and a way to reach a human when generative AI writes patient messages about clinical information, unless a licensed provider reviews them; administrative matters such as appointment scheduling are excluded.{{cite:ca-ab3030}}",
+          text: "As of October 2026, no federal rule specifically requires AI disclosure on calls: the FCC proposed an AI-call disclosure rule in August 2024 but had not finalized it.{{cite:fcc-24-84}} Some states do require it. Since January 1, 2026, Texas has required a provider that uses AI in relation to health care services to disclose that use to the patient in plain language.{{cite:tx-hb149}} California requires a disclaimer and a way to reach a human when generative AI writes patient messages about clinical information, unless a licensed provider reviews them; administrative matters such as appointment scheduling are excluded.{{cite:ca-ab3030}}",
         },
         { type: "h3", text: "TCPA" },
         {
@@ -176,7 +176,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "warning",
           title: "Not legal advice",
-          text: "This summarizes the rules as of September 2026 and is not legal advice. More detail: [TCPA and AI outreach in 2026](/blog/tcpa-ai-outreach-2026).",
+          text: "This summarizes the rules as of October 2026 and is not legal advice. More detail: [TCPA and AI outreach in 2026](/blog/tcpa-ai-outreach-2026).",
         },
       ],
     },

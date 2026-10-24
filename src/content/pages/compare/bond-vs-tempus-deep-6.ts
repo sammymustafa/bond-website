@@ -46,7 +46,7 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**One product from chart to booked visit.** Bond automates EHR screening, patient outreach, visit booking and consent tracking in one workflow, with \"no data silos, no manual handoffs, and complete visibility from first ad click or chart match to a booked visit and signed consent.\"{{cite:bond-site}} In Deep 6 AI's published workflow, matches go to site staff to validate and track, and in TIME's 2024 workflow a Tempus nurse reviewed matches before sending them to sites.{{cite:deep6-life-sciences-2023,tempus-time-asco-2025}}",
+            "**One product from chart to booked visit.** Bond automates EHR screening, patient outreach, visit booking and consent tracking in one workflow, with \"no data silos, no manual handoffs, and complete visibility from first ad click or chart match to a booked visit and signed consent.\"{{cite:bond-site}} In Deep 6 AI's published workflow, matches went to site staff to validate and track, and in TIME's 2024 workflow a Tempus nurse reviewed matches before sending them to sites.{{cite:deep6-life-sciences-2023,tempus-time-asco-2025}}",
             ADS_BULLET,
             "**Agents that start from the chart.** Bond's voice agents start from what Identify found in the chart, so they skip questions the chart already answers, can explain why the patient was contacted, and can pre-screen and book a visit in one conversation. They speak the patient's language, switch languages mid-call, and transfer live to a coordinator when the site wants that.{{cite:bond-product}} Bond's site cites a 3x contact rate.{{cite:bond-site}}",
             "**Consent support for patients.** Plain-language explanations, patient Q&A and escalation to staff, with checks on the patient's understanding of key points and an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
@@ -58,7 +58,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
+          text: "As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -68,52 +68,52 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Years in the Tempus column show each source's date. \"Not publicly documented\" means we found no public description in the materials we reviewed in September 2026, not that the capability is absent.",
+          text: "Years in the Tempus column show each source's date. \"Not publicly documented\" means we found no public description in the materials we reviewed in October 2026, not that the capability is absent.",
         },
         {
           type: "table",
-          caption: "Bond Health and Tempus (Deep 6 AI, TIME and Next Trials), from materials reviewed in September 2026",
+          caption: "Bond Health and Tempus (Deep 6 AI, TIME and Next Trials), from materials reviewed in October 2026",
           columns: ["Capability", "Bond Health", "Tempus (Deep 6 AI, TIME, Next Trials)"],
           rows: [
             [
               "One workflow from chart to booked visit and consent",
               "Yes. [Identify](/identify), [Engage](/engage) and [Consent](/consent) run as one workflow, with \"no manual handoffs\" from first match to booked visit and signed consent.{{cite:bond-site}}",
-              "Deep 6 AI: matched patients go to site staff, who validate eligibility in the EMR and track recruitment status (2023). TIME: a Tempus nurse reviewed qualifying matches and sent confirmed ones to sites (2025), and Tempus describes a clinical team that pre-screens matched patients and presents them to each site (2026).{{cite:deep6-life-sciences-2023,tempus-time-asco-2025,tempus-time-site-2026}}",
+              "Deep 6 AI: matched patients went to site staff, who validated eligibility in the EMR and tracked recruitment status (2023). TIME: a Tempus nurse reviewed qualifying matches and sent confirmed ones to sites (2025), and Tempus describes a clinical team that pre-screens matched patients and presents them to each site (2026).{{cite:deep6-life-sciences-2023,tempus-time-asco-2025,tempus-time-site-2026}}",
             ],
             [
               "EHR identification",
               "LLM-based screening of the site's EHR against each protocol's criteria, returning ranked matches: 10,000+ charts per hour and 90%+ matching accuracy.{{cite:bond-site}}",
-              "Deep 6 AI mines real-time structured and unstructured EMR data (2025). TIME matched on EMR data, sequencing results and NLP output (2025). Next Trials pre-screens on clinical, imaging and molecular data (2026).{{cite:tempus-deep6-acquisition,tempus-time-asco-2025,tempus-next-trials-2026}}",
+              "Deep 6 AI mined real-time structured and unstructured EMR data (2025). TIME matched on EMR data, sequencing results and NLP output (2025). Next Trials pre-screens on clinical, imaging and molecular data (2026).{{cite:tempus-deep6-acquisition,tempus-time-asco-2025,tempus-next-trials-2026}}",
             ],
             [
               "Unstructured notes",
               "Reads clinical notes, prescriptions and lab results, and uses imaging data and other unstructured documents, including pathology, radiology and molecular reports.{{cite:bond-site,bond-product}}",
-              "Deep 6 AI applies NLP to physician notes, lab, radiology and pathology reports, and genomics results (2023). Tempus says generative AI scans structured and unstructured clinical notes for pre-screening (2026).{{cite:deep6-ttuhsc-2023,tempus-time-site-2026}}",
+              "Deep 6 AI applied NLP to physician notes, lab, radiology and pathology reports, and genomics results (2023). Tempus says generative AI scans structured and unstructured clinical notes for pre-screening (2026).{{cite:deep6-ttuhsc-2023,tempus-time-site-2026}}",
             ],
             [
               "Evidence behind each criterion",
               "Yes. Ranked matches come with the evidence behind each criterion decision and traceability to the chart.{{cite:bond-site}}",
-              "Yes. Ohio State describes Deep 6 AI highlighting the patient data related to the inclusion and exclusion criteria and showing the text where its NLP found each keyword (2024).{{cite:osu-aaci-2024}}",
+              "Yes. Ohio State described Deep 6 AI highlighting the patient data related to the inclusion and exclusion criteria and showing the text where its NLP found each keyword (2024).{{cite:osu-aaci-2024}}",
             ],
             [
               "Outreach and scheduling",
               "Voice and SMS agents contact matched patients, starting from what Identify found in the chart, and can pre-screen and book a visit in one conversation, in the patient's language. Bond's site cites a 3x contact rate. Patients are told AI is used and can reach a person at any time, by live transfer to a coordinator or a callback, as the site prefers.{{cite:bond-site,bond-product}}",
-              "Deep 6 AI: site staff validate matches and track referrals in the EMR (2023). TIME: Tempus Nurse Navigators contact patients who ask about TIME trials and can speak with their doctors (2026). Automated calls or texts to EHR-matched patients, and visit booking: not publicly documented (September 2026).{{cite:deep6-life-sciences-2023,tempus-ttct-2026}}",
+              "Deep 6 AI: site staff validated matches and tracked referrals in the EMR (2023). TIME: Tempus Nurse Navigators contact patients who ask about TIME trials and can speak with their doctors (2026). Automated calls or texts to EHR-matched patients, and visit booking: not publicly documented (October 2026).{{cite:deep6-life-sciences-2023,tempus-ttct-2026}}",
             ],
             [
               "Consent",
               "Plain-language explanations, patient Q&A and staff escalation. Consent support checks the patient's understanding of key points and keeps an auditable record for the site. The site and PI obtain consent.{{cite:bond-site,bond-product}}",
-              "Patient-facing consent support: not publicly documented (September 2026).",
+              "Patient-facing consent support: not publicly documented (October 2026).",
             ],
             [
               "Matching across studies",
               "Screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
-              "Deep 6 AI is used enterprise-wide across a health system's investigator-initiated, government-funded and sponsored trials, often run centrally by the Clinical Trials Office (2024).{{cite:deep6-cassidy-2024}}",
+              "Deep 6 AI was used enterprise-wide across a health system's investigator-initiated, government-funded and sponsored trials, often run centrally by the Clinical Trials Office (2024).{{cite:deep6-cassidy-2024}}",
             ],
             [
               "Support after enrollment",
               "The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-              "Not publicly documented (September 2026).",
+              "Not publicly documented (October 2026).",
             ],
             [
               "Therapeutic breadth",
@@ -128,17 +128,17 @@ const page: SeoPage = {
             [
               "Integrations",
               "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} [CRIO](/integrations/crio) Certified Partner. Direct integrations with CTMS and calendars.{{cite:bond-site,bond-product,bond-acrp-talk}}",
-              "Tempus connects to a provider's EHR, data warehouse or a third-party data provider, using near real-time HL7 and FHIR connections and batch data exchange (2026). Deep 6 AI integrates with the health system's EMR (2023) and can bring in genomics, cancer registry and CTMS data (2024).{{cite:tempus-10k-2025,deep6-ttuhsc-2023,osu-aaci-2024}}",
+              "Tempus connects to a provider's EHR, data warehouse or a third-party data provider, using near real-time HL7 and FHIR connections and batch data exchange (2026). Deep 6 AI integrated with the health system's EMR (2023) and could bring in genomics, cancer registry and CTMS data (2024).{{cite:tempus-10k-2025,deep6-ttuhsc-2023,osu-aaci-2024}}",
             ],
             [
               "Implementation",
               "48 hours for full EHR integration, depending on the EHR, IT review and interface method. Bond's implementation team handles the integration end to end, with no integration fee, and keeps improving outreach messaging until study close-out ([implementation](/implementation)).{{cite:bond-site,bond-product}}",
-              "In certain circumstances, Tempus covers the direct cost of the technical integration (2026). One Edge SDX connection can power both TIME and Next Trials (2026). Timeline to connect a site's EHR: not publicly documented in the materials we reviewed (September 2026).{{cite:tempus-10k-2025,tempus-next-trials-2026}}",
+              "In certain circumstances, Tempus covers the direct cost of the technical integration (2026). One Edge SDX connection can power both TIME and Next Trials (2026). Timeline to connect a site's EHR: not publicly documented in the materials we reviewed (October 2026).{{cite:tempus-10k-2025,tempus-next-trials-2026}}",
             ],
             [
               "Pricing",
               "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}}",
-              "No public price list found (September 2026). Tempus's 10-K names the trial sponsor as the TIME customer. Depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls, and where the contract requires, it may help open the trial site and enroll the patient (2026).{{cite:tempus-10k-2025}}",
+              "No public price list found (October 2026). Tempus's 10-K names the trial sponsor as the TIME customer. Depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls, and where the contract requires, it may help open the trial site and enroll the patient (2026).{{cite:tempus-10k-2025}}",
             ],
           ],
         },
@@ -211,7 +211,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond wrote this page in September 2026. Tempus facts come from public sources: Tempus's 2025 Form 10-K, company press releases, a Tempus-authored conference abstract, an Ohio State customer abstract, an archived copy of Deep 6 AI's website and Tempus web pages. tempus.com returned rate-limit errors (HTTP 429) to our requests that month, so we read its pages from Internet Archive copies dated February to April 2026; the live pages may have changed since. Bond's figures and capabilities come from its website, its Trust Center, its technical report, an April 2026 ACRP presentation and product information Bond provided, each cited where used. We used no private or internal competitive material.",
+          text: "Bond wrote this page in September 2026 and re-checked it on October 23, 2026. Tempus facts come from public sources: Tempus's 2025 Form 10-K, company press releases, a Tempus-authored conference abstract, an Ohio State customer abstract, an archived copy of Deep 6 AI's website and Tempus web pages. In the October re-check we read the live tempus.com pages in a browser and confirmed each passage we quote. Bond's figures and capabilities come from its website, its Trust Center, its technical report, an April 2026 ACRP presentation and product information Bond provided, each cited where used. We used no private or internal competitive material.",
         },
         {
           type: "callout",
@@ -237,7 +237,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}} We found no public price list for Deep 6 AI, TIME or Next Trials as of September 2026. Tempus's 10-K names the trial sponsor as the TIME customer and says that, depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls.{{cite:tempus-10k-2025}}",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-site,bond-product}} We found no public price list for Deep 6 AI, TIME or Next Trials as of October 2026. Tempus's 10-K names the trial sponsor as the TIME customer and says that, depending on the agreement, Tempus recognizes revenue when it notifies a physician of a match or when a patient enrolls.{{cite:tempus-10k-2025}}",
     },
   ],
   sources: [
@@ -247,31 +247,31 @@ const page: SeoPage = {
       publisher: "Tempus AI, Inc. / U.S. Securities and Exchange Commission",
       url: "https://www.sec.gov/Archives/edgar/data/1717115/000119312526066961/tem-20251231.htm",
       year: "2026",
-      note: "Filed February 2026, accessed September 2026. Quote: \"On March 11, 2025, the Company acquired all of the issued and outstanding interests of Deep 6 AI, Inc.\" Revenue: \"The Company's Trials product includes TIME clinical trial matching services and other clinical trial services\"; \"To the extent the contract requires, the Company may also assist in opening the clinical trial site and enrolling the patient in the clinical trial\"; \"depending on the type of agreement\"; \"revenue is recognized upon one of the following: delivery of a notification to the physician alerting them to a clinical trial match, or once a patient is enrolled in a trial\"; \"the customer, which is the clinical trial sponsor\". Data connections: \"We use a variety of near real-time connections (e.g., HL7, FHIR) and batch data exchanges\"; \"Our proprietary tools connect to a provider's EHR system, data warehouse, or third-party data provider to pull out relevant structured and unstructured data that the provider has agreed to provide to Tempus\"; \"In certain circumstances, we cover the actual direct costs associated with the technical integrations needed to create a data connection.\"",
+      note: "Filed February 2026, accessed September 2026; re-checked October 23, 2026. Quote: \"On March 11, 2025, the Company acquired all of the issued and outstanding interests of Deep 6 AI, Inc.\" Revenue: \"The Company's Trials product includes TIME clinical trial matching services and other clinical trial services\"; \"To the extent the contract requires, the Company may also assist in opening the clinical trial site and enrolling the patient in the clinical trial\"; \"depending on the type of agreement\"; \"revenue is recognized upon one of the following: delivery of a notification to the physician alerting them to a clinical trial match, or once a patient is enrolled in a trial\"; \"the customer, which is the clinical trial sponsor\". Data connections: \"We use a variety of near real-time connections (e.g., HL7, FHIR) and batch data exchanges\"; \"Our proprietary tools connect to a provider's EHR system, data warehouse, or third-party data provider to pull out relevant structured and unstructured data that the provider has agreed to provide to Tempus\"; \"In certain circumstances, we cover the actual direct costs associated with the technical integrations needed to create a data connection.\"",
     },
     {
       id: "tempus-deep6-acquisition",
       title: "Tempus Announces Acquisition of Deep 6 AI",
-      publisher: "Tempus AI, Inc. press release, republished by MemorialCare Innovation Fund",
-      url: "https://memorialcareinnovationfund.com/tempus-announces-acquisition-of-deep-6-ai/",
+      publisher: "Tempus AI, Inc. press release",
+      url: "https://www.tempus.com/news/pr/tempus-announces-acquisition-of-deep-6-ai/",
       year: "2025",
-      note: "Press release dated March 11, 2025, accessed September 2026. The original on Tempus's own website did not load when we checked. Quote: \"Its AI-powered software matches patients to clinical trials by mining real-time structured and unstructured electronic medical record (EMR) data\".",
+      note: "Press release dated March 11, 2025, read on tempus.com October 23, 2026. Quote: \"Its AI-powered software matches patients to clinical trials by mining real-time structured and unstructured electronic medical record (EMR) data\".",
     },
     {
       id: "tempus-time-site-2026",
-      title: "Clinical Trial Matching for Oncology | TIME Trial Network",
+      title: "Tempus TIME Clinical Trial Matching for Providers",
       publisher: "Tempus AI, Inc. (tempus.com)",
-      url: "https://www.tempus.com/oncology/clinical-trial-matching/",
+      url: "https://www.tempus.com/solutions/clinical-trial-matching/",
       year: "2026",
-      note: "Read from the Internet Archive copy of April 11, 2026 (https://web.archive.org/web/20260411055140/https://www.tempus.com/oncology/clinical-trial-matching/) because tempus.com returned HTTP 429 when we checked in September 2026. Quote: trial matching \"with a clinical team of experts pre-screening the matched patients and presenting potentially eligible patients with a white-glove service to each site\" and, under enhanced patient pre-screening, \"Generative AI scans structured and unstructured clinical notes, enhancing identification of patients who may be eligible for trial participation.\"",
+      note: "Read October 23, 2026. Quote: trial matching \"with a clinical team of experts pre-screening the matched patients and presenting potentially eligible patients with a white-glove service to each site\" and, under enhanced patient pre-screening, \"Generative AI scans structured and unstructured clinical notes, enhancing identification of patients who may be eligible for trial participation.\"",
     },
     {
       id: "tempus-next-trials-2026",
       title: "Tempus Next Trials",
       publisher: "Tempus AI, Inc. (tempus.com)",
-      url: "https://www.tempus.com/about-us/tempus-tech/next-trials/",
+      url: "https://www.tempus.com/solutions/next-trials/",
       year: "2026",
-      note: "Read from the Internet Archive copy of April 17, 2026 (https://web.archive.org/web/20260417184842/https://www.tempus.com/about-us/tempus-tech/next-trials/) because tempus.com returned HTTP 429 when we checked in September 2026. Quote: \"AI-enabled platform supports clinical trial pre-screening based on your patients' multimodal, structured and unstructured health information (clinical, imaging and molecular data)\"; \"Accelerate accrual to trials already open at your practice\"; \"Extend the value of your Edge SDX connection by using it to power both the TIME Trial Network and Next Trials\"; \"When ready, Next Trials can be expanded to pre-screen patients across additional disease groups beyond oncology.\"",
+      note: "Read October 23, 2026. Quote: \"AI-enabled platform supports clinical trial pre-screening based on your patients' multimodal, structured and unstructured health information (clinical, imaging and molecular data)\"; \"Accelerate accrual to trials already open at your practice\"; \"Extend the value of your Edge SDX connection by using it to power both the TIME Trial Network and Next Trials\"; \"When ready, Next Trials can be expanded to pre-screen patients across additional disease groups beyond oncology.\"",
     },
     {
       id: "tempus-time-asco-2025",
@@ -279,15 +279,15 @@ const page: SeoPage = {
       publisher: "Mallahan S, et al. (Tempus authors), ASCO Annual Meeting 2025, abstract 1506; Tempus publication page",
       url: "https://www.tempus.com/publications/a-technology-enabled-clinical-trial-programs-impact-on-patient-screening-and-trial-enrollment-in-2024/",
       year: "2025",
-      note: "Journal of Clinical Oncology 43(16_suppl), https://doi.org/10.1200/JCO.2025.43.16_suppl.1506. Describes the TIME workflow in 2024. Read from the Internet Archive copy of February 13, 2026 (https://web.archive.org/web/20260213063526/https://www.tempus.com/publications/a-technology-enabled-clinical-trial-programs-impact-on-patient-screening-and-trial-enrollment-in-2024/). Quote: \"Qualifying matches were then reviewed by a Tempus nurse and sent to sites if confirmed eligible.\" Also: \"structured and unstructured data generated from Electronic Medical Record integration, next generation sequencing results, and natural language processing models.\"",
+      note: "Journal of Clinical Oncology 43(16_suppl), https://doi.org/10.1200/JCO.2025.43.16_suppl.1506. Describes the TIME workflow in 2024. Read on tempus.com October 23, 2026. Quote: \"Qualifying matches were then reviewed by a Tempus nurse and sent to sites if confirmed eligible.\" Also: \"structured and unstructured data generated from Electronic Medical Record integration, next generation sequencing results, and natural language processing models.\"",
     },
     {
       id: "tempus-ttct-2026",
       title: "Clinical Trials for Patients | Tempus TIME",
       publisher: "Tempus AI, Inc. (tempus.com)",
-      url: "https://www.tempus.com/ttct/",
+      url: "https://www.tempus.com/patients-clinical-trials/",
       year: "2026",
-      note: "Read from the Internet Archive copy of March 16, 2026 (https://web.archive.org/web/20260316114747/https://www.tempus.com/ttct/) because tempus.com returned HTTP 429 when we checked in September 2026. Quote: \"A Tempus Nurse Navigator will contact you within 1 business day to share information about trials in our network that may be a match for you\"; \"Our Nurse Navigators can also speak with you and your doctor\"; \"The cancer clinical trials in the TIME program cover various cancer types, cancer stages, and biomarkers.\"",
+      note: "Read October 23, 2026. Quote: \"A Tempus Nurse Navigator will contact you within 1 business day to share information about trials in our network that may be a match for you\"; \"Our Nurse Navigators can also speak with you and your doctor\"; \"The cancer clinical trials in the TIME program cover various cancer types, cancer stages, and biomarkers.\"",
     },
     {
       id: "deep6-cassidy-2024",
@@ -319,7 +319,7 @@ const page: SeoPage = {
       publisher: "Stillman R, Campbell A, Humphries K, Schweitzer C. The Ohio State University Comprehensive Cancer Center; AACI CRI 2024 abstract",
       url: "https://www.aaci-cancer.org/Files/Admin/CRI/2024/120---Integrating-AI-Enabled-Clinical-Trials-Matching-into-Operations.pdf",
       year: "2024",
-      note: "Customer work-in-progress abstract on Deep 6 AI at Ohio State, accessed September 2026. Quote: \"a user interface that speeds patient screening by presenting and highlighting patient data related to the inclusion/exclusion criteria across a longitudinal patient record\"; \"to be able to reference the text in which the NLP identified the keywords to view the keywords in context to confirm the finding\"; \"Deep 6 AI can incorporate multiple data sources beyond the electronic medical records (EMR), such as genomics, custom databases, cancer registries, CTMS, etc.\"",
+      note: "Customer work-in-progress abstract on Deep 6 AI at Ohio State, accessed September 2026; re-checked October 23, 2026. Quote: \"a user interface that speeds patient screening by presenting and highlighting patient data related to the inclusion/exclusion criteria across a longitudinal patient record\"; \"to be able to reference the text in which the NLP identified the keywords to view the keywords in context to confirm the finding\"; \"Deep 6 AI can incorporate multiple data sources beyond the electronic medical records (EMR), such as genomics, custom databases, cancer registries, CTMS, etc.\"",
     },
     {
       id: "deep6-archive-2026",
@@ -335,7 +335,7 @@ const page: SeoPage = {
       publisher: "U.S. Food and Drug Administration",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recruiting-study-subjects",
       year: "1998",
-      note: "Guidance dated January 1998, accessed September 2026. Quote: \"FDA expects IRBs to review the advertising to assure that it is not unduly coercive\" and, on receptionist screening scripts, \"The IRB should assure the procedures followed adequately protect the rights and welfare of the prospective subjects.\"",
+      note: "Guidance dated January 1998, accessed September 2026; re-checked October 23, 2026. Quote: \"FDA expects IRBs to review the advertising to assure that it is not unduly coercive\" and, on receptionist screening scripts, \"The IRB should assure the procedures followed adequately protect the rights and welfare of the prospective subjects.\"",
     },
     {
       id: "bond-site",

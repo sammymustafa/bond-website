@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "From August 2021 to August 2023, 40.3 percent of US adults had obesity.{{cite:cdc-obesity}} These trials rarely lack candidates on paper. They lack candidates whose measured BMI, A1c and medication history fall inside the protocol's windows on screening day. This page covers eligibility, screen failure, and what Bond Health reads in the chart.",
   summary: "BMI, A1c and GLP-1 washout criteria, screen failure drivers, and the recruiting-trial pool for obesity and type 2 diabetes.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Identify", secondaryHref: "/identify" },
   sections: [
     {
@@ -31,7 +31,7 @@ const page: SeoPage = {
             { value: "40.3%", label: "US adults with obesity, August 2021 to August 2023", cite: "cdc-obesity" },
             { value: "40.1 million", label: "People in the US with diagnosed or undiagnosed diabetes, 2023", cite: "cdc-diabetes" },
             { value: "12%", label: "US adults currently taking a GLP-1 drug, late 2025 poll", cite: "kff-glp1-2025" },
-            { value: "852", label: "Recruiting obesity, overweight or type 2 diabetes studies with a US site", cite: "ctgov-api" },
+            { value: "848", label: "Recruiting obesity, overweight or type 2 diabetes studies with a US site", cite: "ctgov-api" },
           ],
         },
         {
@@ -67,7 +67,7 @@ const page: SeoPage = {
             ["Psychiatric stability", "No unstable major depression or severe psychiatric disorder{{cite:enicepatide}}", "Problem list, psychiatry notes, PHQ-9", "Mixed"],
             ["Kidney and eye (type 2 diabetes)", "eGFR 45 or higher; no proliferative retinopathy{{cite:surpass-2}}", "Labs, eye exam reports", "Labs structured; eye findings often scanned"],
           ],
-          note: "From the ClinicalTrials.gov entries for SURPASS-2, STEP 1, SELECT and a 2026 enicepatide trial, retrieved September 2026.{{cite:surpass-2,step-1,select,enicepatide}} Each protocol sets its own values.",
+          note: "From the ClinicalTrials.gov entries for SURPASS-2, STEP 1, SELECT and a 2026 enicepatide trial, retrieved October 2026.{{cite:surpass-2,step-1,select,enicepatide}} Each protocol sets its own values.",
         },
       ],
     },
@@ -164,21 +164,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, a ClinicalTrials.gov condition keyword search for obesity, overweight or type 2 diabetes returned 852 recruiting studies with a US site, out of 22,041 in total.{{cite:ctgov-api}} The count includes observational studies, and a study can appear in more than one area.",
+          text: "As of October 23, 2026, a ClinicalTrials.gov condition keyword search for obesity, overweight or type 2 diabetes returned 848 recruiting studies with a US site, out of 22,038 in total.{{cite:ctgov-api}} The count includes observational studies, and a study can appear in more than one area.",
         },
         {
           type: "chart",
           title: "Recruiting studies with a US site, by condition keyword search",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity, overweight or type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity, overweight or type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -288,7 +288,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov",
       url: "https://clinicaltrials.gov/study/NCT03987919",
       year: "2026",
-      note: "Quote: \"Have HbA1c between ≥7.0% and ≤10.5%\", \"Be on stable treatment with unchanged dose of metformin >1500 mg/day for at least 3 months prior to screening\", and exclusions \"Have an estimated glomerular filtration rate <45 milliliters/minute/1.73 m²\", \"Have proliferative diabetic retinopathy or diabetic maculopathy or nonproliferative diabetic retinopathy requiring acute treatment\", \"Have a personal or family history of medullary thyroid carcinoma or personal history of multiple endocrine neoplasia syndrome type 2\" and \"Have been taking any other diabetes medicines other than metformin during the last 3 months\". Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026.",
+      note: "Quote: \"Have HbA1c between ≥7.0% and ≤10.5%\", \"Be on stable treatment with unchanged dose of metformin >1500 mg/day for at least 3 months prior to screening\", and exclusions \"Have an estimated glomerular filtration rate <45 milliliters/minute/1.73 m²\", \"Have proliferative diabetic retinopathy or diabetic maculopathy or nonproliferative diabetic retinopathy requiring acute treatment\", \"Have a personal or family history of medullary thyroid carcinoma or personal history of multiple endocrine neoplasia syndrome type 2\" and \"Have been taking any other diabetes medicines other than metformin during the last 3 months\". Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "step-1",
@@ -296,7 +296,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov",
       url: "https://clinicaltrials.gov/study/NCT03548935",
       year: "2026",
-      note: "Quote (exclusion criteria): \"(HbA1C) greater than or equal to 48 mmol/mol (6.5%) as measured by the central laboratory at screening\" and \"A self-reported change in body weight greater than 5 kg (11 lbs) within 90 days before screening irrespective of medical records\". Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026.",
+      note: "Quote (exclusion criteria): \"(HbA1C) greater than or equal to 48 mmol/mol (6.5%) as measured by the central laboratory at screening\" and \"A self-reported change in body weight greater than 5 kg (11 lbs) within 90 days before screening irrespective of medical records\". Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "select",
@@ -304,7 +304,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov",
       url: "https://clinicaltrials.gov/study/NCT03574597",
       year: "2026",
-      note: "Quote (exclusion criteria): \"Treatment with any glucagon-like-peptide-1 receptor agonist (GLP-1 RA) within 90 days before screening\", \"History or presence of chronic pancreatitis\" and \"Personal or first degree relative(s) history of multiple endocrine neoplasia type 2 or medullary thyroid carcinoma\". Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026.",
+      note: "Quote (exclusion criteria): \"Treatment with any glucagon-like-peptide-1 receptor agonist (GLP-1 RA) within 90 days before screening\", \"History or presence of chronic pancreatitis\" and \"Personal or first degree relative(s) history of multiple endocrine neoplasia type 2 or medullary thyroid carcinoma\". Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "enicepatide",
@@ -312,7 +312,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov",
       url: "https://clinicaltrials.gov/study/NCT07351045",
       year: "2026",
-      note: "Quote (exclusion criteria): \"Treatment with any approved or investigational GLP-1-RA-based therapy (e.g., GLP-1 receptor mono agonist, GLP-1/GIP receptor dual agonist, GLP-1/GIP/Gluc receptor triple agonist) within 6 months prior to randomization\", \"Prior or planned surgical treatment for obesity\", \"Known clinically significant gastric emptying abnormality (e.g., severe gastroparesis or gastric outlet obstruction)\" and \"Have a history of significant active or unstable major depressive disorder (MDD) or other severe psychiatric disorder\". Lead sponsor Hoffmann-La Roche, Phase 3, start date March 16, 2026. Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026.",
+      note: "Quote (exclusion criteria): \"Treatment with any approved or investigational GLP-1-RA-based therapy (e.g., GLP-1 receptor mono agonist, GLP-1/GIP receptor dual agonist, GLP-1/GIP/Gluc receptor triple agonist) within 6 months prior to randomization\", \"Prior or planned surgical treatment for obesity\", \"Known clinically significant gastric emptying abnormality (e.g., severe gastroparesis or gastric outlet obstruction)\" and \"Have a history of significant active or unstable major depressive disorder (MDD) or other severe psychiatric disorder\". Lead sponsor Hoffmann-La Roche, Phase 3, start date March 16, 2026. Retrieved via the ClinicalTrials.gov API v2 on September 22, 2026; re-checked October 23, 2026.",
     },
     {
       id: "rodriguez-2025",
@@ -360,7 +360,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "bond-site",

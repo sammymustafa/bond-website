@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruiting for clinical trials in the Seattle area",
   intro:
-    "On October 5, 2026, a ClinicalTrials.gov radius search found 1,475 recruiting studies with at least one site within 25 miles of downtown Seattle, about 6.7% of the 22,007 recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites across King County and the rest of the Puget Sound area: where the research hubs are, which EHRs hold the patients, who lives here, and which Washington rules shape AI-assisted outreach.",
+    "On October 23, 2026, a ClinicalTrials.gov radius search found 1,486 recruiting studies with at least one site within 25 miles of downtown Seattle, about 6.7% of the 22,038 recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites across King County and the rest of the Puget Sound area: where the research hubs are, which EHRs hold the patients, who lives here, and which Washington rules shape AI-assisted outreach.",
   summary: "Seattle area recruiting-trial counts, research hubs, health systems and their EHRs, languages, and Washington health data and outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Cancer dominates. 687 of the 1,475 studies matched an oncology keyword search, 46.6% of the local total and 9.7% of the 7,064 recruiting oncology studies in the US. Seattle's share of US studies is highest in gastroenterology (50 of 283) and lowest in psychiatry (57 of 1,275).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Cancer dominates. 699 of the 1,486 studies matched an oncology keyword search, 47.0% of the local total and 9.9% of the 7,092 recruiting oncology studies in the US. Seattle's share of US studies is highest in gastroenterology (47 of 281) and lowest in pain (29 of 632) and psychiatry (60 of 1,278).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "seattle", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A radius count includes every recruiting study with at least one location inside the circle, so a study with sites in Seattle and Bellevue counts once. Area counts come from keyword searches, overlap, and can pull in off-target studies, and a count shows where sponsors placed studies, not which ones enroll on schedule. The oncology examples below come from the same October 5, 2026 query.{{cite:ctgov-api}} See [oncology](/oncology).",
+          text: "A radius count includes every recruiting study with at least one location inside the circle, so a study with sites in Seattle and Bellevue counts once. Area counts come from keyword searches, overlap, and can pull in off-target studies, and a count shows where sponsors placed studies, not which ones enroll on schedule. The oncology examples below come from the same October 23, 2026 query.{{cite:ctgov-api}} See [oncology](/oncology).",
         },
         { type: "trials", geo: "seattle", condition: "oncology", cite: "ctgov-api" },
       ],
@@ -263,7 +263,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in the Seattle area?",
-      a: "A ClinicalTrials.gov radius search on October 5, 2026 found 1,475 recruiting studies with a site within 25 miles of downtown Seattle, 687 of them matching an oncology keyword search.{{cite:ctgov-api}}",
+      a: "A ClinicalTrials.gov radius search on October 23, 2026 found 1,486 recruiting studies with a site within 25 miles of downtown Seattle, 699 of them matching an oncology keyword search.{{cite:ctgov-api}}",
     },
     {
       q: "Does Washington's My Health My Data Act apply to trial recruitment?",
@@ -281,7 +281,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?filter.geo=distance(47.6062,-122.3321,25mi)&filter.overallStatus=RECRUITING&countTotal=true&pageSize=1",
       year: "2026",
-      note: "Radius search queried October 5, 2026: filter.geo distance(47.6062,-122.3321,25mi), overall status Recruiting; \"totalCount\": 1475. Area counts add a query.cond keyword search (oncology: cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia) and returned oncology 687; gastroenterology 50; psychiatry 57. US totals from query.locn=United States the same day: all 22,007; oncology 7,064; gastroenterology 283; psychiatry 1,275. Shares are Bond's arithmetic.",
+      note: "Radius search queried October 23, 2026: filter.geo distance(47.6062,-122.3321,25mi), overall status Recruiting; \"totalCount\": 1486. Area counts add a query.cond keyword search (oncology: cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia) and returned oncology 699; gastroenterology 47; pain 29; psychiatry 60. US totals from query.locn=United States the same day: all 22,038; oncology 7,092; gastroenterology 281; pain 632; psychiatry 1,278. Shares are Bond's arithmetic.",
     },
     {
       id: "ctgov-locations",
@@ -289,7 +289,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?filter.geo=distance(47.6062,-122.3321,25mi)&filter.overallStatus=RECRUITING&fields=NCTId,LocationFacility,LocationCity,LocationGeoPoint&pageSize=1000",
       year: "2026",
-      note: "Queried October 5, 2026; Bond listed the facility names on location records inside the radius. Facility names as they appear: \"Benaroya Research Institute at Virginia Mason\"; \"Rainier Clinical Research Center\"; \"Seattle Clinical Research Center\"; \"Eastside Research Associates\"; \"Seattle Neuropsychiatric Treatment Center\"; \"Pacific Gynecology Specialists\"; \"Northwest Medical Specialties\".",
+      note: "Queried October 5, 2026; re-queried October 23, 2026, when every name below still appeared. Bond listed the facility names on location records inside the radius. Facility names as they appear: \"Benaroya Research Institute at Virginia Mason\"; \"Rainier Clinical Research Center\"; \"Seattle Clinical Research Center\"; \"Eastside Research Associates\"; \"Seattle Neuropsychiatric Treatment Center\"; \"Pacific Gynecology Specialists\"; \"Northwest Medical Specialties\".",
     },
     {
       id: "nci-centers",

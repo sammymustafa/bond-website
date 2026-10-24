@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Florida",
   h1: "Recruiting for clinical trials in Florida",
   intro:
-    "On September 21, 2026, a ClinicalTrials.gov search for recruiting studies with a Florida location returned 3,876.{{cite:ctgov-api}} The state has four NCI-designated cancer centers with Florida facilities, health systems on Epic, MEDITECH and other EHRs, and a population older and more Hispanic than the US as a whole.{{cite:nci-find,floridatrend-epic,meditech-hca,census-asrh-2025}}",
+    "On October 23, 2026, a ClinicalTrials.gov search for recruiting studies with a Florida location returned 3,938.{{cite:ctgov-api}} The state has four NCI-designated cancer centers with Florida facilities, health systems on Epic, MEDITECH and other EHRs, and a population older and more Hispanic than the US as a whole.{{cite:nci-find,floridatrend-epic,meditech-hca,census-asrh-2025}}",
   summary: "Florida recruiting-trial counts, research hubs, health system EHRs, site networks, demographics and outreach laws.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,7 +28,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Florida's 3,876 studies are about 18% of the 22,041 recruiting with a US location. Of the areas in the table, oncology is the largest, with 1,555 Florida studies, about 22% of the US oncology count. Cardiology follows with 521.{{cite:ctgov-api}} Compare [Texas](/clinical-trial-recruitment/texas) and [other locations](/clinical-trial-recruitment).",
+          text: "Florida's 3,938 studies are about 18% of the 22,038 recruiting with a US location. Of the areas in the table, oncology is the largest, with 1,573 Florida studies, about 22% of the US oncology count. Cardiology follows with 523.{{cite:ctgov-api}} Compare [Texas](/clinical-trial-recruitment/texas) and [other locations](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "florida", cite: "ctgov-api" },
       ],
@@ -39,36 +39,36 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "Florida research hubs: recruiting studies with a site in the city, and anchor institutions (September 22, 2026)",
+          caption: "Florida research hubs: recruiting studies with a site in the city, and anchor institutions (October 23, 2026)",
           columns: ["Hub", "Studies with a site there", "Anchor institutions", "What to know"],
           rows: [
             [
               "Miami",
-              "1,309{{cite:ctgov-api-cities}}",
+              "1,315{{cite:ctgov-api-cities}}",
               "UHealth (University of Miami) and Sylvester Comprehensive Cancer Center; Jackson Health System",
               "Sylvester, NCI-designated since 2019, is South Florida's only NCI-designated cancer center, with 13 locations.{{cite:nci-sylvester}} Jackson is a nonprofit academic system governed by the Public Health Trust on behalf of Miami-Dade County.{{cite:jackson-about}}",
             ],
             [
               "Tampa",
-              "1,039{{cite:ctgov-api-cities}}",
+              "1,041{{cite:ctgov-api-cities}}",
               "Moffitt Cancer Center; Tampa General Hospital",
               "Moffitt is the only NCI-designated Comprehensive Cancer Center based in Florida. Its catchment covers 15 counties.{{cite:nci-moffitt}}",
             ],
             [
               "Jacksonville",
-              "902{{cite:ctgov-api-cities}}",
+              "907{{cite:ctgov-api-cities}}",
               "Mayo Clinic in Florida; UF Health Jacksonville",
               "Mayo Clinic's NCI-designated Comprehensive Cancer Center includes the Jacksonville campus.{{cite:nci-find}}",
             ],
             [
               "Orlando",
-              "698{{cite:ctgov-api-cities}}",
+              "717{{cite:ctgov-api-cities}}",
               "AdventHealth Research Institute; Orlando Health",
-              "The research institute reports more than 800 active studies on its website (September 2026).{{cite:adventhealth-ari}}",
+              "The research institute reports more than 800 active studies on its website (October 2026).{{cite:adventhealth-ari}}",
             ],
             [
               "Gainesville",
-              "537{{cite:ctgov-api-cities}}",
+              "534{{cite:ctgov-api-cities}}",
               "UF Health and the UF Health Cancer Institute",
               "The cancer institute was NCI-designated in 2023. UF leads OneFlorida+, a PCORnet network with data on about 4.5 million people seen each year at 14 partner organizations in six states (PCORI, 2024).{{cite:nci-uf,pcori-oneflorida}}",
             ],
@@ -97,7 +97,7 @@ const page: SeoPage = {
             "**UF Health** shared one Epic record across its Gainesville and Jacksonville campuses in 2021.{{cite:ufhealth-epic}}",
             "**UHealth** in Miami ran Epic, branded internally as UChart, in 2023.{{cite:uhealth-epic}}",
             "**HCA Healthcare's North Florida Division**, 16 hospitals, is fully live on MEDITECH Expanse, per a September 2026 MEDITECH release. The release does not say the same of HCA's other Florida divisions.{{cite:meditech-hca}}",
-            "**Moffitt Cancer Center** issues patient portal logins through Cerner Health (September 2026), which suggests but does not confirm an Oracle Health (Cerner) EHR.{{cite:moffitt-portal}}",
+            "**Moffitt Cancer Center** issues patient portal logins through Cerner Health (October 2026), which suggests but does not confirm an Oracle Health (Cerner) EHR.{{cite:moffitt-portal}}",
           ],
         },
         {
@@ -115,8 +115,8 @@ const page: SeoPage = {
         {
           type: "ul",
           items: [
-            "**Florida Cancer Specialists & Research Institute**, a community oncology practice, reports more than 250 physicians, nearly 100 locations and a research partnership with Sarah Cannon (September 2026).{{cite:fcs-about}}",
-            "**Flourish Research** lists 13 Florida locations on its website, more than in any other state (September 2026).{{cite:flourish-florida}}",
+            "**Florida Cancer Specialists & Research Institute**, a community oncology practice, reports more than 250 physicians, nearly 100 locations and a research partnership with Sarah Cannon (October 2026).{{cite:fcs-about}}",
+            "**Flourish Research** lists 13 Florida locations on its website, more than in any other state (October 2026).{{cite:flourish-florida}}",
             "**Alcanza Clinical Research**, an Orlando-based investigator site network, bought Innovation Medical Research Center in Palmetto Bay in April 2024, its ninth acquisition since 2021.{{cite:alcanza-innovation}}",
             "**Community health centers**: 47 HRSA-funded health center organizations served 1,673,307 Florida patients in 2025.{{cite:hrsa-uds-fl}} See [FQHCs and community sites](/for/fqhcs-and-community-sites).",
           ],
@@ -254,7 +254,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Florida require a caller to disclose that it is an AI?",
-      a: "We found no such statute as of September 2026. CS/SB 482, which would have required periodic bot notices, died in the House in March 2026.{{cite:fl-sb-482}}",
+      a: "We found no such statute as of October 2026. CS/SB 482, which would have required periodic bot notices, died in the House in March 2026.{{cite:fl-sb-482}}",
     },
     {
       q: "Which languages should outreach to Florida patients support?",
@@ -268,7 +268,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "ctgov-api-cities",
@@ -276,7 +276,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried by Bond on September 22, 2026: studies with overall status Recruiting and a location matching Florida (query.locn=Florida; 3,876 studies), counting those that list at least one Florida location in each city. Result: Miami 1,309; Tampa 1,039; Jacksonville 902; Orlando 698; Gainesville 537. A study with sites in several cities counts in each. Re-run on September 22, 2026 with the same result; 11 of the 3,876 studies matched the search but list no Florida, United States location.",
+      note: "Queried by Bond on October 23, 2026: studies with overall status Recruiting and a location matching Florida (query.locn=Florida; 3,938 studies), counting those that list at least one Florida location in each city. Result: Miami 1,315; Tampa 1,041; Jacksonville 907; Orlando 717; Gainesville 534. A study with sites in several cities counts in each. Re-run on October 23, 2026 with the same result; 9 of the 3,938 studies matched the search but list no Florida, United States location.",
     },
     {
       id: "census-pop-2025",
@@ -291,7 +291,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
       year: "2026",
-      note: "Checked September 22, 2026. The file is data only, so this is a computed summary, not a quotation: summing the state rows with SEX=0 for POPESTIMATE2025 gives Florida 23,462,518 total; 6,849,243 Hispanic (ORIGIN=2), or 29.2%; 5,346,788 age 65 and over, or 22.8%. Same method for the 50 states and DC: 18.9% age 65 and over, 20.5% Hispanic. Hispanic count ranks third after California and Texas; age 65 and over count ranks second after California.",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. The file is data only, so this is a computed summary, not a quotation: summing the state rows with SEX=0 for POPESTIMATE2025 gives Florida 23,462,518 total; 6,849,243 Hispanic (ORIGIN=2), or 29.2%; 5,346,788 age 65 and over, or 22.8%. Same method for the 50 states and DC: 18.9% age 65 and over, 20.5% Hispanic. Hispanic count ranks third after California and Texas; age 65 and over count ranks second after California.",
     },
     {
       id: "census-acs-insurance",
@@ -307,7 +307,7 @@ const page: SeoPage = {
       publisher: "Census Reporter (U.S. Census Bureau American Community Survey data)",
       url: "https://censusreporter.org/tables/C16001/?geo_ids=04000US12,01000US",
       year: "2025",
-      note: "Checked September 22, 2026 through the Census Reporter API (release acs2024_1yr). Values: Florida population 5 and over 22,225,588; speak only English 15,115,259 (so 32.0% speak another language); Spanish 5,191,207 (23.4%), of whom 2,332,104 (10.5% of the Florida total) speak English less than \"very well\"; French, Haitian, or Cajun 635,597. United States: 321,745,950 total and 247,695,100 English only (23.0% speak another language).",
+      note: "Checked September 22, 2026, re-checked October 23, 2026, through the Census Reporter API (release acs2024_1yr). Values: Florida population 5 and over 22,225,588; speak only English 15,115,259 (so 32.0% speak another language); Spanish 5,191,207 (23.4%), of whom 2,332,104 (10.5% of the Florida total) speak English less than \"very well\"; French, Haitian, or Cajun 635,597. United States: 321,745,950 total and 247,695,100 English only (23.0% speak another language).",
     },
     {
       id: "hrsa-uds-fl",
@@ -357,7 +357,7 @@ const page: SeoPage = {
       publisher: "The Florida Legislature (Online Sunshine)",
       url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0381/Sections/0381.915.html",
       year: "2026",
-      note: "Checked September 22, 2026. Subsection (3)(f), definition of reportable cases. Quote: \"Cases relating to patients enrolled in institutional or investigator-initiated interventional clinical trials shall be weighted at 1.2 relative to other cases weighted at 1.0.\" The section does not use the word industry.",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Subsection (3)(f), definition of reportable cases. Quote: \"Cases relating to patients enrolled in institutional or investigator-initiated interventional clinical trials shall be weighted at 1.2 relative to other cases weighted at 1.0.\" The section does not use the word industry.",
     },
     {
       id: "jackson-about",
@@ -372,6 +372,7 @@ const page: SeoPage = {
       publisher: "AdventHealth",
       url: "https://www.adventhealth.com/institute/adventhealth-research-institute",
       year: "2026",
+      note: "Re-checked October 23, 2026. Quote: \"With over 800 active studies, our medical research provides hope to all ages\".",
     },
     {
       id: "adventhealth-epic",
@@ -414,6 +415,7 @@ const page: SeoPage = {
       publisher: "Moffitt Cancer Center",
       url: "https://my.moffitt.org/Tutorials/Sign_In.htm",
       year: "2026",
+      note: "Re-checked October 23, 2026. Quote: \"Moffitt Cancer Center uses Cerner Health to provide a secure username and password used to access your patient record information.\"",
     },
     {
       id: "fcs-about",
@@ -421,13 +423,15 @@ const page: SeoPage = {
       publisher: "Florida Cancer Specialists & Research Institute",
       url: "https://www.flcancer.com/about-fcs/",
       year: "2026",
+      note: "Re-checked October 23, 2026. Quotes: \"With over 250 physicians, 280 nurse practitioners and physician assistants and nearly 100 locations in our network\" and \"Through our partnership with Sarah Cannon, we are one of the largest clinical research organizations in the United States.\"",
     },
     {
       id: "flourish-florida",
-      title: "Clinical Research in Florida",
+      title: "Locations",
       publisher: "Flourish Research",
-      url: "https://flourishresearch.com/states/florida/",
+      url: "https://flourishresearch.com/locations/",
       year: "2026",
+      note: "Re-checked October 23, 2026. The Locations page lists 13 Florida addresses (Boca Raton, Crystal River, Fleming Island, Inverness, three in Jacksonville, Leesburg, Merritt Island, two in Miami, Winter Park and St. Augustine) and no more than three in any other state. The Florida state page cited earlier (https://flourishresearch.com/states/florida/) now also lists a Miami (Kendall) site whose location page returns 404, so this count uses the Locations page.",
     },
     {
       id: "alcanza-innovation",
@@ -449,7 +453,7 @@ const page: SeoPage = {
       publisher: "The Florida Legislature (Online Sunshine)",
       url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html",
       year: "2026",
-      note: "Checked September 22, 2026. Subsection (10). Quote: \"Recover actual damages or $500, whichever is greater. (b) If the court finds that the defendant willfully or knowingly violated this section ... the court may, in its discretion, increase the amount of the award to an amount equal to not more than three times the amount available under paragraph (a). (c) Before the commencement of any action for damages under this section for text message solicitations, the called party must notify the telephone solicitor ... by replying 'STOP' ... Within 15 days after receipt of such notice, the telephone solicitor shall cease sending text message solicitations.\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Subsection (10). Quote: \"Recover actual damages or $500, whichever is greater. (b) If the court finds that the defendant willfully or knowingly violated this section ... the court may, in its discretion, increase the amount of the award to an amount equal to not more than three times the amount available under paragraph (a). (c) Before the commencement of any action for damages under this section for text message solicitations, the called party must notify the telephone solicitor ... by replying 'STOP' ... Within 15 days after receipt of such notice, the telephone solicitor shall cease sending text message solicitations to the called party ...\"",
     },
     {
       id: "fl-395-3025",
@@ -457,7 +461,7 @@ const page: SeoPage = {
       publisher: "The Florida Legislature (Online Sunshine)",
       url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0395/Sections/0395.3025.html",
       year: "2026",
-      note: "Checked September 22, 2026. Subsection (4) lists exceptions (a) through (l): care and treatment, administrative and quality functions, state agencies, subpoenas, trauma registries, abuse investigations, organ procurement, Medicaid fraud, unclaimed property audits and poison control. None is for research.",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Subsection (4) lists exceptions (a) through (l): care and treatment, administrative and quality functions, state agencies, subpoenas, trauma registries, abuse investigations, organ procurement, Medicaid fraud, unclaimed property audits and poison control. None is for research.",
     },
     {
       id: "fl-456-057",
@@ -472,7 +476,7 @@ const page: SeoPage = {
       publisher: "The Florida Legislature (Online Sunshine)",
       url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.171.html",
       year: "2026",
-      note: "Checked September 22, 2026. Subsection (3)(a): notice to the department of a breach affecting 500 or more individuals in the state is due \"no later than 30 days after the determination of the breach or reason to believe a breach occurred.\" Subsection (4)(a): notice to individuals is due \"no later than 30 days after the determination of a breach or reason to believe a breach occurred.\" Subsection (6)(a). Quote: \"In the event of a breach of security of a system maintained by a third-party agent, such third-party agent shall notify the covered entity of the breach of security as expeditiously as practicable, but no later than 10 days following the determination of the breach of security or reason to believe the breach occurred.\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Subsection (3)(a): notice to the department of a breach affecting 500 or more individuals in the state is due \"no later than 30 days after the determination of the breach or reason to believe a breach occurred.\" Subsection (4)(a): notice to individuals is due \"no later than 30 days after the determination of a breach or reason to believe a breach occurred\". Subsection (6)(a). Quote: \"In the event of a breach of security of a system maintained by a third-party agent, such third-party agent shall notify the covered entity of the breach of security as expeditiously as practicable, but no later than 10 days following the determination of the breach of security or reason to believe the breach occurred.\"",
     },
     {
       id: "fl-sb-482",
@@ -480,7 +484,7 @@ const page: SeoPage = {
       publisher: "The Florida Senate",
       url: "https://www.flsenate.gov/Session/Bill/2026/482",
       year: "2026",
-      note: "Checked September 22, 2026. Quote: \"requiring bot operators to periodically provide a certain notification to a user, etc.\" Bill history: \"3/4/2026 Senate: CS passed as amended; YEAS 35 NAYS 2\" and \"3/13/2026 House: Died in Messages\".",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Quote: \"requiring bot operators to periodically provide a certain notification to a user, etc.\" Bill history: \"3/4/2026 Senate: CS passed as amended; YEAS 35 NAYS 2\" and \"3/13/2026 House: Died in Messages\".",
     },
     {
       id: "bond-site",

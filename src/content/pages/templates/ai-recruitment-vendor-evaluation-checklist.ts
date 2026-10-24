@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A demo on sample records tells you little about how a tool will do on your charts. This checklist is built to find out: whether the tool reads the notes where eligibility evidence often sits, shows its work criterion by criterion, fits your EHR and IRB process, and lets you leave with your data. It ends in a scoring grid you can use on every vendor, Bond included.",
   summary: "Questions, red flags and a weighted scoring grid for choosing an AI patient recruitment vendor.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -124,7 +124,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "info",
           title: "Borrow the federal transparency list",
-          text: "As of September 2026, ONC's HTI-1 rule requires certified health IT to make source attributes available for predictive decision support interventions.{{cite:hti1-fr}} The list covers intended use and population, cautioned out-of-scope uses, how the model was developed, fairness, external validation, quantitative measures of performance, and ongoing maintenance.{{cite:ecfr-170-315}} A recruitment vendor outside your certified EHR may not be bound by the rule, but any vendor can be asked to complete the list.",
+          text: "As of October 2026, ONC's HTI-1 rule requires certified health IT to make source attributes available for predictive decision support interventions.{{cite:hti1-fr}} The list covers intended use and population, cautioned out-of-scope uses, how the model was developed, fairness, external validation, quantitative measures of performance, and ongoing maintenance.{{cite:ecfr-170-315}} A recruitment vendor outside your certified EHR may not be bound by the rule, but any vendor can be asked to complete the list.",
         },
         { type: "h3", text: "Area 1. Accuracy on real EHR records" },
         {
@@ -206,7 +206,7 @@ const page: SeoPage = {
         { type: "h3", text: "Area 6. Patient disclosure and human escalation" },
         {
           type: "p",
-          text: "State AI disclosure laws differ. As of September 2026, California requires health facilities, clinics and physician practices that use generative AI for patient communications about clinical information to include an AI disclaimer and instructions for reaching a human, unless a licensed or certified provider reads and reviews the message.{{cite:ca-ab3030}} Texas, since January 1, 2026, requires providers to disclose AI used in relation to health care services, in plain language, no later than when the service is first provided.{{cite:tx-hb149}} Ask your counsel which rules reach your outreach.",
+          text: "State AI disclosure laws differ. As of October 2026, California requires health facilities, clinics and physician practices that use generative AI for patient communications about clinical information to include an AI disclaimer and instructions for reaching a human, unless a licensed or certified provider reads and reviews the message.{{cite:ca-ab3030}} Texas, since January 1, 2026, requires providers to disclose AI used in relation to health care services, in plain language, no later than when the service is first provided.{{cite:tx-hb149}} Ask your counsel which rules reach your outreach.",
         },
         {
           type: "checklist",
@@ -480,7 +480,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register / GPO)",
       url: "https://www.ecfr.gov/current/title-45/section-170.315",
       year: "2026",
-      note: "Quote: \"(6) External validation process, including: (i) Description of the data source, clinical setting, or environment where an\" and \"(7) Quantitative measures of performance, including: (i) Validity of intervention in test data derived from the same source as the\" (source attributes for predictive DSIs, 170.315(b)(11)(iv)(B); text current as of 2026-09-01). The paragraph's nine headings: details and output of the intervention; purpose of the intervention; cautioned out-of-scope use; intervention development details and input features; process used to ensure fairness in development; external validation process; quantitative measures of performance; ongoing maintenance of intervention implementation and use; update and continued validation or fairness assessment schedule.",
+      note: "Quote: \"(6) External validation process, including: (i) Description of the data source, clinical setting, or environment where an\" and \"(7) Quantitative measures of performance, including: (i) Validity of intervention in test data derived from the same source as the\" (source attributes for predictive DSIs, 170.315(b)(11)(iv)(B); text current as of 2026-09-01; re-checked October 23, 2026). The paragraph's nine headings: details and output of the intervention; purpose of the intervention; cautioned out-of-scope use; intervention development details and input features; process used to ensure fairness in development; external validation process; quantitative measures of performance; ongoing maintenance of intervention implementation and use; update and continued validation or fairness assessment schedule.",
     },
     {
       id: "jmir-2014",
@@ -509,7 +509,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register / GPO)",
       url: "https://www.ecfr.gov/current/title-45/section-164.504",
       year: "2026",
-      note: "Quote: \"At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information\" (164.504(e)(2)(ii)(J); text current as of 2026-09-01).",
+      note: "Quote: \"At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information\" (164.504(e)(2)(ii)(J); text current as of 2026-09-01; re-checked October 23, 2026).",
     },
     {
       id: "hipaa-164-512",

@@ -23,7 +23,7 @@ const page: SeoPage = {
     "Media recruiters such as Antidote and 1nHealth find patients through digital marketing, pre-screen the people who respond and refer likely candidates to sites.{{cite:antidote-partners,antidote-sponsors,1nhealth-pharma}} Bond Health [screens the site's EHR](/identify), including clinical notes, against each protocol and creates and runs Meta and Google ad campaigns to reach patients beyond it. Its voice and text agents contact every ad lead immediately, keep following up with every lead who has not responded, pre-screen and book chart matches and ad leads alike, and carry them on to informed consent support.{{cite:bond-site,bond-product}} If you want one platform from ad click or chart match to a booked study visit, rather than referrals for your staff to follow up, Bond is the stronger choice.",
   summary:
     "Why Bond is better than media referrals: it creates the ads, contacts every lead immediately and follows up until they book, with published cost and conversion data.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -60,7 +60,7 @@ const page: SeoPage = {
         ...testimonialBlocks(),
         {
           type: "p",
-          text: "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
+          text: "As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit.",
         },
       ],
     },
@@ -70,11 +70,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Competitor entries come from each vendor's public materials, reviewed in September 2026. \"Not publicly documented\" means we found no public description, not that the capability does not exist; ask each vendor directly.",
+          text: "Competitor entries come from each vendor's public materials, reviewed in October 2026. \"Not publicly documented\" means we found no public description, not that the capability does not exist; ask each vendor directly.",
         },
         {
           type: "table",
-          caption: "Bond Health, Antidote and 1nHealth, September 2026",
+          caption: "Bond Health, Antidote and 1nHealth, October 2026",
           columns: ["Capability", "Bond Health", "Antidote", "1nHealth"],
           rows: [
             [
@@ -86,8 +86,8 @@ const page: SeoPage = {
             [
               "Where patients come from",
               "The site's own EHR, screened by LLM against each protocol, including clinical notes, prescriptions and lab results, plus imaging data and other unstructured documents, such as pathology, radiology and molecular reports. Each patient is screened against every open study at the site, so one who screens out of one study can be matched to another ([Identify](/identify)).{{cite:bond-site,bond-product}} Beyond the site's records, Bond creates and runs Meta and Google ad campaigns for your studies, and every ad lead gets the same immediate voice and text outreach, follow-up, pre-screening and scheduling as EHR matches.{{cite:bond-product}}",
-              "People reached through digital marketing and a partner network; SEQSTER medical-history matching announced July 2024. Reading a site's clinical notes: not publicly documented (September 2026).{{cite:antidote-partners,antidote-seqster-2024}}",
-              "Direct-to-patient digital recruitment rather than patient databases. Reading a site's clinical notes: not publicly documented (September 2026).{{cite:1nhealth-pharma}}",
+              "People reached through digital marketing and a partner network; SEQSTER medical-history matching announced July 2024. Reading a site's clinical notes: not publicly documented (October 2026).{{cite:antidote-partners,antidote-seqster-2024}}",
+              "Direct-to-patient digital recruitment rather than patient databases. Reading a site's clinical notes: not publicly documented (October 2026).{{cite:1nhealth-pharma}}",
             ],
             [
               "How eligibility is checked",
@@ -104,26 +104,26 @@ const page: SeoPage = {
             [
               "Scheduling",
               "Voice agents can pre-screen and book a visit in one conversation, with a scheduling handoff to coordinators.{{cite:bond-product,bond-site}}",
-              "Not publicly documented (September 2026).{{cite:antidote-sponsors}}",
-              "Not publicly documented (September 2026).{{cite:1nhealth-home,1nhealth-pharma}}",
+              "Not publicly documented (October 2026).{{cite:antidote-sponsors}}",
+              "Its patient retention platform describes an AI voice agent that calls patients and books visits directly, and an SMS agent that confirms visit windows and reschedules.{{cite:1nhealth-retention}}",
             ],
             [
               "Informed consent",
               "AI-powered consent support: plain-language explanations, patient Q&A, checks on understanding of key points and staff escalation, with an auditable record for the site. The site and PI obtain consent ([Consent](/consent)).{{cite:bond-site,bond-product}}",
-              "Not publicly documented (September 2026).{{cite:antidote-sponsors}}",
-              "Not publicly documented (September 2026).{{cite:1nhealth-home}}",
+              "Not publicly documented (October 2026).{{cite:antidote-sponsors}}",
+              "One case study says 1nHealth worked with the sponsor on the sponsor's online consent process; patient-facing consent support is otherwise not publicly documented (October 2026).{{cite:1nhealth-colon-case,1nhealth-home}}",
             ],
             [
               "Support after enrollment",
               "The same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
-              "Not publicly documented (September 2026).{{cite:antidote-sponsors}}",
-              "Retention strategies tailored to each trial and patient population.{{cite:1nhealth-home}}",
+              "Not publicly documented (October 2026).{{cite:antidote-sponsors}}",
+              "Retention strategies tailored to each trial and patient population, and a retention platform with app nudges, SMS and AI voice agents, and escalation to a human coordinator.{{cite:1nhealth-home,1nhealth-retention}}",
             ],
             [
               "EHR, CTMS and CRIO integration",
               "All the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, via FHIR and HL7 or an aggregator; direct integrations with CTMS, calendars and Google Sheets; CRIO Certified Partner.{{cite:bond-site,bond-product,bond-acrp-talk}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault.{{cite:bond-site}}",
-              "EHR matching product announced in 2016; 2024 partner SEQSTER cites nationwide EHR coverage. Site EHR or CTMS integration: not publicly documented (September 2026).{{cite:antidote-2016,antidote-seqster-2024,antidote-sponsors}}",
-              "Not publicly documented (September 2026).{{cite:1nhealth-home}}",
+              "EHR matching product announced in 2016; 2024 partner SEQSTER cites nationwide EHR coverage. Site EHR or CTMS integration: not publicly documented (October 2026).{{cite:antidote-2016,antidote-seqster-2024,antidote-sponsors}}",
+              "Not publicly documented (October 2026).{{cite:1nhealth-home}}",
             ],
             [
               "Pricing",
@@ -287,7 +287,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health, which sells recruitment software covering EHR screening, ad campaigns and patient outreach and competes with the vendors named, wrote this page in September 2026. Competitor information comes from the vendors' public websites and press releases, accessed that month. Cost, conversion and workload figures come from peer-reviewed studies, a Tufts CSDD analysis, FDA guidance, an SCRS article and data published by recruitment vendors. Bond's capabilities come from its website, its April 2026 ACRP chapter presentation, its Trust Center, its technical report and product information provided by Bond. Vendor figures are self-reported and were not independently checked. We used no internal competitive material.",
+          text: "Bond Health, which sells recruitment software covering EHR screening, ad campaigns and patient outreach and competes with the vendors named, wrote this page in September 2026 and re-checked it in October 2026. Competitor information comes from the vendors' public websites and press releases, re-checked on October 23, 2026. Cost, conversion and workload figures come from peer-reviewed studies, a Tufts CSDD analysis, FDA guidance, an SCRS article and data published by recruitment vendors. Bond's capabilities come from its website, its April 2026 ACRP chapter presentation, its Trust Center, its technical report and product information provided by Bond. Vendor figures are self-reported and were not independently checked. We used no internal competitive material.",
         },
         {
           type: "callout",
@@ -317,7 +317,7 @@ const page: SeoPage = {
     },
     {
       q: "Does Antidote or 1nHealth support informed consent?",
-      a: "Consent support is not publicly documented for either vendor as of September 2026.{{cite:antidote-sponsors,1nhealth-home}} Bond's consent support gives patients plain-language explanations and Q&A, checks their understanding of key points and escalates to staff; the site and PI obtain consent.{{cite:bond-site,bond-product}}",
+      a: "As of October 2026, neither vendor publicly documents patient-facing consent support; one 1nHealth case study says it worked with a sponsor on the sponsor's online consent process.{{cite:antidote-sponsors,1nhealth-home,1nhealth-colon-case}} Bond's consent support gives patients plain-language explanations and Q&A, checks their understanding of key points and escalates to staff; the site and PI obtain consent.{{cite:bond-site,bond-product}}",
     },
   ],
   sources: [
@@ -327,7 +327,7 @@ const page: SeoPage = {
       publisher: "Antidote Technologies",
       url: "https://www.antidote.me/partners",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"A precision recruitment company that connects patients with research and educational resources through digital marketing and our partner network.\" For partners: \"Receive free, dynamic content for your site that requires no expertise to install or use\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"A precision recruitment company that connects patients with research and educational resources through digital marketing and our partner network.\" For partners: \"Receive free, dynamic content for your site that requires no expertise to install or use\".",
     },
     {
       id: "antidote-sponsors",
@@ -335,7 +335,7 @@ const page: SeoPage = {
       publisher: "Antidote Technologies",
       url: "https://www.antidote.me/sponsors",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"We thoroughly prescreen patients before referring them\" and \"all the way down to labs when necessary\"; \"We offer services from initial outreach through to site engagement\"; \"Our payment model is a risk-sharing one that aligns your objectives\". Under the heading \"Recent therapeutic areas of focus\" it lists areas including \"Allergy and Immunology\", \"Cardiology\", \"Dermatology\" and \"Rare disease\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"We thoroughly prescreen patients before referring them\" and \"all the way down to labs when necessary\"; \"We offer services from initial outreach through to site engagement\"; \"Our payment model is a risk-sharing one that aligns your objectives\". Under the heading \"Recent therapeutic areas of focus\" it lists areas including \"Allergy and Immunology\", \"Cardiology\", \"Dermatology\" and \"Rare disease\".",
     },
     {
       id: "antidote-seqster-2024",
@@ -343,7 +343,7 @@ const page: SeoPage = {
       publisher: "SEQSTER PDM Inc. and Antidote Technologies via Business Wire (BioSpace)",
       url: "https://www.biospace.com/antidote-partners-with-seqster-to-accelerate-patient-identification-enrollment-for-clinical-trials",
       year: "2024",
-      note: "Press release dated July 8, 2024, accessed September 2026. Quote: \"Antidote can more accurately match patients to clinical trials based on a 360° view of their medical history, genomic data, and lifestyle factors.\" Also: \"contact center for patient support\"; Antidote provides \"patient-centric clinical search technology\" to \"patient advocacy groups and research foundations at no cost\"; and \"SEQSTER has nationwide coverage of EHRs from hospitals and medical groups, genomic DNA, wearables, pharmacy and social determinants of health data.\"",
+      note: "Press release dated July 8, 2024, accessed September 2026; re-checked October 23, 2026. Quote: \"Antidote can more accurately match patients to clinical trials based on a 360° view of their medical history, genomic data, and lifestyle factors.\" Also: \"contact center for patient support\"; Antidote provides \"patient-centric clinical search technology\" to \"patient advocacy groups and research foundations at no cost\"; and \"SEQSTER has nationwide coverage of EHRs from hospitals and medical groups, genomic DNA, wearables, pharmacy and social determinants of health data.\"",
     },
     {
       id: "antidote-2016",
@@ -351,7 +351,7 @@ const page: SeoPage = {
       publisher: "Antidote Technologies (press release)",
       url: "https://www.antidote.me/press/press-release/trialreach-rebrands-as-antidote-and-expands-its-products-to-include-ehr-matching",
       year: "2016",
-      note: "Press release dated September 20, 2016, accessed September 2026. The title announces EHR matching; the body says: \"Antidote will be announcing details of their new EHR product shortly.\"",
+      note: "Press release dated September 20, 2016, accessed September 2026; re-checked October 23, 2026. The title announces EHR matching; the body says: \"Antidote will be announcing details of their new EHR product shortly.\"",
     },
     {
       id: "1nhealth-overview",
@@ -359,7 +359,7 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/company-overview/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"The company provides digital recruitment and enrollment management services to sponsors, biotech firms, and CROs.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"The company provides digital recruitment and enrollment management services to sponsors, biotech firms, and CROs.\"",
     },
     {
       id: "1nhealth-home",
@@ -367,7 +367,7 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Our pricing is based on specific milestones\" and \"such as signed ICFs or patient randomization.\" Also: \"if milestone-pricing doesn't work for you, we offer flexible pricing models based on your unique study.\" On retention: \"Our retention strategies are tailored to each trial and patient population\". 1nData features listed include \"Automated SMS\" and \"Email Notifications\", and the page refers to \"Research sites using 1nData\". Site navigation includes pages for Biotech, CROs, Pharma and Sites.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Our pricing is based on specific milestones\" and \"such as signed ICFs or patient randomization.\" Also: \"if milestone-pricing doesn't work for you, we offer flexible pricing models based on your unique study.\" On retention: \"Our retention strategies are tailored to each trial and patient population\". 1nData features listed include \"Automated SMS\" and \"Email Notifications\", and the page refers to \"Research sites using 1nData\". Site navigation includes pages for Biotech, CROs, Pharma and Sites.",
     },
     {
       id: "1nhealth-pharma",
@@ -375,7 +375,23 @@ const page: SeoPage = {
       publisher: "1nHealth",
       url: "https://1nhealth.com/patient-recruitment-for-pharma/",
       year: "2026",
-      note: "Accessed September 2026. Quotes: \"Our team conducts multiple levels of pre-screening before passing referrals on to your clinical sites.\"; \"We didn't choose direct-to-patient recruitment over databases because we wanted to be different. We did it because it works.\"; 1nData offers \"automated SMS follow-ups, and more all in an intuitive, single login interface.\" Therapeutic areas listed: \"Cardiovascular, Gastrointestinal, Neurological, Infectious Diseases, Dermatology, Immunology, Pulmonary, Oncology\".",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quotes: \"Our team conducts multiple levels of pre-screening before passing referrals on to your clinical sites.\"; \"We didn't choose direct-to-patient recruitment over databases because we wanted to be different. We did it because it works.\"; 1nData offers \"automated SMS follow-ups, and more all in an intuitive, single login interface.\" Therapeutic areas listed: \"Cardiovascular, Gastrointestinal, Neurological, Infectious Diseases, Dermatology, Immunology, Pulmonary, Oncology\".",
+    },
+    {
+      id: "1nhealth-retention",
+      title: "Patient Retention",
+      publisher: "1nHealth",
+      url: "https://1nhealth.com/patient-retention/",
+      year: "2026",
+      note: "Page published July 22, 2026, per its metadata; accessed October 23, 2026. Quotes: \"When it needs a voice, an AI agent calls, diagnoses the issue, and books the visit directly\"; \"a conversational agent texts the patient — answers questions, confirms windows, reschedules\"; and \"Approaching windows and at-risk patterns trigger proactive scheduling.\" Its four tiers are an app nudge, agentic SMS, an AI voice agent and a human coordinator.",
+    },
+    {
+      id: "1nhealth-colon-case",
+      title: "Colon Cancer Screening (case study)",
+      publisher: "1nHealth",
+      url: "https://1nhealth.com/case-study/colon-cancer-screening/",
+      year: "2025",
+      note: "Case study published January 27, 2025, per its metadata; accessed October 23, 2026. Quote: \"1nHealth worked with the sponsor on their online consent process as well as enlisted support of a call center to handle the high volume of pre-screening consultations.\"",
     },
     {
       id: "tufts-outreach-2026",
@@ -455,7 +471,7 @@ const page: SeoPage = {
       publisher: "U.S. Food and Drug Administration",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recruiting-study-subjects",
       year: "1998",
-      note: "Guidance dated January 1998, accessed September 2026. Quote: \"FDA considers direct advertising for study subjects to be the start of the informed consent and subject selection process. Advertisements should be reviewed and approved by the IRB as part of the package for initial review.\" Also: \"Are the data gathered by a marketing company? If so, are names, etc. sold to others? Are names of non-eligibles maintained in case they would qualify for another study?\"",
+      note: "Guidance dated January 1998, accessed September 2026; re-checked October 23, 2026. Quote: \"FDA considers direct advertising for study subjects to be the start of the informed consent and subject selection process. Advertisements should be reviewed and approved by the IRB as part of the package for initial review.\" Also: \"Are the data gathered by a marketing company? If so, are names, etc. sold to others? Are names of non-eligibles maintained in case they would qualify for another study?\"",
     },
     {
       id: "bond-site",
@@ -485,7 +501,7 @@ const page: SeoPage = {
       publisher: "Bond Health, monitored by Vanta",
       url: "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj",
       year: "2026",
-      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026.",
+      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026; re-checked October 23, 2026.",
     },
     {
       id: "bond-whitepaper",

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
   summary: "What a delay day costs, why sites enroll unevenly, and how Bond reports one enrollment funnel across a sponsor's sites.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -115,7 +115,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "FDORA, enacted in December 2022, requires sponsors to submit a [Diversity Action Plan](/glossary/diversity-action-plan) for Phase 3 and other pivotal drug studies and certain device studies, with enrollment goals broken down by race, ethnicity, sex and age group. The requirement applies to studies that begin enrollment more than 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of September 2026, FDA's guidance page still lists the June 2024 guidance as a draft.{{cite:fda-dap-guidance}}",
+          text: "FDORA, enacted in December 2022, requires sponsors to submit a [Diversity Action Plan](/glossary/diversity-action-plan) for Phase 3 and other pivotal drug studies and certain device studies, with enrollment goals broken down by race, ethnicity, sex and age group. The requirement applies to studies that begin enrollment more than 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of October 2026, FDA's guidance page still lists the June 2024 guidance as a draft.{{cite:fda-dap-guidance}}",
         },
         {
           type: "p",
@@ -283,7 +283,7 @@ const page: SeoPage = {
       publisher: "U.S. Food and Drug Administration",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
       year: "2024",
-      note: "Checked September 22, 2026: status Draft, issued June 2024, docket FDA-2021-D-0789. Quote: \"Not for implementation. Contains non-binding recommendations.\" Also: \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026: status Draft, issued June 2024, docket FDA-2021-D-0789. Quote: \"Not for implementation. Contains non-binding recommendations.\" Also: \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\"",
     },
     {
       id: "hints-2021",

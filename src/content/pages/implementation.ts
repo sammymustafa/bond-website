@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "A full Bond Health deployment with the EHR connected typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} What can add time is approvals Bond does not control: the BAA, the security review, the EHR connection and, where needed, IRB review of outreach scripts. Below is what Bond does, what your team does, and what exists after each step.",
   summary: "Step-by-step plan for a 48-hour EHR-integrated deployment, with site tasks, Bond tasks and a list-based pilot path.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -141,7 +141,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Each EHR has its own paperwork. Per Epic's developer documentation (as of September 2026), a health system signs the open.epic API Subscription Agreement once per organization, and Epic recommends it request a licensing estimate and run a security review scoped to the app's client ID. Bulk FHIR exports also need an analytics registry built around the inclusion criteria in Epic.{{cite:epic-implementing}} On Oracle Health Millennium, per Oracle's documentation, the customer requests a tenant ID and logs a service request to provision the app.{{cite:oracle-provisioning}} Where FHIR falls short, Bond can use an HL7 v2 feed or an integration partner. See [integrations](/integrations), including [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
+          text: "Each EHR has its own paperwork. Per Epic's developer documentation (as of October 2026), a health system signs the open.epic API Subscription Agreement once per organization, and Epic recommends it request a licensing estimate and run a security review scoped to the app's client ID. Bulk FHIR exports also need an analytics registry built around the inclusion criteria in Epic.{{cite:epic-implementing}} On Oracle Health Millennium, per Oracle's documentation, the customer requests a tenant ID and logs a service request to provision the app.{{cite:oracle-provisioning}} Where FHIR falls short, Bond can use an HL7 v2 feed or an integration partner. See [integrations](/integrations), including [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
         },
         {
           type: "p",
@@ -279,7 +279,7 @@ const page: SeoPage = {
     },
     {
       q: "Does the EHR vendor charge for the connection?",
-      a: "That depends on your contract with the EHR vendor. Epic's developer documentation (as of September 2026) recommends that health systems request a licensing estimate early.{{cite:epic-implementing}} Bond charges no integration fee; its integration work is covered by its volume-based fee per screened patient.{{cite:bond-site}}",
+      a: "That depends on your contract with the EHR vendor. Epic's developer documentation (as of October 2026) recommends that health systems request a licensing estimate early.{{cite:epic-implementing}} Bond charges no integration fee; its integration work is covered by its volume-based fee per screened patient.{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -317,7 +317,7 @@ const page: SeoPage = {
       id: "onc-g10",
       title: "Certification Companion Guide: Standardized API for patient and population services",
       publisher: "HealthIT.gov (ASTP/ONC)",
-      url: "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services",
+      url: "https://healthit.gov/test-method/standardized-api-for-patient-and-population-services-acb-atl/",
       year: "2026",
       note: "Quote: \"the standard adopted at § 170.215(a)(1) (HL7® FHIR® Release 4.0.1)\"",
     },
@@ -327,7 +327,7 @@ const page: SeoPage = {
       publisher: "Epic Systems Corporation (Epic on FHIR)",
       url: "https://fhir.epic.com/Documentation?docId=implementing",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Community members who wish to use FHIR APIs with a third-party application registered on the Epic on FHIR website must sign the open.epic API Subscription Agreement. This agreement applies to the organization, not to individual apps.\" Also: \"Epic recommends that healthcare organizations proactively request a licensing estimate and complete a security review based on your client ID's scope.\" Also: \"Using Bulk FHIR requires configuration from the health system, as they will need to create an analytics registry around specific inclusion criteria, within Epic.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Community members who wish to use FHIR APIs with a third-party application registered on the Epic on FHIR website must sign the open.epic API Subscription Agreement. This agreement applies to the organization, not to individual apps\" Also: \"Epic recommends that healthcare organizations proactively request a licensing estimate and complete a security review based on your client ID's scope.\" Also: \"Using Bulk FHIR requires configuration from the health system, as they will need to create an analytics registry around specific inclusion criteria, within Epic.\"",
     },
     {
       id: "oracle-provisioning",
@@ -343,7 +343,7 @@ const page: SeoPage = {
       publisher: "Topflight Apps",
       url: "https://topflightapps.com/ideas/how-integrate-health-app-with-epic-ehr-emr/",
       year: "2026",
-      note: "Development consultancy blog by Joe Tuan, updated September 11, 2026; accessed September 2026. Quote: \"Our planning range for a production integration is 6 to 12 months to the first go-live.\" Also: \"Each additional site then needs its own setup and, for most apps, its own approval on that customer's timeline, plus roughly 2 to 4 weeks to go live\" and, attributed to Scott Rossignol, who led EHR integration at Topflight: \"Your implementation timeline is going to be 90% waiting for the health system to approve your integration and 10% doing, and that 10% can take two weeks to 90 days.\"",
+      note: "Development consultancy blog by Joe Tuan, updated September 11, 2026; accessed September 2026; re-checked October 23, 2026. Quote: \"Our planning range for a production integration is 6 to 12 months to the first go-live.\" Also: \"Each additional site then needs its own setup and, for most apps, its own approval on that customer's timeline, plus roughly 2 to 4 weeks to go live\" and, attributed to Scott Rossignol, who led EHR integration at Topflight: \"Your implementation timeline is going to be 90% waiting for the health system to approve your integration and 10% doing, and that 10% can take two weeks to 90 days.\"",
     },
     {
       id: "crio-startup",

@@ -230,7 +230,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Some states regulate this; two examples as of September 2026. Since January 1, 2025, California has required health facilities, clinics and physician offices that use generative AI for patient communications about clinical information to include an AI disclaimer (spoken at the start and end of a call) and a way to reach a person, unless a licensed provider reviews the message. Scheduling and other administrative matters are excluded.{{cite:ca-ab-3030}} Since January 1, 2026, Texas has required providers that use AI in health care services to disclose it in plain language by the date the service is first provided.{{cite:tx-hb-149}}",
+          text: "Some states regulate this; two examples as of October 2026. Since January 1, 2025, California has required health facilities, clinics and physician offices that use generative AI for patient communications about clinical information to include an AI disclaimer (spoken at the start and end of a call) and a way to reach a person, unless a licensed provider reviews the message. Scheduling and other administrative matters are excluded.{{cite:ca-ab-3030}} Since January 1, 2026, Texas has required providers that use AI in health care services to disclose it in plain language by the date the service is first provided.{{cite:tx-hb-149}}",
         },
         {
           type: "callout",
@@ -299,7 +299,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "HHS's January 2025 proposed Security Rule update would require encryption of electronic PHI at rest and in transit with limited exceptions, penetration testing at least once every 12 months, and written verification of each business associate's technical safeguards at least once every 12 months.{{cite:security-rule-nprm}} As of September 2026 no final rule had been published, and the eCFR still lists encryption as addressable.{{cite:ecfr-164-312}}",
+          text: "HHS's January 2025 proposed Security Rule update would require encryption of electronic PHI at rest and in transit with limited exceptions, penetration testing at least once every 12 months, and written verification of each business associate's technical safeguards at least once every 12 months.{{cite:security-rule-nprm}} As of October 2026 no final rule had been published, and the eCFR still lists encryption as addressable.{{cite:ecfr-164-312}}",
         },
         {
           type: "p",
@@ -357,7 +357,7 @@ const page: SeoPage = {
       publisher: "Bond Health, monitored by Vanta",
       url: TRUST_CENTER,
       year: "2026",
-      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026.",
+      note: "Lists 73 HIPAA Security Rule controls: infrastructure security (20), organizational security (14), internal security procedures (38), and data and privacy (1), monitored continuously by Vanta. Viewed September 23, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-160-103",
@@ -365,7 +365,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-160.103",
       year: "2026",
-      note: "Text current as of September 1, 2026.",
+      note: "Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-312",
@@ -373,7 +373,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.312",
       year: "2026",
-      note: "Quote: \"(b) Standard: Audit controls. Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.\" and \"(iv) Encryption and decryption (Addressable). Implement a mechanism to encrypt and decrypt electronic protected health information.\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"(b) Standard: Audit controls. Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.\" and \"(iv) Encryption and decryption (Addressable). Implement a mechanism to encrypt and decrypt electronic protected health information.\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-314",
@@ -381,7 +381,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.314",
       year: "2026",
-      note: "Quote: \"(B) In accordance with § 164.308(b)(2), ensure that any subcontractors that create, receive, maintain, or transmit electronic protected health information on behalf of the business associate agree to comply with the applicable requirements of this subpart by entering into a contract or other arrangement that complies with this section; and (C) Report to the covered entity any security incident of which it becomes aware\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"(B) In accordance with § 164.308(b)(2), ensure that any subcontractors that create, receive, maintain, or transmit electronic protected health information on behalf of the business associate agree to comply with the applicable requirements of this subpart by entering into a contract or other arrangement that complies with this section; and (C) Report to the covered entity any security incident of which it becomes aware\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-410",
@@ -389,7 +389,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.410",
       year: "2026",
-      note: "Quote: \"a business associate shall provide the notification required by paragraph (a) of this section without unreasonable delay and in no case later than 60 calendar days after discovery of a breach.\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"a business associate shall provide the notification required by paragraph (a) of this section without unreasonable delay and in no case later than 60 calendar days after discovery of a breach.\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-402",
@@ -397,7 +397,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.402",
       year: "2026",
-      note: "Quote: \"Unsecured protected health information means protected health information that is not rendered unusable, unreadable, or indecipherable to unauthorized persons through the use of a technology or methodology specified by the Secretary in the guidance\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"Unsecured protected health information means protected health information that is not rendered unusable, unreadable, or indecipherable to unauthorized persons through the use of a technology or methodology specified by the Secretary in the guidance\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-504",
@@ -405,7 +405,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.504",
       year: "2026",
-      note: "Quote: \"(J) At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"(J) At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-502",
@@ -413,7 +413,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.502",
       year: "2026",
-      note: "Quote from (e): \"A business associate may disclose protected health information to a business associate that is a subcontractor and may allow the subcontractor to create, receive, maintain, or transmit protected health information on its behalf, if the business associate obtains satisfactory assurances [...] The satisfactory assurances required by paragraph (e)(1) of this section must be documented through a written contract or other written agreement or arrangement with the business associate\" Paragraph (b) sets the minimum necessary standard. Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote from (e): \"A business associate may disclose protected health information to a business associate that is a subcontractor and may allow the subcontractor to create, receive, maintain, or transmit protected health information on its behalf, if the business associate obtains satisfactory assurances [...] The satisfactory assurances required by paragraph (e)(1) of this section must be documented through a written contract or other written agreement or arrangement with the business associate\" Paragraph (b) sets the minimum necessary standard. Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-316",
@@ -421,7 +421,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.316",
       year: "2026",
-      note: "Quote: \"(i) Time limit (Required). Retain the documentation required by paragraph (b)(1) of this section for 6 years from the date of its creation or the date when it last was in effect, whichever is later.\" Paragraph (b)(1) covers written policies and procedures and records of required actions, activities or assessments. Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"(i) Time limit (Required). Retain the documentation required by paragraph (b)(1) of this section for 6 years from the date of its creation or the date when it last was in effect, whichever is later.\" Paragraph (b)(1) covers written policies and procedures and records of required actions, activities or assessments. Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-512",
@@ -429,7 +429,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.512",
       year: "2026",
-      note: "Text current as of September 1, 2026.",
+      note: "Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ich-e6r3",

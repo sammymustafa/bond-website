@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "Southeast",
   h1: "Recruiting for clinical trials in the Southeast",
   intro:
-    "As of September 2026, 6,258 studies on ClinicalTrials.gov were recruiting at one or more sites in ten Southeast states, about 28% of the 22,041 recruiting at a US site.{{cite:ctgov-southeast-unique,ctgov-api}} The ten are Georgia, North Carolina, South Carolina, Tennessee, Alabama, Mississippi, Kentucky, Virginia, Louisiana and Arkansas. Below: research hubs, EHRs, demographics, state laws, and how Bond Health deploys with a site.",
+    "As of October 2026, 6,258 studies on ClinicalTrials.gov were recruiting at one or more sites in ten Southeast states, about 28% of the 22,038 recruiting at a US site.{{cite:ctgov-southeast-unique,ctgov-api}} The ten are Georgia, North Carolina, South Carolina, Tennessee, Alabama, Mississippi, Kentucky, Virginia, Louisiana and Arkansas. Below: research hubs, EHRs, demographics, state laws, and how Bond Health deploys with a site.",
   summary: "Southeast recruiting-trial counts, research hubs, health systems and their EHRs, demographics, and state AI and privacy rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -33,7 +33,7 @@ const page: SeoPage = {
         { type: "trialCounts", geo: "southeast", cite: "ctgov-api" },
         {
           type: "p",
-          text: "Oncology is the largest area: counted once, 2,296 of the 6,258 studies match an oncology keyword search.{{cite:ctgov-southeast-unique}} See [oncology](/oncology) and [cardiology](/cardiology) for how Bond approaches each area.",
+          text: "Oncology is the largest area: counted once, 2,331 of the 6,258 studies match an oncology keyword search.{{cite:ctgov-southeast-unique}} See [oncology](/oncology) and [cardiology](/cardiology) for how Bond approaches each area.",
         },
         { type: "trials", geo: "southeast", condition: "oncology", cite: "ctgov-api" },
       ],
@@ -59,7 +59,7 @@ const page: SeoPage = {
           items: [
             "**Nashville.** Vanderbilt's Recruitment Innovation Center, founded in 2016, develops and tests ways to recruit participants. In 2023 VUMC won two NIH grants totaling $51 million to improve recruitment and trial efficiency nationally.{{cite:vumc-ric}}",
             "**New Orleans.** Ochsner Health reports more than 700 clinical trials across its Gulf South system, per its website.{{cite:ochsner}}",
-            "**Cancer centers.** As of September 2026, NCI lists 11 designated cancer centers in the ten states, 10 of them comprehensive. Arkansas, Louisiana and Mississippi have none.{{cite:nci-centers}}",
+            "**Cancer centers.** As of October 2026, NCI lists 11 designated cancer centers in the ten states, 10 of them comprehensive. Arkansas, Louisiana and Mississippi have none.{{cite:nci-centers}}",
           ],
         },
       ],
@@ -70,7 +70,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "table",
-          caption: "EHRs at selected health systems, per each system or trade press, checked September 2026",
+          caption: "EHRs at selected health systems, per each system or trade press, checked October 2026",
           columns: ["System", "Base", "EHR"],
           rows: [
             ["Duke Health", "Durham, NC", "Epic (Maestro Care), live across Duke Health since March 1, 2014{{cite:duke-maestro}}"],
@@ -78,7 +78,7 @@ const page: SeoPage = {
             ["Emory Healthcare", "Atlanta, GA", "Epic since October 1, 2022, replacing Cerner{{cite:emory-epic}}"],
             ["MUSC", "Charleston, SC", "Epic since 2012 (ambulatory) and 2014 (inpatient), with data available for cohort discovery{{cite:musc-epic}}"],
             ["Vanderbilt University Medical Center", "Nashville, TN", "eStar, its Epic-based EHR, activated November 2, 2017{{cite:vumc-estar,vumc-estar-epic}}"],
-            ["UAB Health System", "Birmingham, AL", "Moving to Epic, including for clinical research, approved September 2024; confirm go-live status{{cite:uab-epic}}"],
+            ["UAB Health System", "Birmingham, AL", "Moving to Epic, including for clinical research, approved September 2024; go-live scheduled for February 27, 2027{{cite:uab-epic,uab-epic-wave2}}"],
             ["HCA Healthcare", "Multistate, including Virginia", "Moving to MEDITECH Expanse; its 18-hospital Capital Division (Virginia and New Hampshire) finished in August 2026, per trade press. Confirm each hospital{{cite:hca-meditech}}"],
             ["Community health centers", "All ten states", "Varies; eClinicalWorks said in 2023 it served roughly 60% of US health centers{{cite:ecw-fqhc}}"],
           ],
@@ -123,7 +123,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "As of August 2026, Alabama, Georgia, Mississippi, South Carolina and Tennessee had not expanded Medicaid, per KFF.{{cite:kff-medicaid}} North Carolina expanded in December 2023, and its uninsured rate fell from 9.2% in 2023 to 8.6% in 2024.{{cite:census-acs-uninsured}} In 2025, Black patients were 60.0% of HRSA-funded health center patients in Mississippi and 46.7% in Georgia, and about a quarter in each state were uninsured.{{cite:hrsa-ms,hrsa-ga}} A cohort that reflects the region usually has to reach patients at these clinics. See [FQHCs and community sites](/for/fqhcs-and-community-sites).",
+          text: "As of October 2026, Alabama, Georgia, Mississippi, South Carolina and Tennessee had not expanded Medicaid, per KFF.{{cite:kff-medicaid}} North Carolina expanded in December 2023, and its uninsured rate fell from 9.2% in 2023 to 8.6% in 2024.{{cite:census-acs-uninsured}} In 2025, Black patients were 60.0% of HRSA-funded health center patients in Mississippi and 46.7% in Georgia, and about a quarter in each state were uninsured.{{cite:hrsa-ms,hrsa-ga}} A cohort that reflects the region usually has to reach patients at these clinics. See [FQHCs and community sites](/for/fqhcs-and-community-sites).",
         },
         {
           type: "callout",
@@ -234,7 +234,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "ctgov-southeast-unique",
@@ -242,7 +242,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?query.locn=AREA%5BLocationState%5D%28%22Georgia%22+OR+%22North+Carolina%22+OR+%22South+Carolina%22+OR+%22Tennessee%22+OR+%22Alabama%22+OR+%22Mississippi%22+OR+%22Kentucky%22+OR+%22Virginia%22+OR+%22Louisiana%22+OR+%22Arkansas%22%29&filter.overallStatus=RECRUITING&countTotal=true&pageSize=1&fields=NCTId",
       year: "2026",
-      note: "Quote: \"totalCount\":6258 (API response to this query, run September 22, 2026: overall status Recruiting, at least one location in any of the ten states, each study counted once). The same query with LocationCountry \"United States\" returned \"totalCount\":22041. 6,258 / 22,041 = 28.4%, computed by Bond. The same Southeast query with query.cond=cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia returned \"totalCount\":2296 (run September 22, 2026).",
+      note: "Quote: \"totalCount\":6258 (API response to this query, run September 22, 2026 and again October 23, 2026 with the same total: overall status Recruiting, at least one location in any of the ten states, each study counted once). On October 23, 2026 the same query with LocationCountry \"United States\" returned \"totalCount\":22038. 6,258 / 22,038 = 28.4%, computed by Bond. The same Southeast query with query.cond=cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia returned \"totalCount\":2331 (run October 23, 2026).",
     },
     {
       id: "census-asrh-2025",
@@ -250,7 +250,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau, Population Estimates Program",
       url: "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/asrh/sc-est2025-alldata6.csv",
       year: "2026",
-      note: "Downloaded September 22, 2026 and summed by Bond from POPESTIMATE2025, both sexes, all origins: ten-state total 64,753,265 of 341,784,857 US residents (18.9%); Black or African American alone 15,061,735 of 46,248,715 nationally (32.6%); Georgia 3,659,052, third after Texas and Florida. Black alone and age 65+ shares: Mississippi 36.8/19.3, Georgia 32.4/16.7, Louisiana 32.1/18.8, Alabama 25.9/19.4, South Carolina 24.4/21.1, North Carolina 21.3/18.9, Virginia 19.5/18.4, Tennessee 15.7/18.6, Arkansas 15.2/19.0, Kentucky 8.7/18.8, United States 13.5/18.9.",
+      note: "Downloaded September 22, 2026; re-checked October 23, 2026. Summed by Bond from POPESTIMATE2025, both sexes, all origins: ten-state total 64,753,265 of 341,784,857 US residents (18.9%); Black or African American alone 15,061,735 of 46,248,715 nationally (32.6%); Georgia 3,659,052, third after Texas and Florida. Black alone and age 65+ shares: Mississippi 36.8/19.3, Georgia 32.4/16.7, Louisiana 32.1/18.8, Alabama 25.9/19.4, South Carolina 24.4/21.1, North Carolina 21.3/18.9, Virginia 19.5/18.4, Tennessee 15.7/18.6, Arkansas 15.2/19.0, Kentucky 8.7/18.8, United States 13.5/18.9.",
     },
     {
       id: "census-urban-rural-2020",
@@ -258,7 +258,7 @@ const page: SeoPage = {
       publisher: "U.S. Census Bureau",
       url: "https://www2.census.gov/geo/docs/reference/ua/State_Urban_Rural_Pop_2020_2010.xlsx",
       year: "2023",
-      note: "Downloaded September 22, 2026. Column 2020 PCT RURAL POP: Mississippi 53.7, Arkansas 44.5, Alabama 42.3, Kentucky 41.3, Tennessee 33.8, North Carolina 33.3, South Carolina 32.1, Louisiana 28.5, Georgia 25.9, Virginia 24.4. Ten-state rural population 20,571,012 of 61,972,629 (33.2%), summed by Bond.",
+      note: "Downloaded September 22, 2026; re-checked October 23, 2026. Column 2020 PCT RURAL POP: Mississippi 53.7, Arkansas 44.5, Alabama 42.3, Kentucky 41.3, Tennessee 33.8, North Carolina 33.3, South Carolina 32.1, Louisiana 28.5, Georgia 25.9, Virginia 24.4. Ten-state rural population 20,571,012 of 61,972,629 (33.2%), summed by Bond.",
     },
     {
       id: "census-urban-rural-release",
@@ -281,7 +281,7 @@ const page: SeoPage = {
       publisher: "KFF",
       url: "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
       year: "2026",
-      note: "Quote: \"Adopted: 41 states (incl. DC) Not Adopted: 10 states\". Checked September 2026 (data as of August 2026): Alabama, Georgia, Mississippi, South Carolina and Tennessee are listed as not adopted; Arkansas, Kentucky, Louisiana, North Carolina and Virginia as adopted.",
+      note: "Quote: \"Adopted: 41 states (incl. DC) Not Adopted: 10 states\". Checked September 2026 (data as of August 2026); re-checked October 23, 2026 (\"States' decisions about adopting the Medicaid expansion are as of October 2026\"): Alabama, Georgia, Mississippi, South Carolina and Tennessee are listed as not adopted; Arkansas, Kentucky, Louisiana, North Carolina and Virginia as adopted.",
     },
     {
       id: "hrsa-ga",
@@ -321,7 +321,7 @@ const page: SeoPage = {
       publisher: "Blue Ridge Institute for Medical Research",
       url: "https://brimr.org/wp-content/uploads/2026/02/SchoolOfMedicine_2025.xlsx",
       year: "2026",
-      note: "Downloaded September 22, 2026. Rank, name and School of Medicine award: 7 Vanderbilt University $564,267,623; 9 Duke University $514,509,019; 16 Emory University $385,377,125; 18 University of North Carolina Chapel Hill $353,001,816; 28 University of Alabama Birmingham $256,056,953; 48 Medical University of South Carolina $132,423,003.",
+      note: "Downloaded September 22, 2026; re-checked October 23, 2026. Rank, name and School of Medicine award: 7 Vanderbilt University $564,267,623; 9 Duke University $514,509,019; 16 Emory University $385,377,125; 18 University of North Carolina Chapel Hill $353,001,816; 28 University of Alabama Birmingham $256,056,953; 48 Medical University of South Carolina $132,423,003.",
     },
     {
       id: "nci-centers",
@@ -329,7 +329,7 @@ const page: SeoPage = {
       publisher: "National Cancer Institute",
       url: "https://www.cancer.gov/research/infrastructure/cancer-centers/find",
       year: "2026",
-      note: "Checked September 22, 2026. Entries in the ten states: Winship Cancer Institute (Atlanta), Duke Cancer Institute (Durham), UNC Lineberger (Chapel Hill), Wake Forest Baptist (Winston-Salem), St. Jude Children's Research Hospital (Memphis), Vanderbilt-Ingram (Nashville), O'Neal (Birmingham), Markey (Lexington), VCU Massey (Richmond) and University of Virginia (Charlottesville), all Comprehensive Cancer Centers; Hollings Cancer Center (Charleston), a Clinical Cancer Center. None listed in Arkansas, Louisiana or Mississippi.",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Entries in the ten states: Winship Cancer Institute (Atlanta), Duke Cancer Institute (Durham), UNC Lineberger (Chapel Hill), Wake Forest Baptist (Winston-Salem), St. Jude Children's Research Hospital (Memphis), Vanderbilt-Ingram (Nashville), O'Neal (Birmingham), Markey (Lexington), VCU Massey (Richmond) and University of Virginia (Charlottesville), all Comprehensive Cancer Centers; Hollings Cancer Center (Charleston), a Clinical Cancer Center. None listed in Arkansas, Louisiana or Mississippi.",
     },
     {
       id: "rtp",
@@ -351,7 +351,7 @@ const page: SeoPage = {
       publisher: "Ochsner Health",
       url: "https://www.ochsner.org/about-ochsner/",
       year: "2026",
-      note: "Checked September 22, 2026. Quote: \"Over 700 clinical trials being conducted at Ochsner.\" and \"Ochsner Health is the leading nonprofit healthcare provider in Louisiana, Mississippi and across the Gulf South\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Quote: \"Over 700 clinical trials being conducted at Ochsner.\" and \"Ochsner Health is the leading nonprofit healthcare provider in Louisiana, Mississippi and across the Gulf South\"",
     },
     {
       id: "vumc-ric",
@@ -387,8 +387,9 @@ const page: SeoPage = {
       id: "duke-maestro",
       title: "Maestro Care for Research",
       publisher: "Duke University School of Medicine, Duke Office of Clinical Research",
-      url: "https://medschool.duke.edu/research/research-support/research-support-offices/duke-office-clinical-research-docr/get-docr-5",
+      url: "https://medschool.duke.edu/research/research-support/research-support-offices/duke-office-clinical-research-docr/get-docr-0",
       year: "2026",
+      note: "Re-checked October 23, 2026; the earlier URL (.../get-docr-5) now redirects here. Quote: \"Epic go-live deployment for all of Duke Health was completed on March 1, 2014\".",
     },
     {
       id: "atrium-about",
@@ -396,7 +397,7 @@ const page: SeoPage = {
       publisher: "Atrium Health",
       url: "https://atriumhealth.org/about-us",
       year: "2026",
-      note: "Checked September 22, 2026. Quote: \"Based in Charlotte, North Carolina, Atrium Health is part of Advocate Health, the third-largest nonprofit health system in the United States\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026. Quote: \"Based in Charlotte, North Carolina, Atrium Health is part of Advocate Health, the third-largest nonprofit health system in the United States\"",
     },
     {
       id: "atrium-epic",
@@ -409,8 +410,9 @@ const page: SeoPage = {
       id: "emory-epic",
       title: "Emory Healthcare moves to new system-wide electronic health record to advance patient experience and care",
       publisher: "Emory University (Emory News)",
-      url: "https://news.emory.edu/stories/2022/09/hs_ehc_epic_ehr_22-09-2022/story.html",
+      url: "https://news.emory.edu/stories/2022/09/emory-healthcare-moves-new-system-wide-electronic-health-record-advance-patient",
       year: "2022",
+      note: "Re-checked October 23, 2026; the earlier URL (.../hs_ehc_epic_ehr_22-09-2022/story.html) now redirects here. Quote: \"Emory Healthcare will migrate from Cerner's electronic medical record to Epic's integrated and comprehensive health care software, effective Oct. 1, 2022.\"",
     },
     {
       id: "musc-epic",
@@ -442,6 +444,14 @@ const page: SeoPage = {
       url: "https://www.uabmedicine.org/news/uab-health-system-announces-investment-in-new-ehr-platform/",
       year: "2024",
       note: "Quote: \"The University of Alabama System Board of Trustees unanimously approved plans on Sept. 25, 2024, for the UAB Health System to transition to a new electronic health record platform, EPIC, for electronic health records, revenue cycle and clinical research functions.\" The same release cites an \"approximately $380 million project budget\".",
+    },
+    {
+      id: "uab-epic-wave2",
+      title: "Progress in patient care since State of the School",
+      publisher: "UAB Heersink School of Medicine (Dean's Message)",
+      url: "https://www.uab.edu/medicine/news/deans-message/progress-in-patient-care-since-state-of-the-school",
+      year: "2026",
+      note: "Dean's Message dated October 20, 2026, read October 23, 2026. Quotes: \"Preparations are underway for Epic Journey Wave 2, scheduled to go live on February 27, 2027. This next phase of our transition to the Epic electronic health record system will include the UAB Health System\" and \"Epic went live at UAB St. Vincent's this summer\".",
     },
     {
       id: "hca-meditech",

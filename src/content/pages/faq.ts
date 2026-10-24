@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Answers to the questions research sites, CROs and sponsors ask before they sign: what Bond Health reads in the chart, how the voice and text agents treat patients, what the IRB reviews, how PHI is handled and how pricing works. Most answers link to the page with more detail, and figures Bond publishes about itself are labeled as Bond's.",
   summary: "Thirty answers on product, data, IRB, patients' rights, AI disclosure, pricing, implementation and security.",
-  lastUpdated: "2026-10-21",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -171,7 +171,7 @@ const page: SeoPage = {
     },
     {
       q: "Do patients know they are talking to an AI?",
-      a: "Yes. Patients are told when AI assistance is used, in every state, and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}} As of September 2026, some states also require disclosure by law. California requires health facilities, clinics and physician offices that use generative AI for patient communications about clinical information to include an AI disclaimer and instructions for reaching a person, unless a licensed provider reviews the message{{cite:ca-ab-3030}}, and since January 1, 2026 Texas has required providers to disclose AI use in health care services.{{cite:tx-hb-149}}",
+      a: "Yes. Patients are told when AI assistance is used, in every state, and can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}} As of October 2026, some states also require disclosure by law. California requires health facilities, clinics and physician offices that use generative AI for patient communications about clinical information to include an AI disclaimer and instructions for reaching a person, unless a licensed provider reviews the message{{cite:ca-ab-3030}}, and since January 1, 2026 Texas has required providers to disclose AI use in health care services.{{cite:tx-hb-149}}",
     },
     {
       q: "How does a patient stop calls or texts?",
@@ -256,7 +256,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-21/section-56.111",
       year: "2026",
-      note: "Paragraph (a)(3): selection of subjects is equitable. Text current as of September 1, 2026.",
+      note: "Paragraph (a)(3): selection of subjects is equitable. Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ich-e6r3",
@@ -280,7 +280,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.512",
       year: "2026",
-      note: "Text current as of September 1, 2026.",
+      note: "Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-46-116",
@@ -288,7 +288,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-46.116",
       year: "2026",
-      note: "Paragraph (g), screening, recruiting, or determining eligibility. Text current as of September 1, 2026.",
+      note: "Paragraph (g), screening, recruiting, or determining eligibility. Text current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-160-103",
@@ -296,7 +296,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-160.103",
       year: "2026",
-      note: "Quote: \"(iii) A subcontractor that creates, receives, maintains, or transmits protected health information on behalf of the business associate.\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Quote: \"(iii) A subcontractor that creates, receives, maintains, or transmits protected health information on behalf of the business associate.\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ecfr-164-504",
@@ -304,7 +304,7 @@ const page: SeoPage = {
       publisher: "eCFR, Office of the Federal Register",
       url: "https://www.ecfr.gov/current/title-45/section-164.504",
       year: "2026",
-      note: "Paragraph (e)(2)(ii)(D): \"ensure that any subcontractors that create, receive, maintain, or transmit protected health information on behalf of the business associate agree to the same restrictions and conditions that apply to the business associate with respect to such information\". Paragraph (e)(2)(ii)(J): \"At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information or, if such return or destruction is not feasible, extend the protections of the contract to the information\" Text retrieved from the eCFR API, current as of September 1, 2026.",
+      note: "Paragraph (e)(2)(ii)(D): \"ensure that any subcontractors that create, receive, maintain, or transmit protected health information on behalf of the business associate agree to the same restrictions and conditions that apply to the business associate with respect to such information\". Paragraph (e)(2)(ii)(J): \"At termination of the contract, if feasible, return or destroy all protected health information received from, or created or received by the business associate on behalf of, the covered entity that the business associate still maintains in any form and retain no copies of such information or, if such return or destruction is not feasible, extend the protections of the contract to the information\" Text retrieved from the eCFR API, current as of September 1, 2026; re-checked October 23, 2026.",
     },
     {
       id: "ca-ab-3030",

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Alzheimer's protocols screen for things a problem list rarely holds: a cognitive score inside a set window, amyloid confirmed by PET or spinal fluid, a clean brain MRI, and a study partner. At two California sites screening for a Phase 2 anti-amyloid antibody trial in 2024, 147 of 185 people failed screening.{{cite:huoh-2025}} Most of these criteria live in free-text notes and reports, not structured fields.",
   summary: "How Alzheimer's criteria map to the chart, why screen failure runs high, and how Bond screens for it.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -92,7 +92,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Both drugs are now prescribed, which changes what charts hold. As of September 2026, both FDA labels call for confirmed amyloid, ApoE ε4 testing and a baseline brain MRI before treatment, then scheduled follow-up MRIs.{{cite:dailymed-leqembi-2026,dailymed-kisunla-2026}} A patient evaluated for either drug may already have the results a trial asks for. A treated patient may be excluded: Clarity AD barred anyone with known prior lecanemab exposure.{{cite:clarity-ad-ctgov}}",
+          text: "Both drugs are now prescribed, which changes what charts hold. As of October 2026, both FDA labels call for confirmed amyloid, ApoE ε4 testing and a baseline brain MRI before treatment, then scheduled follow-up MRIs.{{cite:dailymed-leqembi-2026,dailymed-kisunla-2026}} A patient evaluated for either drug may already have the results a trial asks for. A treated patient may be excluded: Clarity AD barred anyone with known prior lecanemab exposure.{{cite:clarity-ad-ctgov}}",
         },
       ],
     },
@@ -167,21 +167,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 987 of the 22,041 recruiting studies with a US site matched a neurology keyword search of the condition field: Alzheimer, dementia, Parkinson, multiple sclerosis, migraine or epilepsy.{{cite:ctgov-api}} The count includes observational studies and is not Alzheimer's-only. Migraine studies also fall under pain, and a study can count in more than one area.",
+          text: "As of October 23, 2026, 1,000 of the 22,038 recruiting studies with a US site matched a neurology keyword search of the condition field: Alzheimer, dementia, Parkinson, multiple sclerosis, migraine or epilepsy.{{cite:ctgov-api}} The count includes observational studies and is not Alzheimer's-only. Migraine studies also fall under pain, and a study can count in more than one area.",
         },
         {
           type: "chart",
-          title: "Recruiting studies with at least one US site, by area (keyword search, September 21, 2026)",
+          title: "Recruiting studies with at least one US site, by area (keyword search, October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -252,7 +252,7 @@ const page: SeoPage = {
       publisher: "JAMA Neurology (Sperling RA et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/32250387/",
       year: "2020",
-      note: "A4 study screening data. Abstract text checked via Europe PMC on September 22, 2026. Quote: \"Amyloid PET results were acquired for 4486 participants (mean [SD] age, 71.29 [4.67] years; 2647 women [59%]), with 1323 (29.5%) classified as Aβ+.\"",
+      note: "A4 study screening data. Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"Amyloid PET results were acquired for 4486 participants (mean [SD] age, 71.29 [4.67] years; 2647 women [59%]), with 1323 (29.5%) classified as Aβ+.\"",
     },
     {
       id: "sevigny-2016",
@@ -292,7 +292,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Eisai)",
       url: "https://clinicaltrials.gov/study/NCT03887455",
       year: "2026",
-      note: "Eligibility text read from this record through the ClinicalTrials.gov API v2 (https://clinicaltrials.gov/api/v2/studies/NCT03887455) on September 22, 2026. Quote: \"Meet the National Institute of Aging - Alzheimer's Association (NIA-AA) core clinical criteria for MCI due to Alzheimer's disease - intermediate likelihood\"; \"Have a global CDR score of 0.5 to 1.0\" (mild AD dementia); \"Objective impairment in episodic memory as indicated by at least 1 standard deviation below age-adjusted mean in the Wechsler Memory Scale IV-Logical Memory (subscale) II\"; \"Positive biomarker for brain amyloid pathology\"; \"Mini mental state examination (MMSE) score >=22 at Screening and Baseline and <=30 at Screening and Baseline\"; \"If receiving an approved Alzheimer's disease treatment such as acetylcholinesterase inhibitor (AChEIs) or memantine or both for Alzheimer's disease, must be on a stable dose for at least 12 weeks prior to Baseline\"; \"Have an identified study partner (defined as a person able to support the participant for the duration of the study and who spends at least 8 hours per week with the participant)\"; \"If a participant lacks capacity to consent in the investigator's opinion ... the written informed consent of a legal representative should be obtained\"; exclusions: \"more than 4 microhemorrhages ... an area of superficial siderosis ... severe small vessel, or white matter disease\"; \"Participants who are on anticoagulant therapy should have their anticoagulant status optimized and be on a stable dose for 4 weeks before Screening\"; \"Participation in a clinical study involving any anti-amyloid therapies ... unless it can be documented that the participant only received placebo\"; \"Participants who have any known prior exposure to lecanemab\".",
+      note: "Eligibility text read from this record through the ClinicalTrials.gov API v2 (https://clinicaltrials.gov/api/v2/studies/NCT03887455) on September 22, 2026; re-checked October 23, 2026. Quote: \"Meet the National Institute of Aging - Alzheimer's Association (NIA-AA) core clinical criteria for MCI due to Alzheimer's disease - intermediate likelihood\"; \"Have a global CDR score of 0.5 to 1.0\" (mild AD dementia); \"Objective impairment in episodic memory as indicated by at least 1 standard deviation below age-adjusted mean in the Wechsler Memory Scale IV-Logical Memory (subscale) II\"; \"Positive biomarker for brain amyloid pathology\"; \"Mini mental state examination (MMSE) score >=22 at Screening and Baseline and <=30 at Screening and Baseline\"; \"If receiving an approved Alzheimer's disease treatment such as acetylcholinesterase inhibitor (AChEIs) or memantine or both for Alzheimer's disease, must be on a stable dose for at least 12 weeks prior to Baseline\"; \"Have an identified study partner (defined as a person able to support the participant for the duration of the study and who spends at least 8 hours per week with the participant)\"; \"If a participant lacks capacity to consent in the investigator's opinion ... the written informed consent of a legal representative should be obtained\"; exclusions: \"more than 4 microhemorrhages ... an area of superficial siderosis ... severe small vessel, or white matter disease\"; \"Participants who are on anticoagulant therapy should have their anticoagulant status optimized and be on a stable dose for 4 weeks before Screening\"; \"Participation in a clinical study involving any anti-amyloid therapies ... unless it can be documented that the participant only received placebo\"; \"Participants who have any known prior exposure to lecanemab\".",
     },
     {
       id: "trailblazer-alz2-ctgov",
@@ -300,7 +300,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Eli Lilly and Company)",
       url: "https://clinicaltrials.gov/study/NCT04437511",
       year: "2026",
-      note: "Eligibility text read from this record through the ClinicalTrials.gov API v2 (https://clinicaltrials.gov/api/v2/studies/NCT04437511) on September 22, 2026. Quote: \"MMSE score of 20 to 28 (inclusive) at baseline\"; \"Meet 18F flortaucipir PET scan (central read) criteria\"; \"Have a study partner who will provide written informed consent to participate\".",
+      note: "Eligibility text read from this record through the ClinicalTrials.gov API v2 (https://clinicaltrials.gov/api/v2/studies/NCT04437511) on September 22, 2026; re-checked October 23, 2026. Quote: \"MMSE score of 20 to 28 (inclusive) at baseline\"; \"Meet 18F flortaucipir PET scan (central read) criteria\"; \"Have a study partner who will provide written informed consent to participate\".",
     },
     {
       id: "fda-leqembi-2025",
@@ -316,7 +316,7 @@ const page: SeoPage = {
       publisher: "DailyMed, U.S. National Library of Medicine",
       url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d1ff786-e577-410a-a273-c4d7d0e4e975",
       year: "2026",
-      note: "Label version published on DailyMed July 27, 2026; checked September 22, 2026. It replaces the earlier schedule of MRIs before the 3rd, 5th, 7th and 14th infusions. Quote: \"Confirm the presence of amyloid beta pathology prior to initiating treatment.\" \"Obtain a recent baseline brain MRI prior to initiating treatment.\" \"Obtain an MRI after 1, 2, 3, and 6 months of treatment.\" \"Testing for ApoE ε4 status should be performed prior to initiation of treatment to inform the risk of developing ARIA.\"",
+      note: "Label version published on DailyMed July 27, 2026; checked September 22, 2026; re-checked October 23, 2026 (still the current version). It replaces the earlier schedule of MRIs before the 3rd, 5th, 7th and 14th infusions. Quote: \"Confirm the presence of amyloid beta pathology prior to initiating treatment.\" \"Obtain a recent baseline brain MRI prior to initiating treatment.\" \"Obtain an MRI after 1, 2, 3, and 6 months of treatment.\" \"Testing for ApoE ε4 status should be performed prior to initiation of treatment to inform the risk of developing ARIA.\"",
     },
     {
       id: "dailymed-kisunla-2026",
@@ -324,7 +324,7 @@ const page: SeoPage = {
       publisher: "DailyMed, U.S. National Library of Medicine",
       url: "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=190352d4-ef62-4679-b4fa-e846e2766afa",
       year: "2026",
-      note: "Label version published on DailyMed January 2, 2026; checked September 22, 2026. Quote: \"Confirm the presence of amyloid beta pathology prior to initiating treatment.\" \"Obtain a recent baseline brain MRI prior to initiating treatment.\" \"Obtain an MRI prior to the 2nd, 3rd, 4th, and 7th infusions.\" \"Testing for ApoE ε4 status should be performed prior to initiation of treatment\"",
+      note: "Label version published on DailyMed January 2, 2026; checked September 22, 2026; re-checked October 23, 2026 (still the current version). Quote: \"Confirm the presence of amyloid beta pathology prior to initiating treatment.\" \"Obtain a recent baseline brain MRI prior to initiating treatment.\" \"Obtain an MRI prior to the 2nd, 3rd, 4th, and 7th infusions.\" \"Testing for ApoE ε4 status should be performed prior to initiation of treatment\"",
     },
     {
       id: "fda-kisunla-2024",
@@ -364,7 +364,7 @@ const page: SeoPage = {
       publisher: "Archives of General Psychiatry (Kim SY, Karlawish JH, et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/21300949/",
       year: "2011",
-      note: "Interview study of 188 people with Alzheimer's using 2 hypothetical research scenarios. Abstract text checked via Europe PMC on September 22, 2026. Quote: \"Data showed that 37.7% (40 of 106) of those deemed incapable of consenting to the drug RCT and 54.8% (86 of 157) of those deemed incapable of consenting to the neurosurgical RCT were found capable of appointing a research proxy.\"",
+      note: "Interview study of 188 people with Alzheimer's using 2 hypothetical research scenarios. Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"Data showed that 37.7% (40 of 106) of those deemed incapable of consenting to the drug RCT and 54.8% (86 of 157) of those deemed incapable of consenting to the neurosurgical RCT were found capable of appointing a research proxy.\"",
     },
     {
       id: "rubright-2010",
@@ -372,7 +372,7 @@ const page: SeoPage = {
       publisher: "American Journal of Geriatric Psychiatry (Rubright J, Sankar P, Casarett DJ, Gur R, Xie SX, Karlawish J)",
       url: "https://pubmed.ncbi.nlm.nih.gov/20808101/",
       year: "2010",
-      note: "Abstract text checked via Europe PMC on September 22, 2026. Quote: \"The intervention group was more likely to be judged competent than control group and had higher scores on MacCAT-CR measure of understanding.\"",
+      note: "Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"The intervention group was more likely to be judged competent than control group and had higher scores on MacCAT-CR measure of understanding.\"",
     },
     {
       id: "alz-facts-2026",
@@ -435,7 +435,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "bond-site",

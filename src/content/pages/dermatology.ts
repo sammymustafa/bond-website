@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Psoriasis, atopic dermatitis and hidradenitis suppurativa trials screen on PASI, EASI or IGA scores, body surface area, prior biologics and washouts. Much of that evidence sits in exam notes rather than coded fields.{{cite:jaad-ehr-2019}} In two real-world cohorts, severity was the most common reason a treated patient would not have qualified.{{cite:alvarenga-2026,psobioteq-2020}} This page maps each criterion to the chart and shows how Bond Health screens for it.",
   summary: "How severity scores, biologic history and washouts map to the chart, and how Bond screens for them.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -170,21 +170,21 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "As of September 21, 2026, 214 recruiting studies with at least one US site matched a dermatology keyword search, about 1% of the 22,041 recruiting studies with a US site.{{cite:ctgov-api}} The search looks in the condition field for psoriasis, atopic dermatitis, eczema, hidradenitis, vitiligo or alopecia. It includes observational studies and leaves out acne, rosacea and skin cancers.",
+          text: "As of October 23, 2026, 206 recruiting studies with at least one US site matched a dermatology keyword search, about 1% of the 22,038 recruiting studies with a US site.{{cite:ctgov-api}} The search looks in the condition field for psoriasis, atopic dermatitis, eczema, hidradenitis, vitiligo or alopecia. It includes observational studies and leaves out acne, rosacea and skin cancers.",
         },
         {
           type: "chart",
-          title: "Recruiting studies with at least one US site, by area (keyword search, September 21, 2026)",
+          title: "Recruiting studies with at least one US site, by area (keyword search, October 23, 2026)",
           unit: "studies",
           data: [
-            { label: "Oncology", value: 7074 },
-            { label: "Cardiology", value: 2845 },
-            { label: "Psychiatry", value: 1273 },
-            { label: "Neurology", value: 987 },
-            { label: "Obesity and type 2 diabetes", value: 852 },
-            { label: "Pain", value: 629 },
-            { label: "Gastroenterology", value: 285 },
-            { label: "Dermatology", value: 214 },
+            { label: "Oncology", value: 7092 },
+            { label: "Cardiology", value: 2827 },
+            { label: "Psychiatry", value: 1278 },
+            { label: "Neurology", value: 1000 },
+            { label: "Obesity and type 2 diabetes", value: 848 },
+            { label: "Pain", value: 632 },
+            { label: "Gastroenterology", value: 281 },
+            { label: "Dermatology", value: 206 },
           ],
           cite: "ctgov-api",
         },
@@ -232,7 +232,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (UCB Biopharma)",
       url: "https://clinicaltrials.gov/study/NCT03410992",
       year: "2018",
-      note: "Phase 3. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"Psoriasis Area Severity Index (PASI) >=12 and body surface area (BSA) affected by PSO >=10% and Investigator's Global Assessment (IGA) score >=3 on a 5-point scale\" Exclusions: \"Subject has known tuberculosis (TB) infection\"; \"Subject has any active malignancy or history of malignancy within 5 years prior to the Screening Visit EXCEPT treated and considered cured cutaneous squamous or basal cell carcinoma, or in situ cervical cancer\"",
+      note: "Phase 3. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"Psoriasis Area Severity Index (PASI) >=12 and body surface area (BSA) affected by PSO >=10% and Investigator's Global Assessment (IGA) score >=3 on a 5-point scale\" Exclusions: \"Subject has known tuberculosis (TB) infection\"; \"Subject has any active malignancy or history of malignancy within 5 years prior to the Screening Visit EXCEPT treated and considered cured cutaneous squamous or basal cell carcinoma, or in situ cervical cancer\"",
     },
     {
       id: "advocate1",
@@ -240,7 +240,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Eli Lilly and Company)",
       url: "https://clinicaltrials.gov/study/NCT04146363",
       year: "2019",
-      note: "Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"Chronic atopic dermatitis ... that has been present for ≥1 year before the screening visit\"; \"EASI score ≥16 at the baseline visit\"; \"IGA score ≥3 (scale of 0 to 4) at the baseline visit\"; \"≥10% body surface area (BSA) of atopic dermatitis involvement\"; \"History of inadequate response to treatment with topical medications; or determination that topical treatments are otherwise medically inadvisable\"; exclusion for \"Prior treatment with dupilumab or tralokinumab\". Washouts before baseline: 1 week for topical corticosteroids, calcineurin inhibitors or crisaborole; 4 weeks for systemic immunosuppressants including JAK inhibitors, and for phototherapy; 16 weeks or 5 half-lives, whichever is longer, for other biologics.",
+      note: "Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"Chronic atopic dermatitis ... that has been present for ≥1 year before the screening visit\"; \"Eczema Area and Severity Index (EASI) score ≥16 at the baseline visit\"; \"Investigator Global Assessment (IGA) score ≥3 (scale of 0 to 4) at the baseline visit\"; \"≥10% body surface area (BSA) of atopic dermatitis involvement\"; \"History of inadequate response to treatment with topical medications; or determination that topical treatments are otherwise medically inadvisable\"; exclusion for \"Prior treatment with dupilumab or tralokinumab\". Washouts before baseline: 1 week for topical corticosteroids, calcineurin inhibitors or crisaborole; 4 weeks for systemic immunosuppressants including JAK inhibitors, and for phototherapy; 16 weeks or 5 half-lives, whichever is longer, for other biologics.",
     },
     {
       id: "be-heard-1",
@@ -248,7 +248,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (UCB Biopharma SRL)",
       url: "https://clinicaltrials.gov/study/NCT04242498",
       year: "2020",
-      note: "Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"Study participant must have HS lesions present in at least 2 distinct anatomic areas (eg, left and right axilla), 1 of which must be at least Hurley Stage II or Hurley Stage III at both the Screening and Baseline visits\"; \"moderate to severe HS defined as a total of ≥5 inflammatory lesions (ie, number of abscesses plus number of inflammatory nodules) at both the Screening and Baseline visits\"",
+      note: "Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"Study participant must have HS lesions present in at least 2 distinct anatomic areas (eg, left and right axilla), 1 of which must be at least Hurley Stage II or Hurley Stage III at both the Screening and Baseline visits\"; \"moderate to severe HS defined as a total of ≥5 inflammatory lesions (ie, number of abscesses plus number of inflammatory nodules) at both the Screening and Baseline visits\"",
     },
     {
       id: "brave-aa1",
@@ -256,7 +256,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Eli Lilly and Company)",
       url: "https://clinicaltrials.gov/study/NCT03899259",
       year: "2019",
-      note: "Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"hair loss encompassing ≥50% of the scalp, as measured by SALT (AA-IGA of 3 or 4)\"; \"Current episode of severe or very severe AA of less than 8 years.\"; exclusion: \"Previously treated with an oral Janus kinase (JAK) inhibitor and had an inadequate response\"",
+      note: "Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"hair loss encompassing ≥50% of the scalp, as measured by SALT (AA-IGA of 3 or 4)\"; \"Current episode of severe or very severe AA of less than 8 years.\"; exclusion: \"Previously treated with an oral Janus kinase (JAK) inhibitor and had an inadequate response\"",
     },
     {
       id: "lilly-psoriasis-2010",
@@ -264,7 +264,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Eli Lilly and Company)",
       url: "https://clinicaltrials.gov/study/NCT01107457",
       year: "2010",
-      note: "Phase 2 ixekizumab study. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"etanercept >28 days, infliximab or adalimumab >56 days, alefacept >60 days, ustekinumab >8 months\"; other biologics \">5 half-lives prior to baseline\". Systemic therapy and phototherapy are prohibited within 4 weeks before randomization, and topical psoriasis treatment within 2 weeks.",
+      note: "Phase 2 ixekizumab study. Eligibility criteria read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"etanercept >28 days, infliximab or adalimumab >56 days, alefacept >60 days, ustekinumab >8 months\"; other biologics \">5 half-lives prior to baseline\". Systemic therapy and phototherapy are prohibited within 4 weeks before randomization, and topical psoriasis treatment within 2 weeks.",
     },
     {
       id: "solo-1",
@@ -272,7 +272,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Regeneron Pharmaceuticals)",
       url: "https://clinicaltrials.gov/study/NCT02277743?tab=results",
       year: "2016",
-      note: "Participant flow read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"The study was conducted in 10 countries between 28 Oct 2014 and 12 Feb 2016. A total of 917 participants were screened in the study.\" \"Out of 917 participants, 671 were randomized and 669 were treated in the study.\"",
+      note: "Participant flow read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"The study was conducted in 10 countries between 28 Oct 2014 and 12 Feb 2016. A total of 917 participants were screened in the study.\" \"Out of 917 participants, 671 were randomized and 669 were treated in the study.\"",
     },
     {
       id: "solo-2",
@@ -280,7 +280,7 @@ const page: SeoPage = {
       publisher: "ClinicalTrials.gov (Regeneron Pharmaceuticals)",
       url: "https://clinicaltrials.gov/study/NCT02277769?tab=results",
       year: "2016",
-      note: "Participant flow read via the ClinicalTrials.gov API on September 22, 2026. Quote: \"The study was conducted in 10 countries between 03 December 2014 and 21 January 2016. A total of 962 participants were screened in the study.\" \"Out of 962 participants, 708 were randomized and 707 were treated in the study.\"",
+      note: "Participant flow read via the ClinicalTrials.gov API on September 22, 2026; re-checked October 23, 2026. Quote: \"The study was conducted in 10 countries between 03 December 2014 and 21 January 2016. A total of 962 participants were screened in the study.\" \"Out of 962 participants, 708 were randomized and 707 were treated in the study.\"",
     },
     {
       id: "alvarenga-2026",
@@ -288,7 +288,7 @@ const page: SeoPage = {
       publisher: "Dermatology and Therapy (Alvarenga JM, Torres T et al.)",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12936218/",
       year: "2026",
-      note: "Abstract text checked via Europe PMC on September 22, 2026. Quote: \"adolescents and adults with AD treated with biologics (dupilumab, tralokinumab) or systemic JAKis (abrocitinib, baricitinib, upadacitinib) between October 2017 and March 2023 across 16 dermatology centers\" \"Among 2154 patients, 514 (23.9%) were ineligible. The most frequent reasons were Eczema Area and Severity Index (EASI) < 16 (67.9%), age ≥ 75 years (21.8%), and cardiovascular disease (13.0%).\"",
+      note: "Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"adolescents and adults with AD treated with biologics (dupilumab, tralokinumab) or systemic JAKis (abrocitinib, baricitinib, upadacitinib) between October 2017 and March 2023 across 16 dermatology centers\" \"Among 2154 patients, 514 (23.9%) were ineligible. The most frequent reasons were Eczema Area and Severity Index (EASI) < 16 (67.9%), age ≥ 75 years (21.8%), and cardiovascular disease (13.0%).\"",
     },
     {
       id: "psobioteq-2020",
@@ -296,7 +296,7 @@ const page: SeoPage = {
       publisher: "Journal of the European Academy of Dermatology and Venereology (Masson Regnault M et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/31419355/",
       year: "2020",
-      note: "Non-US registry; patients who received a biologic for the first time between July 2012 and November 2017. Abstract text checked via PubMed on September 22, 2026. Quote: \"A total of 1267 patients were enrolled, of whom 993 (78.4%) were not eligible for at least one RCT (randomized controlled trial) and 251 (19.1%) did not meet the PASI/PGA severity requirements. Apart from disease severity, the most frequent criteria resulting in exclusion were as follows: non-plaque psoriasis (12.6%), significant cardiac disease (8.4%), significant liver disease (7.3%), elevated liver enzymes (4.9-9.6%) and personal history of diabetes (9.2%).\"",
+      note: "Non-US registry; patients who received a biologic for the first time between July 2012 and November 2017. Abstract text checked via PubMed on September 22, 2026; re-checked October 23, 2026. Quote: \"A total of 1267 patients were enrolled, of whom 993 (78.4%) were not eligible for at least one RCT (randomized controlled trial) and 251 (19.1%) did not meet the PASI/PGA severity requirements. Apart from disease severity, the most frequent criteria resulting in exclusion were as follows: non-plaque psoriasis (12.6%), significant cardiac disease (8.4%), significant liver disease (7.3%), elevated liver enzymes (4.9-9.6%) and personal history of diabetes (9.2%).\"",
     },
     {
       id: "fitzgerald-2022",
@@ -304,7 +304,7 @@ const page: SeoPage = {
       publisher: "Dermatology and Therapy (Fitzgerald T et al.)",
       url: "https://pubmed.ncbi.nlm.nih.gov/35212934/",
       year: "2022",
-      note: "US dermatology EHR data, July 2017 to March 2019. Abstract text checked via Europe PMC on September 22, 2026. Quote: \"Patients were required to have evidence of moderate-to-severe psoriasis, defined as Physician Global Assessment (PGA) score of 3 or 4, or body surface area (BSA) ≥ 10% on index date or within 12 months before index.\" \"About half of patients in each cohort had prior biologic use, of which adalimumab was most common (28.2-34.9%) across the cohorts.\"",
+      note: "US dermatology EHR data, July 2017 to March 2019. Abstract text checked via Europe PMC on September 22, 2026; re-checked October 23, 2026. Quote: \"Patients were required to have evidence of moderate-to-severe psoriasis, defined as Physician Global Assessment (PGA) score of 3 or 4, or body surface area (BSA) ≥ 10% on index date or within 12 months before index.\" \"About half of patients in each cohort had prior biologic use, of which adalimumab was most common (28.2-34.9%) across the cohorts.\"",
     },
     {
       id: "jcm-ad-biologics-2024",
@@ -360,7 +360,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/data-api/api",
       year: "2026",
-      note: "Queried September 21, 2026.",
+      note: "Queried October 23, 2026.",
     },
     {
       id: "bond-site",

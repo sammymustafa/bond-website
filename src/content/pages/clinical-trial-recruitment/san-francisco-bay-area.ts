@@ -16,9 +16,9 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruiting for clinical trials in the San Francisco Bay Area",
   intro:
-    "On October 5, 2026, a ClinicalTrials.gov radius search found 2,270 recruiting studies with at least one site within 40 miles of San Mateo, a circle that covers San Francisco, Oakland and San Jose. That is about 10.3% of the 22,007 studies recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites across the Bay Area: where the research hubs are, which EHRs hold the patients, who lives here, and which California rules shape AI-assisted outreach.",
+    "On October 23, 2026, a ClinicalTrials.gov radius search found 2,282 recruiting studies with at least one site within 40 miles of San Mateo, a circle that covers San Francisco, Oakland and San Jose. That is about 10.4% of the 22,038 studies recruiting in the United States that day.{{cite:ctgov-api}} This page is for research sites across the Bay Area: where the research hubs are, which EHRs hold the patients, who lives here, and which California rules shape AI-assisted outreach.",
   summary: "Bay Area recruiting-trial counts, research hubs, health systems and their EHRs, languages, and California outreach rules.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "All locations", secondaryHref: "/clinical-trial-recruitment" },
   sections: [
@@ -28,12 +28,12 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Oncology is the largest area, with 803 studies: 35.4% of the local total and 11.4% of the 7,064 recruiting oncology studies in the US. Cardiology follows with 320 studies and neurology with 113, each about 11% of the US total. The Bay Area's share is highest in dermatology (42 of 212) and lowest in obesity and type 2 diabetes (61 of 855).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
+          text: "Oncology is the largest area, with 813 studies: 35.6% of the local total and 11.5% of the 7,092 recruiting oncology studies in the US. Cardiology follows with 315 studies and neurology with 116, about 11% and 12% of their US totals. The Bay Area's share is highest in dermatology (40 of 206) and lowest in obesity and type 2 diabetes (63 of 848).{{cite:ctgov-api}} Compare [other states and regions](/clinical-trial-recruitment).",
         },
         { type: "trialCounts", geo: "san-francisco-bay-area", cite: "ctgov-api" },
         {
           type: "p",
-          text: "A radius count includes every recruiting study with at least one location inside the circle, so a study with sites at both UCSF and Stanford counts once. Area counts come from keyword searches, overlap, and can pull in off-target studies, and a count shows where sponsors placed studies, not which ones enroll on schedule. The examples below are obesity and type 2 diabetes studies from the same October 5, 2026 query.{{cite:ctgov-api}} See [obesity and metabolic](/obesity-and-metabolic).",
+          text: "A radius count includes every recruiting study with at least one location inside the circle, so a study with sites at both UCSF and Stanford counts once. Area counts come from keyword searches, overlap, and can pull in off-target studies, and a count shows where sponsors placed studies, not which ones enroll on schedule. The examples below are obesity and type 2 diabetes studies from the same October 23, 2026 query.{{cite:ctgov-api}} See [obesity and metabolic](/obesity-and-metabolic).",
         },
         { type: "trials", geo: "san-francisco-bay-area", condition: "obesity", cite: "ctgov-api" },
       ],
@@ -252,7 +252,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How many clinical trials are recruiting in the San Francisco Bay Area?",
-      a: "A ClinicalTrials.gov radius search on October 5, 2026 found 2,270 recruiting studies with a site within 40 miles of San Mateo, covering San Francisco, Oakland and San Jose; 803 of them matched an oncology keyword search.{{cite:ctgov-api}}",
+      a: "A ClinicalTrials.gov radius search on October 23, 2026 found 2,282 recruiting studies with a site within 40 miles of San Mateo, covering San Francisco, Oakland and San Jose; 813 of them matched an oncology keyword search.{{cite:ctgov-api}}",
     },
     {
       q: "Which EHR do most Bay Area health systems use?",
@@ -270,7 +270,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?filter.geo=distance(37.5630,-122.3255,40mi)&filter.overallStatus=RECRUITING&countTotal=true&pageSize=1",
       year: "2026",
-      note: "Radius search queried October 5, 2026: filter.geo distance(37.5630,-122.3255,40mi), overall status Recruiting; \"totalCount\": 2270. Area counts add a query.cond keyword search (oncology: cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia; obesity: obesity OR overweight OR type 2 diabetes) and returned oncology 803; cardiology 320; neurology 113; obesity and type 2 diabetes 61; dermatology 42. US totals from query.locn=United States the same day: all 22,007; oncology 7,064; cardiology 2,826; neurology 985; obesity 855; dermatology 212. Shares are Bond's arithmetic.",
+      note: "Radius search queried October 23, 2026: filter.geo distance(37.5630,-122.3255,40mi), overall status Recruiting; \"totalCount\": 2282. Area counts add a query.cond keyword search (oncology: cancer OR neoplasm OR carcinoma OR lymphoma OR leukemia; obesity: obesity OR overweight OR type 2 diabetes) and returned oncology 813; cardiology 315; neurology 116; obesity and type 2 diabetes 63; dermatology 40. US totals from query.locn=United States the same day: all 22,038; oncology 7,092; cardiology 2,827; neurology 1,000; obesity 848; dermatology 206. Shares are Bond's arithmetic.",
     },
     {
       id: "ctgov-locations",
@@ -278,7 +278,7 @@ const page: SeoPage = {
       publisher: "U.S. National Library of Medicine",
       url: "https://clinicaltrials.gov/api/v2/studies?filter.geo=distance(37.5630,-122.3255,40mi)&filter.overallStatus=RECRUITING&fields=NCTId,LocationFacility,LocationCity,LocationGeoPoint&pageSize=1000",
       year: "2026",
-      note: "Queried October 5, 2026; Bond listed the facility names on location records inside the radius. Facility names as they appear: \"Sutter Cancer Research Consortium\"; \"Palo Alto Medical Foundation Health Care\"; \"Sunwise Clinical Research\"; \"San Francisco Research Institute\"; \"Alethios, Inc.\"; \"Center For Dermatology Clinical Research, Inc.\"; \"Bay Area Tumor Institute\"; \"BASS Medical Group - Lennon\".",
+      note: "Queried October 5, 2026; re-queried October 23, 2026, when every name below still appeared. Bond listed the facility names on location records inside the radius. Facility names as they appear: \"Sutter Cancer Research Consortium\"; \"Palo Alto Medical Foundation Health Care\"; \"Sunwise Clinical Research\"; \"San Francisco Research Institute\"; \"Alethios, Inc.\"; \"Center For Dermatology Clinical Research, Inc.\"; \"Bay Area Tumor Institute\"; \"BASS Medical Group - Lennon\".",
     },
     {
       id: "nci-centers",

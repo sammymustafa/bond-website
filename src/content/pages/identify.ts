@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Identify is the first stage of Bond Health's recruitment workflow. Bond reads a site's EHR records, from structured fields to clinical notes, imaging data and other unstructured documents, against a study's inclusion and exclusion criteria, ranks the patients most likely to qualify, and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} Coordinators review a ranked, explained list instead of opening charts one at a time.",
   summary: "LLM-based EHR screening that ranks candidates and links every criterion decision to chart evidence.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -202,7 +202,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "As of September 2026, the HIPAA Privacy Rule's research provisions include two routes for reviewing records before patient contact: review [preparatory to research](/glossary/preparatory-to-research), where the researcher represents that no PHI will leave the covered entity during the review, and a [waiver of authorization](/glossary/waiver-of-authorization) approved by an IRB or privacy board.{{cite:hipaa-164-512}} Which route applies, and how it covers an outside vendor's processing, is for the site, its privacy office and its IRB to decide, not Bond. See [security](/security) and [IRB and HIPAA rules for patient outreach](/guides/irb-hipaa-patient-outreach).",
+          text: "As of October 2026, the HIPAA Privacy Rule's research provisions include two routes for reviewing records before patient contact: review [preparatory to research](/glossary/preparatory-to-research), where the researcher represents that no PHI will leave the covered entity during the review, and a [waiver of authorization](/glossary/waiver-of-authorization) approved by an IRB or privacy board.{{cite:hipaa-164-512}} Which route applies, and how it covers an outside vendor's processing, is for the site, its privacy office and its IRB to decide, not Bond. See [security](/security) and [IRB and HIPAA rules for patient outreach](/guides/irb-hipaa-patient-outreach).",
         },
       ],
     },
@@ -299,7 +299,7 @@ const page: SeoPage = {
       publisher: "JAMA (Unlu O et al.), full text via PubMed Central",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11833652/",
       year: "2025",
-      note: "Quote: \"The eligibility rate was 20.4% (458/2242 patients) for the AI-assisted screening method vs 12.7% (284/2234 patients)\" and \"there were 35 enrollments (1.6%) using the AI-assisted screening method compared with 19 enrollments (0.9%) using the manual screening method\". 4,476 patients randomized; enrollment subdistribution hazard ratio 1.79 (95% CI 1.02 to 3.15). Checked against the JAMA full text, September 2026.",
+      note: "Quote: \"The eligibility rate was 20.4% (458/2242 patients) for the AI-assisted screening method vs 12.7% (284/2234 patients)\" and \"there were 35 enrollments (1.6%) using the AI-assisted screening method compared with 19 enrollments (0.9%) using the manual screening method\". 4,476 patients randomized; enrollment subdistribution hazard ratio 1.79 (95% CI 1.02 to 3.15). Checked against the JAMA full text, September 2026; re-checked October 23, 2026.",
     },
     {
       id: "trialgpt-2024",
@@ -363,7 +363,7 @@ const page: SeoPage = {
       publisher: "Code of Federal Regulations, via Legal Information Institute (Cornell Law School)",
       url: "https://www.law.cornell.edu/cfr/text/45/164.512",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Reviews preparatory to research. The covered entity obtains from the researcher representations that ... No protected health information is to be removed from the covered entity by the researcher in the course of the review\". Waiver route: documentation that an alteration to or waiver of authorization \"has been approved by either\" an IRB or a privacy board.",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Reviews preparatory to research. The covered entity obtains from the researcher representations that ... No protected health information is to be removed from the covered entity by the researcher in the course of the review\". Waiver route: documentation that an alteration to or waiver of authorization \"has been approved by either\" an IRB or a privacy board.",
     },
   ],
   related: [

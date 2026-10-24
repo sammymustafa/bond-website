@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health finds eligible patients in the EHR, creates and runs Meta and Google ad campaigns, contacts every lead immediately, pre-screens patients and books visits, then hands each referral to the system your coordinators already use. At a RealTime site, referrals, recruitment status and outcomes move between Bond and RealTime-CTMS through RealTime's API or a file export, depending on what the site enables. Bond works alongside RealTime; it is not a RealTime partner.",
   summary: "How referrals, recruitment status and outcomes move between Bond and RealTime-CTMS, and what is not integrated.",
-  lastUpdated: "2026-10-06",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -39,7 +39,7 @@ const page: SeoPage = {
             { value: "3,000+", label: "Clinical research sites using RealTime, per RealTime (January 2024)", cite: "rt-growth-2024" },
             { value: "9 of top 10", label: "Site networks using RealTime solutions, per RealTime (November 2025)", cite: "rt-cro-2025" },
             { value: "3 of top 5", label: "CROs using RealTime solutions, per RealTime (November 2025)", cite: "rt-cro-2025" },
-            { value: "600,000+", label: "Patient visits supported per year, per RealTime's website (September 2026)", cite: "rt-home" },
+            { value: "600,000+", label: "Patient visits supported per year, per RealTime's website (October 2026)", cite: "rt-home" },
           ],
         },
       ],
@@ -278,7 +278,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/",
       year: "2026",
-      note: "Homepage stat block, accessed September 2026; re-checked October 6, 2026. Quote: \"600,000+ patient visits supported per year\"",
+      note: "Homepage stat block, accessed September 2026; re-checked October 6 and October 23, 2026. Quote: \"600,000+ patient visits supported per year\"",
     },
     {
       id: "rt-ctms",
@@ -286,7 +286,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/ctms/",
       year: "2026",
-      note: "Page rewritten by RealTime; re-read October 6, 2026. Quotes: \"RealTime CTMS brings the day-to-day work of clinical trial management into one purpose-built system\"; \"Every person your site has recruited, screened, or previously considered could be a match for a future study.\"; \"Query your patient database by medical history, diagnosis, medications, age, and geography to identify eligible subjects for new studies.\"; \"send mass text alerts via RealTime Text and automatically capture responses\"; \"Track referral sources and advertising campaign performance with built- in ROI reporting by vendor.\"; \"Submit visits against pre-built protocol templates with automated target date calculations and visit window enforcement.\"; Enterprise: \"View and report on study activity, recruitment performance, and financials across your entire network from one central dashboard.\"",
+      note: "Page rewritten by RealTime; re-read October 6, 2026; re-checked October 23, 2026. Quotes: \"RealTime CTMS brings the day-to-day work of clinical trial management into one purpose-built system\"; \"Every person your site has recruited, screened, or previously considered could be a match for a future study.\"; \"Query your patient database by medical history, diagnosis, medications, age, and geography to identify eligible subjects for new studies.\"; \"send mass text alerts via RealTime Text and automatically capture responses\"; \"Track referral sources and advertising campaign performance with built- in ROI reporting by vendor.\"; \"Submit visits against pre-built protocol templates with automated target date calculations and visit window enforcement.\"; Enterprise: \"View and report on study activity, recruitment performance, and financials across your entire network from one central dashboard.\"",
     },
     {
       id: "rt-api",
@@ -294,7 +294,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/api-integrations/",
       year: "2026",
-      note: "Accessed September 2026; re-checked October 6, 2026. Quotes: \"OData enabled RESTful API allows the creation and consumption of query-able and interoperable RESTful APIs in a simple and standard way\"; \"RealTime-CTMS integrates with SubjectWell’s study-specific advertising campaigns.\" Partners listed on the page: Devana, Mailchimp, Microsoft Outlook, SubjectWell, Twilio.",
+      note: "Accessed September 2026; re-checked October 6 and October 23, 2026. Quotes: \"OData enabled RESTful API allows the creation and consumption of query-able and interoperable RESTful APIs in a simple and standard way\"; \"RealTime-CTMS integrates with SubjectWell’s study-specific advertising campaigns.\" Partners listed on the page: Devana, Mailchimp, Microsoft Outlook, SubjectWell, Twilio.",
     },
     {
       id: "rt-ctms-blog",
@@ -310,7 +310,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/text/",
       year: "2026",
-      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"Recruitment-related text messages are sent via short code in the US [...]\"",
+      note: "Accessed September 2026; re-checked October 6 and October 23, 2026. Quote: \"Recruitment-related text messages are sent via short code in the US [...]\"",
     },
     {
       id: "rt-engage",
@@ -318,7 +318,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/engage/",
       year: "2026",
-      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"Speed up recruiting with remote consenting that can be managed via desktop or mobile app with 'Sign on the Line.'\"",
+      note: "Accessed September 2026; re-checked October 6 and October 23, 2026. Quote: \"Speed up recruiting with remote consenting that can be managed via desktop or mobile app with 'Sign on the Line.'\"",
     },
     {
       id: "rt-ereg",
@@ -326,7 +326,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/ereg-eisf/",
       year: "2026",
-      note: "Vendor's own description of its product, accessed September 2026; re-checked October 6, 2026.",
+      note: "Vendor's own description of its product, accessed September 2026; re-checked October 6 and October 23, 2026.",
     },
     {
       id: "rt-esource",
@@ -334,7 +334,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/esource/",
       year: "2026",
-      note: "Vendor's own description of its product, accessed September 2026; re-checked October 6, 2026.",
+      note: "Vendor's own description of its product, accessed September 2026; re-checked October 6 and October 23, 2026.",
     },
     {
       id: "rt-sitepay",
@@ -342,7 +342,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/solutions/sitepay/",
       year: "2026",
-      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"Request funds and confirm account balances from within your CTMS.\"",
+      note: "Accessed September 2026; re-checked October 6 and October 23, 2026. Quote: \"Request funds and confirm account balances from within your CTMS.\"",
     },
     {
       id: "rt-services",
@@ -350,7 +350,7 @@ const page: SeoPage = {
       publisher: "RealTime eClinical Solutions",
       url: "https://realtime-eclinical.com/professional-services/",
       year: "2026",
-      note: "Accessed September 2026; re-checked October 6, 2026. Quote: \"For unique integration needs, we provide custom API development and configuration, allowing new software to communicate effectively with your existing systems.\"",
+      note: "Accessed September 2026; re-checked October 6 and October 23, 2026. Quote: \"For unique integration needs, we provide custom API development and configuration, allowing new software to communicate effectively with your existing systems and enhancing both functionality and user experience.\"",
     },
     {
       id: "rt-awards-2025",

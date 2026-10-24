@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Manual chart review is slow, and its quality depends on habits that rarely get written down. This checklist writes them down: how to map each criterion before the first chart, where to look for each kind of evidence, how to record a decision someone else can check, and what goes in the pre-screening log. Copy it, edit it, and hand it to the next coordinator you train.",
   summary: "A manual pre-screening checklist with criteria mapping, EHR data sources, rationale notes, log fields, time tracking and escalation.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -324,7 +324,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "The IRB decides whether chart review is an approved way to find participants for this study. HIPAA sets the basis on which the site may use the records, and how much of them. The rules below are summarized as of September 2026; your IRB and privacy office have the final word.",
+          text: "The IRB decides whether chart review is an approved way to find participants for this study. HIPAA sets the basis on which the site may use the records, and how much of them. The rules below are summarized as of October 2026; your IRB and privacy office have the final word.",
         },
         {
           type: "p",
@@ -371,7 +371,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "As of September 2026, Bond's website reports that it cuts coordinator chart review by 50 percent or more, and that full EHR integration takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} The checklist still matters with software: the criteria mapping, escalation rules and log fields are what a site should check any screening tool against. The [manual chart review comparison](/compare/bond-vs-manual-chart-review) sets the two approaches side by side, and the rest of our [templates](/templates) cover the steps before and after chart review.",
+          text: "As of October 2026, Bond's website reports that it cuts coordinator chart review by 50 percent or more, and that full EHR integration takes 48 hours, depending on the EHR, IT review and interface method.{{cite:bond-site}} The checklist still matters with software: the criteria mapping, escalation rules and log fields are what a site should check any screening tool against. The [manual chart review comparison](/compare/bond-vs-manual-chart-review) sets the two approaches side by side, and the rest of our [templates](/templates) cover the steps before and after chart review.",
         },
         {
           type: "cta",
@@ -490,7 +490,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register)",
       url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
       year: "2026",
-      note: "Text current as of September 2026.",
+      note: "Text current as of September 2026; re-checked October 23, 2026.",
     },
     {
       id: "hipaa-164-502",
@@ -498,7 +498,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register)",
       url: "https://www.ecfr.gov/current/title-45/section-164.502",
       year: "2026",
-      note: "Text current as of September 2026: \"a covered entity or business associate must make reasonable efforts to limit protected health information to the minimum necessary to accomplish the intended purpose of the use, disclosure, or request.\"",
+      note: "Text current as of September 2026 (re-checked October 23, 2026): \"a covered entity or business associate must make reasonable efforts to limit protected health information to the minimum necessary to accomplish the intended purpose of the use, disclosure, or request.\"",
     },
     {
       id: "common-rule-116",
@@ -506,7 +506,7 @@ const page: SeoPage = {
       publisher: "eCFR (Office of the Federal Register)",
       url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.116",
       year: "2018",
-      note: "2018 Requirements; text current as of September 2026.",
+      note: "2018 Requirements; text current as of September 2026; re-checked October 23, 2026.",
     },
     {
       id: "nimh-toolbox",

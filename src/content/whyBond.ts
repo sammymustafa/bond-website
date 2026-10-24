@@ -55,7 +55,7 @@ export const WHY_BOND_STATS = [
 const COMPARISON_TABLE_PATH = "/compare/clinical-trial-recruitment-software";
 
 const ONLY_VENDOR =
-  "As of September 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}";
+  "As of October 2026, Bond is the only vendor in our [comparison table](/compare/clinical-trial-recruitment-software) whose public materials describe software that both reads EHR notes against a protocol and runs its own Meta and Google ad campaigns, then contacts patients by voice and text all the way to a booked study visit. Every ad lead is contacted immediately and followed up until they respond and are booked.{{cite:bond-product}}";
 
 export const WHY_BOND_SOURCES: Source[] = [
   {

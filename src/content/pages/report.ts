@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "This Bond Health report brings together what ClinicalTrials.gov and published research say about clinical trial enrollment in 2026. Every figure is tied to a named, dated source, and older benchmarks carry their year.",
   summary: "Registry counts by state and area, plus sourced data on enrollment, sites, screen failure, workload, consent and representation.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   showLastUpdated: true,
   heroCta: {
     label: "Download the PDF",
@@ -272,7 +272,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The federal diversity requirement has not taken effect yet. The Food and Drug Omnibus Reform Act of 2022 requires Diversity Action Plans for Phase 3 and other pivotal drug studies and certain device studies, but only for studies that begin enrolling 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of September 2026, FDA's guidance page still lists the June 2024 document as a draft.{{cite:fda-dap-guidance}}",
+          text: "The federal diversity requirement has not taken effect yet. The Food and Drug Omnibus Reform Act of 2022 requires Diversity Action Plans for Phase 3 and other pivotal drug studies and certain device studies, but only for studies that begin enrolling 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of October 2026, FDA's guidance page still lists the June 2024 document as a draft.{{cite:fda-dap-guidance}}",
         },
       ],
     },
@@ -390,7 +390,7 @@ const page: SeoPage = {
       publisher: "Therapeutic Innovation & Regulatory Science (Getz K, Smith Z, Kravet M), via PubMed Central",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9373886/",
       year: "2022",
-      note: "Full text checked via Europe PMC, September 2026. Quotes: \"In all, 187 protocols were analyzed.\" \"The convenience sampling frame included only those protocols that had received final protocol approval between January 2013 and December 2018\". Randomization rate: \"the ratio of the number of patients enrolled to the total number screened\". Table 6, Phase III means: \"Randomization Rate (Enrolled/Screened)\" 70.7%; \"Total Eligibility Criteria\" 30.4.",
+      note: "Full text checked via Europe PMC, September 2026; re-checked October 23, 2026. Quotes: \"In all, 187 protocols were analyzed.\" \"The convenience sampling frame included only those protocols that had received final protocol approval between January 2013 and December 2018\". Randomization rate: \"the ratio of the number of patients enrolled to the total number screened\". Phase III means: Table 6, \"Randomization Rate (Enrolled/Screened)\" 70.7%; Table 2, \"Total Eligibility Criteria\" 30.4.",
     },
     {
       id: "outtier-2023",
@@ -398,7 +398,7 @@ const page: SeoPage = {
       publisher: "Inflammatory Bowel Diseases (Outtier A, Gijbels L, Noman M, et al.), via PubMed",
       url: "https://pubmed.ncbi.nlm.nih.gov/36350998/",
       year: "2023",
-      note: "Abstract checked via Europe PMC, September 22, 2026. University Hospitals Leuven, Belgium; sponsored multicenter phase 1-3 induction studies, screenings from January 2008 to March 2021. Quotes: \"During the study period, 642 local screenings were performed as part of 53 studies. We identified an overall SF rate of 17.1%, compared with 39.2% in the global study population (P < .00001).\" \"Approximately one-fourth of SFs could have been avoided by prescreening that was more thorough.\"",
+      note: "Abstract checked via Europe PMC, September 22, 2026; re-checked October 23, 2026. University Hospitals Leuven, Belgium; sponsored multicenter phase 1-3 induction studies, screenings from January 2008 to March 2021. Quotes: \"During the study period, 642 local screenings were performed as part of 53 studies. We identified an overall SF rate of 17.1%, compared with 39.2% in the global study population (P < .00001).\" \"Approximately one-fourth of SFs could have been avoided by prescreening that was more thorough.\"",
     },
     {
       id: "tufts-impact",
@@ -438,7 +438,7 @@ const page: SeoPage = {
       publisher: "Bulletin of the World Health Organization (Tam NT et al.)",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4371493/",
       year: "2015",
-      note: "Abstract checked via Europe PMC, September 2026. Quotes: \"The analysis included 103 studies evaluating 135 cohorts of participants.\" and \"53.3% for placebo and 52.1% for randomization\".",
+      note: "Abstract checked via Europe PMC, September 2026; re-checked October 23, 2026. Quotes: \"The analysis included 103 studies evaluating 135 cohorts of participants.\" and \"53.3% for placebo and 52.1% for randomization\".",
     },
     {
       id: "advarra-2025",
@@ -494,7 +494,7 @@ const page: SeoPage = {
       publisher: "US Food and Drug Administration",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
       year: "2024",
-      note: "Page checked September 22, 2026; issue date June 2024. Quotes: \"Draft - Not for implementation. Contains non-binding recommendations.\" and \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\"",
+      note: "Page checked September 22, 2026; re-checked October 23, 2026; issue date June 2024. Quotes: \"Draft - Not for implementation. Contains non-binding recommendations.\" and \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\"",
     },
     {
       id: "bond-site",

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health connects via the ONC-certified FHIR R4 APIs that eClinicalWorks offers its customers, screens a practice's patients against a study's criteria, and hands pre-screened patients to your coordinators. Below: the data involved, what your administrator turns on, the timeline, and what is not integrated today.",
   summary: "The FHIR resources, practice activation steps, timeline and notes handling for connecting Bond at an eClinicalWorks practice or health center.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -52,7 +52,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "eClinicalWorks holds ONC certification for the standardized API for patient and population services, § 170.315(g)(10).{{cite:ecw-cert}} As of September 2026, its production FHIR server runs version 4.0.1, declares the US Core server and Bulk Data capability statements, and lists 36 resource types. All of them are read and search only, except QuestionnaireResponse, which also accepts create.{{cite:ecw-fhir-metadata}}",
+          text: "eClinicalWorks holds ONC certification for the standardized API for patient and population services, § 170.315(g)(10).{{cite:ecw-cert}} As of October 2026, its production FHIR server runs version 4.0.1, declares the US Core server and Bulk Data capability statements, and lists 38 resource types. All of them are read and search only, except QuestionnaireResponse, which also accepts create.{{cite:ecw-fhir-metadata}}",
         },
         {
           type: "table",
@@ -70,7 +70,7 @@ const page: SeoPage = {
             ["Clinical notes", "DocumentReference and Binary", "Progress notes and other documents. The main source for unstructured criteria."],
             ["Visits", "Encounter", "Visit history. No Appointment resource is listed, so upcoming appointments are not available here."],
           ],
-          note: "Resources and profiles from the live eClinicalWorks CapabilityStatement, retrieved September 2026.{{cite:ecw-fhir-metadata}} What a given practice's build returns is checked when Bond connects in test.",
+          note: "Resources and profiles from the live eClinicalWorks CapabilityStatement, retrieved October 2026.{{cite:ecw-fhir-metadata}} What a given practice's build returns is checked when Bond connects in test.",
         },
       ],
     },
@@ -138,7 +138,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The first screen runs across the agreed population. As of September 2026, a third-party API directory reports a limit of 250 calls per minute per practice code, which makes chart-by-chart queries across a large panel slow.{{cite:cobalt-ecw}} A Bulk Data export fetches the population as one job, which is why the population is agreed early.",
+          text: "The first screen runs across the agreed population. As of October 2026, a third-party API directory reports a limit of 250 calls per minute per practice code, which makes chart-by-chart queries across a large panel slow.{{cite:cobalt-ecw}} A Bulk Data export fetches the population as one job, which is why the population is agreed early.",
         },
       ],
     },
@@ -218,7 +218,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Does eClinicalWorks charge for FHIR API access?",
-      a: "As of September 2026, eClinicalWorks says its certified FHIR APIs are free to customers and third-party developers \"at this time\", with at least 30 days' notice before any fee.{{cite:ecw-cert}} Bond charges no integration fee; its integration work is covered by its volume-based fee per screened patient. See [pricing](/pricing).{{cite:bond-site}}",
+      a: "As of October 2026, eClinicalWorks says its certified FHIR APIs are free to customers and third-party developers \"at this time\", with at least 30 days' notice before any fee.{{cite:ecw-cert}} Bond charges no integration fee; its integration work is covered by its volume-based fee per screened patient. See [pricing](/pricing).{{cite:bond-site}}",
     },
     {
       q: "We are a health center with a small IT team. What does this ask of us?",
@@ -290,7 +290,7 @@ const page: SeoPage = {
       publisher: "eClinicalWorks",
       url: "https://www.eclinicalworks.com/about-us/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"eClinicalWorks was founded in 1999 with a simple goal\". Also: \"Privately held, eClinicalWorks answers to customers, not shareholders.\" And: \"ambulatory practices, urgent care facilities, health centers, hospitals, and more than 50 specialties\" and \"along with tools for Patient Engagement, Population Health, and Revenue Cycle Management.\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"eClinicalWorks was founded in 1999 with a simple goal\". Also: \"Privately held, eClinicalWorks answers to customers, not shareholders.\" And: \"ambulatory practices, urgent care facilities, health centers, hospitals, and more than 50 specialties\" and \"along with tools for Patient Engagement, Population Health, and Revenue Cycle Management.\"",
     },
     {
       id: "ecw-fhir-metadata",
@@ -298,7 +298,7 @@ const page: SeoPage = {
       publisher: "eClinicalWorks",
       url: "https://fhir4.healow.com/fhir/r4/DJDIBD/metadata",
       year: "2026",
-      note: "Retrieved September 2026. Quote: \"fhirVersion\": \"4.0.1\" with instantiates bulk-data and us-core-server CapabilityStatements. Lists 36 resource types; each supports read or search only, except QuestionnaireResponse, which also supports create. No Appointment resource. Security: \"OAuth2 using SMART-on-FHIR profile\". Group and system-level $export declared.",
+      note: "Retrieved September 2026, when it listed 36 resource types. Re-checked October 23, 2026 (software \"eCW FHIR Facade\" version 1.6). Quote: \"fhirVersion\": \"4.0.1\" with instantiates bulk-data and us-core-server CapabilityStatements. Now lists 38 resource types; each supports read or search only, except QuestionnaireResponse, which also supports create. No Appointment resource. Security: \"OAuth2 using SMART-on-FHIR profile\". Group and system-level $export declared.",
     },
     {
       id: "ecw-cert",
@@ -306,7 +306,7 @@ const page: SeoPage = {
       publisher: "eClinicalWorks",
       url: "https://www.eclinicalworks.com/resources/certified-ehr-technology/",
       year: "2026",
-      note: "Quote: \"Certified FHIR APIs are available to third-party application developers and eClinicalWorks customers at no cost at this time.\" Also: \"Customers can learn more and enable FHIR APIs through the On-Demand Activation feature in the eClinicalWorks application.\" And: \"eClinicalWorks will notify customers of any future API licensing or usage fees at least 30 days in advance of such fees taking effect.\"",
+      note: "Re-checked October 23, 2026. Quote: \"Certified FHIR APIs are available to third-party application developers and eClinicalWorks customers at no cost at this time.\" Also: \"Customers can learn more and enable FHIR APIs through the On-Demand Activation feature in the eClinicalWorks application.\" And: \"eClinicalWorks will notify customers of any future API licensing or usage fees at least 30 days in advance of such fees taking effect.\"",
     },
     {
       id: "ecw-interop",
@@ -330,7 +330,7 @@ const page: SeoPage = {
       publisher: "Cobalt",
       url: "https://explorer.usecobalt.com/ehr/eclinicalworks",
       year: "2026",
-      note: "Third-party summary of eClinicalWorks developer documentation; eClinicalWorks' own developer portal could not be reached to confirm it. Quote: \"250 calls/min per practice code\". Also: \"Each practice must individually activate FHIR APIs via On-Demand Activation\" and \"All write APIs require a separate contract\".",
+      note: "Third-party summary of eClinicalWorks developer documentation; eClinicalWorks' own developer portal could not be reached to confirm it. Re-checked October 23, 2026 (page says \"Data last updated: 2026-02-11\"). Quote: \"250 calls/min per practice code\". Also: \"Each practice must individually activate FHIR APIs via On-Demand Activation\" and \"All write APIs require a separate contract\".",
     },
     {
       id: "ecw-disease-explorer",
@@ -338,7 +338,7 @@ const page: SeoPage = {
       publisher: "eClinicalWorks",
       url: "https://www.eclinicalworks.com/products-services/population-health/disease-explorer/",
       year: "2026",
-      note: "Accessed September 2026. Quote: \"Organize patients by demographic data, medical condition, severity, or non-compliance with specific health measures or recommendations\". Also: \"Target and hone your outreach and intervention efforts to get the right message to the right patients\"",
+      note: "Accessed September 2026; re-checked October 23, 2026. Quote: \"Organize patients by demographic data, medical condition, severity, or non-compliance with specific health measures or recommendations\". Also: \"Target and hone your outreach and intervention efforts to get the right message to the right patients\"",
     },
     {
       id: "ecw-sunoh",

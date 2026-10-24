@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "Community health centers serve many of the patients that clinical trials enroll least, yet only about a quarter of centers reported using EHR data for research in 2025.{{cite:hrsa-uds-ehr-2025}} Bond Health finds eligible patients in your EHR, contacts them and supports the consent conversation, so a small research team can offer studies to more of its patients.",
   summary: "How Bond helps FQHCs and community sites find eligible patients, contact them and book them for visits with a small research team.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -37,7 +37,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The Food and Drug Omnibus Reform Act of 2022 (FDORA) requires sponsors to submit a [Diversity Action Plan](/glossary/diversity-action-plan) for Phase 3 and other pivotal studies of drugs and certain devices that start enrolling more than 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of September 2026 that guidance is still a June 2024 draft, restored to FDA's website under a court order.{{cite:fda-dap-guidance}} Sponsors have filed plans voluntarily: FDA's drug center received 124 in fiscal 2023 and 161 in fiscal 2024.{{cite:fda-dap-report}}",
+          text: "The Food and Drug Omnibus Reform Act of 2022 (FDORA) requires sponsors to submit a [Diversity Action Plan](/glossary/diversity-action-plan) for Phase 3 and other pivotal studies of drugs and certain devices that start enrolling more than 180 days after FDA publishes final guidance.{{cite:fda-dap-report}} As of October 2026 that guidance is still a June 2024 draft, restored to FDA's website under a court order.{{cite:fda-dap-guidance}} Sponsors have filed plans voluntarily: FDA's drug center received 124 in fiscal 2023 and 161 in fiscal 2024.{{cite:fda-dap-report}}",
         },
       ],
     },
@@ -76,7 +76,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "eClinicalWorks said in March 2024 that it was the EHR vendor for more than 800 health centers, roughly 60% of the national total.{{cite:ecw-uds-approval}} As of September 2026, NextGen Healthcare says on its FQHC software page that more than 300 community health centers choose it.{{cite:nextgen-fqhc}} OCHIN offers OCHIN Epic to community health organizations; in January 2026 it reported a network of more than 43,000 providers caring for nearly 8 million people.{{cite:ochin-2026}} athenahealth launched athenaOne for Community Health Centers in May 2025.{{cite:athena-chc-2025}} A center affiliated with a health system may instead use that system's Epic through Epic's Community Connect model.{{cite:hctec-community-connect}} Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
+          text: "eClinicalWorks said in March 2024 that it was the EHR vendor for more than 800 health centers, roughly 60% of the national total.{{cite:ecw-uds-approval}} As of October 2026, NextGen Healthcare says on its FQHC software page that more than 300 community health centers choose it.{{cite:nextgen-fqhc}} OCHIN offers OCHIN Epic to community health organizations; in January 2026 it reported a network of more than 43,000 providers caring for nearly 8 million people.{{cite:ochin-2026}} athenahealth launched athenaOne for Community Health Centers in May 2025.{{cite:athena-chc-2025}} A center affiliated with a health system may instead use that system's Epic through Epic's Community Connect model.{{cite:hctec-community-connect}} Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR.{{cite:bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
         },
         {
           type: "table",
@@ -283,7 +283,7 @@ const page: SeoPage = {
       publisher: "Health Resources and Services Administration (HRSA)",
       url: "https://data.hrsa.gov/topics/healthcenters/uds/overview/national",
       year: "2026",
-      note: "Data table, read September 22, 2026. Race, ethnicity and income percentages are of patients with known values. Quote: \"Total Patients Served: 32,746,392\"; \"Total Number of Reporting Program Awardees: 1,356\"; \"% Racial and/or Ethnic Minority Patients: 63.70%\"; \"% Hispanic, Latino/a, or Spanish Origin Patients: 39.26%\"; \"% Black or African American Patients: 20.63%\"; \"Limited English Proficiency: 26.97%\"; \"% None/Uninsured Patients: 17.21%\".",
+      note: "Data table, read September 22, 2026; re-checked October 23, 2026. Race, ethnicity and income percentages are of patients with known values. Quote: \"Total Patients Served: 32,746,392\"; \"Total Number of Reporting Program Awardees: 1,356\"; \"% Racial and/or Ethnic Minority Patients: 63.70%\"; \"% Hispanic, Latino/a, or Spanish Origin Patients: 39.26%\"; \"% Black or African American Patients: 20.63%\"; \"Limited English Proficiency: 26.97%\"; \"% None/Uninsured Patients: 17.21%\".",
     },
     {
       id: "hrsa-uds-ehr-2025",
@@ -291,7 +291,7 @@ const page: SeoPage = {
       publisher: "Health Resources and Services Administration (HRSA)",
       url: "https://data.hrsa.gov/topics/healthcenters/uds/overview/national/table?tableName=EHR&year=2025",
       year: "2026",
-      note: "Data table, read September 22, 2026. Quote: \"How does your health center utilize health IT and EHR data beyond direct patient care? (Select all that apply.)\" ... \"a. Quality improvement (e.g., outreach, health education): 1,340 | 98.82%\" ... \"d. Research: 364 | 26.84%\". Also: \"Do you use more than one EHR, data collection, and/or data analytics system across your organization?: 582 | 43.11%\" and \"Total Health Centers reported (Sum 1a + 1b +1c): 1,356\".",
+      note: "Data table, read September 22, 2026; re-checked October 23, 2026. Quote: \"How does your health center utilize health IT and EHR data beyond direct patient care? (Select all that apply.)\" ... \"a. Quality improvement (e.g., outreach, health education): 1,340 | 98.82%\" ... \"d. Research: 364 | 26.84%\". Also: \"Do you use more than one EHR, data collection, and/or data analytics system across your organization?: 582 | 43.11%\" and \"Total Health Centers reported (Sum 1a + 1b +1c): 1,356\".",
     },
     {
       id: "fda-snapshots-2020",
@@ -299,7 +299,7 @@ const page: SeoPage = {
       publisher: "US Food and Drug Administration, Center for Drug Evaluation and Research",
       url: "https://www.fda.gov/media/145718/download",
       year: "2021",
-      note: "Participants enrolled worldwide; checked September 22, 2026. Quote: \"In 2020, CDER approved 53 novel drugs ... Overall, 32,000 patients participated in these trials.\" Table 1 (percent participation, row labeled \"AVERAGE\"): White 75%, Black or African American 8%, Asian 6%, Hispanic 11%, United States 54%.",
+      note: "Participants enrolled worldwide; checked September 22, 2026; re-checked October 23, 2026. Quote: \"In 2020, CDER approved 53 novel drugs ... Overall, 32,000 patients participated in these trials.\" Table 1 (percent participation, row labeled \"AVERAGE\"): White 75%, Black or African American 8%, Asian 6%, Hispanic 11%, United States 54%.",
     },
     {
       id: "hints-2021",
@@ -331,7 +331,7 @@ const page: SeoPage = {
       publisher: "US Food and Drug Administration",
       url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
       year: "2024",
-      note: "Checked September 22, 2026: status Draft, issued June 2024. Quote: \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\" Also: \"Not for implementation. Contains non-binding recommendations.\"",
+      note: "Checked September 22, 2026; re-checked October 23, 2026: status Draft, issued June 2024. Quote: \"Per a court order, HHS is required to restore this website to its version as of 12:00 AM on January 29, 2025.\" Also: \"Not for implementation. Contains non-binding recommendations.\"",
     },
     {
       id: "browne-2024",
@@ -379,7 +379,7 @@ const page: SeoPage = {
       publisher: "NextGen Healthcare",
       url: "https://www.nextgen.com/markets/specialties/fqhc",
       year: "2026",
-      note: "Vendor-reported figure, undated page read September 22, 2026. Quote: \"Learn why more than 300 community health centers choose NextGen Healthcare to power their care delivery.\"",
+      note: "Vendor-reported figure, undated page read September 22, 2026; re-checked October 23, 2026. Quote: \"Learn why more than 300 community health centers choose NextGen Healthcare to power their care delivery.\"",
     },
     {
       id: "ochin-2026",
@@ -395,7 +395,7 @@ const page: SeoPage = {
       publisher: "HIT Consultant (May 19, 2025)",
       url: "https://hitconsultant.net/2025/05/19/athenahealth-launches-athenaone-for-community-health-centers/",
       year: "2025",
-      note: "Trade press report of a vendor announcement, read September 22, 2026. Quote: \"a provider of network-enabled software and services for healthcare practices and systems nationwide launches athenaOne® for Community Health Centers.\"",
+      note: "Trade press report of a vendor announcement, read September 22, 2026; re-checked October 23, 2026. Quote: \"a provider of network-enabled software and services for healthcare practices and systems nationwide launches athenaOne® for Community Health Centers.\"",
     },
     {
       id: "hctec-community-connect",
@@ -403,7 +403,7 @@ const page: SeoPage = {
       publisher: "HCTec",
       url: "https://hctec.com/resource-center/strengthening-health-systems-with-epic-community-connect/",
       year: "2026",
-      note: "Undated page, read September 22, 2026. Quote: \"Epic's Community Connect model is gaining momentum as health systems seek to extend their electronic health record (EHR) platforms to affiliated clinics, hospitals, and physician groups.\"",
+      note: "Undated page, read September 22, 2026; re-checked October 23, 2026. Quote: \"Epic's Community Connect model is gaining momentum as health systems seek to extend their electronic health record (EHR) platforms to affiliated clinics, hospitals, and physician groups.\"",
     },
     {
       id: "ecw-cert",
