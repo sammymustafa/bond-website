@@ -12,6 +12,7 @@ const page: SeoPage = {
     "clinical research phone screening script",
     "IRB recruitment script template",
     "research recruitment voicemail script",
+    "HIPAA compliant voicemail script",
   ],
   eyebrow: "Template",
   h1: "Pre-screening call script template for research sites",
@@ -273,7 +274,7 @@ const page: SeoPage = {
             { speaker: "Note", text: "Record the answer. If the patient says yes, mark the record so no one calls or texts again about this study." },
           ],
         },
-        { type: "h3", text: "Voicemail" },
+        { type: "h3", text: "HIPAA-compliant voicemail" },
         {
           type: "script",
           lines: [

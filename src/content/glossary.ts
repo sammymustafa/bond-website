@@ -1507,6 +1507,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "unstructured-clinical-data",
     term: "Unstructured clinical data",
+    title: "Unstructured data in healthcare: definition and examples",
     short:
       "Clinical information recorded as free text, images or scanned documents rather than coded fields, such as progress notes, pathology reports and imaging reads.",
     body: [
@@ -1517,6 +1518,21 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "For trial eligibility, the deciding evidence is often in that text: cancer stage and biomarker results in a pathology report, ejection fraction in an echo report, prior therapies and the reasons they stopped in clinic notes. Screening that reads only diagnosis codes and structured labs will miss eligible patients and pass along ineligible ones.",
+      },
+      {
+        type: "table",
+        caption: "Examples of unstructured data in healthcare",
+        columns: ["Document", "What it is", "Eligibility evidence it can hold"],
+        rows: [
+          ["Progress and clinic notes", "Free-text notes from each visit", "Symptom history, prior therapies and why they stopped, adverse reactions"],
+          ["Consult letters and referral notes", "A specialist's assessment, written to the referring clinician", "Confirmed diagnosis, disease severity, the specialist's treatment plan"],
+          ["Pathology reports", "The pathologist's narrative on a tissue or cytology sample", "Tumor type, stage and grade, biomarker or receptor status"],
+          ["Radiology and imaging reports", "The radiologist's read of a scan", "Measurable disease, progression, organ involvement"],
+          ["Echocardiogram and other test reports", "Narrative interpretations of diagnostic tests", "Ejection fraction, valve findings, conduction abnormalities"],
+          ["Discharge summaries", "The narrative of a hospital stay", "Recent hospitalizations and events that may exclude a patient, such as a recent stroke"],
+          ["Scanned outside records", "Faxes and PDFs from other providers, often stored as images", "Treatment and test results from outside the health system"],
+        ],
+        note: "Structured data, by contrast, sits in coded fields: diagnosis codes, lab values, medication orders, vital signs and demographics.",
       },
       {
         type: "p",
@@ -1544,7 +1560,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "EHR phenotyping", href: "/glossary/ehr-phenotyping" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-25",
   },
   {
     slug: "waiver-of-authorization",
