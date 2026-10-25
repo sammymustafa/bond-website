@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/for/site-networks",
   category: "audience",
-  title: "Recruitment technology for clinical trial site networks",
+  title: "Speed up clinical trial enrollment across your site network",
   description:
     "How site networks use Bond Health to screen charts, contact patients and book visits the same way at every site, and report one funnel across them.",
   keywords: [
@@ -14,9 +14,9 @@ const page: SeoPage = {
     "feasibility from EHR data",
   ],
   eyebrow: "For site networks",
-  h1: "One recruitment standard across every site in your network",
+  h1: "Speed up enrollment across every site in your network",
   intro:
-    "A site network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
+    "A site network speeds up enrollment when every site screens its EHR and contacts patients the same way, and when the network can see one enrollment funnel across all of them. A network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
   summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
   lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },

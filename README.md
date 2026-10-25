@@ -63,6 +63,7 @@ do, keeps its own.
 | `npm run validate` | Enforce the content rules (below); CI runs this |
 | `npm run gen:docx` | Regenerate the Word downloads for template pages into `public/downloads/`; run it after editing a template page |
 | `npm run gen:report-pdf` | Print `/report` to `public/downloads/state-of-trial-enrollment-2026.pdf` (run `npm run build` first; needs Google Chrome) |
+| `npm run indexnow -- /path …` | Tell Bing and other IndexNow engines which live URLs changed, after a deploy (`--sitemap` sends every URL, `--dry-run` only lists them); the key file is `public/7deee7c933c9b7e8524da75ede32aefb.txt` |
 
 Rules the validator enforces: every section heading is a question; every block
 that states a number carries a `{{cite:source-id}}` that resolves to the page's

@@ -5,7 +5,7 @@ import { deep6Sources } from "./_deep6-sources";
 const page: SeoPage = {
   path: "/compare/clinical-trial-recruitment-software",
   category: "comparison",
-  title: "Best clinical trial recruitment software & solutions in 2026",
+  title: "Best clinical trial patient recruitment software & solutions 2026",
   description:
     "The best clinical trial recruitment software, solutions and companies for sites, CROs and sponsors: EHR screening, AI outreach, ads and CTMS tools, compared.",
   keywords: [
@@ -20,9 +20,9 @@ const page: SeoPage = {
     "patient recruitment software for CROs",
   ],
   eyebrow: "Comparison",
-  h1: "Clinical trial recruitment software and solutions, vendor by vendor",
+  h1: "Clinical trial patient recruitment software and solutions, vendor by vendor",
   intro:
-    "Recruitment vendors do different jobs: some read the EHR, some call or text leads, some buy media, and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026 and re-checked in October 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform takes EHR matches and ad leads all the way to a booked study visit.{{cite:bond-site,bond-product}}",
+    "The best clinical trial patient recruitment software in 2026 depends on the job you need done, since some tools read the EHR, some call or text leads, some buy media and some run the site's CTMS or eConsent. This page groups the tools a site, CRO or sponsor is likely to shortlist by what each one does, and cites the vendor's own materials or reputable press for every row, accessed in September 2026 and re-checked in October 2026. Our verdict: for a site whose patients are in its own EHR, Bond is the strongest choice, with one workflow from chart or ad click to a booked study visit, chart evidence behind every match, no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also creates and runs Meta and Google ad campaigns for studies that need patients beyond the site's records, contacts every ad lead immediately and follows up until they respond, so one platform takes EHR matches and ad leads all the way to a booked study visit.{{cite:bond-site,bond-product}}",
   summary: "Recruitment vendors in two sourced tables, and what each kind of tool leaves to your team.",
   lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },

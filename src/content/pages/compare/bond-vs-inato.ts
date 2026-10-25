@@ -5,7 +5,7 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-inato",
   category: "comparison",
-  title: "Bond Health vs Inato: why Bond is better for sites",
+  title: "Inato alternatives for research sites: Bond Health vs Inato",
   description:
     "Why Bond is better than Inato: Bond screens your EHR, runs Meta and Google ads, contacts every lead immediately and books pre-screened patients for visits.",
   keywords: [
@@ -16,9 +16,9 @@ const page: SeoPage = {
     "voice and SMS pre-screening for clinical trials",
   ],
   eyebrow: "Comparison",
-  h1: "Bond Health vs Inato",
+  h1: "Bond Health vs Inato: an Inato alternative for research sites",
   intro:
-    "Inato runs an AI-powered platform that brings trial sponsors and research sites together for early planning and site selection, and it offers sites AI patient pre-screening that reviews patient records against a trial's inclusion and exclusion criteria.{{cite:inato-home-2026,inato-ehr-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to carry each eligible patient from the chart to a booked visit and consent, Bond is the stronger choice.",
+    "Inato runs an AI-powered platform that brings trial sponsors and research sites together for early planning and site selection, and it offers sites AI patient pre-screening that reviews patient records against a trial's inclusion and exclusion criteria.{{cite:inato-home-2026,inato-ehr-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to carry each eligible patient from the chart to a booked visit and consent, Bond is the stronger choice. For bringing more studies to your site, see our guide to [winning more studies](/guides/win-more-studies).",
   summary:
     "Why Bond is better than Inato: EHR screening plus its own ad campaigns and voice and text outreach through to a booked visit, with part of the price tied to randomization.",
   lastUpdated: "2026-10-23",

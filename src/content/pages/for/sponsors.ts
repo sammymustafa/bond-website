@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/for/sponsors",
   category: "audience",
-  title: "Enrollment acceleration technology for trial sponsors",
+  title: "How sponsors speed up clinical trial enrollment at their sites",
   description:
     "What enrollment delay costs a sponsor, why selected sites enroll unevenly, and how Bond screens EHRs, contacts patients and reports one funnel across sites.",
   keywords: [
@@ -14,9 +14,9 @@ const page: SeoPage = {
     "Diversity Action Plan enrollment",
   ],
   eyebrow: "For sponsors",
-  h1: "First-patient-in to last-patient-in, with every site's funnel in view",
+  h1: "Speed up enrollment at the sites you've selected",
   intro:
-    "A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
+    "Sponsors speed up enrollment at their sites by helping each site find eligible patients in its own EHR and contact them quickly, then tracking one enrollment funnel across every site. A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
   summary: "What a delay day costs, why sites enroll unevenly, and how Bond reports one enrollment funnel across a sponsor's sites.",
   lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },

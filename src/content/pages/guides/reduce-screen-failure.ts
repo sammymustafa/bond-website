@@ -13,9 +13,9 @@ const page: SeoPage = {
     "pre-screening to reduce screen failures",
   ],
   eyebrow: "Guide",
-  h1: "How to reduce screen failure at your site",
+  h1: "How research sites can reduce screen failure rates",
   intro:
-    "Every screen failure uses coordinator hours, a visit slot and often procedures the study budget may not fully cover. This guide covers the benchmarks worth comparing against, the causes a site can predict, and a pre-screening routine that catches more of them before the consent visit.",
+    "Research sites reduce screen failure rates by catching ineligible patients before the screening visit, with a chart check against every criterion and a pre-screening call for what the chart cannot show. Every screen failure uses coordinator hours, a visit slot and often procedures the study budget may not fully cover. This guide covers the benchmarks worth comparing against, the causes a site can predict, and a pre-screening routine that catches more of them before the consent visit.",
   summary: "Benchmarks by therapeutic area, root causes, and a pre-screening routine that cuts avoidable screen failures.",
   lastUpdated: "2026-10-05",
   heroCta: {

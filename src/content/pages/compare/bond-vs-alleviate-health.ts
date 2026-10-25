@@ -7,7 +7,7 @@ const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm
 const page: SeoPage = {
   path: "/compare/bond-vs-alleviate-health",
   category: "comparison",
-  title: "Bond Health vs Alleviate Health: why Bond is better",
+  title: "Alleviate Health alternatives: Bond Health vs Alleviate Health",
   description:
     "Why Bond is better than Alleviate Health: Bond finds eligible patients in your EHR, runs Meta and Google ads, contacts every lead and books study visits.",
   keywords: [
