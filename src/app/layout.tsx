@@ -96,6 +96,8 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://bondtrials.com/#organization",
       name: "Bond Health",
+      legalName: "Bond Health, Inc.",
+      alternateName: ["Bond Trials", "bondtrials"],
       url: "https://bondtrials.com",
       logo: {
         "@type": "ImageObject",
@@ -123,6 +125,8 @@ const jsonLd = {
       ],
       sameAs: [
         "https://www.linkedin.com/company/bondtrials/",
+        "https://www.crunchbase.com/organization/bond-health-50ad",
+        "https://pitchbook.com/profiles/company/1168948-63",
         "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj",
       ],
       contactPoint: {
@@ -136,6 +140,7 @@ const jsonLd = {
       "@id": "https://bondtrials.com/#website",
       url: "https://bondtrials.com",
       name: "Bond Health",
+      alternateName: ["Bond Trials", "bondtrials.com"],
       description: "AI-Powered Clinical Trial Patient Recruitment",
       publisher: {
         "@id": "https://bondtrials.com/#organization",
