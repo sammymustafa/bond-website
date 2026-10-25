@@ -134,7 +134,7 @@ export default function Hero() {
 
             {/* Single clear value prop - consolidated */}
             <p className="text-lg sm:text-xl text-gray-600 mb-8 animate-fade-up stagger-2 pr-4 leading-relaxed sm:leading-7">
-              Automate <span className="text-gray-900 font-medium">EHR screening</span>, <span className="text-gray-900 font-medium">Meta and Google ads</span>, and <span className="text-gray-900 font-medium">instant outreach and follow-up</span>, all the way to a <span className="text-gray-900 font-medium">booked study visit</span>.
+              Bond Health is <span className="text-gray-900 font-medium">AI patient recruitment software</span> for clinical trials: it finds eligible patients in your <span className="text-gray-900 font-medium">EHR</span> and through <span className="text-gray-900 font-medium">Meta and Google ads</span>, then calls and texts each one through to a <span className="text-gray-900 font-medium">booked study visit</span>.
             </p>
 
             {/* CTAs - More prominent */}

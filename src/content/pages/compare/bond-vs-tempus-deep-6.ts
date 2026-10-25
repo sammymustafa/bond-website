@@ -5,7 +5,7 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-tempus-deep-6",
   category: "comparison",
-  title: "Bond Health vs Deep 6 AI (Tempus): why Bond is better",
+  title: "Deep 6 AI (Tempus) alternatives for clinical trial matching",
   description:
     "Why Bond is better than Deep 6 AI and Tempus trial matching: Bond reads your EHR, runs ads, contacts every lead and books study visits in one product.",
   keywords: [
@@ -18,7 +18,7 @@ const page: SeoPage = {
     "EHR clinical trial matching software",
   ],
   eyebrow: "Comparison",
-  h1: "Bond Health vs Tempus (Deep 6 AI)",
+  h1: "Bond Health vs Tempus (Deep 6 AI) for clinical trial matching",
   intro:
     "Bond Health is better than Tempus's Deep 6 AI for sites running their own studies because it does what Deep 6 AI does, finding eligible patients in the EHR, including clinical notes, and then contacts, pre-screens and schedules them by voice and text and supports informed consent, in one product.{{cite:bond-site,tempus-deep6-acquisition}} Tempus acquired Deep 6 AI on March 11, 2025, and also offers its TIME oncology trial network and Next Trials pre-screening for trials already open at a practice.{{cite:tempus-10k-2025,tempus-time-site-2026,tempus-next-trials-2026}}",
   summary: "How Bond compares with Tempus's Deep 6 AI, TIME and Next Trials, from EHR matching to outreach, booked visits and pricing.",

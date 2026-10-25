@@ -5,7 +5,7 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-manual-chart-review",
   category: "comparison",
-  title: "Bond vs manual chart review: trial pre-screening time, cost",
+  title: "AI pre-screening vs manual chart review for clinical trials",
   description:
     "How Bond compares with manual chart review for trial pre-screening: 10,000+ charts per hour, evidence for every criterion and 50%+ less chart review.",
   keywords: [
@@ -17,9 +17,9 @@ const page: SeoPage = {
     "EHR screening for clinical trials",
   ],
   eyebrow: "Comparison",
-  h1: "Bond Health vs manual chart review",
+  h1: "An alternative to manual chart review for trial recruitment",
   intro:
-    "Manual pre-screening means coordinators, research nurses or clinicians reading each chart against a study's criteria.{{cite:parikh-2026,penberthy-2012}} Bond Health reads the site's EHR, including clinical notes, against each study's criteria, ranks the matches with the chart evidence behind them, then contacts, pre-screens and schedules patients by voice and text and supports informed consent.{{cite:bond-site}} For any site with more charts than coordinator hours, that makes Bond the stronger choice: coordinators keep the final eligibility call and review the cited evidence instead of reading every chart.",
+    "The usual alternative to manual chart review for clinical trial recruitment is AI pre-screening of the EHR, where software reads structured data and clinical notes against the study's criteria and a coordinator confirms each match. Manual pre-screening means coordinators, research nurses or clinicians reading each chart against a study's criteria.{{cite:parikh-2026,penberthy-2012}} Bond Health reads the site's EHR, including clinical notes, against each study's criteria, ranks the matches with the chart evidence behind them, then contacts, pre-screens and schedules patients by voice and text and supports informed consent.{{cite:bond-site}} For any site with more charts than coordinator hours, that makes Bond the stronger choice: coordinators keep the final eligibility call and review the cited evidence instead of reading every chart.",
   summary: "Why sites move trial pre-screening from manual chart review to Bond: coverage, evidence for every criterion, coordinator time and cost.",
   lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },

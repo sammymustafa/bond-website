@@ -3,7 +3,7 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/book",
   category: "product",
-  title: "Book: trial screening visits booked onto your calendar",
+  title: "Clinical trial visit scheduling by AI voice and SMS agents",
   description:
     "Bond pre-screens every lead and books screening visits straight into your site's calendar, with reminders by text, voice or email and support after enrollment.",
   keywords: [
@@ -13,9 +13,9 @@ const page: SeoPage = {
     "reduce screening visit no-shows",
   ],
   eyebrow: "Book",
-  h1: "Book: pre-screened patients booked straight into your calendar",
+  h1: "AI scheduling for pre-screened trial patients, by phone and text",
   intro:
-    "Book is the stage where a lead becomes a booked study visit. Once a patient passes the pre-screening questions, Bond's voice and SMS agents book the screening visit straight into the site's calendar, often in the same call, then send reminders by text, voice or email so the patient shows up.{{cite:bond-site,bond-product}} After enrollment, the same agents keep supporting participants with visit reminders, transportation booking and check-ins.{{cite:bond-product}}",
+    "Bond's AI voice and SMS agents schedule clinical trial screening visits by phone and text: once a patient passes the pre-screening questions, the agents book the visit straight into the site's calendar, often in the same call, then send reminders by text, voice or email so the patient shows up.{{cite:bond-site,bond-product}} After enrollment, the same agents keep supporting participants with visit reminders, transportation booking and check-ins.{{cite:bond-product}}",
   summary:
     "Pre-screened patients booked straight into the site's calendar, with reminders by text, voice or email and support after enrollment.",
   lastUpdated: "2026-10-05",

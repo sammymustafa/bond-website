@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/for/research-sites",
   category: "audience",
-  title: "Patient recruitment for clinical research sites",
+  title: "AI clinical trial recruitment tools for research sites",
   description:
     "How research sites find eligible patients in their own EHR, pre-screen them by phone and text, and book them for visits with Bond, plus metrics, setup and pricing.",
   keywords: [
@@ -13,9 +13,9 @@ const page: SeoPage = {
     "EHR pre-screening for research sites",
   ],
   eyebrow: "For research sites",
-  h1: "Enroll from the patients you already have",
+  h1: "AI patient recruitment for clinical research sites",
   intro:
-    "Site enrollment depends on finding eligible patients in your own records and reaching them without using up staff time. This page covers where that breaks down, what Bond Health changes day to day, what gets reported, and what setup and pricing involve.",
+    "Bond Health is AI patient recruitment software for research sites: it finds eligible patients in your own EHR, pre-screens them by phone and text, and books them for screening visits.{{cite:bond-site,bond-product}} Site enrollment depends on finding eligible patients in your own records and reaching them without using up staff time. This page covers where that breaks down, what Bond Health changes day to day, what gets reported, and what setup and pricing involve.",
   summary: "How Bond fits an independent or hospital-based research site: problems, workflow, metrics, setup and pricing.",
   lastUpdated: "2026-10-05",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },

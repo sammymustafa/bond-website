@@ -3,7 +3,7 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/engage",
   category: "product",
-  title: "Engage: AI voice agents for trial pre-screening, outreach and ads",
+  title: "AI voice agents that pre-screen clinical trial patients by phone",
   description:
     "AI voice and SMS agents that call and text every lead immediately, pre-screen them, follow up until they respond and book visits, plus Meta and Google trial ads.",
   keywords: [
@@ -17,9 +17,9 @@ const page: SeoPage = {
     "TCPA AI voice calls healthcare",
   ],
   eyebrow: "Engage",
-  h1: "Meta and Google ads, instant outreach and follow-up, all the way to a booked visit",
+  h1: "AI voice and SMS agents that pre-screen trial patients by phone and text",
   intro:
-    "Engage is the outreach stage of Bond Health. Bond creates and runs Meta and Google ad campaigns for each study, and its voice and SMS agents contact every new ad lead immediately and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
+    "Bond Health's AI voice and SMS agents pre-screen every new lead by phone or text as soon as it arrives and book eligible patients straight into the site's calendar.{{cite:bond-site,bond-product}} Engage is that outreach stage: Bond also creates and runs Meta and Google ad campaigns for each study, and the agents keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
   summary:
     "Meta and Google ad campaigns plus voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
   lastUpdated: "2026-10-23",

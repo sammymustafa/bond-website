@@ -18,9 +18,9 @@ const page: SeoPage = {
     "ISO 27001 clinical trial recruitment vendor",
   ],
   eyebrow: "Security",
-  h1: "Security and compliance: how Bond handles PHI",
+  h1: "HIPAA-compliant AI for contacting clinical trial patients",
   intro:
-    "Bond Health reads patient records, calls and texts patients, and helps explain consent forms, so it handles protected health information at every step. Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product,bond-iso-27001}} This page covers where that PHI goes, the controls around it and the evidence your security reviewer can request.",
+    "Bond Health is AI that reads patient records, calls and texts patients about clinical trials, and helps explain consent forms, so it handles protected health information at every step and works under a business associate agreement (BAA) with each site or health system. Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product,bond-iso-27001}} This page covers where that PHI goes, the controls around it and the evidence your security reviewer can request.",
   summary: "Where PHI goes in a Bond deployment, the controls around it, and the evidence your security reviewer can request.",
   lastUpdated: "2026-10-23",
   heroCta: {

@@ -19,7 +19,7 @@ const page: SeoPage = {
   eyebrow: "Guide",
   h1: "How much does clinical trial recruitment software cost?",
   intro:
-    "Most patient recruitment platforms do not publish prices. Of those that do, some are free to sites because sponsors pay, OpenClinica Recruit averages $1,000 to $3,000 a month per study, and Salesforce lists its recruitment add-on at $10,000 per organization per year for each 100 referred patients.{{cite:inato-free-2024,openclinica-recruit,salesforce-pre}} Published research puts recruitment at a median of $409 per recruited patient across 30 trials, and Tufts CSDD's 2019 data put late-stage recruitment budgets at $2,273 per patient.{{cite:speich-2018,tufts-acrp-2020}} The number that decides what a study really pays is cost per randomized patient, including staff time.",
+    "Most clinical trial patient recruitment software does not publish prices. Of those that do, some are free to sites because sponsors pay, OpenClinica Recruit averages $1,000 to $3,000 a month per study, and Salesforce lists its recruitment add-on at $10,000 per organization per year for each 100 referred patients.{{cite:inato-free-2024,openclinica-recruit,salesforce-pre}} Published research puts recruitment at a median of $409 per recruited patient across 30 trials, and Tufts CSDD's 2019 data put late-stage recruitment budgets at $2,273 per patient.{{cite:speich-2018,tufts-acrp-2020}} The number that decides what a study really pays is cost per randomized patient, including staff time.",
   summary: "Pricing models, published prices, cost per patient from published studies, and the costs recruitment software quotes leave out.",
   lastUpdated: "2026-10-23",
   heroCta: {

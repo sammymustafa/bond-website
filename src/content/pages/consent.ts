@@ -14,7 +14,7 @@ const page: SeoPage = {
     "clinical trial consent software",
   ],
   eyebrow: "Product: Consent",
-  h1: "Consent support that leaves the investigator in charge",
+  h1: "AI informed consent support for research sites",
   intro:
     "Bond Health's consent support helps patients understand the consent form the study's IRB already approved. It explains the form in plain language, answers questions, checks understanding of key points and hands anything it should not answer to study staff. The investigator or delegated site staff still obtain consent, on paper or through eConsent, and the form itself does not change.",
   summary: "How Bond explains the approved consent form, answers patient questions and escalates to staff while the site obtains consent.",

@@ -7,7 +7,7 @@ const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm
 const page: SeoPage = {
   path: "/compare/bond-vs-trially",
   category: "comparison",
-  title: "Bond Health vs Trially: why Bond is better",
+  title: "Trially alternatives for research sites: Bond Health vs Trially",
   description:
     "Why Bond is better than Trially: Bond screens EHR notes, runs its own Meta and Google ads and takes every patient to a booked visit, with no integration fee.",
   keywords: [
@@ -18,7 +18,7 @@ const page: SeoPage = {
     "EHR patient matching software",
   ],
   eyebrow: "Comparison",
-  h1: "Bond Health vs Trially",
+  h1: "Bond Health vs Trially: a Trially alternative for research sites",
   intro:
     "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a percentage of each patient's randomization milestone payment.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart or ad click to a booked study visit, with consent support after that, Bond is the stronger choice.",
   summary:

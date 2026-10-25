@@ -11,6 +11,7 @@
     "gen:registry": "node scripts/gen-registry.mjs",
     "gen:docx": "tsx scripts/gen-docx.ts",
     "gen:report-pdf": "bash scripts/gen-report-pdf.sh",
+    "indexnow": "node scripts/indexnow.mjs",
     "geo:check": "node --import tsx scripts/geo/check-setup.ts",
     "geo:queries": "node --import tsx scripts/geo/classify-queries.ts",
     "geo:citations": "node --import tsx scripts/geo/ai-citations.ts",

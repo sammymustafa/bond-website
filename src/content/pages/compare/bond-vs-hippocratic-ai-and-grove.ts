@@ -5,7 +5,7 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-hippocratic-ai-and-grove",
   category: "comparison",
-  title: "Bond Health vs Hippocratic AI & Grove AI: why Bond is better",
+  title: "Hippocratic AI and Grove AI alternatives: Bond Health compared",
   description:
     "Why Bond is better than Hippocratic AI and Grove AI: it finds eligible patients in your own EHR, runs ads, contacts every lead and books study visits.",
   keywords: [

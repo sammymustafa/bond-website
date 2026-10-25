@@ -5,7 +5,7 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-media-recruitment",
   category: "comparison",
-  title: "Bond Health vs Antidote and 1nHealth: why Bond is better",
+  title: "Antidote and 1nHealth alternatives: Bond Health compared",
   description:
     "Why Bond is better than media recruiters like Antidote and 1nHealth: Bond creates the ads, contacts every lead immediately, follows up and books visits.",
   keywords: [
