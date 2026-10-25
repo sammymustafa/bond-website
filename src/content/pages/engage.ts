@@ -3,10 +3,11 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/engage",
   category: "product",
-  title: "Engage: trial ads, instant AI outreach and visit booking",
+  title: "Engage: AI voice agents for trial pre-screening, outreach and ads",
   description:
-    "Bond creates Meta and Google ads for your studies, calls and texts every lead immediately, follows up until they respond and books them for visits.",
+    "AI voice and SMS agents that call and text every lead immediately, pre-screen them, follow up until they respond and book visits, plus Meta and Google trial ads.",
   keywords: [
+    "AI voice agents for clinical trial screening",
     "clinical trial recruitment ads",
     "Meta and Google ads for clinical trials",
     "clinical trial lead follow-up",

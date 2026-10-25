@@ -1195,6 +1195,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "screen-failure-rate",
     term: "Screen failure rate",
+    title: "Screen failure in clinical trials: definition and rate formula",
     short:
       "The share of patients who sign consent and start screening but do not qualify for randomization, usually because a protocol criterion is not met.",
     body: [
@@ -1209,6 +1210,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: many failures are knowable from the chart before the patient comes in, such as an excluded medication, an old lab outside the window or a documented comorbidity. Screening the full record first, including notes, is the job of [Identify](/identify); see the [guide to reducing screen failure](/guides/reduce-screen-failure).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is a screen failure in a clinical trial?",
+        a: "A potential participant who does not meet the eligibility (inclusion or exclusion) criteria during the screening period, as ICH and CDISC define it.{{cite:ncit-screen-failure}} The patient has consented and started screening; someone ruled out at pre-screening, before consent, is not a screen failure.",
+      },
+      {
+        q: "How do you calculate the screen failure rate?",
+        a: "Divide the number of screen failures by the number of patients screened, then multiply by 100 for a percentage. Count everyone who started screening in the denominator, and use the same date range for both numbers. ICH and CDISC define a screen failure as a potential participant who does not meet the eligibility criteria during the screening period.{{cite:ncit-screen-failure}}",
+      },
+      {
+        q: "What is a typical screen failure rate?",
+        a: "It depends on the protocol. In the SYMPLICITY HTN-3 resistant hypertension trial, 62% of patients screened did not meet criteria for randomization.{{cite:htn3}} In an audit of 15 randomized oncology studies at a cancer center in India, 51% of screened patients failed screening.{{cite:tata-audit}}",
       },
     ],
     sources: [
@@ -1242,7 +1257,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How to reduce screen failure at your site", href: "/guides/reduce-screen-failure" },
       { label: "Screening", href: "/glossary/screening" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-25",
   },
   {
     slug: "screening",
