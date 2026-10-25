@@ -234,6 +234,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Participant retention guide", href: "/guides/participant-retention", description: "Why participants leave and the retention steps with evidence behind them." },
     { label: "Engage: outreach, booking and reminders", href: "/engage", description: "How Bond supports participants before and after enrollment." },
     { label: "Bond for sponsors", href: "/for/sponsors", description: "Recruitment and retention support across sites." },
     { label: "Bond for CROs", href: "/for/cros", description: "Keeping enrollment and retention on plan across a study." },

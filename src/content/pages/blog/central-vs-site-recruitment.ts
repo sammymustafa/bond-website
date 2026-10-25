@@ -250,7 +250,7 @@ const page: SeoPage = {
     { label: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment", description: "Paying for leads versus paying for outcomes." },
     { label: "Bond for sponsors", href: "/for/sponsors", description: "How sponsors use Bond across their sites." },
     { label: "Bond for site networks", href: "/for/site-networks", description: "Running recruitment across several sites." },
-    { label: "Engage: ads, voice and text outreach", href: "/engage", description: "How Bond runs study ads and contacts every lead immediately." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs study ads and contacts every lead immediately." },
   ],
 };
 

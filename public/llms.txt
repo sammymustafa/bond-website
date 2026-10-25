@@ -104,7 +104,8 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 
 ## Product pages
 - Identify (LLM-based EHR screening): https://bondtrials.com/identify
-- Engage (Meta and Google ad campaigns, immediate outreach and follow-up to every lead, voice and SMS/text pre-screening and scheduling): https://bondtrials.com/engage
+- Trial ads (Meta and Google ad campaigns Bond creates and runs, with every lead called and texted immediately and followed up): https://bondtrials.com/clinical-trial-ads
+- Engage (AI voice and SMS/text agents: immediate outreach and follow-up to every lead, pre-screening and scheduling): https://bondtrials.com/engage
 - Book (pre-screened patients booked straight into the site's calendar, with reminders): https://bondtrials.com/book
 - Consent (AI-powered informed consent support): https://bondtrials.com/consent
 - Implementation (live in 48 hours, step by step): https://bondtrials.com/implementation
@@ -116,6 +117,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 ## Comparisons
 - All comparisons: https://bondtrials.com/compare
 - Clinical trial recruitment software, one table: https://bondtrials.com/compare/clinical-trial-recruitment-software
+- Patient recruitment companies for sponsors and CROs: https://bondtrials.com/compare/patient-recruitment-companies
 
 ## Solutions
 - By audience (research sites, site networks, physician groups, FQHCs and community sites, CROs, sponsors): https://bondtrials.com/for
@@ -124,6 +126,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 
 ## Resources
 - Guides: https://bondtrials.com/guides
+- Participant retention guide: https://bondtrials.com/guides/participant-retention
 - Templates and downloads: https://bondtrials.com/templates
 - Glossary: https://bondtrials.com/glossary
 - FAQ: https://bondtrials.com/faq

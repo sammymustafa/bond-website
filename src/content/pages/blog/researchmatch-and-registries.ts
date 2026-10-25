@@ -285,7 +285,7 @@ const page: SeoPage = {
   related: [
     { label: "Bond for research sites", href: "/for/research-sites", description: "How Bond fits a site's recruitment workflow and staff." },
     { label: "Using the EHR for recruitment", href: "/guides/ehr-for-recruitment", description: "Finding candidates among a site's own patients." },
-    { label: "Engage: ads, outreach and booking", href: "/engage", description: "How Bond runs study ads and follows up with every lead." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs study ads and follows up with every lead." },
     { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "A template for the phone pre-screen after a registry lead." },
   ],
 };

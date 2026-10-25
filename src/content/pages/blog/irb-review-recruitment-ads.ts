@@ -244,7 +244,7 @@ const page: SeoPage = {
     { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach", description: "Draft paragraphs that describe AI outreach in an IRB application." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Who may contact patients, under which HIPAA path, with what IRB approval." },
     { label: "IRB", href: "/glossary/irb", description: "What an institutional review board does and when it reviews recruitment." },
-    { label: "Engage: ads, voice and text outreach", href: "/engage", description: "How Bond runs ad campaigns and discloses AI use to patients." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs ad campaigns and discloses AI use to patients." },
   ],
 };
 

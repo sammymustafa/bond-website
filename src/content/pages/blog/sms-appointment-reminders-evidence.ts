@@ -225,6 +225,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Participant retention guide", href: "/guides/participant-retention", description: "Why participants leave and the retention steps with evidence behind them." },
     { label: "Patient outreach text message templates", href: "/templates/patient-outreach-sms-templates", description: "Booking, reminder and missed-visit texts ready for IRB review." },
     { label: "TCPA rules for AI calls and patient texts", href: "/blog/tcpa-ai-outreach-2026", description: "Consent, opt-outs and the healthcare exemption in 2026." },
     { label: "Engage: outreach, booking and reminders", href: "/engage", description: "How Bond contacts, books and reminds patients." },

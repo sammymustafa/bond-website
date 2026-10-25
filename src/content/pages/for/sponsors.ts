@@ -325,6 +325,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Patient recruitment companies, compared", href: "/compare/patient-recruitment-companies", description: "Services firms and EHR platforms a sponsor is likely to shortlist, in two sourced tables." },
     { label: "Bond for CROs", href: "/for/cros", description: "Screening, outreach and one enrollment funnel across a CRO's site portfolio." },
     { label: "Implementation", href: "/implementation", description: "What full EHR integration involves in 48 hours, and what a site provides." },
     { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each patient's randomization milestone payment." },

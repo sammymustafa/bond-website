@@ -5,11 +5,9 @@ const page: SeoPage = {
   category: "product",
   title: "AI voice agents that pre-screen clinical trial patients by phone",
   description:
-    "AI voice and SMS agents that call and text every lead immediately, pre-screen them, follow up until they respond and book visits, plus Meta and Google trial ads.",
+    "AI voice and SMS agents that call and text every lead immediately, pre-screen them on the site's script, follow up until they respond and book screening visits.",
   keywords: [
     "AI voice agents for clinical trial screening",
-    "clinical trial recruitment ads",
-    "Meta and Google ads for clinical trials",
     "clinical trial lead follow-up",
     "AI voice agent clinical trial pre-screening",
     "SMS patient outreach clinical trials",
@@ -19,9 +17,9 @@ const page: SeoPage = {
   eyebrow: "Engage",
   h1: "AI voice and SMS agents that pre-screen trial patients by phone and text",
   intro:
-    "Bond Health's AI voice and SMS agents pre-screen every new lead by phone or text as soon as it arrives and book eligible patients straight into the site's calendar.{{cite:bond-site,bond-product}} Engage is that outreach stage: Bond also creates and runs Meta and Google ad campaigns for each study, and the agents keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
+    "Bond Health's AI voice and SMS agents pre-screen every new lead by phone or text as soon as it arrives and book eligible patients straight into the site's calendar.{{cite:bond-site,bond-product}} Engage is that outreach stage: the agents contact every lead from Bond's [Meta and Google ad campaigns](/clinical-trial-ads) and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
   summary:
-    "Meta and Google ad campaigns plus voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
+    "Voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
   lastUpdated: "2026-10-23",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -31,7 +29,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Engage works two sources of patients: leads from the Meta and Google ad campaigns Bond creates for the study, contacted immediately, and patients who look eligible in the site's records. With full EHR integration, that second list comes from [Identify](/identify), ranked and shown with the chart evidence behind each match. For a pilot without EHR integration, the site can supply the list itself, for example in a Google Sheet. Bond's agents then work through the list by phone and text.{{cite:bond-site}}",
+          text: "Engage works two sources of patients: leads from the [Meta and Google ad campaigns](/clinical-trial-ads) Bond creates for the study, contacted immediately, and patients who look eligible in the site's records. With full EHR integration, that second list comes from [Identify](/identify), ranked and shown with the chart evidence behind each match. For a pilot without EHR integration, the site can supply the list itself, for example in a Google Sheet. Bond's agents then work through the list by phone and text.{{cite:bond-site}}",
         },
         {
           type: "steps",
@@ -62,20 +60,11 @@ const page: SeoPage = {
     },
     {
       id: "ads",
-      heading: "Can Bond bring in new patients with Meta and Google ads?",
+      heading: "Where do ad leads come from?",
       blocks: [
         {
           type: "p",
-          text: "Yes. Bond creates and runs Meta and Google ad campaigns for your studies. Its voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients Bond finds in your EHR, so every lead gets the same script, the same AI disclosure and the same handoff to your coordinators.{{cite:bond-product}}",
-        },
-        {
-          type: "ul",
-          items: [
-            "**Every ad lead contacted immediately, and followed up.** Leads are called and texted as soon as they respond to an ad, while their interest is highest, and the agents keep following up with every lead who has not answered, so fewer leads go cold and more patients get booked for screening visits.{{cite:bond-product}}",
-            "**One workflow for every source.** EHR matches, ad leads and lists the site already has go through the same pre-screening and scheduling, then on to [Consent](/consent) support.{{cite:bond-site,bond-product}}",
-            "**Chart first, ads to fill the gap.** Patients the site already treats come with a chart that [Identify](/identify) checks against the protocol before anyone is contacted. Ads reach people the site has not seen, and the agents pre-screen them before a visit is booked.{{cite:bond-product}}",
-            "**IRB review first.** Like any recruitment material, ad copy and landing pages need IRB review before they run. FDA's guidance on recruiting study subjects treats advertising as the start of informed consent.{{cite:fda-recruiting}}",
-          ],
+          text: "From the Meta and Google ad campaigns Bond creates and runs for each study. The agents contact every new ad lead immediately and keep following up until the lead responds, with the same script, AI disclosure and coordinator handoff as patients from the site's own records.{{cite:bond-product}} The [trial ads page](/clinical-trial-ads) covers the campaigns, what Meta and Google allow, and IRB review.",
         },
       ],
     },
@@ -290,10 +279,6 @@ const page: SeoPage = {
   ],
   faq: [
     {
-      q: "Where can we buy AI patient recruitment advertising for a clinical trial?",
-      a: "From Bond Health. Bond creates and runs Meta and Google ad campaigns for each study, and its AI voice and SMS agents contact every new ad lead immediately, keep following up with every lead who has not responded, pre-screen them and book qualified patients for visits.{{cite:bond-product}} Ad spend comes out of the site's own advertising budget for the study, and ad copy needs IRB review before it runs, like any recruitment material.{{cite:bond-product}}",
-    },
-    {
       q: "Do patients know they are talking to an AI?",
       a: "Yes. Patients are told that AI assistance is being used, and they can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
     },
@@ -468,6 +453,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Trial ads on Meta and Google", href: "/clinical-trial-ads", description: "The ad campaigns Bond creates and runs, and the leads Engage works from them." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Where the match list that Engage works from comes from." },
     { label: "Consent: AI-powered informed consent support", href: "/consent", description: "What happens after the screening visit is booked." },
     { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "A starting script to adapt and submit to your IRB." },

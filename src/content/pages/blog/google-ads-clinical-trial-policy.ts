@@ -249,7 +249,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Engage: ads, voice and text outreach", href: "/engage", description: "How Bond runs ad campaigns and works every lead to a booked visit." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs ad campaigns and works every lead to a booked visit." },
     { label: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment", description: "Ad-driven recruitment compared with Bond's approach." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Who may contact patients and under which approvals." },
     { label: "Pricing", href: "/pricing", description: "Per screened patient plus a share of randomization milestones; ad spend is separate." },
