@@ -82,7 +82,7 @@ const page: SeoPage = {
             },
             {
               title: "Feasibility questionnaire",
-              text: "The site completes the sponsor's survey, sent as an attachment or online form.{{cite:urmc-2026}} In an ASCO task force survey of 113 oncology practices, each questionnaire took 4 hours on average.{{cite:asco-aaci-2020}}",
+              text: "The site completes the sponsor's survey, sent as an attachment or online form.{{cite:urmc-2026}} A [site feasibility questionnaire template](/templates/feasibility-questionnaire) lets the site keep its standing answers in one file. In an ASCO task force survey of 113 oncology practices, each questionnaire took 4 hours on average.{{cite:asco-aaci-2020}}",
             },
             {
               title: "Site qualification visit",
