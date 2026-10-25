@@ -11,6 +11,7 @@ import {
   audienceLinks,
   compareLinks,
   demoHref,
+  preferredSourceHref,
   productLinks,
   resourceLinks,
   trustCenterHref,
@@ -33,6 +34,7 @@ const columns = [
     links: [
       ...resourceLinks,
       { name: "Trust Center", href: trustCenterHref },
+      { name: "Preferred source on Google", href: preferredSourceHref },
     ],
   },
   {

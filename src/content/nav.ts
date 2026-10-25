@@ -129,3 +129,5 @@ export const calComHref = "https://bond-health.cal.com/rishabh-goel/bond-health-
 // Every "Book a demo" button and link opens the Cal.com scheduler directly.
 export const demoHref = calComHref;
 export const trustCenterHref = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj";
+// Google's deep link for adding the site as a preferred source (Top Stories, AI Overviews, AI Mode).
+export const preferredSourceHref = "https://www.google.com/preferences/source?q=bondtrials.com";

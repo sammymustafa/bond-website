@@ -320,6 +320,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "enrollment-rate",
     term: "Enrollment rate",
+    title: "Clinical trial enrollment rate: definition and formula",
     short:
       "How fast a trial or site enrolls participants, usually expressed as patients enrolled per site per month and compared with the rate the plan assumed.",
     body: [
@@ -334,6 +335,16 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: track the rate by stage, not only the final count. Patients identified, contacted, pre-screened, consented and randomized each month show whether the constraint is finding patients, reaching them or converting them. Bond's dashboard reports each of those stages, and [Engage](/engage) adds outreach capacity when reaching patients is the bottleneck.",
+      },
+    ],
+    faq: [
+      {
+        q: "How do you calculate the enrollment rate in a clinical trial?",
+        a: "Divide the number of participants enrolled by the total site-months: the sum, across sites, of the months each site has been open to enrollment. Counting each site from its own activation date keeps late-starting sites from dragging the rate down. For comparison, the CREST-2 stroke prevention trial reported a recruitment rate of 0.26 patients per site per month.{{cite:crest2}}",
+      },
+      {
+        q: "What is the difference between enrollment and the enrollment rate?",
+        a: "Enrollment is a count: the estimated (target) or actual total number of human subjects enrolled in a clinical trial, as ClinicalTrials.gov regulations define it.{{cite:ecfr-42-11-10}} The enrollment rate divides that count by sites and time, so studies of different sizes and lengths can be compared.",
       },
     ],
     sources: [
@@ -366,7 +377,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How sites win more studies", href: "/guides/win-more-studies" },
       { label: "Screen failure rate", href: "/glossary/screen-failure-rate" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-25",
   },
   {
     slug: "eregulatory-eisf",
