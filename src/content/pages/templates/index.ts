@@ -5,14 +5,14 @@ const page: SeoPage = {
   category: "hub",
   title: "Templates and downloads for research sites",
   description:
-    "Free editable templates for sites: feasibility questionnaire, pre-screening script, outreach SMS, AI vendor checklist, IRB language and a chart review checklist.",
-  keywords: ["feasibility questionnaire template", "pre-screening call script", "IRB recruitment language template"],
+    "Free editable templates for sites: feasibility questionnaire, recruitment plan, pre-screening script, outreach SMS, vendor checklist, IRB language, chart review.",
+  keywords: ["feasibility questionnaire template", "clinical trial recruitment plan template", "pre-screening call script", "IRB recruitment language template"],
   eyebrow: "Templates",
   h1: "Templates you can use this week",
   intro:
-    "These are free, editable templates for research sites: a feasibility questionnaire, a pre-screening call script, patient outreach text messages, an AI recruitment vendor evaluation checklist, IRB submission language for AI outreach and a coordinator chart review checklist. Each is shown in full on its page and available as a Word document. They are written for coordinators and site directors, not lawyers, and every one that touches patient contact says where IRB approval is required.",
-  summary: "Six editable templates for feasibility, pre-screening, outreach, vendor evaluation, IRB language and chart review.",
-  lastUpdated: "2026-10-23",
+    "These are free, editable templates for research sites: a feasibility questionnaire, a recruitment and retention plan, a pre-screening call script, patient outreach text messages, an AI recruitment vendor evaluation checklist, IRB submission language for AI outreach and a coordinator chart review checklist. Each is shown in full on its page and available as a Word document. They are written for coordinators and site directors, not lawyers, and every one that touches patient contact says where IRB approval is required.",
+  summary: "Seven editable templates for feasibility, recruitment planning, pre-screening, outreach, vendor evaluation, IRB language and chart review.",
+  lastUpdated: "2026-10-25",
   sections: [
     {
       id: "templates",

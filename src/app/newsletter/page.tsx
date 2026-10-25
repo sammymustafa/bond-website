@@ -7,6 +7,7 @@ import NewsletterForm from "@/components/seo/NewsletterForm";
 import BarChart from "@/components/seo/BarChart";
 import { conditionLabel, datasetAsOf, usCounts } from "@/components/seo/TrialData";
 import { staticPageMetadata, formatDate } from "@/content/seo";
+import { preferredSourceHref } from "@/content/nav";
 
 export const metadata: Metadata = staticPageMetadata({
   path: "/newsletter",
@@ -45,6 +46,13 @@ export default function NewsletterPage() {
             <Link href="/privacy-policy" className="underline hover:text-gray-900">
               privacy policy
             </Link>
+            .
+          </p>
+          <p className="mt-2 text-xs text-gray-500">
+            Use Google?{" "}
+            <a href={preferredSourceHref} target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-900">
+              Add Bond Health as a preferred source
+            </a>
             .
           </p>
         </div>

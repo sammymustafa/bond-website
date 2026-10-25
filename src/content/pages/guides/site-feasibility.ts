@@ -22,14 +22,15 @@ const page: SeoPage = {
     "site feasibility assessment metrics",
     "site feasibility report",
     "feasibility and site selection",
+    "clinical trial feasibility tools",
   ],
   eyebrow: "Guide",
   h1: "Site feasibility in clinical trials: how the assessment works and how to answer it",
   intro:
-    "Site feasibility is the process a sponsor or CRO uses to decide whether a research site can run a specific trial and enroll the patients it needs, usually through a feasibility questionnaire and a site qualification visit.{{cite:bruneau-2024,asco-post-2021}} For the site, it is also an internal decision: whether it has the patients, staff, equipment and time to take the study on and deliver the number it promises. This guide covers each step, the criteria sponsors assess, how to count eligible patients from records, the metrics that show whether feasibility was right, and a checklist.",
+    "Site feasibility is the process a sponsor or CRO uses to decide whether a research site can run a specific trial and enroll the patients it needs, usually through a feasibility questionnaire and a site qualification visit.{{cite:bruneau-2024,asco-post-2021}} For the site, it is also an internal decision: whether it has the patients, staff, equipment and time to take the study on and deliver the number it promises. This guide covers each step, the criteria sponsors assess, how to count eligible patients from records, the tools that help, the metrics that show whether feasibility was right, and a checklist.",
   summary:
     "What site feasibility means, how the assessment is conducted, the criteria and metrics sponsors use, and a checklist for research sites.",
-  lastUpdated: "2026-10-06",
+  lastUpdated: "2026-10-25",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -177,6 +178,32 @@ const page: SeoPage = {
       ],
     },
     {
+      id: "feasibility-tools",
+      heading: "What tools help with site feasibility?",
+      blocks: [
+        {
+          type: "p",
+          text: "Feasibility tools fall into four kinds, and each answers a different question. The 2024 task force asks sites to be as accurate as possible with enrollment projections, using tools and data to estimate participant populations.{{cite:bruneau-2024}} Knowing which kind of tool produced a number tells you, and the sponsor, how far to trust it.",
+        },
+        {
+          type: "table",
+          caption: "Site feasibility tools by the question they answer",
+          columns: ["Tool", "Used by", "What it answers", "What it misses"],
+          rows: [
+            ["Site performance databases", "Sponsors and CROs", "Which countries and sites to approach, based on past trial performance{{cite:laaksonen-2021}}", "The patients a site has now"],
+            ["Feasibility questionnaire platforms", "Sponsors, CROs and sites", "Side-by-side site answers on staff, equipment, experience and patient counts", "Anything the site estimated rather than counted"],
+            ["EHR cohort discovery and data warehouse queries", "Sites and health systems", "How many patients match coded criteria such as diagnosis, age and lab values", "Criteria recorded only in notes and reports"],
+            ["EHR screening software", "Sites", "Which patients meet the full criteria, including evidence in notes and reports", "Patients outside the site's own records"],
+          ],
+          note: "Most feasibility responses draw on more than one. A questionnaire answer is strongest when its patient count came from the last two rows.",
+        },
+        {
+          type: "p",
+          text: "Bond's [Identify](/identify) is EHR screening software: it reads structured and unstructured records against a study's inclusion and exclusion criteria and shows the chart evidence behind each match, so a site can report a count from its records instead of an estimate.{{cite:bond-site,bond-product}} For the questionnaire itself, start from the [feasibility questionnaire template](/templates/feasibility-questionnaire).",
+        },
+      ],
+    },
+    {
       id: "metrics",
       heading: "What metrics show whether feasibility was accurate?",
       blocks: [
@@ -316,7 +343,7 @@ const page: SeoPage = {
       publisher: "Contemporary Clinical Trials Communications",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11298845/",
       year: "2024",
-      note: "Bruneau et al., Site Enablement League task force (43% sites, 20% site networks, plus sponsors and CROs). Read October 2026. Quote: \"Site Feasibility - This entails identifying and assessing potential sites for a specific study. The process may also be called a Feasibility Assessment (FA), Site Qualification or Site Selection. The process may include a survey or feasibility questionnaire (FQ) as well as a site visit (known as pre-selection visit (PSV), pre-study site visit (PSSV), or site qualification visit (SQV)).\" Also: \"A draft/synopsis is only valuable to determine initial site interest, not accurate site feasibility.\"; \"Sites should decline if they are not interested.\"; \"sites are typically not compensated for feasibility assessment work\"",
+      note: "Bruneau et al., Site Enablement League task force (43% sites, 20% site networks, plus sponsors and CROs). Read October 2026. Quote: \"Site Feasibility - This entails identifying and assessing potential sites for a specific study. The process may also be called a Feasibility Assessment (FA), Site Qualification or Site Selection. The process may include a survey or feasibility questionnaire (FQ) as well as a site visit (known as pre-selection visit (PSV), pre-study site visit (PSSV), or site qualification visit (SQV)).\" Also: \"A draft/synopsis is only valuable to determine initial site interest, not accurate site feasibility.\"; \"Sites should decline if they are not interested.\"; \"sites are typically not compensated for feasibility assessment work\"; \"Sites should be as accurate as possible with enrollment projections, using tools and data to estimate participant populations.\"",
     },
     {
       id: "asco-post-2021",

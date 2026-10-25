@@ -320,6 +320,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "enrollment-rate",
     term: "Enrollment rate",
+    title: "Clinical trial enrollment rate: definition and formula",
     short:
       "How fast a trial or site enrolls participants, usually expressed as patients enrolled per site per month and compared with the rate the plan assumed.",
     body: [
@@ -334,6 +335,16 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: track the rate by stage, not only the final count. Patients identified, contacted, pre-screened, consented and randomized each month show whether the constraint is finding patients, reaching them or converting them. Bond's dashboard reports each of those stages, and [Engage](/engage) adds outreach capacity when reaching patients is the bottleneck.",
+      },
+    ],
+    faq: [
+      {
+        q: "How do you calculate the enrollment rate in a clinical trial?",
+        a: "Divide the number of participants enrolled by the total site-months: the sum, across sites, of the months each site has been open to enrollment. Counting each site from its own activation date keeps late-starting sites from dragging the rate down. For comparison, the CREST-2 stroke prevention trial reported a recruitment rate of 0.26 patients per site per month.{{cite:crest2}}",
+      },
+      {
+        q: "What is the difference between enrollment and the enrollment rate?",
+        a: "Enrollment is a count: the estimated (target) or actual total number of human subjects enrolled in a clinical trial, as ClinicalTrials.gov regulations define it.{{cite:ecfr-42-11-10}} The enrollment rate divides that count by sites and time, so studies of different sizes and lengths can be compared.",
       },
     ],
     sources: [
@@ -366,7 +377,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How sites win more studies", href: "/guides/win-more-studies" },
       { label: "Screen failure rate", href: "/glossary/screen-failure-rate" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-25",
   },
   {
     slug: "eregulatory-eisf",
@@ -1195,6 +1206,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "screen-failure-rate",
     term: "Screen failure rate",
+    title: "Screen failure in clinical trials: definition and rate formula",
     short:
       "The share of patients who sign consent and start screening but do not qualify for randomization, usually because a protocol criterion is not met.",
     body: [
@@ -1209,6 +1221,20 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "Practical note: many failures are knowable from the chart before the patient comes in, such as an excluded medication, an old lab outside the window or a documented comorbidity. Screening the full record first, including notes, is the job of [Identify](/identify); see the [guide to reducing screen failure](/guides/reduce-screen-failure).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is a screen failure in a clinical trial?",
+        a: "A potential participant who does not meet the eligibility (inclusion or exclusion) criteria during the screening period, as ICH and CDISC define it.{{cite:ncit-screen-failure}} The patient has consented and started screening; someone ruled out at pre-screening, before consent, is not a screen failure.",
+      },
+      {
+        q: "How do you calculate the screen failure rate?",
+        a: "Divide the number of screen failures by the number of patients screened, then multiply by 100 for a percentage. Count everyone who started screening in the denominator, and use the same date range for both numbers. ICH and CDISC define a screen failure as a potential participant who does not meet the eligibility criteria during the screening period.{{cite:ncit-screen-failure}}",
+      },
+      {
+        q: "What is a typical screen failure rate?",
+        a: "It depends on the protocol. In the SYMPLICITY HTN-3 resistant hypertension trial, 62% of patients screened did not meet criteria for randomization.{{cite:htn3}} In an audit of 15 randomized oncology studies at a cancer center in India, 51% of screened patients failed screening.{{cite:tata-audit}}",
       },
     ],
     sources: [
@@ -1242,7 +1268,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "How to reduce screen failure at your site", href: "/guides/reduce-screen-failure" },
       { label: "Screening", href: "/glossary/screening" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-25",
   },
   {
     slug: "screening",
@@ -1507,6 +1533,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "unstructured-clinical-data",
     term: "Unstructured clinical data",
+    title: "Unstructured data in healthcare: definition and examples",
     short:
       "Clinical information recorded as free text, images or scanned documents rather than coded fields, such as progress notes, pathology reports and imaging reads.",
     body: [
@@ -1517,6 +1544,21 @@ export const glossary: GlossaryTerm[] = [
       {
         type: "p",
         text: "For trial eligibility, the deciding evidence is often in that text: cancer stage and biomarker results in a pathology report, ejection fraction in an echo report, prior therapies and the reasons they stopped in clinic notes. Screening that reads only diagnosis codes and structured labs will miss eligible patients and pass along ineligible ones.",
+      },
+      {
+        type: "table",
+        caption: "Examples of unstructured data in healthcare",
+        columns: ["Document", "What it is", "Eligibility evidence it can hold"],
+        rows: [
+          ["Progress and clinic notes", "Free-text notes from each visit", "Symptom history, prior therapies and why they stopped, adverse reactions"],
+          ["Consult letters and referral notes", "A specialist's assessment, written to the referring clinician", "Confirmed diagnosis, disease severity, the specialist's treatment plan"],
+          ["Pathology reports", "The pathologist's narrative on a tissue or cytology sample", "Tumor type, stage and grade, biomarker or receptor status"],
+          ["Radiology and imaging reports", "The radiologist's read of a scan", "Measurable disease, progression, organ involvement"],
+          ["Echocardiogram and other test reports", "Narrative interpretations of diagnostic tests", "Ejection fraction, valve findings, conduction abnormalities"],
+          ["Discharge summaries", "The narrative of a hospital stay", "Recent hospitalizations and events that may exclude a patient, such as a recent stroke"],
+          ["Scanned outside records", "Faxes and PDFs from other providers, often stored as images", "Treatment and test results from outside the health system"],
+        ],
+        note: "Structured data, by contrast, sits in coded fields: diagnosis codes, lab values, medication orders, vital signs and demographics.",
       },
       {
         type: "p",
@@ -1544,7 +1586,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "EHR phenotyping", href: "/glossary/ehr-phenotyping" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-25",
   },
   {
     slug: "waiver-of-authorization",
