@@ -3,27 +3,30 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/templates/feasibility-questionnaire",
   category: "template",
-  title: "Site feasibility questionnaire template for clinical trials",
+  title: "Free clinical trial site feasibility questionnaire template",
   description:
-    "An editable site feasibility questionnaire: site profile, staff, experience, EHR-derived patient counts, competing studies, equipment, timelines and budget.",
+    "Free, editable site feasibility questionnaire for clinical trials, in Word or PDF: site profile, staff, EHR patient counts, competing studies and budget.",
   keywords: [
     "site feasibility questionnaire template clinical trial",
+    "clinical trial feasibility questionnaire template",
+    "clinical trial site feasibility questionnaire",
+    "site feasibility questionnaire pdf",
     "clinical trial feasibility questionnaire",
     "site feasibility assessment",
     "EHR patient counts for feasibility",
     "site selection questionnaire",
   ],
   eyebrow: "Template",
-  h1: "Feasibility questionnaire template for research sites",
+  h1: "Clinical trial site feasibility questionnaire template",
   intro:
     "Sponsors and CROs send a feasibility questionnaire before they shortlist a site, and many cover the same ground in a different order. This template puts those questions in one place so your site can answer once, keep the answers current, and copy them into each sponsor's form. It includes a worksheet for patient counts drawn from your EHR, because a count with its method attached is easier to believe than an estimate.",
-  summary: "An editable site feasibility questionnaire with an EHR patient-count worksheet and guidance on answering with data.",
-  lastUpdated: "2026-10-23",
+  summary: "A free site feasibility questionnaire in Word and PDF, with an EHR patient-count worksheet and guidance on answering with data.",
+  lastUpdated: "2026-10-25",
   heroCta: {
-    label: "Book a demo",
-    href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
-    secondaryLabel: "How sponsors choose sites",
-    secondaryHref: "/guides/how-sponsors-choose-sites",
+    label: "Download the Word file",
+    href: "/downloads/feasibility-questionnaire.docx",
+    secondaryLabel: "Book a demo",
+    secondaryHref: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
   },
   sections: [
     {
@@ -55,6 +58,12 @@ const page: SeoPage = {
           label: "Feasibility questionnaire template (Word)",
           href: "/downloads/feasibility-questionnaire.docx",
           format: "Word document (.docx), editable",
+        },
+        {
+          type: "download",
+          label: "Feasibility questionnaire template (PDF)",
+          href: "/downloads/feasibility-questionnaire.pdf",
+          format: "PDF, printable",
         },
       ],
     },
