@@ -264,7 +264,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Pricing", href: "/pricing", description: "How Bond's per-screened-patient and randomization-based pricing works." },
-    { label: "Engage: ads, voice and text outreach", href: "/engage", description: "How Bond runs ads and contacts every lead immediately." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs ads and contacts every lead immediately." },
     { label: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment", description: "Paying for leads versus paying for outcomes." },
     { label: "How to reduce screen failure", href: "/guides/reduce-screen-failure", description: "Catching ineligible patients before the screening visit." },
   ],

@@ -9,6 +9,11 @@
  *
  * The key is public by design: IndexNow checks that https://bondtrials.com/<key>.txt contains it.
  */
+import { setDefaultAutoSelectFamilyAttemptTimeout } from "node:net";
+
+// Node's default 250 ms per-address connect attempt times out against Cloudflare on slow networks.
+setDefaultAutoSelectFamilyAttemptTimeout(3000);
+
 const HOST = "bondtrials.com";
 const KEY = "7deee7c933c9b7e8524da75ede32aefb";
 

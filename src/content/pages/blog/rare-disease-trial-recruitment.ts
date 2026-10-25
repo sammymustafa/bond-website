@@ -282,7 +282,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads notes, reports and codes against each criterion." },
-    { label: "Engage: ads, outreach and booking", href: "/engage", description: "How Bond runs study ads and follows up with every lead." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs study ads and follows up with every lead." },
     { label: "EHR phenotyping", href: "/glossary/ehr-phenotyping", description: "Combining codes, labs, medications and notes to find patients." },
     { label: "Using the EHR for recruitment", href: "/guides/ehr-for-recruitment", description: "Interfaces, permissions and what EHR tools can query." },
   ],

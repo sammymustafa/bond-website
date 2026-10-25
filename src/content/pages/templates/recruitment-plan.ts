@@ -201,7 +201,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Retention belongs in the same document because it uses the same funnel: every randomized patient who drops out has to be replaced from the top. E6(R3) treats the two together, listing recruitment and retention rates among the things monitoring reviews.{{cite:ich-e6r3}}",
+          text: "Retention belongs in the same document because it uses the same funnel: every randomized patient who drops out has to be replaced from the top. E6(R3) treats the two together, listing recruitment and retention rates among the things monitoring reviews.{{cite:ich-e6r3}} Our [participant retention guide](/guides/participant-retention) covers the evidence behind each step below.",
         },
         {
           type: "checklist",

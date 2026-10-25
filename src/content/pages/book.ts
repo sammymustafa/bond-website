@@ -173,7 +173,8 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Engage: ads, instant outreach and follow-up", href: "/engage", description: "How every ad lead is contacted immediately and followed up." },
+    { label: "Engage: AI voice and SMS agents", href: "/engage", description: "How every lead is contacted immediately, pre-screened and followed up." },
+    { label: "Participant retention guide", href: "/guides/participant-retention", description: "Why participants leave and the retention steps with evidence behind them." },
     { label: "Identify: EHR screening", href: "/identify", description: "How Bond finds eligible patients in your records." },
     { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a share of each randomization milestone." },
     { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },

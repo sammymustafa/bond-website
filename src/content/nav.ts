@@ -22,7 +22,8 @@ export interface NavMenu {
 
 export const productLinks: NavItem[] = [
   { name: "Identify", href: "/identify", description: "LLM-based EHR screening" },
-  { name: "Engage", href: "/engage", description: "Meta and Google ads, instant outreach and follow-up" },
+  { name: "Trial ads", href: "/clinical-trial-ads", description: "Meta and Google campaigns, every lead followed up" },
+  { name: "Engage", href: "/engage", description: "AI voice and SMS pre-screening and follow-up" },
   { name: "Book", href: "/book", description: "Visits booked straight onto your calendar" },
   { name: "Consent", href: "/consent", description: "AI-powered informed consent support" },
   { name: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step" },

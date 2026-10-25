@@ -231,6 +231,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Participant retention guide", href: "/guides/participant-retention", description: "Why participants leave and the retention steps with evidence behind them." },
     { label: "Engage: outreach, booking and reminders", href: "/engage", description: "How Bond supports participants before and after enrollment." },
     { label: "Bond for sponsors", href: "/for/sponsors", description: "Recruitment and retention support across sites." },
     { label: "Bond for FQHCs and community sites", href: "/for/fqhcs-and-community-sites", description: "Reaching patients who face the most barriers to taking part." },

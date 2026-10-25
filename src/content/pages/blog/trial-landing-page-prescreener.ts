@@ -249,7 +249,7 @@ const page: SeoPage = {
   related: [
     { label: "Pre-screening vs screening", href: "/guides/pre-screening-vs-screening", description: "What belongs before consent and what belongs at the screening visit." },
     { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "The phone screen that follows an online pre-screener." },
-    { label: "Engage: ads, voice and text outreach", href: "/engage", description: "How Bond contacts every lead, pre-screens and books visits." },
+    { label: "Engage: AI voice and SMS agents", href: "/engage", description: "How Bond contacts every lead, pre-screens and books visits." },
     { label: "How to reduce screen failure", href: "/guides/reduce-screen-failure", description: "Catching ineligible patients before the first screening visit." },
   ],
 };

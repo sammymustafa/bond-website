@@ -304,7 +304,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Engage: ads, outreach and booking", href: "/engage", description: "How Bond runs study ads and contacts every lead by voice and text." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs study ads and contacts every lead by voice and text." },
     { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "A template for turning exclusions into dated phone questions." },
     { label: "Diversity action plan", href: "/glossary/diversity-action-plan", description: "What FDORA requires of sponsors and where the guidance stands." },
     { label: "HIPAA and IRB rules for outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What a site needs approved before contacting volunteers." },

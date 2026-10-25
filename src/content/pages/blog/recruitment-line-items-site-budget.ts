@@ -267,7 +267,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Pricing", href: "/pricing", description: "Bond's per-screened-patient and randomization-based pricing, with ad spend separate." },
-    { label: "Engage: ads, voice and text outreach", href: "/engage", description: "How Bond runs study ads and contacts every lead." },
+    { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs study ads and contacts every lead." },
     { label: "How to win more studies", href: "/guides/win-more-studies", description: "What sponsors look for when they choose sites." },
     { label: "Feasibility questionnaire template", href: "/templates/feasibility-questionnaire", description: "A template for answering sponsor feasibility questions." },
   ],

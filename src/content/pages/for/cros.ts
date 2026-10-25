@@ -361,6 +361,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Patient recruitment companies, compared", href: "/compare/patient-recruitment-companies", description: "Services firms and EHR platforms a CRO is likely to shortlist, in two sourced tables." },
     { label: "Bond for sponsors", href: "/for/sponsors", description: "Delay costs, site variance and one funnel from the sponsor's side." },
     { label: "Bond for site networks", href: "/for/site-networks", description: "One workflow and one set of metrics across a network's sites." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
