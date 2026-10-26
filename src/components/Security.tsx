@@ -31,13 +31,13 @@ export default function Security() {
   return (
     <section id="security" className="section bg-white">
       <div className="container-lg px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Text Content */}
           <div>
             <p className="eyebrow mb-4">Security</p>
             <h2 className="heading-lg mb-6">
               Built for PHI.{" "}
-              <span className="text-gray-400">HIPAA Compliant.</span>
+              <span className="text-gray-500">HIPAA Compliant.</span>
             </h2>
             <p className="body-lg mb-8">
               We handle sensitive patient data with the care it deserves. 
@@ -63,7 +63,7 @@ export default function Security() {
           </div>
 
           {/* Visual */}
-          <div className="bg-linear-to-br from-gray-50 to-white rounded-3xl border border-gray-100 p-5 sm:p-8 md:p-12">
+          <div className="bg-linear-to-br from-gray-50 to-white rounded-2xl border border-gray-200 p-5 sm:p-8 md:p-12">
             <div className="text-center">
               {/* HIPAA, SOC 2 and ISO/IEC 27001 badges */}
               <ComplianceBadges className="mb-6 flex justify-center [&_ul]:justify-center" />
@@ -78,7 +78,7 @@ export default function Security() {
               </p>
 
               {/* Security Highlights */}
-              <div className="space-y-3 text-left max-w-xs mx-auto">
+              <div className="space-y-3 text-left max-w-sm mx-auto">
                 {[
                   "SOC 2 Type I report issued, Type II audit underway",
                   "Encryption at rest and in transit",
@@ -94,12 +94,12 @@ export default function Security() {
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-gray-100 text-center">
+            <div className="mt-8 pt-6 border-t border-gray-200 text-center">
               <a
                 href="https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-bond-primary text-white text-sm font-semibold rounded-full hover:bg-bond-primary/90 transition-colors mb-4"
+                className="btn-primary w-full sm:w-auto mb-4"
               >
                 <Shield className="w-4 h-4" />
                 View our Trust Center

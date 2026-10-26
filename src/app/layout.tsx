@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper";
+
+// Self-hosted at build time. globals.css always named these fonts but nothing loaded them, so pages fell back to the
+// system font. The variables feed --font-body and --font-display there.
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bondtrials.com"),
@@ -258,7 +264,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
         <link rel="icon" type="image/png" sizes="48x48" href="/images/logo/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/logo/apple-touch-icon.png" />

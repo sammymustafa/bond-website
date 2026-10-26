@@ -26,8 +26,8 @@
   --color-bond-gray-800: #1f2937;
   --color-bond-gray-900: #111827;
 
-  --font-display: var(--font-display), system-ui, sans-serif;
-  --font-body: var(--font-body), system-ui, sans-serif;
+  --font-display: var(--font-jakarta), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
 
   --shadow-soft:
     0 2px 8px -2px rgba(0, 0, 0, 0.05), 0 4px 16px -4px rgba(0, 0, 0, 0.08);
@@ -72,8 +72,8 @@
 }
 
 :root {
-  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: var(--font-jakarta), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
   
   /* Brand Colors */
   --bond-primary: #0066FF;
@@ -109,6 +109,21 @@
     scroll-behavior: smooth;
     /* clip, not hidden: hidden makes html and body scroll containers, which stops position: sticky from working */
     overflow-x: clip;
+    /* Every jump link (table of contents, citations, glossary letters, /#contact) stops below the fixed nav */
+    scroll-padding-top: 5rem;
+    /* Keeps the page from shifting sideways when a modal or the menu locks scrolling (classic scrollbars) */
+    scrollbar-gutter: stable;
+  }
+
+  /* One focus ring for every interactive element: offset, so it stays visible on blue buttons. Inputs keep their
+     own ring (their outline-none utility wins over this layer). */
+  :where(a, button, summary, [role="button"], [tabindex]):focus-visible {
+    outline: 2px solid var(--color-bond-primary);
+    outline-offset: 2px;
+  }
+
+  .bg-gray-900 :focus-visible {
+    outline-color: #fff;
   }
 
   body {
@@ -122,6 +137,13 @@
     max-width: 100vw;
   }
 
+  /* Every heading balances its lines (the .heading-* classes do too), so no single word sits alone on the last one */
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
   /* Selection */
   ::selection {
     background: rgba(0, 102, 255, 0.15);
@@ -133,13 +155,18 @@
    `btn-primary bg-white`). Unlayered, they beat every utility and such overrides were silently ignored. */
 @layer components {
   /* Typography Classes */
+  /* Headings balance their lines so a single word never sits alone on the last one; body copy uses `pretty`,
+     which only avoids a one-word last line. Neither changes any words. */
   .heading-xl {
     font-family: var(--font-display);
     font-weight: 700;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
     letter-spacing: -0.02em;
+    /* Negative tracking narrows the spaces too; Plus Jakarta Sans needs them back at display sizes */
+    word-spacing: 0.04em;
     color: var(--bond-gray-900);
+    text-wrap: balance;
   }
 
   .heading-lg {
@@ -148,7 +175,9 @@
     font-size: clamp(1.75rem, 4vw, 3rem);
     line-height: 1.15;
     letter-spacing: -0.02em;
+    word-spacing: 0.04em;
     color: var(--bond-gray-900);
+    text-wrap: balance;
   }
 
   .heading-md {
@@ -156,7 +185,9 @@
     font-weight: 600;
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     line-height: 1.25;
+    letter-spacing: -0.01em;
     color: var(--bond-gray-900);
+    text-wrap: balance;
   }
 
   .heading-sm {
@@ -165,18 +196,26 @@
     font-size: 1.25rem;
     line-height: 1.3;
     color: var(--bond-gray-900);
+    text-wrap: balance;
   }
 
   .body-lg {
     font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.7;
     color: var(--bond-gray-600);
+    text-wrap: pretty;
   }
 
   .body-md {
     font-size: 1rem;
     line-height: 1.7;
     color: var(--bond-gray-600);
+    text-wrap: pretty;
+  }
+
+  /* Small uppercase label above logo rows, badges and the table of contents (`.eyebrow` is the blue section label) */
+  .overline-label {
+    @apply text-xs font-semibold uppercase tracking-wider text-gray-500;
   }
 
   .body-sm {
@@ -215,22 +254,28 @@
     @apply max-w-3xl mx-auto;
   }
 
-  /* Cards */
+  /* Cards. Not clickable, so no hover lift; gray-200 borders stay visible on gray-50 sections. */
   .card {
-    @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
-           shadow-xs hover:shadow-md transition-all duration-300;
+    @apply bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-card;
   }
 
   .card-elevated {
-    @apply bg-white rounded-2xl border border-gray-100 p-6 md:p-8
-           shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-lg;
   }
 
-  /* Buttons */
+  /* A card that is one link (hub lists, related pages, blog and glossary indexes); pair it with `group` */
+  .card-link {
+    @apply flex flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-xs
+           transition-all hover:border-bond-primary/30 hover:shadow-md;
+  }
+
+  /* Buttons. Both carry a 1px border so primary and secondary are the same height side by side; py-3 makes them
+     46px tall on phones. */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2
-           px-4 py-2.5 sm:px-6 sm:py-3 bg-bond-primary text-white font-semibold rounded-full
+           px-5 py-3 sm:px-6 bg-bond-primary text-white font-semibold rounded-full
            text-sm sm:text-base
+           border border-transparent
            transition-all duration-200
            hover:bg-bond-primary-dark hover:shadow-lg hover:shadow-bond-primary/25
            active:scale-[0.98];
@@ -238,7 +283,7 @@
 
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2
-           px-4 py-2.5 sm:px-6 sm:py-3 bg-white text-bond-gray-700 font-medium rounded-full
+           px-5 py-3 sm:px-6 bg-white text-bond-gray-700 font-medium rounded-full
            text-sm sm:text-base
            border border-gray-200
            transition-all duration-200
@@ -358,9 +403,9 @@
     @apply flex items-center gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100;
   }
 
-  /* FAQ */
+  /* FAQ. The padding sits on the summary, not the details element, so the whole row is the tap target. */
   .faq-item {
-    @apply border-b border-gray-100 py-6;
+    @apply border-b border-gray-200;
   }
 
   /* Remove default details marker */
@@ -378,13 +423,21 @@
   }
 
   .faq-question {
-    @apply text-base sm:text-lg font-semibold text-gray-900 cursor-pointer
-           flex items-center justify-between gap-3 sm:gap-4
-           hover:text-bond-primary transition-colors;
+    @apply py-5 sm:py-6 text-base sm:text-lg font-semibold text-gray-900 cursor-pointer
+           flex items-start justify-between gap-3 sm:gap-4
+           hover:text-bond-primary transition-colors
+           rounded-lg focus-visible:outline-offset-4;
+    text-wrap: pretty;
   }
 
+  /* The chevron, centred on the question's first line */
+  .faq-question > svg {
+    @apply mt-0.5 sm:mt-1;
+  }
+
+  /* The negative top margin pulls the answer up to 12px under the question */
   .faq-answer {
-    @apply text-sm sm:text-base text-gray-600 leading-relaxed sm:leading-6;
+    @apply -mt-2 pb-5 sm:-mt-3 sm:pb-6 text-[15px] sm:text-base text-gray-700 leading-relaxed;
   }
 }
 
@@ -400,8 +453,26 @@
   }
 }
 
+/* `both`, not `forwards`: during a stagger delay the element must already be at the first keyframe, or it shows,
+   vanishes and fades back in */
 .animate-fade-up {
-  animation: fade-up 0.6s ease-out forwards;
+  animation: fade-up 0.6s ease-out both;
+}
+
+/* Modal entrance */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out both;
 }
 
 .stagger-1 { animation-delay: 0.1s; }
@@ -471,6 +542,22 @@
 /* Radial gradient utility */
 .bg-gradient-radial {
   background: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* Visitors who ask for less motion get the final state at once */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-scroll,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-pulse-glow,
+  .animate-shimmer {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* Print: used to export content pages (for example /report) to PDF */

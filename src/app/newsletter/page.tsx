@@ -60,7 +60,7 @@ export default function NewsletterPage() {
 
       <div className="container-lg px-4 py-12 sm:px-6 sm:py-16">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">Sample issue · {formatDate(asOf)}</p>
+          <p className="overline-label">Sample issue · {formatDate(asOf)}</p>
           <h2 className="heading-md mt-2">How many US trials are recruiting right now?</h2>
           <p className="mt-6 font-display text-5xl font-bold text-gray-900 sm:text-6xl">
             {(us.all ?? 0).toLocaleString("en-US")}
@@ -87,7 +87,7 @@ export default function NewsletterPage() {
           </p>
           <ol className="mt-8 space-y-2 text-sm text-gray-600">
             <li id="src-ctgov" className="flex gap-3">
-              <span className="w-6 text-right font-medium text-gray-400">1.</span>
+              <span className="w-6 text-right font-medium text-gray-500">1.</span>
               <span>
                 <a
                   href="https://clinicaltrials.gov/data-api/api"

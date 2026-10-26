@@ -7,7 +7,7 @@ const SIZES = {
   sm: { img: "h-12 w-auto", label: "max-w-20 text-xs", list: "flex flex-wrap gap-x-3" },
   md: {
     img: "h-14 w-auto sm:h-20",
-    label: "max-w-24 text-xs sm:max-w-32",
+    label: "w-24 text-xs sm:w-32",
     list: "grid grid-cols-3 gap-x-3 sm:flex sm:flex-wrap sm:gap-x-8",
   },
 };
@@ -28,7 +28,7 @@ export default function ComplianceBadges({
   const s = SIZES[size];
   return (
     <div className={className}>
-      {title && <p className="mb-3 text-xs font-medium uppercase tracking-wider text-gray-500">{title}</p>}
+      {title && <p className="overline-label mb-3">{title}</p>}
       <ul className={`items-start gap-y-4 ${s.list}`}>
         {complianceBadges.map((b) => (
           <li key={b.name}>

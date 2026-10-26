@@ -16,7 +16,7 @@ export default function FAQ() {
   const { openDemoModal } = useDemoModal();
 
   return (
-    <section id="faq" className="section bg-gradient-section">
+    <section id="faq" className="section bg-gray-50">
 
       <div className="container-md px-4 sm:px-6">
         {/* Header */}
@@ -37,13 +37,13 @@ export default function FAQ() {
                 className="faq-item group"
                 open={index === 0}
               >
-                <summary className="faq-question w-full text-left list-none cursor-pointer flex items-center justify-between">
+                <summary className="faq-question w-full text-left list-none">
                   <span>{faq.question}</span>
                   <ChevronDown className="w-5 h-5 shrink-0 transition-transform group-open:rotate-180" />
                 </summary>
 
                 {/* Keep content in the DOM for crawl/LLM extraction */}
-                <div className="faq-answer mt-3">{faq.answer}</div>
+                <div className="faq-answer">{faq.answer}</div>
               </details>
             );
           })}

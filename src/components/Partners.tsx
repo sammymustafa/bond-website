@@ -8,13 +8,14 @@ export default function Partners() {
     <section className="section-sm bg-white border-b border-gray-100">
       <div className="container-lg px-4 sm:px-6">
         {/* Header */}
+        {/* Same label style as "Supported by" in the hero */}
         <div className="text-center mb-6 sm:mb-10">
-          <p className="text-sm font-medium text-gray-600 mb-1">Partnered with</p>
-          <p className="text-xs text-gray-400">Leading research sites and organizations</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1.5">Partnered with</p>
+          <p className="text-sm text-gray-500">Leading research sites and organizations</p>
         </div>
 
-        {/* Partner Logos - Grid on mobile, flex on desktop */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
+        {/* Partner Logos - Grid on mobile, flex on desktop (gap-8 at md keeps "+ more" on the logo row at tablet width) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-16">
           {partners.map((partner) => (
             <div 
               key={partner.name}
@@ -24,8 +25,8 @@ export default function Partners() {
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={200}
-                  height={80}
+                  width={partner.width}
+                  height={partner.height}
                   className="h-10 sm:h-14 md:h-16 lg:h-20 w-auto object-contain max-w-[min(140px,100%)] sm:max-w-[180px] md:max-w-[200px]"
                 />
               </div>
@@ -34,7 +35,7 @@ export default function Partners() {
           
           {/* More Partners Indicator: plain text, so it doesn't look tappable */}
           <div className="col-span-2 sm:col-span-1 flex items-center justify-center sm:h-16 md:h-20">
-            <span className="text-sm sm:text-base md:text-lg font-medium text-gray-400">+ more</span>
+            <span className="text-sm sm:text-base md:text-lg font-medium text-gray-500">+ more</span>
           </div>
         </div>
       </div>

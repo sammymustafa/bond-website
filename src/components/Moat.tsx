@@ -36,13 +36,13 @@ export default function Moat() {
       <div className="container-lg px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
-          <p className="text-bond-accent font-semibold text-xs sm:text-sm uppercase tracking-wide mb-3 sm:mb-4">
+          <p className="eyebrow text-bond-accent mb-4">
             How it works
           </p>
           <h2 className="heading-lg mb-4 sm:mb-6" style={{ color: 'white' }}>
             A clinical knowledge graph that compounds.
           </h2>
-          <p className="text-gray-400 text-base sm:text-lg px-2">
+          <p className="body-lg text-gray-400">
             Our AI is powered by a text-enriched biomedical knowledge graph built from 
             real clinical data, enabling traceable, retrieval-augmented inference.
           </p>
@@ -64,7 +64,7 @@ export default function Moat() {
                   </div>
                   <span className="text-xs sm:text-sm font-semibold text-white">EHR Data</span>
                 </div>
-                <p className="text-[10px] sm:text-xs text-gray-500 hidden sm:block">Clinical notes, prescriptions, lab results</p>
+                <p className="text-xs text-gray-400 hidden sm:block">Clinical notes, prescriptions, lab results</p>
               </div>
 
               {/* Structured Ontologies */}
@@ -77,7 +77,7 @@ export default function Moat() {
                 </div>
                 <div className="hidden sm:flex flex-wrap gap-1.5">
                   {["Diseases", "Drugs", "Procedures", "Tissues"].map((item) => (
-                    <span key={item} className="text-[10px] px-2 py-0.5 bg-gray-700/50 text-gray-400 rounded-full">
+                    <span key={item} className="text-xs px-2 py-0.5 bg-gray-700/50 text-gray-300 rounded-full">
                       {item}
                     </span>
                   ))}
@@ -98,7 +98,7 @@ export default function Moat() {
                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-linear-to-br from-bond-primary to-bond-accent flex items-center justify-center shadow-lg shadow-bond-accent/20">
                     <div className="text-center">
                       <p className="text-base sm:text-lg font-bold text-white leading-tight">1.6M</p>
-                      <p className="text-[10px] sm:text-xs text-white/80">nodes</p>
+                      <p className="text-xs text-white/80">nodes</p>
                     </div>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function Moat() {
               {/* Label */}
               <div className="text-center mt-4">
                 <p className="text-sm font-semibold text-white">ClinText Graph</p>
-                <p className="text-xs text-gray-500">Text-Enriched Biomedical Knowledge Graph</p>
+                <p className="text-xs text-gray-400">Text-Enriched Biomedical Knowledge Graph</p>
               </div>
             </div>
 
@@ -189,7 +189,7 @@ export default function Moat() {
                   <Brain className="w-4 h-4 text-bond-accent" />
                   <span className="text-xs font-semibold text-white">Inference Engine</span>
                 </div>
-                <p className="text-[10px] text-gray-400 hidden sm:block">Traceable Retrieval-Augmented Inference</p>
+                <p className="text-xs text-gray-400 hidden sm:block">Traceable Retrieval-Augmented Inference</p>
               </div>
 
               {/* Apps */}
@@ -201,17 +201,17 @@ export default function Moat() {
                 ].map((app) => (
                   <div key={app.fullLabel} className="flex flex-col lg:flex-row items-center gap-1.5 sm:gap-3 p-2 sm:p-3 bg-gray-800/30 rounded-lg sm:rounded-xl border border-gray-700/30 text-center lg:text-left">
                     <app.icon className={`w-4 h-4 ${app.color} shrink-0`} />
-                    <span className="text-[10px] sm:text-xs text-gray-300 hidden sm:block">{app.fullLabel}</span>
-                    <span className="text-[10px] text-gray-300 sm:hidden">{app.label}</span>
+                    <span className="text-xs text-gray-300 hidden sm:block">{app.fullLabel}</span>
+                    <span className="text-xs leading-tight text-gray-300 sm:hidden">{app.label}</span>
                   </div>
                 ))}
               </div>
 
               {/* Outcome */}
               <div className="mt-2 sm:mt-4 p-2.5 sm:p-3 bg-bond-accent/10 rounded-lg sm:rounded-xl border border-bond-accent/20">
-                <p className="text-[10px] text-bond-accent font-semibold uppercase tracking-wide mb-1">Outcome</p>
+                <p className="text-xs text-bond-accent font-semibold uppercase tracking-wide mb-1">Outcome</p>
                 <p className="text-xs text-white">90%+ Accuracy</p>
-                <p className="text-[10px] text-gray-400 hidden sm:block">Scalable automation & reduced manual burden</p>
+                <p className="text-xs text-gray-400 hidden sm:block">Scalable automation & reduced manual burden</p>
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function Moat() {
               href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-900 font-semibold rounded-full transition-all duration-200 hover:bg-gray-100 hover:shadow-lg"
+              className="btn-primary bg-white text-gray-900 hover:bg-gray-100"
             >
               <Calendar className="w-4 h-4" />
               Schedule a technical deep-dive

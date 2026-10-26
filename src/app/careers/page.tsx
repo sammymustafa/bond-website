@@ -185,18 +185,18 @@ function ApplicationModal({
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 z-10 p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-lg bg-white hover:bg-gray-100"
+          className="absolute top-3 right-3 z-10 p-3 text-gray-500 hover:text-gray-700 transition-colors rounded-full bg-white hover:bg-gray-100"
         >
           <X className="w-5 h-5" />
         </button>
 
         <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto overscroll-contain rounded-2xl p-6 sm:p-8">
           {isSubmitted ? (
-            <div className="text-center py-8">
+            <div role="status" className="text-center py-8">
               <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
-              <h3 id="careers-modal-title" className="text-xl font-bold text-gray-900 mb-2">
+              <h3 id="careers-modal-title" ref={(el) => el?.focus()} tabIndex={-1} className="font-display text-xl font-bold text-gray-900 mb-2 outline-none">
                 {formType === "application" ? "Application Sent!" : "Thanks for Reaching Out!"}
               </h3>
               <p className="text-gray-600">
@@ -209,7 +209,7 @@ function ApplicationModal({
             <>
               {/* px-8 keeps the title clear of the close button */}
               <div className="text-center mb-6 px-8">
-                <h3 id="careers-modal-title" className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 id="careers-modal-title" className="font-display text-2xl font-bold text-gray-900 mb-2">
                   {formType === "application" ? `Apply for ${roleTitle}` : "Join Our Talent Network"}
                 </h3>
                 <p className="text-gray-600">
@@ -282,7 +282,7 @@ function ApplicationModal({
                 </div>
 
                 {error && (
-                  <p className="text-red-600 text-sm">
+                  <p role="alert" className="text-red-600 text-sm">
                     {error === NETWORK_ERROR ? (
                       <>
                         Something went wrong. Please try again, or email us at{" "}
@@ -353,14 +353,14 @@ export default function CareersPage() {
       <Navigation />
       
       {/* Hero */}
-      <section className="pt-32 pb-12 md:pb-20 bg-linear-to-b from-blue-50/50 to-white">
+      <section className="pt-28 sm:pt-36 pb-10 md:pb-14 bg-linear-to-b from-blue-50/50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-bond-primary font-semibold mb-4">Careers at Bond Health</p>
+          <p className="eyebrow mb-4">Careers at Bond Health</p>
           {/* Sized so the heading breaks as "Help patients access / life-changing trials" from 320px up */}
-          <h1 className="text-[1.75rem]/[1.15] min-[360px]:text-[1.875rem]/[1.15] sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="font-display tracking-[-0.02em] text-[1.75rem]/[1.15] min-[360px]:text-[1.875rem]/[1.15] sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Help patients access <span className="text-bond-primary whitespace-nowrap">life-changing trials</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="body-lg max-w-2xl mx-auto">
             We&apos;re building AI that helps research sites enroll the right patients faster. 
             Join us if you want to work on hard problems that matter.
           </p>
@@ -368,16 +368,16 @@ export default function CareersPage() {
       </section>
 
       {/* Values */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">How we work</h2>
+      <section className="pt-4 pb-12 md:pb-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 className="heading-md text-center mb-10 sm:mb-12">How we work</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((value) => (
               <div key={value.title} className="text-center">
                 <div className="w-14 h-14 rounded-2xl bg-bond-primary/10 flex items-center justify-center mx-auto mb-4">
                   <value.icon className="w-7 h-7 text-bond-primary" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{value.title}</h3>
+                <h3 className="font-display font-semibold text-gray-900 mb-2">{value.title}</h3>
                 <p className="text-gray-600 text-sm">{value.description}</p>
               </div>
             ))}
@@ -386,10 +386,10 @@ export default function CareersPage() {
       </section>
 
       {/* Open Roles */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Open Roles</h2>
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="heading-md mb-4">Open Roles</h2>
             <p className="text-gray-600">
               We&apos;re looking for exceptional engineers who want to work on AI that impacts healthcare.
             </p>
@@ -399,7 +399,7 @@ export default function CareersPage() {
             {openRoles.map((role) => (
               <div 
                 key={role.title}
-                className="bg-white rounded-2xl border border-gray-100 p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 shadow-xs"
               >
                 {/* Icon above the title on phones so the text gets the card's full width */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
@@ -409,7 +409,7 @@ export default function CareersPage() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
                       <div>
-                        <h3 className="text-xl font-semibold text-gray-900">{role.title}</h3>
+                        <h3 className="font-display text-xl font-semibold text-gray-900">{role.title}</h3>
                         <p className="text-sm text-gray-500">{role.department}</p>
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -451,9 +451,9 @@ export default function CareersPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="heading-md mb-4">
             Don&apos;t see a role that fits?
           </h2>
           <p className="text-gray-600 mb-8">
@@ -469,7 +469,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <WhyBond compact />
+      <WhyBond compact centered />
       <Footer />
 
       {/* Application Modal */}
