@@ -54,10 +54,10 @@ const pillars = [
 
 export default function Pillars() {
   return (
-    <section id="product" className="section bg-gradient-section">
+    <section id="product" className="section bg-gray-50">
       <div className="container-lg px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <p className="eyebrow mb-4">What we do</p>
           <h2 className="heading-lg mb-4">
             Three pillars. One complete workflow.
@@ -68,11 +68,13 @@ export default function Pillars() {
           </p>
         </div>
 
-        {/* Pillars Grid: one column below lg, where three columns are too narrow for the copy */}
-        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Pillars Grid: one column below lg, where three columns are too narrow for the copy (and capped at md so a
+            single card isn't 770px wide with its text in the left half) */}
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 md:max-w-2xl md:mx-auto lg:max-w-none">
           {pillars.map((pillar) => (
             <div key={pillar.title} className="group">
-              <div className="card h-full hover:border-gray-200 transition-all duration-300">
+              {/* Column so the link sits at the bottom, level across the three cards */}
+              <div className="card h-full flex flex-col">
                 {/* Icon */}
                 <div className={`w-14 h-14 rounded-2xl ${pillar.lightColor} flex items-center justify-center mb-6`}>
                   <pillar.icon className={`w-7 h-7 ${pillar.textColor}`} />
@@ -97,12 +99,15 @@ export default function Pillars() {
                   ))}
                 </div>
 
-                <Link
-                  href={pillar.href}
-                  className="inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
-                >
-                  {pillar.linkLabel ?? `How ${pillar.title.toLowerCase()} works`} <ArrowRight className="w-3 h-3" />
-                </Link>
+                {/* py-2.5 -my-2.5: a 40px tap height without moving anything */}
+                <div className="mt-auto">
+                  <Link
+                    href={pillar.href}
+                    className="-my-2.5 py-2.5 inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
+                  >
+                    {pillar.linkLabel ?? `How ${pillar.title.toLowerCase()} works`} <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
@@ -110,7 +115,7 @@ export default function Pillars() {
 
         {/* Flow Arrows (Desktop) */}
         <div className="hidden lg:flex justify-center items-center gap-4 mt-8">
-          <div className="flex items-center gap-2 text-gray-400">
+          <div className="flex items-center gap-2 text-gray-500">
             <span className="text-sm font-medium">Identify</span>
             <ArrowRight className="w-4 h-4" />
             <span className="text-sm font-medium">Engage</span>
@@ -125,7 +130,7 @@ export default function Pillars() {
             href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-secondary"
           >
             See it in action
             <ArrowRight className="w-4 h-4" />

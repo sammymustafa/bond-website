@@ -23,7 +23,7 @@ export default function BlogIndex() {
       <header className="border-b border-gray-100 bg-gradient-hero pt-28 pb-10 sm:pt-36 sm:pb-14">
         <div className="container-lg px-4 sm:px-6">
           <p className="eyebrow mb-3">Blog</p>
-          <h1 className="font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gray-900">
+          <h1 className="font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.015em] text-balance text-gray-900">
             Notes on enrollment
           </h1>
           <p className="body-lg mt-5 max-w-3xl">
@@ -36,24 +36,31 @@ export default function BlogIndex() {
         {posts.length === 0 ? (
           <p className="text-gray-600">First posts are on the way.</p>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2">
-            {posts.map((p) => (
-              <Link
-                key={p.path}
-                href={p.path}
-                className="group flex flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:border-bond-primary/30 hover:shadow-md"
-              >
-                <p className="text-xs text-gray-500">
-                  {formatDate(p.blog!.date)} · {p.blog!.author}
-                  {p.blog!.readingMinutes ? ` · ${p.blog!.readingMinutes} min read` : ""}
-                </p>
-                <h2 className="mt-2 font-display text-xl font-semibold text-gray-900 group-hover:text-bond-primary">{p.h1}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{p.summary}</p>
-                <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-bond-primary">
-                  Read <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                </span>
-              </Link>
-            ))}
+          // With an odd number of posts the newest spans both columns, so no card sits alone on the last row
+          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 md:[&>:first-child:nth-last-child(odd)]:col-span-2">
+            {posts.map((p, i) => {
+              // The newest post, when it spans both columns, gets a larger heading so it reads as featured
+              const featured = i === 0 && posts.length % 2 === 1;
+              return (
+                <Link key={p.path} href={p.path} className={`card-link group sm:p-6 ${featured ? "md:p-8" : ""}`}>
+                  <p className="text-xs text-gray-500">
+                    {formatDate(p.blog!.date)} · {p.blog!.author}
+                    {p.blog!.readingMinutes ? ` · ${p.blog!.readingMinutes} min read` : ""}
+                  </p>
+                  <h2
+                    className={`mt-2 font-display text-xl font-semibold text-balance text-gray-900 group-hover:text-bond-primary ${featured ? "md:text-2xl" : ""}`}
+                  >
+                    {p.h1}
+                  </h2>
+                  <p className={`mt-2 text-sm leading-relaxed text-gray-600 ${featured ? "md:max-w-3xl md:text-base" : ""}`}>
+                    {p.summary}
+                  </p>
+                  <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-bond-primary">
+                    Read <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         )}
       </div>

@@ -18,19 +18,20 @@ export default function NotFound() {
       <header className="flex-1 bg-gradient-hero pt-28 pb-16 sm:pt-36 sm:pb-24">
         <div className="container-lg px-4 sm:px-6">
           <p className="eyebrow mb-3">404</p>
-          <h1 className="font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gray-900">
+          <h1 className="font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.015em] text-balance text-gray-900">
             Page not found
           </h1>
           <p className="body-lg mt-5 max-w-3xl">The page you&apos;re looking for doesn&apos;t exist or has moved.</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link href="/" className="btn-primary">
+          {/* On phones Home is full width and the two secondary links share the row below it */}
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/" className="btn-primary w-full sm:w-auto">
               Home
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/blog" className="btn-secondary">
+            <Link href="/blog" className="btn-secondary flex-1 sm:flex-none">
               Blog
             </Link>
-            <Link href="/glossary" className="btn-secondary">
+            <Link href="/glossary" className="btn-secondary flex-1 sm:flex-none">
               Glossary
             </Link>
           </div>

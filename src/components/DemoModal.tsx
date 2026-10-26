@@ -5,6 +5,9 @@ import { X, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useDialog } from "./useDialog";
 
+// Shown when Formspree is unreachable or rejects the message; rendered with an email link below (as on /careers).
+const NETWORK_ERROR = "network";
+
 interface DemoModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -69,30 +72,9 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
         throw new Error("Form submission failed");
       }
     } catch {
-      // Fallback to mailto if Formspree fails
-      const subject = encodeURIComponent(`Contact Request from ${name || email}`);
-      const body = encodeURIComponent(
-        `Name: ${name || "Not provided"}\n` +
-        `Email: ${email}\n` +
-        `Company: ${company || "Not provided"}\n` +
-        `Message: ${message || "I'd like to learn more about Bond Health."}\n\n` +
-        `---\nSent from Bond Health website contact form`
-      );
-      const cc = encodeURIComponent(email);
-      
-      window.location.href = `mailto:hello@bondtrials.com?cc=${cc}&subject=${subject}&body=${body}`;
-      
-      setIsSubmitted(true);
+      // Say it failed and keep what they typed, rather than claim "Message Sent!"; the error offers the email address
+      setError(NETWORK_ERROR);
       setIsSubmitting(false);
-      
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setEmail("");
-        setName("");
-        setCompany("");
-        setMessage("");
-        onClose();
-      }, 2000);
     }
   };
 
@@ -119,18 +101,20 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 z-10 p-2 bg-white text-gray-400 hover:text-gray-600 transition-colors rounded-lg hover:bg-gray-100"
+          className="absolute top-3 right-3 z-10 p-3 bg-white text-gray-500 hover:text-gray-700 transition-colors rounded-full hover:bg-gray-100"
         >
           <X className="w-5 h-5" />
         </button>
         <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto overscroll-contain p-6 sm:p-8">
           {isSubmitted ? (
             // Success state
-            <div className="text-center py-8">
+            <div role="status" className="text-center py-8">
               <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
-              <h3 id="contact-modal-title" className="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
+              <h3 id="contact-modal-title" ref={(el) => el?.focus()} tabIndex={-1} className="font-display text-xl font-bold text-gray-900 mb-2 outline-none">
+                Message Sent!
+              </h3>
               <p className="text-gray-600">
                 Thank you! We&apos;ve received your message and will get back to you within 24 hours.
               </p>
@@ -139,7 +123,7 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
             // Form
             <>
               <div className="text-center mb-6 px-8">
-                <h3 id="contact-modal-title" className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
+                <h3 id="contact-modal-title" className="font-display text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
                 <p className="text-gray-600">
                   Have questions or need pricing information? We&apos;ll get back to you shortly.
                 </p>
@@ -205,7 +189,19 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                 </div>
 
                 {error && (
-                  <p className="text-red-600 text-sm">{error}</p>
+                  <p role="alert" className="text-red-600 text-sm">
+                    {error === NETWORK_ERROR ? (
+                      <>
+                        Something went wrong. Please try again, or email us at{" "}
+                        <a href="mailto:hello@bondtrials.com" className="underline">
+                          hello@bondtrials.com
+                        </a>
+                        .
+                      </>
+                    ) : (
+                      error
+                    )}
+                  </p>
                 )}
 
                 <button

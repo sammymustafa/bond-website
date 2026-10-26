@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CalendarDays, ChevronDown, ChevronRight, ExternalLink } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarDays, ChevronDown, ChevronRight, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
@@ -16,10 +16,11 @@ import { demoHref } from "@/content/nav";
 import { withWhyBond } from "@/content/whyBond";
 import { Blocks } from "./Blocks";
 import ContactButton from "./ContactButton";
-import { renderInline } from "./inline";
+import { keepHyphenated, renderInline } from "./inline";
 import PartnerStrip from "./PartnerStrip";
 import ComplianceBadges from "@/components/ComplianceBadges";
 import SmartLink from "./SmartLink";
+import TocSpy from "./TocSpy";
 
 export default function SeoArticle({ page: content }: { page: SeoPage }) {
   const page = withWhyBond(content);
@@ -28,6 +29,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
   const jsonLd = jsonLdFor(page);
   const showDate = showsLastUpdated(page);
   const hero = page.heroCta ?? { label: "Book a demo", href: demoHref };
+  const showToc = page.sections.length > 1;
   const toc = [
     ...page.sections.map((s) => ({ id: s.id, label: s.heading })),
     ...(page.faq && page.faq.length > 0 ? [{ id: "faq", label: "Frequently asked questions" }] : []),
@@ -51,7 +53,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                 <span key={c.href} className={`flex items-center gap-1 ${i < crumbs.length - 1 ? "shrink-0" : "min-w-0"}`}>
                   {i > 0 && <ChevronRight className="h-3.5 w-3.5 shrink-0 text-gray-300" />}
                   {i < crumbs.length - 1 ? (
-                    <Link href={c.href} className="hover:text-gray-900">
+                    <Link href={c.href} className="-my-3 py-3 hover:text-gray-900">
                       {c.label}
                     </Link>
                   ) : (
@@ -62,8 +64,8 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
             </nav>
 
             <p className="eyebrow mb-3">{page.eyebrow || categoryLabel(page.category)}</p>
-            <h1 className="max-w-4xl font-display text-[clamp(1.75rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gray-900">
-              {page.h1}
+            <h1 className="max-w-4xl text-balance font-display text-[clamp(1.75rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.015em] text-gray-900">
+              {keepHyphenated(page.h1)}
             </h1>
             <p className="body-lg mt-4 max-w-3xl sm:mt-5">{renderInline(page.intro, cites, "intro")}</p>
 
@@ -81,7 +83,11 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                 </span>
               )}
               {page.sources.length > 0 && (
-                <a href="#sources" className="hover:text-gray-900">
+                <a
+                  href="#sources"
+                  className="-my-2 inline-flex items-center gap-1.5 py-2 underline decoration-gray-300 underline-offset-4 hover:text-gray-900 hover:decoration-gray-500"
+                >
+                  <BookOpen className="h-4 w-4 text-gray-400" />
                   {page.sources.length} {page.sources.length === 1 ? "source" : "sources"}
                 </a>
               )}
@@ -112,16 +118,22 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
         <div className="container-lg px-4 py-8 sm:px-6 sm:py-16">
           <div className="grid gap-10 lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-16">
             <aside className="no-print hidden lg:block">
-              <div className="sticky top-28 space-y-6">
-                {page.sections.length > 1 && (
-                  <nav aria-label="On this page">
-                    <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-gray-500">On this page</p>
-                    <ul className="space-y-2 border-l border-gray-200">
+              {/* Never taller than the window: the contents list scrolls inside it (fading at the bottom edge) and the
+                  demo card below it stays in view */}
+              <div className="sticky top-28 flex max-h-[calc(100dvh-8.5rem)] flex-col gap-6">
+                {showToc && (
+                  <nav aria-label="On this page" className="flex min-h-0 flex-col">
+                    <p className="overline-label mb-3">On this page</p>
+                    <ul
+                      data-toc-scroll
+                      className="min-h-0 overflow-y-auto pb-6 [mask-image:linear-gradient(to_bottom,#000_calc(100%-1.5rem),transparent)] [scrollbar-width:thin]"
+                    >
                       {toc.map((t) => (
                         <li key={t.id}>
                           <a
                             href={`#${t.id}`}
-                            className="-ml-px block border-l-2 border-transparent pl-3 text-sm leading-snug text-gray-600 hover:border-bond-primary hover:text-gray-900"
+                            data-toc={t.id}
+                            className="block border-l-2 border-gray-200 py-1.5 pl-3 text-[13px] leading-snug text-pretty text-gray-600 transition-colors hover:border-gray-400 hover:text-gray-900 data-[active]:border-bond-primary data-[active]:font-medium data-[active]:text-gray-900"
                           >
                             {t.label}
                           </a>
@@ -131,7 +143,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                   </nav>
                 )}
                 {page.category !== "hub" && (
-                  <div className="rounded-2xl border border-gray-100 bg-gray-50 p-4">
+                  <div className="shrink-0 rounded-2xl border border-gray-200 bg-gray-50 p-4">
                     <p className="text-sm font-semibold text-gray-900">See Bond on your own criteria</p>
                     <p className="mt-1 text-xs text-gray-600">A 15-minute demo with the Bond team.</p>
                     <a href={demoHref} target="_blank" rel="noopener noreferrer" className="btn-primary mt-3 w-full justify-center text-sm">
@@ -142,18 +154,24 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
               </div>
             </aside>
 
+            {/* Running text (headings, paragraphs, lists: see Blocks) is held to 42rem, about 80 characters a line;
+                tables, charts and boxed blocks use the full column */}
             <div className="min-w-0 max-w-3xl">
               {/* Below lg the sidebar is hidden, so long pages get a collapsible contents list instead */}
-              {page.sections.length > 1 && (
+              {showToc && (
                 <details className="no-print group mb-8 rounded-2xl border border-gray-200 bg-gray-50 lg:hidden">
-                  <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900">
+                  <summary className="flex cursor-pointer list-none items-center justify-between rounded-2xl px-4 py-3.5 text-sm font-semibold text-gray-900">
                     On this page
                     <ChevronDown className="h-4 w-4 text-gray-500 transition-transform group-open:rotate-180" />
                   </summary>
-                  <ul className="space-y-1 px-4 pb-4">
+                  <ul className="px-4 pb-3">
                     {toc.map((t) => (
                       <li key={t.id}>
-                        <a href={`#${t.id}`} className="block py-1.5 text-sm leading-snug text-gray-600 hover:text-gray-900">
+                        <a
+                          href={`#${t.id}`}
+                          data-toc={t.id}
+                          className="block py-3 text-sm leading-snug text-pretty text-gray-600 hover:text-gray-900 data-[active]:font-medium data-[active]:text-bond-primary"
+                        >
                           {t.label}
                         </a>
                       </li>
@@ -161,24 +179,32 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                   </ul>
                 </details>
               )}
+              {showToc && <TocSpy ids={toc.map((t) => t.id)} />}
+              {/* first-of-type: the phone contents list comes first in this column, so first: never matched. The
+                  first block after a heading and the last in a section drop their margins, so every section has the
+                  same spacing whatever block it starts or ends with. */}
               {page.sections.map((s) => (
-                <section key={s.id} id={s.id} className="scroll-mt-28 border-b border-gray-100 py-8 first:pt-0 last:border-b-0">
-                  <h2 className="heading-md mb-4">{s.heading}</h2>
+                <section
+                  key={s.id}
+                  id={s.id}
+                  className="border-b border-gray-200/70 py-8 first-of-type:pt-0 last:border-b-0 sm:py-10 [&>h2+*]:mt-0 [&>:last-child]:mb-0 [&>h3+:is(div,figure,aside)]:mt-4"
+                >
+                  <h2 className="heading-md mb-4 max-w-[42rem]">{keepHyphenated(s.heading)}</h2>
                   <Blocks blocks={s.blocks} cites={cites} keyPrefix={s.id} />
                 </section>
               ))}
 
               {page.faq && page.faq.length > 0 && (
-                <section id="faq" className="scroll-mt-28 border-b border-gray-100 py-8">
-                  <h2 className="heading-md mb-4">Frequently asked questions</h2>
+                <section id="faq" className="border-b border-gray-200/70 py-8 sm:py-10">
+                  <h2 className="heading-md mb-2 max-w-[42rem]">Frequently asked questions</h2>
                   <div>
                     {page.faq.map((f, i) => (
                       <details key={i} className="faq-item group last:border-b-0" open={i === 0}>
                         <summary className="faq-question w-full list-none text-left">
-                          <span>{f.q}</span>
+                          <span className="max-w-[42rem]">{f.q}</span>
                           <ChevronDown className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180" />
                         </summary>
-                        <div className="faq-answer mt-3">{renderInline(f.a, cites, `faq-${i}`)}</div>
+                        <div className="faq-answer max-w-[42rem]">{renderInline(f.a, cites, `faq-${i}`)}</div>
                       </details>
                     ))}
                   </div>
@@ -186,12 +212,12 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
               )}
 
               {page.sources.length > 0 && (
-                <section id="sources" className="scroll-mt-28 py-8">
+                <section id="sources" className="py-8 sm:py-10">
                   <h2 className="heading-sm mb-4">Sources</h2>
-                  <ol className="space-y-3 text-sm text-gray-600">
+                  <ol className="max-w-[42rem] space-y-4 text-sm text-gray-600">
                     {page.sources.map((s, i) => (
-                      <li key={s.id} id={`src-${s.id}`} className="flex gap-3 scroll-mt-28">
-                        <span className="w-6 shrink-0 text-right font-medium text-gray-400">{i + 1}.</span>
+                      <li key={s.id} id={`src-${s.id}`} className="flex gap-3">
+                        <span className="w-6 shrink-0 text-right font-medium tabular-nums text-gray-500">{i + 1}.</span>
                         {/* min-w-0 and overflow-wrap: long URLs and file names in notes otherwise run off a phone screen */}
                         <div className="min-w-0 [overflow-wrap:anywhere]">
                           {s.url ? (
@@ -222,19 +248,16 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
           </div>
 
           {page.related.length > 0 && (
-            <section className="no-print mt-12 border-t border-gray-100 pt-10">
+            <section className="no-print mt-8 border-t border-gray-200/70 pt-8 sm:mt-12 sm:pt-10">
               <h2 className="heading-sm mb-5">Related pages</h2>
-              <div className="grid gap-4 sm:grid-cols-2 sm:max-lg:[&>:last-child:nth-child(odd)]:col-span-2 lg:grid-cols-3">
+              <div className={`grid gap-3 sm:grid-cols-2 sm:gap-4 ${relatedCols(page.related.length)}`}>
                 {page.related.map((r) => (
-                  <SmartLink
-                    key={r.href}
-                    href={r.href}
-                    className="group rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:border-bond-primary/30 hover:shadow-md"
-                  >
-                    <p className="font-semibold text-gray-900 group-hover:text-bond-primary">{r.label}</p>
+                  <SmartLink key={r.href} href={r.href} className="card-link group p-4 sm:p-5">
+                    <p className="font-display font-semibold text-gray-900 group-hover:text-bond-primary">{r.label}</p>
                     {r.description && <p className="mt-1 text-sm text-gray-600">{r.description}</p>}
-                    <span className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-bond-primary">
-                      {r.href.startsWith("http") ? "Open" : "Read"} <ArrowRight className="h-3.5 w-3.5" />
+                    <span className="mt-auto inline-flex items-center gap-1 pt-3 text-sm font-medium text-bond-primary">
+                      {r.href.startsWith("http") ? "Open" : "Read"}{" "}
+                      <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                     </span>
                   </SmartLink>
                 ))}
@@ -250,6 +273,17 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
       <Footer />
     </main>
   );
+}
+
+/**
+ * Desktop columns for the related-pages grid: two or four cards fill their rows exactly; otherwise three across.
+ * Between sm and lg (two columns) an odd last card spans the row.
+ */
+function relatedCols(n: number) {
+  const odd = "sm:max-lg:[&>:last-child:nth-child(odd)]:col-span-2";
+  if (n === 2) return "lg:grid-cols-2";
+  if (n === 4) return "lg:grid-cols-4";
+  return `${odd} lg:grid-cols-3`;
 }
 
 /**

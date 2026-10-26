@@ -48,6 +48,9 @@ const columns = [
   },
 ];
 
+// Block links with py-2 on phones (a ~36px tap target); a wrapped name keeps its lines close (leading-snug)
+const linkClass = "inline-block py-2 sm:py-1 text-sm leading-snug text-gray-600 hover:text-gray-900 transition-colors";
+
 export default function Footer() {
   const { openDemoModal } = useDemoModal();
   const { reopenBanner } = useCookieConsent();
@@ -55,9 +58,11 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 sm:gap-10">
+        {/* Seven columns only from xl: at 1024-1279 they were ~115px wide and links wrapped to three lines, so there
+            the brand block takes its own row and the five link columns share the width */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7 gap-8 sm:gap-10">
           {/* Brand Column */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-2">
+          <div className="relative col-span-2 md:col-span-3 lg:col-span-5 xl:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-4 sm:mb-6">
               <Image
                 src="/images/logo/bond-health-icon.png"
@@ -95,19 +100,19 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Bond Health on LinkedIn"
-                className="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-all"
+                className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-all"
               >
                 <LinkedInIcon className="w-4 h-4" />
               </a>
             </div>
 
-            <div className="mt-6 max-w-xs rounded-xl border border-gray-200 bg-white px-4 py-4">
+            <div className="mt-6 max-w-xs rounded-xl border border-gray-200 bg-white px-4 py-4 lg:absolute lg:top-0 lg:right-0 lg:mt-0 xl:static xl:mt-6">
               <ComplianceBadges size="sm" className="[&_ul]:flex-nowrap [&_ul]:justify-between" />
               <a
                 href={trustCenterHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 block text-xs font-medium text-bond-primary hover:underline"
+                className="mt-2 inline-block py-1 text-xs font-medium text-bond-primary hover:underline"
               >
                 View Vanta Trust Center
               </a>
@@ -117,21 +122,21 @@ export default function Footer() {
           {/* Links Columns */}
           {columns.map((col) => (
             <div key={col.title} className={col.wide ? "col-span-2 order-last md:col-span-1 md:order-none" : undefined}>
-              <h4 className="font-semibold text-gray-900 mb-4 text-sm">{col.title}</h4>
+              <h4 className="font-semibold text-gray-900 mb-3 sm:mb-4 text-sm">{col.title}</h4>
               <ul className={col.wide ? "columns-2 gap-8 md:columns-1" : undefined}>
                 {col.links.map((link) => (
-                  <li key={link.href + link.name} className="mb-2.5 break-inside-avoid">
+                  <li key={link.href + link.name} className="sm:mb-1.5 break-inside-avoid">
                     {link.href.startsWith("http") ? (
                       <a
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
+                        className={linkClass}
                       >
                         {link.name}
                       </a>
                     ) : (
-                      <Link href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
+                      <Link href={link.href} className={linkClass}>
                         {link.name}
                       </Link>
                     )}

@@ -39,7 +39,7 @@ export default function GlossaryPage() {
       <header className="border-b border-gray-100 bg-gradient-hero pt-28 pb-10 sm:pt-36 sm:pb-14">
         <div className="container-lg px-4 sm:px-6">
           <p className="eyebrow mb-3">Glossary</p>
-          <h1 className="font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gray-900">
+          <h1 className="font-display text-[clamp(2rem,4.2vw,3.25rem)] font-bold leading-[1.1] tracking-[-0.015em] text-balance text-gray-900">
             Clinical trial recruitment terms, defined
           </h1>
           <p className="body-lg mt-5 max-w-3xl">
@@ -49,7 +49,11 @@ export default function GlossaryPage() {
           <p className="mt-4 text-sm text-gray-500">Last updated {formatDate(latest)}</p>
           <nav aria-label="Letters" className="mt-6 flex flex-wrap gap-2">
             {letters.map((l) => (
-              <a key={l} href={`#letter-${l}`} className="rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-gray-700 ring-1 ring-gray-200 hover:text-bond-primary">
+              <a
+                key={l}
+                href={`#letter-${l}`}
+                className="inline-flex h-10 min-w-10 items-center justify-center rounded-lg bg-white px-2 text-sm font-medium text-gray-700 ring-1 ring-gray-200 transition-colors hover:bg-bond-primary/5 hover:text-bond-primary hover:ring-bond-primary/30"
+              >
                 {l}
               </a>
             ))}
@@ -59,21 +63,23 @@ export default function GlossaryPage() {
 
       <div className="container-lg px-4 py-12 sm:px-6 sm:py-16">
         {letters.map((l) => (
-          <section key={l} id={`letter-${l}`} className="scroll-mt-28 mb-10">
-            <h2 className="mb-4 font-display text-2xl font-bold text-gray-900">{l}</h2>
-            <div className="grid gap-4 md:grid-cols-2">
+          // One list per letter, with the letter in a left rail from md: a two-column card grid left a lone card on
+          // most letters
+          <section key={l} id={`letter-${l}`} className="mb-8 sm:mb-10 md:grid md:grid-cols-[3rem_minmax(0,1fr)] md:gap-6">
+            <h2 className="mb-3 font-display text-2xl font-bold text-gray-900 md:sticky md:top-24 md:mb-0 md:self-start md:pt-4">{l}</h2>
+            <div className="divide-y divide-gray-200/70 overflow-hidden rounded-2xl border border-gray-200 bg-white">
               {sorted
                 .filter((t) => t.term[0].toUpperCase() === l)
                 .map((t) => (
                   <Link
                     key={t.slug}
                     href={`/glossary/${t.slug}`}
-                    className="group flex flex-col rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:border-bond-primary/30 hover:shadow-md"
+                    className="group block p-4 transition-colors hover:bg-gray-50 sm:p-5 lg:grid lg:grid-cols-[15rem_minmax(0,1fr)_auto] lg:items-baseline lg:gap-6"
                   >
-                    <h3 className="font-display text-lg font-semibold text-gray-900 group-hover:text-bond-primary">{t.term}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600">{t.short}</p>
-                    <span className="mt-auto inline-flex items-center gap-1 pt-3 text-sm font-medium text-bond-primary">
-                      Full definition <ArrowRight className="h-3.5 w-3.5" />
+                    <h3 className="font-display text-base font-semibold text-gray-900 group-hover:text-bond-primary sm:text-lg">{t.term}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-gray-600 lg:mt-0">{t.short}</p>
+                    <span className="mt-2 inline-flex items-center gap-1 whitespace-nowrap text-sm font-medium text-bond-primary lg:mt-0">
+                      Full definition <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                     </span>
                   </Link>
                 ))}

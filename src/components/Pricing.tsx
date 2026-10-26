@@ -6,7 +6,7 @@ import { demoHref } from "@/content/nav";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="section bg-gradient-section">
+    <section id="pricing" className="section bg-gray-50">
       <div className="container-md px-4 sm:px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
@@ -24,19 +24,21 @@ export default function Pricing() {
         {/* Pricing Model */}
         <div className="max-w-3xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Per Patient - Original style */}
-            <div className="card-elevated text-center">
-              <div className="w-14 h-14 rounded-2xl bg-bond-primary/10 flex items-center justify-center mx-auto mb-6">
-                <Users className="w-7 h-7 text-bond-primary" />
+            {/* Per Patient: same icon, heading and badge style as the card beside it */}
+            <div className="card-elevated flex flex-col">
+              <div className="w-12 h-12 rounded-xl bg-bond-primary/10 flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-bond-primary" />
               </div>
-              <h3 className="heading-sm mb-2">Per Randomized Patient</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="heading-sm mb-3">Per Randomized Patient</h3>
+              <p className="text-gray-600 mb-4">
                 A percentage of the randomization milestone payment for each
                 patient who is randomized, so our incentives match your trial outcomes.
               </p>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-bond-primary/5 rounded-full">
-                <Check className="w-4 h-4 text-bond-primary" />
-                <span className="text-sm font-medium text-bond-primary">Performance-based</span>
+              <div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-bond-primary/10 rounded-full">
+                  <Check className="w-3.5 h-3.5 text-bond-primary-dark" />
+                  <span className="text-xs font-semibold text-bond-primary-dark uppercase tracking-wide">Performance-based</span>
+                </div>
               </div>
             </div>
 
@@ -47,7 +49,7 @@ export default function Pricing() {
                   <Settings className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 rounded-full">
-                  <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Volume-based</span>
+                  <span className="text-xs font-semibold text-emerald-700 uppercase tracking-wide">Volume-based</span>
                 </div>
               </div>
               <h3 className="heading-sm mb-3">Per Screened Patient</h3>
@@ -71,7 +73,7 @@ export default function Pricing() {
           </div>
 
           {/* How we define enrolled */}
-          <div className="mt-8 bg-white rounded-2xl border border-gray-200 p-6">
+          <div className="mt-8 bg-white rounded-2xl border border-gray-200 p-5 sm:p-6">
             <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
               <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
                 <Users className="w-5 h-5 text-gray-700" />
@@ -86,8 +88,8 @@ export default function Pricing() {
           </div>
 
           {/* Typical implementation */}
-          <div className="mt-4 bg-gray-50 rounded-xl border border-gray-100 p-5 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center shrink-0">
+          <div className="mt-4 bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center shrink-0">
               <Clock className="w-5 h-5 text-gray-600" />
             </div>
             <div>
@@ -97,7 +99,7 @@ export default function Pricing() {
           </div>
 
           {/* What's Included */}
-          <div className="mt-8 bg-white rounded-2xl border border-gray-100 p-5 sm:p-8">
+          <div className="mt-8 bg-white rounded-2xl border border-gray-200 p-5 sm:p-8">
             <p className="text-center font-semibold text-gray-900 mb-6">Included in every engagement</p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {[
@@ -117,7 +119,7 @@ export default function Pricing() {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <a href={demoHref} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Get custom pricing
               <ArrowRight className="w-4 h-4" />

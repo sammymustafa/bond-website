@@ -5,12 +5,19 @@ import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle,
 import Image from "next/image";
 import Link from "next/link";
 
-// Animated counter hook
+const prefersReducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Animated counter hook; with reduced motion the number shows at once
 function useCountUp(end: number, duration: number = 2000, delay: number = 0) {
   const [count, setCount] = useState(0);
-  
+
   useEffect(() => {
+    const reduced = prefersReducedMotion();
     const timeout = setTimeout(() => {
+      if (reduced) {
+        setCount(end);
+        return;
+      }
       let startTime: number;
       const animate = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
@@ -19,7 +26,7 @@ function useCountUp(end: number, duration: number = 2000, delay: number = 0) {
         if (progress < 1) requestAnimationFrame(animate);
       };
       requestAnimationFrame(animate);
-    }, delay);
+    }, reduced ? 0 : delay);
     return () => clearTimeout(timeout);
   }, [end, duration, delay]);
   
@@ -95,9 +102,11 @@ export default function Hero() {
   const booked = useCountUp(12, 1500, 1200);
   const matched = useCountUp(47, 2000, 500);
   
-  // Cycle through patients; after a visitor picks one with the dots, wait 10 seconds before cycling again
+  // Cycle through patients; after a visitor picks one with the dots, wait 10 seconds before cycling again.
+  // With reduced motion the card stays put and the dots switch it.
   const [picks, setPicks] = useState(0);
   useEffect(() => {
+    if (prefersReducedMotion()) return;
     let interval: number | undefined;
     const cycle = () => {
       interval = window.setInterval(() => setActivePatient((prev) => (prev + 1) % patientData.length), 3000);
@@ -115,19 +124,19 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-hero">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden bg-gradient-hero">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="w-full lg:max-w-xl">
             {/* Eyebrow with subtle animation */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-bond-primary/5 border border-bond-primary/20 rounded-full mb-6 animate-fade-up">
-              <span className="w-2 h-2 bg-bond-primary rounded-full animate-pulse" />
-              <span className="text-bond-primary font-medium text-[13px] sm:text-sm">For research sites and health systems</span>
+              <span className="w-2 h-2 bg-bond-primary rounded-full motion-safe:animate-pulse" />
+              <span className="text-bond-primary-dark font-medium text-[13px] sm:text-sm">For research sites and health systems</span>
             </div>
 
-            {/* Headline - Cleaner, more impactful */}
-            <h1 className="font-display font-bold text-[clamp(2.25rem,4.5vw,3.75rem)] leading-[1.05] tracking-[-0.03em] text-gray-900 mb-6 animate-fade-up stagger-1">
+            {/* Headline: not faded in, since it is the largest element on first paint. Balanced so no word sits alone. */}
+            <h1 className="font-display font-bold text-[clamp(2.125rem,4.2vw,3.375rem)] leading-[1.05] tracking-[-0.025em] [word-spacing:0.05em] text-balance text-gray-900 mb-6">
               Enroll the right patients for trials{" "}
               <span className="gradient-text inline-block">in weeks, not months.</span>
             </h1>
@@ -137,20 +146,20 @@ export default function Hero() {
               Bond Health is <span className="text-gray-900 font-medium">AI patient recruitment software</span> for clinical trials: it finds eligible patients in your <span className="text-gray-900 font-medium">EHR</span> and through <span className="text-gray-900 font-medium">Meta and Google ads</span>, then calls and texts each one through to a <span className="text-gray-900 font-medium">booked study visit</span>.
             </p>
 
-            {/* CTAs - More prominent */}
-            <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 animate-fade-up stagger-3">
+            {/* CTAs: full width and equal on phones, side by side from sm */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-start gap-3 sm:gap-4 mb-8 animate-fade-up stagger-3">
               <a
                 href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary group"
+                className="btn-primary group w-full sm:w-auto"
               >
                 Request a pilot
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
                 href="#product"
-                className="btn-secondary group"
+                className="btn-secondary group w-full sm:w-auto"
               >
                 <Play className="w-4 h-4 transition-transform group-hover:scale-110" />
                 See 3-step workflow
@@ -160,7 +169,7 @@ export default function Hero() {
             {/* Combined proof + trust in a cleaner card */}
             <div className="p-4 bg-gray-50/80 rounded-xl border border-gray-100 animate-fade-up stagger-4">
               <p className="text-sm text-gray-700 mb-3">
-                <span className="font-semibold text-gray-900">Up to 3x faster enrollment</span> · <span className="font-semibold text-gray-900">90%+ matching accuracy</span>
+                <span className="font-semibold text-gray-900 whitespace-nowrap">Up to 3x faster enrollment</span> · <span className="font-semibold text-gray-900 whitespace-nowrap">90%+ matching accuracy</span>
               </p>
               {/* py-1 on the links gives them a 24px tap height */}
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -225,8 +234,8 @@ export default function Hero() {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-xs text-gray-500 hidden sm:inline">Connected via FHIR</span>
-                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-xs text-green-600 font-medium">Live</span>
+                  <span className="w-2 h-2 rounded-full bg-green-500 motion-safe:animate-pulse" />
+                  <span className="text-xs text-green-700 font-medium">Live</span>
                 </div>
               </div>
 
@@ -235,7 +244,7 @@ export default function Hero() {
                 {/* Section Header with animated counter */}
                 <div className="flex items-center justify-between gap-2 mb-4">
                   <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Eligibility Screening</h3>
-                  <span className="px-3 py-1.5 text-sm font-bold text-bond-primary bg-bond-primary/10 rounded-full tabular-nums whitespace-nowrap">
+                  <span className="px-3 py-1.5 text-sm font-bold text-bond-primary-dark bg-bond-primary/10 rounded-full tabular-nums whitespace-nowrap">
                     {matched} matched
                   </span>
                 </div>
@@ -301,8 +310,8 @@ export default function Hero() {
                   })}
                 </div>
 
-                {/* Patient indicator dots */}
-                <div className="flex justify-center mb-4">
+                {/* Patient indicator dots; p-3 gives each a 32px tap area */}
+                <div className="flex justify-center mb-2">
                   {patientData.map((_, index) => (
                     <button
                       key={index}
@@ -310,7 +319,7 @@ export default function Hero() {
                       onClick={() => showPatient(index)}
                       aria-label={`Show example patient ${index + 1} of ${patientData.length}`}
                       aria-pressed={index === activePatient}
-                      className="group p-2"
+                      className="group p-3"
                     >
                       <span
                         aria-hidden
@@ -323,36 +332,36 @@ export default function Hero() {
                 </div>
 
                 {/* Stats Summary with animated numbers */}
-                <div className="grid grid-cols-3 gap-3 pt-4 border-t border-gray-100">
+                <div className="grid grid-cols-3 gap-1 sm:gap-3 pt-4 border-t border-gray-100">
                   <div className="text-center">
                     <p className="text-xl font-bold text-gray-900 tabular-nums">{contacted}</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Contacted</p>
+                    <p className="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wide">Contacted</p>
                   </div>
                   <div className="text-center border-x border-gray-100">
                     <p className="text-xl font-bold text-bond-primary tabular-nums">{preScreened}</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Pre-screened</p>
+                    <p className="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wide">Pre-screened</p>
                   </div>
                   <div className="text-center">
                     <p className="text-xl font-bold text-green-600 tabular-nums">{booked}</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wide">Booked</p>
+                    <p className="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wide">Booked</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Subtle floating accents - toned down, hidden on mobile */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-bond-accent/10 rounded-full blur-2xl hidden sm:block animate-pulse" />
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-bond-accent/10 rounded-full blur-2xl hidden sm:block motion-safe:animate-pulse" />
             <div className="absolute -bottom-4 -left-4 w-28 h-28 bg-bond-primary/10 rounded-full blur-2xl hidden sm:block" />
           </div>
         </div>
 
         {/* Supporters Section - Renamed and normalized */}
-        <div className="mt-12 lg:mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
-          <p className="text-center text-xs text-gray-400 uppercase tracking-wider mb-6 lg:mb-8">Supported by</p>
+        <div className="mt-12 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
+          <p className="text-center text-xs font-semibold text-gray-500 uppercase tracking-wider mb-6">Supported by</p>
           
           {/* Mobile: even grid; each logo is optically sized (wider marks are scaled
               down) so they carry similar visual weight, and all are visible at once */}
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-6 sm:hidden">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-6 motion-safe:sm:hidden">
             {supporters.map((supporter) => {
               const aspect = supporter.w / supporter.h;
               const opticalHeight = Math.round((34 / Math.pow(aspect, 0.42)) * (supporter.boost ?? 1));
@@ -374,13 +383,15 @@ export default function Hero() {
             })}
           </div>
 
-          {/* Desktop: scrolling logo strip */}
-          <div className="relative overflow-hidden hidden sm:block">
-            <div className="flex animate-scroll gap-16 items-center">
+          {/* Desktop: scrolling logo strip. The track is as wide as its two copies (w-max), so translating it by -50%
+              moves exactly one copy and the loop is seamless; spacing is padding, not gap, for the same reason. */}
+          <div className="relative overflow-hidden hidden motion-safe:sm:block [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
+            <div className="flex w-max animate-scroll items-center">
               {[...supporters, ...supporters].map((supporter, index) => (
                 <div
                   key={`${supporter.name}-${index}`}
-                  className="shrink-0 transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
+                  aria-hidden={index >= supporters.length || undefined}
+                  className="shrink-0 pr-16 transition-all duration-300 opacity-50 hover:opacity-80 grayscale hover:grayscale-0"
                 >
                   <Image
                     src={supporter.logo}
@@ -388,7 +399,7 @@ export default function Hero() {
                     width={supporter.w}
                     height={supporter.h}
                     className="w-auto object-contain"
-                    style={{ height: "40px" }}
+                    style={{ height: `${Math.round((44 / Math.pow(supporter.w / supporter.h, 0.42)) * (supporter.boost ?? 1))}px` }}
                   />
                 </div>
               ))}

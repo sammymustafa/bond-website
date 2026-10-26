@@ -17,8 +17,8 @@ export default function BarChart({ title, unit, data, cite, cites }: Props) {
   const max = Math.max(...data.map((d) => d.value), 1);
   const fmt = (n: number) => n.toLocaleString("en-US");
   return (
-    <figure className="my-8 rounded-2xl border border-gray-100 bg-white p-5 sm:p-6 shadow-sm">
-      <figcaption className="mb-4 font-semibold text-gray-900">
+    <figure className="my-8 rounded-2xl border border-gray-200 bg-white p-5 sm:p-6">
+      <figcaption className="mb-4 text-[15px] font-semibold leading-snug text-gray-900">
         {title}
         <Cite ids={[cite]} cites={cites} />
       </figcaption>

@@ -1,6 +1,6 @@
 "use client";
 
-import { TrendingUp, Target, Clock, Users, ArrowRight } from "lucide-react";
+import { TrendingUp, Target, Clock, Users, ArrowRight, Quote } from "lucide-react";
 
 const results = [
   {
@@ -31,10 +31,10 @@ const results = [
 
 export default function Results() {
   return (
-    <section className="section bg-gradient-section">
+    <section className="section bg-white">
       <div className="container-lg px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <p className="eyebrow mb-4">Results</p>
           <h2 className="heading-lg mb-4">
             Measurable lift for sites.
@@ -45,20 +45,20 @@ export default function Results() {
           </p>
         </div>
 
-        {/* Results Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Results Grid: two across even on phones, where one column made four numbers take ~1,600px of scrolling */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {results.map((result) => (
             <div
               key={result.label}
-              className="card text-center"
+              className="card text-center p-4 sm:p-6 md:p-8"
             >
-              <div className="w-12 h-12 rounded-xl bg-bond-primary/10 flex items-center justify-center mx-auto mb-4">
-                <result.icon className="w-6 h-6 text-bond-primary" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-bond-primary/10 flex items-center justify-center mx-auto mb-4">
+                <result.icon className="w-5 h-5 sm:w-6 sm:h-6 text-bond-primary" />
               </div>
               <p className="stat-number-sm mb-1">
                 {result.value}
               </p>
-              <p className="font-semibold text-gray-900 mb-2">
+              <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">
                 {result.label}
               </p>
               <p className="text-sm text-gray-500">
@@ -70,9 +70,10 @@ export default function Results() {
 
         {/* Mini Case Study */}
         <div className="mt-12 max-w-2xl mx-auto">
-          <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 text-center">
-            <p className="text-sm text-gray-500 mb-2">Early results</p>
-            <p className="text-gray-700 italic mb-4">
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-xs p-6 md:p-8 text-center">
+            <Quote aria-hidden className="w-6 h-6 text-bond-primary/40 mx-auto mb-3" />
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Early results</p>
+            <p className="text-lg sm:text-xl font-medium leading-relaxed text-gray-900 text-balance mb-4">
               &quot;Reduced our chart review time significantly while improving the quality 
               of patients we bring in for screening.&quot;
             </p>
@@ -88,7 +89,7 @@ export default function Results() {
             href="https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-secondary"
           >
             Get similar results
             <ArrowRight className="w-4 h-4" />

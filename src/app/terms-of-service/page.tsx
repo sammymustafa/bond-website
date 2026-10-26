@@ -17,7 +17,7 @@ function SectionHeading({ id, children }: { id?: string; children: React.ReactNo
   return (
     <h2
       id={id}
-      className="text-xl sm:text-2xl font-display font-bold text-bond-primary mt-10 mb-4"
+      className="text-xl sm:text-2xl font-display font-bold text-bond-primary mt-12 pt-8 border-t border-gray-200/70 mb-4 text-balance"
     >
       {children}
     </h2>
@@ -49,14 +49,14 @@ export default function TermsOfServicePage() {
       <Navigation />
 
       <article className="pt-28 sm:pt-36 pb-16 sm:pb-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        <div className="max-w-[44rem] mx-auto px-4 sm:px-6">
           {/* Header */}
           <div className="mb-10 sm:mb-14">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-bond-primary/10 flex items-center justify-center">
                 <FileText className="w-5 h-5 text-bond-primary" />
               </div>
-              <span className="text-sm font-medium text-bond-primary tracking-wide uppercase">
+              <span className="eyebrow">
                 Legal
               </span>
             </div>
@@ -76,7 +76,7 @@ export default function TermsOfServicePage() {
             </p>
 
             <div className="flex flex-wrap gap-3">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-bond-primary/10 text-bond-primary text-sm font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-bond-primary/10 text-bond-primary-dark text-sm font-medium">
                 Effective Date: July 19, 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">
@@ -335,7 +335,7 @@ export default function TermsOfServicePage() {
             </div>
           </div>
 
-          <p className="text-sm text-gray-400 text-center border-t border-gray-100 pt-8">
+          <p className="text-sm text-gray-500 text-center border-t border-gray-100 pt-8">
             &copy; 2026 Bond Health, Inc. All rights reserved.
           </p>
         </div>

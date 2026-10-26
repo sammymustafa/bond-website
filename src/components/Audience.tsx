@@ -50,7 +50,7 @@ export default function Audience() {
     <section className="section bg-white">
       <div className="container-lg px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <p className="eyebrow mb-4">Who it&apos;s for</p>
           <h2 className="heading-lg mb-4">
             Built for clinical research teams.
@@ -61,12 +61,13 @@ export default function Audience() {
           </p>
         </div>
 
-        {/* Audience Cards: one column below lg, where three columns are too narrow for the lists */}
-        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Audience Cards: one column below lg, where three columns are too narrow for the lists (capped at md, as in
+            Pillars). Columns so the links line up at the bottom. */}
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 md:max-w-2xl md:mx-auto lg:max-w-none">
           {audiences.map((audience) => (
             <div
               key={audience.title}
-              className="card hover:border-bond-primary/20 hover:shadow-lg transition-all duration-300"
+              className="card flex flex-col"
             >
               <div className="w-14 h-14 rounded-2xl bg-bond-primary/10 mb-6 flex items-center justify-center">
                 <audience.icon className="w-7 h-7 text-bond-primary" />
@@ -87,12 +88,14 @@ export default function Audience() {
 
               {/* CTA */}
               {audience.cta && (
-                <Link
-                  href={audience.cta.href}
-                  className="inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
-                >
-                  {audience.cta.label} <ArrowRight className="w-3 h-3" />
-                </Link>
+                <div className="mt-auto">
+                  <Link
+                    href={audience.cta.href}
+                    className="-my-2.5 py-2.5 inline-flex items-center gap-1 text-sm font-medium text-bond-primary hover:underline"
+                  >
+                    {audience.cta.label} <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
               )}
             </div>
           ))}

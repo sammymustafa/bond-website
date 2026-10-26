@@ -35,7 +35,7 @@ export default function NewsletterForm() {
 
   if (status === "done") {
     return (
-      <div className="flex items-center gap-3 rounded-2xl border border-emerald-100 bg-emerald-50 p-5 text-emerald-800">
+      <div role="status" className="flex items-center gap-3 rounded-2xl border border-emerald-100 bg-emerald-50 p-5 text-emerald-800">
         <CheckCircle className="h-5 w-5 shrink-0" />
         <p className="text-sm">You are on the list. The next issue goes out at the start of the month.</p>
       </div>
@@ -57,12 +57,17 @@ export default function NewsletterForm() {
         placeholder="you@yoursite.org"
         className="w-full min-w-0 flex-1 rounded-full border border-gray-200 px-5 py-3 text-gray-900 outline-none transition-all focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20"
       />
-      {/* py-3.5 text-base matches the input's 52px height when the two stack on phones */}
-      <button type="submit" disabled={status === "sending"} className="btn-primary justify-center py-3.5 text-base disabled:opacity-60">
-        {status === "sending" ? <Loader2 className="h-4 w-4 animate-spin" /> : <ArrowRight className="h-4 w-4" />}
+      {/* py-[13px] text-base plus the 1px border matches the input's 52px height */}
+      <button type="submit" disabled={status === "sending"} className="btn-primary justify-center py-[13px] text-base disabled:opacity-60">
+        {status === "sending" && <Loader2 className="h-4 w-4 animate-spin" />}
         Subscribe
+        {status !== "sending" && <ArrowRight className="h-4 w-4" />}
       </button>
-      {status === "error" && <p className="text-sm text-red-600 sm:basis-full">Please check the address and try again.</p>}
+      {status === "error" && (
+        <p role="alert" className="text-sm text-red-600 sm:basis-full">
+          Please check the address and try again.
+        </p>
+      )}
     </form>
   );
 }

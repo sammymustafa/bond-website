@@ -70,11 +70,11 @@ export default function Navigation() {
     <>
       <nav
         ref={navRef}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-3" : "py-5"} ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-3" : "py-3 lg:py-5"} ${
           solid ? "bg-white/95 backdrop-blur-lg border-b border-gray-100 shadow-sm" : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <Image
@@ -90,9 +90,11 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            {navMenus.map((menu) => {
+            {navMenus.map((menu, mi) => {
               const isOpen = openMenu === menu.label;
               const wide = menu.groups.length > 1;
+              // The last menu opens leftward from its right edge, so its panel stays clear of the window edge at 1024
+              const align = wide ? "left-1/2 -translate-x-1/2" : mi === navMenus.length - 1 ? "right-0" : "left-0";
               return (
                 <div
                   key={menu.label}
@@ -129,8 +131,8 @@ export default function Navigation() {
                       openedByHover.current = false;
                       setOpenMenu(isOpen ? null : menu.label);
                     }}
-                    className={`flex items-center gap-1 px-4 py-2 font-medium text-sm transition-colors rounded-lg hover:bg-gray-50 ${
-                      isOpen ? "text-gray-900 bg-gray-50" : "text-gray-600 hover:text-gray-900"
+                    className={`flex items-center gap-1 px-4 py-2 font-medium text-sm transition-colors rounded-lg hover:bg-gray-100 ${
+                      isOpen ? "text-gray-900 bg-gray-100" : "text-gray-600 hover:text-gray-900"
                     }`}
                   >
                     {menu.label}
@@ -138,12 +140,12 @@ export default function Navigation() {
                   </button>
                   {isOpen && (
                     <div
-                      className={`absolute top-full pt-3 ${wide ? "left-1/2 -translate-x-1/2" : "left-0"}`}
+                      className={`absolute top-full pt-3 ${align}`}
                       onMouseEnter={cancelClose}
                     >
                       <div
                         className={`rounded-2xl bg-white border border-gray-100 shadow-xl p-4 ${
-                          wide ? "grid gap-6 grid-cols-3 w-[760px]" : "w-[320px]"
+                          wide ? "grid gap-6 grid-cols-3 w-[760px]" : "w-[360px]"
                         }`}
                       >
                         {menu.groups.map((group, gi) => (
@@ -156,12 +158,12 @@ export default function Navigation() {
                                 <li key={item.href}>
                                   <Link
                                     href={item.href}
-                                    className="block px-3 py-2 rounded-lg hover:bg-gray-50"
+                                    className="group/item block px-3 py-2 rounded-lg hover:bg-gray-100"
                                     onClick={() => setOpenMenu(null)}
                                   >
-                                    <span className="block text-sm font-medium text-gray-900">{item.name}</span>
+                                    <span className="block text-sm font-medium text-gray-900 group-hover/item:text-bond-primary">{item.name}</span>
                                     {item.description && (
-                                      <span className="block text-xs text-gray-500 mt-0.5">{item.description}</span>
+                                      <span className="block text-xs text-gray-500 mt-0.5 text-pretty">{item.description}</span>
                                     )}
                                   </Link>
                                 </li>
@@ -202,7 +204,7 @@ export default function Navigation() {
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
-            className="lg:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+            className="lg:hidden p-2.5 -mr-2.5 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -226,23 +228,23 @@ export default function Navigation() {
             isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-            <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+          <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-gray-100">
+            <Link href="/" className="flex items-center gap-2.5" onClick={() => setIsMobileMenuOpen(false)}>
               <Image
                 src="/images/logo/bond-health-icon.png"
                 alt="Bond Health"
                 width={637}
                 height={626}
-                className="h-8 w-8 object-contain"
+                className="h-9 w-9 object-contain"
               />
-              <span className="font-display font-bold text-lg text-gray-900">Bond Health</span>
+              <span className="font-display font-bold text-xl text-gray-900">Bond Health</span>
             </Link>
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(false)}
               aria-label="Close menu"
               data-autofocus
-              className="p-2 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-2.5 -mr-2.5 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
             >
               <X size={24} />
             </button>
@@ -257,13 +259,14 @@ export default function Navigation() {
                     type="button"
                     aria-expanded={isOpen}
                     onClick={() => setMobileOpenMenu(isOpen ? null : menu.label)}
-                    className="w-full flex items-center justify-between px-3 py-3.5 text-lg font-medium text-gray-800"
+                    className="w-full flex items-center justify-between px-3 py-3.5 text-lg font-medium text-gray-800 aria-expanded:text-bond-primary"
                   >
                     {menu.label}
                     <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
+                  {/* Indented under a rule so the open group reads as part of its heading */}
                   {isOpen && (
-                    <div className="pb-3">
+                    <div className="mb-3 ml-3 border-l border-gray-200 pl-1">
                       {menu.groups.map((group, gi) => (
                         <div key={gi} className="mb-2">
                           {group.title && (
@@ -274,7 +277,7 @@ export default function Navigation() {
                               key={item.href}
                               href={item.href}
                               onClick={() => setIsMobileMenuOpen(false)}
-                              className="block px-3 py-2 text-[15px] text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg"
+                              className="block px-3 py-2.5 text-[15px] leading-snug text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg"
                             >
                               {item.name}
                             </Link>
@@ -285,7 +288,7 @@ export default function Navigation() {
                         <Link
                           href={menu.href}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="block px-3 py-2 text-sm font-medium text-bond-primary"
+                          className="block px-3 py-2.5 text-sm font-medium text-bond-primary"
                         >
                           All {menu.label.toLowerCase()} pages
                         </Link>
@@ -295,17 +298,18 @@ export default function Navigation() {
                 </div>
               );
             })}
-            <div className="mt-6">
-              <a
-                href={demoHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="btn-primary w-full justify-center"
-              >
-                Book a demo
-              </a>
-            </div>
+          </div>
+          {/* Pinned under the scrolling list, so an open group can't push it off-screen */}
+          <div className="shrink-0 border-t border-gray-100 p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <a
+              href={demoHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="btn-primary w-full justify-center text-base"
+            >
+              Book a demo
+            </a>
           </div>
         </div>
       </div>
