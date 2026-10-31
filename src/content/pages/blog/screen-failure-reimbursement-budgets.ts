@@ -145,7 +145,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Bond's [Identify](/identify) stage reads clinical notes, labs, imaging, pathology and molecular reports against the protocol and shows criterion-by-criterion evidence for every match, and its agents pre-screen patients by phone or text before booking a visit. Its pricing is a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, so part of the fee depends on patients randomizing.{{cite:bond-product}}",
+          text: "Bond's [Identify](/identify) stage reads clinical notes, labs, imaging, pathology and molecular reports against the protocol and shows criterion-by-criterion evidence for every match, and its agents pre-screen patients by phone or text before booking a visit. Its pricing is a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, so part of the fee depends on patients randomizing.{{cite:bond-product}}",
         },
         {
           type: "cta",

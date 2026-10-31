@@ -5,19 +5,19 @@ const page: SeoPage = {
   category: "product",
   title: "Clinical trial recruitment software pricing per patient",
   description:
-    "How Bond prices recruitment: a volume-based fee per screened patient plus a percentage of each randomization milestone payment, with no integration fee.",
+    "How Bond prices recruitment: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, with no integration fee.",
   keywords: [
     "clinical trial recruitment software pricing",
     "per screened patient pricing clinical trials",
-    "randomization milestone payment percentage",
+    "clinical trial milestone payment percentage",
     "clinical trial recruitment cost per randomized patient",
   ],
   eyebrow: "Pricing",
-  h1: "Pricing: a fee per screened patient plus a share of each randomization milestone",
+  h1: "Pricing: a fee per screened patient plus a share of milestone payments from randomization on",
   intro:
-    "Bond Health prices every engagement in two parts: a volume-based fee for each screened patient, and a percentage of the randomization milestone payment for each patient who is randomized. There is no integration fee.{{cite:bond-product}} Pricing is custom, and Bond does not publish dollar amounts. The per-screened-patient fee covers EHR integration, implementation and ongoing operation.",
+    "Bond Health prices every engagement in two parts: a volume-based fee for each screened patient, and a percentage of the milestone payments for each randomized patient, from randomization through later study visits. There is no integration fee.{{cite:bond-product}} Pricing is custom, and Bond does not publish dollar amounts. The per-screened-patient fee covers EHR integration, implementation and ongoing operation.",
   summary: "How Bond's two-part pricing works, what counts as randomized, and how it compares with other ways to pay for recruitment.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Get custom pricing", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
@@ -26,11 +26,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "There are two parts. The **per-screened-patient fee** is volume-based: a screened patient is a patient Bond calls and texts to pre-screen for the study, and the fee covers EHR integration, implementation and ongoing operation, itemized below; there is no separate integration fee. The **randomization share** is a percentage of the randomization milestone payment for each patient who is successfully randomized.{{cite:bond-product}}",
+          text: "There are two parts. The **per-screened-patient fee** is volume-based: a screened patient is a patient Bond calls and texts to pre-screen for the study, and the fee covers EHR integration, implementation and ongoing operation, itemized below; there is no separate integration fee. The **milestone share** is a percentage of the milestone payments for each patient who is successfully randomized: the randomization payment and each later visit payment the patient reaches in the study budget.{{cite:bond-product}}",
         },
         {
           type: "p",
-          text: "The split follows the work. Connecting an EHR, passing a security review, configuring scripts, screening and outreach scale with the number of patients screened. The randomization share is the part that moves with results.",
+          text: "The split follows the work. Connecting an EHR, passing a security review, configuring scripts, screening and outreach scale with the number of patients screened. The milestone share is the part that moves with results.",
         },
       ],
     },
@@ -86,11 +86,11 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The randomization share applies only when a patient is successfully randomized and the study's randomization milestone is paid.{{cite:bond-product}} A match, a referral, a completed pre-screening call, a booked visit or a signed consent form does not trigger it. A patient who consents and then fails screening generates no randomization share.",
+          text: "The milestone share starts only when a patient is successfully randomized and the study's randomization milestone is paid. From then on it applies to each milestone payment the patient reaches, such as later study visits.{{cite:bond-product}} A match, a referral, a completed pre-screening call, a booked screening visit or a signed consent form does not trigger it. A patient who consents and then fails screening generates no milestone share.",
         },
         {
           type: "p",
-          text: "Randomization is an event every randomized study already records, and the milestone payment for it is set in the study's budget, so both the count and the amount can be checked against the study's own records.",
+          text: "Randomization and each later study visit are events the study already records, and the milestone payment for each is set in the study's budget, so both the count and the amounts can be checked against the study's own records.",
         },
         {
           type: "p",
@@ -141,8 +141,8 @@ const page: SeoPage = {
             ],
             [
               "Bond",
-              "A volume-based fee per screened patient, plus a percentage of the randomization milestone payment for each patient; no integration fee{{cite:bond-product}}",
-              "Shared. The per-screened-patient fee scales with volume; the randomization share is owed only for randomized patients",
+              "A volume-based fee per screened patient, plus a percentage of each randomized patient's milestone payments, from randomization onward; no integration fee{{cite:bond-product}}",
+              "Shared. The per-screened-patient fee scales with volume; the milestone share is owed only for randomized patients",
               "Reviews matches, takes escalations, runs screening visits and obtains consent",
             ],
           ],
@@ -184,7 +184,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "A site that enrolls no one still costs the sponsor money, and costs the site the coordinator hours spent looking. Tying part of the price to the randomization milestone does not fix that by itself. What it does is keep the performance part of Bond's price at zero for a site that does not enroll.",
+          text: "A site that enrolls no one still costs the sponsor money, and costs the site the coordinator hours spent looking. Tying part of the price to milestones from randomization onward does not fix that by itself. What it does is keep the performance part of Bond's price at zero for a site that does not enroll.",
         },
       ],
     },
@@ -205,7 +205,7 @@ const page: SeoPage = {
             ["First contact and pre-screening", "Coordinator calls, voicemails and callbacks", "Voice and text agents call, pre-screen, schedule visits and escalate to coordinators{{cite:bond-site}}"],
             ["Consent conversation", "PI and coordinator time", "AI support explains the study in plain language and answers patient questions; the PI and delegated staff obtain consent{{cite:bond-site}}"],
             ["Setup", "Staff training on the study", "Covered by the per-screened-patient fee, with no integration fee; typically 48 hours for full EHR integration{{cite:bond-site}}"],
-            ["If no one is randomized", "Staff time already spent", "Per-screened-patient fees already owed; no randomization share"],
+            ["If no one is randomized", "Staff time already spent", "Per-screened-patient fees already owed; no milestone share"],
           ],
         },
       ],
@@ -219,8 +219,8 @@ const page: SeoPage = {
           items: [
             "**It does not publish a price list.** Quotes are custom and scoped to your sites and studies.{{cite:bond-site}}",
             "**Its fees do not include ad spend.** Bond creates and runs the Meta and Google ad campaigns, but the spend comes out of the site's own advertising budget for the study.{{cite:bond-product}}",
-            "**It is not purely pay-for-performance.** The per-screened-patient fee is owed whether or not anyone is randomized. Only the randomization share depends on results.{{cite:bond-product}}",
-            "**It does not guarantee enrollment.** A protocol with few eligible patients, or a site without visit capacity, will enroll slowly with any tool. The randomization share means Bond shares that outcome. It does not remove it.",
+            "**It is not purely pay-for-performance.** The per-screened-patient fee is owed whether or not anyone is randomized. Only the milestone share depends on results.{{cite:bond-product}}",
+            "**It does not guarantee enrollment.** A protocol with few eligible patients, or a site without visit capacity, will enroll slowly with any tool. The milestone share means Bond shares that outcome. It does not remove it.",
             "**It does not obtain consent or decide eligibility.** The PI and delegated staff do both.",
           ],
         },
@@ -238,7 +238,7 @@ const page: SeoPage = {
           type: "cta",
           label: "Get custom pricing",
           href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
-          text: "Bring a protocol and the name of your EHR. We will walk through what the per-screened-patient fee covers for your sites and how the randomization share is calculated.",
+          text: "Bring a protocol and the name of your EHR. We will walk through what the per-screened-patient fee covers for your sites and how the milestone share is calculated.",
           secondaryLabel: "Read about security",
           secondaryHref: "/security",
         },
@@ -248,11 +248,11 @@ const page: SeoPage = {
   faq: [
     {
       q: "How much do patient recruitment platforms typically cost?",
-      a: "There is no standard price, because vendors charge for different units: media and digital recruitment vendors price campaigns, referrals or milestones such as randomization, outsourced staff is priced per full-time equivalent or per unit of output, and CTMS licenses are typically priced by users, studies or both.{{cite:1nhealth-pricing,clinical-leader-fsp,simpletrials-ctms}} Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee; Meta and Google ad spend is not included.{{cite:bond-product}} Ask for a quote for your study volume.",
+      a: "There is no standard price, because vendors charge for different units: media and digital recruitment vendors price campaigns, referrals or milestones such as randomization, outsourced staff is priced per full-time equivalent or per unit of output, and CTMS licenses are typically priced by users, studies or both.{{cite:1nhealth-pricing,clinical-leader-fsp,simpletrials-ctms}} Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee; Meta and Google ad spend is not included.{{cite:bond-product}} Ask for a quote for your study volume.",
     },
     {
       q: "What happens if no one enrolls?",
-      a: "No randomization share is owed, because it is a percentage of the randomization milestone payment for each randomized patient.{{cite:bond-product}} The per-screened-patient fee still applies, since it covers the screening, outreach, EHR integration and operation that ran regardless. There is no separate integration fee.",
+      a: "No milestone share is owed, because it is a percentage of the milestone payments for each randomized patient, from randomization onward.{{cite:bond-product}} The per-screened-patient fee still applies, since it covers the screening, outreach, EHR integration and operation that ran regardless. There is no separate integration fee.",
     },
     {
       q: "Is there a pilot option?",

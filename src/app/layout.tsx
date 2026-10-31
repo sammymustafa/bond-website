@@ -111,7 +111,7 @@ const jsonLd = {
         width: 1563,
         height: 1563,
       },
-      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, and is HIPAA compliant and SOC 2 Type I compliant, and its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners.",
+      description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, and is HIPAA compliant and SOC 2 Type I compliant, and its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners.",
       slogan: "Enroll the right patients faster.",
       address: {
         "@type": "PostalAddress",
@@ -163,7 +163,7 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         priceCurrency: "USD",
-        description: "Volume-based per-screened-patient fee plus a percentage of each patient's randomization milestone payment, with no integration fee",
+        description: "Volume-based per-screened-patient fee plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee",
       },
       featureList: [
         "LLM-based EHR screening",
@@ -177,7 +177,7 @@ const jsonLd = {
         "Connects to every major EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth and eClinicalWorks",
         "Works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault; CRIO Certified Partner with a two-way CRIO integration",
         "Live in 48 hours with no integration fee",
-        "A percentage of each randomization milestone payment, owed only for randomized patients",
+        "A percentage of each randomized patient's milestone payments, from randomization through later study visits, owed only for randomized patients",
         "Voice and SMS/text agents in the patient's language, with live transfer to a coordinator",
         "Retention support: visit reminders, transportation booking, symptom and diary collection, dropout-risk alerts",
         "HIPAA compliant and SOC 2 Type I compliant",

@@ -21,7 +21,7 @@ const page: SeoPage = {
   intro:
     "Most clinical trial patient recruitment software does not publish prices. Of those that do, some are free to sites because sponsors pay, OpenClinica Recruit averages $1,000 to $3,000 a month per study, and Salesforce lists its recruitment add-on at $10,000 per organization per year for each 100 referred patients.{{cite:inato-free-2024,openclinica-recruit,salesforce-pre}} Published research puts recruitment at a median of $409 per recruited patient across 30 trials, and Tufts CSDD's 2019 data put late-stage recruitment budgets at $2,273 per patient.{{cite:speich-2018,tufts-acrp-2020}} The number that decides what a study really pays is cost per randomized patient, including staff time.",
   summary: "Pricing models, published prices, cost per patient from published studies, and the costs recruitment software quotes leave out.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: {
     label: "Get custom pricing",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -73,10 +73,10 @@ const page: SeoPage = {
               "The buyer, under FTE pricing.",
             ],
             [
-              "Per screened patient plus a randomization share",
-              "Each patient contacted to pre-screen, plus a share of each randomization milestone",
-              "Bond: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-product}}",
-              "Shared. The randomization share is owed only for randomized patients.",
+              "Per screened patient plus a milestone share",
+              "Each patient contacted to pre-screen, plus a share of each randomized patient's milestone payments",
+              "Bond: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee.{{cite:bond-product}}",
+              "Shared. The milestone share is owed only for randomized patients.",
             ],
           ],
           note: "Pricing models only. Many vendors mix models or offer others on request.",
@@ -192,7 +192,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond charges a volume-based fee per screened patient, meaning a patient Bond calls and texts to pre-screen, plus a percentage of the randomization milestone payment for each patient who is randomized. There is no integration fee: the per-screened-patient fee covers EHR integration, implementation and ongoing operation.{{cite:bond-product}} Charts Bond reads without contacting the patient are not screened patients, and no randomization share is owed for a patient who is not randomized.{{cite:bond-product}}",
+          text: "Bond charges a volume-based fee per screened patient, meaning a patient Bond calls and texts to pre-screen, plus a percentage of the milestone payments for each randomized patient, from randomization through later study visits. There is no integration fee: the per-screened-patient fee covers EHR integration, implementation and ongoing operation.{{cite:bond-product}} Charts Bond reads without contacting the patient are not screened patients, and no milestone share is owed for a patient who is not randomized.{{cite:bond-product}}",
         },
         {
           type: "p",
@@ -202,7 +202,7 @@ const page: SeoPage = {
           type: "cta",
           label: "Get custom pricing",
           href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
-          text: "Bring a protocol and the name of your EHR. We will scope the per-screened-patient fee for your sites and show how the randomization share is calculated.",
+          text: "Bring a protocol and the name of your EHR. We will scope the per-screened-patient fee for your sites and show how the milestone share is calculated.",
           secondaryLabel: "Read about pricing",
           secondaryHref: "/pricing",
         },
@@ -212,7 +212,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "How much do patient recruitment platforms typically cost?",
-      a: "Most do not publish prices. Published examples range from free to sites, in sponsor-paid models such as Inato, to an average of $1,000 to $3,000 a month per study for OpenClinica Recruit and $10,000 a year per 100 referred patients for Salesforce's recruitment add-on.{{cite:inato-free-2024,openclinica-recruit,salesforce-pre}} Bond charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
+      a: "Most do not publish prices. Published examples range from free to sites, in sponsor-paid models such as Inato, to an average of $1,000 to $3,000 a month per study for OpenClinica Recruit and $10,000 a year per 100 referred patients for Salesforce's recruitment add-on.{{cite:inato-free-2024,openclinica-recruit,salesforce-pre}} Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
     },
     {
       q: "Are there free clinical trial recruitment platforms?",

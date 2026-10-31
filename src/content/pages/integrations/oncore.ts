@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "OnCore is the enterprise CTMS Advarra sells to academic medical centers, cancer centers and some health systems.{{cite:advarra-oncore}} Bond Health works alongside it. Bond screens the EHR, pre-screens likely matches by voice and text, books the screening visit and hands each referral to the research team. OnCore stays the system of record from consent onward. Bond is not an Advarra partner: it connects through the institution's own API access or file exports.",
   summary: "How Bond's EHR screening and outreach hand referrals to research teams at OnCore institutions, and what stays in OnCore.",
-  lastUpdated: "2026-10-06",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -124,7 +124,7 @@ const page: SeoPage = {
             ["Referral and pre-screen outcome", "Bond to OnCore by API where enabled; otherwise a scheduled CSV export, or kept in Bond", "Pass, fail or pending, with the failing criterion."],
             ["Referral source", "Same path as the referral", "Values agreed with the CTMS team, such as \"Bond EHR screen, voice\"."],
             ["Subject registration and consent", "Entered in OnCore by the study team", "Where the Epic demographics interface is live, subjects are found by Epic lookup, not re-keyed.{{cite:washu-epic}}"],
-            ["Subject status", "OnCore to Bond by API or a scheduled report export", "Such as not eligible, on study and off study.{{cite:washu-sop}} Feeds Bond's reports and the randomization share of its fee.{{cite:bond-site}}"],
+            ["Subject status", "OnCore to Bond by API or a scheduled report export", "Such as not eligible, on study and off study.{{cite:washu-sop}} Feeds Bond's reports and the milestone share of its fee.{{cite:bond-site}}"],
             ["Research flag in Epic", "OnCore to Epic over the IHE RPE profile", "Advarra's interface, not Bond's.{{cite:advarra-integrations-blog,washu-epic}}"],
           ],
           note: "Field names and writable records depend on the institution's OnCore setup and access, and are confirmed in test.",

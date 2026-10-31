@@ -18,7 +18,7 @@ const page: SeoPage = {
     "Bond's AI voice and SMS agents schedule clinical trial screening visits by phone and text: once a patient passes the pre-screening questions, the agents book the visit straight into the site's calendar, often in the same call, then send reminders by text, voice or email so the patient shows up.{{cite:bond-site,bond-product}} After enrollment, the same agents keep supporting participants with visit reminders, transportation booking and check-ins.{{cite:bond-product}}",
   summary:
     "Pre-screened patients booked straight into the site's calendar, with reminders by text, voice or email and support after enrollment.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -110,7 +110,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Booking is not priced separately. Bond charges a volume-based fee per screened patient, meaning each patient Bond calls and texts to pre-screen for the study, plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-product}} Ad spend for Meta and Google campaigns is not included; it comes out of the site's own advertising budget for the study.{{cite:bond-product}} See [pricing](/pricing).",
+          text: "Booking is not priced separately. Bond charges a volume-based fee per screened patient, meaning each patient Bond calls and texts to pre-screen for the study, plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee.{{cite:bond-product}} Ad spend for Meta and Google campaigns is not included; it comes out of the site's own advertising budget for the study.{{cite:bond-product}} See [pricing](/pricing).",
         },
       ],
     },
@@ -176,7 +176,7 @@ const page: SeoPage = {
     { label: "Engage: AI voice and SMS agents", href: "/engage", description: "How every lead is contacted immediately, pre-screened and followed up." },
     { label: "Participant retention guide", href: "/guides/participant-retention", description: "Why participants leave and the retention steps with evidence behind them." },
     { label: "Identify: EHR screening", href: "/identify", description: "How Bond finds eligible patients in your records." },
-    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a share of each randomization milestone." },
+    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a share of each randomized patient's milestone payments." },
     { label: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step." },
   ],
 };

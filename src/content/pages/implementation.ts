@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "A full Bond Health deployment with the EHR connected typically takes 48 hours, depending on the EHR, the IT review and the interface method.{{cite:bond-site}} What can add time is approvals Bond does not control: the BAA, the security review, the EHR connection and, where needed, IRB review of outreach scripts. Below is what Bond does, what your team does, and what exists after each step.",
   summary: "Step-by-step plan for a 48-hour EHR-integrated deployment, with site tasks, Bond tasks and a list-based pilot path.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -254,7 +254,7 @@ const page: SeoPage = {
             "**It does not decide eligibility.** Bond reports matching accuracy above 90 percent,{{cite:bond-site}} so some matches will be wrong. Coordinators and the PI confirm each one, and the screening visit decides.",
             "**It does not obtain consent.** The PI and delegated staff do.",
             "**It does not replace your CTMS or eRegulatory system.** It works alongside them.",
-            "**It does not have a public price list.** Pricing is custom: a volume-based fee per screened patient covers EHR integration, implementation and ongoing operation, with no separate integration fee, plus a percentage of each patient's randomization milestone payment. See [pricing](/pricing).{{cite:bond-site}}",
+            "**It does not have a public price list.** Pricing is custom: a volume-based fee per screened patient covers EHR integration, implementation and ongoing operation, with no separate integration fee, plus a percentage of each randomized patient's milestone payments, from randomization onward. See [pricing](/pricing).{{cite:bond-site}}",
           ],
         },
         {
@@ -359,7 +359,7 @@ const page: SeoPage = {
     { label: "Epic integration", href: "/integrations/epic", description: "The FHIR resources, approvals and IT tasks for Epic sites." },
     { label: "CRIO integration", href: "/integrations/crio", description: "How referrals and statuses move between Bond and CRIO." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
-    { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomization milestone payment." },
+    { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomized patient's milestone payments." },
     { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", description: "Map the plan to your protocol, EHR and site calendar." },
   ],
 };

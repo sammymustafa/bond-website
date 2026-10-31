@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Answers to the questions research sites, CROs and sponsors ask before they sign: what Bond Health reads in the chart, how the voice and text agents treat patients, what the IRB reviews, how PHI is handled and how pricing works. Most answers link to the page with more detail, and figures Bond publishes about itself are labeled as Bond's.",
   summary: "Thirty answers on product, data, IRB, patients' rights, AI disclosure, pricing, implementation and security.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   showLastUpdated: true,
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -57,7 +57,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Start with reporting and pricing. Bond reports patients matched, contacted, pre-screened, consented and randomized, plus time to enrollment and screen-failure signals, in real-time dashboards and regular reports for sites, CROs and sponsors. Part of the price is a percentage of each patient's randomization milestone payment, so cost follows enrollment.{{cite:bond-product}} See [Bond for sponsors](/for/sponsors), [Bond for CROs](/for/cros) and [pricing](/pricing).",
+          text: "Start with reporting and pricing. Bond reports patients matched, contacted, pre-screened, consented and randomized, plus time to enrollment and screen-failure signals, in real-time dashboards and regular reports for sites, CROs and sponsors. Part of the price is a percentage of each randomized patient's milestone payments, from randomization onward, so cost follows enrollment.{{cite:bond-product}} See [Bond for sponsors](/for/sponsors), [Bond for CROs](/for/cros) and [pricing](/pricing).",
         },
       ],
     },
@@ -183,11 +183,11 @@ const page: SeoPage = {
     },
     {
       q: "How is Bond priced?",
-      a: "Pricing is custom and has two parts: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient. There is no integration fee.{{cite:bond-site}} The per-screened-patient fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. See [pricing](/pricing), or [book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true) for a quote.",
+      a: "Pricing is custom and has two parts: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward. There is no integration fee.{{cite:bond-site}} The per-screened-patient fee covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. See [pricing](/pricing), or [book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true) for a quote.",
     },
     {
       q: "What is included in every engagement?",
-      a: "EHR screening, voice and text outreach and scheduling, consent support, the dashboard and audit trail, FHIR integration and dedicated support.{{cite:bond-site}} See [pricing](/pricing) for how the per-screened-patient fee and the randomization share apply.",
+      a: "EHR screening, voice and text outreach and scheduling, consent support, the dashboard and audit trail, FHIR integration and dedicated support.{{cite:bond-site}} See [pricing](/pricing) for how the per-screened-patient fee and the milestone share apply.",
     },
     {
       q: "Can a site start without EHR integration?",
@@ -340,7 +340,7 @@ const page: SeoPage = {
     },
   ],
   related: [
-    { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomization milestone payment." },
+    { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomized patient's milestone payments." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control, audit logging and the Trust Center." },
     { label: "Implementation", href: "/implementation", description: "What happens between signing and live screening, step by step." },
     { label: "Integrations", href: "/integrations", description: "How Bond connects to EHRs, CTMS systems and calendars." },

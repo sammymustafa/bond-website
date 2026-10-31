@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A site network speeds up enrollment when every site screens its EHR and contacts patients the same way, and when the network can see one enrollment funnel across all of them. A network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
   summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -199,7 +199,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Pricing has two parts: a volume-based fee per screened patient covering EHR integration, implementation and ongoing operation, including EHR connections, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support; and a percentage of the randomization milestone payment for each patient who is randomized. There is no separate integration fee.{{cite:bond-site}}",
+          text: "Pricing has two parts: a volume-based fee per screened patient covering EHR integration, implementation and ongoing operation, including EHR connections, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support; and a percentage of the milestone payments for each randomized patient, from randomization through later study visits. There is no separate integration fee.{{cite:bond-site}}",
         },
         {
           type: "p",
@@ -347,7 +347,7 @@ const page: SeoPage = {
     { label: "Bond for research sites", href: "/for/research-sites", description: "How a single site uses Bond for screening, outreach and booked visits." },
     { label: "CRIO integration", href: "/integrations/crio", description: "How pre-screened patients and statuses move between Bond and CRIO." },
     { label: "Implementation", href: "/implementation", description: "The step-by-step plan for connecting an EHR and going live." },
-    { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
+    { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors check in feasibility, and how to present patient counts." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Criterion-by-criterion screening with the chart evidence behind each match." },
   ],

@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health is patient recruitment software that integrates with CRIO, and it is a CRIO Certified Partner, listed on CRIO's partners page under Patient Acquisition & Retention as of October 2026.{{cite:bond-site,crio-partners}} For sites on CRIO, Bond screens the EHR and the patient records the site keeps in CRIO against a study's criteria, pre-screens likely matches by voice or text, and schedules the screening visit.{{cite:crio-bond-announcement}} CRIO is the one CTMS where Bond is a Certified Integration Partner: pre-screened patients go straight into CRIO through its API, and their status comes back to Bond, so coordinators never re-enter a patient.{{cite:crio-partners,crio-recruiting-api}}",
   summary: "How pre-screened patients and statuses move between Bond and CRIO, and what the CRIO Certified Partner badge covers.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -243,7 +243,7 @@ const page: SeoPage = {
     },
     {
       q: "How is the CRIO connection priced?",
-      a: "Bond charges no integration fee: integration and workflow configuration fall under its volume-based fee per screened patient, alongside a percentage of each patient's randomization milestone payment; see [pricing](/pricing).{{cite:bond-site}} CRIO describes its Partner Directory as complimentary for CRIO users.{{cite:crio-partners-intro}}",
+      a: "Bond charges no integration fee: integration and workflow configuration fall under its volume-based fee per screened patient, alongside a percentage of each randomized patient's milestone payments, from randomization onward; see [pricing](/pricing).{{cite:bond-site}} CRIO describes its Partner Directory as complimentary for CRIO users.{{cite:crio-partners-intro}}",
     },
   ],
   sources: [

@@ -1162,7 +1162,7 @@ export const glossary: GlossaryTerm[] = [
       },
       {
         type: "p",
-        text: "Practical note: agree with the sponsor, and with any recruitment vendor, on exactly what counts as enrolled before the study starts. Part of Bond's price is a percentage of the randomization milestone payment for each randomized patient, so payment follows the same milestone sponsors count. See [Pricing](/pricing).",
+        text: "Practical note: agree with the sponsor, and with any recruitment vendor, on exactly what counts as enrolled before the study starts. Part of Bond's price is a percentage of the milestone payments for each randomized patient, from randomization onward, so payment follows the same milestones sponsors pay on. See [Pricing](/pricing).",
       },
     ],
     faq: [
@@ -1197,11 +1197,11 @@ export const glossary: GlossaryTerm[] = [
       },
     ],
     related: [
-      { label: "Pricing: fee per screened patient plus a percentage of each patient's randomization milestone payment", href: "/pricing" },
+      { label: "Pricing: fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward", href: "/pricing" },
       { label: "Screen failure rate", href: "/glossary/screen-failure-rate" },
       { label: "Screening", href: "/glossary/screening" },
     ],
-    lastUpdated: "2026-10-23",
+    lastUpdated: "2026-10-29",
   },
   {
     slug: "screen-failure-rate",

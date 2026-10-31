@@ -21,7 +21,7 @@ const page: SeoPage = {
     "Inato runs an AI-powered platform that brings trial sponsors and research sites together for early planning and site selection, and it offers sites AI patient pre-screening that reviews patient records against a trial's inclusion and exclusion criteria.{{cite:inato-home-2026,inato-ehr-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to carry each eligible patient from the chart to a booked visit and consent, Bond is the stronger choice. For bringing more studies to your site, see our guide to [winning more studies](/guides/win-more-studies).",
   summary:
     "Why Bond is better than Inato: EHR screening plus its own ad campaigns and voice and text outreach through to a booked visit, with part of the price tied to randomization.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -51,7 +51,7 @@ const page: SeoPage = {
             "**Every chart, every open study.** Bond screens 10,000+ charts per hour, reading clinical notes, prescriptions and lab results, and ranks matches with the evidence behind them.{{cite:bond-site}} Identify also uses imaging data and pathology, radiology and molecular reports, and Bond screens each patient against every open study at the site, so a patient who screens out of one study can be matched to another.{{cite:bond-product}}",
             "**Conversations in the patient's language, with a person on request.** Voice and text conversations and consent Q&A run in the patient's preferred language, including English, Spanish, Mandarin and many others, and can switch languages mid-call. Patients can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-product}}",
             "**Support until close-out.** After enrollment, the same voice and SMS agents send visit reminders, book transportation, collect symptoms and diaries, run side-effect check-ins and flag participants at risk of dropping out, and Bond keeps improving outreach messaging until study close-out.{{cite:bond-product}}",
-            "**Integration handled for you, with no integration fee.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and Bond's team handles the integration end to end. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee, and the randomization share is owed only for randomized patients. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+            "**Integration handled for you, with no integration fee.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, and Bond's team handles the integration end to end. It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee, and the milestone share is owed only for randomized patients. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
           ],
         },
         ...testimonialBlocks(),
@@ -126,7 +126,7 @@ const page: SeoPage = {
             ],
             [
               "Pricing",
-              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee. See [pricing](/pricing).{{cite:bond-site,bond-product}}",
               "Its pre-screening page says the tool is free for all sites today (2026). A 2024 Inato blog post says Inato is always free for sites and generates revenue from participating sponsors. Sponsor pricing: not publicly documented (October 2026).{{cite:inato-prescreening-faq-2026,inato-free-2024}}",
             ],
           ],
@@ -193,7 +193,7 @@ const page: SeoPage = {
             },
             {
               title: "Compare cost per randomized patient",
-              text: "Add up each option's fees and the coordinator hours spent on chart review, outreach, scheduling and consent, then divide by the patients randomized. Bond's randomization share is owed only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
+              text: "Add up each option's fees and the coordinator hours spent on chart review, outreach, scheduling and consent, then divide by the patients randomized. Bond's milestone share is owed only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}}",
             },
           ],
         },
@@ -231,7 +231,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "Is Bond better than Inato?",
-      a: "Yes, for a site that wants software to take eligible patients from the chart to a booked visit and consent. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, with no integration fee and a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}} Bond also screens each patient against every open study at the site, and after enrollment its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
+      a: "Yes, for a site that wants software to take eligible patients from the chart to a booked visit and consent. Bond screens the site's EHR, including clinical notes, with chart evidence behind each match, then contacts, pre-screens and schedules patients by voice and text and supports informed consent, with no integration fee and a percentage of each randomized patient's milestone payments, from randomization onward.{{cite:bond-site,bond-product}} Bond also screens each patient against every open study at the site, and after enrollment its agents send visit reminders, book transportation, run side-effect check-ins and flag participants at risk of dropping out.{{cite:bond-product}}",
     },
     {
       q: "Does Inato contact or schedule patients?",
@@ -239,7 +239,7 @@ const page: SeoPage = {
     },
     {
       q: "How does pricing compare?",
-      a: "Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee, and the randomization share is owed only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}} Inato's pre-screening page says the tool is free for all sites today, and a 2024 Inato blog post says the company generates revenue from participating sponsors.{{cite:inato-prescreening-faq-2026,inato-free-2024}} When you compare, include the coordinator time each option needs for outreach, scheduling and consent as well as the fees.",
+      a: "Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee, and the milestone share is owed only for randomized patients; see [pricing](/pricing).{{cite:bond-site,bond-product}} Inato's pre-screening page says the tool is free for all sites today, and a 2024 Inato blog post says the company generates revenue from participating sponsors.{{cite:inato-prescreening-faq-2026,inato-free-2024}} When you compare, include the coordinator time each option needs for outreach, scheduling and consent as well as the fees.",
     },
     {
       q: "Does Bond work with the EHR and CTMS we already use?",
@@ -356,7 +356,7 @@ const page: SeoPage = {
     { label: "Clinical trial recruitment software, compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, from EHR matching to engagement agents." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule patients." },
-    { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee." },
+    { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee." },
     { label: "Security", href: "/security", description: "BAAs, SSO, audit logging and a public Trust Center." },
   ],
 };

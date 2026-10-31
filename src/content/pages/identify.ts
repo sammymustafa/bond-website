@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Identify is the first stage of Bond Health's recruitment workflow. Bond reads a site's EHR records, from structured fields to clinical notes, imaging data and other unstructured documents, against a study's inclusion and exclusion criteria, ranks the patients most likely to qualify, and shows the chart evidence behind each criterion decision.{{cite:bond-site,bond-product}} Coordinators review a ranked, explained list instead of opening charts one at a time.",
   summary: "LLM-based EHR screening that ranks candidates and links every criterion decision to chart evidence.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -247,7 +247,7 @@ const page: SeoPage = {
     },
     {
       q: "Is Identify priced separately?",
-      a: "No. LLM EHR screening is included in every engagement, alongside outreach, consent support and the dashboard. Pricing combines a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, and there is no integration fee, as described on the [pricing](/pricing) page.{{cite:bond-site}}",
+      a: "No. LLM EHR screening is included in every engagement, alongside outreach, consent support and the dashboard. Pricing combines a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, and there is no integration fee, as described on the [pricing](/pricing) page.{{cite:bond-site}}",
     },
     {
       q: "Can Identify support feasibility answers?",
