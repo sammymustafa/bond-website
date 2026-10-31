@@ -23,7 +23,7 @@ const page: SeoPage = {
   intro:
     "Deep 6 AI and Mendel both used AI to read unstructured medical records, but for different jobs: Deep 6 AI matched a health system's patients to its clinical trials, while Mendel was a broader clinical data platform whose Hypercube copilots handled chart abstraction, chart review, cohort analysis and trial matching.{{cite:tempus-deep6-acquisition,deep6-cassidy-2024,mendel-meta-2025,mendel-abstraction-2025}} Both have since joined larger companies: Tempus acquired Deep 6 AI on March 11, 2025, and Mendel's investor Oak HC/FT lists it as merged into Ensemble Health Partners.{{cite:tempus-10k-2025,oak-mendel}} Neither publicly documented contacting matched patients. Bond Health finds patients in the EHR and then contacts, pre-screens and schedules them.{{cite:bond-site}}",
   summary: "How Deep 6 AI and Mendel differed, where each company is now, and how both compare with Bond.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -119,7 +119,7 @@ const page: SeoPage = {
               "Pricing",
               "No public price list found (October 2026).",
               "Every product listed \"Contact Sales\" (2025).{{cite:mendel-providers-2025}}",
-              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
             ],
           ],
         },
@@ -147,7 +147,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "Matching is half the job",
-          text: "A match list still needs a coordinator to call every patient. Bond finds eligible patients in the EHR, then its voice and text agents contact, pre-screen and schedule them and support consent, in one product with a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}",
+          text: "A match list still needs a coordinator to call every patient. Bond finds eligible patients in the EHR, then its voice and text agents contact, pre-screen and schedule them and support consent, in one product with a percentage of each randomized patient's milestone payments, from randomization onward.{{cite:bond-site,bond-product}}",
         },
         {
           type: "stats",
@@ -182,7 +182,7 @@ const page: SeoPage = {
             { title: "Count what happens after the match", text: "Track who contacts each matched patient, how fast, how many are reached and how many reach a screening visit." },
             {
               title: "Compare cost per randomized patient",
-              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's randomization share is a percentage of each patient's randomization milestone payment ([pricing](/pricing)).{{cite:bond-product}}",
+              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's milestone share is a percentage of each randomized patient's milestone payments, from randomization onward ([pricing](/pricing)).{{cite:bond-product}}",
             },
           ],
         },
@@ -337,7 +337,7 @@ const page: SeoPage = {
     { label: "Deep 6 AI vs Triomics", href: "/compare/deep-6-ai-vs-triomics", description: "General EHR matching vs an oncology platform." },
     { label: "Deep 6 AI vs Paradigm Health", href: "/compare/deep-6-ai-vs-paradigm-health", description: "Matching software vs a sponsor-funded research network." },
     { label: "Bond vs Tempus (Deep 6 AI)", href: "/compare/bond-vs-tempus-deep-6", description: "Deep 6 AI, TIME and Next Trials, compared with Bond." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
   ],

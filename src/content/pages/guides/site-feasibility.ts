@@ -30,7 +30,7 @@ const page: SeoPage = {
     "Site feasibility is the process a sponsor or CRO uses to decide whether a research site can run a specific trial and enroll the patients it needs, usually through a feasibility questionnaire and a site qualification visit.{{cite:bruneau-2024,asco-post-2021}} For the site, it is also an internal decision: whether it has the patients, staff, equipment and time to take the study on and deliver the number it promises. This guide covers each step, the criteria sponsors assess, how to count eligible patients from records, the tools that help, the metrics that show whether feasibility was right, and a checklist.",
   summary:
     "What site feasibility means, how the assessment is conducted, the criteria and metrics sponsors use, and a checklist for research sites.",
-  lastUpdated: "2026-10-25",
+  lastUpdated: "2026-10-29",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -301,7 +301,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Once the study is awarded and its recruitment materials are approved, Bond creates and runs Meta and Google ad campaigns for it. Its voice and text agents contact every new ad lead immediately, keep following up with every lead who has not responded, pre-screen patients and book them into the site's calendar, alongside the patients Identify found. That is how a site hits the number it promised. Pricing is a volume-based fee per screened patient plus a percentage of the randomization milestone payment, with no integration fee; ad spend comes from the site's own budget ([pricing](/pricing)).{{cite:bond-product}}",
+          text: "Once the study is awarded and its recruitment materials are approved, Bond creates and runs Meta and Google ad campaigns for it. Its voice and text agents contact every new ad lead immediately, keep following up with every lead who has not responded, pre-screen patients and book them into the site's calendar, alongside the patients Identify found. That is how a site hits the number it promised. Pricing is a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee; ad spend comes from the site's own budget ([pricing](/pricing)).{{cite:bond-product}}",
         },
         {
           type: "cta",

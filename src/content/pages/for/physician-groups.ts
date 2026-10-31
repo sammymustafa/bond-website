@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and books them for screening visits, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
   summary: "How a community or specialty practice runs studies from its own patient panel while protecting clinic time and PI hours.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -198,11 +198,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Pricing has two parts. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. There is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site}}",
+          text: "Pricing has two parts. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration, and ongoing compute, monitoring and support. There is no separate integration fee. Bond also takes a percentage of the milestone payments for each randomized patient, from randomization through later study visits.{{cite:bond-site}}",
         },
         {
           type: "p",
-          text: "The randomization share moves with enrollment, not with charts screened or calls placed. Pricing is custom; the [pricing](/pricing) page lists what every engagement includes.",
+          text: "The milestone share moves with enrollment, not with charts screened or calls placed. Pricing is custom; the [pricing](/pricing) page lists what every engagement includes.",
         },
         {
           type: "cta",
@@ -323,7 +323,7 @@ const page: SeoPage = {
     { label: "eClinicalWorks integration", href: "/integrations/eclinicalworks", description: "How a practice turns on FHIR access and what Bond reads." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts and explains each match." },
     { label: "Implementation", href: "/implementation", description: "What your team and Bond do at each step of the 48-hour plan." },
-    { label: "Pricing", href: "/pricing", description: "The fee per screened patient and a percentage of each patient's randomization milestone payment." },
+    { label: "Pricing", href: "/pricing", description: "The fee per screened patient and a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "How to use your EHR for recruitment", href: "/guides/ehr-for-recruitment", description: "Cohort queries, HIPAA paths and coordinator review, step by step." },
   ],
 };

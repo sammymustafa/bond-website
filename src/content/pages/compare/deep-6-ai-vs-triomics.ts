@@ -23,7 +23,7 @@ const page: SeoPage = {
   intro:
     "Deep 6 AI and Triomics both built EHR trial matching that reads unstructured notes and reports and sends the matches to site staff.{{cite:tempus-deep6-acquisition,deep6-life-sciences-2023,triomics-home,triomics-prism}} Triomics is an oncology platform that screens the patients on a cancer center's upcoming clinic schedule inside Epic, OncoEMR and iKnowMed.{{cite:triomics-prism,triomics-cancer-centers}} Deep 6 AI, which health systems used across all their trials, has been a Tempus company since March 11, 2025, and Tempus now sells trial matching through TIME and Next Trials.{{cite:deep6-cassidy-2024,tempus-10k-2025,deep6-archive-2026,tempus-next-trials-2026}} Neither publicly documents calling or texting matched patients or booking their visits. Bond Health finds patients in the EHR and then contacts, pre-screens and schedules them.{{cite:bond-site}}",
   summary: "How Deep 6 AI and Triomics differ on data, workflow, focus and pricing, and how both compare with Bond.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -125,7 +125,7 @@ const page: SeoPage = {
               "Pricing",
               "No public price list found (October 2026).",
               "No public price list found (October 2026). The website offers a demo.{{cite:triomics-home}}",
-              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
             ],
           ],
         },
@@ -153,7 +153,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "Matching is half the job",
-          text: "A match list still needs a coordinator to call every patient. Bond finds eligible patients in the EHR, then its voice and text agents contact, pre-screen and schedule them and support consent, in one product with a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}",
+          text: "A match list still needs a coordinator to call every patient. Bond finds eligible patients in the EHR, then its voice and text agents contact, pre-screen and schedule them and support consent, in one product with a percentage of each randomized patient's milestone payments, from randomization onward.{{cite:bond-site,bond-product}}",
         },
         {
           type: "stats",
@@ -192,7 +192,7 @@ const page: SeoPage = {
             { title: "Count what happens after the match", text: "Track who contacts each matched patient, how fast, how many are reached and how many reach a screening visit. With a matching-only tool, that work is your coordinators' time." },
             {
               title: "Compare cost per randomized patient",
-              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's randomization share is a percentage of each patient's randomization milestone payment ([pricing](/pricing)).{{cite:bond-product}}",
+              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's milestone share is a percentage of each randomized patient's milestone payments, from randomization onward ([pricing](/pricing)).{{cite:bond-product}}",
             },
           ],
         },
@@ -242,7 +242,7 @@ const page: SeoPage = {
     },
     {
       q: "How much do Deep 6 AI and Triomics cost?",
-      a: "Neither publishes a price list as of October 2026. Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-product}} See [what recruitment software costs](/guides/clinical-trial-recruitment-software-cost).",
+      a: "Neither publishes a price list as of October 2026. Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee ([pricing](/pricing)).{{cite:bond-product}} See [what recruitment software costs](/guides/clinical-trial-recruitment-software-cost).",
     },
     {
       q: "What is an alternative to Deep 6 AI and Triomics?",
@@ -312,7 +312,7 @@ const page: SeoPage = {
     { label: "Bond vs Tempus (Deep 6 AI)", href: "/compare/bond-vs-tempus-deep-6", description: "Deep 6 AI, TIME and Next Trials, compared with Bond." },
     { label: "Deep 6 AI vs Paradigm Health", href: "/compare/deep-6-ai-vs-paradigm-health", description: "Matching software vs a sponsor-funded research network." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Oncology recruitment", href: "/oncology", description: "Where oncology criteria sit in the chart, and how Bond screens for them." },
   ],

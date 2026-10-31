@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A demo on sample records tells you little about how a tool will do on your charts. This checklist is built to find out: whether the tool reads the notes where eligibility evidence often sits, shows its work criterion by criterion, fits your EHR and IRB process, and lets you leave with your data. It ends in a scoring grid you can use on every vendor, Bond included.",
   summary: "Questions, red flags and a weighted scoring grid for choosing an AI patient recruitment vendor.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -384,7 +384,7 @@ const page: SeoPage = {
             "**Integration.** Bond connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}} Full EHR integration takes 48 hours, depending on your EHR, IT review and interface method.{{cite:bond-site}} See [implementation](/implementation).",
             "**Security.** Bond is HIPAA compliant and SOC 2 Type I compliant, its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners, and its SOC 2 Type II audit is underway.{{cite:bond-product}} Bond signs BAAs and lists its controls on the [security](/security) page and its Vanta Trust Center.{{cite:bond-site}}",
             "**Disclosure.** [Engage](/engage) tells patients that AI assistance is used, and they can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
-            "**Pricing.** A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient. There is no integration fee. See [pricing](/pricing).{{cite:bond-site}}",
+            "**Pricing.** A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward. There is no integration fee. See [pricing](/pricing).{{cite:bond-site}}",
           ],
         },
         {

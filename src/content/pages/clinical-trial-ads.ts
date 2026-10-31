@@ -20,7 +20,7 @@ const page: SeoPage = {
     "Bond Health creates and runs Meta and Google ad campaigns for each study, and its AI agents call and text every ad lead immediately and keep following up until the patient responds.{{cite:bond-product}} Bond does that calling itself: the same voice and SMS agents that work a site's EHR matches pre-screen each ad lead on the site's IRB-approved script and book eligible patients into the site's calendar, so the campaign, the follow-up and the booked visit sit with one vendor.{{cite:bond-site,bond-product}}",
   summary:
     "Meta and Google ad campaigns Bond creates and runs, with every lead called and texted immediately, followed up, pre-screened and booked into the site's calendar.",
-  lastUpdated: "2026-10-25",
+  lastUpdated: "2026-10-29",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -248,7 +248,7 @@ const page: SeoPage = {
     {
       label: "Pricing",
       href: "/pricing",
-      description: "Per screened patient plus a share of each randomization, no integration fee.",
+      description: "Per screened patient plus a share of milestones from randomization on; no integration fee.",
     },
   ],
 };

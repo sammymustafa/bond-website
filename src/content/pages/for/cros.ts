@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A CRO answers to the sponsor for enrollment at sites it usually does not run, and each of those sites finds, contacts and counts patients its own way. Bond Health runs the same workflow at every participating site: EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit. It reports one enrollment funnel for all of them.",
   summary: "How CROs can get chart-based feasibility counts, one recruitment workflow per site, and one enrollment funnel across a portfolio.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -209,11 +209,11 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond uses two-part pricing. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration and ongoing support. There is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site}}",
+          text: "Bond uses two-part pricing. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review, audit logging setup, workflow configuration and ongoing support. There is no separate integration fee. Bond also takes a percentage of the milestone payments for each randomized patient, from randomization through later study visits.{{cite:bond-site}}",
         },
         {
           type: "p",
-          text: "The randomization share follows randomized patients, the number you report to the sponsor, rather than outreach volume. Pricing is custom. See [pricing](/pricing) for the structure and what every engagement includes.",
+          text: "The milestone share follows randomized patients, the number you report to the sponsor, rather than outreach volume. Pricing is custom. See [pricing](/pricing) for the structure and what every engagement includes.",
         },
         {
           type: "cta",
@@ -366,7 +366,7 @@ const page: SeoPage = {
     { label: "Bond for site networks", href: "/for/site-networks", description: "One workflow and one set of metrics across a network's sites." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
     { label: "Implementation", href: "/implementation", description: "The 48-hour plan, with site and Bond tasks at each step." },
-    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each patient's randomization milestone payment." },
+    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },
   ],
 };

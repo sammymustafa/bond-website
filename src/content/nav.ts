@@ -28,7 +28,7 @@ export const productLinks: NavItem[] = [
   { name: "Consent", href: "/consent", description: "AI-powered informed consent support" },
   { name: "Implementation", href: "/implementation", description: "Live in 48 hours, step by step" },
   { name: "Integrations", href: "/integrations", description: "EHRs, CTMS and eRegulatory" },
-  { name: "Pricing", href: "/pricing", description: "Per screened patient plus a share of each randomization, no integration fee" },
+  { name: "Pricing", href: "/pricing", description: "Per screened patient, plus a share of milestones from randomization on" },
   { name: "Security", href: "/security", description: "ISO 27001 certified, HIPAA and SOC 2 Type I compliant" },
 ];
 

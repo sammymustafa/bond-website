@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "The best patient recruitment companies for sponsors and CROs in 2026 fall into two groups: vendors that buy media and call the leads, and platforms that find patients in the sites' own EHRs. This page lists the companies a sponsor or CRO is likely to shortlist in each group, described from each company's own materials, read in October 2026. Bond Health works both sides: it finds patients in each site's EHR and runs Meta and Google ad campaigns, then calls and texts every patient through to a booked visit at the site.{{cite:bond-site,bond-product}}",
   summary: "Recruitment services companies and EHR-based platforms for sponsors and CROs, in two sourced tables, with what to ask before you choose.",
-  lastUpdated: "2026-10-25",
+  lastUpdated: "2026-10-29",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
@@ -104,7 +104,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to the sponsor.{{cite:bond-site,bond-product}} It connects to all the major EHRs and charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, with no integration fee.{{cite:bond-site,bond-product}} See [Bond for sponsors](/for/sponsors), [Bond for CROs](/for/cros), [pricing](/pricing) and [security](/security).",
+          text: "Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to the sponsor.{{cite:bond-site,bond-product}} It connects to all the major EHRs and charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee.{{cite:bond-site,bond-product}} See [Bond for sponsors](/for/sponsors), [Bond for CROs](/for/cros), [pricing](/pricing) and [security](/security).",
         },
         {
           type: "cta",
@@ -120,7 +120,7 @@ const page: SeoPage = {
   faq: [
     {
       q: "What do patient recruitment companies charge?",
-      a: "Few publish prices. Public models include paying only for patients who randomize (SubjectWell, 2023), risk-sharing (Antidote), payment at milestones such as signed consent or randomization (1nHealth) and enrollment-milestone partnerships (Power).{{cite:subjectwell-recruit-2023,antidote-sponsors,1nhealth-home,power-sponsors-2026}} Bond charges a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment, with no integration fee.{{cite:bond-site,bond-product}}",
+      a: "Few publish prices. Public models include paying only for patients who randomize (SubjectWell, 2023), risk-sharing (Antidote), payment at milestones such as signed consent or randomization (1nHealth) and enrollment-milestone partnerships (Power).{{cite:subjectwell-recruit-2023,antidote-sponsors,1nhealth-home,power-sponsors-2026}} Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee.{{cite:bond-site,bond-product}}",
     },
     {
       q: "What is the difference between a recruitment company and recruitment software?",
@@ -396,7 +396,7 @@ const page: SeoPage = {
     {
       label: "Pricing",
       href: "/pricing",
-      description: "Per screened patient plus a share of each randomization, no integration fee.",
+      description: "Per screened patient plus a share of milestones from randomization on; no integration fee.",
     },
   ],
 };

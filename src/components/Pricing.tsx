@@ -15,8 +15,8 @@ export default function Pricing() {
             Two-part pricing, aligned with enrollment.
           </h2>
           <p className="body-lg">
-            Bond charges a volume-based fee for each screened patient plus a percentage of the
-            randomization milestone payment for each patient, so we win when you enroll patients.
+            Bond charges a volume-based fee for each screened patient plus a percentage of each
+            randomized patient&apos;s milestone payments, from randomization onward, so we win when you enroll patients.
             There is no integration fee.
           </p>
         </div>
@@ -31,8 +31,8 @@ export default function Pricing() {
               </div>
               <h3 className="heading-sm mb-3">Per Randomized Patient</h3>
               <p className="text-gray-600 mb-4">
-                A percentage of the randomization milestone payment for each
-                patient who is randomized, so our incentives match your trial outcomes.
+                A percentage of each milestone payment for every randomized patient, from
+                randomization through later study visits, so our incentives match your trial outcomes.
               </p>
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-bond-primary/10 rounded-full">
@@ -79,9 +79,9 @@ export default function Pricing() {
                 <Users className="w-5 h-5 text-gray-700" />
               </div>
               <div>
-                <p className="font-semibold text-gray-900 mb-2">When the randomization share applies</p>
+                <p className="font-semibold text-gray-900 mb-2">When the milestone share applies</p>
                 <p className="text-gray-600">
-                  Only when a patient is successfully randomized and the study&apos;s randomization milestone is paid. Ad spend for Meta and Google campaigns is not included in Bond&apos;s fees; it comes out of your study&apos;s advertising budget.
+                  Once a patient is successfully randomized, Bond&apos;s share applies to the randomization milestone payment and to each later milestone payment for that patient, such as follow-up study visits. It is never owed for a patient who is not randomized. Ad spend for Meta and Google campaigns is not included in Bond&apos;s fees; it comes out of your study&apos;s advertising budget.
                 </p>
               </div>
             </div>

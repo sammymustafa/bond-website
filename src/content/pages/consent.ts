@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health's consent support helps patients understand the consent form the study's IRB already approved. It explains the form in plain language, answers questions, checks understanding of key points and hands anything it should not answer to study staff. The investigator or delegated site staff still obtain consent, on paper or through eConsent, and the form itself does not change.",
   summary: "How Bond explains the approved consent form, answers patient questions and escalates to staff while the site obtains consent.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -248,7 +248,7 @@ const page: SeoPage = {
     },
     {
       q: "How much does consent support cost?",
-      a: "AI consent support is included in every Bond engagement. Pricing is custom and has two parts: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient. There is no integration fee. See [pricing](/pricing).{{cite:bond-site}}",
+      a: "AI consent support is included in every Bond engagement. Pricing is custom and has two parts: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward. There is no integration fee. See [pricing](/pricing).{{cite:bond-site}}",
     },
   ],
   sources: [
@@ -403,7 +403,7 @@ const page: SeoPage = {
     { label: "What a consent form costs", href: "/guides/consent-form-cost", description: "Drafting, IRB review, translation and amendment costs." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What the IRB and privacy rules require before contacting patients." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
-    { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each patient's randomization milestone payment." },
+    { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
   ],
 };
 

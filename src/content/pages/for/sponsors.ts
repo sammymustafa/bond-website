@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Sponsors speed up enrollment at their sites by helping each site find eligible patients in its own EHR and contact them quickly, then tracking one enrollment funnel across every site. A sponsor chooses the sites and carries the cost when enrollment runs late, but it cannot read their charts or call their patients. Bond Health runs EHR screening, Meta and Google ads, and voice and text outreach through to a booked study visit at each participating site, and reports one enrollment funnel back to you.",
   summary: "What a delay day costs, why sites enroll unevenly, and how Bond reports one enrollment funnel across a sponsor's sites.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -193,7 +193,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond uses two-part pricing. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review and audit logging setup, workflow configuration and ongoing support. There is no separate integration fee. Bond also takes a percentage of the randomization milestone payment for each patient who is randomized.{{cite:bond-site}} The variable part tracks the same randomized count your reports show, not calls placed or leads passed. Pricing is custom; see [pricing](/pricing).",
+          text: "Bond uses two-part pricing. A volume-based fee per screened patient covers EHR integration, implementation and ongoing operation: the EHR connection, security review and audit logging setup, workflow configuration and ongoing support. There is no separate integration fee. Bond also takes a percentage of the milestone payments for each randomized patient, from randomization through later study visits.{{cite:bond-site}} The variable part tracks the same randomized count your reports show, not calls placed or leads passed. Pricing is custom; see [pricing](/pricing).",
         },
         {
           type: "cta",
@@ -328,7 +328,7 @@ const page: SeoPage = {
     { label: "Patient recruitment companies, compared", href: "/compare/patient-recruitment-companies", description: "Services firms and EHR platforms a sponsor is likely to shortlist, in two sourced tables." },
     { label: "Bond for CROs", href: "/for/cros", description: "Screening, outreach and one enrollment funnel across a CRO's site portfolio." },
     { label: "Implementation", href: "/implementation", description: "What full EHR integration involves in 48 hours, and what a site provides." },
-    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each patient's randomization milestone payment." },
+    { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Ranked candidates with the chart evidence for each criterion." },

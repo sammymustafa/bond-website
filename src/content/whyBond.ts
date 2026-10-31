@@ -34,7 +34,7 @@ const REASONS: Record<ReasonKey, string> = {
   ehr:
     "**Every major EHR and CTMS, with EHR integration in 48 hours.** Bond connects to Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR and the other major EHRs, and works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault. Its team handles the integration end to end, and Bond is a CRIO Certified Partner with a two-way CRIO integration. See [integrations](/integrations).{{cite:bond-site,bond-product}}",
   pricing:
-    "**No integration fee, and a price that moves with randomization.** You pay a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient who is randomized. See [pricing](/pricing).{{cite:bond-product}}",
+    "**No integration fee, and a price that moves with enrollment.** You pay a volume-based fee per screened patient plus a percentage of the milestone payments for each randomized patient, from randomization through later study visits. See [pricing](/pricing).{{cite:bond-product}}",
   languages:
     "**Agents that speak your patients' language.** Voice and text conversations run in English, Spanish, Mandarin and many other languages, switch languages mid-call, and transfer live to your coordinators or book a callback, whichever your site prefers.{{cite:bond-product}}",
   retention:
@@ -160,7 +160,7 @@ export function whyBondHeading(audience?: string): string {
 
 export function whyBondAnswer(audience?: string): string {
   const who = audience ? ` for ${audience}` : "";
-  return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, creates and runs Meta and Google ad campaigns to reach new ones, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients and books them for visits, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a volume-based fee per screened patient plus a percentage of each patient's randomization milestone payment.{{cite:bond-site,bond-product}}`;
+  return `Bond Health is the best clinical trial recruitment platform${who} because it does the whole job in one workflow: it finds eligible patients in your EHR, creates and runs Meta and Google ad campaigns to reach new ones, calls and texts every ad lead immediately and keeps following up with every lead to maximize response rates, pre-screens patients and books them for visits, supports informed consent and keeps participants engaged after enrollment. It goes live in 48 hours with no integration fee, and you pay a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward.{{cite:bond-site,bond-product}}`;
 }
 
 /**

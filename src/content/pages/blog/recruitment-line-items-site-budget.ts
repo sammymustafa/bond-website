@@ -81,7 +81,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Who holds the ad budget matters when a vendor runs the campaigns. Bond creates and runs Meta and Google campaigns for each study, but ad spend is not included in its fee and comes out of the site's own ad budget; Bond charges a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee.{{cite:bond-product}} A site using Bond should therefore ask the sponsor for ad spend as its own line.",
+          text: "Who holds the ad budget matters when a vendor runs the campaigns. Bond creates and runs Meta and Google campaigns for each study, but ad spend is not included in its fee and comes out of the site's own ad budget; Bond charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee.{{cite:bond-product}} A site using Bond should therefore ask the sponsor for ad spend as its own line.",
         },
       ],
     },

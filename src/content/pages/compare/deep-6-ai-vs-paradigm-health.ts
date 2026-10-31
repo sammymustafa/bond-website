@@ -22,7 +22,7 @@ const page: SeoPage = {
   intro:
     "Deep 6 AI was matching software that health systems ran on their own EHR data, and it has been part of Tempus since March 11, 2025.{{cite:deep6-cassidy-2024,tempus-10k-2025}} Paradigm Health is a research partner that combines its platform with its own recruitment staff and brings sponsor trials to the provider organizations it works with; in 2023 it said its customers are trial sponsors, not health systems.{{cite:paradigm-home,paradigm-providers,paradigm-identification,medcity-paradigm-2023}} Bond Health is a third model: software whose voice and text agents contact, pre-screen and schedule the patients it finds in a site's EHR.{{cite:bond-site}}",
   summary: "How Deep 6 AI and Paradigm Health differ on model, workflow, outreach and pricing, and how both compare with Bond.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -117,7 +117,7 @@ const page: SeoPage = {
               "Pricing",
               "No public price list found (October 2026).",
               "No public price list found (October 2026). In 2023 press, Paradigm did not charge health systems; its customers were trial sponsors.{{cite:medcity-paradigm-2023}}",
-              "A volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
+              "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee ([pricing](/pricing)).{{cite:bond-product}}",
             ],
           ],
         },
@@ -145,7 +145,7 @@ const page: SeoPage = {
           type: "callout",
           tone: "bond",
           title: "Follow-up that scales without more staff",
-          text: "Deep 6 AI left follow-up to your coordinators, and Paradigm adds its own. Bond's voice and text agents contact every matched patient, pre-screen them, book the visit and support consent, alongside your team, with a percentage of each patient's randomization milestone payment.{{cite:deep6-life-sciences-2023,paradigm-identification,bond-site,bond-product}}",
+          text: "Deep 6 AI left follow-up to your coordinators, and Paradigm adds its own. Bond's voice and text agents contact every matched patient, pre-screen them, book the visit and support consent, alongside your team, with a percentage of each randomized patient's milestone payments, from randomization onward.{{cite:deep6-life-sciences-2023,paradigm-identification,bond-site,bond-product}}",
         },
         {
           type: "stats",
@@ -184,7 +184,7 @@ const page: SeoPage = {
             { title: "Ask which trials you get", text: "Does the option work on the studies you already run, or on trials it brings to you, and who decides which patients are offered which trial?" },
             {
               title: "Compare cost per randomized patient",
-              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's randomization share is a percentage of each patient's randomization milestone payment ([pricing](/pricing)).{{cite:bond-product}}",
+              text: "Add platform, integration and staff time, then divide by randomized patients. Bond's milestone share is a percentage of each randomized patient's milestone payments, from randomization onward ([pricing](/pricing)).{{cite:bond-product}}",
             },
           ],
         },
@@ -336,7 +336,7 @@ const page: SeoPage = {
     { label: "Deep 6 AI vs Triomics", href: "/compare/deep-6-ai-vs-triomics", description: "General EHR matching vs an oncology platform." },
     { label: "Bond vs Tempus (Deep 6 AI)", href: "/compare/bond-vs-tempus-deep-6", description: "Deep 6 AI, TIME and Next Trials, compared with Bond." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },
-    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of the randomization milestone payment for each patient." },
+    { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule matched patients." },
   ],

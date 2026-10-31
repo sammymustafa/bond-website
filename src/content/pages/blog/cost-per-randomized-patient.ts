@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Cost per randomized patient is everything you spent to recruit, including staff time, divided by the patients who were randomized. It beats cost per lead because most leads never randomize: in a Johns Hopkins trial, Facebook ads cost $1.30 per click but $1,426 per enrolled participant.{{cite:juraschek-2018}} Below is the formula, what belongs in it, and a worked example a site or sponsor can copy.",
   summary: "The formula for cost per randomized patient, the funnel data behind it, and how to use it to choose channels.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-10-29",
   blog: { date: "2026-10-23", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
@@ -87,7 +87,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Staff time is easy to leave out, and leaving it out makes coordinator-heavy channels, like cold calling a patient list, look free. Vendor pricing should be booked the same way. Bond, for example, charges a volume-based fee per screened patient (a patient Bond calls and texts to pre-screen) plus a percentage of the randomization milestone payment for each patient, with no integration fee; Meta and Google ad spend is separate and comes from the site's own ad budget.{{cite:bond-product}}",
+          text: "Staff time is easy to leave out, and leaving it out makes coordinator-heavy channels, like cold calling a patient list, look free. Vendor pricing should be booked the same way. Bond, for example, charges a volume-based fee per screened patient (a patient Bond calls and texts to pre-screen) plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee; Meta and Google ad spend is separate and comes from the site's own ad budget.{{cite:bond-product}}",
         },
       ],
     },
