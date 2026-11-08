@@ -87,7 +87,7 @@ const page: SeoPage = {
             },
             {
               title: "Site qualification visit",
-              text: "A virtual or onsite pre-selection visit, also called a site qualification visit, reviews the answers and clarifies open items. The sponsor or CRO then writes a report on the site's feasibility.{{cite:urmc-2026}} These visits took 10 hours on average in the ASCO survey.{{cite:asco-aaci-2020}}",
+              text: "A virtual or onsite pre-selection visit, also called a site qualification visit, reviews the answers and clarifies open items. The sponsor or CRO then writes a report on the site's feasibility.{{cite:urmc-2026}} These visits took 10 hours on average in the ASCO survey.{{cite:asco-aaci-2020}} The [site activation guide](/guides/site-activation) covers what to prepare for one.",
             },
             {
               title: "Selection and start-up",
@@ -482,6 +482,8 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Site activation and qualification visits", href: "/guides/site-activation", description: "From the qualification visit to the green light, with timelines." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     {
       label: "Feasibility questionnaire template",
       href: "/templates/feasibility-questionnaire",

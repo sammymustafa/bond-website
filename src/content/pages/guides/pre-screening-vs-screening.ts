@@ -454,6 +454,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Chart pre-screening with the evidence for each criterion shown." },
     { label: "Engage: voice and text outreach", href: "/engage", description: "Pre-screening calls, texts and scheduling on scripts configured per study." },
     { label: "Pre-screening", href: "/glossary/pre-screening", description: "The glossary definition, in two sentences." },
@@ -461,6 +462,7 @@ const page: SeoPage = {
     { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "A starting script to adapt and submit to your IRB." },
     { label: "IRB language for AI outreach", href: "/templates/irb-submission-language-ai-outreach", description: "Model protocol paragraphs for AI pre-screening, voice and text outreach." },
     { label: "How to reduce screen failure", href: "/guides/reduce-screen-failure", description: "Benchmarks, root causes and a pre-screening routine." },
+    { label: "Screen failure rate calculator", href: "/calculators/screen-failure-rate", description: "Your rate, and the screenings needed for your target." },
   ],
 };
 

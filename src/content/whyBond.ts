@@ -129,6 +129,8 @@ const ANGLES: Record<string, Angle> = {
   "/integrations/realtime": { audience: "sites that run RealTime", lead: ["ehr", "one-platform"] },
   "/integrations/advarra-clinical-conductor": { audience: "sites that run Advarra Clinical Conductor", lead: ["ehr", "one-platform"] },
   "/integrations/veeva-sitevault": { audience: "sites that run Veeva SiteVault", lead: ["ehr", "one-platform"] },
+  // CTMS comparison: Bond is not a CTMS, so the angle is the sites that run one
+  "/compare/ctms-software-for-research-sites": { audience: "research sites on any CTMS", lead: ["ehr", "one-platform"] },
   // Locations
   "/clinical-trial-recruitment/texas": { audience: "research sites in Texas", lead: ["languages", "ehr"] },
   "/clinical-trial-recruitment/florida": { audience: "research sites in Florida", lead: ["languages", "ehr"] },
@@ -146,7 +148,7 @@ const ANGLES: Record<string, Angle> = {
 };
 
 /** Informational pages get the short version at the end; commercial pages get the full version near the top. */
-const COMPACT: PageCategory[] = ["hub", "guide", "template", "blog", "glossary", "report", "newsletter"];
+const COMPACT: PageCategory[] = ["hub", "guide", "template", "calculator", "blog", "glossary", "report", "newsletter"];
 
 function orderedReasons(lead: ReasonKey[]): ReasonKey[] {
   return [...lead, ...DEFAULT_ORDER.filter((k) => !lead.includes(k))];

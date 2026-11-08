@@ -383,6 +383,7 @@ const page: SeoPage = {
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule matched patients." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
     { label: "Oncology recruitment", href: "/oncology", description: "Where oncology criteria sit in the chart, and how Bond screens for them." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

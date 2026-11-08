@@ -39,7 +39,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "The OnCore adoption figures are vendor-reported. In November 2025 Advarra said 90 of the top 125 academic medical centers use its site technology, which also includes Clinical Conductor, eReg, eSource and EDC.{{cite:advarra-ignitedata}} NCI says most designated centers are affiliated with university medical centers.{{cite:nci-cancer-centers}}",
+          text: "The OnCore adoption figures are vendor-reported. In November 2025 Advarra said 90 of the top 125 academic medical centers use its site technology, which also includes Clinical Conductor, eReg, eSource and EDC.{{cite:advarra-ignitedata}} NCI says most designated centers are affiliated with university medical centers.{{cite:nci-cancer-centers}} The [CTMS software comparison](/compare/ctms-software-for-research-sites) sets OnCore beside Clinical Conductor, RealTime, CRIO and SiteVault, including which ones integrate with Epic.",
         },
         {
           type: "p",
@@ -406,6 +406,7 @@ const page: SeoPage = {
     { label: "Implementation", href: "/implementation", description: "Where the OnCore link sits next to the 48-hour EHR plan." },
     { label: "IRB and HIPAA rules for outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What the IRB and privacy office review before patients are contacted." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
   ],
 };
 

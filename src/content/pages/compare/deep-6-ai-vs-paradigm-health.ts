@@ -339,6 +339,7 @@ const page: SeoPage = {
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule matched patients." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

@@ -304,6 +304,7 @@ const page: SeoPage = {
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact, pre-screen and schedule patients." },
     { label: "Pricing", href: "/pricing", description: "A volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee." },
     { label: "Security", href: "/security", description: "ISO/IEC 27001 certification, HIPAA and SOC 2 Type I compliance, BAAs, SSO and audit logging." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

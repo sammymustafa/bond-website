@@ -261,6 +261,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     {
       label: "Recruitment and retention plan template",
       href: "/templates/recruitment-plan",

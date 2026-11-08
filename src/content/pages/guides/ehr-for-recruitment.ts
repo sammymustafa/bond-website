@@ -512,6 +512,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads structured data and notes and explains each match." },
     { label: "Epic integration", href: "/integrations/epic", description: "What a site provides to connect Bond to Epic." },
     { label: "Oracle Health (Cerner) integration", href: "/integrations/oracle-cerner", description: "The FHIR and HL7 path for Oracle Health sites." },

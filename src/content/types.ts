@@ -30,7 +30,11 @@ export type PageCategory =
   | "faq"
   | "newsletter"
   | "report"
-  | "glossary";
+  | "glossary"
+  | "calculator";
+
+/** The interactive calculators a `calculator` block can render (src/components/seo/Calculator.tsx). */
+export type CalculatorKind = "screen-failure-rate" | "enrollment-rate" | "cost-per-randomized-patient";
 
 /** A string that may contain **bold**, `code`, [label](href) and {{cite:id}} tokens. */
 export type Inline = string;
@@ -84,6 +88,8 @@ export type Block =
   | { type: "trialCounts"; geo: string; cite: string }
   /** Example recruiting trials for a geography and condition key from the same file. */
   | { type: "trials"; geo: string; condition: string; cite: string }
+  /** An interactive calculator. Its formula and labels live in the component; explain them in the page text too. */
+  | { type: "calculator"; kind: CalculatorKind }
   /** A simple horizontal bar chart. */
   | {
       type: "chart";

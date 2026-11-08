@@ -537,6 +537,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Engage: voice and text outreach", href: "/engage", description: "Voice and SMS agents with AI disclosure, live transfer or human callback, and coordinator escalation." },
     { label: "IRB submission language for AI outreach", href: "/templates/irb-submission-language-ai-outreach", description: "Draft paragraphs that describe AI outreach in an IRB application." },
     { label: "Patient outreach SMS templates", href: "/templates/patient-outreach-sms-templates", description: "Message wording for first contact, reminders and opt-outs." },

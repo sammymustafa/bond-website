@@ -332,6 +332,7 @@ const page: SeoPage = {
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Ranked candidates with the chart evidence for each criterion." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

@@ -448,10 +448,12 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Pricing", href: "/pricing", description: "Bond's two-part pricing, what counts as screened and randomized, and what is included." },
     { label: "Cost per randomized patient", href: "/blog/cost-per-randomized-patient", description: "The formula, what belongs in it, and a worked example." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "What each vendor does, from EHR matching to booked visits." },
     { label: "Vendor evaluation checklist", href: "/templates/ai-recruitment-vendor-evaluation-checklist", description: "Questions to ask any AI recruitment vendor, Bond included." },
+    { label: "Cost per randomized patient calculator", href: "/calculators/cost-per-randomized-patient", description: "Enter your costs and randomizations." },
   ],
 };
 

@@ -296,6 +296,7 @@ const page: SeoPage = {
     { label: "Advarra OnCore", href: "/integrations/oncore", description: "How Bond works alongside OnCore at academic medical and cancer centers." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads charts against each criterion and explains matches." },
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
   ],
 };
 

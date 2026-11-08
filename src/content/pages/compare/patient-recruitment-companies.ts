@@ -42,6 +42,10 @@ const page: SeoPage = {
             "**Patient support companies** such as mdgroup handle travel, payments and logistics for enrolled participants rather than finding them.{{cite:mdgroup-home}}",
           ],
         },
+        {
+          type: "p",
+          text: "For how recruitment works whichever company runs it, from the first contact to randomization, see the [clinical trial patient recruitment guide](/clinical-trial-patient-recruitment).",
+        },
       ],
     },
     {
@@ -400,6 +404,7 @@ const page: SeoPage = {
       href: "/pricing",
       description: "Per screened patient plus a share of milestones from randomization on; no integration fee.",
     },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

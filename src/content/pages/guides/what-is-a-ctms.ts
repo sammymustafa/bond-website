@@ -159,7 +159,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "The table covers five systems research sites use, each described from the vendor's own pages as of October 2026. It is not a ranking.",
+          text: "The table covers five systems research sites use, each described from the vendor's own pages as of October 2026. It is not a ranking. The [CTMS software comparison](/compare/ctms-software-for-research-sites) adds Epic integration, API access and pricing for each, and which CTMS most NCI-designated cancer centers use.",
         },
         {
           type: "table",
@@ -604,6 +604,8 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Integrations", href: "/integrations", description: "The EHRs and CTMS systems Bond works with, and what each connection needs." },
     { label: "Bond and CRIO", href: "/integrations/crio", description: "Bond's certified, two-way CTMS integration." },
     { label: "Implementation", href: "/implementation", description: "Where the CTMS connection sits in the 48-hour EHR plan." },
