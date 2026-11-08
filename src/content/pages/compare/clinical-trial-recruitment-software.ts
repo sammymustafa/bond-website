@@ -916,6 +916,7 @@ const page: SeoPage = {
     { label: "Identify", href: "/identify", description: "How Bond screens structured fields and notes against a protocol." },
     { label: "Engage", href: "/engage", description: "Voice and SMS outreach, pre-screening and scheduling." },
     { label: "Consent", href: "/consent", description: "Plain-language explanations, patient Q&A and staff escalation; the site obtains consent." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

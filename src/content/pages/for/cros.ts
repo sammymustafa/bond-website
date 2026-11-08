@@ -368,6 +368,7 @@ const page: SeoPage = {
     { label: "Implementation", href: "/implementation", description: "The 48-hour plan, with site and Bond tasks at each step." },
     { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What sponsors and CROs check during feasibility and selection." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

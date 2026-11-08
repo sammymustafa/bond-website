@@ -37,12 +37,17 @@ npm run dev   # http://localhost:3000
 ## Content pages
 
 Everything under `/compare`, `/for`, `/integrations`, `/guides`, `/templates`,
-`/clinical-trial-recruitment`, the therapeutic-area pages, `/faq`, `/report` and
+`/calculators`, `/clinical-trial-recruitment`, the therapeutic-area pages, `/faq`, `/report` and
 `/blog/*` is data, not JSX. Each page is one file in `src/content/pages/` that
 default-exports a `SeoPage` (see `src/content/types.ts`) and is rendered by
 `src/app/[...slug]/page.tsx` through `src/components/seo/SeoArticle.tsx`.
 Glossary terms live in `src/content/glossary.ts`. Menus and footer links come
 from `src/content/nav.ts`.
+
+The `/calculators` pages use a `calculator` block (`{ type: "calculator", kind }`),
+rendered by the client component `src/components/seo/Calculator.tsx`, which holds
+each calculator's inputs, formula and labels. Write the formula into the page text
+too, so it is there for search engines and before the component hydrates.
 
 Glossary terms can carry a short `faq` list, rendered with FAQPage schema like
 the content pages. Files in `src/content/pages/` whose names start with `_` are

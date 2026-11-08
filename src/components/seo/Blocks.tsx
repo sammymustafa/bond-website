@@ -12,6 +12,7 @@ import PageList from "./PageList";
 import SmartLink from "./SmartLink";
 import { TrialCounts, TrialExamples } from "./TrialData";
 import BarChart from "./BarChart";
+import Calculator from "./Calculator";
 import ScrollTable from "./ScrollTable";
 import { roles, stacked, tableStyle as t } from "./stackedTable";
 
@@ -402,6 +403,9 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
 
     case "trials":
       return <TrialExamples geo={block.geo} condition={block.condition} cite={block.cite} cites={cites} />;
+
+    case "calculator":
+      return <Calculator kind={block.kind} />;
 
     case "chart":
       return <BarChart title={block.title} unit={block.unit} data={block.data} cite={block.cite} cites={cites} />;

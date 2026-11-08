@@ -421,6 +421,7 @@ const page: SeoPage = {
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist", description: "A consistent manual review, step by step." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "Scope, integrations and pricing models across vendors." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

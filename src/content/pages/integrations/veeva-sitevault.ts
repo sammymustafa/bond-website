@@ -370,6 +370,7 @@ const page: SeoPage = {
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond screens the EHR and explains each match." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "eRegulatory and eISF", href: "/glossary/eregulatory-eisf", description: "What an electronic regulatory binder holds." },
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
   ],
 };
 

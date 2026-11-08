@@ -1,0 +1,436 @@
+import type { SeoPage } from "../../types";
+
+const page: SeoPage = {
+  path: "/guides/site-activation",
+  category: "guide",
+  title: "Site activation and site qualification visits: a guide",
+  description:
+    "Clinical trial site activation step by step: the site qualification visit, the site initiation visit, the documents for the green light, and typical timelines.",
+  keywords: [
+    "site activation clinical trials",
+    "site qualification visit",
+    "site initiation visit",
+    "pre-study site visit",
+    "pre-selection visit PSSV",
+    "site activation checklist",
+    "green light letter clinical trial",
+    "how long does site activation take",
+  ],
+  eyebrow: "Guide",
+  h1: "Site activation, from the qualification visit to the green light",
+  intro:
+    "Site activation is the sponsor's authorization for a site to start recruiting and enrolling participants. NIDCR defines it as \"authorization to recruit participants\", and a large study of cardiovascular trials defined it as authorization to enroll, after both regulatory approval and contract execution.{{cite:nidcr-activation-list,goyal-2021}} Between selection and that green light sit two visits, the site qualification visit and the site initiation visit, and a stack of contracts, approvals and documents. This guide covers each step, what to prepare, and how long it typically takes.",
+  summary: "The site qualification visit, the site initiation visit, the documents needed for the green light, and how long activation takes.",
+  lastUpdated: "2026-11-08",
+  heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See implementation", secondaryHref: "/implementation" },
+  sections: [
+    {
+      id: "what-is",
+      heading: "What is site activation in a clinical trial?",
+      blocks: [
+        {
+          type: "p",
+          text: "Site activation is the end point of [study start-up](/glossary/study-startup): the moment a selected site is cleared to recruit and enroll. At the University of Rochester Medical Center, the sponsor or CRO sends an activation letter, which the URMC manual also calls a Greenlight letter, after the site initiation visit and any remaining training, stating that the site is officially open to subject enrollment.{{cite:urmc-2026}} Until then the site cannot start the study; URMC's rule is no start without IRB approval and an executed contract.{{cite:urmc-2026}}",
+        },
+        {
+          type: "p",
+          text: "Sponsors and sites use different names for the same visits. A site qualification visit (SQV) is also called a pre-selection visit (PSV) or pre-study site visit (PSSV).{{cite:bruneau-2024}} The site initiation visit (SIV) is the last meeting before activation, used to train the team on the protocol.{{cite:vcu-siv}}",
+        },
+      ],
+    },
+    {
+      id: "steps",
+      heading: "What are the steps from feasibility to activation?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            { title: "Confidentiality agreement and feasibility", text: "The site signs a CDA, reviews the protocol or synopsis and completes the sponsor's feasibility questionnaire.{{cite:urmc-2026}} See the [site feasibility guide](/guides/site-feasibility)." },
+            { title: "Site qualification visit", text: "The sponsor or CRO visits, virtually or onsite, to review the answers and the site's capability, then writes a report.{{cite:urmc-2026}}" },
+            { title: "Selection letter", text: "A selected site receives a selection letter, and start-up begins.{{cite:urmc-2026}}" },
+            { title: "Contract, budget and IRB, in parallel", text: "At URMC, IRB submission runs in parallel with the financial process of budget and contract negotiation.{{cite:urmc-2026}}" },
+            { title: "Regulatory documents", text: "For IND studies the sponsor must obtain a signed Form FDA 1572, the investigator's CV, the protocol and financial disclosure information before the investigator begins.{{cite:ecfr-312-53}}" },
+            { title: "Site initiation visit", text: "The sponsor trains the team on the protocol and confirms the site is ready.{{cite:vcu-siv}}" },
+            { title: "Activation", text: "Once open items are resolved, the sponsor issues the activation letter and the site can begin screening.{{cite:urmc-2026,vcu-siv}}" },
+          ],
+        },
+        {
+          type: "p",
+          text: "It is a long chain. A process map at UT Southwestern's NCI-designated comprehensive cancer center found 66 steps with 12 decision points to activate a new clinical trial.{{cite:williams-2020}}",
+        },
+      ],
+    },
+    {
+      id: "sqv",
+      heading: "What is a site qualification visit?",
+      blocks: [
+        {
+          type: "p",
+          text: "A site qualification visit is a meeting between the site and the sponsor to assess whether the site has the qualifications and facilities to carry out every element of the protocol.{{cite:lsuhsc-sqv}} It usually follows the feasibility questionnaire and comes before the selection decision.{{cite:vcu-sqv,lsuhsc-sqv}} ICH E6(R3) puts the duty on the sponsor, which must confirm that the investigator has adequate qualifications, resources and facilities, including laboratories, equipment and staff.{{cite:ich-e6r3}}",
+        },
+        {
+          type: "p",
+          text: "The visit can be in person or remote. LSU Health New Orleans' SOP has the PI, sub-investigator and delegated team members meet the sponsor in person, online or by conference call, and URMC tells its staff to ask the sponsor whether the visit will be remote or onsite.{{cite:lsuhsc-sqv,urmc-2026}} An onsite visit usually includes a facility tour. In an ASCO task force survey of 113 oncology practices, each pre-study site visit took 10 hours on average to complete.{{cite:asco-aaci-2020}}",
+        },
+        {
+          type: "p",
+          text: "What sponsors look at, from the VCU and LSU Health SOPs:{{cite:vcu-sqv,lsuhsc-sqv}}",
+        },
+        {
+          type: "ul",
+          items: [
+            "**The team:** the PI, sub-investigators, coordinators and pharmacy, their experience, availability and credentials.",
+            "**The patients:** the estimated number of potential participants and the recruitment and retention plan.",
+            "**The facilities:** exam rooms, lab and testing areas, pharmacy, storage for investigational product, space to process and ship samples, monitoring and data entry space.",
+            "**Equipment and ancillary departments** the protocol needs.",
+            "**Logistics:** the IRB, the monitoring and communication plan, and case report forms.",
+          ],
+        },
+        {
+          type: "p",
+          text: "Afterward the sponsor writes a report on the site, and the site keeps its own summary of the visit.{{cite:urmc-2026,lsuhsc-sqv}}",
+        },
+      ],
+    },
+    {
+      id: "prepare-sqv",
+      heading: "How should a site prepare for a qualification visit?",
+      blocks: [
+        {
+          type: "checklist",
+          items: [
+            "**Current CVs, licenses and training records** for everyone on the study team.{{cite:vcu-sqv}}",
+            "**A list of current and past studies,** with enrollment against each commitment.{{cite:vcu-sqv}}",
+            "**An eligible-patient estimate backed by data.** ICH E6(R3) says the investigator should be able to demonstrate, for example from retrospective or currently available data, a potential to recruit the agreed number of eligible participants in the recruitment period.{{cite:ich-e6r3}}",
+            "**A recruitment plan** naming each channel and who owns it. The [recruitment plan template](/templates/recruitment-plan) is a starting point.",
+            "**The spaces and equipment** the protocol needs, ready to show or photograph for a remote visit.{{cite:vcu-sqv}}",
+            "**Questions for the sponsor:** expected start-up timeline, investigators' meeting and initiation dates, study drug availability and the draft contract.{{cite:vcu-sqv,urmc-2026}}",
+          ],
+        },
+        {
+          type: "p",
+          text: "The patient estimate is where many sites are weakest. A Nordic interview study found most sites based their patient counts solely on previous experience, and sponsors favored sites that could support estimates with EHR data.{{cite:laaksonen-2021}} Bond runs feasibility from the same EHR screening that finds patients, giving eligible-patient counts for a protocol backed by the chart evidence behind each match.{{cite:bond-site,bond-product}} The [feasibility questionnaire template](/templates/feasibility-questionnaire) keeps standing answers in one file.",
+        },
+      ],
+    },
+    {
+      id: "siv",
+      heading: "What happens at a site initiation visit?",
+      blocks: [
+        {
+          type: "p",
+          text: "The SIV makes sure every member of the study team is trained, understands the protocol and knows the study-specific procedures before enrollment begins.{{cite:vcu-siv}} NIDCR lists three goals: orient and train staff, confirm readiness, and identify anything that must be done before activation and recruitment.{{cite:nidcr-siv}}",
+        },
+        {
+          type: "ul",
+          items: [
+            "**When:** at VCU, generally once the IRB approval letter is received, and possibly before the contract is final. URMC's best practice is to wait until the contract is fully executed, and to treat any earlier date as tentative.{{cite:vcu-siv,urmc-2026}}",
+            "**Who attends:** the PI should attend and make sure all study staff can, along with the coordinator, regulatory staff and the investigational pharmacist.{{cite:vcu-siv}} At URMC, the investigational pharmacy may need its own SIV with the sponsor.{{cite:urmc-2026}}",
+            "**What it covers:** study design, eligibility criteria and the schedule of assessments; investigational product management; lab sample handling; safety reporting; case report forms and source data; often a facilities tour.{{cite:vcu-siv}}",
+            "**How long:** NIDCR's agenda template assumes a 1-day visit of 7.25 working hours.{{cite:nidcr-siv}}",
+            "**In person or remote:** NIDCR's activation checklist accepts either an initiation visit or a teleconference.{{cite:nidcr-activation-list}}",
+          ],
+        },
+        {
+          type: "p",
+          text: "Attendance and protocol training are documented, in an SIV report, a sponsor follow-up letter or a sign-in sheet with the agenda.{{cite:vcu-siv}} Ask for the agenda in advance so each team member knows how much of their time is needed.{{cite:urmc-2026}}",
+        },
+      ],
+    },
+    {
+      id: "checklist",
+      heading: "What must be in place before a site is activated?",
+      blocks: [
+        {
+          type: "checklist",
+          items: [
+            "**IRB approval** of the protocol, consent materials and participant recruitment procedures, including advertisements.{{cite:ich-e6r3}}",
+            "**Executed agreements,** including the financial arrangement between the parties.{{cite:ich-e6r3,urmc-2026}}",
+            "**Form FDA 1572, CVs, the protocol and financial disclosure** for IND studies.{{cite:ecfr-312-53}}",
+            "**Trial-specific training records and the delegation log.** ICH E6(R3) marks these among the essential records that should generally be in place before the trial starts.{{cite:ich-e6r3}}",
+            "**Investigational product,** supplied only after the required IRB and regulatory approvals; for an IND study, no dosing until the IND is in effect.{{cite:ich-e6r3,ecfr-312-40}}",
+            "**Supplies on site:** regulatory binders, lab kits, e-diaries, tablets and other sponsor equipment.{{cite:urmc-2026}}",
+            "**A complete site file and a live database** for data entry.{{cite:nidcr-activation-list}}",
+            "**SIV action items resolved.**{{cite:nidcr-activation-list}}",
+          ],
+        },
+        {
+          type: "p",
+          text: "Add recruitment to the list. Ads, call scripts and text messages go to the IRB with the initial package where possible, because FDA treats advertising added later as a possible amendment to the study.{{cite:fda-recruiting-1998}} For AI-assisted outreach, the [IRB submission language template](/templates/irb-submission-language-ai-outreach) gives model protocol paragraphs.",
+        },
+      ],
+    },
+    {
+      id: "timeline",
+      heading: "How long does site activation take?",
+      blocks: [
+        {
+          type: "p",
+          text: "Usually months, and much longer at some sites than others.",
+        },
+        {
+          type: "table",
+          caption: "Published site start-up and activation times",
+          columns: ["Study", "Measure", "Result"],
+          rows: [
+            ["9 cardiovascular trials, 2,225 North American sites, 2004 to 2017", "Final protocol to activation, then to first participant", "Median 171 days to activation, then 66 more days to first enrollment{{cite:goyal-2021}}"],
+            ["Same trials", "Overall start-up, central vs local IRB", "Median 199 days with a central IRB vs 287 days with a local one{{cite:goyal-2021}}"],
+            ["Same trials, top 10% of sites", "Overall start-up", "Median 106 days{{cite:goyal-2021}}"],
+            ["Tufts CSDD survey of more than 400 companies, 2018", "Site identification through activation", "5 to 6 months on average; faster for repeat sites{{cite:lamberti-2018}}"],
+            ["CREST-2 stroke trial, 147 sites", "Site selection to authorization to randomize", "Median 9.9 months{{cite:crest2}}"],
+            ["WCG survey of 611 sites, 2025", "Study start-up under 60 days", "54% of independent sites and physician practices vs 9% of academic centers, hospitals, health systems and networks{{cite:wcg-2025}}"],
+          ],
+        },
+        {
+          type: "p",
+          text: "Contracts and budgets are the usual bottleneck: 73% of sites in the WCG survey named them as leading factors in start-up delays.{{cite:wcg-2025}} In the cardiovascular trials, 49.6% of sites completed their contracts before obtaining regulatory approval.{{cite:goyal-2021}} The Tufts survey also found CROs completed all site-related start-up activities 6 to 11 weeks faster than sponsors.{{cite:lamberti-2018}}",
+        },
+      ],
+    },
+    {
+      id: "first-patient",
+      heading: "How can a site reach its first patient faster after activation?",
+      blocks: [
+        {
+          type: "p",
+          text: "Treat the months before activation as recruitment time, not only paperwork time. The first weeks after activation predict the rest: in 764 NCI CTEP trials, those that enrolled their first patient more than 2 months after opening were significantly less likely to meet their accrual goal.{{cite:cheng-2011}} CRIO, a site software vendor, reported in 2026 a median of 20 days from activation to first patient screened, with top-quartile sites at 8 days.{{cite:crio-startup}}",
+        },
+        {
+          type: "ul",
+          items: [
+            "**Submit recruitment materials with the protocol,** so ads, scripts and texts are approved on activation day.{{cite:fda-recruiting-1998}}",
+            "**Identify candidates before activation.** A review preparatory to research lets the site look at records to prepare the study, provided no protected health information leaves the covered entity; contacting patients waits for the approved route.{{cite:ecfr-164-512}}",
+            "**Connect the EHR while contracts are negotiated.** Bond's full EHR integration takes 48 hours, with no integration fee, and its team handles it end to end, so screening can run on activation day.{{cite:bond-site,bond-product}} See [implementation](/implementation).",
+            "**Line up outreach.** Bond creates and runs Meta and Google ad campaigns, and its voice and text agents contact every new lead immediately, follow up with every lead who has not responded, then pre-screen patients and book them for screening visits.{{cite:bond-product}}",
+          ],
+        },
+        {
+          type: "cta",
+          label: "Book a demo",
+          href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",
+          text: "Bring a protocol in start-up. We will show the eligible-patient count Bond finds in your EHR and how patients get booked once the site is activated.",
+          secondaryLabel: "See implementation",
+          secondaryHref: "/implementation",
+        },
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "What is the difference between a site qualification visit and a site initiation visit?",
+      a: "A site qualification visit comes before selection and assesses whether the site has the qualifications and facilities to run the protocol.{{cite:lsuhsc-sqv}} A site initiation visit comes after selection, usually after IRB approval, and trains the team on the protocol before enrollment begins.{{cite:vcu-siv}}",
+    },
+    {
+      q: "What is a green light letter?",
+      a: "The sponsor or CRO's activation letter, sent after the site initiation visit and any remaining training, stating that the site is officially open to subject enrollment. Once it arrives, the site can begin screening patients.{{cite:urmc-2026}}",
+    },
+    {
+      q: "Can a site initiation visit be done remotely?",
+      a: "Yes. NIDCR's activation checklist accepts a site initiation visit or a teleconference, and site qualification visits can also be held online or by conference call.{{cite:nidcr-activation-list,lsuhsc-sqv}}",
+    },
+    {
+      q: "How long does site activation take?",
+      a: "In nine cardiovascular trials across 2,225 sites, the median time from final protocol to activation was 171 days, followed by 66 more days to first enrollment.{{cite:goyal-2021}} A Tufts CSDD survey put start-up at 5 to 6 months on average.{{cite:lamberti-2018}}",
+    },
+    {
+      q: "What documents does a site need before activation?",
+      a: "IRB approval of the protocol, consent and recruitment materials; executed agreements; trial-specific training records and the delegation log; and, for IND studies, a signed Form FDA 1572, the investigator's CV and financial disclosure.{{cite:ich-e6r3,ecfr-312-53}}",
+    },
+  ],
+  sources: [
+    {
+      id: "nidcr-activation-list",
+      title: "NIDCR Extramural Study Activation Reference List (V4.0)",
+      publisher: "National Institute of Dental and Craniofacial Research (NIDCR), NIH",
+      url: "https://www.nidcr.nih.gov/sites/default/files/2026-02/Extramural-Site-Activation-Ref-List.docx",
+      year: "2025",
+      note: "Version 4.0, December 15, 2025, listed on NIDCR's planning and activation process page. Read November 8, 2026. Quotes: \"This is a general tool to guide investigators on items that are typically completed prior to study activation; i.e., authorization to recruit participants.\"; \"IRB approval received for protocol and consent document(s), and study related materials to conduct the study are on site\"; \"Investigator Site File/Essential Documents file is complete\"; \"Database finalized and available for data entry\"; \"Study/Site Initiation Visit (SIV) or Teleconference (SIT) completed\"; \"Critical action items identified during the SIV/SIT have been resolved\".",
+    },
+    {
+      id: "goyal-2021",
+      title: "Assessment of North American Clinical Research Site Performance During the Start-up of Large Cardiovascular Clinical Trials",
+      publisher: "JAMA Network Open 2021;4(7):e2117963 (Goyal A et al., Duke Clinical Research Institute), via PubMed Central",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9435961/",
+      year: "2021",
+      note: "Nine DCRI-coordinated cardiovascular trials enrolling July 2004 to February 2017; 2,225 sites in the regulatory analysis. Read November 8, 2026. Quotes: \"activation (defined as the site having authorization to enroll, which incorporates both regulatory approval and contract execution)\"; \"Median time to activation was 171 days (IQR, 114-246 days) and was followed by an additional 66 days (IQR, 33-124 days) to first participant enrollment.\"; \"The median overall start-up time was 255 days\"; top 10% of sites \"overall median, 106 days\"; \"sites using a central vs local IRB (199 days [IQR, 140-292 days] vs 287 days [IQR, 205-390 days]\"; \"the number of sites completing their contracts before obtaining regulatory approval was 1104 (49.6%) for all sites\".",
+    },
+    {
+      id: "urmc-2026",
+      title: "URMC Clinical Research Study Start-Up Manual (V2)",
+      publisher: "University of Rochester Medical Center, Office of Clinical Research",
+      url: "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/ctsi/Study-Start-Up-Manual-V2_04-2026.pdf",
+      year: "2026",
+      note: "April 2026 version; one institution's process. Read November 8, 2026. Order of steps: CDA, sponsor/CRO feasibility, pre-site selection, post-selection, IRB and regulatory, financial, post negotiations, study activation. Quotes: \"Will there be a Site Qualification Visit (Pre-Site Selection Visit), and will this be Remote or Onsite?\" (p.4); \"the Sponsor/CRO will likely schedule a virtual or onsite Pre-Site Selection Visit (PSV, aka Site Qualification Visit)\" and \"If our site is chosen to participate, a site selection letter will be sent\" (p.5); \"Best practice is to wait to schedule the SIV after the CTA is fully executed. If choosing to schedule ahead, reinforce the date is tentative and subject to change.\" and IRB submission \"Occurring parallel with Financial Process\" (p.6); \"Cannot start the study until IRB Approval and contract executed.\" and \"Following the SIV and the completion of any remaining training, you will receive an activation letter (Greenlight letter) stating the site is officially Open to Subject Enrollment from the Sponsor/CRO.\" and \"Upon receipt of this letter, you are now considered officially Open and can begin screening patients!\" and \"If applicable, make sure the IDS Pharmacy had their own SIV with the study sponsor\" (p.14); \"Ask the Sponsor/CRO to send along a draft agenda so you can confirm what study team members need to attend and the amount of their time needed.\" and \"Have you received Lab Kits, Study e-Diaries, Tablets, and other materials or equipment sent to the site from the Sponsor?\" (p.15).",
+    },
+    {
+      id: "bruneau-2024",
+      title: "Redefining feasibility in clinical trials: Collaborative approaches for improved site selection",
+      publisher: "Contemporary Clinical Trials Communications",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11298845/",
+      year: "2024",
+      note: "Quote: \"The process may include a survey or feasibility questionnaire (FQ) as well as a site visit (known as pre-selection visit (PSV), pre-study site visit (PSSV), or site qualification visit (SQV)).\"",
+    },
+    {
+      id: "vcu-sqv",
+      title: "CR-ST-225: Pre-Study Site Qualification Visit (SOP No. CR-ST-225.3)",
+      publisher: "Virginia Commonwealth University, Wright Center for Clinical and Translational Research",
+      url: "https://cctr.vcu.edu/media/cctr/images/support/clinical-research-sops/CR-ST-225_Pre-StudySiteQualificationVisit.pdf",
+      year: "2024",
+      note: "Version date November 22, 2024; effective January 1, 2025. Read November 8, 2026. Quotes: \"The purpose of this visit is to evaluate the site's capability to conduct the clinical research study/trial before commencement.\"; \"the visit is typically scheduled following the completion of a sponsor's feasibility questionnaire\"; \"The visit may include tours of the facility, verification of equipment and personnel availability and qualifications, recruitment planning and feasibility review, and interviews with key study personnel.\"; to prepare: \"List of current/prior studies\", \"Copies of current Curriculum Vitae (CV) for research team members, including medical licenses and other credentials (if applicable)\", \"Estimated number of potential study participants\", \"Proposed participant identification/recruitment strategies\"; spaces: \"exam rooms, record storage, monitoring space\"; dates to ask about: \"Investigators' meeting and/or study initiation meeting\", \"Study drug availability\", \"Draft contract for review\".",
+    },
+    {
+      id: "lsuhsc-sqv",
+      title: "Standard Operating Procedures: Site Qualification Visit (SOP 2.03)",
+      publisher: "LSU Health New Orleans, Office of Research Services",
+      url: "https://www.lsuhsc.edu/administration/academic/ors/clinicaltrials/docs/SOP%202.03%20Site%20Qualification%20Visit-signed%207.21.22.pdf",
+      year: "2022",
+      note: "Effective July 21, 2022. Read November 8, 2026. Quotes: \"Site Qualification Visit: A meeting between the site and sponsor to assess if the site has the qualifications and facilities to execute all elements of the protocol.\"; \"This visit occurs after the site has decided to participate in a trial and prior to receiving a site selection letter.\"; \"The PI, Sub-Investigator and delegated research team members will meet in person or participate in an online meeting or conference call with the sponsor or representative.\"; review items include \"Recruitment, Retention and Enrollment Goals\", \"Case Report Forms\" and \"A monitoring and communication plan\"; facility tour: \"exam rooms, lab areas, special testing areas, pharmacy, hospital unit, work areas for research team members, storage area for investigational product, space used for processing and shipping research samples, and data entry area.\"; \"Following the Site Qualification Visit, a Site Qualification Visit Summary should be completed.\"",
+    },
+    {
+      id: "vcu-siv",
+      title: "CR-ST-235: Site Initiation Visit (SOP No. CR-ST-235.3a)",
+      publisher: "Virginia Commonwealth University, Wright Center for Clinical and Translational Research",
+      url: "https://cctr.vcu.edu/media/cctr/images/support/clinical-research-sops/CR-ST-235_SiteInitiationVisit.docx.pdf",
+      year: "2025",
+      note: "Version date February 11, 2025; effective March 14, 2025. Read November 8, 2026. Quotes: \"Generally, the Site Initiation Visit (SIV) is conducted once an institutional review board approval letter is received, depending on sponsor requirements. It may occur before the contract is finalized.\"; \"The SIV is a meeting to ensure each study personnel staff is adequately trained, understands the protocol, and is well versed with the study-specific procedures before enrollment is initiated.\"; \"The PI should attend the SIV and also ensure that all study site staff have been advised of the meeting and are able to attend.\"; topics include \"Study design, eligibility criteria of trial subjects and schedule of assessments\", \"Investigational product (IP) management & administration\", \"Laboratory samples handling procedures\", \"Safety reporting procedures\"; \"If necessary, the SIV may include a facilities tour.\"; \"Documentation may take the form of a SIV Report, sponsor follow-up letter or sign-in sheet and agenda/handout of SIV topic(s).\"; \"Following the SIV and resolution of any outstanding issues, the site will be ready for activation and patient enrollment.\"",
+    },
+    {
+      id: "nidcr-siv",
+      title: "Site Initiation Visit Agenda Template, v2.0 (Division of Extramural Research)",
+      publisher: "National Institute of Dental and Craniofacial Research (NIDCR), NIH",
+      url: "https://www.nidcr.nih.gov/sites/default/files/2021-10/Site-Initiation-Visit-Agenda-Template-%28Extramural%29-v2.0-102021.docx",
+      year: "2021",
+      note: "Version 2.0, July 28, 2021. Read November 8, 2026. Quotes: \"These visits have several goals: to orient and train staff on the protocol and study related processes; to confirm readiness for study implementation; and to identify additional requirements that must be satisfied prior to activation and recruitment/enrollment.\"; \"{This agenda assumes a 1-day visit of 7.25 working hours, not including lunch or breaks.}\"",
+    },
+    {
+      id: "ich-e6r3",
+      title: "ICH E6(R3) Guideline for Good Clinical Practice",
+      publisher: "International Council for Harmonisation",
+      url: "https://database.ich.org/sites/default/files/ICH_E6%28R3%29_Step4_FinalGuideline_2025_0106.pdf",
+      year: "2025",
+      note: "Step 4, adopted January 6, 2025. Read November 8, 2026. 2.2.1: \"The investigator should be able to demonstrate (e.g., based on retrospective or currently available data) a potential for recruiting the proposed number of eligible participants within the recruitment period as agreed with the sponsor.\" 2.4.2: \"Before initiating a trial, the investigator/institution should have a documented and dated approval/favourable opinion from the IRB/IEC for the trial protocol, informed consent materials, participant recruitment procedures (e.g., advertisements)\". 3.6.1: agreements \"should be documented prior to initiating the activities.\" 3.11.4.5.2(a): \"Selecting the site and confirming that the investigator and individuals or parties involved in the trial conduct have adequate qualifications, resources ... and facilities, including laboratories, equipment and investigator site staff, to conduct the trial safely and properly.\" 3.15.3(a): \"Investigational product should be supplied after obtaining the required approval/favourable opinion from the IRB/IEC and the regulatory authority(ies) for the trial.\" Appendix C: starred records \"should generally be in place prior to the start of the trial\", including \"Arrangement between parties on the financial aspects of the trial*\", \"Trial-specific training records*\" and \"Documentation of delegation of trial-related activities by the investigator*\".",
+    },
+    {
+      id: "ecfr-312-53",
+      title: "21 CFR 312.53: Selecting investigators and monitors",
+      publisher: "Electronic Code of Federal Regulations (eCFR)",
+      url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-D/section-312.53",
+      year: "2026",
+      note: "Paragraph (c). Read November 8, 2026. Quote: \"Before permitting an investigator to begin participation in an investigation, the sponsor shall obtain the following: (1) A signed investigator statement (Form FDA-1572)\"; (2) \"A curriculum vitae or other statement of qualifications of the investigator\"; (3) \"Clinical protocol.\"; (4) \"Financial disclosure information.\"",
+    },
+    {
+      id: "ecfr-312-40",
+      title: "21 CFR 312.40: General requirements for use of an investigational new drug in a clinical investigation",
+      publisher: "Electronic Code of Federal Regulations (eCFR)",
+      url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-B/section-312.40",
+      year: "2026",
+      note: "Paragraph (d). Read November 8, 2026. Quote: \"An investigator may not administer an investigational new drug to human subjects until the IND goes into effect under paragraph (b) of this section.\"",
+    },
+    {
+      id: "williams-2020",
+      title: "Improving the Time to Activation of New Clinical Trials at a National Cancer Institute-Designated Comprehensive Cancer Center",
+      publisher: "JCO Oncology Practice 2020;16(4):e324-e332 (Williams E et al., UT Southwestern)",
+      url: "https://doi.org/10.1200/OP.19.00325",
+      year: "2020",
+      note: "Abstract read November 8, 2026. Quote: \"The process map identified 66 steps with 12 decision points to activate a new clinical trial.\"",
+    },
+    {
+      id: "asco-aaci-2020",
+      title: "Reducing Burdens of Site Feasibility Assessments for Conducting Clinical Trials",
+      publisher: "Association of American Cancer Institutes, Clinical Research Innovation meeting abstract (ASCO task force: Byatt, Hurley, Kurbegov et al.)",
+      url: "https://www.aaci-cancer.org/Files/Admin/CRI/2020/76-Reducing-Burdens-of-Site-Feasibility-Assessments-for-Conducting-Clinical-Trials.pdf",
+      year: "2020",
+      note: "Oncology practices only. Quote: \"113 oncology practices (66 community, 47 academic) reported completing 11 FQs and 4 pre-study site visits (PSSVs) on average per month. Each FQ took 4 hours and PSSVs took 10 hours on average to complete.\"",
+    },
+    {
+      id: "laaksonen-2021",
+      title: "Clinical trial site identification practices and the use of electronic health records in feasibility evaluations: An interview study in the Nordic countries",
+      publisher: "Clinical Trials (SAGE)",
+      url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8592101/",
+      year: "2021",
+      note: "Interviews with 21 participants from pharmaceutical companies and CROs in Finland, Sweden, Denmark and Norway. Quote: \"For estimating the sites' recruitment projections, most sites were seen to base their patient count estimates solely on their previous experience.\" Also: \"Sponsors seem to favour sites who could support their patient count estimates with electronic health record data as they were quicker in providing the estimates and more reliable\"",
+    },
+    {
+      id: "lamberti-2018",
+      title: "Assessing Study Start-up Practices, Performance, and Perceptions Among Sponsors and Contract Research Organizations",
+      publisher: "Therapeutic Innovation & Regulatory Science (Lamberti MJ et al., Tufts CSDD), via PubMed",
+      url: "https://pubmed.ncbi.nlm.nih.gov/29714558/",
+      year: "2018",
+      note: "Abstract read November 8, 2026. Quotes: \"Responses from over 400 unique companies were gathered and analyzed.\"; \"the start-up process is on average 5 to 6 months in total duration, and cycle times across all activities, including site identification, site selection, and study start-up, are faster for repeat sites than for new sites.\"; \"CROs completed all site-related activities 6 to 11 weeks faster than sponsors.\"",
+    },
+    {
+      id: "crest2",
+      title: "Factors Associated With Time to Site Activation, Randomization, and Enrollment Performance in a Stroke Prevention Trial",
+      publisher: "Stroke (American Heart Association), via PubMed",
+      url: "https://pubmed.ncbi.nlm.nih.gov/28768800/",
+      year: "2017",
+      note: "Quote: \"For 147 sites, the median time between site selection to authorization to randomize was 9.9 months (interquartile range, 7.7, 12.4), and factors associated with early site activation were not identified.\"",
+    },
+    {
+      id: "wcg-2025",
+      title: "2025 Clinical Research Site Challenges Report",
+      publisher: "WCG",
+      url: "https://www.wcgclinical.com/wp-content/uploads/sites/2/2025/10/WCG-Site-Challenges-Report-2025.pdf",
+      year: "2025",
+      note: "Vendor survey of 611 sites, July to September 2025. Quote: \"independent sites and physician practices tend to have faster start-up timelines, with 54% reporting that they can initiate studies in under 60 days. In contrast, academic medical centers, community hospitals, health systems, and site networks typically face longer timelines, with only 9% saying their study start-up timelines take less than 60 days.\" Quote: \"budgets and contracts emerged as the leading factors contributing to delays in study start-up timelines, impacting 73% of respondents.\"",
+    },
+    {
+      id: "cheng-2011",
+      title: "Predicting accrual achievement: monitoring accrual milestones of NCI-CTEP-sponsored clinical trials",
+      publisher: "Clinical Cancer Research (Cheng SK, Dietrich MS, Dilts DM), via PubMed",
+      url: "https://pubmed.ncbi.nlm.nih.gov/21447723/",
+      year: "2011",
+      note: "764 nonpediatric therapeutic trials, 2000 to 2007. Quote: \"Trials that accrue the first enrollment beyond 2 months (n = 379, 49.6%) are significantly less likely to achieve the accrual performance than those trials that enroll patients under 2 months\".",
+    },
+    {
+      id: "crio-startup",
+      title: "What It Takes to Start a Study: Site Start-up Benchmarks",
+      publisher: "CRIO (Raymond Nomizu)",
+      url: "https://clinicalresearch.io/blog/what-it-takes-to-start-a-study-site-start-up-benchmarks/",
+      year: "2026",
+      note: "Vendor blog dated July 30, 2026; sample size not stated. Quote: \"The median time from activation to first patient screened is 20 days, but top-quartile performance is observed at just 8 days, or a little over a week.\"",
+    },
+    {
+      id: "fda-recruiting-1998",
+      title: "Recruiting Study Subjects: Guidance for Institutional Review Boards and Clinical Investigators",
+      publisher: "U.S. Food and Drug Administration",
+      url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/recruiting-study-subjects",
+      year: "1998",
+      note: "Guidance dated January 1998. Quote: \"Advertisements should be reviewed and approved by the IRB as part of the package for initial review. However, when the clinical investigator decides at a later date to advertise for subjects, the advertising may be considered an amendment to the ongoing study.\"",
+    },
+    {
+      id: "ecfr-164-512",
+      title: "45 CFR 164.512: Uses and disclosures for which an authorization or opportunity to agree or object is not required",
+      publisher: "eCFR (Office of the Federal Register)",
+      url: "https://www.ecfr.gov/current/title-45/section-164.512",
+      year: "2026",
+      note: "Paragraph (i)(1)(ii), reviews preparatory to research. Quote: \"No protected health information is to be removed from the covered entity by the researcher in the course of the review\"",
+    },
+    {
+      id: "bond-site",
+      title: "Bond Health: platform overview, FAQ and pricing",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+    },
+    {
+      id: "bond-product",
+      title: "Bond Health product information",
+      publisher: "Bond Health",
+      url: "https://bondtrials.com",
+      year: "2026",
+      note: "Capabilities, pricing and compliance status described by Bond Health, October 2026.",
+    },
+  ],
+  related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
+    { label: "Site feasibility", href: "/guides/site-feasibility", description: "The assessment before the qualification visit, with a checklist." },
+    { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites", description: "What moves a site onto the final list." },
+    { label: "Site activation: definition", href: "/glossary/site-activation", description: "The term, with sources." },
+    { label: "Study start-up", href: "/glossary/study-startup", description: "Everything between choosing sites and the first patient." },
+    { label: "Enrollment rate calculator", href: "/calculators/enrollment-rate", description: "Count each site from its own activation date." },
+    { label: "Implementation", href: "/implementation", description: "How Bond's setup runs alongside start-up." },
+  ],
+};
+
+export default page;

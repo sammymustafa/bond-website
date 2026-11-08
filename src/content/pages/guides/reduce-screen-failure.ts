@@ -383,6 +383,8 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Screen failure rate calculator", href: "/calculators/screen-failure-rate", description: "Your rate, and the screenings needed for your target." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "Full-chart pre-screening with the evidence behind each criterion." },
     { label: "Engage: voice and text outreach", href: "/engage", description: "Pre-visit calls, pre-screening questions and scheduling." },
     { label: "Oncology recruitment", href: "/oncology", description: "Cancer trials, where imaging and lab timing drive many screen failures." },

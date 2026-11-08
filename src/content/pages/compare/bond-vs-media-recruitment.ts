@@ -519,6 +519,7 @@ const page: SeoPage = {
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
     { label: "Engage: voice and text agents", href: "/engage", description: "Outreach, pre-screening and scheduling by voice and text." },
     { label: "All comparisons", href: "/compare", description: "Every comparison page, grouped by the kind of tool." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

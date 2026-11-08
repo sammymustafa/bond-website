@@ -77,6 +77,7 @@ const HUB_SEGMENTS: Record<string, Crumb> = {
   guides: { label: "Guides", href: "/guides" },
   blog: { label: "Blog", href: "/blog" },
   glossary: { label: "Glossary", href: "/glossary" },
+  calculators: { label: "Calculators", href: "/calculators" },
 };
 
 const CATEGORY_PARENT: Partial<Record<PageCategory, Crumb>> = {
@@ -113,6 +114,7 @@ export function categoryLabel(category: PageCategory): string {
     newsletter: "Newsletter",
     report: "Report",
     glossary: "Glossary",
+    calculator: "Calculator",
   };
   return labels[category];
 }

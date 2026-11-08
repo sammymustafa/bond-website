@@ -361,6 +361,7 @@ const page: SeoPage = {
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomized patient's milestone payments." },
     { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", description: "Map the plan to your protocol, EHR and site calendar." },
+    { label: "Site activation and qualification visits", href: "/guides/site-activation", description: "From the qualification visit to the green light, with timelines." },
   ],
 };
 

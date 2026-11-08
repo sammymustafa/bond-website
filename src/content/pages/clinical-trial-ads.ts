@@ -252,6 +252,7 @@ const page: SeoPage = {
       href: "/pricing",
       description: "Per screened patient plus a share of milestones from randomization on; no integration fee.",
     },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return 0.8;
       case "guide":
       case "template":
+      case "calculator":
       case "geography":
         return 0.7;
       case "hub":

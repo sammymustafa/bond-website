@@ -335,6 +335,7 @@ const page: SeoPage = {
     { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "How to win more studies", href: "/guides/win-more-studies", description: "What sponsors look for in site feasibility and selection." },
     { label: "Feasibility questionnaire template", href: "/templates/feasibility-questionnaire", description: "A fill-in template for answering sponsor feasibility requests." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

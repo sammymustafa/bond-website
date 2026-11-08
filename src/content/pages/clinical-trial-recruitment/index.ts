@@ -10,7 +10,7 @@ const page: SeoPage = {
   eyebrow: "By location",
   h1: "Recruitment, by state and city",
   intro:
-    "Clinical trial recruitment varies by location because the number of recruiting studies, the health systems that hold the patients, and the state laws that govern a text message to a patient all differ. As of October 23, 2026, 22,038 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Each page below pulls the registry counts for its area and describes the research landscape around them.",
+    "Clinical trial recruitment varies by location because the number of recruiting studies, the health systems that hold the patients, and the state laws that govern a text message to a patient all differ. As of October 23, 2026, 22,038 studies on ClinicalTrials.gov were recruiting at one or more United States locations.{{cite:ctgov-api}} Each page below pulls the registry counts for its area and describes the research landscape around them. For how recruitment works everywhere, from the first contact to randomization, see the [clinical trial patient recruitment guide](/clinical-trial-patient-recruitment).",
   summary: "Thirteen location pages, for states, regions and major research cities, with registry counts, research hubs and local outreach rules.",
   lastUpdated: "2026-10-23",
   showLastUpdated: true,
@@ -42,6 +42,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Who Bond is for", href: "/for", description: "Sites, networks, physician groups, FQHCs, CROs and sponsors." },
     { label: "Implementation", href: "/implementation", description: "What a deployment involves, step by step." },
   ],

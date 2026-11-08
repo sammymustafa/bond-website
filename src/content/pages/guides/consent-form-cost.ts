@@ -494,6 +494,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
     { label: "Consent: AI-powered consent support", href: "/consent", description: "Plain-language explanations, patient questions and staff escalation." },
     { label: "Informed consent", href: "/glossary/informed-consent", description: "What the term covers and who obtains consent." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "What needs approval before you contact a patient." },

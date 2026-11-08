@@ -419,6 +419,7 @@ const page: SeoPage = {
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads the chart and explains each match." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "Outreach, pre-screening and scheduling after the match." },
     { label: "Consent: informed consent support", href: "/consent", description: "Plain-language explanations and patient Q&A while the site obtains consent." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

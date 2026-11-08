@@ -146,7 +146,7 @@ function buildDoc(page: SeoPage) {
     para(page.intro),
   ];
   for (const s of page.sections) {
-    const blocks = s.blocks.filter((b) => !["pageList", "cta", "download", "trialCounts", "trials", "chart"].includes(b.type));
+    const blocks = s.blocks.filter((b) => !["pageList", "cta", "download", "trialCounts", "trials", "chart", "calculator"].includes(b.type));
     if (!blocks.length) continue;
     children.push(new Paragraph({ text: s.heading, heading: HeadingLevel.HEADING_2, spacing: { before: 320, after: 120 } }));
     for (const b of blocks) children.push(...blockToDocx(b));

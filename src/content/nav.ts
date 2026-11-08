@@ -92,15 +92,21 @@ export const compareLinks: NavItem[] = [
   { name: "Bond vs Inato", href: "/compare/bond-vs-inato" },
   { name: "Bond vs Power", href: "/compare/bond-vs-power" },
   { name: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment" },
+  { name: "Bond vs SubjectWell", href: "/compare/bond-vs-subjectwell" },
+  { name: "Bond vs 1nHealth", href: "/compare/bond-vs-1nhealth" },
+  { name: "Bond vs StudyKik", href: "/compare/bond-vs-studykik" },
   { name: "Bond vs manual chart review", href: "/compare/bond-vs-manual-chart-review" },
   { name: "Deep 6 AI vs Triomics", href: "/compare/deep-6-ai-vs-triomics" },
   { name: "Deep 6 AI vs Paradigm Health", href: "/compare/deep-6-ai-vs-paradigm-health" },
   { name: "Deep 6 AI vs Mendel", href: "/compare/deep-6-ai-vs-mendel" },
   { name: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software" },
+  { name: "CTMS software compared", href: "/compare/ctms-software-for-research-sites" },
 ];
 
 export const resourceLinks: NavItem[] = [
+  { name: "Patient recruitment guide", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, what converts, what it costs" },
   { name: "Guides", href: "/guides", description: "Site feasibility, CTMS, screen failure, IRB rules" },
+  { name: "Calculators", href: "/calculators", description: "Screen failure, enrollment rate, cost per patient" },
   { name: "Templates", href: "/templates", description: "Scripts, checklists and questionnaires" },
   { name: "Glossary", href: "/glossary", description: "30 recruitment terms, defined" },
   { name: "Blog", href: "/blog" },

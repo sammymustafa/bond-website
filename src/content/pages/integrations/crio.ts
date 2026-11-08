@@ -374,6 +374,7 @@ const page: SeoPage = {
     { label: "For site networks", href: "/for/site-networks", description: "Running Bond across several locations and systems." },
     { label: "Security", href: "/security", description: "BAA, encryption, access control and the data flow." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond screens charts and shows evidence per criterion." },
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
   ],
 };
 

@@ -284,6 +284,7 @@ const page: SeoPage = {
     { label: "Consent support", href: "/consent", description: "Plain-language explanations, patient Q&A and understanding checks." },
     { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "BAAs, audit logging, encryption and Bond's public Trust Center." },
+    { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, which methods convert and what it costs." },
   ],
 };
 

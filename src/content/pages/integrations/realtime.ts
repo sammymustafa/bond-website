@@ -367,6 +367,7 @@ const page: SeoPage = {
     { label: "Integrations", href: "/integrations", description: "EHR and research-system connections, and what each requires." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "CRIO", href: "/integrations/crio", description: "Bond's only certified vendor integration." },
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
   ],
 };
 

@@ -263,6 +263,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Cost per randomized patient calculator", href: "/calculators/cost-per-randomized-patient", description: "Enter your costs and randomizations." },
     { label: "Pricing", href: "/pricing", description: "How Bond's per-screened-patient and randomization-based pricing works." },
     { label: "Trial ads and lead follow-up", href: "/clinical-trial-ads", description: "How Bond runs ads and contacts every lead immediately." },
     { label: "Bond vs media recruitment", href: "/compare/bond-vs-media-recruitment", description: "Paying for leads versus paying for outcomes." },

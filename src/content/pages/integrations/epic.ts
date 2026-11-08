@@ -27,7 +27,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Epic, from Epic Systems Corporation, is the most common EHR in US acute care hospitals, per KLAS's 2026 report on 2025 data, and the largest US ambulatory EHR vendor by installations, per Definitive Healthcare.{{cite:klas-2026-hsc,definitive-ambulatory}} If your site works with a health system on Epic, its Epic team makes the approvals below.",
+          text: "Epic, from Epic Systems Corporation, is the most common EHR in US acute care hospitals, per KLAS's 2026 report on 2025 data, and the largest US ambulatory EHR vendor by installations, per Definitive Healthcare.{{cite:klas-2026-hsc,definitive-ambulatory}} If your site works with a health system on Epic, its Epic team makes the approvals below. For which CTMS products integrate with Epic, see the [CTMS software comparison](/compare/ctms-software-for-research-sites).",
         },
         {
           type: "stats",
@@ -400,6 +400,7 @@ const page: SeoPage = {
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond reads Epic charts against each criterion and explains matches." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
     { label: "Oracle Health (Cerner) integration", href: "/integrations/oracle-cerner", description: "The same FHIR-based path for Oracle Health sites." },
+    { label: "CTMS software compared", href: "/compare/ctms-software-for-research-sites", description: "OnCore, Clinical Conductor, RealTime, CRIO and SiteVault side by side." },
   ],
 };
 
