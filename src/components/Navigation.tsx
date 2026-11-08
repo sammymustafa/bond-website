@@ -138,53 +138,53 @@ export default function Navigation() {
                     {menu.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
                   </button>
-                  {isOpen && (
+                  {/* Always in the HTML so crawlers see every menu link; `hidden` (display: none) keeps a closed
+                      panel out of view, the tab order and the accessibility tree, as unmounting it did. */}
+                  <div
+                    className={`absolute top-full pt-3 ${align} ${isOpen ? "" : "hidden"}`}
+                    onMouseEnter={cancelClose}
+                  >
                     <div
-                      className={`absolute top-full pt-3 ${align}`}
-                      onMouseEnter={cancelClose}
+                      className={`rounded-2xl bg-white border border-gray-100 shadow-xl p-4 ${
+                        wide ? "grid gap-6 grid-cols-3 w-[760px]" : "w-[360px]"
+                      }`}
                     >
-                      <div
-                        className={`rounded-2xl bg-white border border-gray-100 shadow-xl p-4 ${
-                          wide ? "grid gap-6 grid-cols-3 w-[760px]" : "w-[360px]"
-                        }`}
-                      >
-                        {menu.groups.map((group, gi) => (
-                          <div key={gi}>
-                            {group.title && (
-                              <p className="px-3 mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">{group.title}</p>
-                            )}
-                            <ul className="space-y-0.5">
-                              {group.items.map((item) => (
-                                <li key={item.href}>
-                                  <Link
-                                    href={item.href}
-                                    className="group/item block px-3 py-2 rounded-lg hover:bg-gray-100"
-                                    onClick={() => setOpenMenu(null)}
-                                  >
-                                    <span className="block text-sm font-medium text-gray-900 group-hover/item:text-bond-primary">{item.name}</span>
-                                    {item.description && (
-                                      <span className="block text-xs text-gray-500 mt-0.5 text-pretty">{item.description}</span>
-                                    )}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                        {menu.href && (
-                          <div className={wide ? "col-span-3 pt-2 border-t border-gray-100" : "pt-2 mt-1 border-t border-gray-100"}>
-                            <Link
-                              href={menu.href}
-                              className="block px-3 py-2 text-sm font-medium text-bond-primary hover:underline"
-                              onClick={() => setOpenMenu(null)}
-                            >
-                              All {menu.label.toLowerCase()} pages
-                            </Link>
-                          </div>
-                        )}
-                      </div>
+                      {menu.groups.map((group, gi) => (
+                        <div key={gi}>
+                          {group.title && (
+                            <p className="px-3 mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">{group.title}</p>
+                          )}
+                          <ul className="space-y-0.5">
+                            {group.items.map((item) => (
+                              <li key={item.href}>
+                                <Link
+                                  href={item.href}
+                                  className="group/item block px-3 py-2 rounded-lg hover:bg-gray-100"
+                                  onClick={() => setOpenMenu(null)}
+                                >
+                                  <span className="block text-sm font-medium text-gray-900 group-hover/item:text-bond-primary">{item.name}</span>
+                                  {item.description && (
+                                    <span className="block text-xs text-gray-500 mt-0.5 text-pretty">{item.description}</span>
+                                  )}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                      {menu.href && (
+                        <div className={wide ? "col-span-3 pt-2 border-t border-gray-100" : "pt-2 mt-1 border-t border-gray-100"}>
+                          <Link
+                            href={menu.href}
+                            className="block px-3 py-2 text-sm font-medium text-bond-primary hover:underline"
+                            onClick={() => setOpenMenu(null)}
+                          >
+                            All {menu.label.toLowerCase()} pages
+                          </Link>
+                        </div>
+                      )}
                     </div>
-                  )}
+                  </div>
                 </div>
               );
             })}
