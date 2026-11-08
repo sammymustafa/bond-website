@@ -256,7 +256,7 @@ const page: SeoPage = {
   ],
   related: [
     { label: "Feasibility questionnaire template", href: "/templates/feasibility-questionnaire", description: "A template for answering sponsor feasibility questions with stated assumptions." },
-    { label: "Site feasibility", href: "/glossary/site-feasibility", description: "What sponsors assess before selecting a site." },
+    { label: "Site feasibility guide", href: "/guides/site-feasibility", description: "What sponsors assess before selecting a site, and how to answer it." },
     { label: "Enrollment rate", href: "/glossary/enrollment-rate", description: "How enrollment rate is defined and tracked." },
     { label: "Identify: LLM-based EHR screening", href: "/identify", description: "How Bond checks each criterion in the record and shows the evidence." },
   ],

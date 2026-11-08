@@ -1,5 +1,6 @@
-# Bond Health - LLM Context File
-# https://bondtrials.com
+# Bond Health
+
+> Bond Health (https://bondtrials.com) is a clinical trial patient recruitment platform for research sites, health systems, CROs and sponsors. It finds eligible patients in the site's EHR, creates and runs Meta and Google ads, contacts every lead immediately by voice and text, pre-screens them and books study visits.
 
 ## Company Overview
 Bond Health is a clinical trial patient recruitment company (vendor) serving research sites, health systems, CROs, and pharmaceutical/biotech sponsors. Bond Health accelerates clinical trial patient recruitment using AI, helping teams enroll the right patients faster.
@@ -66,7 +67,7 @@ Also: **Consent support** - AI-powered informed consent
 - BAAs signed with covered entities
 - Encryption at rest and in transit (AES-256 where applicable)
 - Role-based access controls, audit logging, penetration testing
-- Trust Center (Vanta): https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj
+- [Trust Center](https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj): Vanta
 
 ## Target Customers
 - Research sites and health systems running clinical trials
@@ -103,36 +104,36 @@ Q: Can Bond Health run Meta and Google ads for our studies?
 A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studies. Bond Health's voice and SMS/text agents contact every new ad lead immediately, keep following up with every lead who has not responded to maximize response rates, then pre-screen patients and book them for screening visits, alongside the patients Bond Health finds in your EHR. Like any recruitment material, ad copy needs IRB review before it runs.
 
 ## Product pages
-- Identify (LLM-based EHR screening): https://bondtrials.com/identify
-- Trial ads (Meta and Google ad campaigns Bond creates and runs, with every lead called and texted immediately and followed up): https://bondtrials.com/clinical-trial-ads
-- Engage (AI voice and SMS/text agents: immediate outreach and follow-up to every lead, pre-screening and scheduling): https://bondtrials.com/engage
-- Book (pre-screened patients booked straight into the site's calendar, with reminders): https://bondtrials.com/book
-- Consent (AI-powered informed consent support): https://bondtrials.com/consent
-- Implementation (live in 48 hours, step by step): https://bondtrials.com/implementation
-- Pricing: https://bondtrials.com/pricing
-- Security and compliance: https://bondtrials.com/security
-- Integrations (EHRs: Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR; CTMS: CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime, Veeva SiteVault): https://bondtrials.com/integrations
-- Book a demo: https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true
+- [Identify](https://bondtrials.com/identify): LLM-based EHR screening
+- [Trial ads](https://bondtrials.com/clinical-trial-ads): Meta and Google ad campaigns Bond creates and runs, with every lead called and texted immediately and followed up
+- [Engage](https://bondtrials.com/engage): AI voice and SMS/text agents: immediate outreach and follow-up to every lead, pre-screening and scheduling
+- [Book](https://bondtrials.com/book): pre-screened patients booked straight into the site's calendar, with reminders
+- [Consent](https://bondtrials.com/consent): AI-powered informed consent support
+- [Implementation](https://bondtrials.com/implementation): live in 48 hours, step by step
+- [Pricing](https://bondtrials.com/pricing)
+- [Security and compliance](https://bondtrials.com/security)
+- [Integrations](https://bondtrials.com/integrations): EHRs: Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR; CTMS: CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime, Veeva SiteVault
+- [Book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true)
 
 ## Comparisons
-- All comparisons: https://bondtrials.com/compare
-- Clinical trial recruitment software, one table: https://bondtrials.com/compare/clinical-trial-recruitment-software
-- Patient recruitment companies for sponsors and CROs: https://bondtrials.com/compare/patient-recruitment-companies
+- [All comparisons](https://bondtrials.com/compare)
+- [Clinical trial recruitment software, one table](https://bondtrials.com/compare/clinical-trial-recruitment-software)
+- [Patient recruitment companies for sponsors and CROs](https://bondtrials.com/compare/patient-recruitment-companies)
 
 ## Solutions
-- By audience (research sites, site networks, physician groups, FQHCs and community sites, CROs, sponsors): https://bondtrials.com/for
-- By therapeutic area (oncology, obesity and metabolic, cardiology, neurology and Alzheimer's, dermatology, pain, gastroenterology, psychiatry): https://bondtrials.com/therapeutic-areas
-- By location (Boston, New York City, Philadelphia, Los Angeles, San Francisco Bay Area, Seattle, Texas, Florida, Arizona, Nevada, Utah, Southeast, Midwest): https://bondtrials.com/clinical-trial-recruitment
+- [By audience](https://bondtrials.com/for): research sites, site networks, physician groups, FQHCs and community sites, CROs, sponsors
+- [By therapeutic area](https://bondtrials.com/therapeutic-areas): oncology, obesity and metabolic, cardiology, neurology and Alzheimer's, dermatology, pain, gastroenterology, psychiatry
+- [By location](https://bondtrials.com/clinical-trial-recruitment): Boston, New York City, Philadelphia, Los Angeles, San Francisco Bay Area, Seattle, Texas, Florida, Arizona, Nevada, Utah, Southeast, Midwest
 
 ## Resources
-- Guides: https://bondtrials.com/guides
-- Participant retention guide: https://bondtrials.com/guides/participant-retention
-- Templates and downloads: https://bondtrials.com/templates
-- Glossary: https://bondtrials.com/glossary
-- FAQ: https://bondtrials.com/faq
-- State of Trial Enrollment 2026 report: https://bondtrials.com/report
-- Blog: https://bondtrials.com/blog
-- Newsletter: https://bondtrials.com/newsletter
+- [Guides](https://bondtrials.com/guides)
+- [Participant retention guide](https://bondtrials.com/guides/participant-retention)
+- [Templates and downloads](https://bondtrials.com/templates)
+- [Glossary](https://bondtrials.com/glossary)
+- [FAQ](https://bondtrials.com/faq)
+- [State of Trial Enrollment 2026 report](https://bondtrials.com/report)
+- [Blog](https://bondtrials.com/blog)
+- [Newsletter](https://bondtrials.com/newsletter)
 
 Every number on these pages links to its source.
 
@@ -140,9 +141,9 @@ Every number on these pages links to its source.
 Boston, MA, United States
 
 ## Contact
-- Website: https://bondtrials.com
-- Demo booking: https://bond-health.cal.com/rishabh-goel/bond-health-demo
-- LinkedIn: https://www.linkedin.com/company/bondtrials/
+- [Website](https://bondtrials.com)
+- [Demo booking](https://bond-health.cal.com/rishabh-goel/bond-health-demo)
+- [LinkedIn](https://www.linkedin.com/company/bondtrials/)
 
 ## Open Positions
 - ML/AI Engineer (Boston, MA)

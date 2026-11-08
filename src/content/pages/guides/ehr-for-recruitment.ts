@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/guides/ehr-for-recruitment",
   category: "guide",
-  title: "EHR clinical trial recruitment: how sites find eligible patients",
+  title: "EHR clinical trial recruitment: finding eligible patients",
   description:
     "Using EHR for clinical trial recruitment: what structured data and notes show, HIPAA paths for review and contact, Epic cohort queries, and what to measure.",
   keywords: [
@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "A research site finds eligible trial patients in its EHR by running a query built from the study's criteria and having a coordinator review the charts it returns. Doing that well takes a legal basis for looking and reaching out, a query that returns a workable list, and a review step that catches what the query cannot read.",
   summary: "Structured data versus notes, HIPAA paths, cohort queries, LLM screening, coordinator review and the metrics that matter.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-11-08",
   heroCta: {
     label: "See it on your protocol",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",

@@ -152,43 +152,9 @@ const jsonLd = {
         "@id": "https://bondtrials.com/#organization",
       },
     },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://bondtrials.com/#software",
-      name: "Bond Health Platform",
-      applicationCategory: "HealthApplication",
-      operatingSystem: "Web-based",
-      description: "AI-powered platform for clinical trial patient recruitment featuring LLM-based EHR screening, Meta and Google ad campaigns, and voice and SMS/text agents that contact every lead immediately, follow up until they respond, pre-screen patients and book them for study visits, plus informed consent support.",
-      // No public list price, so no "price" field: a price of 0 reads as "free" to search engines.
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "USD",
-        description: "Volume-based per-screened-patient fee plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee",
-      },
-      featureList: [
-        "LLM-based EHR screening",
-        "Voice and SMS/text agents for pre-screening and scheduling",
-        "Meta and Google ad campaigns created and run for each study",
-        "Every ad lead contacted immediately by voice and SMS/text, with follow-ups until they respond",
-        "Ad leads pre-screened and booked for screening visits",
-        "AI-powered informed consent",
-        "Real-time dashboard and audit trail",
-        "EHR integration via FHIR",
-        "Connects to every major EHR, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth and eClinicalWorks",
-        "Works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault; CRIO Certified Partner with a two-way CRIO integration",
-        "Live in 48 hours with no integration fee",
-        "A percentage of each randomized patient's milestone payments, from randomization through later study visits, owed only for randomized patients",
-        "Voice and SMS/text agents in the patient's language, with live transfer to a coordinator",
-        "Retention support: visit reminders, transportation booking, symptom and diary collection, dropout-risk alerts",
-        "HIPAA compliant and SOC 2 Type I compliant",
-        "Information security management system certified to ISO/IEC 27001:2022 by Advantage Partners",
-        "90%+ matching accuracy",
-        "Up to 3x faster enrollment",
-      ],
-      provider: {
-        "@id": "https://bondtrials.com/#organization",
-      },
-    },
+    // No SoftwareApplication node: Google requires an aggregateRating or review for that type,
+    // and Bond publishes neither, so it was flagged as invalid on every page. The Service node
+    // below carries the same offer and capabilities.
     {
       "@type": "Service",
       "@id": "https://bondtrials.com/#service",
@@ -198,6 +164,12 @@ const jsonLd = {
       },
       description: "End-to-end clinical trial patient recruitment service using AI for patient identification, ad campaigns, immediate outreach and follow-up, visit booking, and consent support.",
       serviceType: "Clinical Trial Patient Recruitment",
+      // No public list price, so no "price" field: a price of 0 reads as "free" to search engines.
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "USD",
+        description: "Volume-based per-screened-patient fee plus a percentage of each randomized patient's milestone payments, from randomization onward, with no integration fee",
+      },
       audience: [
         {
           "@type": "BusinessAudience",

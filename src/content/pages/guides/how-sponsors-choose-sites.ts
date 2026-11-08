@@ -61,7 +61,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Our [feasibility questionnaire template](/templates/feasibility-questionnaire) lists the questions most sponsors ask. The glossary defines [site feasibility](/glossary/site-feasibility) and [site activation](/glossary/site-activation).",
+          text: "Our [feasibility questionnaire template](/templates/feasibility-questionnaire) lists the questions most sponsors ask. The [site feasibility guide](/guides/site-feasibility) explains how the assessment works, and the glossary defines [site activation](/glossary/site-activation).",
         },
       ],
     },

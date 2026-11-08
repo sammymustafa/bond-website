@@ -219,7 +219,7 @@ const page: SeoPage = {
               "Where eligibility evidence lives. Pre-screening reads it.",
             ],
             [
-              "[CTMS](/glossary/ctms)",
+              "CTMS",
               "The site's operational record of its studies",
               "Study calendars, participant visits, budgets, invoices and reports{{cite:veeva-ctms-faq}}",
               "Where recruitment status should end up, from referral to randomization",
@@ -607,7 +607,6 @@ const page: SeoPage = {
     { label: "Integrations", href: "/integrations", description: "The EHRs and CTMS systems Bond works with, and what each connection needs." },
     { label: "Bond and CRIO", href: "/integrations/crio", description: "Bond's certified, two-way CTMS integration." },
     { label: "Implementation", href: "/implementation", description: "Where the CTMS connection sits in the 48-hour EHR plan." },
-    { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms", description: "The short glossary definition." },
   ],
 };
 

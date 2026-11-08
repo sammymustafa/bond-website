@@ -5,7 +5,7 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-hippocratic-ai-and-grove",
   category: "comparison",
-  title: "Hippocratic AI and Grove AI alternatives: Bond Health compared",
+  title: "Hippocratic AI and Grove AI alternatives: Bond compared",
   description:
     "Why Bond is better than Hippocratic AI and Grove AI: it finds eligible patients in your own EHR, runs ads, contacts every lead and books study visits.",
   keywords: [
@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "Hippocratic AI, which announced its acquisition of Grove AI and the Grace trial agent on January 12, 2026, sells AI agents that call and pre-screen trial candidates drawn from a feasibility model, referrals, registries and campaigns.{{cite:hippo-grove-acquisition,hippo-trial-enrollment}} Bond Health starts in the chart: it screens the site's own EHR, clinical notes included, against each study's criteria, then contacts, pre-screens and schedules matched patients by voice and text and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} If you want eligible patients found in your own records and carried to a booked study visit by one platform, with a milestone share tied to randomized patients, Bond is the stronger choice.",
   summary: "Why Bond is better than Hippocratic AI and Grove AI, compared capability by capability, with a plan for a head-to-head test.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-08",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {

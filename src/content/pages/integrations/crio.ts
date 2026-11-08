@@ -49,7 +49,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "CRIO makes software for research sites and site networks, plus a Central eSource product for sponsors.{{cite:crio-products,crio-sponsors}} Per its About page, it was founded in 2015 and is based in Boston.{{cite:crio-about}} Its core product is [eSource](/glossary/esource), which CRIO says is integrated with its Site [CTMS](/glossary/ctms), eRegulatory and eConsent modules and has an open API for other vendors.{{cite:crio-esource}}",
+          text: "CRIO makes software for research sites and site networks, plus a Central eSource product for sponsors.{{cite:crio-products,crio-sponsors}} Per its About page, it was founded in 2015 and is based in Boston.{{cite:crio-about}} Its core product is [eSource](/glossary/esource), which CRIO says is integrated with its Site [CTMS](/guides/what-is-a-ctms), eRegulatory and eConsent modules and has an open API for other vendors.{{cite:crio-esource}}",
         },
         {
           type: "stats",

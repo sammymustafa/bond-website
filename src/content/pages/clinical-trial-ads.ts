@@ -3,10 +3,12 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/clinical-trial-ads",
   category: "product",
-  title: "Meta and Google ads for clinical trial recruitment and follow-up",
+  title: "Clinical trial advertising on Meta and Google",
   description:
     "Bond creates and runs Meta and Google ad campaigns for clinical trials, and its AI agents call and text every lead immediately and follow up until they respond.",
   keywords: [
+    "clinical trial advertising",
+    "clinical trial marketing",
     "clinical trial recruitment ads",
     "Meta and Google ads for clinical trials",
     "clinical trial advertising agency",
@@ -20,7 +22,7 @@ const page: SeoPage = {
     "Bond Health creates and runs Meta and Google ad campaigns for each study, and its AI agents call and text every ad lead immediately and keep following up until the patient responds.{{cite:bond-product}} Bond does that calling itself: the same voice and SMS agents that work a site's EHR matches pre-screen each ad lead on the site's IRB-approved script and book eligible patients into the site's calendar, so the campaign, the follow-up and the booked visit sit with one vendor.{{cite:bond-site,bond-product}}",
   summary:
     "Meta and Google ad campaigns Bond creates and runs, with every lead called and texted immediately, followed up, pre-screened and booked into the site's calendar.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-08",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",

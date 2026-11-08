@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/integrations/epic",
   category: "integration",
-  title: "Clinical trial recruitment software that integrates with Epic",
+  title: "Clinical trial recruitment software integrated with Epic",
   description:
     "How Bond connects to Epic over FHIR R4: the data it reads, what your Epic team approves, PHI controls, timelines, and where Epic's own research tools fit.",
   keywords: [
@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Bond Health is clinical trial recruitment software that integrates with Epic through Epic's standard FHIR R4 APIs; it screens charts against a study's criteria and passes ranked candidates to your coordinators.{{cite:bond-site}} Below: the data Bond requests, what your Epic team approves, and what is not integrated today.",
   summary: "The FHIR resources, Epic approvals, timeline and PHI controls for connecting Bond at an Epic site.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-11-08",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {

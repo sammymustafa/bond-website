@@ -136,7 +136,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "A criteria-based count is slow by hand because exclusions sit in notes, labs and medication histories. Bond Health's [Identify](/identify) stage reads structured and unstructured records against a study's criteria and shows the chart evidence behind each decision, so a coordinator can check a sample and send a count with its method attached.{{cite:bond-site}} The [feasibility questionnaire template](/templates/feasibility-questionnaire) lists the questions sponsors ask most, and the glossary defines [site feasibility](/glossary/site-feasibility).",
+          text: "A criteria-based count is slow by hand because exclusions sit in notes, labs and medication histories. Bond Health's [Identify](/identify) stage reads structured and unstructured records against a study's criteria and shows the chart evidence behind each decision, so a coordinator can check a sample and send a count with its method attached.{{cite:bond-site}} The [feasibility questionnaire template](/templates/feasibility-questionnaire) lists the questions sponsors ask most, and the [site feasibility guide](/guides/site-feasibility) explains how sponsors assess a site.",
         },
       ],
     },

@@ -7,7 +7,7 @@ const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm
 const page: SeoPage = {
   path: "/compare/bond-vs-alleviate-health",
   category: "comparison",
-  title: "Alleviate Health alternatives: Bond Health vs Alleviate Health",
+  title: "Alleviate Health alternatives: Bond vs Alleviate Health",
   description:
     "Why Bond is better than Alleviate Health: Bond finds eligible patients in your EHR, runs Meta and Google ads, contacts every lead and books study visits.",
   keywords: [
@@ -23,7 +23,7 @@ const page: SeoPage = {
     "Alleviate Health sells human-in-the-loop AI agents that pre-screen and schedule clinical trial leads over SMS and voice.{{cite:alleviate-home-2026,alleviate-launch-2025}} Bond Health finds eligible patients in a site's own EHR, including clinical notes, then contacts, pre-screens and schedules them by voice and text, and supports informed consent, with chart evidence behind every match.{{cite:bond-site}} For a site that wants one platform to find eligible patients, work the leads it already has and carry each patient through to a booked study visit, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Alleviate Health: EHR identification, its own ad campaigns, chart-aware outreach through to a booked visit, and no integration fee.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-08",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
