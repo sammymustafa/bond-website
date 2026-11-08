@@ -3,7 +3,7 @@ import type { SeoPage } from "../types";
 const page: SeoPage = {
   path: "/engage",
   category: "product",
-  title: "AI voice agents that pre-screen clinical trial patients by phone",
+  title: "AI voice agents for clinical trial pre-screening",
   description:
     "AI voice and SMS agents that call and text every lead immediately, pre-screen them on the site's script, follow up until they respond and book screening visits.",
   keywords: [
@@ -20,7 +20,7 @@ const page: SeoPage = {
     "Bond Health's AI voice and SMS agents pre-screen every new lead by phone or text as soon as it arrives and book eligible patients straight into the site's calendar.{{cite:bond-site,bond-product}} Engage is that outreach stage: the agents contact every lead from Bond's [Meta and Google ad campaigns](/clinical-trial-ads) and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
   summary:
     "Voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-11-08",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {

@@ -493,11 +493,6 @@ const page: SeoPage = {
       description: "The sponsor's selection process and the performance metrics it weighs.",
     },
     {
-      label: "Site feasibility",
-      href: "/glossary/site-feasibility",
-      description: "The short glossary definition.",
-    },
-    {
       label: "Identify: LLM-based EHR screening",
       href: "/identify",
       description: "Screens EHR records against trial criteria and shows the chart evidence for each match.",

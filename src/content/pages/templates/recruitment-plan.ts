@@ -3,12 +3,13 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/templates/recruitment-plan",
   category: "template",
-  title: "Free clinical trial recruitment and retention plan template",
+  title: "Free clinical trial recruitment plan template (Word)",
   description:
     "Free, editable recruitment and retention plan for clinical trials: enrollment target, backward funnel, sources, IRB-approved outreach, retention and monitoring.",
   keywords: [
     "clinical trial recruitment plan template",
     "patient recruitment plan template",
+    "recruitment plan template",
     "recruitment and retention plan clinical trial",
     "clinical trial recruitment strategy template",
     "site recruitment plan",
@@ -18,7 +19,7 @@ const page: SeoPage = {
   intro:
     "A recruitment plan turns an enrollment target into the work needed to reach it: how many patients to find, where they come from, who contacts them, what the IRB must approve first, how they stay in the study, and what happens when the numbers fall behind. This template takes a site or study team through each part, with fields to fill in and a funnel worksheet that works backward from the number of patients you need to randomize.",
   summary: "An editable recruitment and retention plan with a backward funnel worksheet, source plan, IRB checklist, retention steps and monitoring triggers.",
-  lastUpdated: "2026-10-25",
+  lastUpdated: "2026-11-08",
   heroCta: {
     label: "Download the Word file",
     href: "/downloads/recruitment-plan.docx",

@@ -3,7 +3,7 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/guides/participant-retention",
   category: "guide",
-  title: "Clinical trial participant retention: how sites prevent dropout",
+  title: "Clinical trial participant retention: preventing dropout",
   description:
     "How research sites keep clinical trial participants enrolled: typical retention rates, why participants leave, and the retention steps with evidence behind them.",
   keywords: [
@@ -19,7 +19,7 @@ const page: SeoPage = {
     "Research sites keep clinical trial participants from dropping out by making each visit easier to keep, with reminders, transportation, flexible scheduling and prompt reimbursement. Retention matters as much as recruitment: a participant who leaves after randomization has to be replaced, or the missing data weakens the result. This guide covers how much dropout to expect, why participants leave, which retention steps have evidence behind them, and how to keep participants without pressuring anyone to stay.",
   summary:
     "Typical retention rates, why participants leave, which retention steps have evidence, and a retention checklist for research sites.",
-  lastUpdated: "2026-10-25",
+  lastUpdated: "2026-11-08",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",

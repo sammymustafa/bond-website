@@ -3,22 +3,24 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/for/site-networks",
   category: "audience",
-  title: "Speed up clinical trial enrollment across your site network",
+  title: "Patient recruitment for site networks and SMOs",
   description:
-    "How site networks use Bond Health to screen charts, contact patients and book visits the same way at every site, and report one funnel across them.",
+    "How site networks and SMOs use Bond Health to screen charts, contact patients and book visits the same way at every site, and report one funnel across them.",
   keywords: [
     "clinical trial site network recruitment technology",
     "site network patient recruitment",
     "multi-site clinical trial recruitment",
+    "site management organization recruitment",
+    "SMO patient recruitment",
     "CRIO site network recruitment",
     "feasibility from EHR data",
   ],
   eyebrow: "For site networks",
-  h1: "Speed up enrollment across every site in your network",
+  h1: "Speed up enrollment across every site in your network or SMO",
   intro:
-    "A site network speeds up enrollment when every site screens its EHR and contacts patients the same way, and when the network can see one enrollment funnel across all of them. A network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way.",
+    "A site network speeds up enrollment when every site screens its EHR and contacts patients the same way, and when the network can see one enrollment funnel across all of them. A network offers sponsors many sites that work to one standard. Recruitment is where that standard is hard to hold, because each site reads charts, calls patients and answers consent questions its own way. A site management organization (SMO) has the same problem across the sites it manages.",
   summary: "How multi-site networks run one screening, outreach and booking standard, with one set of reports.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-08",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -217,6 +219,10 @@ const page: SeoPage = {
     },
   ],
   faq: [
+    {
+      q: "Does this work for a site management organization (SMO)?",
+      a: "Yes. An SMO runs studies across the sites it manages, so it needs the same thing a site network does: one way to screen charts, contact patients and book visits at every site, and one set of reports across them.",
+    },
     {
       q: "Do all of our sites need the same EHR?",
       a: "No. Each EHR connects separately, with its own approval, and full integration usually takes 48 hours.{{cite:bond-site}}",

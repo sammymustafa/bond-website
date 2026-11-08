@@ -3,10 +3,12 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/compare/patient-recruitment-companies",
   category: "comparison",
-  title: "Best patient recruitment companies for sponsors and CROs in 2026",
+  title: "Best clinical trial patient recruitment companies, 2026",
   description:
-    "Patient recruitment companies for sponsors and CROs in 2026: services firms that buy media and call leads, and platforms that find patients in sites' EHRs.",
+    "Clinical trial recruitment companies for sponsors and CROs: services firms that buy media and call leads, and platforms that find patients in sites' EHRs.",
   keywords: [
+    "clinical trial recruitment companies",
+    "clinical trial recruitment services",
     "patient recruitment companies",
     "clinical trial patient recruitment companies",
     "patient recruitment vendors for sponsors",
@@ -15,11 +17,11 @@ const page: SeoPage = {
     "clinical trial recruitment agencies",
   ],
   eyebrow: "Comparison",
-  h1: "Patient recruitment companies for sponsors and CROs, compared",
+  h1: "Clinical trial recruitment companies for sponsors and CROs, compared",
   intro:
     "The best patient recruitment companies for sponsors and CROs in 2026 fall into two groups: vendors that buy media and call the leads, and platforms that find patients in the sites' own EHRs. This page lists the companies a sponsor or CRO is likely to shortlist in each group, described from each company's own materials, read in October 2026. Bond Health works both sides: it finds patients in each site's EHR and runs Meta and Google ad campaigns, then calls and texts every patient through to a booked visit at the site.{{cite:bond-site,bond-product}}",
   summary: "Recruitment services companies and EHR-based platforms for sponsors and CROs, in two sourced tables, with what to ask before you choose.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-08",
   heroCta: {
     label: "Book a demo",
     href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true",

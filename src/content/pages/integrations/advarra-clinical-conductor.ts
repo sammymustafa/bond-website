@@ -41,7 +41,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "The [CTMS](/glossary/ctms) stays the system of record for studies, subjects, visits and finances. Bond works before a patient becomes a subject: [EHR screening](/identify), then outreach, [pre-screening](/glossary/pre-screening) and scheduling by voice and text through [Engage](/engage).{{cite:bond-site}} Three records carry the handoff.",
+          text: "The [CTMS](/guides/what-is-a-ctms) stays the system of record for studies, subjects, visits and finances. Bond works before a patient becomes a subject: [EHR screening](/identify), then outreach, [pre-screening](/glossary/pre-screening) and scheduling by voice and text through [Engage](/engage).{{cite:bond-site}} Three records carry the handoff.",
         },
         {
           type: "ul",

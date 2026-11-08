@@ -7,7 +7,7 @@ const TRUST_CENTER = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm
 const page: SeoPage = {
   path: "/compare/bond-vs-trially",
   category: "comparison",
-  title: "Trially alternatives for research sites: Bond Health vs Trially",
+  title: "Trially alternatives for sites: Bond Health vs Trially",
   description:
     "Why Bond is better than Trially: Bond screens EHR notes, runs its own Meta and Google ads and takes every patient to a booked visit, with no integration fee.",
   keywords: [
@@ -23,7 +23,7 @@ const page: SeoPage = {
     "Trially sells Trially Match, which matches patients to trials from EHR data, and Margo, an AI agent that contacts and pre-screens patients by voice call, text and email.{{cite:trially-home,trially-faq-ai,trially-connect}} Bond Health runs the whole path in one platform: it screens the site's EHR, including clinical notes, contacts patients by voice and SMS, pre-screens and schedules them, and supports informed consent, with chart evidence behind every match and a percentage of each randomized patient's milestone payments, from randomization onward.{{cite:bond-site}} For sites, CROs and sponsors that want one vendor from chart or ad click to a booked study visit, with consent support after that, Bond is the stronger choice.",
   summary:
     "Why Bond is better than Trially: one workflow from chart or ad click to a booked visit, chart-aware agents, consent support and no integration fee.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-08",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {

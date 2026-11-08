@@ -132,58 +132,6 @@ export const glossary: GlossaryTerm[] = [
     lastUpdated: "2026-10-23",
   },
   {
-    slug: "ctms",
-    term: "Clinical trial management system (CTMS)",
-    title: "CTMS meaning: clinical trial management system",
-    short:
-      "Software that sites, sponsors and CROs use to run studies, tracking participants, visits, staff tasks, budgets and recruitment status in one place.",
-    body: [
-      {
-        type: "p",
-        text: "A clinical trial management system is the operational record of a study. Site-focused CTMS products are built to cover trial execution end to end; RealTime, for example, describes its CTMS as one purpose-built system for the day-to-day work of trial management, from scheduling visits and tracking enrollment to recruitment and capturing study revenue.{{cite:realtime-ctms}} Sponsor and CRO versions focus more on oversight across many sites: activation status, monitoring visits and enrollment by site.",
-      },
-      {
-        type: "p",
-        text: "For enrollment, the CTMS is where recruitment status should end up: who was referred, pre-screened, scheduled, consented and randomized. When outreach lives in spreadsheets or a separate tool and never reaches the CTMS, the site loses its own funnel data, and its answers to the next feasibility questionnaire become estimates from memory.",
-      },
-      {
-        type: "p",
-        text: "Practical note: before adding a recruitment tool, decide which system is the source of truth for participant status and how referrals will reach it, whether by API, file import or manual entry. Bond is a CRIO Certified Partner and works alongside other CTMS platforms through API or file export where the vendor supports it; see [integrations](/integrations) and the [full guide to what a CTMS is](/guides/what-is-a-ctms).",
-      },
-    ],
-    faq: [
-      {
-        q: "What does CTMS stand for?",
-        a: "Clinical trial management system: software that sites, sponsors and CROs use to run studies. Site-focused products such as RealTime describe covering the day-to-day work of trial management, from scheduling visits and tracking enrollment to recruitment and study revenue.{{cite:realtime-ctms}}",
-      },
-      {
-        q: "Should recruitment status be tracked in the CTMS?",
-        a: "Yes. When referrals, pre-screens, scheduled visits, consents and randomizations reach the CTMS, the site keeps its own funnel data and can answer the next feasibility questionnaire from records instead of memory. See the [guide to what a CTMS is](/guides/what-is-a-ctms).",
-      },
-      {
-        q: "Does Bond work with CTMS platforms?",
-        a: "Bond is a CRIO Certified Partner and works alongside other CTMS platforms through API or file export where the vendor supports it. See [integrations](/integrations).",
-      },
-    ],
-    sources: [
-      {
-        id: "realtime-ctms",
-        title: "RealTime-CTMS product page",
-        publisher: "RealTime eClinical Solutions",
-        url: "https://realtime-eclinical.com/solutions/ctms/",
-        year: "2026",
-        note: "Re-read October 6, 2026. Quote: \"RealTime CTMS brings the day-to-day work of clinical trial management into one purpose-built system, helping your coordinators stay ahead of study activity, your recruitment teams keep enrollment moving, and your finance teams capture the revenue your research has earned.\"",
-      },
-    ],
-    related: [
-      { label: "What is a CTMS? Full guide", href: "/guides/what-is-a-ctms" },
-      { label: "Implementation: how Bond connects to your systems", href: "/implementation" },
-      { label: "eRegulatory binder (eISF)", href: "/glossary/eregulatory-eisf" },
-      { label: "eSource (electronic source data)", href: "/glossary/esource" },
-    ],
-    lastUpdated: "2026-10-23",
-  },
-  {
     slug: "diversity-action-plan",
     term: "Diversity action plan",
     short:
@@ -219,7 +167,7 @@ export const glossary: GlossaryTerm[] = [
     related: [
       { label: "Identify: LLM-based EHR screening", href: "/identify" },
       { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites" },
-      { label: "Site feasibility assessment", href: "/glossary/site-feasibility" },
+      { label: "Site feasibility assessment", href: "/guides/site-feasibility" },
     ],
     lastUpdated: "2026-10-05",
   },
@@ -434,7 +382,7 @@ export const glossary: GlossaryTerm[] = [
     ],
     related: [
       { label: "Implementation: how Bond connects to your systems", href: "/implementation" },
-      { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms" },
+      { label: "Clinical trial management system (CTMS)", href: "/guides/what-is-a-ctms" },
       { label: "eSource (electronic source data)", href: "/glossary/esource" },
     ],
     lastUpdated: "2026-10-23",
@@ -480,7 +428,7 @@ export const glossary: GlossaryTerm[] = [
     ],
     related: [
       { label: "Identify: LLM-based EHR screening", href: "/identify" },
-      { label: "Clinical trial management system (CTMS)", href: "/glossary/ctms" },
+      { label: "Clinical trial management system (CTMS)", href: "/guides/what-is-a-ctms" },
       { label: "Coordinator chart review checklist", href: "/templates/coordinator-chart-review-checklist" },
     ],
     lastUpdated: "2026-10-23",
@@ -1380,57 +1328,6 @@ export const glossary: GlossaryTerm[] = [
     lastUpdated: "2026-10-05",
   },
   {
-    slug: "site-feasibility",
-    term: "Site feasibility assessment",
-    short:
-      "How sponsors and CROs check whether a site can run a specific trial: its patient population, staff, equipment, competing studies and past enrollment.",
-    body: [
-      {
-        type: "p",
-        text: "Feasibility assessments establish a site's capability to conduct clinical trials and its suitability for a specific trial.{{cite:asco-feasibility}} In practice, a sponsor or CRO sends a questionnaire asking how many eligible patients the site sees, what staff and equipment it has, which competing studies it runs, and how it has enrolled in similar studies.",
-      },
-      {
-        type: "p",
-        text: "Feasibility answers become the enrollment numbers a site is held to, so they should come from data rather than memory. An ASCO task force called the feasibility methods sponsors and CROs use costly, inefficient and unnecessarily burdensome, and recommended a uniform process, fewer and standardized questions, and technology to reduce redundancy.{{cite:asco-feasibility}} CTTI recommends moving recruitment planning upstream, alongside trial design.{{cite:ctti-recruitment}}",
-      },
-      {
-        type: "p",
-        text: "Practical note: base patient counts on a records query. Under HIPAA, reviews preparatory to research allow that kind of count without authorization if no PHI leaves the covered entity.{{cite:ecfr-164-512}} Start from the [feasibility questionnaire template](/templates/feasibility-questionnaire), read the [full guide to site feasibility](/guides/site-feasibility), and see [Identify](/identify), which screens EHR records against a study's criteria.",
-      },
-    ],
-    sources: [
-      {
-        id: "asco-feasibility",
-        title: "Recommendations to Streamline and Standardize Clinical Trial Site Feasibility Assessments: An ASCO Research Statement",
-        publisher: "JCO Oncology Practice (ASCO), via PubMed",
-        url: "https://pubmed.ncbi.nlm.nih.gov/33405975/",
-        year: "2021",
-        note: 'Quote: "Feasibility assessments (FAs) are important to establish site capabilities to conduct clinical trials and their suitability for specific trials. However, current FA methods used by biotechnology and pharmaceutical (biotech-pharma) trial sponsors and contract research organizations (CROs) are costly, inefficient, unnecessarily burdensome, and resource intensive." Recommendations: "(1) implement a streamlined and uniform FA process across trials and sponsors; (2) minimize and standardize questions; and (3) leverage technology to centralize FAs, facilitate communications, and reduce redundancies."',
-      },
-      {
-        id: "ctti-recruitment",
-        title: "CTTI Recommendations: Planning for Successful Trial Recruitment",
-        publisher: "Clinical Trials Transformation Initiative",
-        url: "https://ctti-clinicaltrials.org/wp-content/uploads/2021/06/CTTI_Recruitment_Recs.pdf",
-        year: "2018",
-      },
-      {
-        id: "ecfr-164-512",
-        title: "45 CFR 164.512(i)(1)(ii) Reviews preparatory to research",
-        publisher: "eCFR (HHS Office for Civil Rights)",
-        url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
-        year: "2026",
-      },
-    ],
-    related: [
-      { label: "Identify: LLM-based EHR screening", href: "/identify" },
-      { label: "Site feasibility in clinical trials: full guide", href: "/guides/site-feasibility" },
-      { label: "Site feasibility questionnaire template", href: "/templates/feasibility-questionnaire" },
-      { label: "How sponsors choose sites", href: "/guides/how-sponsors-choose-sites" },
-    ],
-    lastUpdated: "2026-10-05",
-  },
-  {
     slug: "study-startup",
     term: "Study start-up",
     short:
@@ -1477,7 +1374,7 @@ export const glossary: GlossaryTerm[] = [
     related: [
       { label: "Implementation: how Bond connects to your systems", href: "/implementation" },
       { label: "Site activation", href: "/glossary/site-activation" },
-      { label: "Site feasibility assessment", href: "/glossary/site-feasibility" },
+      { label: "Site feasibility assessment", href: "/guides/site-feasibility" },
     ],
     lastUpdated: "2026-10-05",
   },
