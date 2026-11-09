@@ -1,0 +1,44 @@
+name: Deploy alert
+
+# Workers Builds reports every build as a "Workers Builds: bond-website" check on the
+# commit it built. Cloudflare has no notification for a failed build, and a failed
+# production build leaves the previous version live, so it is easy to miss. When one
+# of these checks fails, this opens a GitHub issue assigned to Rishabh; GitHub emails
+# assignees. Runs from the copy of this file on main.
+on:
+  check_run:
+    types: [completed]
+
+permissions:
+  issues: write
+
+jobs:
+  alert:
+    if: >-
+      startsWith(github.event.check_run.name, 'Workers Builds') &&
+      github.event.check_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open an issue for the failed build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.event.check_run.head_sha }}
+          CHECK: ${{ github.event.check_run.name }}
+          LOG: ${{ github.event.check_run.details_url }}
+        run: |
+          short="${SHA:0:7}"
+          # A commit already in main's history means production did not update.
+          status=$(gh api "repos/$GITHUB_REPOSITORY/compare/main...$SHA" --jq .status 2>/dev/null || echo unknown)
+          if [ "$status" = "identical" ] || [ "$status" = "behind" ]; then
+            title="Production deploy failed for $short"
+            impact="This commit is on main, so bondtrials.com did not update. It keeps serving the previous version."
+          else
+            title="Preview build failed for $short"
+            impact="This commit is not on main yet, so production is unaffected."
+          fi
+          body=$(printf '%s\n\n%s\n\n%s\n\n%s\n' \
+            "\`$CHECK\` failed for $SHA." \
+            "$impact" \
+            "Build log: $LOG" \
+            "Read the log first. If the error is transient (for example \"build token deleted or rolled\" while the token is still active), retry the build in Cloudflare: Workers & Pages > bond-website > Deployments.")
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --assignee rishabh297 --body "$body"
