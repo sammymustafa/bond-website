@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper";
+import { g2ProfileHref } from "@/content/nav";
 
 // Self-hosted at build time. globals.css always named these fonts but nothing loaded them, so pages fell back to the
 // system font. The variables feed --font-body and --font-display there.
@@ -134,6 +135,7 @@ const jsonLd = {
         "https://www.crunchbase.com/organization/bond-health-50ad",
         "https://pitchbook.com/profiles/company/1168948-63",
         "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj",
+        g2ProfileHref,
       ],
       contactPoint: {
         "@type": "ContactPoint",

@@ -2,6 +2,7 @@
 
 import { Mail, MapPin } from "lucide-react";
 import { LinkedInIcon } from "./LinkedInIcon";
+import { G2Icon } from "./G2Icon";
 import Link from "next/link";
 import Image from "next/image";
 import ComplianceBadges from "@/components/ComplianceBadges";
@@ -11,6 +12,7 @@ import {
   audienceLinks,
   compareLinks,
   demoHref,
+  g2ProfileHref,
   preferredSourceHref,
   productLinks,
   resourceLinks,
@@ -104,6 +106,15 @@ export default function Footer() {
                 className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-all"
               >
                 <LinkedInIcon className="w-4 h-4" />
+              </a>
+              <a
+                href={g2ProfileHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Bond Health on G2"
+                className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-all"
+              >
+                <G2Icon className="w-4 h-4" />
               </a>
             </div>
 
