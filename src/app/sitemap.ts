@@ -6,7 +6,7 @@ import { SITE_URL } from "@/content/seo";
 // Last content change for pages built by hand outside the content registry.
 // Update the date when you edit one of these pages.
 const HAND_BUILT_UPDATED: Record<string, string> = {
-  "/": "2026-10-23",
+  "/": "2026-11-08",
   "/newsletter": "2026-10-23",
   "/careers": "2026-10-23",
   "/privacy-policy": "2026-10-23",

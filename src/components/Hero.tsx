@@ -1,81 +1,7 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { ArrowRight, Play, Lock, FileCheck, Clock, Phone, CheckCircle2, XCircle, Calendar, ShieldCheck } from "lucide-react";
+import { ArrowRight, Play, Lock, FileCheck, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-const prefersReducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-// Animated counter hook; with reduced motion the number shows at once
-function useCountUp(end: number, duration: number = 2000, delay: number = 0) {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const reduced = prefersReducedMotion();
-    const timeout = setTimeout(() => {
-      if (reduced) {
-        setCount(end);
-        return;
-      }
-      let startTime: number;
-      const animate = (currentTime: number) => {
-        if (!startTime) startTime = currentTime;
-        const progress = Math.min((currentTime - startTime) / duration, 1);
-        setCount(Math.floor(progress * end));
-        if (progress < 1) requestAnimationFrame(animate);
-      };
-      requestAnimationFrame(animate);
-    }, reduced ? 0 : delay);
-    return () => clearTimeout(timeout);
-  }, [end, duration, delay]);
-  
-  return count;
-}
-
-// Sample patients that will cycle
-const patientData = [
-  {
-    id: "#1847",
-    status: "ELIGIBLE",
-    statusColor: "green",
-    icon: CheckCircle2,
-    a1c: "6.8%",
-    details: "BMI 29.2 · Age 54 · Last visit: 3 weeks ago",
-    action: { icon: Calendar, text: "Scheduled: Jan 8", color: "green" },
-    bgClass: "bg-green-50/80 border-green-100",
-  },
-  {
-    id: "#2103",
-    status: "OUTREACH",
-    statusColor: "blue",
-    icon: Phone,
-    a1c: "7.1%",
-    details: "BMI 31.4 · Age 47 · Last visit: 2 weeks ago",
-    action: { icon: Clock, text: "Voice call: Today 2pm", color: "blue", extra: "Attempt 2 of 3" },
-    bgClass: "bg-blue-50/80 border-blue-100",
-  },
-  {
-    id: "#1923",
-    status: "BOOKED",
-    statusColor: "emerald",
-    icon: CheckCircle2,
-    a1c: "7.4%",
-    details: "BMI 27.8 · Age 62 · Last visit: 1 week ago",
-    action: { icon: Calendar, text: "Screening visit booked", color: "emerald" },
-    bgClass: "bg-emerald-50/80 border-emerald-100",
-  },
-  {
-    id: "#1562",
-    status: "EXCLUDED",
-    statusColor: "gray",
-    icon: XCircle,
-    a1c: "5.2%",
-    details: "A1c below threshold (5.7%), last visit 14 months ago",
-    isExcluded: true,
-    bgClass: "bg-gray-50 border-gray-200",
-  },
-];
+import HeroFlows from "./HeroFlows";
 
 // Real intrinsic dimensions per logo so each renders at a uniform height with
 // its natural width (no distortion), on both the desktop strip and mobile grid.
@@ -94,35 +20,6 @@ const supporters = [
 ];
 
 export default function Hero() {
-  const [activePatient, setActivePatient] = useState(0);
-  
-  // Animated counters
-  const contacted = useCountUp(32, 1500, 800);
-  const preScreened = useCountUp(18, 1500, 1000);
-  const booked = useCountUp(12, 1500, 1200);
-  const matched = useCountUp(47, 2000, 500);
-  
-  // Cycle through patients; after a visitor picks one with the dots, wait 10 seconds before cycling again.
-  // With reduced motion the card stays put and the dots switch it.
-  const [picks, setPicks] = useState(0);
-  useEffect(() => {
-    if (prefersReducedMotion()) return;
-    let interval: number | undefined;
-    const cycle = () => {
-      interval = window.setInterval(() => setActivePatient((prev) => (prev + 1) % patientData.length), 3000);
-    };
-    const delay = picks > 0 ? window.setTimeout(cycle, 10000) : undefined;
-    if (picks === 0) cycle();
-    return () => {
-      window.clearTimeout(delay);
-      window.clearInterval(interval);
-    };
-  }, [picks]);
-  const showPatient = (index: number) => {
-    setActivePatient(index);
-    setPicks((n) => n + 1);
-  };
-
   return (
     <section className="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden bg-gradient-hero">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
@@ -220,138 +117,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - Product Visual: Dynamic Workflow Artifact */}
-          <div className="relative animate-fade-up stagger-2 w-full max-w-md mx-auto lg:max-w-none">
-            {/* Main Card - Realistic Dashboard */}
-            <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-200/60 overflow-hidden">
-              {/* App Header */}
-              <div className="flex items-center justify-between px-5 py-3 bg-gray-50 border-b border-gray-100">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 rounded-lg bg-linear-to-br from-bond-primary to-bond-accent flex items-center justify-center">
-                    <span className="font-display font-bold text-white text-xs">B</span>
-                  </div>
-                  <span className="font-semibold text-gray-800 text-sm">Bond</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-xs text-gray-500 hidden sm:inline">Connected via FHIR</span>
-                  <span className="w-2 h-2 rounded-full bg-green-500 motion-safe:animate-pulse" />
-                  <span className="text-xs text-green-700 font-medium">Live</span>
-                </div>
-              </div>
+          {/* Right: Bond's two recruitment paths, animated (sample data) */}
+          <div className="relative animate-fade-up stagger-2 w-full max-w-xl mx-auto lg:max-w-none">
+            <HeroFlows />
 
-              {/* Dashboard Content */}
-              <div className="p-5">
-                {/* Section Header with animated counter */}
-                <div className="flex items-center justify-between gap-2 mb-4">
-                  <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Eligibility Screening</h3>
-                  <span className="px-3 py-1.5 text-sm font-bold text-bond-primary-dark bg-bond-primary/10 rounded-full tabular-nums whitespace-nowrap">
-                    {matched} matched
-                  </span>
-                </div>
-
-                {/* Cycling Patient Card with transition. The slides share one grid cell, so the box
-                    grows to the tallest slide (no clipped text on narrow phones) while they cross-fade. */}
-                <div className="grid mb-4 overflow-hidden">
-                  {patientData.map((patient, index) => {
-                    const PatientIcon = patient.icon;
-                    const ActionIcon = patient.action?.icon;
-                    return (
-                      <div
-                        key={patient.id}
-                        className={`col-start-1 row-start-1 p-4 rounded-xl border transition-all duration-500 ease-out ${patient.bgClass} ${
-                          index === activePatient 
-                            ? "opacity-100 translate-y-0 scale-100" 
-                            : "opacity-0 translate-y-4 scale-95"
-                        }`}
-                      >
-                        <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1 mb-2">
-                          <div className="flex items-center gap-2">
-                            <PatientIcon className={`w-4 h-4 ${
-                              patient.statusColor === 'green' ? 'text-green-600' :
-                              patient.statusColor === 'blue' ? 'text-blue-600' :
-                              patient.statusColor === 'emerald' ? 'text-emerald-600' :
-                              'text-gray-500'
-                            }`} />
-                            <span className="font-semibold text-gray-900 text-sm whitespace-nowrap">Patient {patient.id}</span>
-                            <span className={`px-1.5 py-0.5 text-[11px] font-semibold rounded ${
-                              patient.statusColor === 'green' ? 'bg-green-100 text-green-700' :
-                              patient.statusColor === 'blue' ? 'bg-blue-100 text-blue-700' :
-                              patient.statusColor === 'emerald' ? 'bg-emerald-100 text-emerald-700' :
-                              'bg-gray-200 text-gray-600'
-                            }`}>{patient.status}</span>
-                          </div>
-                          <span className="text-sm text-gray-600 font-medium whitespace-nowrap">A1c: {patient.a1c}</span>
-                        </div>
-                        {/* The excluded patient shows its details once, as the reason below */}
-                        {!patient.isExcluded && <p className="text-sm text-gray-600 mb-2">{patient.details}</p>}
-                        {patient.action && ActionIcon && (
-                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-                            <span className={`flex items-center gap-1.5 text-sm font-medium whitespace-nowrap ${
-                              patient.action.color === 'green' ? 'text-green-700' :
-                              patient.action.color === 'blue' ? 'text-blue-700' :
-                              'text-emerald-700'
-                            }`}>
-                              <ActionIcon className="w-3.5 h-3.5" />
-                              {patient.action.text}
-                            </span>
-                            {patient.action.extra && (
-                              <span className="text-sm text-gray-500 whitespace-nowrap">{patient.action.extra}</span>
-                            )}
-                          </div>
-                        )}
-                        {patient.isExcluded && (
-                          <p className="text-sm">
-                            <span className="text-red-600 font-medium">Reason:</span>{" "}
-                            <span className="text-gray-600">{patient.details}</span>
-                          </p>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* Patient indicator dots; p-3 gives each a 32px tap area */}
-                <div className="flex justify-center mb-2">
-                  {patientData.map((_, index) => (
-                    <button
-                      key={index}
-                      type="button"
-                      onClick={() => showPatient(index)}
-                      aria-label={`Show example patient ${index + 1} of ${patientData.length}`}
-                      aria-pressed={index === activePatient}
-                      className="group p-3"
-                    >
-                      <span
-                        aria-hidden
-                        className={`block h-2 rounded-full transition-all duration-300 ${
-                          index === activePatient ? "bg-bond-primary w-4" : "w-2 bg-gray-300 group-hover:bg-gray-400"
-                        }`}
-                      />
-                    </button>
-                  ))}
-                </div>
-
-                {/* Stats Summary with animated numbers */}
-                <div className="grid grid-cols-3 gap-1 sm:gap-3 pt-4 border-t border-gray-100">
-                  <div className="text-center">
-                    <p className="text-xl font-bold text-gray-900 tabular-nums">{contacted}</p>
-                    <p className="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wide">Contacted</p>
-                  </div>
-                  <div className="text-center border-x border-gray-100">
-                    <p className="text-xl font-bold text-bond-primary tabular-nums">{preScreened}</p>
-                    <p className="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wide">Pre-screened</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-xl font-bold text-green-600 tabular-nums">{booked}</p>
-                    <p className="text-[11px] sm:text-xs text-gray-500 uppercase tracking-wide">Booked</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Subtle floating accents - toned down, hidden on mobile */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-bond-accent/10 rounded-full blur-2xl hidden sm:block motion-safe:animate-pulse" />
-            <div className="absolute -bottom-4 -left-4 w-28 h-28 bg-bond-primary/10 rounded-full blur-2xl hidden sm:block" />
+            {/* Subtle floating accents - toned down, hidden on mobile. They overlap the graphic's corners, so they let clicks through to its pause button. */}
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-bond-accent/10 rounded-full blur-2xl hidden sm:block motion-safe:animate-pulse pointer-events-none" />
+            <div className="absolute -bottom-4 -left-4 w-28 h-28 bg-bond-primary/10 rounded-full blur-2xl hidden sm:block pointer-events-none" />
           </div>
         </div>
 
