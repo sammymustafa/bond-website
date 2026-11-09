@@ -127,8 +127,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Supporters Section - Renamed and normalized */}
-        <div className="mt-12 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
+        {/* Supporters Section - Renamed and normalized. From lg the hero graphic is the tallest thing above,
+            and its shadow reaches about 50px down, so the divider sits 80px below it instead of 48px. */}
+        <div className="mt-12 lg:mt-20 pt-8 border-t border-gray-100 animate-fade-up stagger-4">
           <p className="text-center text-xs font-semibold text-gray-500 uppercase tracking-wider mb-6">Supported by</p>
           
           {/* Mobile: even grid; each logo is optically sized (wider marks are scaled
