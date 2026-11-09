@@ -10,6 +10,12 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  // Cloudflare Images, used by /_next/image to resize and convert to WebP. Without it
+  // OpenNext serves the original file. Billed per unique transformation (5,000 a month
+  // free); the whole site uses about 35 size variants.
+  "images": {
+    "binding": "IMAGES"
+  },
   // The bondtrials.com and www.bondtrials.com custom domains are attached in the dashboard
   // (Worker > Domains), not listed here, so no deploy can move them by accident.
   "workers_dev": true,
