@@ -12,5 +12,5 @@ export default defineConfig([
     },
   },
   // Build output, generated files, local reports and downloads are not linted.
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts", "reports/**", "public/**", "src/content/registry.ts"]),
+  globalIgnores([".next/**", ".open-next/**", ".wrangler/**", "out/**", "build/**", "next-env.d.ts", "reports/**", "public/**", "src/content/registry.ts"]),
 ]);

@@ -6,6 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "build:worker": "opennextjs-cloudflare build",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "lint": "eslint .",
     "validate": "tsx scripts/validate-content.ts --warn",
     "gen:registry": "node scripts/gen-registry.mjs",
@@ -21,8 +25,9 @@
     "geo:plan": "node --import tsx scripts/geo/plan-pages.ts"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.16",
     "lucide-react": "^1.61.0",
-    "next": "^16.4.3",
+    "next": "^16.4.5",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
@@ -34,10 +39,11 @@
     "@types/react-dom": "^19.3.0",
     "docx": "^9.7.2",
     "eslint": "^10.13.0",
-    "eslint-config-next": "^16.4.3",
+    "eslint-config-next": "^16.4.5",
     "postcss": "^8.5.31",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.158.0"
   }
 }

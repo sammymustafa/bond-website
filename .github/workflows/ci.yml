@@ -29,4 +29,11 @@ jobs:
       # Content rules: question headings, sourced numbers, resolving links.
       - run: npm run validate
 
-      - run: npm run build
+      # `next build` plus the OpenNext step that turns it into the Cloudflare
+      # Worker in .open-next/, the same build Workers Builds runs before a deploy.
+      - run: npm run build:worker
+
+      # Bundle the Worker exactly as `wrangler deploy` would, without uploading
+      # it (no Cloudflare credentials needed). Fails if the Worker no longer
+      # bundles, and prints its size against the Workers plan limit.
+      - run: npx wrangler deploy --dry-run --outdir .wrangler/dry-run

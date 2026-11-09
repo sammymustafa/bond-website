@@ -1,0 +1,9 @@
+# Headers for static files on Cloudflare Workers (public/ and /_next/static), which are
+# served without running the Worker. Pages, redirects and 404s come from the Worker and
+# get their headers from next.config.ts instead. Workers reads this file; it is not served.
+/*
+  Strict-Transport-Security: max-age=31536000
+
+# Build output is fingerprinted, so a given URL never changes.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
