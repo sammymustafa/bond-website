@@ -109,6 +109,7 @@ export const compareLinks: NavItem[] = [
 
 export const resourceLinks: NavItem[] = [
   { name: "What is Bond Health?", href: "/what-is-bond-health", description: "The platform, who it is for and how it differs" },
+  { name: "How Bond compares", href: "/compare", description: "Every comparison, written from public sources" },
   { name: "Patient recruitment guide", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, what converts, what it costs" },
   { name: "Guides", href: "/guides", description: "Site feasibility, CTMS, screen failure, IRB rules" },
   { name: "Topics", href: "/topics", description: "EHR screening, compliance and enrollment metrics" },
@@ -134,7 +135,8 @@ export const navMenus: NavMenu[] = [
       },
     ],
   },
-  { label: "Compare", href: "/compare", groups: [{ items: compareLinks }] },
+  // No top-level Compare menu: like vanta.com, the comparison pages are for people who already search a
+  // competitor's name. They stay one click away in Resources, and the footer still lists every one.
   { label: "Resources", groups: [{ items: resourceLinks }] },
 ];
 
