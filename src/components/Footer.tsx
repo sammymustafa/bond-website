@@ -65,11 +65,12 @@ export default function Footer() {
           <div className="relative col-span-2 md:col-span-3 lg:col-span-5 xl:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-4 sm:mb-6">
               <Image
-                src="/images/logo/bond-health-icon.png"
+                src="/images/logo/bond-health-mark.svg"
                 alt="Bond Health"
-                width={637}
-                height={626}
+                width={44}
+                height={44}
                 className="h-10 w-10 sm:h-11 sm:w-11 object-contain"
+                unoptimized
               />
               <span className="font-display font-bold text-2xl text-gray-900">Bond Health</span>
             </Link>

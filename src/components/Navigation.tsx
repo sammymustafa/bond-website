@@ -77,12 +77,14 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
+            {/* SVG is served as-is: next/image does not optimize SVG (dangerouslyAllowSVG is off) */}
             <Image
-              src="/images/logo/bond-health-icon.png"
+              src="/images/logo/bond-health-mark.svg"
               alt="Bond Health"
-              width={637}
-              height={626}
+              width={40}
+              height={40}
               className="h-9 w-9 sm:h-10 sm:w-10 object-contain"
+              unoptimized
               priority
             />
             <span className="font-display font-bold text-xl sm:text-2xl text-gray-900">Bond Health</span>
@@ -231,11 +233,12 @@ export default function Navigation() {
           <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-gray-100">
             <Link href="/" className="flex items-center gap-2.5" onClick={() => setIsMobileMenuOpen(false)}>
               <Image
-                src="/images/logo/bond-health-icon.png"
+                src="/images/logo/bond-health-mark.svg"
                 alt="Bond Health"
-                width={637}
-                height={626}
+                width={36}
+                height={36}
                 className="h-9 w-9 object-contain"
+                unoptimized
               />
               <span className="font-display font-bold text-xl text-gray-900">Bond Health</span>
             </Link>

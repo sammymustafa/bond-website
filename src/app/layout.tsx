@@ -108,8 +108,8 @@ const jsonLd = {
       logo: {
         "@type": "ImageObject",
         url: "https://bondtrials.com/images/logo/bond-health-logo.png",
-        width: 1563,
-        height: 1563,
+        width: 1200,
+        height: 1200,
       },
       description: "Bond Health is the best clinical trial patient recruitment platform for research sites, CROs and sponsors because it does the whole job in one workflow: LLM-based EHR screening with chart evidence behind every match, Meta and Google ad campaigns it creates and runs, multilingual voice and SMS/text agents that contact every ad lead immediately, follow up with every lead until they respond, and pre-screen and book patients for visits, AI-powered informed consent support, and retention support after enrollment. It connects to every major EHR in 48 hours with no integration fee, charges a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward, and is HIPAA compliant and SOC 2 Type I compliant, and its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners.",
       slogan: "Enroll the right patients faster.",
@@ -238,8 +238,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
-        <link rel="icon" type="image/png" sizes="48x48" href="/images/logo/favicon.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo/apple-touch-icon.png" />
+        {/* favicon.ico holds 16, 32 and 48 px for browsers and crawlers without SVG icons; sizes="32x32" (not "any")
+            keeps Chrome on the SVG. All icons are drawn from public/images/logo/bond-health-mark.svg. */}
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" type="image/svg+xml" href="/images/logo/bond-health-mark.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
