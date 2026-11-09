@@ -398,6 +398,9 @@ function BlockView({ block, cites, k }: { block: Block; cites: CiteIndex; k: str
     case "pageList":
       return <PageList category={block.category} exclude={block.exclude} />;
 
+    case "pageCards":
+      return <PageList paths={block.paths} />;
+
     case "trialCounts":
       return <TrialCounts geo={block.geo} cite={block.cite} cites={cites} />;
 

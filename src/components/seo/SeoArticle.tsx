@@ -14,6 +14,7 @@ import {
 } from "@/content/seo";
 import { demoHref } from "@/content/nav";
 import { withWhyBond } from "@/content/whyBond";
+import { bylineFor } from "@/content/authors";
 import { Blocks } from "./Blocks";
 import ContactButton from "./ContactButton";
 import { keepHyphenated, renderInline } from "./inline";
@@ -28,6 +29,7 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
   const crumbs = breadcrumbsFor(page);
   const jsonLd = jsonLdFor(page);
   const showDate = showsLastUpdated(page);
+  const byline = bylineFor(page);
   const hero = page.heroCta ?? { label: "Book a demo", href: demoHref };
   const showToc = page.sections.length > 1;
   const toc = [
@@ -74,6 +76,11 @@ export default function SeoArticle({ page: content }: { page: SeoPage }) {
                 <span>
                   By {page.blog.author} · {formatDate(page.blog.date)}
                   {page.blog.readingMinutes ? ` · ${page.blog.readingMinutes} min read` : ""}
+                </span>
+              )}
+              {byline && (
+                <span>
+                  By {byline.author.name}, {byline.author.role} · Reviewed by {byline.reviewer.name}, {byline.reviewer.role}
                 </span>
               )}
               {showDate && (

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { GlossaryTerm, PageCategory, SeoPage } from "./types";
+import { bylineFor, personNamed, type Person } from "./authors";
 
 export const SITE_URL = "https://bondtrials.com";
 export const BRAND = "Bond Health";
@@ -78,6 +79,7 @@ const HUB_SEGMENTS: Record<string, Crumb> = {
   blog: { label: "Blog", href: "/blog" },
   glossary: { label: "Glossary", href: "/glossary" },
   calculators: { label: "Calculators", href: "/calculators" },
+  topics: { label: "Topics", href: "/topics" },
 };
 
 const CATEGORY_PARENT: Partial<Record<PageCategory, Crumb>> = {
@@ -133,6 +135,7 @@ export function formatDate(iso: string): string {
 export function jsonLdFor(page: SeoPage): Record<string, unknown>[] {
   const url = `${SITE_URL}${page.path}`;
   const crumbs = breadcrumbsFor(page);
+  const byline = bylineFor(page);
   const graph: Record<string, unknown>[] = [
     {
       "@context": "https://schema.org",
@@ -155,13 +158,27 @@ export function jsonLdFor(page: SeoPage): Record<string, unknown>[] {
       datePublished: page.blog?.date ?? page.lastUpdated,
       dateModified: page.lastUpdated,
       author: page.blog?.author
-        ? { "@type": "Person", name: page.blog.author, worksFor: { "@id": ORG_ID } }
-        : { "@id": ORG_ID },
+        ? personLd(personNamed(page.blog.author) ?? page.blog.author)
+        : byline
+          ? personLd(byline.author)
+          : { "@id": ORG_ID },
       publisher: { "@id": ORG_ID },
       inLanguage: "en-US",
       citation: page.sources.filter((s) => s.url).map((s) => s.url),
     },
   ];
+  if (byline) {
+    // reviewedBy and lastReviewed are WebPage properties, so the review lives on the page node.
+    graph.push({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": url,
+      url,
+      name: page.title,
+      reviewedBy: personLd(byline.reviewer),
+      lastReviewed: page.lastUpdated,
+    });
+  }
   if (page.faq && page.faq.length) {
     graph.push({
       "@context": "https://schema.org",
@@ -175,6 +192,12 @@ export function jsonLdFor(page: SeoPage): Record<string, unknown>[] {
     });
   }
   return graph;
+}
+
+/** A schema.org Person for an author or reviewer; a bare name keeps only the name and employer. */
+function personLd(person: Person | string): Record<string, unknown> {
+  if (typeof person === "string") return { "@type": "Person", name: person, worksFor: { "@id": ORG_ID } };
+  return { "@type": "Person", name: person.name, jobTitle: person.jobTitle, worksFor: { "@id": ORG_ID } };
 }
 
 /** Removes inline markup so text can be used in JSON-LD and meta tags. */

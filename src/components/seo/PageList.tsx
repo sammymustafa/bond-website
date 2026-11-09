@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { pagesInCategory } from "@/content/site";
+import { pagesAt, pagesInCategory } from "@/content/site";
 import type { PageCategory } from "@/content/types";
 
 export default function PageList({
   category,
   exclude = [],
+  paths,
 }: {
-  category: PageCategory | PageCategory[];
+  category?: PageCategory | PageCategory[];
   exclude?: string[];
+  /** Explicit pages, in order; takes the place of `category`. */
+  paths?: string[];
 }) {
-  const list = pagesInCategory(category, exclude);
+  const list = paths ? pagesAt(paths) : category ? pagesInCategory(category, exclude) : [];
   if (!list.length) return null;
   return (
     <div className="not-prose my-8 grid gap-3 sm:grid-cols-2 sm:gap-4 sm:[&>:last-child:nth-child(odd)]:col-span-2">

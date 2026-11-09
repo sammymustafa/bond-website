@@ -84,6 +84,11 @@ export type Block =
     }
   /** Lists every page in one or more categories (used by hub pages). */
   | { type: "pageList"; category: PageCategory | PageCategory[]; exclude?: string[] }
+  /**
+   * Lists the named pages as cards, in this order (used by topic hubs). Blog posts scheduled
+   * after the build date are skipped until they go live, so a hub can name them in advance.
+   */
+  | { type: "pageCards"; paths: string[] }
   /** Recruiting-trial counts for a geography key from src/content/data/ctgov-geo.json. */
   | { type: "trialCounts"; geo: string; cite: string }
   /** Example recruiting trials for a geography and condition key from the same file. */
