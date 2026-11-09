@@ -47,6 +47,13 @@ type ViewB = "lead" | "call" | "booked";
 type Slot = "none" | "scheduled" | "screened" | "enrolled";
 
 const PHASES = ["Connect", "Screen", "Contact", "Book", "Enroll"] as const;
+const TALLY = [
+  { key: "matched", label: "Matched" },
+  { key: "contacted", label: "Contacted" },
+  { key: "scheduled", label: "Scheduled" },
+  { key: "enrolled", label: "Enrolled" },
+] as const;
+type TallyKey = (typeof TALLY)[number]["key"];
 
 interface Frame {
   ms: number;
@@ -59,6 +66,8 @@ interface Frame {
   afterVisit: boolean;
   pulse: Source[];
   flow: Record<Source | "out", boolean>;
+  /** The running tally of the sample patients, in the platform's lifecycle words */
+  tally: Record<TallyKey, number>;
 }
 
 const START: Frame = {
@@ -77,6 +86,7 @@ const START: Frame = {
   afterVisit: false,
   pulse: [],
   flow: { ehr: false, ctms: false, past: false, ads: false, out: false },
+  tally: { matched: 0, contacted: 0, scheduled: 0, enrolled: 0 },
 };
 
 /** Each frame is the whole scene; CSS transitions move everything between frames. */
@@ -95,7 +105,13 @@ function buildFrames(): Frame[] {
   next(700, (f) => { f.link.ctms = "on"; f.link.past = "connecting"; });
   next(700, (f) => { f.link.past = "on"; f.link.ads = "connecting"; });
   next(1500, (f) => { f.link.ads = "on"; });
-  next(1000, (f) => { f.phase = 1; f.cards.setup = "after"; f.cards.queue = "front"; });
+  next(1000, (f) => {
+    f.phase = 1;
+    f.cards.setup = "after";
+    f.cards.queue = "front";
+    // The sample study's running counts roll up once Bond starts screening
+    f.tally = { matched: 384, contacted: 371, scheduled: 89, enrolled: 82 };
+  });
   // Act 2: patients from the EHR, the CTMS and past ad leads are screened against the protocol
   next(700, (f) => { f.pulse = ["ehr", "ctms", "past"]; f.tokens.a.on = f.tokens.c.on = f.tokens.d.on = true; });
   next(1000, (f) => {
@@ -108,10 +124,10 @@ function buildFrames(): Frame[] {
     f.view.queue = "screening";
   });
   // Hidden tokens move to where they will next appear, so they never slide across the card
-  next(1400, (f) => { f.view.queue = "screened"; f.tokens.a.at = "out"; });
+  next(1400, (f) => { f.view.queue = "screened"; f.tokens.a.at = "out"; f.tally.matched += 2; });
   // The EHR match: every criterion checked against the chart, then a text screening that books the visit
   next(2400, (f) => { f.cards.queue = "back"; f.cards.a = "front"; });
-  next(2100, (f) => { f.phase = 2; f.view.a = "texted"; });
+  next(2100, (f) => { f.phase = 2; f.view.a = "texted"; f.tally.contacted += 1; });
   next(1100, (f) => { f.view.a = "qualified"; });
   next(1500, (f) => { f.phase = 3; f.view.a = "booked"; });
   // Booked: the card drops onto the calendar
@@ -121,6 +137,7 @@ function buildFrames(): Frame[] {
     f.phase = 1;
     f.tokens.a.on = false;
     f.slots.a = "scheduled";
+    f.tally.scheduled += 1;
     f.flow.out = false;
     f.pulse = ["ads"];
     f.tokens.b.on = true;
@@ -128,15 +145,15 @@ function buildFrames(): Frame[] {
   // A new ad lead: called immediately; the voice agent screens and books on the call
   next(900, (f) => { f.tokens.b.at = "card"; f.flow.ads = true; });
   next(1300, (f) => { f.phase = 2; f.tokens.b.on = false; f.flow.ads = false; f.cards.queue = "back"; f.cards.b = "front"; });
-  next(2600, (f) => { f.view.b = "call"; f.tokens.b.at = "out"; });
+  next(2600, (f) => { f.view.b = "call"; f.tokens.b.at = "out"; f.tally.contacted += 1; });
   next(1700, (f) => { f.phase = 3; f.view.b = "booked"; });
   next(600, (f) => { f.cards.b = "after"; f.cards.queue = "front"; f.tokens.b.on = true; });
   next(900, (f) => { f.tokens.b.at = "slot"; f.flow.out = true; });
-  next(1300, (f) => { f.tokens.b.on = false; f.slots.b = "scheduled"; f.flow.out = false; });
+  next(1300, (f) => { f.tokens.b.on = false; f.slots.b = "scheduled"; f.flow.out = false; f.tally.scheduled += 1; });
   // After the screening visit
   next(1100, (f) => { f.phase = 4; f.afterVisit = true; });
   next(1300, (f) => { f.slots.a = "screened"; });
-  next(4200, (f) => { f.slots.a = "enrolled"; });
+  next(4200, (f) => { f.slots.a = "enrolled"; f.tally.enrolled += 1; });
   return frames;
 }
 
@@ -147,13 +164,13 @@ const FINAL = FRAMES.length - 1;
  * Stage geometry. y is in px from the top of the stage. x is in percent of the
  * stage's width (cqw for the tokens), with the same 4% gutter on every row.
  */
-const STAGE_H = 512;
+const STAGE_H = 500;
 const SOURCE_TOP = 16;
-const SOURCE_BOTTOM = 88;
-const CARD_TOP = 124;
-const CARD_BOTTOM = 360;
-const CAL_TOP = 392;
-const SLOT_Y = CAL_TOP + 62;
+const SOURCE_BOTTOM = 84;
+const CARD_TOP = 116;
+const CARD_BOTTOM = 352;
+const CAL_TOP = 384;
+const SLOT_Y = CAL_TOP + 58;
 const SOURCES: { id: Source; x: number; title: string; detail: string; short?: [string, string] }[] = [
   { id: "ehr", x: 15.5, title: "EHR", detail: "Patient charts", short: ["EHR", "Charts"] },
   { id: "ctms", x: 38.5, title: "CTMS", detail: "Site patients" },
@@ -182,7 +199,7 @@ const PATIENT: Record<Patient, { id: string; name: string; tone: string }> = {
 };
 
 const CAPTION =
-  "Animated illustration with sample data of how Bond works. First, Bond connects to the site's EHR and CTMS, imports the leads exported from the site's past ad campaigns, and launches new Meta and Google ads that Bond creates and runs. Then patients flow in from all four and are screened against the study protocol. Patient #2103, from the EHR, is matched: every criterion is met or cleared, with evidence from the chart. Patient #1876, from the CTMS, triggers an exclusion. Bond texts Patient #2103, who is likely qualified and books a screening visit by text. Patient #2417, a new Meta ad lead, is called immediately; Bond's voice agent qualifies the patient and books the visit on the call. Both visits land on the site's calendar with Dana, the study coordinator. After the screening visit, Patient #2103 is screened and then enrolled.";
+  "Animated illustration with sample data of how Bond works. First, Bond connects to the site's EHR and CTMS, imports the leads exported from the site's past ad campaigns, and launches new Meta and Google ads that Bond creates and runs. Then patients flow in from all four and are screened against the study protocol. Patient #2103, from the EHR, is matched: every criterion is met or cleared, with evidence from the chart. Patient #1876, from the CTMS, triggers an exclusion. Bond texts Patient #2103, who is likely qualified and books a screening visit by text. Patient #2417, a new Meta ad lead, is called immediately; Bond's voice agent qualifies the patient and books the visit on the call. Both visits land on the site's calendar with Dana, the study coordinator. After the screening visit, Patient #2103 is screened and then enrolled. A running tally for the sample study counts up to 386 matched, 373 contacted, 91 scheduled and 83 enrolled.";
 
 function useMediaQuery(query: string, serverValue: boolean) {
   return useSyncExternalStore(
@@ -328,8 +345,92 @@ export default function HeroFlows() {
           </span>
         ))}
       </div>
+
+      <Tally tally={f.tally} reduced={reduced} />
     </figure>
   );
+}
+
+/**
+ * The footer: the sample study's running counts at each lifecycle stage, as the trial
+ * cards in the Bond platform show them. They roll up when Bond starts screening, then
+ * grow by one or two as the patients above move; each small change shows a "+n".
+ */
+function Tally({ tally, reduced }: { tally: Frame["tally"]; reduced: boolean }) {
+  return (
+    <div aria-hidden className="grid grid-cols-4 h-16 border-t border-gray-100 bg-gray-50/80 divide-x divide-gray-100">
+      {TALLY.map(({ key, label }) => (
+        <TallyCell key={key} value={tally[key]} label={label} highlight={key === "enrolled"} reduced={reduced} />
+      ))}
+    </div>
+  );
+}
+
+function TallyCell({ value, label, highlight, reduced }: { value: number; label: string; highlight: boolean; reduced: boolean }) {
+  const shown = useCountUp(value, reduced);
+  // A small step (a patient moving) shows "+n"; the roll-up at the start does not
+  const [step, setStep] = useState({ value, delta: 0 });
+  if (step.value !== value) setStep({ value, delta: value - step.value });
+  const delta = step.delta;
+  return (
+    <div className="relative flex flex-col items-center justify-center min-w-0 px-1">
+      {/* Odometer: a fixed slot per digit, leading zeros faint, so no digit ever moves as the count grows */}
+      <span className="flex text-[20px] sm:text-[22px] font-bold leading-none tabular-nums tracking-tight">
+        {String(shown)
+          .padStart(3, "0")
+          .split("")
+          .map((digit, i, all) => (
+            <span
+              key={i}
+              className={`inline-block w-[1ch] text-center ${
+                shown === 0 || i < all.length - String(shown).length ? "text-gray-200" : highlight ? "text-green-600" : "text-gray-900"
+              }`}
+            >
+              {digit}
+            </span>
+          ))}
+      </span>
+      <span className="mt-1 truncate text-[10.5px] sm:text-[11px] font-medium text-gray-500">{label}</span>
+      {delta > 0 && delta < 10 && (
+        <span
+          key={value}
+          className="pointer-events-none absolute right-[14%] top-1.5 text-[10.5px] font-semibold text-green-600 opacity-0 motion-safe:animate-[rise_1.2s_ease-out]"
+        >
+          +{delta}
+        </span>
+      )}
+    </div>
+  );
+}
+
+/** Counts up from the previous value to the new one; jumps straight there with reduced motion or when the loop resets. */
+function useCountUp(target: number, reduced: boolean) {
+  const [shown, setShown] = useState(target);
+  const from = useRef(target);
+  useEffect(() => {
+    if (reduced || target < from.current) {
+      from.current = target;
+      const id = requestAnimationFrame(() => setShown(target));
+      return () => cancelAnimationFrame(id);
+    }
+    const start = from.current;
+    const began = performance.now();
+    const duration = Math.abs(target - start) > 10 ? 1200 : 300;
+    let id = 0;
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - began) / duration);
+      const eased = 1 - Math.pow(1 - t, 3);
+      setShown(Math.round(start + (target - start) * eased));
+      if (t < 1) id = requestAnimationFrame(tick);
+      else from.current = target;
+    };
+    id = requestAnimationFrame(tick);
+    return () => {
+      cancelAnimationFrame(id);
+      from.current = target;
+    };
+  }, [target, reduced]);
+  return shown;
 }
 
 /** The Bond Health mark, the same file the site's navigation shows. Decorative: "Bond" is written beside it. */
@@ -806,20 +907,20 @@ function Calendar({ slots, afterVisit }: { slots: Frame["slots"]; afterVisit: bo
     const word = SLOT_WORD[state === "none" ? "scheduled" : state];
     return (
       <div
-        className={`mt-1 rounded-lg border px-2 py-1.5 text-left transition-[opacity,scale,background-color,border-color] duration-500 motion-reduce:transition-none ${
+        className={`mt-1 rounded-lg border px-2 py-1 text-left transition-[opacity,scale,background-color,border-color] duration-500 motion-reduce:transition-none ${
           state === "none" ? "opacity-0 scale-75" : "opacity-100 scale-100"
         } ${state === "enrolled" ? "bg-green-50 border-green-300" : "bg-white border-bond-primary/30"}`}
       >
         <span className="block text-[10.5px] font-semibold text-gray-900 leading-tight whitespace-nowrap">{time}</span>
         <span className="block text-[10px] text-gray-500 leading-tight truncate">{PATIENT[p].id} · Dana</span>
-        <span key={state} className={`mt-1 inline-block rounded px-1 text-[9.5px] font-semibold motion-safe:animate-[pop_0.35s_ease-out] ${word.tone}`}>
+        <span key={state} className={`mt-0.5 inline-block rounded px-1 text-[9.5px] font-semibold motion-safe:animate-[pop_0.35s_ease-out] ${word.tone}`}>
           {word.word}
         </span>
       </div>
     );
   };
   return (
-    <div className="absolute inset-x-[4%] rounded-xl bg-white/90 border border-gray-200 shadow-sm px-3 pt-2 pb-2.5" style={{ top: CAL_TOP, bottom: 16 }}>
+    <div className="absolute inset-x-[4%] rounded-xl bg-white/90 border border-gray-200 shadow-sm px-3 pt-1.5 pb-2" style={{ top: CAL_TOP, bottom: 16 }}>
       <div className="flex items-center justify-between gap-2">
         <span className="text-[11px] font-semibold text-gray-700 truncate">
           <span className="sm:hidden">Your calendar</span>
@@ -832,7 +933,7 @@ function Calendar({ slots, afterVisit }: { slots: Frame["slots"]; afterVisit: bo
           </span>
         </span>
       </div>
-      <div className="mt-1.5 grid grid-cols-3 sm:grid-cols-5 gap-2">
+      <div className="mt-1 grid grid-cols-3 sm:grid-cols-5 gap-2">
         {DAYS.map((d, i) => (
           <div key={d} className={`min-w-0 ${i > 2 ? "hidden sm:block" : ""}`}>
             <span className="block text-[10px] font-medium text-gray-400">{d}</span>
