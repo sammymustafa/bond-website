@@ -10,6 +10,8 @@ Marketing site for Bond Health. Live at **[bondtrials.com](https://bondtrials.co
 - **Tailwind CSS 4**. The theme lives in `src/app/globals.css` (`@theme`); there is
   no `tailwind.config` file.
 - `lucide-react` (icons)
+- **Cloudflare Workers**, through the OpenNext adapter (`@opennextjs/cloudflare`).
+  Config lives in `wrangler.jsonc` and `open-next.config.ts`.
 
 Tailwind 4 puts its utilities in a CSS cascade layer, and any rule outside a layer
 beats every layered rule. So element-level rules in `globals.css` (`*`, `html`,
@@ -25,13 +27,21 @@ npm ci        # install exactly what package-lock.json specifies
 npm run dev   # http://localhost:3000
 ```
 
+`npm run dev` runs plain Next.js in Node. To check a change in the Cloudflare
+Workers runtime (workerd) the site runs on in production, use `npm run preview`
+(http://localhost:8787). It builds the Worker first, so it takes about a minute.
+
 ## Scripts
 
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Dev server with hot reload |
-| `npm run build` | Production build (also typechecks) |
-| `npm start` | Serve an existing production build |
+| `npm run build` | Next.js production build (also typechecks) |
+| `npm start` | Serve an existing `next build` in Node |
+| `npm run build:worker` | `next build`, then turn it into the Cloudflare Worker in `.open-next/` (what Workers Builds and CI run) |
+| `npm run preview` | Build the Worker and serve it locally in workerd |
+| `npm run deploy` | Build the Worker and deploy it to production; needs `wrangler login` (normally Workers Builds deploys, not a laptop) |
+| `npm run upload` | Build the Worker and upload a version with a preview URL, without sending it traffic |
 | `npm run lint` | ESLint with Next's core-web-vitals and TypeScript rules (`eslint.config.mjs`); CI runs it |
 
 ## Content pages
@@ -101,16 +111,17 @@ Other shared content:
 - **Testimonials:** drafted in `src/content/testimonials.ts` and hidden until the
   people quoted approve the wording.
 
-If the repo sits in a synced folder such as Dropbox, run builds and `gen:docx` in
-a copy outside it: sync can leave stale `.next` output, and `gen:docx` can hang.
+If the repo sits in a synced folder such as Dropbox, run builds, `npm run preview`
+and `gen:docx` in a copy outside it (a fresh `git clone` in `/tmp` works): sync can
+leave stale `.next` or `.open-next` output, and `gen:docx` can hang.
 
 ### Scheduled blog posts
 
 A blog post whose `blog.date` is in the future is left out of routes, the blog
 index and the sitemap until a build on or after that date
 (`src/content/published.ts`; dates are UTC). `.github/workflows/scheduled-publish.yml`
-triggers a rebuild every morning through a Cloudflare Pages deploy hook stored in
-the `CF_PAGES_DEPLOY_HOOK` repository secret, so each post goes live on its date.
+triggers a rebuild every morning through a Workers Builds deploy hook stored in
+the `CF_WORKERS_DEPLOY_HOOK` repository secret, so each post goes live on its date.
 Without the secret, scheduled posts go live on the next deploy instead. The
 validator rejects a link to a post that is scheduled after the linking page goes
 live.
@@ -151,15 +162,35 @@ suggestion is applied to `src/content` by hand.
 
 ## Deployment
 
-Hosted on **Cloudflare Pages** (project `bond-website-2026`), which builds from
-this GitHub repo.
+Hosted on **Cloudflare Workers** (Worker `bond-website`), built with the OpenNext
+adapter. **Workers Builds** is connected to this GitHub repo and runs
+`npx opennextjs-cloudflare build`, then `npx opennextjs-cloudflare deploy`.
 
 - **`main` is production.** Anything merged to `main` deploys to bondtrials.com,
   usually within a few minutes.
-- **Pull requests get a preview build.** Open it from the "Cloudflare Pages"
-  check on the PR to review before merging.
+- **Other branches get a preview.** Workers Builds uploads a version for each push
+  (`npx opennextjs-cloudflare upload`) and posts its preview URL on the PR.
 
-Nothing deploys from a local machine; merging to `main` is what ships.
+Normally nothing deploys from a local machine; merging to `main` is what ships.
+
+How the Worker serves the site:
+
+- **Every page is prerendered.** The build writes each page's HTML, RSC payload and
+  segment prefetches into the Worker's static assets (`open-next.config.ts` uses the
+  read-only static-assets cache), and the Worker answers from there. Nothing
+  revalidates at runtime, so content changes only with a rebuild.
+- **Static files** in `public/` and `/_next/static` are served without running the
+  Worker. Their headers (HSTS, a one-year immutable cache for `/_next/static`) come
+  from `public/_headers`, which Workers reads and does not serve. Pages, redirects
+  and 404s come from the Worker and get their headers from `next.config.ts`.
+- **Redirects** (including www to the bare domain) live in `next.config.ts`.
+- **`next/image`** serves the original file, as it did on Pages. Resizing would need
+  a Cloudflare Images binding (`"images": { "binding": "IMAGES" }` in `wrangler.jsonc`).
+- **Custom domains** `bondtrials.com` and `www.bondtrials.com` are attached to the
+  Worker in the dashboard (Worker > Domains), not in `wrangler.jsonc`.
+
+The Worker bundle (the Next.js server plus every content page) is about 3 MB
+gzipped; `wrangler deploy --dry-run` prints the exact size, and CI runs it.
 
 ## Branching
 
@@ -181,7 +212,9 @@ history.
 ## CI
 
 `.github/workflows/ci.yml` runs on every PR and every push to `main`:
-`npm ci` → `tsc --noEmit` → `npm run lint` → `npm run validate` → `npm run build`.
+`npm ci` → `tsc --noEmit` → `npm run lint` → `npm run validate` →
+`npm run build:worker` → `wrangler deploy --dry-run` (bundles the Worker without
+uploading it).
 
-A dependency conflict, type error, lint error or content-rule violation fails the
-PR instead of the deploy.
+A dependency conflict, type error, lint error, content-rule violation or a Worker
+that no longer bundles fails the PR instead of the deploy.

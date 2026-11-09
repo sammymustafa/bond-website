@@ -28,8 +28,10 @@ yarn-error.log*
 # local env files
 .env*.local
 
-# vercel
-.vercel
+# Cloudflare Workers build output (opennextjs-cloudflare) and local wrangler state
+/.open-next/
+/.wrangler/
+.dev.vars*
 
 # typescript
 *.tsbuildinfo
