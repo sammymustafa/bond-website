@@ -325,6 +325,8 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "SubjectWell alternatives", href: "/compare/subjectwell-alternatives", description: "Bond, StudyKIK, 1nHealth and Antidote, ranked." },
+    { label: "Bond vs SubjectWell vs StudyKIK", href: "/compare/bond-vs-subjectwell-vs-studykik", description: "All three side by side." },
     { label: "Recruitment companies compared", href: "/compare/patient-recruitment-companies", description: "Services firms and EHR-based platforms, in two tables." },
     { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a share of milestone payments from randomization on." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },

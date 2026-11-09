@@ -82,7 +82,7 @@ const page: SeoPage = {
               "Direct scheduling and calendar integration in KIKsite, with appointment reminders. Whether StudyKIK or the site books the first visit is not spelled out.{{cite:studykik-sites-recruitment,studykik-kiksite}}",
             consent: "eConsent powered by DocuSign, with video chat for patient questions, offered to sponsors.{{cite:studykik-econsent,studykik-carepackage}}",
             retention:
-              "Appointment reminders, rideshare transportation booking, a patient companion app and call-center follow-up in its sponsor bundle.{{cite:studykik-sites-recruitment,studykik-carepackage}}",
+              "Appointment reminders, patient transportation services, a patient companion app and call-center follow-up in its sponsor bundle.{{cite:studykik-sites-recruitment,studykik-carepackage}}",
             reporting: "KIKsite tracks patients and media sources for the site; sponsors get trial reporting.{{cite:studykik-kiksite,studykik-home}}",
             integration:
               "A two-way CRIO integration, announced in June 2024 when StudyKIK joined the CRIO Partners program. EHR, RealTime or Clinical Conductor integration: not publicly documented.{{cite:crio-studykik-partnership-2024}}",
@@ -118,7 +118,7 @@ const page: SeoPage = {
             "**Agents available around the clock.** StudyKIK's agents speak with interested patients 24 hours a day.{{cite:studykik-sites-recruitment}} Bond's voice and text agents contact every new lead immediately, in the patient's language, and transfer live to a coordinator or book a callback when the patient wants a person.{{cite:bond-product}}",
             "**A site dashboard.** KIKsite lets the site track patients and media sources.{{cite:studykik-kiksite}} Bond's dashboard and audit trail report patients matched, contacted, pre-screened, consented and randomized, and each referral can go into your CTMS.{{cite:bond-site}}",
             "**CRIO integration.** StudyKIK has a two-way CRIO integration.{{cite:crio-studykik-partnership-2024}} So does Bond, a CRIO Certified Partner, and once the site activates API access Bond also screens the patient records kept in CRIO; see [Bond and CRIO](/integrations/crio).{{cite:bond-site}}",
-            "**eConsent and transport.** StudyKIK offers DocuSign-based eConsent and rideshare booking.{{cite:studykik-econsent,studykik-sites-recruitment}} Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions and checks understanding, while the site and PI obtain consent, and its agents book transportation for enrolled participants.{{cite:bond-site,bond-product}}",
+            "**eConsent and transport.** StudyKIK offers DocuSign-based eConsent and patient transportation services.{{cite:studykik-econsent,studykik-sites-recruitment}} Bond's [Consent](/consent) support explains the consent form in plain language, answers patient questions and checks understanding, while the site and PI obtain consent, and its agents book transportation for enrolled participants.{{cite:bond-site,bond-product}}",
             "**IRB-ready ads.** KIKsite includes IRB ad creation.{{cite:studykik-kiksite}} Bond configures each outreach script from the wording your IRB approved, and its free [IRB submission language template](/templates/irb-submission-language-ai-outreach) covers AI-assisted outreach.{{cite:bond-site}}",
           ],
         },
@@ -236,6 +236,8 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "StudyKIK alternatives", href: "/compare/studykik-alternatives", description: "Bond, SubjectWell (Clariness), 1nHealth and Antidote, ranked." },
+    { label: "Bond vs SubjectWell vs StudyKIK", href: "/compare/bond-vs-subjectwell-vs-studykik", description: "All three side by side." },
     { label: "Recruitment companies compared", href: "/compare/patient-recruitment-companies", description: "Services firms and EHR-based platforms, in two tables." },
     { label: "Pricing", href: "/pricing", description: "A fee per screened patient plus a share of milestone payments from randomization on." },
     { label: "Security", href: "/security", description: "How Bond handles PHI, BAAs and audit logging." },

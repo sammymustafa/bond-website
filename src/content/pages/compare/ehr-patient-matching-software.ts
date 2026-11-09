@@ -321,6 +321,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "Bond vs Tempus vs TriNetX", href: "/compare/bond-vs-tempus-vs-trinetx", description: "Three of these tools side by side." },
     { label: "Bond vs TriNetX", href: "/compare/bond-vs-trinetx", description: "A federated research network and a recruitment platform, compared." },
     { label: "Bond vs Tempus (Deep 6 AI)", href: "/compare/bond-vs-tempus-deep-6", description: "EHR matching, outreach, booked visits and pricing." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },

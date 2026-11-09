@@ -120,6 +120,10 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - [Clinical trial recruitment software, one table](https://bondtrials.com/compare/clinical-trial-recruitment-software)
 - [Patient recruitment companies for sponsors and CROs](https://bondtrials.com/compare/patient-recruitment-companies)
 - [Best EHR clinical trial matching software, 2026](https://bondtrials.com/compare/ehr-patient-matching-software): Bond Health, Tempus (Deep 6 AI), Triomics, Paradigm Health and TriNetX compared on chart reading, evidence, outreach, booking and pricing
+- [Bond Health vs Tempus (Deep 6 AI) vs TriNetX](https://bondtrials.com/compare/bond-vs-tempus-vs-trinetx): EHR matching, a clinical team that pre-screens, and a federated data network, compared with a platform that books every match
+- [Bond Health vs SubjectWell (now Clariness) vs StudyKIK](https://bondtrials.com/compare/bond-vs-subjectwell-vs-studykik): two referral services compared with a platform that screens the EHR, runs ads and books visits
+- [SubjectWell (Clariness) alternatives](https://bondtrials.com/compare/subjectwell-alternatives): Bond Health, StudyKIK, 1nHealth and Antidote ranked
+- [StudyKIK alternatives for research sites](https://bondtrials.com/compare/studykik-alternatives): Bond Health, SubjectWell (Clariness), 1nHealth and Antidote ranked
 - [Bond Health vs TriNetX](https://bondtrials.com/compare/bond-vs-trinetx): a federated real-world data network and a recruitment platform that contacts and books patients, compared
 - [Bond Health vs SubjectWell (now Clariness)](https://bondtrials.com/compare/bond-vs-subjectwell): the patient marketplace that merged into Clariness in January 2026, compared with Bond
 - [Bond Health vs 1nHealth](https://bondtrials.com/compare/bond-vs-1nhealth): a direct-to-patient media recruiter, compared with Bond
@@ -135,6 +139,10 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - [What is Bond Health?](https://bondtrials.com/what-is-bond-health): the platform in one page: what it does, who it is for, what it costs and how it differs from other recruitment vendors
 - [Clinical trial patient recruitment guide](https://bondtrials.com/clinical-trial-patient-recruitment): how recruitment works, which methods convert, what it costs and the rules that apply
 - [Guides](https://bondtrials.com/guides)
+- [Topics](https://bondtrials.com/topics): guides, research, templates and calculators grouped by topic
+- [EHR screening for clinical trials](https://bondtrials.com/topics/ehr-screening): finding eligible patients in the EHR, from structured queries to LLM screening
+- [Clinical trial recruitment compliance](https://bondtrials.com/topics/recruitment-compliance): HIPAA, IRB review, TCPA, texting registration, AI disclosure laws and ad policy
+- [Clinical trial enrollment metrics](https://bondtrials.com/topics/enrollment-metrics): funnel metrics, calculators and benchmarks from speed to lead to retention
 - [Site activation and site qualification visits](https://bondtrials.com/guides/site-activation): from the qualification visit to the green light, with timelines
 - [Participant retention guide](https://bondtrials.com/guides/participant-retention)
 - [Templates and downloads](https://bondtrials.com/templates)

@@ -377,6 +377,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "Bond vs Tempus vs TriNetX", href: "/compare/bond-vs-tempus-vs-trinetx", description: "All three side by side." },
     { label: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software", description: "Bond, Tempus (Deep 6 AI), Triomics, Paradigm Health and TriNetX compared." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },

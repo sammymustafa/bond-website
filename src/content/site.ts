@@ -29,6 +29,11 @@ const navOrder = new Map<string, number>(
   ].map((l, i) => [l.href, i]),
 );
 
+/** The published pages among `paths`, in the order given. Unknown or not-yet-published paths are skipped. */
+export function pagesAt(paths: string[]): SeoPage[] {
+  return paths.map((p) => byPath.get(p)).filter((p): p is SeoPage => Boolean(p));
+}
+
 export function pagesInCategory(category: PageCategory | PageCategory[], exclude: string[] = []): SeoPage[] {
   const cats = Array.isArray(category) ? category : [category];
   return pages

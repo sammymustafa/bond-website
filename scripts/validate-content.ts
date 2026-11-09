@@ -181,6 +181,9 @@ function validatePage(page: SeoPage, where: string, opts: { isGlossary?: boolean
         if (!sourceIds.has(id)) errors.push(`${where} ${label}: cite "${id}" has no matching source`);
       }
       for (const href of linksOfBlock(b)) checkLink(href, `${where} ${label}`);
+      if (b.type === "pageCards") {
+        for (const path of b.paths) if (!routes.has(path)) errors.push(`${where} ${label}: page card path does not exist: ${path}`);
+      }
       if (b.type === "table" && (!b.columns.length || b.rows.some((r) => r.length !== b.columns.length))) {
         errors.push(`${where} ${label}: every row must have ${b.columns.length} cells`);
       }

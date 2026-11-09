@@ -274,6 +274,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "Bond vs Tempus vs TriNetX", href: "/compare/bond-vs-tempus-vs-trinetx", description: "All three side by side." },
     { label: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software", description: "Bond, Tempus (Deep 6 AI), Triomics, Paradigm Health and TriNetX compared." },
     { label: "Bond for CROs", href: "/for/cros", description: "Chart-based feasibility counts and one enrollment funnel across sites." },
     { label: "Bond for sponsors", href: "/for/sponsors", description: "One enrollment funnel across a sponsor's sites." },
