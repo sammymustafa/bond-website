@@ -333,6 +333,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software", description: "Bond, Tempus (Deep 6 AI), Triomics, Paradigm Health and TriNetX compared." },
     { label: "Deep 6 AI vs Triomics", href: "/compare/deep-6-ai-vs-triomics", description: "General EHR matching vs an oncology platform." },
     { label: "Bond vs Tempus (Deep 6 AI)", href: "/compare/bond-vs-tempus-deep-6", description: "Deep 6 AI, TIME and Next Trials, compared with Bond." },
     { label: "Recruitment software compared", href: "/compare/clinical-trial-recruitment-software", description: "The wider category, vendor by vendor." },

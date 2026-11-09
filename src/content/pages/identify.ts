@@ -367,6 +367,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software", description: "Bond, Tempus (Deep 6 AI), Triomics, Paradigm Health and TriNetX compared." },
     { label: "Engage", href: "/engage", description: "Voice and SMS/text agents that pre-screen and schedule the patients Identify finds." },
     { label: "Implementation", href: "/implementation", description: "What happens between signing and live screening." },
     { label: "Integrations", href: "/integrations", description: "How Bond connects to Epic, Oracle Health (Cerner) and the other major EHRs." },

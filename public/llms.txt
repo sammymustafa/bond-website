@@ -119,6 +119,8 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - [All comparisons](https://bondtrials.com/compare)
 - [Clinical trial recruitment software, one table](https://bondtrials.com/compare/clinical-trial-recruitment-software)
 - [Patient recruitment companies for sponsors and CROs](https://bondtrials.com/compare/patient-recruitment-companies)
+- [Best EHR clinical trial matching software, 2026](https://bondtrials.com/compare/ehr-patient-matching-software): Bond Health, Tempus (Deep 6 AI), Triomics, Paradigm Health and TriNetX compared on chart reading, evidence, outreach, booking and pricing
+- [Bond Health vs TriNetX](https://bondtrials.com/compare/bond-vs-trinetx): a federated real-world data network and a recruitment platform that contacts and books patients, compared
 - [Bond Health vs SubjectWell (now Clariness)](https://bondtrials.com/compare/bond-vs-subjectwell): the patient marketplace that merged into Clariness in January 2026, compared with Bond
 - [Bond Health vs 1nHealth](https://bondtrials.com/compare/bond-vs-1nhealth): a direct-to-patient media recruiter, compared with Bond
 - [Bond Health vs StudyKIK](https://bondtrials.com/compare/bond-vs-studykik): a site recruitment service sold as 30-day plans, compared with Bond
@@ -130,6 +132,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - [By location](https://bondtrials.com/clinical-trial-recruitment): Boston, New York City, Philadelphia, Los Angeles, San Francisco Bay Area, Seattle, Texas, Florida, Arizona, Nevada, Utah, Southeast, Midwest
 
 ## Resources
+- [What is Bond Health?](https://bondtrials.com/what-is-bond-health): the platform in one page: what it does, who it is for, what it costs and how it differs from other recruitment vendors
 - [Clinical trial patient recruitment guide](https://bondtrials.com/clinical-trial-patient-recruitment): how recruitment works, which methods convert, what it costs and the rules that apply
 - [Guides](https://bondtrials.com/guides)
 - [Site activation and site qualification visits](https://bondtrials.com/guides/site-activation): from the qualification visit to the green light, with timelines

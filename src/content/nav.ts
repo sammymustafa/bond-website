@@ -87,6 +87,7 @@ export const integrationLinks: NavItem[] = [
 export const compareLinks: NavItem[] = [
   { name: "Bond vs Trially", href: "/compare/bond-vs-trially" },
   { name: "Bond vs Tempus (Deep 6)", href: "/compare/bond-vs-tempus-deep-6" },
+  { name: "Bond vs TriNetX", href: "/compare/bond-vs-trinetx" },
   { name: "Bond vs Alleviate Health", href: "/compare/bond-vs-alleviate-health" },
   { name: "Bond vs Hippocratic AI and Grove", href: "/compare/bond-vs-hippocratic-ai-and-grove" },
   { name: "Bond vs Inato", href: "/compare/bond-vs-inato" },
@@ -100,10 +101,12 @@ export const compareLinks: NavItem[] = [
   { name: "Deep 6 AI vs Paradigm Health", href: "/compare/deep-6-ai-vs-paradigm-health" },
   { name: "Deep 6 AI vs Mendel", href: "/compare/deep-6-ai-vs-mendel" },
   { name: "All recruitment software, one table", href: "/compare/clinical-trial-recruitment-software" },
+  { name: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software" },
   { name: "CTMS software compared", href: "/compare/ctms-software-for-research-sites" },
 ];
 
 export const resourceLinks: NavItem[] = [
+  { name: "What is Bond Health?", href: "/what-is-bond-health", description: "The platform, who it is for and how it differs" },
   { name: "Patient recruitment guide", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, what converts, what it costs" },
   { name: "Guides", href: "/guides", description: "Site feasibility, CTMS, screen failure, IRB rules" },
   { name: "Calculators", href: "/calculators", description: "Screen failure, enrollment rate, cost per patient" },

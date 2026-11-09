@@ -910,6 +910,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software", description: "Just the tools that find patients in the EHR, ranked." },
     { label: "All comparisons", href: "/compare", description: "One-on-one comparisons of Bond with each type of recruitment tool." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a volume-based fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "Security", href: "/security", description: "ISO/IEC 27001 certification, HIPAA and SOC 2 Type I compliance, BAAs, access control and audit logging." },

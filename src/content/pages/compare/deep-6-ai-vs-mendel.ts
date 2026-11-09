@@ -334,6 +334,7 @@ const page: SeoPage = {
     ...testimonialSources(),
   ],
   related: [
+    { label: "Best EHR trial matching software", href: "/compare/ehr-patient-matching-software", description: "The tools still on the market in 2026, compared from public sources." },
     { label: "Deep 6 AI vs Triomics", href: "/compare/deep-6-ai-vs-triomics", description: "General EHR matching vs an oncology platform." },
     { label: "Deep 6 AI vs Paradigm Health", href: "/compare/deep-6-ai-vs-paradigm-health", description: "Matching software vs a sponsor-funded research network." },
     { label: "Bond vs Tempus (Deep 6 AI)", href: "/compare/bond-vs-tempus-deep-6", description: "Deep 6 AI, TIME and Next Trials, compared with Bond." },
