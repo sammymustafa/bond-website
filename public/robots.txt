@@ -1,7 +1,15 @@
 # robots.txt for Bond Health
 # https://bondtrials.com
 
+# Content Signals (https://contentsignals.org) say how automated systems may use this
+# site's content once they have it:
+#   search=yes    build a search index and show links and excerpts in results
+#   ai-input=yes  use pages as input to AI answers, including live retrieval and grounding
+#   ai-train=yes  train or fine-tune AI models
+# A crawler reads only the group that names it, so every group below repeats the line.
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Sitemap
@@ -16,22 +24,27 @@ Sitemap: https://bondtrials.com/sitemap.xml
 
 # OpenAI - ChatGPT Search index
 User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Anthropic - Claude search index
 User-agent: Claude-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Perplexity - answer index
 User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # You.com - search index
 User-agent: YouBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # DuckDuckGo - DuckAssist answers
 User-agent: DuckAssistBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # ---------------------------------------------------------------
@@ -40,18 +53,22 @@ Allow: /
 
 # OpenAI - ChatGPT live browsing
 User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Anthropic - Claude live browsing
 User-agent: Claude-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Perplexity - live retrieval
 User-agent: Perplexity-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Mistral - live retrieval
 User-agent: MistralAI-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # ---------------------------------------------------------------
@@ -60,48 +77,60 @@ Allow: /
 
 # OpenAI - training
 User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Anthropic - training
 User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Anthropic - legacy token
 User-agent: anthropic-ai
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Google - Gemini / Vertex AI training opt-in
 User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Apple - Siri / Spotlight indexing
 User-agent: Applebot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Apple - Apple Intelligence training opt-in
 User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Meta - Llama / Meta AI training
 User-agent: Meta-ExternalAgent
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Meta - link fetcher
 User-agent: Meta-ExternalFetcher
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Amazon - Alexa and Amazon AI
 User-agent: Amazonbot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Common Crawl - open dataset used by many AI labs
 User-agent: CCBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Cohere - training
 User-agent: cohere-ai
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # ByteDance - training and search
 User-agent: Bytespider
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
