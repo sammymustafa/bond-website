@@ -3,6 +3,8 @@
 # get their headers from next.config.ts instead. Workers reads this file; it is not served.
 /*
   Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
 
 # Build output is fingerprinted, so a given URL never changes.
 /_next/static/*

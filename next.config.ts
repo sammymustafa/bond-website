@@ -7,9 +7,19 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
-      // HSTS: browsers always use HTTPS for bondtrials.com. No includeSubDomains, so other
-      // subdomains (api, platform) keep their own settings.
-      { source: "/:path*", headers: [{ key: "Strict-Transport-Security", value: "max-age=31536000" }] },
+      {
+        source: "/:path*",
+        headers: [
+          // HSTS: browsers always use HTTPS for bondtrials.com. No includeSubDomains, so other
+          // subdomains (api, platform) keep their own settings.
+          { key: "Strict-Transport-Security", value: "max-age=31536000" },
+          // Browsers must not guess a different content type than the one we send.
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          // Other sites see only bondtrials.com as the referrer, never the full page URL.
+          // Cloudflare Pages sent both of these by default; Workers does not, so set them here.
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+        ],
+      },
     ];
   },
   async redirects() {
