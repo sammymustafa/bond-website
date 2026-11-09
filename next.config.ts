@@ -37,6 +37,18 @@ const nextConfig: NextConfig = {
       // There is no separate about page; "What is Bond Health?" covers the company and the product.
       { source: "/about", destination: "/what-is-bond-health", permanent: true },
       { source: "/about-us", destination: "/what-is-bond-health", permanent: true },
+      // Sitemap names from the old Astro site, which crawlers still request; the sitemap is /sitemap.xml.
+      { source: "/sitemap-index.xml", destination: "/sitemap.xml", permanent: true },
+      { source: "/sitemap_index.xml", destination: "/sitemap.xml", permanent: true },
+      { source: "/sitemap-0.xml", destination: "/sitemap.xml", permanent: true },
+      // No news or press page; the blog is where announcements go.
+      { source: "/news", destination: "/blog", permanent: true },
+      { source: "/press", destination: "/blog", permanent: true },
+      // Icons and the share image from the old Astro site, which Meta's crawler still requests.
+      // The old section images have no counterpart, so they stay 404.
+      { source: "/_astro/:file(favicon\\..+)", destination: "/favicon.ico", permanent: true },
+      { source: "/_astro/:file(apple-touch-icon\\..+)", destination: "/apple-touch-icon.png", permanent: true },
+      { source: "/_astro/:file(preview\\..+)", destination: "/images/og-image.png", permanent: true },
     ];
   },
 };

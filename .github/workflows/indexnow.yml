@@ -1,0 +1,78 @@
+name: IndexNow
+
+# Tells Bing and the other IndexNow engines which bondtrials.com pages changed as soon as
+# they are live, so new and edited pages reach Bing (and Copilot and ChatGPT search, which
+# draw on it) without waiting for a crawl. It sends the live sitemap's URLs whose lastmod is
+# recent (scripts/indexnow.mjs --since=N), which is what a deploy changed as long as edited
+# pages get a new lastUpdated. Runs from the copy of this file on main.
+on:
+  # Workers Builds reports every build as a "Workers Builds: bond-website" check on the
+  # commit it built. A passing check on a commit in main's history is a production deploy.
+  check_run:
+    types: [completed]
+  # Posts dated today go live in the 11:00 UTC rebuild (scheduled-publish.yml). This sends
+  # them even if that hook-triggered build reports no check.
+  schedule:
+    - cron: "30 11 * * *"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Send live sitemap URLs with lastmod in the last N days (0 = today only)"
+        default: "1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    if: >-
+      github.event_name != 'check_run' || (
+        startsWith(github.event.check_run.name, 'Workers Builds') &&
+        github.event.check_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip preview builds
+        id: prod
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          SHA: ${{ github.event.check_run.head_sha }}
+        run: |
+          if [ "$EVENT" != "check_run" ]; then
+            echo "live=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # A commit already in main's history means this build went to production.
+          status=$(gh api "repos/$GITHUB_REPOSITORY/compare/main...$SHA" --jq .status 2>/dev/null || echo unknown)
+          if [ "$status" = "identical" ] || [ "$status" = "behind" ]; then
+            echo "live=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Preview build of ${SHA:0:7} ($status vs main): production did not change, so nothing is sent."
+            echo "live=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.prod.outputs.live == 'true'
+        with:
+          sparse-checkout: scripts
+
+      - uses: actions/setup-node@v4
+        if: steps.prod.outputs.live == 'true'
+        with:
+          node-version: 22
+
+      - name: Send recently changed URLs
+        if: steps.prod.outputs.live == 'true'
+        env:
+          EVENT: ${{ github.event_name }}
+          # Deploys: today and yesterday (UTC), since lastUpdated dates are US dates.
+          # The 11:30 run: today only. A manual run: whatever was asked for.
+          SINCE: ${{ github.event.inputs.since || (github.event_name == 'schedule' && '0') || '1' }}
+        run: |
+          # Give the new version a moment to reach every Cloudflare location.
+          if [ "$EVENT" = "check_run" ]; then sleep 30; fi
+          node scripts/indexnow.mjs --since="$SINCE"

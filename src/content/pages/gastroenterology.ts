@@ -381,6 +381,7 @@ const page: SeoPage = {
     { label: "Therapeutic areas", href: "/therapeutic-areas", description: "Eligibility, screen failure and trial counts in other conditions." },
     { label: "How to reduce screen failure", href: "/guides/reduce-screen-failure", description: "Site-level fixes for the causes that a chart can predict." },
     { label: "Obesity and metabolic trials", href: "/obesity-and-metabolic", description: "Where MASH candidates overlap with obesity and type 2 diabetes studies." },
+    { label: "Pre-screening MASH candidates before biopsy", href: "/blog/mash-trials-noninvasive-prescreening", description: "What FIB-4, FibroScan and composite scores catch and miss as MASH trial pre-screens." },
     { label: "Pre-screening vs screening", href: "/guides/pre-screening-vs-screening", description: "What belongs in a chart pre-screen and what waits for the screening visit." },
   ],
 };

@@ -6,6 +6,11 @@
  *   npm run indexnow -- /engage /security     # specific pages, as paths or full URLs
  *   npm run indexnow -- --sitemap             # every URL in the live sitemap
  *   npm run indexnow -- --sitemap --dry-run   # list what would be sent, send nothing
+ *   npm run indexnow -- --since=1             # live sitemap URLs with lastmod today or yesterday (UTC)
+ *
+ * --since=N keeps sitemap URLs whose lastmod is on or after N days before today (UTC), so
+ * --since=0 means today only. If none match it sends nothing and exits 0. The IndexNow
+ * workflow (.github/workflows/indexnow.yml) runs it after every production deploy.
  *
  * The key is public by design: IndexNow checks that https://bondtrials.com/<key>.txt contains it.
  */
@@ -19,20 +24,43 @@ const KEY = "7deee7c933c9b7e8524da75ede32aefb";
 
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
+const sinceArg = args.find((a) => a.startsWith("--since="));
+const sinceDays = sinceArg === undefined ? null : Number(sinceArg.slice("--since=".length));
+if (sinceDays !== null && !(Number.isInteger(sinceDays) && sinceDays >= 0)) {
+  console.error("--since takes a whole number of days, for example --since=1.");
+  process.exit(1);
+}
 
 let urls = args
   .filter((a) => !a.startsWith("--"))
   .map((a) => (a.startsWith("http") ? a : `https://${HOST}${a.startsWith("/") ? "" : "/"}${a}`));
 
-if (args.includes("--sitemap")) {
+if (args.includes("--sitemap") || sinceDays !== null) {
   const res = await fetch(`https://${HOST}/sitemap.xml`);
   if (!res.ok) throw new Error(`sitemap.xml returned ${res.status}`);
-  urls.push(...[...(await res.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
+  const entries = [...(await res.text()).matchAll(/<url>([\s\S]*?)<\/url>/g)]
+    .map((m) => ({
+      loc: m[1].match(/<loc>([^<]+)<\/loc>/)?.[1],
+      lastmod: m[1].match(/<lastmod>([^<]+)<\/lastmod>/)?.[1],
+    }))
+    .filter((e) => e.loc);
+  if (sinceDays === null) {
+    urls.push(...entries.map((e) => e.loc));
+  } else {
+    const cutoff = new Date(Date.now() - sinceDays * 86_400_000).toISOString().slice(0, 10);
+    const recent = entries.filter((e) => e.lastmod && e.lastmod.slice(0, 10) >= cutoff);
+    console.log(`${recent.length} of ${entries.length} sitemap URLs have lastmod on or after ${cutoff}.`);
+    urls.push(...recent.map((e) => e.loc));
+  }
 }
 
 urls = [...new Set(urls)];
 if (!urls.length) {
-  console.error("Give paths, full URLs or --sitemap.");
+  if (sinceDays !== null) {
+    console.log("Nothing changed in that window, so nothing was sent.");
+    process.exit(0);
+  }
+  console.error("Give paths, full URLs, --sitemap or --since=N.");
   process.exit(1);
 }
 const foreign = urls.filter((u) => new URL(u).host !== HOST);
