@@ -555,6 +555,11 @@
   50% { transform: scaleY(1); }
 }
 
+@keyframes wash {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 @keyframes rise {
   0% { transform: translateY(4px); opacity: 0; }
   25% { opacity: 1; }

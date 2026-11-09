@@ -66,7 +66,7 @@ interface Frame {
   afterVisit: boolean;
   pulse: Source[];
   flow: Record<Source | "out", boolean>;
-  /** The running tally of the sample patients, in the platform's lifecycle words */
+  /** The sample study's counts, in the platform's lifecycle words. 0 means the step has not happened yet. */
   tally: Record<TallyKey, number>;
 }
 
@@ -109,8 +109,6 @@ function buildFrames(): Frame[] {
     f.phase = 1;
     f.cards.setup = "after";
     f.cards.queue = "front";
-    // The sample study's running counts roll up once Bond starts screening
-    f.tally = { matched: 384, contacted: 371, scheduled: 89, enrolled: 82 };
   });
   // Act 2: patients from the EHR, the CTMS and past ad leads are screened against the protocol
   next(700, (f) => { f.pulse = ["ehr", "ctms", "past"]; f.tokens.a.on = f.tokens.c.on = f.tokens.d.on = true; });
@@ -124,10 +122,10 @@ function buildFrames(): Frame[] {
     f.view.queue = "screening";
   });
   // Hidden tokens move to where they will next appear, so they never slide across the card
-  next(1400, (f) => { f.view.queue = "screened"; f.tokens.a.at = "out"; f.tally.matched += 2; });
+  next(1400, (f) => { f.view.queue = "screened"; f.tokens.a.at = "out"; f.tally.matched = 386; });
   // The EHR match: every criterion checked against the chart, then a text screening that books the visit
   next(2400, (f) => { f.cards.queue = "back"; f.cards.a = "front"; });
-  next(2100, (f) => { f.phase = 2; f.view.a = "texted"; f.tally.contacted += 1; });
+  next(2100, (f) => { f.phase = 2; f.view.a = "texted"; f.tally.contacted = 372; });
   next(1100, (f) => { f.view.a = "qualified"; });
   next(1500, (f) => { f.phase = 3; f.view.a = "booked"; });
   // Booked: the card drops onto the calendar
@@ -137,7 +135,7 @@ function buildFrames(): Frame[] {
     f.phase = 1;
     f.tokens.a.on = false;
     f.slots.a = "scheduled";
-    f.tally.scheduled += 1;
+    f.tally.scheduled = 90;
     f.flow.out = false;
     f.pulse = ["ads"];
     f.tokens.b.on = true;
@@ -153,7 +151,7 @@ function buildFrames(): Frame[] {
   // After the screening visit
   next(1100, (f) => { f.phase = 4; f.afterVisit = true; });
   next(1300, (f) => { f.slots.a = "screened"; });
-  next(4200, (f) => { f.slots.a = "enrolled"; f.tally.enrolled += 1; });
+  next(4200, (f) => { f.slots.a = "enrolled"; f.tally.enrolled = 83; });
   return frames;
 }
 
@@ -199,7 +197,7 @@ const PATIENT: Record<Patient, { id: string; name: string; tone: string }> = {
 };
 
 const CAPTION =
-  "Animated illustration with sample data of how Bond works. First, Bond connects to the site's EHR and CTMS, imports the leads exported from the site's past ad campaigns, and launches new Meta and Google ads that Bond creates and runs. Then patients flow in from all four and are screened against the study protocol. Patient #2103, from the EHR, is matched: every criterion is met or cleared, with evidence from the chart. Patient #1876, from the CTMS, triggers an exclusion. Bond texts Patient #2103, who is likely qualified and books a screening visit by text. Patient #2417, a new Meta ad lead, is called immediately; Bond's voice agent qualifies the patient and books the visit on the call. Both visits land on the site's calendar with Dana, the study coordinator. After the screening visit, Patient #2103 is screened and then enrolled. A running tally for the sample study counts up to 386 matched, 373 contacted, 91 scheduled and 83 enrolled.";
+  "Animated illustration with sample data of how Bond works. First, Bond connects to the site's EHR and CTMS, imports the leads exported from the site's past ad campaigns, and launches new Meta and Google ads that Bond creates and runs. Then patients flow in from all four and are screened against the study protocol. Patient #2103, from the EHR, is matched: every criterion is met or cleared, with evidence from the chart. Patient #1876, from the CTMS, triggers an exclusion. Bond texts Patient #2103, who is likely qualified and books a screening visit by text. Patient #2417, a new Meta ad lead, is called immediately; Bond's voice agent qualifies the patient and books the visit on the call. Both visits land on the site's calendar with Dana, the study coordinator. After the screening visit, Patient #2103 is screened and then enrolled. Below, the sample study's counts appear as each step happens: 386 matched, then 372 contacted, 90 scheduled and 83 enrolled, with contacted and scheduled each growing by one for the ad lead.";
 
 function useMediaQuery(query: string, serverValue: boolean) {
   return useSyncExternalStore(
@@ -352,9 +350,10 @@ export default function HeroFlows() {
 }
 
 /**
- * The footer: the sample study's running counts at each lifecycle stage, as the trial
- * cards in the Bond platform show them. They roll up when Bond starts screening, then
- * grow by one or two as the patients above move; each small change shows a "+n".
+ * The footer: the sample study's counts at each lifecycle stage, as the trial cards in
+ * the Bond platform show them. Each count stays empty until its step happens in the
+ * story above (matching, the first contact, the first booking, enrolment); then it pops
+ * up and rolls to its number. Later steps add one and show a "+1".
  */
 function Tally({ tally, reduced }: { tally: Frame["tally"]; reduced: boolean }) {
   return (
@@ -368,14 +367,21 @@ function Tally({ tally, reduced }: { tally: Frame["tally"]; reduced: boolean }) 
 
 function TallyCell({ value, label, highlight, reduced }: { value: number; label: string; highlight: boolean; reduced: boolean }) {
   const shown = useCountUp(value, reduced);
-  // A small step (a patient moving) shows "+n"; the roll-up at the start does not
+  // A small step (one more patient) shows "+n"; a count's first appearance does not
   const [step, setStep] = useState({ value, delta: 0 });
   if (step.value !== value) setStep({ value, delta: value - step.value });
   const delta = step.delta;
+  const live = value > 0;
   return (
-    <div className="relative flex flex-col items-center justify-center min-w-0 px-1">
-      {/* A fixed slot per digit, leading slots blank, so no digit ever moves as the count grows */}
-      <span className="flex text-[20px] sm:text-[22px] font-bold leading-none tabular-nums tracking-tight">
+    <div className="relative flex flex-col items-center justify-center min-w-0 px-1 overflow-hidden">
+      {/* A soft wash on the cell whenever its count changes */}
+      {live && <span key={`wash-${value}`} className="pointer-events-none absolute inset-0 bg-bond-primary/10 opacity-0 motion-safe:animate-[wash_1.4s_ease-out]" />}
+      {/* Fixed slots per digit, so nothing moves as the count grows. Before its step, a dash holds the place;
+          keyed so the number pops in the moment its step happens. */}
+      <span
+        key={live ? "on" : "off"}
+        className={`relative flex text-[20px] sm:text-[22px] font-bold leading-none tabular-nums tracking-tight ${live ? "motion-safe:animate-[pop_0.45s_ease-out]" : ""}`}
+      >
         {String(shown)
           .padStart(3, "0")
           .split("")
@@ -383,14 +389,19 @@ function TallyCell({ value, label, highlight, reduced }: { value: number; label:
             <span
               key={i}
               className={`inline-block w-[1ch] text-center ${
-                i < all.length - String(shown).length ? "text-transparent" : shown === 0 ? "text-gray-300" : highlight ? "text-green-600" : "text-gray-900"
+                !live || i < all.length - String(shown).length ? "text-transparent" : highlight ? "text-green-600" : "text-gray-900"
               }`}
             >
               {digit}
             </span>
           ))}
+        <span className={`absolute inset-0 flex items-center justify-center text-gray-300 transition-opacity duration-200 ${live ? "opacity-0" : "opacity-100"}`}>
+          –
+        </span>
       </span>
-      <span className="mt-1 truncate text-[10.5px] sm:text-[11px] font-medium text-gray-500">{label}</span>
+      <span className={`relative mt-1 truncate text-[10.5px] sm:text-[11px] font-medium ${live ? "text-gray-700" : "text-gray-400"}`}>
+        {label}
+      </span>
       {delta > 0 && delta < 10 && (
         <span
           key={value}
