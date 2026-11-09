@@ -164,7 +164,7 @@ const FINAL = FRAMES.length - 1;
  * Stage geometry. y is in px from the top of the stage. x is in percent of the
  * stage's width (cqw for the tokens), with the same 4% gutter on every row.
  */
-const STAGE_H = 500;
+const STAGE_H = 512;
 const SOURCE_TOP = 16;
 const SOURCE_BOTTOM = 84;
 const CARD_TOP = 116;
@@ -374,7 +374,7 @@ function TallyCell({ value, label, highlight, reduced }: { value: number; label:
   const delta = step.delta;
   return (
     <div className="relative flex flex-col items-center justify-center min-w-0 px-1">
-      {/* Odometer: a fixed slot per digit, leading zeros faint, so no digit ever moves as the count grows */}
+      {/* A fixed slot per digit, leading slots blank, so no digit ever moves as the count grows */}
       <span className="flex text-[20px] sm:text-[22px] font-bold leading-none tabular-nums tracking-tight">
         {String(shown)
           .padStart(3, "0")
@@ -383,7 +383,7 @@ function TallyCell({ value, label, highlight, reduced }: { value: number; label:
             <span
               key={i}
               className={`inline-block w-[1ch] text-center ${
-                shown === 0 || i < all.length - String(shown).length ? "text-gray-200" : highlight ? "text-green-600" : "text-gray-900"
+                i < all.length - String(shown).length ? "text-transparent" : shown === 0 ? "text-gray-300" : highlight ? "text-green-600" : "text-gray-900"
               }`}
             >
               {digit}
