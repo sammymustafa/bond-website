@@ -340,6 +340,7 @@ const page: SeoPage = {
     },
   ],
   related: [
+    { label: "What is Bond Health?", href: "/what-is-bond-health", description: "The platform in one page: what it does, who it is for and how it differs." },
     { label: "Pricing", href: "/pricing", description: "The volume-based fee per screened patient and the percentage of each randomized patient's milestone payments." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control, audit logging and the Trust Center." },
     { label: "Implementation", href: "/implementation", description: "What happens between signing and live screening, step by step." },

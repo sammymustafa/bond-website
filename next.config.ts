@@ -34,6 +34,9 @@ const nextConfig: NextConfig = {
       { source: "/book-a-demo", destination: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", permanent: true },
       // Old contact page that AI search indexes still return; the contact form is on the homepage.
       { source: "/contact", destination: "/#contact", permanent: true },
+      // There is no separate about page; "What is Bond Health?" covers the company and the product.
+      { source: "/about", destination: "/what-is-bond-health", permanent: true },
+      { source: "/about-us", destination: "/what-is-bond-health", permanent: true },
     ];
   },
 };
