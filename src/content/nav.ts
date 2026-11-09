@@ -147,5 +147,9 @@ export const calComHref = "https://bond-health.cal.com/rishabh-goel/bond-health-
 // Every "Book a demo" button and link opens the Cal.com scheduler directly.
 export const demoHref = calComHref;
 export const trustCenterHref = "https://app.vanta.com/bondtrials.com/trust/xlbm8nojavvhspm2l3q3pj";
+// Bond's G2 profile (claimed November 2026). Linked from the footer and listed in the Organization's sameAs.
+// No ratings, badges or Review markup until Bond has real G2 reviews: Google treats review markup a business
+// serves about itself as ineligible for review snippets.
+export const g2ProfileHref = "https://www.g2.com/products/bond-health/reviews";
 // Google's deep link for adding the site as a preferred source (Top Stories, AI Overviews, AI Mode).
 export const preferredSourceHref = "https://www.google.com/preferences/source?q=bondtrials.com";

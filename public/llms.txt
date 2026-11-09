@@ -164,6 +164,7 @@ Boston, MA, United States
 - [Website](https://bondtrials.com)
 - [Demo booking](https://bond-health.cal.com/rishabh-goel/bond-health-demo)
 - [LinkedIn](https://www.linkedin.com/company/bondtrials/)
+- [G2](https://www.g2.com/products/bond-health/reviews)
 
 ## Open Positions
 - ML/AI Engineer (Boston, MA)
