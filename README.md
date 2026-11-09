@@ -142,10 +142,18 @@ live.
   visitor's cookie choice. It is cookieless.
 - **Privacy policy:** `src/app/privacy-policy/page.tsx` lists every analytics and
   visitor-identification tool. Update it whenever you add or remove one.
-- **Forms:** the forms post to Formspree.
-  - Contact form and newsletter: `mwvpokad`.
+- **Forms:** the forms post to Formspree (Free plan: 50 submissions a month across
+  all forms; past that, Formspree holds submissions and sends no email or Slack post).
+  - Contact form: `mwvpokad`. Each submission emails hello@bondtrials.com and, through
+    Formspree's Slack plugin (form > Workflow), posts to the private Slack channel
+    `#website-demo-leads` within a second or so.
+  - Newsletter: `moeeovol`, kept apart so signups don't post to the Slack lead alert.
   - Job applications: `xeeogqyz`.
   - Talent network: `mojvdqgn`.
+  - The contact form requires "How did you hear about us?" (`heard_about`), and
+    when "Other" is picked, a required `heard_about_other`. The options live in
+    `src/content/leadSources.ts` and match the Cal.com demo event's booking question
+    word for word; change both together.
 - **Dialogs:** the contact form, the careers forms and the mobile menu share
   `src/components/useDialog.ts`. It closes them on Escape, moves focus in and
   back out, keeps Tab inside, and stops the page behind from scrolling.

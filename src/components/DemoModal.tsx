@@ -1,9 +1,10 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { X, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
+import { X, ArrowRight, CheckCircle, Loader2, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useDialog } from "./useDialog";
+import { leadSources, OTHER_LEAD_SOURCE } from "@/content/leadSources";
 
 // Shown when Formspree is unreachable or rejects the message; rendered with an email link below (as on /careers).
 const NETWORK_ERROR = "network";
@@ -18,6 +19,8 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
+  const [heardAbout, setHeardAbout] = useState("");
+  const [heardAboutOther, setHeardAboutOther] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
@@ -36,6 +39,18 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
       return;
     }
 
+    // Both are `required` in the markup; these catch browsers that skip native validation
+    if (!heardAbout) {
+      setError("Please tell us how you heard about us");
+      setIsSubmitting(false);
+      return;
+    }
+    if (heardAbout === OTHER_LEAD_SOURCE && !heardAboutOther.trim()) {
+      setError("Please tell us where you heard about us");
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Send form data to Formspree (free form backend)
       const FORMSPREE_ID = "mwvpokad";
@@ -49,6 +64,9 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           name: name || "Not provided",
           company: company || "Not provided",
           message: message || "I'd like to learn more about Bond Health.",
+          // Same option text as the Cal.com booking question; the free-text answer is sent only with "Other"
+          heard_about: heardAbout,
+          ...(heardAbout === OTHER_LEAD_SOURCE && { heard_about_other: heardAboutOther.trim() }),
           _subject: `Contact Request from ${name || email}`,
           _replyto: email,
         }),
@@ -66,6 +84,8 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           setName("");
           setCompany("");
           setMessage("");
+          setHeardAbout("");
+          setHeardAboutOther("");
           onClose();
         }, 3000);
       } else {
@@ -172,6 +192,48 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                     placeholder="Your research site or company"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
                   />
+                </div>
+
+                <div>
+                  <label htmlFor="heard-about" className="block text-sm font-medium text-gray-700 mb-1">
+                    How did you hear about us? <span className="text-red-500">*</span>
+                  </label>
+                  <div className="relative">
+                    <select
+                      id="heard-about"
+                      value={heardAbout}
+                      onChange={(e) => setHeardAbout(e.target.value)}
+                      required
+                      className={`w-full appearance-none pl-4 pr-10 py-3 rounded-xl border border-gray-200 bg-white focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all ${heardAbout ? "text-gray-900" : "text-gray-500"}`}
+                    >
+                      <option value="">Select one</option>
+                      {leadSources.map((source) => (
+                        <option key={source} value={source}>
+                          {source}
+                        </option>
+                      ))}
+                      <option value={OTHER_LEAD_SOURCE}>{OTHER_LEAD_SOURCE}</option>
+                    </select>
+                    <ChevronDown aria-hidden="true" className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+                  </div>
+                  {heardAbout === OTHER_LEAD_SOURCE && (
+                    // A visible label rather than a placeholder: the full prompt doesn't fit the field at phone width
+                    <div className="mt-3">
+                      <label htmlFor="heard-about-other" className="block text-sm font-medium text-gray-700 mb-1">
+                        Please tell us where you heard about us. <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="heard-about-other"
+                        value={heardAboutOther}
+                        onChange={(e) => setHeardAboutOther(e.target.value)}
+                        placeholder="e.g. a newsletter or community"
+                        required
+                        maxLength={200}
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-bond-primary focus:ring-2 focus:ring-bond-primary/20 outline-none transition-all text-gray-900"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <div>

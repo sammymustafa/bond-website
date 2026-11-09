@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 
-const FORMSPREE_ID = "mwvpokad";
+// Its own Formspree form, apart from the contact form (mwvpokad), so signups don't post to the Slack lead alert.
+const FORMSPREE_ID = "moeeovol";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");

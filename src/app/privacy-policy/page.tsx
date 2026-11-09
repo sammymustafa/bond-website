@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
 
             <div className="flex flex-wrap gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-bond-primary/10 text-bond-primary-dark text-sm font-medium">
-                Effective Date: October 23, 2026
+                Effective Date: November 8, 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">
                 Last Reviewed: October 22, 2026
@@ -142,7 +142,8 @@ export default function PrivacyPolicyPage() {
               affiliation, and professional credentials.
             </BulletItem>
             <BulletItem label="Communications:">
-              Records of correspondence when you contact us for support, inquiries, or feedback.
+              Records of correspondence when you contact us for support, inquiries, or feedback,
+              including how you heard about us.
             </BulletItem>
           </BulletList>
 
@@ -305,9 +306,12 @@ export default function PrivacyPolicyPage() {
               consent or as authorized.
             </BulletItem>
             <BulletItem label="Service Providers:">
-              With third-party vendors who perform services on our behalf (e.g., cloud hosting, data
-              analytics, customer support). These providers are contractually bound to protect your
-              information and may only use it to perform services for us.
+              With third-party vendors who perform services on our behalf (e.g., cloud hosting, form
+              processing, scheduling, team messaging, data analytics, customer support). For example,
+              Formspree receives what you submit in our contact and newsletter forms and passes it to
+              our team by email and Slack, and Cal.com schedules demo calls. These providers are
+              contractually bound to protect your information and may only use it to perform
+              services for us.
             </BulletItem>
             <BulletItem label="Visitor-Identification Vendor:">
               With RB2B and its data partners, only if you choose &ldquo;Accept All&rdquo; in our
