@@ -183,9 +183,12 @@ How the Worker serves the site:
   Worker. Their headers (HSTS, a one-year immutable cache for `/_next/static`) come
   from `public/_headers`, which Workers reads and does not serve. Pages, redirects
   and 404s come from the Worker and get their headers from `next.config.ts`.
-- **Redirects** (including www to the bare domain) live in `next.config.ts`.
-- **`next/image`** serves the original file, as it did on Pages. Resizing would need
-  a Cloudflare Images binding (`"images": { "binding": "IMAGES" }` in `wrangler.jsonc`).
+- **Redirects** live in `next.config.ts`. www to the bare domain is also a Cloudflare
+  redirect rule on the zone, which runs before the Worker, so static files on www
+  redirect too.
+- **`next/image`** resizes and converts to WebP through the Cloudflare Images binding
+  (`IMAGES` in `wrangler.jsonc`). It is billed per unique transformation (5,000 a month
+  free; the site uses about 35). Without the binding, OpenNext serves the original file.
 - **Custom domains** `bondtrials.com` and `www.bondtrials.com` are attached to the
   Worker in the dashboard (Worker > Domains), not in `wrangler.jsonc`.
 
