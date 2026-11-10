@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Mail, MapPin } from "lucide-react";
 import { LinkedInIcon } from "./LinkedInIcon";
 import { G2Icon } from "./G2Icon";
 import Link from "next/link";
@@ -22,19 +22,21 @@ import {
 
 /*
  * Layout. The footer used to be one row of five link columns, and Compare (23 links) ran
- * about three times longer than the others while Company had four. Now:
+ * about three times longer than the others while Company had four. Now, top to bottom:
  *
- * 1. The brand block and four link columns of 8 or 9 links each.
- * 2. A full-width Compare band: every comparison page, flowing into short columns, with
- *    the compliance badges beside it. Every comparison page stays linked from the footer
- *    (see the note on navMenus in src/content/nav.ts).
- * 3. The bottom bar.
+ * 1. The brand block and four link columns of 7 to 9 links each.
+ * 2. Security and compliance: the badges and the Trust Center link.
+ * 3. Compare: every comparison page, in the same four columns as the links above. Every
+ *    comparison page stays linked from the footer (see the note on navMenus in
+ *    src/content/nav.ts).
+ * 4. The bottom bar.
  *
  * Rows are 48px apart throughout.
  */
 
-// Two links move from Resources to Company to even the columns; "How Bond compares" is the
-// Compare band's "All comparisons" link, so it isn't listed twice.
+// Two links move from Resources to Company to even the columns. "How Bond compares" is the
+// Compare section's "All comparisons" link and Trust Center has the security section, so
+// neither is listed twice.
 const TO_COMPANY = ["/what-is-bond-health", "/newsletter"];
 const pick = (href: string) => resourceLinks.find((l) => l.href === href) as NavItem;
 
@@ -56,7 +58,6 @@ const columns: { title: string; links: NavItem[] }[] = [
       pick("/what-is-bond-health"),
       { name: "Careers", href: "/careers" },
       pick("/newsletter"),
-      { name: "Trust Center", href: trustCenterHref },
       { name: "Preferred source on Google", href: preferredSourceHref },
       { name: "Book a demo", href: demoHref },
       { name: "Contact", href: "/#contact" },
@@ -92,6 +93,8 @@ function LinkList({ links, className = "" }: { links: NavItem[]; className?: str
 }
 
 const headingClass = "font-semibold text-gray-900 text-sm";
+// Sections 2 and 3 use the same grid as the link columns above them, so their columns line up
+const sectionClass = "mt-12 pt-10 border-t border-gray-200 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-12 gap-x-8 gap-y-6 items-start";
 
 export default function Footer() {
   const { openDemoModal } = useDemoModal();
@@ -169,37 +172,46 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* 2. Every comparison page, in short columns, with the compliance badges beside them */}
-        <div className="mt-12 pt-10 border-t border-gray-200 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-10">
-          <div className="lg:col-span-8 xl:col-span-9">
-            <div className="flex items-baseline justify-between gap-4 mb-3 sm:mb-4">
-              <h4 className={headingClass}>Compare</h4>
-              <Link
-                href="/compare"
-                className="group inline-flex items-center gap-1 py-1 text-sm font-medium text-bond-primary hover:text-bond-primary/80 transition-colors"
-              >
-                All comparisons
-                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
-              </Link>
-            </div>
-            <LinkList links={compareLinks} className="columns-2 md:columns-3 xl:columns-4 gap-8" />
+        {/* 2. Security and compliance: the badges in their own section, above the comparisons */}
+        <div className={sectionClass}>
+          <div className="col-span-2 md:col-span-2 xl:col-span-4 xl:pr-8">
+            <h4 className={headingClass}>Security and compliance</h4>
+            <p className="mt-2 max-w-xs text-sm leading-relaxed text-gray-600">Controls monitored continuously in our public Trust Center.</p>
+            <a
+              href={trustCenterHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-2 inline-flex items-center gap-1 py-1 text-sm font-medium text-bond-primary hover:text-bond-primary/80 transition-colors"
+            >
+              View Vanta Trust Center
+              <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </a>
           </div>
-          <div className="lg:col-span-4 xl:col-span-3">
-            <div className="rounded-xl border border-gray-200 bg-white px-4 py-4 max-w-xs lg:max-w-none">
-              <ComplianceBadges size="sm" className="[&_ul]:flex-nowrap [&_ul]:justify-between" />
-              <a
-                href={trustCenterHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block py-1 text-xs font-medium text-bond-primary hover:underline"
-              >
-                View Vanta Trust Center
-              </a>
-            </div>
+          <div className="col-span-2 md:col-span-2 xl:col-span-8 flex md:justify-end xl:justify-start">
+            <ComplianceBadges size="sm" className="[&_ul]:flex-nowrap [&_ul]:gap-x-8" />
           </div>
         </div>
 
-        {/* 3. Bottom bar */}
+        {/* 3. Every comparison page. The heading block sits where the brand block does, and the links flow into
+            the same four columns as Product, Solutions, Resources and Company (two on phones), so the lines line up. */}
+        <div className={sectionClass}>
+          <div className="col-span-2 md:col-span-4 xl:col-span-4 xl:pr-8">
+            <h4 className={headingClass}>Compare</h4>
+            <p className="mt-2 max-w-xs text-sm leading-relaxed text-gray-600">How Bond compares with other recruitment options, written from public sources.</p>
+            <Link
+              href="/compare"
+              className="group mt-2 inline-flex items-center gap-1 py-1 text-sm font-medium text-bond-primary hover:text-bond-primary/80 transition-colors"
+            >
+              All comparisons
+              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          </div>
+          <div className="col-span-2 md:col-span-4 xl:col-span-8">
+            <LinkList links={compareLinks} className="columns-2 md:columns-4 gap-8" />
+          </div>
+        </div>
+
+        {/* 4. Bottom bar */}
         <div className="mt-12 pt-6 sm:pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
           <p className="text-xs sm:text-sm text-gray-500 text-center md:text-left">
             © {new Date().getFullYear()} Bond Health, Inc. All rights reserved.
