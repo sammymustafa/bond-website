@@ -240,10 +240,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
-        {/* favicon.ico holds 16, 32 and 48 px for browsers and crawlers without SVG icons; sizes="32x32" (not "any")
-            keeps Chrome on the SVG. All icons are drawn from public/images/logo/bond-health-mark.svg. */}
+        {/* Favicons. All are drawn from public/images/logo/bond-health-mark.svg, re-centred on the mark's smallest
+            enclosing circle with an 8% margin, so Google's circular crop shows the whole mark (the header logo keeps
+            the tight mark). Google Search wants a square icon whose side is a multiple of 48 px, so icon-192.png
+            (4 × 48) is the high-resolution raster, listed first. favicon.ico holds 16, 32 and 48 px for browsers and
+            crawlers without SVG or PNG icons; sizes="32x32" (not "any") stops browsers preferring it. */}
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" type="image/svg+xml" href="/images/logo/bond-health-mark.svg" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
