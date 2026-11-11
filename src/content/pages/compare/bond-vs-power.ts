@@ -5,9 +5,9 @@ import { ADS_BULLET } from "../../whyBond";
 const page: SeoPage = {
   path: "/compare/bond-vs-power",
   category: "comparison",
-  title: "Power alternatives for research sites: Bond Health vs Power",
+  title: "withpower.com alternatives: Bond Health vs Power",
   description:
-    "Why Bond is better than Power: Bond finds eligible patients in your own EHR, runs Meta and Google ads, contacts every lead and books study visits.",
+    "Why Bond is better than Power (withpower.com): it finds patients in your EHR, creates and runs Meta and Google ads, contacts every lead and books visits.",
   keywords: [
     "Power clinical trials vs Bond Health",
     "Bond Health vs Power",

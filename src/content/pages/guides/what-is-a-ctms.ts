@@ -3,9 +3,9 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/guides/what-is-a-ctms",
   category: "guide",
-  title: "What is a CTMS? Clinical trial management systems explained",
+  title: "What is a CTMS? Meaning, uses and examples",
   description:
-    "What a CTMS (clinical trial management system) does, site vs sponsor systems, CTMS vs EHR, eISF and EDC, how to choose one, and how recruitment data gets in.",
+    "CTMS means clinical trial management system: software that runs a study's patients, visits and budgets. What it does, the systems sites use, how to choose.",
   keywords: [
     "ctms",
     "what is a ctms",

@@ -5,9 +5,9 @@ import { deep6Sources } from "./_deep6-sources";
 const page: SeoPage = {
   path: "/compare/clinical-trial-recruitment-software",
   category: "comparison",
-  title: "Clinical trial recruitment software and solutions, 2026",
+  title: "Clinical trial recruitment software: 21 tools",
   description:
-    "The best clinical trial recruitment software, solutions and companies for sites, CROs and sponsors: EHR screening, AI outreach, ads and CTMS tools, compared.",
+    "21 clinical trial recruitment tools compared: EHR screening, AI outreach, ads, CTMS. Only Bond reads EHR notes and runs its own ads to a booked visit.",
   keywords: [
     "clinical trial recruitment software",
     "clinical trial recruitment solutions",

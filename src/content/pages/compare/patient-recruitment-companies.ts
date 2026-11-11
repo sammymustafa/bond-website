@@ -3,9 +3,9 @@ import type { SeoPage } from "../../types";
 const page: SeoPage = {
   path: "/compare/patient-recruitment-companies",
   category: "comparison",
-  title: "Best clinical trial patient recruitment companies, 2026",
+  title: "12 patient recruitment companies, 2026",
   description:
-    "Clinical trial recruitment companies for sponsors and CROs: services firms that buy media and call leads, and platforms that find patients in sites' EHRs.",
+    "Patient recruitment companies for sponsors and CROs: 7 that buy media and call leads, 5 that find patients in EHRs. Bond does both, to a booked visit.",
   keywords: [
     "clinical trial recruitment companies",
     "clinical trial recruitment services",
