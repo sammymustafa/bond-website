@@ -84,7 +84,15 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "When this post was published, the \"revoke-all\" rule, under which an opt-out from one type of informational message also revokes consent for the same caller's robocalls and robotexts on unrelated matters, had been delayed twice and was set to take effect January 31, 2027.{{cite:fcc-da-26-12}} On September 30, 2026 the FCC adopted an order that replaces it. A caller may treat an opt-out made in response to an informational message as applying only to that category of informational messages, while an opt-out from a marketing message still ends all marketing. Callers may also designate an exclusive opt-out method (an automated voice or key-press opt-out, a reply text with one of the standard words, or a designated website or phone number) if they disclose it on the call or in the text; callers that do not must keep accepting any reasonable means. The changes take effect 30 days after Federal Register publication.{{cite:fcc-26-67}} A site that sends both appointment reminders and study outreach should decide with counsel whether a research opt-out also stops reminders.",
+          text: "When this post was published, the \"revoke-all\" rule, under which an opt-out from one type of informational message also revokes consent for the same caller's robocalls and robotexts on unrelated matters, had been delayed twice and was set to take effect January 31, 2027.{{cite:fcc-da-26-12}} On September 30, 2026 the FCC adopted an order that replaces it.{{cite:fcc-26-67}}",
+        },
+        {
+          type: "p",
+          text: "A caller may treat an opt-out made in response to an informational message as applying only to that category of informational messages, while an opt-out from a marketing message still ends all marketing.{{cite:fcc-26-67}}",
+        },
+        {
+          type: "p",
+          text: "Callers may also designate an exclusive opt-out method (an automated voice or key-press opt-out, a reply text with one of the standard words, or a designated website or phone number) if they disclose it on the call or in the text; callers that do not must keep accepting any reasonable means. The changes take effect 30 days after Federal Register publication.{{cite:fcc-26-67}} A site that sends both appointment reminders and study outreach should decide with counsel whether a research opt-out also stops reminders.",
         },
       ],
     },
