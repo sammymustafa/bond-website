@@ -112,6 +112,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 - [Implementation](https://bondtrials.com/implementation): live in 48 hours, step by step
 - [Pricing](https://bondtrials.com/pricing)
 - [Security and compliance](https://bondtrials.com/security)
+- [Outreach safeguards](https://bondtrials.com/outreach-safeguards): calling hours Bond sets for each state from that state's laws, follow-up limits the site chooses (for example three or five), opt-outs and do-not-contact requests honored right away and never contacted again, AI disclosure and live transfer to coordinators
 - [Integrations](https://bondtrials.com/integrations): EHRs: Epic, Oracle Health, MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm, OncoEMR; CTMS: CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime, Veeva SiteVault
 - [Book a demo](https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true)
 
@@ -137,6 +138,7 @@ A: Yes. Bond Health creates and runs Meta and Google ad campaigns for your studi
 
 ## Resources
 - [What is Bond Health?](https://bondtrials.com/what-is-bond-health): the platform in one page: what it does, who it is for, what it costs and how it differs from other recruitment vendors
+- [Case study: 193 patients randomized in two weeks](https://bondtrials.com/case-studies/vaccine-trial-enrollment): an independent Dallas-Fort Worth research site in a large pharmaceutical sponsor's Phase 3 vaccine trial in healthy adults doubled its enrollment versus its own recruiting over the same window
 - [Clinical trial patient recruitment guide](https://bondtrials.com/clinical-trial-patient-recruitment): how recruitment works, which methods convert, what it costs and the rules that apply
 - [Guides](https://bondtrials.com/guides)
 - [Topics](https://bondtrials.com/topics): guides, research, templates and calculators grouped by topic

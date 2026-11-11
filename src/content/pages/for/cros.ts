@@ -163,6 +163,57 @@ const page: SeoPage = {
       ],
     },
     {
+      id: "global-programs",
+      heading: "How does Bond fit a global study run by a CRO?",
+      blocks: [
+        {
+          type: "p",
+          text: "In a multinational study, Bond runs recruitment at the program's U.S. sites and leaves the rest of the program as it is. The CRO keeps the protocol, the global enrollment plan and its other countries. At each U.S. site Bond is deployed to, it finds, contacts, pre-screens and books patients, and it reports the same funnel at every site so U.S. numbers drop into the program's forecast.{{cite:bond-site}}",
+        },
+        {
+          type: "table",
+          caption: "Who does what when Bond runs the U.S. sites in a global program",
+          columns: ["Area", "CRO or sponsor", "Bond, at each U.S. site"],
+          rows: [
+            [
+              "Finding patients",
+              "Global enrollment plan and country allocation",
+              "Screens the site's EHR, including clinical notes, against the configured criteria, and creates and runs Meta and Google ads when a study needs patients beyond the site's records{{cite:bond-site,bond-product}}",
+            ],
+            [
+              "Contact and booking",
+              "Program-wide patient materials and IRB strategy",
+              "Voice and SMS agents contact, pre-screen and book patients in English, Spanish, Mandarin and many other languages, inside each state's calling hours and the follow-up limit the site sets{{cite:bond-product}}",
+            ],
+            [
+              "Patient data",
+              "Receives each site's counts at every funnel stage",
+              "Works under a business associate agreement with each site; Bond is HIPAA and SOC 2 Type I compliant, and its information security management system is certified to ISO/IEC 27001:2022 by Advantage Partners{{cite:bond-site,bond-product}}",
+            ],
+            [
+              "Systems",
+              "Program CTMS and reporting",
+              "Status syncs to the site's CTMS or a Google Sheet, with a two-way integration for sites on CRIO{{cite:bond-site,bond-product}}",
+            ],
+            [
+              "Metrics",
+              "Program-level forecasting",
+              "One funnel at every Bond site: matched, contacted, pre-screened, consented and randomized{{cite:bond-site}}",
+            ],
+          ],
+        },
+        {
+          type: "checklist",
+          items: [
+            "Pick the U.S. sites to start with and the date each is expected to activate.",
+            "Use one funnel definition in every country, with enrolled counted as randomized.",
+            "Agree how often the program receives each site's counts and who owns escalations.",
+            "Record each site's outreach rules in its IRB submission: calling hours, follow-up limit and the approved scripts. See [outreach safeguards](/outreach-safeguards).",
+          ],
+        },
+      ],
+    },
+    {
       id: "rescue-studies",
       heading: "Can Bond help rescue a study that is behind plan?",
       blocks: [

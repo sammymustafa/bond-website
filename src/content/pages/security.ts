@@ -486,6 +486,7 @@ const page: SeoPage = {
     { label: "Integrations", href: "/integrations", description: "How Bond connects to EHRs, CTMS and calendars." },
     { label: "Pricing", href: "/pricing", description: "What the volume-based fee per screened patient covers, including security review." },
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How the agents disclose AI use and hand off to coordinators." },
+    { label: "Outreach safeguards", href: "/outreach-safeguards", description: "Calling hours by state, follow-up limits the site sets, and opt-outs honored at once." },
     { label: "Identify: EHR screening", href: "/identify", description: "What Bond reads in the chart and how matches are explained." },
   ],
 };

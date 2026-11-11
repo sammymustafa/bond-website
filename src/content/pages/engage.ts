@@ -458,6 +458,7 @@ const page: SeoPage = {
     { label: "Consent: AI-powered informed consent support", href: "/consent", description: "What happens after the screening visit is booked." },
     { label: "Pre-screening call script", href: "/templates/pre-screening-call-script", description: "A starting script to adapt and submit to your IRB." },
     { label: "Patient outreach SMS templates", href: "/templates/patient-outreach-sms-templates", description: "Text messages with disclosure and opt-out language." },
+    { label: "Outreach safeguards", href: "/outreach-safeguards", description: "Calling hours by state, follow-up limits the site sets, and opt-outs honored at once." },
     { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach", description: "Authorizations, waivers and what the IRB reviews." },
     { label: "Security", href: "/security", description: "BAAs, encryption, access control and audit logging." },
   ],

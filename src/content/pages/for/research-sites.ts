@@ -331,6 +331,7 @@ const page: SeoPage = {
   related: [
     { label: "Identify: AI EHR screening", href: "/identify", description: "What Bond reads in the chart and how each match is explained." },
     { label: "Engage: voice and SMS pre-screening", href: "/engage", description: "How the agents contact patients, pre-screen and book visits." },
+    { label: "Case study: 193 randomized in two weeks", href: "/case-studies/vaccine-trial-enrollment", description: "One independent site's results in a Phase 3 vaccine trial." },
     { label: "Implementation", href: "/implementation", description: "The 48-hour plan, with site tasks and Bond tasks." },
     { label: "Pricing", href: "/pricing", description: "Fee per screened patient plus a percentage of each randomized patient's milestone payments, from randomization onward." },
     { label: "How to win more studies", href: "/guides/win-more-studies", description: "What sponsors look for in site feasibility and selection." },

@@ -99,6 +99,8 @@ const ANGLES: Record<string, Angle> = {
   "/implementation": { lead: ["ehr", "pricing"] },
   "/pricing": { lead: ["pricing", "ehr"] },
   "/security": { lead: ["security", "one-platform"] },
+  "/outreach-safeguards": { lead: ["languages", "security", "one-platform"] },
+  "/case-studies/vaccine-trial-enrollment": { lead: ["one-platform", "ads", "pricing"] },
   // Audiences
   "/for/research-sites": { audience: "research sites", lead: ["evidence", "pricing", "ehr"] },
   "/for/site-networks": { audience: "site networks", lead: ["one-platform", "ehr", "pricing"] },

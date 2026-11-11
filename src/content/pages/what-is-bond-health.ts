@@ -278,6 +278,7 @@ const page: SeoPage = {
     { label: "Engage: voice and SMS outreach", href: "/engage", description: "How Bond's agents contact and pre-screen every patient and lead." },
     { label: "Book: visits on your calendar", href: "/book", description: "Pre-screened patients booked straight into the site's calendar." },
     { label: "How Bond compares", href: "/compare", description: "Every comparison, written from public sources." },
+    { label: "Case study: 193 randomized in two weeks", href: "/case-studies/vaccine-trial-enrollment", description: "One independent site's results in a Phase 3 vaccine trial." },
     { label: "Pricing", href: "/pricing", description: "No integration fee: a fee per screened patient plus a share of milestones from randomization on." },
     { label: "FAQ", href: "/faq", description: "Thirty answers on product, data, IRB, pricing and security." },
   ],

@@ -30,6 +30,7 @@ export const productLinks: NavItem[] = [
   { name: "Integrations", href: "/integrations", description: "EHRs, CTMS and eRegulatory" },
   { name: "Pricing", href: "/pricing", description: "Per screened patient, plus a share of milestones from randomization on" },
   { name: "Security", href: "/security", description: "ISO 27001 certified, HIPAA and SOC 2 Type I compliant" },
+  { name: "Outreach safeguards", href: "/outreach-safeguards", description: "Calling hours by state, follow-up limits and opt-outs" },
 ];
 
 export const audienceLinks: NavItem[] = [
@@ -112,6 +113,7 @@ export const compareLinks: NavItem[] = [
 
 export const resourceLinks: NavItem[] = [
   { name: "What is Bond Health?", href: "/what-is-bond-health", description: "The platform, who it is for and how it differs" },
+  { name: "Case study", href: "/case-studies/vaccine-trial-enrollment", description: "193 patients randomized in two weeks at one site" },
   { name: "How Bond compares", href: "/compare", description: "Every comparison, written from public sources" },
   { name: "Patient recruitment guide", href: "/clinical-trial-patient-recruitment", description: "How recruitment works, what converts, what it costs" },
   { name: "Guides", href: "/guides", description: "Site feasibility, CTMS, screen failure, IRB rules" },

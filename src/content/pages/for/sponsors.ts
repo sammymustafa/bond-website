@@ -161,6 +161,16 @@ const page: SeoPage = {
       ],
     },
     {
+      id: "global-programs",
+      heading: "How does Bond fit a global program?",
+      blocks: [
+        {
+          type: "p",
+          text: "In a multinational program, Bond runs recruitment at the U.S. sites and reports the same funnel at each one, so U.S. enrollment can be tracked against the rest of the program without a separate reporting format. The sponsor or its CRO keeps the protocol, the global enrollment plan and the other countries.{{cite:bond-site}} The [CRO page](/for/cros#global-programs) sets out who does what, site by site.",
+        },
+      ],
+    },
+    {
       id: "deployment",
       heading: "What does deployment ask of the sponsor and its sites?",
       blocks: [
