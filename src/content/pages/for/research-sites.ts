@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Bond Health is AI patient recruitment software for research sites: it finds eligible patients in your own EHR, pre-screens them by phone and text, and books them for screening visits.{{cite:bond-site,bond-product}} Site enrollment depends on finding eligible patients in your own records and reaching them without using up staff time. This page covers where that breaks down, what Bond Health changes day to day, what gets reported, and what setup and pricing involve.",
   summary: "How Bond fits an independent or hospital-based research site: problems, workflow, metrics, setup and pricing.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How implementation works", secondaryHref: "/implementation" },
   sections: [
     {
@@ -32,7 +32,7 @@ const page: SeoPage = {
           type: "ul",
           items: [
             "**Staff time.** In a 2012 study at one cancer center, the largest share of eligibility evaluations (35.8%) took 10 to 30 minutes, but more than 10% took 2 to 4 hours. Finding, screening and enrolling one patient took 3.4 to 8.8 research staff hours on average, by study type.{{cite:penberthy-2012}}",
-            "**Staffing.** In WCG's 2025 survey of 611 sites, 30% named site staffing a top challenge, and 28% named patient recruitment and retention (32% of smaller sites).{{cite:wcg-2025}}",
+            "**Staffing.** In WCG's 2025 survey of 611 sites, 30% named site staffing a top challenge, and 28% named patient recruitment and retention (32% of smaller sites).{{cite:wcg-2025}} We read the full survey in [what 611 sites told WCG about recruitment in 2025](/blog/wcg-2025-site-survey-recruitment).",
             "**Turnover.** In SCRS's 2022 survey, sites reported yearly turnover of patient-facing staff of 35% to 61%, against a typical 10% to 37%. SCRS puts the cost of recruiting and training a replacement at about six months' pay.{{cite:scrs-2023}}",
             "**Screen failures.** A patient who fails at the visit still costs the screening work. In a 2008 site-finance model, at a 10% screen-failure rate, nine enrolled patients must cover the screening cost of one failure.{{cite:bienkowski-2008}} See [how to reduce screen failures](/guides/reduce-screen-failure).",
           ],

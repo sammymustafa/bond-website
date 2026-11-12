@@ -19,7 +19,7 @@ const page: SeoPage = {
   intro:
     "Bond Health reads your group's own EHR records against a study's criteria, contacts likely candidates by phone and text, and books them for screening visits, so your staff spend less of the day on first-pass chart review, first calls and scheduling. You still need a PI and a coordinator, even part time.",
   summary: "How a community or specialty practice runs studies from its own patient panel while protecting clinic time and PI hours.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -164,6 +164,7 @@ const page: SeoPage = {
             "**athenahealth.** As of October 2026, athenahealth's published FHIR configuration supports the `client_credentials` grant used for server-to-server (backend) access, alongside user-launched apps.{{cite:athena-smart}} The [athenahealth](/integrations/athenahealth) page lists what your practice provides.",
             "**eClinicalWorks.** Your practice turns on FHIR access through the On-Demand Activation feature in eClinicalWorks. Per its website (October 2026), eClinicalWorks makes its certified FHIR APIs available to third-party developers at no cost at this time.{{cite:ecw-cert}} See [eClinicalWorks](/integrations/eclinicalworks).",
             "**Epic or Oracle Health.** Groups on these systems, including those on an affiliated hospital's instance, follow the approval steps of whoever runs the EHR. See [Epic](/integrations/epic) and [Oracle Health](/integrations/oracle-cerner).",
+            "**NextGen, Veradigm or OncoEMR.** Each vendor runs its own API program with its own terms. The [NextGen](/integrations/nextgen), [Veradigm and Practice Fusion](/integrations/veradigm) and [OncoEMR](/integrations/oncoemr) pages list the FHIR resources, practice approvals and timeline for each.",
           ],
         },
       ],

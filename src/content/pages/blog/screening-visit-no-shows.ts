@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Patients miss screening visits for much the same reasons they miss any appointment: a long wait between booking and the visit, forgetting, worry about what will happen, and getting there. Reminders have the strongest evidence. A short wait before the visit and a same-day call after a miss are cheap and sensible, while offering free rides to everyone did not cut missed visits in a US trial that tested it.{{cite:cochrane-sms-2013,dantas-2018,chaiyachati-2018}} Most of this evidence comes from outpatient clinics rather than trials, and we say where it does.",
   summary: "What predicts a missed screening visit, which fixes have evidence behind them, and a six-step no-show plan for sites.",
-  lastUpdated: "2026-10-09",
+  lastUpdated: "2026-11-12",
   blog: { date: "2026-10-09", author: "Rishabh Goel", readingMinutes: 5 },
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "Read about Engage", secondaryHref: "/engage" },
   sections: [
@@ -78,7 +78,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Yes, in outpatient care. A Cochrane review found moderate-quality evidence that text reminders raised attendance compared with no reminder (risk ratio 1.14; 7 studies, 5,841 participants). Across the included studies, attendance was 67.8% with no reminder, 78.6% with text reminders and 80.3% with phone call reminders, and texts and calls performed about the same.{{cite:cochrane-sms-2013}}",
+          text: "Yes, in outpatient care. A Cochrane review found moderate-quality evidence that text reminders raised attendance compared with no reminder (risk ratio 1.14; 7 studies, 5,841 participants). Across the included studies, attendance was 67.8% with no reminder, 78.6% with text reminders and 80.3% with phone call reminders, and texts and calls performed about the same.{{cite:cochrane-sms-2013}} A later meta-analysis and a study of reminder wording are covered in [what the evidence says about text message appointment reminders](/blog/sms-appointment-reminders-evidence).",
         },
         {
           type: "p",

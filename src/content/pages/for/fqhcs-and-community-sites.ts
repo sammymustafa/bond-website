@@ -20,7 +20,7 @@ const page: SeoPage = {
   intro:
     "Community health centers serve many of the patients that clinical trials enroll least, yet only about a quarter of centers reported using EHR data for research in 2025.{{cite:hrsa-uds-ehr-2025}} Bond Health finds eligible patients in your EHR, contacts them and supports the consent conversation, so a small research team can offer studies to more of its patients.",
   summary: "How Bond helps FQHCs and community sites find eligible patients, contact them and book them for visits with a small research team.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See the implementation plan", secondaryHref: "/implementation" },
   sections: [
     {
@@ -64,7 +64,7 @@ const page: SeoPage = {
             "**EHR data.** In 2025, 1,340 of 1,356 health centers used EHR data for quality improvement such as outreach, but only 364 used it for research.{{cite:hrsa-uds-ehr-2025}}",
             "**Staff time.** In a 2022 survey of all US physicians, not only health center staff, 14% reported doing research, and 83.6% of those spent 10% or less of their weekly hours on it.{{cite:browne-2024}}",
             "**Referrals.** In a March 2026 poll of 503 US primary care physicians, 86% said they were likely to refer patients to trials, but only 37% ever had.{{cite:harris-pcp-2026}}",
-            "**Language.** Of 14,367 trials registered on ClinicalTrials.gov in 2019 and 2020, 18.98% required the ability to read, speak or understand English, and 2.71% mentioned translation into another language.{{cite:mrct-english-2021}}",
+            "**Language.** Of 14,367 trials registered on ClinicalTrials.gov in 2019 and 2020, 18.98% required the ability to read, speak or understand English, and 2.71% mentioned translation into another language.{{cite:mrct-english-2021}} Our post on [reaching Spanish-speaking patients for clinical trials](/blog/spanish-language-trial-outreach) covers the consent and Section 1557 rules and the outreach approaches with evidence.",
             "**Reading level.** Consent forms from 798 federally funded US trials averaged a 12th-grade reading level, against an 8th-grade average for US adults.{{cite:mirza-2024}}",
           ],
         },
@@ -94,7 +94,7 @@ const page: SeoPage = {
               "FHIR R4 or HL7 v2, arranged with the organization that hosts the instance. See [Epic](/integrations/epic).",
               "Sign-off from the host organization as well as your own.",
             ],
-            ["NextGen or another EHR", "FHIR R4 where the EHR supports it, or through an integration partner.{{cite:bond-site}}", "Confirmation of the interface during scoping."],
+            ["NextGen or another EHR", "FHIR R4 where the EHR supports it, or through an integration partner.{{cite:bond-site}} See [NextGen](/integrations/nextgen).", "Confirmation of the interface during scoping."],
             ["No integration yet", "Outreach from a patient list the health center exports.", "The list, plus IRB approval of the outreach."],
           ],
           note: "Bond holds no certification or marketplace listing with these EHR vendors. What each build exposes is confirmed during scoping.",

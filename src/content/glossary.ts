@@ -970,29 +970,140 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "preparatory-to-research",
     term: "Reviews preparatory to research",
+    title: "Preparatory to research under HIPAA: what it allows",
     short:
       "A HIPAA pathway that lets researchers review records to prepare a protocol or check feasibility without authorization, if no PHI leaves the covered entity.",
+    description:
+      "HIPAA's preparatory to research rule: the three researcher representations, feasibility counts, who may contact patients, and how it differs from a waiver.",
     body: [
       {
         type: "p",
-        text: "Under 45 CFR 164.512(i)(1)(ii), a covered entity may let a researcher use or access protected health information without authorization when the researcher represents three things: the use is sought solely to review PHI as necessary to prepare a research protocol or for similar purposes preparatory to research, no PHI will be removed from the covered entity during the review, and the PHI is necessary for the research.{{cite:ecfr-164-512}}",
+        text: "Under 45 CFR 164.512(i)(1)(ii), a covered entity may let a researcher use or access protected health information (PHI) without the patient's authorization, and without an IRB or privacy board waiver, once it obtains three representations from the researcher:{{cite:ecfr-164-512}}",
+      },
+      {
+        type: "ol",
+        items: [
+          "The use or disclosure is sought solely to review PHI as necessary to prepare a research protocol or for similar purposes preparatory to research.",
+          "No PHI will be removed from the covered entity by the researcher in the course of the review.",
+          "The PHI the researcher wants to use or access is necessary for the research purposes.{{cite:ecfr-164-512}}",
+        ],
       },
       {
         type: "p",
-        text: "Sites commonly rely on this pathway to answer feasibility questionnaires, for example by counting how many patients appear to meet a study's key criteria. FDA's 2023 informed consent guidance adds that a feasibility survey of patient records does not require informed consent under FDA regulations, but it must comply with HIPAA.{{cite:fda-ic-2023}}",
+        text: "HHS says these representations can be given in writing or orally, and that the provision might be used, for example, to design a study or to assess whether a study is feasible. The Privacy Rule also does not prohibit a covered entity from giving a researcher remote access for these reviews, provided reasonable and appropriate safeguards are in place.{{cite:hhs-research}} FDA's 2023 informed consent guidance adds that a feasibility survey of patient records does not require informed consent under FDA regulations, but it must comply with HIPAA.{{cite:fda-ic-2023}}",
+      },
+      { type: "h3", text: "What does the provision allow, and what does it not?" },
+      {
+        type: "ul",
+        items: [
+          "**Allowed:** reviewing charts or running EHR queries to design a protocol, answer a feasibility questionnaire or identify prospective participants. HHS says the provision can be used to aid study recruitment.{{cite:hhs-research,hhs-faq-prep-recruit}}",
+          "**Allowed for the covered entity's own workforce:** contacting the patients it identifies. HHS says a researcher who is an employee or workforce member of the covered entity could use the PHI to contact prospective research subjects, for example to seek their authorization for a study.{{cite:hhs-faq-prep-recruit}}",
+          "**Not allowed:** removing PHI from the covered entity's site during the review, such as taking a patient list off-site.{{cite:ecfr-164-512,hhs-faq-prep-recruit}}",
+          "**Not allowed for outside researchers:** contacting prospective subjects. HHS says a researcher who is not part of the covered entity may not use this provision to contact them, and could instead get contact information through a partial waiver of authorization from an IRB or privacy board.{{cite:hhs-faq-prep-recruit}}",
+        ],
+      },
+      { type: "h3", text: "How does it compare with the other HIPAA research pathways in 164.512(i)?" },
+      {
+        type: "table",
+        caption: "The three research permissions in 45 CFR 164.512(i)(1)",
+        columns: ["", "Reviews preparatory to research", "Waiver or alteration of authorization", "Research on decedents' information"],
+        rows: [
+          ["Citation", "45 CFR 164.512(i)(1)(ii)", "45 CFR 164.512(i)(1)(i)", "45 CFR 164.512(i)(1)(iii)"],
+          [
+            "Who decides",
+            "The covered entity, on the researcher's representations; no board approval",
+            "An IRB or privacy board, which documents its approval",
+            "The covered entity, on the researcher's representations; no board approval",
+          ],
+          [
+            "What is required",
+            "Representations that the review is solely preparatory, that no PHI will be removed and that the PHI is necessary",
+            "Board findings of no more than minimal risk to privacy, and that the research could not practicably be done without the waiver or without the PHI",
+            "Representations that the use is solely for research on decedents' PHI and that the PHI is necessary, plus documentation of death if the covered entity asks",
+          ],
+          ["Can the PHI leave the covered entity?", "No, not by the researcher during the review", "Yes, within the approved waiver", "Yes, use or disclosure is permitted"],
+          [
+            "Typical recruitment use",
+            "Protocol design, feasibility counts and finding candidates; contact by the covered entity's own workforce",
+            "An outside team identifying and contacting candidates under a partial waiver",
+            "None; it covers research on records of people who have died",
+          ],
+        ],
+        note: "Source: the regulation text, with the recruitment row from HHS's FAQ on the preparatory research provision.{{cite:ecfr-164-512,hhs-faq-prep-recruit}} See [waiver of HIPAA authorization](/glossary/waiver-of-authorization) for the waiver criteria in full.",
+      },
+      { type: "h3", text: "What does a preparatory review look like in practice?" },
+      {
+        type: "steps",
+        items: [
+          {
+            title: "Give the representations",
+            text: "A sponsor sends a feasibility questionnaire. The coordinator or investigator, as a member of the site's workforce, gives the privacy office the three representations, in writing or orally, following the site's own policy.{{cite:ecfr-164-512,hhs-research}}",
+          },
+          {
+            title: "Review inside the covered entity",
+            text: "They run the EHR query or chart review on the site's own systems, or through remote access with the safeguards the privacy office requires.{{cite:hhs-research}}",
+          },
+          {
+            title: "Send back counts, not patients",
+            text: "The questionnaire goes back with aggregate counts, such as how many patients appear to meet the key criteria, and no names, record numbers or other identifiers, because no PHI may leave the covered entity under this pathway.{{cite:ecfr-164-512}}",
+          },
+          {
+            title: "Check the pathway before outreach",
+            text: "Once the study opens, the site's own workforce may contact the candidates it found. An outside researcher, such as a sponsor's or CRO's call center, needs a partial waiver from an IRB or privacy board, or the patient's authorization.{{cite:hhs-faq-prep-recruit}} The Common Rule and FDA rules apply alongside HIPAA; see [IRB and HIPAA rules for patient outreach](/guides/irb-hipaa-patient-outreach).",
+          },
+        ],
       },
       {
         type: "p",
-        text: "Practical note: a preparatory review supports counting and planning. Contacting patients is a separate step with its own requirements, such as IRB approval of the recruitment plan and, where needed, a waiver of authorization, so check with your privacy office before any outreach. See the [feasibility questionnaire template](/templates/feasibility-questionnaire) and how Bond handles PHI on the [Security](/security) page.",
+        text: "Practical note: Bond works under a business associate agreement with each site or health system.{{cite:bond-security}} [Identify](/identify) reviews the site's records against a study's criteria and returns ranked candidates with the evidence for each criterion, and the site's privacy office and IRB decide which pathway covers outreach. See how Bond handles PHI on the [Security](/security) page, and start a feasibility answer from the [feasibility questionnaire template](/templates/feasibility-questionnaire).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is a review preparatory to research under HIPAA?",
+        a: "A permission at 45 CFR 164.512(i)(1)(ii) that lets a covered entity allow a researcher to use or access PHI without authorization to prepare a protocol or for similar purposes, if the researcher represents that the review is solely for that purpose, that no PHI will be removed from the covered entity, and that the PHI is necessary.{{cite:ecfr-164-512}}",
+      },
+      {
+        q: "Can preparatory to research be used for recruitment?",
+        a: "Partly. HHS says it can aid recruitment, and a researcher who is part of the covered entity's workforce could use the PHI to contact prospective subjects. A researcher outside the covered entity may not use it to contact them and could instead get contact information through a partial waiver of authorization from an IRB or privacy board.{{cite:hhs-faq-prep-recruit}}",
+      },
+      {
+        q: "Does a preparatory to research review need IRB approval?",
+        a: "HIPAA does not require board approval for it: the covered entity obtains the researcher's representations, which HHS says can be written or oral. IRB or privacy board approval is the requirement for a waiver of authorization, a separate provision.{{cite:ecfr-164-512,hhs-research}} Your institution may still require a form or privacy office sign-off.",
+      },
+      {
+        q: "Can a researcher review records remotely under this provision?",
+        a: "Yes. HHS says the Privacy Rule does not prohibit a covered entity from granting remote access for reviews preparatory to research, provided reasonable and appropriate safeguards are in place.{{cite:hhs-research}}",
+      },
+      {
+        q: "Does a feasibility count need informed consent?",
+        a: "Not under FDA regulations. FDA's 2023 informed consent guidance says a feasibility survey of patient records does not require informed consent under FDA regulations, but it must comply with HIPAA.{{cite:fda-ic-2023}}",
       },
     ],
     sources: [
       {
         id: "ecfr-164-512",
-        title: "45 CFR 164.512(i)(1)(ii) Reviews preparatory to research",
-        publisher: "eCFR (HHS Office for Civil Rights)",
+        title: "45 CFR 164.512(i): Uses and disclosures for research purposes",
+        publisher: "eCFR (Office of the Federal Register and GPO)",
         url: "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.512",
         year: "2026",
+        note: "Text current as of November 9, 2026, read November 12, 2026. Paragraph (i)(1)(i) is the IRB or privacy board waiver, (i)(1)(ii) reviews preparatory to research and (i)(1)(iii) research on decedents' information; (i)(2) lists the waiver documentation and criteria. Quote: \"No protected health information is to be removed from the covered entity by the researcher in the course of the review\".",
+      },
+      {
+        id: "hhs-research",
+        title: "HIPAA and Research",
+        publisher: "U.S. Department of Health and Human Services, Office for Civil Rights",
+        url: "https://www.hhs.gov/hipaa/for-professionals/special-topics/research/index.html",
+        year: "2026",
+        note: "Content last reviewed September 30, 2026; read November 12, 2026. Quote: \"Representations from the researcher, either in writing or orally\"; \"This provision might be used, for example, to design a research study or to assess the feasibility of conducting a study.\" Quote: \"The Privacy Rule does not prohibit a covered entity’s granting remote access to PHI to a researcher for activities that qualify as reviews preparatory to research, provided reasonable and appropriate safeguards are in place\".",
+      },
+      {
+        id: "hhs-faq-prep-recruit",
+        title: "Can the preparatory research provision of the HIPAA Privacy Rule at 45 CFR 164.512(i)(1)(ii) be used to recruit individuals into a research study?",
+        publisher: "U.S. Department of Health and Human Services, Office for Civil Rights (HIPAA FAQ)",
+        url: "https://www.hhs.gov/hipaa/for-professionals/faq/can-the-prepatory-research-provision-be-used-to-recruit-individuals-to-a-research-study/index.html",
+        year: "2006",
+        note: "Created December 20, 2002; last updated March 14, 2006; read November 12, 2026. Quote: \"a researcher who is an employee or a member of the covered entity’s workforce could use protected health information to contact prospective research subjects.\" Quote: \"a researcher who is not a part of the covered entity may not use the preparatory research provision to contact prospective research subjects. Rather, the outside researcher could obtain contact information through a partial waiver of individual authorization by an IRB or Privacy Board\".",
       },
       {
         id: "fda-ic-2023",
@@ -1001,14 +1112,22 @@ export const glossary: GlossaryTerm[] = [
         url: "https://www.fda.gov/media/88915/download",
         year: "2023",
       },
+      {
+        id: "bond-security",
+        title: "Security and compliance at Bond",
+        publisher: "Bond Health",
+        url: "https://bondtrials.com/security",
+        year: "2026",
+      },
     ],
     related: [
-      { label: "Security and compliance at Bond", href: "/security" },
-      { label: "Site feasibility questionnaire template", href: "/templates/feasibility-questionnaire" },
+      { label: "IRB and HIPAA rules for patient outreach", href: "/guides/irb-hipaa-patient-outreach" },
       { label: "Waiver of HIPAA authorization", href: "/glossary/waiver-of-authorization" },
+      { label: "Site feasibility questionnaire template", href: "/templates/feasibility-questionnaire" },
+      { label: "Security and compliance at Bond", href: "/security" },
       { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment" },
     ],
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-11-12",
   },
   {
     slug: "principal-investigator",
@@ -1167,7 +1286,7 @@ export const glossary: GlossaryTerm[] = [
   {
     slug: "screen-failure-rate",
     term: "Screen failure rate",
-    title: "Screen failure in clinical trials: definition and rate formula",
+    title: "Screen failure rate: definition and formula",
     short:
       "The share of patients who sign consent and start screening but do not qualify for randomization, usually because a protocol criterion is not met.",
     body: [
@@ -1231,7 +1350,7 @@ export const glossary: GlossaryTerm[] = [
       { label: "Screening", href: "/glossary/screening" },
       { label: "Clinical trial patient recruitment", href: "/clinical-trial-patient-recruitment" },
     ],
-    lastUpdated: "2026-11-08",
+    lastUpdated: "2026-11-12",
   },
   {
     slug: "screening",
