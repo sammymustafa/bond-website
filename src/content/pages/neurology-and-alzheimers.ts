@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Alzheimer's protocols screen for things a problem list rarely holds: a cognitive score inside a set window, amyloid confirmed by PET or spinal fluid, a clean brain MRI, and a study partner. At two California sites screening for a Phase 2 anti-amyloid antibody trial in 2024, 147 of 185 people failed screening.{{cite:huoh-2025}} Most of these criteria live in free-text notes and reports, not structured fields.",
   summary: "How Alzheimer's criteria map to the chart, why screen failure runs high, and how Bond screens for it.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -70,7 +70,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Amyloid is a gate the chart cannot settle without a biomarker result. In that Phase 1b trial, everyone scanned met clinical criteria for prodromal or mild Alzheimer's, yet 39% of those with an evaluable scan were excluded as amyloid negative.{{cite:sevigny-2016}} Among cognitively normal adults screening for the A4 study, only 29.5% of the 4,486 scanned were amyloid positive.{{cite:sperling-2020}} A4 screening took up to five visits over 90 days.{{cite:a4-screening-2026}}",
+          text: "Amyloid is a gate the chart cannot settle without a biomarker result. In that Phase 1b trial, everyone scanned met clinical criteria for prodromal or mild Alzheimer's, yet 39% of those with an evaluable scan were excluded as amyloid negative.{{cite:sevigny-2016}} Among cognitively normal adults screening for the A4 study, only 29.5% of the 4,486 scanned were amyloid positive.{{cite:sperling-2020}} A4 screening took up to five visits over 90 days.{{cite:a4-screening-2026}} Blood tests are starting to move that check to the front of the funnel; see [how p-tau217 blood tests are changing Alzheimer's screening](/blog/alzheimers-blood-biomarkers-screening).",
         },
         {
           type: "p",

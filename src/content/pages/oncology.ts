@@ -17,7 +17,7 @@ const page: SeoPage = {
   intro:
     "Most of the evidence an oncology protocol screens on sits in pathology, molecular and imaging reports and in clinic notes, not in coded fields. In a pooled analysis of 13 studies of cancer patients, 21.5% were ineligible for a trial open at their institution, and 8.1% enrolled.{{cite:unger-2019}}",
   summary: "How oncology criteria map to the chart, what drives screen failure, and how Bond screens for it.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "How Identify works", secondaryHref: "/identify" },
   sections: [
     {
@@ -119,7 +119,7 @@ const page: SeoPage = {
       blocks: [
         {
           type: "p",
-          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion and ranks candidates.{{cite:bond-site}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or through an aggregator.{{cite:bond-site,bond-product}} It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
+          text: "Bond's [Identify](/identify) stage reads structured and unstructured records against each inclusion and exclusion criterion and ranks candidates.{{cite:bond-site}} It connects to all the major EHRs, including Epic, Oracle Health (Cerner), MEDITECH, athenahealth, eClinicalWorks, NextGen, Veradigm and OncoEMR, through FHIR or HL7 interfaces or through an aggregator.{{cite:bond-site,bond-product}} Community oncology practices on Flatiron's EHR can see [what connecting Bond to OncoEMR involves](/integrations/oncoemr). It also works with the CTMS systems sites use, including CRIO, Advarra OnCore, Advarra Clinical Conductor, RealTime and Veeva SiteVault (Bond is a CRIO Certified Partner).{{cite:bond-site}}",
         },
         {
           type: "steps",

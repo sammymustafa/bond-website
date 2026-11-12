@@ -18,7 +18,7 @@ const page: SeoPage = {
   intro:
     "Cost per randomized patient is everything a study or site spent on recruitment, including staff time, divided by the patients who were randomized in the same period. In one published trial, an online campaign that cost US$14,285 randomized 60 patients, or US$238 per randomized patient.{{cite:ccct-ak-2023}} Enter your own costs below.",
   summary: "Ad spend, vendor fees, staff time and unreimbursed screening costs, divided by patients randomized.",
-  lastUpdated: "2026-11-08",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -34,7 +34,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Use randomization as the denominator for a randomized trial, because it is the milestone that moves the enrollment target; leads, calls and screening visits all lose people along the way. For a single-arm study, use the equivalent milestone, such as first dose. The [cost per randomized patient guide](/blog/cost-per-randomized-patient) walks through a full funnel example.",
+          text: "Use [randomization](/glossary/randomization) as the denominator for a randomized trial, because it is the milestone that moves the enrollment target; leads, calls and screening visits all lose people along the way. For a single-arm study, use the equivalent milestone, such as first dose. The [cost per randomized patient guide](/blog/cost-per-randomized-patient) walks through a full funnel example.",
         },
       ],
     },

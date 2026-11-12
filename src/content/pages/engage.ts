@@ -20,7 +20,7 @@ const page: SeoPage = {
     "Bond Health's AI voice and SMS agents pre-screen every new lead by phone or text as soon as it arrives and book eligible patients straight into the site's calendar.{{cite:bond-site,bond-product}} Engage is that outreach stage: the agents contact every lead from Bond's [Meta and Google ad campaigns](/clinical-trial-ads) and keep following up with every lead who has not responded, so more patients answer and get booked for visits.{{cite:bond-product}} The same agents contact the patients a site has approved from its own EHR. Every patient is told AI assistance is being used, answers a pre-screening script configured for the site and study, and is booked into a screening visit on the site's calendar. Anything the script does not cover goes to a coordinator, and a patient can reach a person at any time: the agent transfers the call live to a coordinator or books a human callback, whichever the site prefers.{{cite:bond-site,bond-product}}",
   summary:
     "Voice and SMS agents that contact every lead immediately, follow up until they respond, pre-screen on the site's script and book visits.",
-  lastUpdated: "2026-11-08",
+  lastUpdated: "2026-11-12",
   heroCta: { label: "Book a demo", href: "https://bond-health.cal.com/rishabh-goel/bond-health-demo?overlayCalendar=true", secondaryLabel: "See pricing", secondaryHref: "/pricing" },
   sections: [
     {
@@ -209,7 +209,7 @@ const page: SeoPage = {
         },
         {
           type: "p",
-          text: "Reminders before the screening visit also affect show rate. In a meta-analysis of routine clinic appointments, not research visits, patients who got text reminders attended 67% of the time against 54% without.{{cite:bmj-open-notifications}} Any reminder texts need the same IRB and TCPA review as the first outreach.",
+          text: "Reminders before the screening visit also affect show rate. In a meta-analysis of routine clinic appointments, not research visits, patients who got text reminders attended 67% of the time against 54% without.{{cite:bmj-open-notifications}} Our [review of the evidence on text message reminders](/blog/sms-appointment-reminders-evidence) covers how many to send, when, and what to say. Any reminder texts need the same IRB and TCPA review as the first outreach.",
         },
         {
           type: "callout",
