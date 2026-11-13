@@ -5,6 +5,7 @@ import { X, ArrowRight, CheckCircle, Loader2, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useDialog } from "./useDialog";
 import { leadSources, OTHER_LEAD_SOURCE } from "@/content/leadSources";
+import { getLeadSource } from "./leadSource";
 
 // Shown when Formspree is unreachable or rejects the message; rendered with an email link below (as on /careers).
 const NETWORK_ERROR = "network";
@@ -67,6 +68,8 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
           // Same option text as the Cal.com booking question; the free-text answer is sent only with "Other"
           heard_about: heardAbout,
           ...(heardAbout === OTHER_LEAD_SOURCE && { heard_about_other: heardAboutOther.trim() }),
+          // page, first_page and referrer: which page sent this lead and how the visit started (see leadSource.ts)
+          ...getLeadSource(),
           _subject: `Contact Request from ${name || email}`,
           _replyto: email,
         }),
